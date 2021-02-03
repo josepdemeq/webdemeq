@@ -26,6 +26,10 @@ body {
 	color: white;
 }
 
+.container {
+	max-width: 1366px;
+}
+
 .bg-dark {
 	background-color: #000!important;
 }
@@ -41,32 +45,129 @@ body {
 
 h1 {
 	font-size: 56px;
+	line-height: 1.3;
 }
 
 h2 {
 	font-size: 46px;
+	line-height: 1.3;
 }
 
 h3 {
 	font-size: 40px;
+	line-height: 1.3;
 }
 
 h4 {
 	font-size: 34px;
+	line-height: 1.3;
 }
 
 h5 {
 	font-size: 28px;
+	line-height: 1.3;
 }
 
 h6 {
 	font-size: 22px;
+	line-height: 1.3;
 }
 
 p {
 	font-size: 18px;
+	margin-bottom: 15px;
 }
 
+.bg-qh {
+	background: rgb(209,0,0);
+	background: linear-gradient(0deg, rgba(237,28,36,1) 0%, rgba(237,28,36,0) 70%);
+}
+
+.bg-qb {
+	background: rgb(57,163,143);
+	background: linear-gradient(0deg, rgba(57,163,143,1) 0%, rgba(57,163,143,0) 70%);
+}
+
+.bg-qs {
+	background: rgb(250,233,41);
+	background: linear-gradient(0deg, rgba(250,233,41,1) 0%, rgba(57,163,143,0) 70%);
+}
+
+.bg-qc {
+	background: rgb(0,80,133);
+	background: linear-gradient(0deg, rgba(0,80,133,1) 0%, rgba(0,80,133,0) 70%);
+}
+
+.bg-quokka {
+	background: rgb(0,129,161);
+	background: linear-gradient(0deg, rgba(0,129,161,0.5) 0%, rgba(0,80,133,0) 70%);
+}
+
+.txt-qh {
+	color:#ed1c24;
+}
+
+.txt-qb {
+	color:#39a38f;
+}
+
+.txt-qs {
+	color:#fae929;
+}
+
+.txt-qc {
+	color:#0071bc;
+}
+
+.btn-blanco {
+	color: #000;
+    background-color: #fff;
+    font-size: 18px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 0.8rem 2.5rem 0.6rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn-blanco:hover, .btn-blanco:active, .btn-blanco:focus {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 18px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	font-weight: 400;
+	padding: 0.8rem 2.5rem 0.6rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-naranja {
+	color: #fff;
+    background-color: #ef7d2d;
+    font-size: 18px;
+    border: 2px solid #ef7d2d;
+    border-radius: 50px;
+    padding: 0.8rem 2.5rem 0.6rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn-naranja:hover, .btn-naranja:active, .btn-naranja:focus {
+	color: #fff;
+	background-color: #d65a00;
+	font-size: 18px;
+	border: 2px solid #d65a00;
+	border-radius: 50px;
+	font-weight: 400;
+	padding: 0.8rem 2.5rem 0.6rem;
+	transition: all 0.3s ease-in-out;
+}
+
+
+header{
+	display:flex;
+	 flex-direction:column;
+     flex-wrap: nowrap;
+	position:relative;
+	align-content:stretch;
+	height:100vh;
+   }
 
 /*---  NAV  ---*/
 
@@ -85,14 +186,14 @@ p {
 	color: #fff;
 	border-bottom: 4px solid #000;
 	border-top: 4px solid #000;
-	transition: 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
 	color: rgba(239,125,45,1);
 	border-bottom: 4px solid rgba(239,125,45,1);
 	border-top: 4px solid #000;
-	transition: 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .navbar .dropdown-toggle::after {
@@ -105,7 +206,7 @@ p {
 	border: none;
 	left: unset;
 	right: 0;
-	transition: 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav .dropdown-menu {
@@ -114,7 +215,7 @@ p {
 	border: none;
 	right: unset;
 	left: 0;
-	transition: 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu .dropdown-item {
@@ -128,7 +229,7 @@ p {
     white-space: nowrap;
     background-color: transparent;
     border: 0;
-	transition: 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -209,27 +310,211 @@ p {
 	animation-name: slideIn;
   }
 
+  /*--- LEMA  ---*/
+
+.lema {
+	margin-top: 50px;
+}
+
   /*---  CAROUSEL  ---*/
 
-  .carousel-index {
-	  padding: 0!important;
-  }
+#carouselInicio {
+	height: 100%;
+	margin: auto;
+}
+.carousel-index {
+	padding: 0 !important;
+	height: 100%;
+	margin: auto;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+	border-radius: 20px !important;
+	background-clip: unset !important;
+	border-top: 0;
+	border-bottom: 0;
+	transition: all 0.3s ease-in;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    width: 18px;
+	transition: all 0.3s ease-in;
+}
+
+.carousel-inner {
+	height: 100%;
+}
 
 .carousel-inner img {
     width: 100%;
 	height: 100%;
-	max-width: 700px;
+	max-width: 683px;
 	margin: 0 auto;
 	text-align: center;
+	margin-bottom: 20px;
+	vertical-align: middle;
 }
 
-.carousel-inner .qh{
-	background: rgb(209,0,0);
-	background: linear-gradient(0deg, rgba(209,0,0,1) 0%, rgba(209,0,0,0) 100%);
+.carousel-item, .carousel-item .bg-qh {
+	height: 100%;
+	vertical-align: middle;
+}
+
+.carousel-item .row {
+	height: 90%;
+}
+
+.img-car, .info-car {
+	margin: auto 20px;
+	
+}
+
+.info-car {
+	vertical-align: middle;
 }
 
 .info-car .car-ico {
-	width: 8px;
+	width: 80px;
+	height: 80px;
 	display: inline-flex;
-	padding-right: 10px;
+	margin: 12px 10px 20px 0;
+	vertical-align: middle;
+	border-radius: 20px;
+	box-shadow: 0px -10px 30px #2c2c2c;
+}
+
+.info-car h2 {
+	display: inline-flex;
+	font-family: 'demeQ';
+	font-size: 3.5rem;
+	vertical-align: middle;
+	font-weight: 600;
+	margin: auto;
+}
+
+.info-car h4 {
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.info-car p {
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	letter-spacing: 0.1em;
+}
+
+
+/*--- DESTACADOS INICIO ---*/
+
+.destacados-inicio .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #222222;
+    background-clip: border-box;
+    border: 0;
+	border-radius: 0;
+}
+
+.destacados-inicio .card-text {
+	font-weight: bold;
+}
+
+
+.destacados-inicio .card-img {
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.destacados-inicio .bg-img .card-img {
+	vertical-align: bottom;
+    margin: auto auto 0;
+    padding: 0;
+}
+
+.destacados-inicio .card-img-overlay .btn {
+    position: absolute;
+    bottom: 20px;
+}
+
+
+/*--- QUOKKA ---*/
+.quokka .card {
+    background-color:transparent;
+    background-clip: border-box;
+    border: none;
+    border-radius:0;
+}
+
+.quokka .card .container{
+    margin-top:120px;
+}
+
+.quokka h4{
+    margin-bottom:20px;
+}
+
+.dmq-quokka {
+	height: 25px;
+	display: inline-flex;
+	margin-top: -5px;
+}
+
+
+/*--- FOOTER ---*/
+
+.datos-empresa {
+	margin-bottom: 40px;
+}
+
+.datos-empresa img {
+	width: 100%;
+	max-width: 200px;
+	margin-bottom: 20px;
+}
+
+.datos-empresa .dato-logo{
+	display: inline-flex;
+	float: left;
+	width: 15px;
+	margin: 5px 10px 0 0;
+}
+
+.foot-border {
+	border-left: 2px solid #222222;
+	border-right: 2px solid #222222;
+	padding: 0 30px;
+}
+
+.datos-productos .prod-logo{
+	display: inline-flex;
+	float: left;
+	width: 60px;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+
+.cont-dat-prod {
+	margin-bottom: 40px;
+}
+.prod-txt {
+	vertical-align: middle;
+}
+
+.prod-txt h6 {
+	font-family: 'demeQ';
+	margin: 0;
+	font-weight: 600;
 }
