@@ -1,0 +1,282 @@
+/*--- NAV ---*/
+
+@media (min-width: 992px) {
+	.animate {
+	  animation-duration: 0.3s;
+	  -webkit-animation-duration: 0.3s;
+	  animation-fill-mode: both;
+	  -webkit-animation-fill-mode: both;
+	}
+	
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+  }
+
+
+@media (max-width: 767.98px) { ... }
+
+@media (max-width: 1199px) { 
+    
+    /*--- CAROUSEL ---*/
+
+    .serie-7 {
+        max-width: 400px;
+        height: auto !important;
+    }
+    
+    .info-car {
+        padding-right: 120px;
+    }
+
+    /*--- FOOTER ---*/
+    
+    .redes-empresa .col-3 {
+        padding: 0 10px !important;
+    } 
+
+    .datos-productos .prod-logo {
+        display: inline-flex;
+        float: left;
+        width: 50px;
+        margin: 0 10px 50px 0;
+        vertical-align: middle;
+    }
+
+}
+
+@media (max-width: 991px) { 
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .btn-naranja {
+        font-size: 16px;
+        padding: 0.2rem 2.5rem 0rem;
+    }
+
+    .btn-blanco {
+        font-size: 16px;
+        padding: 0.2rem 2.5rem 0rem;
+    }
+
+
+    /*--- NAV ---*/
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 54px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        height: 100%;
+        left: -100%;
+        transition: left 400ms ease-in-out;
+    }
+
+    .navbar-collapse.show {
+        height: 100%;
+        left: 0;
+        transition: left 400ms ease-in-out;
+        width: 100%;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 400ms ease-in;
+    }
+
+    .navbar-nav .dropdown-menu {
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .dropdown, .dropleft, .dropright, .dropup {
+        padding: 0;
+    }
+
+    .btn-lang {
+        text-align: center!important;
+        background-color: rgba(12, 12, 12, 0.8);
+    }
+
+    .btn-lang .dropdown-menu.show {
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .btn-nav {
+        width: 100%;
+        border-top: 1px solid #222222;
+        padding: 20px 0 !important;
+    }
+
+    .lang-ico {
+        margin-left: -20px;
+    }
+
+    /*-- LEMA --*/
+
+    .lema {
+        margin-top: 0;
+    }
+
+    .lema h5  {
+        font-size: 18px;
+    }
+
+    /*--- CARUSEL ---*/
+
+    .carousel-inner img {
+        max-height: 260px;
+    }
+
+    .serie-7 {
+        max-width: 260px;
+    }
+
+    .info-car {
+        padding-right: 50px;
+    }
+    
+    .info-car .car-ico {
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        margin: 12px 10px 20px 0;
+        vertical-align: middle;
+        border-radius: 8px;
+        box-shadow: 0px -10px 30px #2c2c2c;
+    }
+
+    .info-car h2 {
+        font-size: 40px;
+    }
+
+    .info-car h4 {
+        font-size: 24px;
+    }
+
+    .info-car p {
+        font-size: 14px;
+    }
+
+
+    /*--- QUOKKA ---*/
+
+    .quokka h4 {
+        font-size: 20px;
+    }
+    
+    .dmq-quokka {
+        height: 16px;
+    }
+
+    /*--- FOOTER ---*/
+
+    .datos-productos .prod-logo {
+        width: 4px;
+        margin: 0 10px 730px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .lema .mb-5 {
+        margin-bottom: 0!important;
+    }
+    
+    .lema h1 {
+        font-size: 30px;
+    }
+    .lema h5 {
+        font-size: 16px;
+    }
+
+    .carousel-item .row {
+        height: 80%;
+    }
+    
+    .img-car, .info-car {
+        margin: 0 auto;
+        padding: 0 60px;
+        text-align: center !important;
+    }
+    
+    .carousel-inner img {
+        max-height: 300px;
+    }
+
+    .serie-7 {
+        max-width: 340px;
+    }
+
+    .destacados-inicio {
+        padding: 30px 10px!important;
+    }
+
+    .bg-quokka {
+        background: rgb(0,129,161);
+        background: linear-gradient( 0deg , rgba(0,129,161,0.5) 0%, rgba(0,80,133,0) 70%);
+        height: 250px;
+    }
+
+    .bg-quokka .container {
+        height: 100%;
+    }
+
+    .bg-quokka .card-img {
+        /* height: 307px; */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top:0;
+        height: 357px;
+        width: 155%;
+    }
+
+    .bg-quokka .container .col-8 {
+        max-width: 100%;
+    }
+
+
+}
+
