@@ -1,30 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face {
-	font-family: 'Adobe Clean';
-	src: url("../fonts/Adobe_clean.eot");
-	src: url("../fonts/Adobe_clean.woff") format("woff"),
-		url("../fonts/Adobe_clean") format("opentype");
-}
-
-@font-face {
-	font-family: 'demeQ';
-	src: url("../fonts/demeq.eot");
-	src: url("../fonts/demeq.woff") format("woff"),
-		url("../fonts/demeq") format("opentype");
-}
-
-
 /*---  Estilos Generales  ---*/
 
 body {
 	background: #000;
-	font-family: 'Adobe Clean' !important;
+	font-family: 'Adobe Clean', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	color: white;
 	user-select: none;
+}
+
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #000
+	url('../img/preloader.gif')
+	 no-repeat center center;	
+	z-index: 99999;
 }
 
 a {
@@ -42,6 +37,10 @@ a:hover, a:visited, a:link, a:active
 
 .bg-dark {
 	background-color: #000 !important;
+}
+
+.bg-naranja {
+	background-color: #ef7d2d !important;
 }
 
 .naranja {
@@ -88,6 +87,18 @@ p {
 	margin-bottom: 15px;
 }
 
+.italic {
+	font-style: italic;
+}
+
+.pc {
+	display: block;
+}
+
+.cel {
+	display: none;
+}
+
 .bg-qh {
 	background: rgb(209,0,0);
 	background: linear-gradient(0deg, rgba(237,28,36,1) 0%, rgba(237,28,36,0) 70%);
@@ -108,10 +119,7 @@ p {
 	background: linear-gradient(0deg, rgba(0,80,133,1) 0%, rgba(0,80,133,0) 70%);
 }
 
-.bg-quokka {
-	background: rgb(0,129,161);
-	background: linear-gradient(0deg, rgba(0,129,161,0.5) 0%, rgba(0,80,133,0) 70%);
-}
+
 
 .txt-qh {
 	color:#ed1c24;
@@ -177,7 +185,7 @@ p {
 }
 
 
-header{
+header#home{
 	display:flex;
 	 flex-direction:column;
      flex-wrap: nowrap;
@@ -190,7 +198,11 @@ header{
 /*---  NAV  ---*/
 
 .navbar {
-	padding: 0;
+	padding: 0 60px;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.45)!important;
 }
 
 .navbar-brand {
@@ -208,10 +220,30 @@ header{
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	color: rgba(239,125,45,1) !important;
+	border-bottom: 4px solid rgba(239,125,45,1);
+	border-top: 4px solid #000;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
 	color: rgba(239,125,45,1);
 	border-bottom: 4px solid rgba(239,125,45,1);
 	border-top: 4px solid #000;
 	transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav:hover .nav-link.active {
+	color: #fff;
+	border-bottom: 4px solid #000;
+	border-top: 4px solid #000;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav:hover .nav-link:hover.active {
+	color: rgba(239,125,45,1);
+	border-bottom: 4px solid rgba(239,125,45,1);
+	border-top: 4px solid #000;
 }
 
 .navbar .dropdown-toggle::after {
@@ -314,6 +346,61 @@ header{
 	animation-name: slideIn;
   }
 
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.1);
+}
+
+  /* ANIMATED LEFT ARROW */
+  .navbar-toggler.larr {
+	border: none;
+}
+
+.navbar-toggler.larr:focus {
+	outline: none;
+}
+
+.navbar-toggler.larr[aria-expanded="true"] .icon-bar:nth-of-type(1) {
+	transform: translate3d(0px, 6px, 0) rotate(45deg);
+	transform-origin: left top;
+	width: 11px;
+}
+
+.navbar-toggler.larr[aria-expanded="true"] .icon-bar:nth-of-type(3) {
+	transform: translate3d(0px, -6px, 0) rotate(-45deg);
+	transform-origin: left bottom;
+	width: 11px;
+}
+
+.navbar-toggler.larr .icon-bar {
+	width: 22px;
+	display: block;
+	height: 2px;
+	background-color: #fff;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.navbar-toggler.larr .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+
+.navbar-toggler.larr .icon-bar:nth-of-type(1) {
+	transform: translate3d(0, 0, 0) rotate(0deg);
+	width: 22px;
+}
+
+.navbar-toggler.larr .icon-bar:nth-of-type(2) {
+	transform: translate3d(0, 0, 0) rotate(0deg);
+}
+
+.navbar-toggler.larr .icon-bar:nth-of-type(3) {
+	transform: translate3d(0, 0, 0) rotate(0deg);
+	width: 22px;
+}
+
+
+
   /*--- LEMA  ---*/
 
 .lema {
@@ -400,7 +487,7 @@ header{
 
 .info-car h2 {
 	display: inline-flex;
-	font-family: 'demeQ';
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-size: 3.5rem;
 	vertical-align: middle;
 	font-weight: 600;
@@ -421,6 +508,10 @@ header{
 
 
 /*--- DESTACADOS INICIO ---*/
+
+.destacados-inicio {
+	padding: 60px;
+}
 
 .destacados-inicio .card {
     position: relative;
@@ -458,13 +549,53 @@ header{
 }
 
 
-/*--- QUOKKA ---*/
-.quokka .card {
-    background-color:transparent;
-    background-clip: border-box;
-    border: none;
-    border-radius:0;
+/*--- HEADER ---*/
+.productos.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/headers-secciones/productos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
 }
+
+.titulo-seccion {
+	position: relative;
+    height: 450px;
+    padding: 50px 0;
+
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%);
+  }
+
+
+/*--- QUOKKA ---*/
+
+.bg-quokka {
+	background:linear-gradient(0deg, rgba(0,129,161,0.5) 0%, rgba(0,80,133,0) 70%);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 300px;
+	width: 100%;
+}
+.img-quokka {
+	background: url(../img/quokka/quokka-index.svg);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+}
+
+.quokka .col-6 {
+	min-height: 400px;
+} 
 
 .quokka h4{
     margin-bottom:20px;
@@ -478,7 +609,9 @@ header{
 
 
 /*--- FOOTER ---*/
-
+footer {
+	padding: 60px;
+}
 .datos-empresa {
 	margin-bottom: 40px;
 }
@@ -490,10 +623,12 @@ header{
 }
 
 .datos-empresa .dato-logo{
-	display: inline-flex;
 	float: left;
-	width: 15px;
-	margin: 5px 10px 0 0;
+    width: 28px;
+    margin: 6px auto -4px 0;
+    vertical-align: middle;
+    height: auto;
+    padding: 0 10px 0 0;
 }
 
 .social {
@@ -511,8 +646,12 @@ header{
 	padding: 0 20px;
 }
 
+.datos-productos .container {
+	padding: 0;
+}
+
 .datos-productos .naranja {
-	padding-left: 34px;
+	padding-left: 20px;
 }
 
 .datos-productos a .cont-dat-prod {
@@ -540,7 +679,7 @@ header{
 	display: inline-flex;
 	float: left;
 	width: 60px;
-	margin: 0 10px 0 0;
+	margin: 0 10px 30px 0;
 	vertical-align: middle;
 }
 .prod-txt {
@@ -548,7 +687,7 @@ header{
 }
 
 .prod-txt h6 {
-	font-family: 'demeQ';
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	margin: 0;
 	font-weight: 600;
 }
@@ -579,3 +718,36 @@ header{
 	text-decoration: underline;
 	transition: all 0.3s ease-in-out;
 }
+
+
+/*--- PRODUCTOS ---*/
+
+.cont-product-cards {
+	padding: 50px 0;
+}
+
+.product-info {
+	padding: 20px;
+	display: inline-block;
+}
+
+.familia-logo, .prod-info, .product-info .btn-blanco {
+	margin-bottom: 20px;
+}
+
+.fam-logo {
+	width: 50px;
+	float: left;
+	margin-right: 20px;
+}
+
+.fam-nombre {
+	font-family: 'demeQ Bold', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+.product-image img {
+	width: 100%;
+	display: inline-block;
+}
+
+

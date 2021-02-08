@@ -1,10 +1,23 @@
-$(document).ready(function() {
+// $(document).ready(function() {
     
    // Deshabilito el botón derecho del mouse  
-    $(document).bind("contextmenu",function(e){
-        return false;
-     });
+   // $(document).bind("contextmenu",function(e){
+       // return false;
+   //  });
     
+// });
+
+$(window).load(function() {
+	$(".loader").delay(2000).fadeOut("slow");
+  $("#overlayer").delay(2000).fadeOut("slow");
+})
+
+$(window).addEventListener("load",function() {
+   setTimeout(function(){
+       // This hides the address bar:
+       window.scrollTo(0, 1);
+   }, 0);
 });
 
-
+// WOW
+new WOW().int();
