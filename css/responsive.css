@@ -441,7 +441,7 @@
 
  @media screen and (orientation:landscape) and (max-width: 768px) {
  
-     header {
+     header#home {
          height: unset !important;
      }
  
@@ -488,7 +488,7 @@
 
     }
 
-    header {
+    header#home {
         margin-top: 0;
         height: 100vh;
     }
@@ -613,37 +613,37 @@
 
 }
 
-    @media (max-width: 376px) {
-    
-        .img-car, .info-car {
-            margin: 10px auto;
-            padding: 0 60px;
-            text-align: center !important;
-        }
-        
-        .carousel-inner img {
-            max-height: 200px;
-        }
-    
-        .serie-7 {
-            max-width: 280px;
-        }
+@media (max-width: 376px) {
 
-        .info-car h4 {
-            font-size: 18px;
-        }
-
-        .info-car p {
-            font-size: 12px;
-        }
-
-        .destacados-inicio .card {
-            height: 430px;
-        }
-        
-        .quokka h4 {
-            font-size: 18px;
-        }
-
+    .img-car, .info-car {
+        margin: 10px auto;
+        padding: 0 60px;
+        text-align: center !important;
     }
+    
+    .carousel-inner img {
+        max-height: 200px;
+    }
+
+    .serie-7 {
+        max-width: 280px;
+    }
+
+    .info-car h4 {
+        font-size: 18px;
+    }
+
+    .info-car p {
+        font-size: 12px;
+    }
+
+    .destacados-inicio .card {
+        height: 430px;
+    }
+    
+    .quokka h4 {
+        font-size: 18px;
+    }
+
+}
 

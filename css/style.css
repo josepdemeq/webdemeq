@@ -119,6 +119,16 @@ p {
 	background: linear-gradient(0deg, rgba(0,80,133,1) 0%, rgba(0,80,133,0) 70%);
 }
 
+.bg-qst {
+	background: rgb(0,80,133);
+	background: linear-gradient(0deg, rgba(238,254,94,1) 0%, rgba(238,254,94,0) 70%);
+}
+
+.bg-qsv {
+	background: rgb(0,80,133);
+	background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(252,209,42,0) 70%);
+}
+
 
 
 .txt-qh {
@@ -137,10 +147,14 @@ p {
 	color:#0071bc;
 }
 
+.txt-negro {
+	color: #000 !important;
+}
+
 .btn-blanco {
 	color: #000;
     background-color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 0.8rem 2.5rem 0.6rem;
@@ -155,7 +169,7 @@ p {
 .btn-naranja {
 	color: #fff;
     background-color: #ef7d2d;
-    font-size: 18px;
+    font-size: 20px;
     border: 2px solid #ef7d2d;
     border-radius: 50px;
     padding: 0.8rem 2.5rem 0.6rem;
@@ -171,7 +185,7 @@ p {
 .btn-borde {
 	color: #fff;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 20px;
     border: 2px solid #efff;
     border-radius: 50px;
     padding: 0.8rem 2.5rem 0.6rem;
@@ -185,7 +199,7 @@ p {
 }
 
 
-header#home{
+header#home {
 	display:flex;
 	 flex-direction:column;
      flex-wrap: nowrap;
@@ -722,32 +736,70 @@ footer {
 
 /*--- PRODUCTOS ---*/
 
-.cont-product-cards {
-	padding: 50px 0;
+#productos {
+	background: #111111;
+	padding: 60px 0;
 }
 
-.product-info {
-	padding: 20px;
-	display: inline-block;
+#productos .card {
+	height: 340px;
+	position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #000;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+	margin-bottom: 30px;
+	
 }
 
-.familia-logo, .prod-info, .product-info .btn-blanco {
-	margin-bottom: 20px;
+#productos .card-block {
+	height: 340px;
 }
 
-.fam-logo {
-	width: 50px;
-	float: left;
-	margin-right: 20px;
+.info-producto {
+	padding: 20px 20px 20px 35px;
 }
 
-.fam-nombre {
-	font-family: 'demeQ Bold', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+.img-producto {
+	padding: 20px 35px 20px 0;}
+
+.familia-prod {
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	font-size: 34px;
+	letter-spacing: 0.1rem;
+	line-height: 60px;
 }
 
-.product-image img {
-	width: 100%;
-	display: inline-block;
+.info-producto h6 {
+	font-style: italic;
+	margin-bottom: 15px;
+	font-size: 28px;
 }
 
+.familia-prod img {
+	width: 60px;
+	height: auto;
+	margin-right: 15px;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
+.info-producto .btn {
+	position: absolute;
+    bottom: 60px;
+}
+
+.info-producto p {
+	position: absolute;
+    bottom: 0px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
 
