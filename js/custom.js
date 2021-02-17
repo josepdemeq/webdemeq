@@ -1,3 +1,0 @@
-// WOW
-
-new WOW().int();
