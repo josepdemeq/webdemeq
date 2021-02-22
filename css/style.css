@@ -103,36 +103,56 @@ p {
 	display: none;
 }
 
+
+.product-pc {
+	display: block;
+}
+
+.product-mobile {
+	display: none;
+}
+
+
+
 .bg-qh {
 	background: rgb(209,0,0);
 	background: linear-gradient(0deg, rgba(237,28,36,1) 0%, rgba(237,28,36,0) 70%);
+    border-top: 1px solid #000;
 }
 
 .bg-qb {
 	background: rgb(57,163,143);
 	background: linear-gradient(0deg, rgba(57,163,143,1) 0%, rgba(57,163,143,0) 70%);
+    border-top: 1px solid #000;
 }
 
 .bg-qs {
 	background: rgb(250,233,41);
 	background: linear-gradient(0deg, rgba(250,233,41,1) 0%, rgba(57,163,143,0) 70%);
+    border-top: 1px solid #000;
 }
 
 .bg-qc {
 	background: rgb(0,80,133);
 	background: linear-gradient(0deg, rgba(0,80,133,1) 0%, rgba(0,80,133,0) 70%);
+    border-top: 1px solid #000;
 }
 
 .bg-qst {
 	background: rgb(0,80,133);
 	background: linear-gradient(0deg, rgba(238,254,94,1) 0%, rgba(238,254,94,0) 70%);
+    border-top: 1px solid #000;
 }
 
 .bg-qsv {
 	background: rgb(0,80,133);
 	background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(252,209,42,0) 70%);
+    border-top: 1px solid #000;
 }
 
+.bg-gris {
+	background: #111;
+}
 
 
 .txt-qh {
@@ -235,6 +255,11 @@ header#home {
 	padding: 0 60px;
 }
 
+.navbar.sticky-top.navbar-dark {
+		z-index: 1000;
+
+}
+
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.45)!important;
 }
@@ -284,13 +309,15 @@ header#home {
     display: none;
 }
 
- .dropdown-menu {
+.dropdown-menu {
     color: #fff;
     background-color: #222222;
-	border: none;
-	left: unset;
-	right: 0;
-	transition: all 0.3s ease-in-out;
+    border: none;
+    left: unset;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    border-radius: 0;
 }
 
 .navbar-nav .dropdown-menu {
@@ -469,7 +496,7 @@ header#home {
 
 .carousel-indicators .active {
     opacity: 1;
-    width: 18px;
+    width: 24px;
 	transition: all 0.3s ease-in;
 }
 
@@ -594,7 +621,7 @@ header#home {
 	width: 100%;
 }
 .img-quokka {
-	background: url(../img/quokka/quokka-index.svg);
+	background: url(../img/quokka/quokka-index.png);
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -607,6 +634,7 @@ header#home {
 
 .quokka h4{
     margin-bottom:20px;
+	font-style: normal !important;
 }
 
 .dmq-quokka {
@@ -739,7 +767,7 @@ footer {
 .titulo-seccion {
 	position: relative;
     height: 450px;
-    padding: 50px 0;
+    padding: 50px;
 
 }
 
@@ -889,23 +917,23 @@ footer {
 .img-familia img {
     width: auto !important;
     height: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-.fam-QS img {
+.fam img {
 	width: 70px;
-	height: auto;
+	height: 70px;
 	margin-right: 20px;
 }
 
-
-.fam-QS h2 {
+.fam h2 {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
-	line-height: 2;
+	margin: 0;
 }
 
-
-.fam-QS h4 {
+.fam h4 {
 	font-weight: bold;
 }
 
@@ -978,9 +1006,13 @@ footer {
 	  transition: 0.3s all ease-in-out;
 	}
 
-  #familia-producto nav .col-4 {
+  #familia-producto nav .col {
 	padding: 0;
   }
+
+.sticky-top {
+    z-index: 900;
+}
 
   /*- Familia producto section -*/
 
@@ -1101,12 +1133,31 @@ footer {
  }
 
   .bg-qs-icon {
-	background: rgb(232,193,55);
-	background: -moz-linear-gradient(45deg, rgba(232,193,55,1) 0%, rgba(252,230,33,1) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(232,193,55,1) 0%, rgba(252,230,33,1) 100%);
-	background: linear-gradient(45deg, rgba(232,193,55,1) 0%, rgba(252,230,33,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8c137",endColorstr="#fce621",GradientType=1);
+	background: rgb(219,162,52);
+	background: -moz-linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,230,33,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,230,33,1) 100%);
+	background: linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,230,33,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dba234",endColorstr="#fce621",GradientType=1);
 	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 	border-radius: 50% 50%;
   }
+
+#familia-producto section#productos.relacionados {
+    padding: 80px 0 0 0;
+}
+
+.ttl-rel {
+	border-bottom: 8px solid rgb(250,233,41);
+	margin-bottom: 40px;
+}
+
+#productos.relacionados h4 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+}
+
+#productos.relacionados .card-block {
+    margin-bottom: 160px;
+}
