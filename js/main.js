@@ -1,3 +1,5 @@
+// ---- DESACTIVAR SELECCIÓN RATÓN
+
 // $(document).ready(function() {
     
    // Deshabilito el botón derecho del mouse  
@@ -6,6 +8,9 @@
    //  });
     
 // });
+
+
+// ---- LOADER
 
 $(window).load(function() {
 	$(".loader").delay(2000).fadeOut("slow");
@@ -18,3 +23,5 @@ $(window).addEventListener("load",function() {
        window.scrollTo(0, 1);
    }, 0);
 });
+
+

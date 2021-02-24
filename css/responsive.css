@@ -192,6 +192,24 @@
         max-height: 100%;
         width: auto;
     }
+
+    .bg-quokka {
+        padding: 300px 0 0;
+    }
+    
+    .quokka .col-6 {
+        padding: 0 20px;
+        flex: 0 0 60%;
+        max-width: 60%;
+
+    }
+    
+
+    /*--- FAMILIA PRODUCTO ---*/
+
+    .titulo-seccion .titulo-familia {
+        padding: 0 60px 20px 20px;
+    }
 }
 
 @media (max-width: 992px) { 
@@ -230,11 +248,16 @@
         padding: 0.5rem 2.5rem;
     }
 
+    .btn-negro{
+        font-size: 16px;
+        padding: 0.5rem 2.5rem;
+    }
+
 
     /*--- NAV ---*/
 
     .navbar {
-        padding: 10px 20px;
+        padding: 10px 0;
     }
 
     button:focus {
@@ -363,6 +386,11 @@
 
     /*--- QUOKKA ---*/
 
+    
+    .quokka {
+        padding-top: 0 !important;
+    }
+
     .quokka h4 {
         font-size: 20px;
     }
@@ -396,11 +424,81 @@
         height: 300px;
     }
 
+    
+
+    /*--- FAMILIA PRODUCTO ---*/
+
+    .titulo-seccion {
+        width: 100%;
+        display: block;
+        height: 800px;
+    }
+    
+    .titulo-seccion .titulo-familia {
+        padding: 0 10px;
+    }
+
+    .titulo-seccion .img-familia {
+        width: 100%;
+        flex: 0 0 100%;
+        display: block;
+        justify-content: center;
+        max-height: 500px;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .second-nav {
+        padding: 0;
+    }
+
+    .una-caract {
+        margin: 10px 0;
+    }
+
+    .dot-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .svg-icon {
+        margin-top: 2px;
+    }
+
+    .svg-icon.ajuste {
+        margin: 7px auto auto 7px;
+    }
+
+    .svg-icon.ajuste2 {
+        padding: 12px;
+    }
+
+    .svg-icon.qh-icon.ajuste2 {
+        width: 80%;
+        height: 80%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
 }
 
 
 
 @media (max-width: 768px) {
+
+    .product-pc {
+        display: none;
+    }
+
+    .product-mobile {
+        display: block;
+    }
+
+    .destacados-inicio {
+        padding: 20px 0;
+    }
 
     .destacados-inicio .card-deck {
         display: block;
@@ -409,6 +507,10 @@
     .destacados-inicio .card {
         margin-bottom: 15px;
         min-height: 700px;
+    }
+
+    #productos.relacionados .card-block {
+        margin-bottom: 40px;
     }
     
     /*--- QUOKKA ---*/
@@ -420,14 +522,16 @@
         background-size: contain;
         height: 100%;
         min-height: 200px;
+        margin-top: 0;
+        padding: 0;
     }
 
     .img-quokka {
-        background-size: cover;
-        background: url(../img/quokka/quokka-index-cel.svg);
+        background-size: contain !important;
+        background: url(../img/quokka/quokka-index-cel.png);
         background-position: bottom center;
         background-repeat: no-repeat;
-        min-height: 500px;
+        min-height: 540px;
     }
 
     .quokka.mt-5 {
@@ -450,8 +554,12 @@
 
     /*--- FOOTER ---*/
 
+    footer {
+        padding: 0;
+    }
+
     .datos-empresa .logo {
-        margin-bottom: 40px;
+        margin: 40px 0;
     }
 
     .datos-empresa img {
@@ -522,12 +630,39 @@
     
     /*--- PRODUCTOS ---*/
 
+    .productos.bg-overlay, .titulo-seccion {
+        height: 300px;
+    }
+
+    .fam .titulo-seccion {
+        height: 650px;
+    }
+
+    .fam img {
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .img-familia img {
+        height: auto !important;
+    }
+
+    #familia-producto section {
+        padding: 0;
+    }
+
+    #productos {
+        padding: 20px 0 0;
+    }
+
     #productos .card {
         height: 550px;
     }
 
     #productos .card-block {
-        height: 550px;
+        height: 100%;
     }
 
     #productos .card .img-producto {
@@ -546,6 +681,93 @@
         flex: 0 0 100%;
         max-width: 100%;
         height: 550px;
+        padding: 20px;
+    }
+
+    .btn-producto {
+        width: 100%;
+        padding: 40px;
+        color: #fff;
+        border-radius: 0;
+    }
+
+    .btn-producto h2, .btn-producto h4{
+        text-align: left;
+    }
+
+    .btn-producto img {
+        width: 100%;
+        height: auto;
+        max-width: max-content;
+    }
+
+    .modal-prod .btn {
+        text-align: left;
+    }
+
+    .modal-prod .bt h2, .modal-prod .btn:hover h2, .modal-prod .btn:active h2, .modal-prod .btn:focus h2, .modal-prod .bt h4, .modal-prod .btn:hover h4, .modal-prod .btn:active h4, .modal-prod .btn:focus h4 {
+        text-align: left;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .modal-prod .modal-dialog {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .modal-prod .modal-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #000;
+        background-clip: padding-box;
+        border: none;
+        border-radius: 0;
+        outline: 0;
+        padding: 20px;
+    }
+
+    .info-serie h4 {
+        margin: 20px 0;
+        padding-bottom: 10px;
+    }
+
+    .barra-qs {
+        border-bottom: 8px solid rgb(250,233,41);
+    }
+
+    .barra-qh {
+        border-bottom: 8px solid rgb(209,0,0);
+    }
+
+    .modal-prod .modal-body .row {
+        margin-bottom: 20px;
+    }
+
+    .modal-prod .modal-footer {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding: .75rem;
+        border-top: none;
+    }
+
+    #familia-producto section#productos.relacionados {
+        padding: 80px 10px 0;
+    }
+
+    #familia-producto section.quokka {
+        padding: 0;
     }
 
  }
@@ -575,28 +797,60 @@
         display: none;
     }
 
+    .espacio {
+        height: 60px;
+    }
     
     /*--- BTN WHATSAPP ---*/
+    
+    .whats img{
+        width: 35px;
+        height: auto;
+    }
 
-    .feedback {
+    .whats-scroll img{
+        width: 35px;
+        height: auto;
+    }
+    
+   .whats {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 10;
         background-color : #25d366;
         color: white;
         padding: 10px;
         border-radius: 50px;
         border:  none;
-    }
-    
-    .feedback img{
-        width: 35px;
-        height: auto;
-    }
-    
-    #mybutton {
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        z-index: 10;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
+        -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
+        -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+        transition: bottom 0.3s ease-in-out;
 
+
+    }
+    
+    .whats-scroll {
+         position: fixed;
+         bottom: 80px;
+         right: 10px;
+         z-index: 10;
+         background-color : #25d366;
+         color: white;
+         padding: 10px;
+         border-radius: 50px;
+         border:  none;
+         box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
+         -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
+         -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2);
+         transition: bottom 0.3s ease-in-out;
+ 
+     }
+
+    header {
+        z-index: 200;
+        position: relative;
     }
 
     header#home {
@@ -605,7 +859,7 @@
     }
 
     .lema {
-        padding: 40px 20px 60px;
+        padding: 40px 10px 60px;
     }
 
     .lema .mb-5 {
@@ -631,7 +885,7 @@
     
     .img-car, .info-car {
         margin: auto;
-        padding: 10px 60px;
+        padding: 10px 20px;
         text-align: center !important;
     }
     
@@ -658,7 +912,7 @@
     /*--- DESTACADOS ---*/
 
     .destacados-inicio {
-        padding: 0 10px!important;
+        padding: 0 !important;
     }
 
     .destacados-inicio .card {
@@ -679,12 +933,11 @@
         background-size: contain;
         height: 100%;
         min-height: 320px;
-        margin-bottom: 40px;
     }
 
     .img-quokka {
         background-size: cover;
-        background: url(../img/quokka/quokka-index-cel.svg);
+        background: url(../img/quokka/quokka-index-cel.png);
         background-position: bottom center;
         background-repeat: no-repeat;
         min-height: 300px;
@@ -705,8 +958,14 @@
 
     .bg-quokka .container .col-6 {
         max-width: 100%;
-        margin-top: 50px;
-        min-height: 320px;
+        margin-top: 0;
+        min-height: 360px;
+    }
+
+    #productos .bg-quokka .container .col-6 {
+        max-width: 100%;
+        margin-top: 0;
+        min-height: 360px;
     }
 
     .quokka h4 {
@@ -716,15 +975,146 @@
     .quokka .dmq-quokka {
         height: 16px;
     }
+    
 
     footer {
-        padding: 20px;
+        padding: 20px 0;
+    }
+
+    .datos-empresa .logo {
+        margin: 20px 0 40px 0;
+    }
+
+    /*--- PORDUCTOS ---*/
+    
+    #productos .card-deck {
+    margin-right: 0;
+}
+
+    .titulo-seccion {
+        padding: 20px 0;
+    }
+
+    .fam .titulo-seccion {
+        height: 600px;
+    }
+
+    .centered {
+        left: 0;
+    }
+
+    .img-familia img {
+        width: 100% !important;
+        height: auto !important;
+        margin-right: 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .fam img {
+        width: 50px;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .fam h4 {
+        margin: 10px 0;
+    }
+
+    .second-nav .navbar-nav {
+        flex-direction: row;
+    } 
+
+    .second-nav {
+        top: 50px;
+    }
+
+    .second-nav .nav-link {
+        display: block;
+        padding: 10px 0 0;
+    }
+
+    .second-nav a {
+        text-align: center;
+    }
+
+
+    .link-negro .serie-txt-dot {
+        font-size: 16px;
+        display: block;
+        margin: 10px 0 0;
+        line-height: 0;
+    }
+
+    .link-negro .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #000;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 5px;
+        margin-top: 5px;
+        transition: 0.3s all ease-in-out;
+    }
+
+
+    .link-blanco .serie-txt-dot {
+        font-size: 16px;
+        display: block;
+        margin: 10px 0 0;
+        line-height: 0;
+    }
+
+    .link-blanco .dot {
+        height: 10px;
+        width: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 5px;
+        margin-top: 5px;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .modal-prod .col {
+        -ms-flex-preferred-size: 0;
+        flex-basis: inherit;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .btn-producto {
+        padding: 10px;
+        color: #fff !important;
+    }
+
+    #familia-producto section#productos.relacionados {
+        padding: 40px 0 0;
+    }
+
+    #familia-producto h4 {
+        font-weight: normal;
+        font-style: italic;
+        margin-bottom: 10px;
     }
 
 
 }
 
 @media (max-width: 376px) {
+
+    h2 {
+        font-size: 34px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
 
     .img-car, .info-car {
         margin: 10px auto;
@@ -751,20 +1141,30 @@
     .destacados-inicio .card {
         height: 430px;
     }
+
+    .bg-quokka {
+        margin-top: 0;
+    }
     
     .quokka h4 {
         font-size: 18px;
     }
+    
 
     
     /*--- PRODUCTOS ---*/
 
+    
+    .productos.bg-overlay, .titulo-seccion {
+        height: 350px;
+    }
+
     #productos .card {
-        height: 500px;
+        height: 550px;
     }
 
     #productos .card-block {
-        height: 500px;
+        height: 550px;
     }
 
     #productos .card .img-producto {
@@ -782,7 +1182,7 @@
     #productos .info-producto {
         flex: 0 0 100%;
         max-width: 100%;
-        height: 500px;
+        height: 550px;
         padding: 20px;
     }
 
@@ -800,6 +1200,25 @@
 
     .info-producto p {
         font-size: 14px;
+    }
+
+    /*--- FAMILIAS PRODUCTOS ---*/
+
+    .fam .titulo-seccion {
+        height: 560px;
+    }
+
+    #familia-producto section {
+        padding: 20px 0 0 0;
+    }
+    
+    #familia-producto section#productos.relacionados {
+        padding: 30px 0;
+        height: 100%;
+        display: block;
+        position: relative;
+        margin-bottom: 0;
+        min-height: 1300px;
     }
 
 }

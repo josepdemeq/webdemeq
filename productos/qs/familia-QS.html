@@ -35,13 +35,14 @@
 
   </head>
   <body onload="myFunction()">
-    <div id="mybutton" class="cel feedback">
+
+    <div id="mybutton" class="cel whats">
       <a href="https://api.whatsapp.com/send?phone=+5491133306728" target="_blank">
         <img src="../../img/whatsapp.svg" alt="">
       </a>
       </div>
     <div id="loading"></div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div class="container text-center">
       <button class="navbar-toggler larr" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="#navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
@@ -85,14 +86,18 @@
     <header class="bg-dark">
       <div class="container-fluid fam fam-QS bg-overlay bg-qs">
         <div class="container titulo-seccion">
-          <div class="row titulo-familia">
-            <img src="../../img/fam-icons/QS-ico.svg" alt="">
-            <h2>Familia QS</h2>
-            <h4 class="italic">Medidores de Espesores de Pared por Ultrasonido</h4>
-            <h6>Los medidores de espesores de la serie QS son herramientas versátiles y fáciles de usar, con solo apoyar el sensor tendrá mediciones rápidas y precisas. Ideales para medir tanques o caños de cualquier metal, plástico, vidrio o cerámica incluso en piezas pintadas.</h6>
-          </div>
-          <div class="row col col-lg-4 img-familia">
-            <img src="../../img/carrousel/qs5.png" alt="">
+          <div class="row align-self-center">
+            <div class="col col-lg-7 my-auto titulo-familia">
+              <div class="row">
+                <img src="../../img/fam-icons/QS-ico.svg" alt="">
+                <h2>Familia QS</h2>
+              </div>
+              <h4 class="italic">Medidores de Espesores de Pared por Ultrasonido</h4>
+              <h6>Los medidores de espesores de la serie QS son herramientas versátiles y fáciles de usar, con solo apoyar el sensor tendrá mediciones rápidas y precisas. Ideales para medir tanques o caños de cualquier metal, plástico, vidrio o cerámica incluso en piezas pintadas.</h6>
+            </div>
+            <div class="col col-lg-5 my-auto img-familia">
+              <img src="../../img/productos/familia-QH.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +106,7 @@
       <nav class="navbar navbar-expand-sm bg-qs-c sticky-top second-nav">
         <ul class="container navbar-nav">
             <li class="nav-item col col-4 text-center">
-                <a class="nav-link link-negro" href="#QS5">
+                <a class="nav-link link-negro punta-inicio" href="#QS5">
                   <span class="serie-txt-dot">Serie QS5</span>
                   <span class="text-center">
                     <span class="dot"></span>
@@ -110,7 +115,7 @@
                   </span>
                 </a>
             </li>
-            <li class="nav-item col col-4 text-center lines-negro">
+            <li class="nav-item col col-4 text-center">
                 <a class="nav-link link-negro" href="#QS3">
                   <span class="serie-txt-dot">Serie QS3</span>
                   <span class="text-center">
@@ -120,7 +125,7 @@
                 </a>
             </li>
             <li class="nav-item col col-4 text-center">
-                <a class="nav-link link-negro" href="#QS2">
+                <a class="nav-link link-negro punta-fin" href="#QS2">
                   <span class="serie-txt-dot">Serie QS2</span>
                   <span class="text-center">
                     <span class="dot"></span>
@@ -300,20 +305,20 @@
           </div>
         </div>
       <div class="modal-prod product-mobile">  
-        <button type="button" class="btn btn-block btn-producto btn-lg bg-qs" data-toggle="modal" data-target="#modalQS5">
+        <div class="btn btn-producto bg-qs">
           <div class="container">
             <div class="row">
               <div class="col my-auto">
                 <h2>Serie QS5</h2>
                 <h4>Medidor de Espesores y Corrosión por Ultrasonido</h4>
-                <div class="btn btn-blanco">Ver más</div>
+                <button type="button" class="btn btn-blanco" data-toggle="modal" data-target="#modalQS5">Ver más</button>
               </div>
               <div class="col">
                 <img src="../../img/carrousel/qs5.png" alt="...">
               </div>
             </div>
           </div>
-        </button>
+        </div>
   
         <div class="modal fade modal-fullscreen" id="modalQS5" tabindex="-1" role="dialog" aria-labelledby="modalLargeLabel">
           <div class="modal-dialog" role="document">
@@ -615,20 +620,20 @@
 
         
       <div class="modal-prod product-mobile">  
-        <button type="button" class="btn btn-block btn-producto btn-lg bg-qs" data-toggle="modal" data-target="#modalQS3">
+        <div class="btn btn-producto bg-qs">
           <div class="container">
             <div class="row">
               <div class="col my-auto">
                 <h2>Serie QS3</h2>
                 <h4>Medidor de Espesores por Ultrasonido</h4>
-                <div class="btn btn-blanco">Ver más</div>
+                <button type="button" class="btn btn-blanco" data-toggle="modal" data-target="#modalQS3">Ver más</button>
               </div>
               <div class="col">
                 <img src="../../img/carrousel/qs5.png" alt="...">
               </div>
             </div>
           </div>
-        </button>
+        </div>
   
         <div class="modal fade modal-fullscreen" id="modalQS3" tabindex="-1" role="dialog" aria-labelledby="modalLargeLabel">
           <div class="modal-dialog" role="document">
@@ -865,19 +870,19 @@
 
         
         <div class="modal-prod product-mobile">  
-          <button type="button" class="btn btn-block btn-producto btn-lg bg-qs" data-toggle="modal" data-target="#modalQS2">
+          <div class="btn btn-producto bg-qs">
             <div class="container">
               <div class="row">
                 <div class="col my-auto">
                   <h2>Serie QS2</h2>
                   <h4>Medidor de Espesores Decimal por Ultrasonido</h4>
-                  <div class="btn btn-blanco">Ver más</div>
+                  <button type="button" class="btn btn-blanco" data-toggle="modal" data-target="#modalQS2">Ver más</button>
                 </div>
                 <div class="col">
                   <img src="../../img/carrousel/qs5.png" alt="...">
                 </div></div>
             </div>
-          </button>
+          </div>
     
           <div class="modal fade modal-fullscreen" id="modalQS2" tabindex="-1" role="dialog" aria-labelledby="modalLargeLabel">
             <div class="modal-dialog" role="document">
@@ -1023,6 +1028,7 @@
                    </div>
                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1180,6 +1186,10 @@
           </div>
         </div>
       </footer>
+      <button onclick="topFunction()" id="myBtn" title="Go to top" class="myBtn">
+        <svg class="st-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.77 28.65"><defs></defs><g><g><path class="cls" d="M20.65,12.32,31.51,28.65h8.26L21.16.68a1.53,1.53,0,0,0-2.55,0L0,28.65H8.26L19.12,12.32A.92.92,0,0,1,20.65,12.32Z"/></g></g></svg>
+      </button>
+
 
     <!-- Optional JavaScript -->
     <!-- PRELOADER -->
