@@ -27,7 +27,7 @@ $(function () {
   $(window).scroll(function () { 
       var scroll = $(window).scrollTop(); 
 
-      if (scroll >= 50) { 
+      if (scroll >= 1) { 
         whatsapp.removeClass('whats') 
                   .addClass("whats-scroll"); 
       } else { 
