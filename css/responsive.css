@@ -467,18 +467,52 @@
     }
 
     .svg-icon.ajuste {
-        margin: 7px auto auto 7px;
+        margin: 6px auto auto 5px;
     }
 
     .svg-icon.ajuste2 {
-        padding: 12px;
+        padding: 10px;
+    }
+    
+    .svg-icon.ajuste4 {
+        margin: 0 auto auto 2px;
     }
 
-    .svg-icon.qh-icon.ajuste2 {
+    .svg-icon.qh-icon.ajuste2,   .svg-icon.qc-icon.ajuste2 {
         width: 80%;
         height: 80%;
         padding: 5px;
         margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .svg-icon.qc-icon.ajuste3 {
+        width: 85%;
+        height: 85%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .svg-icon.qh-icon.ajuste3 {
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .svg-icon.qh-icon.ajuste4 {
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+    
+    .svg-icon.qb-icon {
+        margin-top: 0;
+    }
+
+    .svg-icon.qb-icon.ajuste3 {
+        margin-top: 2px;
+    }
+
+    .svg-icon.qb-icon.ajuste4 {
         margin-left: 5px;
     }
 
@@ -757,11 +791,19 @@
     }
 
     .barra-qs {
-        border-bottom: 8px solid rgb(250,233,41);
+        border-bottom: 8px solid rgb(205,176,41);
     }
 
     .barra-qh {
-        border-bottom: 8px solid rgb(209,0,0);
+        border-bottom: 8px solid rgb(139,28,33);
+    }
+
+    .barra-qc {
+        border-bottom: 8px solid rgb(0,113,184);
+    }
+
+    .barra-qb {
+        border-bottom: 8px solid rgb(57,163,143);
     }
 
     .modal-prod .modal-body .row {
@@ -855,7 +897,7 @@
     
     .whats-scroll {
          position: fixed;
-         bottom: 80px;
+         bottom: 100px;
          right: 10px;
          z-index: 10;
          background-color : #25d366;
