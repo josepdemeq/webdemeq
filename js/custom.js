@@ -24,37 +24,39 @@ function topFunction() {
 
 // ---- Nav
 
-$(function () { 
-  var navbar = $(".navbar-brand"); 
-  $(window).scroll(function () { 
-      var scroll = $(window).scrollTop(); 
-
-      if (scroll >= 50) { 
-        navbar.removeClass('navbar-brand') 
-                  .addClass("navbar-brand-scroll"); 
-      } else { 
-        navbar.removeClass("navbar-brand-scroll") 
-                  .addClass('navbar-brand'); 
-      } 
+$(document).ready(function(){
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+     $('.counter').html(scrollTop);
+    
+    if (scrollTop >= 100) {
+      $('#global-nav').addClass('scrolled-nav');
+    } else if (scrollTop < 100) {
+      $('#global-nav').removeClass('scrolled-nav');
+    } 
+    
   }); 
+  
 });
+
 
 // ---- Botón Whatsapp
 
 $(function () { 
-  var whatsapp = $(".whats"); 
+  var mail = $(".whats"); 
   $(window).scroll(function () { 
       var scroll = $(window).scrollTop(); 
 
       if (scroll >= 790) { 
-        whatsapp.removeClass('whats') 
+        mail.removeClass('whats') 
                   .addClass("whats-scroll"); 
       } else { 
-        whatsapp.removeClass("whats-scroll") 
+        mail.removeClass("whats-scroll") 
                   .addClass('whats'); 
       } 
   }); 
-});
+});  
 
 // ---- Botón Mail
 
@@ -72,3 +74,22 @@ $(function () {
       } 
   }); 
 });  
+
+// ---- Nav-productos
+
+$(function () { 
+  var second = $(".second-nav"); 
+  $(window).scroll(function () { 
+      var scroll = $(window).scrollTop(); 
+
+      if (scroll >= 540) { 
+        second.removeClass('second-nav') 
+                  .addClass("second-nav-scroll"); 
+      } else { 
+        second.removeClass("second-nav-scroll") 
+                  .addClass('second-nav'); 
+      } 
+  }); 
+});  
+
+

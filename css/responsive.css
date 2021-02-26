@@ -272,7 +272,7 @@
 
     .navbar-collapse {
         position: fixed;
-        top: 54px;
+        top: 60px;
         left: 0;
         padding-left: 15px;
         padding-right: 15px;
@@ -522,6 +522,55 @@
 
 @media (max-width: 768px) {
 
+    /*--- NAV ---*/
+
+    #global-nav {
+        line-height: 0 !important;
+        height: 50px !important;
+        position: fixed;
+        top: 0;
+        z-index: 2000;
+        width: 100%;
+        color: #fff;
+        padding: .5rem 1rem;
+      }
+    
+    .scrolled-nav {
+        line-height: 0 !important;
+        height: 50px!important;
+      }
+
+    .navbar-brand {
+        display: inline-block;
+        width: 70px !important;;
+        height:auto;
+        vertical-align: top;
+        padding-top: 0;
+    }
+    
+    .scrolled-nav .navbar-brand {
+        display: inline-block;
+        width: 70px;
+        height:auto;
+        vertical-align: top;
+        padding-top: 0;
+    }
+    
+    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active, .navbar-nav:hover .nav-link.active, .navbar-nav:hover .nav-link:hover.active {
+        line-height: 27px!important;
+    }
+    
+    .navbar-collapse {
+        top: 50px!important;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .carousel-index {
+        padding: 0 !important;
+        height: 100%;
+        margin: 50px 0 0 0;
+    }
+
     .container, .container-md, .container-sm {
         max-width: 720px;
         margin-right: -15px;
@@ -532,6 +581,14 @@
         padding: 0;
         margin-left: auto;
         margin-right: auto;
+        display: contents;
+    }
+
+    .second-nav.navbar .container {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: contents;
     }
 
     .product-pc {
@@ -680,11 +737,13 @@
     /*--- PRODUCTOS ---*/
 
     .productos.bg-overlay, .titulo-seccion {
-        height: 300px;
+        height: 340px;
     }
 
     .fam .titulo-seccion {
         height: 650px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .fam img {
@@ -824,7 +883,18 @@
     }
 
     #familia-producto section#productos.relacionados {
-        padding: 80px 10px 0;
+        padding: 60px 20px;
+    }
+
+    section#productos.relacionados .card-deck {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    section#productos.relacionados .ttl-rel {
+        border-bottom: 8px solid rgb(205,176,41);
+        margin-bottom: 40px;
+        margin: 0 10px 40px;
     }
 
     #familia-producto section.quokka {
@@ -873,16 +943,17 @@
     /*--- BTN WHATSAPP ---*/
     
     .whats svg, .whats-scroll svg{
-        width: 35px;
+        width: 36px;
         height: auto;
         fill: #fff;
+        padding-left: 1px;
     }
     
    .whats {
         position: fixed;
         bottom: 10px;
         right: 10px;
-        z-index: 10;
+        z-index: 100;
         background-color : #25d366;
         padding: 10px;
         border-radius: 50px;
@@ -897,9 +968,9 @@
     
     .whats-scroll {
          position: fixed;
-         bottom: 100px;
+         bottom: 110px;
          right: 10px;
-         z-index: 10;
+         z-index: 100;
          background-color : #25d366;
          padding: 10px;
          border-radius: 50px;
@@ -910,6 +981,9 @@
          transition: bottom 0.3s ease-in-out;
  
      }
+    
+
+     /*--- HEADER ---*/
 
     header {
         z-index: 200;
@@ -921,12 +995,12 @@
         height: 100vh;
     }
 
-    .lema {
-        padding: 40px 10px 60px;
+    .lema.pc {
+        padding:0;
     }
 
-    .lema .mb-5 {
-        margin-bottom: 0!important;
+    .lema.cel {
+        margin:10px 0 40px;
     }
     
     .lema h1 {
@@ -940,6 +1014,7 @@
 
     #carouselInicio {
         height: 95%;
+        margin-top: 30px;
     }
 
     .carousel-item .row {
@@ -969,7 +1044,7 @@
     }
 
     .carousel-indicators {
-        bottom: 60px;
+        bottom: 5px;
     }
 
     /*--- DESTACADOS ---*/
@@ -1057,6 +1132,7 @@
 
     .titulo-seccion {
         padding: 20px 0;
+        margin-top: 50px;
     }
 
     .fam .titulo-seccion {
@@ -1095,6 +1171,11 @@
     .second-nav .nav-link {
         display: block;
         padding: 10px 0 0;
+    }
+
+    .second-nav-scroll .nav-link {
+        display: block;
+        padding: 5px 0 3px;
     }
 
     .second-nav a {
@@ -1161,6 +1242,10 @@
         font-weight: normal;
         font-style: italic;
         margin-bottom: 10px;
+    }
+
+    section#productos.relacionados .ttl-rel {
+        margin: 0 0 40px;
     }
 
 
