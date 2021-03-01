@@ -26,6 +26,11 @@ body {
 	z-index: 99999;
 }
 
+
+.demeq  {
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
 a {
 	color: #fff;
 	text-decoration: none;
@@ -1291,8 +1296,8 @@ footer {
 }
 
 .dot-icon {
-	width: 70px;
-	height: 70px;
+	width: 60px;
+	height: 60px;
 }
 
 .svg-icon {
@@ -1618,15 +1623,20 @@ footer {
 
   /* --- SERES ---*/
 
+  .scrll-sect  {
+	scroll-margin: 80px 0;
+}
 
+.cont-serie, .serie {
+	height: calc(100vh - 55px);
+}
 
 .serie .titulo-seccion {
     position: relative;
     height: 100%;
     display: flex;
     width: 100%;
-    margin-top: 80px;
-	padding: 40px 0;
+    margin-top: 30px;
 }
 
 
@@ -1657,21 +1667,27 @@ footer {
 }
 
 .serie .precio p {
-    margin-left: 20px;
+    margin-left: 30px;
     line-height: 0px;
     font-weight: 600;
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .serie .precio .btn-blanco {
     padding: 0.8rem 1.5rem 0.6rem;
 }
 
+/*-- NAV Series --*/
+
 .series .series-nav{
     top: 50px;
 	border-top: 2px solid #222;
 	border-bottom: 2px solid #222;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.series .series-nav.sticky-top{
+    z-index:2;
 }
 
 .series .series-nav .nav-link {
@@ -1681,12 +1697,194 @@ footer {
 	transition: all 0.3s ease-in-out;
 }
 
-.series.f-QS .series-nav .nav-link:hover {
+.series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
     color: rgb(205,176,41);
     border-top: 4px solid transparent;
     border-bottom: 4px solid rgb(205,176,41);
 	transition: all 0.3s ease-in-out;
+	outline: none;
 }
+
+.qs-activado .nav-link {
+    color: rgb(205,176,41) !important;
+    border-top: 0;
+    border-bottom: 4px solid rgb(205,176,41) !important;
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+#familia-producto.series .info-prod .col-lg-8 {
+    padding-right: 60px;
+}
+
+#familia-producto.series .info-prod h5 {
+	font-weight: 600;
+	border-bottom: 8px solid #fafafa;
+	margin-bottom: 20px;
+
+}
+
+#familia-producto.series.f-QS .info-prod h5 {
+	font-weight: 600;
+	border-bottom: 8px solid rgb(205,176,41);
+	margin-bottom: 40px;
+
+}
+
+
+#familia-producto.series .info-prod .bg-gris {
+    background: #111;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+	padding: 60px 30px 60px 0;
+	margin: 0 -30px 0 0;
+}
+
+#familia-producto.series .info-prod .bg-gris:before {
+    left: -999em;
+    background:  #111;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+}
+
+.scrll-sect {
+	margin-bottom: 60px;
+}
+/*-- Tabla Modelos --*/
+#familia-producto.series .info-prod .table {
+    color: #fff;
+}
+
+#familia-producto.series .info-prod .table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: none;
+}
+
+#familia-producto.series .info-prod .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #333;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255,255,255,.05);
+}
+
+.svg-icon.ajuste5 {
+	width: 85%;
+    height: 85%;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+  
+.nombre-modelo {
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 22px;
+}
+
+.dot-table {
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	display: block; 
+    margin: auto;
+  }
+
+.dot-false {
+	background: transparent;
+	border: 3px solid #fff;
+	height: 24px;
+	width: 24px;
+  }
+
+
+/*-- ESpecificaciones --*/
+
+.espec {
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.espec h6 {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*--Listo para usar --*/
+
+.mas-videos {
+	margin-top: 40px;
+}
+
+/*-- accesorios --*/
+
+#accesorios .accesorio-uno{
+	border-bottom: 1px solid #333;
+}
+
+#accesorios .accesorio-uno h6{
+	font-size: 20px;
+}
+
+#accesorios .accesorio-uno img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fff;
+	padding: 10px;
+}
+
+
+#accesorios .accesorio-uno .texto-acc{
+	padding: 20px 0 0;
+}
+
+/*-- Certificaciones --*/
+
+#certificaciones .cert-uno {
+	border-bottom: 1px solid #555;
+	padding: 20px 0;
+}
+
+#certificaciones .cert-uno  img{
+	width: 100%;
+	max-width: 80px;
+}
+
+#certificaciones .cert-uno  h6{
+	font-size: 24px;
+	font-weight: 600;
+}
+
+#certificaciones .cert-uno  p{
+	margin-bottom: 0;
+}
+
+#certificaciones .cert-uno  a{
+	margin: 20px 0 10px;
+}
+
+#familia-producto.series.f-QS .info-prod .mas-cert {
+    font-weight: 600;
+    color:rgb(205,176,41);
+    margin: 60px 0 10px;
+	border: 0;
+}
+
+
+
+/*-- Info destacada --*/
 
 .series .info-destacada {
     background: #222;
@@ -1698,10 +1896,10 @@ footer {
 
 .series .info-destacada.dest-qs {
 	background: rgb(205,176,41);
-	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(34,34,34,1) 50%);
-	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(34,34,34,1) 50%);
-	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(34,34,34,1) 50%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#222222",GradientType=1);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#111111",GradientType=1);
     border-top: 1px solid #222;
 }
 
@@ -1709,19 +1907,21 @@ footer {
 	top: 140px;
 	height: fit-content;
 	margin-bottom: 60px;
+    z-index: 1;
 }
 
 .series .info-destacada .fam-icon {
     width: 50px;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     float: left;
 }
 
-.series .info-destacada h5 {
+.series .info-destacada h3 {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	line-height: 50px;
 }
 
 .series .info-destacada p {
@@ -1731,6 +1931,7 @@ footer {
 .series .info-destacada .img-container img {
 	width: 100%;
 	margin-bottom: 20px;
+	outline: none;
 }
 
 
@@ -1762,5 +1963,3 @@ footer {
 	font-size: 20px;
 
 }
-
-
