@@ -1156,7 +1156,7 @@ footer {
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	letter-spacing: 1px;
-
+	border-bottom: 4px solid transparent;
 }
 
 .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
@@ -1178,8 +1178,6 @@ footer {
 .punta-fin {
 	border-right: none !important;
 }
-  
- 
 
 .link-negro .dot {
 	height: 15px;
@@ -1210,6 +1208,7 @@ footer {
 	  background-color: #000;
 	  border-left: 1px solid #000;
 	  border-right: 1px solid #000;
+	  border-bottom: 4px solid rgb(205,176,41) !important;
   
   }
 
@@ -1710,6 +1709,11 @@ footer {
     border-top: 0;
     border-bottom: 4px solid rgb(205,176,41) !important;
 	transition: all 0.3s ease-in-out;
+	background: #000;
+}
+
+.qs-activado .nav-link .dot {
+    background: rgb(205,176,41) !important;
 }
 
 
@@ -1962,4 +1966,8 @@ footer {
 	padding: 0 20x;
 	font-size: 20px;
 
+}
+
+.foot {
+	display: none;
 }
