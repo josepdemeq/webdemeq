@@ -93,41 +93,6 @@ $(function () {
 });  
 
 
-// ---- Nav serie active on click
-
-var sections = $('section')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
-
-$(window).on('scroll', function () {
-  var cur_pos = $(this).scrollTop();
-  
-  sections.each(function() {
-    var top = $(this).offset().top - nav_height -100,
-        bottom = top + $(this).outerHeight();
-    
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('li').removeClass('qs-activado');
-      sections.removeClass('qs-activado');
-      
-      $(this).addClass('qs-activado');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').parent("li").addClass('qs-activado');
-    }
-  });
-});
-
-nav.find('a').on('click', function () {
-  var $el = $(this)
-    , id = $el.attr('href');
-  
-  $('html, body').animate({
-    scrollTop: $(id).offset().top
-  }, 500);
-  
-  return false;
-});
-
-
 // ---- Slide up Serie Destacado
 
 $(document).ready(function() {
@@ -149,4 +114,39 @@ $(document).ready(function () {
   $("nav").find("li").on("click", "a", function () {
       $('.navbar-collapse.show').collapse('hide');
   });
+});
+
+
+// ---- Nav serie active on click
+
+var sections = $('section')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height -100,
+        bottom = top + $(this).outerHeight();
+    
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('li').removeClass('activado');
+      sections.removeClass('activado');
+      
+      $(this).addClass('activado');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').parent("li").addClass('activado');
+    }
+  });
+});
+
+nav.find('a').on('click', function () {
+  var $el = $(this)
+    , id = $el.attr('href');
+  
+  $('html, body').animate({
+    scrollTop: $(id).offset().top
+  }, 500);
+  
+  return false;
 });

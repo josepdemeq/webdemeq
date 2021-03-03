@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+
+.bg-qb {
+	background: rgb(57,163,143);
+	background: linear-gradient(0deg, rgba(57,163,143,1) 0%, rgba(57,163,143,0) 40%);
+    border-top: 1px solid #000;
+}
+
+.fam-QB.bg-qb {
+	background: rgb(57,163,143);
+	background: linear-gradient(0deg, rgba(57,163,143,1) 0%, rgba(57,163,143,0) 40%);
+}
+
+.series7 .fam-QB.bg-qb {
+	background: rgb(57,163,143);
+	background: linear-gradient(0deg, rgba(57,163,143,1) 0%, rgba(57,163,143,0) 80%);
+}
+
+
+/*- QB Series -*/
+
+.bg-qb-c {
+	background: rgb(57,163,143);
+	padding: 0;
+}
+
+.svg-icon.qb-icon {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	margin-top: 1px;
+}
+
+.svg-icon.qb-icon.ajuste {
+	width: 80%;
+	height: 80%;
+	padding: 5px;
+	margin-top: 6px;
+}
+
+.svg-icon.qb-icon.ajuste3 {
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.svg-icon.qb-icon.ajuste4 {
+    width: 80%;
+    height: 80%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 7px;
+}
+
+.qb-icon path, .qb-icon rect, .qb-icon circle, .qb-icon polygon {
+	fill: #fff;
+ }
+
+  .bg-qb-icon {
+	background: rgb(57,163,143);
+	background: -moz-linear-gradient(45deg, rgba(11,97,80,1) 0%, rgba(85,176,159,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(11,97,80,1) 0%, rgba(85,176,159,1) 100%);
+	background: linear-gradient(45deg, rgba(11,97,80,1) 0%, rgba(85,176,159,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b6150",endColorstr="#55b09f",GradientType=1);
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+	border-radius: 50% 50%;
+  }
+
+.txt-qb {
+	color:#39a38f;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+    
+    .svg-icon.qb-icon {
+        margin-top: 0;
+    }
+
+    .svg-icon.qb-icon.ajuste3 {
+        margin-top: 2px;
+    }
+
+    .svg-icon.qb-icon.ajuste4 {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .barra-qb {
+        border-bottom: 8px solid rgb(57,163,143);
+    }
+}
+

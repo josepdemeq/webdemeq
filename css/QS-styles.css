@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.bg-qs {
+	background: rgb(205,176,41);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 50%);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#000000",GradientType=1);
+    border-top: 1px solid #000;
+}
+
+.txt-qs {
+	color:#fae929;
+}
+
+
+
+/*--- FAMILIAS PRODUCTOS ---*/
+
+/*- Headers -*/
+
+
+.QST.bg-qst {
+	background: rgb(0,80,133);
+	background: linear-gradient(0deg, rgba(238,254,94,1) 0%, rgba(238,254,94,0) 40%);
+}
+
+.QSV.bg-qsv {
+	background: rgb(0,80,133);
+	background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(252,209,42,0) 40%);
+}
+
+/*- NAV familia -*/
+  
+#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+	  color: #fff;
+	  transition: 0.3s all ease-in-out;
+	  background-color: #000;
+	  border-left: 1px solid #000;
+	  border-right: 1px solid #000;
+	  border-bottom: 4px solid rgb(205,176,41) !important;
+  
+}
+  
+#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+	color: rgb(205,176,41);
+	transition: 0.3s all ease-in-out;
+	background-color: #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 4px solid rgb(205,176,41) !important;
+
+}
+
+#familia-producto nav a.link-negro:hover .dot, #familia-producto nav a.link-blanco:hover {
+  background-color: #fff;
+}
+
+
+/*- Familia producto section -*/
+
+  
+#QS5, #QS3, #QS2  {
+	scroll-margin: 80px 0;
+}
+
+
+.bg-qs-c {
+	background: rgb(205,176,41);
+	transition: all 0.3s ease-in-out;
+}
+
+.second-nav-scroll.bg-qs-c {
+	background: rgba(0,0,0,1);
+	padding: 0;
+}
+
+.second-nav-scroll.bg-qs-c.navbar-expand-sm .navbar-nav .nav-link.link-negro {
+    color: #fff;
+	font-weight: normal;
+
+}
+
+.second-nav-scroll.bg-qs-c .link-negro .dot {
+	background-color: #fff;
+  }
+  
+#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+    background-color: #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 4px solid rgb(205,176,41) !important;
+
+}
+
+#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+  background-color: #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 4px solid rgb(205,176,41) !important;
+
+}
+
+
+.qs-icon path {
+	fill: #000;
+ }
+
+  .bg-qs-icon {
+	background: rgb(219,162,52);
+	background: -moz-linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,230,33,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,230,33,1) 100%);
+	background: linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,230,33,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dba234",endColorstr="#fce621",GradientType=1);
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+	border-radius: 50% 50%;
+  }
+
+#familia-producto section#productos.relacionados {
+    padding: 80px 0 0 0;
+}
+
+.ttl-rel {
+	border-bottom: 8px solid rgb(205,176,41);
+	margin-bottom: 40px;
+}
+
+#productos.relacionados h4 {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+}
+
+#productos.relacionados .card-block {
+    margin-bottom: 160px;
+}
+
+
+/*-- NAV Series --*/
+
+
+.series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+    color: rgb(205,176,41);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid rgb(205,176,41);
+	transition: all 0.3s ease-in-out;
+	outline: none;
+}
+
+.activado .nav-link {
+    color: rgb(205,176,41) !important;
+    border-top: 0;
+    border-bottom: 4px solid rgb(205,176,41) !important;
+	transition: all 0.3s ease-in-out;
+	background: #000;
+}
+
+.activado .nav-link .dot {
+    background: rgb(205,176,41) !important;
+}
+
+#familia-producto.series.f-QS .info-prod h5 {
+	font-weight: 600;
+	border-bottom: 8px solid rgb(205,176,41);
+
+}
+
+#accesorios .accesorio-uno .texto-acc{
+	padding: 20px 0 0;
+}
+
+/*-- Certificaciones --*/
+
+#familia-producto.series.f-QS .info-prod .mas-cert {
+    font-weight: 600;
+    color:rgb(205,176,41);
+    margin: 60px 0 10px;
+	border: 0;
+}
+
+
+
+/*-- Info destacada --*/
+
+
+.series .info-destacada.dest-qs {
+	background: rgb(205,176,41);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#111111",GradientType=1);
+    border-top: 1px solid #222;
+}
+
+.series .info-destacada .btn-blanco.btn-qs {
+	color: #000;
+    background-color: rgb(205,176,41);
+    border: 2px solid rgb(205,176,41);
+	margin-bottom: 15px;
+}
+.series .info-destacada .btn-blanco.btn-qs.btn-qs:hover, .series .info-destacada .btn-blanco.btn-qs.btn-qs:active, .btn-qs:focus {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);   
+	transition: all 0.3s ease-in-out;
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+
+    #familia-producto.series .info-prod h5 {
+        margin-bottom: 20px;
+
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #QS5, #QS3, #QS2  {
+        scroll-margin: 100px 0;
+    }
+
+    .barra-qs {
+        border-bottom: 8px solid rgb(205,176,41);
+    }
+
+    .icon-bar.bg-qs-c {
+        background-color: rgb(205,176,41) !important;
+    }
+
+    .foot .info-destacada {
+        vertical-align: middle;
+        margin: auto;
+    }
+
+    .foot.dest-qs {
+        background: rgb(205,176,41);
+        background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 50%);
+        background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 50%);
+        background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#000",GradientType=1);
+        border-top: 1px solid #000;
+    }
+
+    .dest-btn-up.bg-qs {
+        background: rgb(205,176,41) !important;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        color: #000;
+        font-weight: 600;
+        border-top: 2px solid rgb(205,176,41) !important;
+        position: absolute;
+        top: -1px;
+        width: 100%;
+        left: 0;
+        box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+    }
+
+    .slide-up .dest-btn-up.bg-qs {
+        background: #000 !important;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: #fff;
+        border-top: none !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .foot .info-destacada .btn-blanco.btn-qs {
+        color: #000;
+        background-color: rgb(205,176,41);
+        border: 2px solid rgb(205,176,41);
+        margin-bottom: 10px;
+        padding: 0.5rem;
+    }
+	
+    .foot .info-destacada .btn-blanco.btn-qs.btn-qs:hover, .foot .info-destacada .btn-blanco.btn-qs.btn-qs:active, .btn-qs:focus {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);   
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-second {
+        color: rgb(205,176,41);
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-left: 30px;
+        margin-top: -15px;
+        font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+
+    .icon-bar.bg-qs-c {
+        background-color: rgb(205,176,41) !important;
+    }
+}

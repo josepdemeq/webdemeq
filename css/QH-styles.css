@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.bg-qh {
+	background: rgb(209,0,0);
+	background: rgb(139,28,33);
+	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
+    border-top: 1px solid #000;
+}
+
+.txt-qh {
+	color:#ed1c24;
+}
+
+.carousel-item, .carousel-item .bg-qh {
+	height: 100%;
+	vertical-align: middle;
+}
+
+.series7 .fam-QH.bg-qh {
+	background: rgb(139,28,33);
+	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);
+	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);
+	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
+}
+
+#QH7, #QH5, #QH5U, #QH2  {
+	scroll-margin: 80px 0;
+}
+
+
+/*- QH Series -*/
+
+.bg-qh-c {
+	background: rgb(139,28,33);
+	transition: all 0.3s ease-in-out;
+}
+
+.second-nav-scroll.bg-qh-c {
+	background: rgb(0,0,0);
+	padding: 0;
+}
+
+
+.svg-icon.qh-icon {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	margin-top: 1px;
+}
+
+.svg-icon.qh-icon.ajuste {
+	width: 80%;
+	height: 80%;
+	padding: 5px;
+	margin-top: 6px;
+}
+
+.svg-icon.qh-icon.ajuste2 {
+	width: 80%;
+	height: 80%;
+	padding: 5px;
+	margin-top: 6px;
+	margin-left: 7px;
+}
+
+.svg-icon.qh-icon.ajuste3 {
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+
+.svg-icon.qh-icon.ajuste4 {
+    width: 80%;
+    height: 80%;
+    padding: 5px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.qh-icon path, .qh-icon rect, .qh-icon circle, .qh-icon polygon {
+	fill: #fff;
+ }
+
+.bg-qh-icon {
+	background: rgb(209,0,0);
+	background: -moz-linear-gradient(45deg, rgba(209,0,0,1) 0%, rgba(237,28,36,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(209,0,0,1) 0%, rgba(237,28,36,1) 100%);
+	background: linear-gradient(45deg, rgba(209,0,0,1) 0%, rgba(237,28,36,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d10000",endColorstr="#ed1c24",GradientType=1);
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+	border-radius: 50% 50%;
+}
+
+.f-QH .btn-default {
+	  color: #fff;
+}
+
+  
+.svg-icon.qh-icon.ajuste2 {
+	width: 80%;
+	height: 80%;
+	padding: 5px;
+	margin-top: 6px;
+	margin-left: 7px;
+}
+
+
+  
+#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+    background-color: #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 4px solid rgb(209,0,0) !important;
+
+}
+
+#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+  background-color: #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 4px solid rgb(209,0,0) !important;
+
+}
+
+.activado .nav-link {
+    color: rgb(209,0,0) !important;
+    border-top: 0;
+    border-bottom: 4px solid rgb(209,0,0) !important;
+	transition: all 0.3s ease-in-out;
+	background: #000;
+}
+
+.activado .nav-link .dot {
+    background: rgb(209,0,0) !important;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------ RESPONSIVE ------------------------------------------ */
+/*--------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+
+    .svg-icon.qh-icon.ajuste2 {
+        width: 80%;
+        height: 80%;
+        padding: 5px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    
+    .svg-icon.qh-icon.ajuste3 {
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .svg-icon.qh-icon.ajuste4 {
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 768px) {
+	
+    .barra-qh {
+        border-bottom: 8px solid rgb(139,28,33);
+    }
+	
+	#QH7, #QH5, #QH5U, #QH2  {
+		scroll-margin: 100px 0;
+	}
+}
+
+
+@media screen and (orientation:landscape) and (max-width: 768px) {
+ 
+    .carousel-item, .carousel-item .bg-qh {
+        height: 100%;
+        vertical-align: middle;
+        min-height: 400px;
+    }
+
+}
