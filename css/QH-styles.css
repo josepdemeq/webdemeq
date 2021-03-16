@@ -3,7 +3,6 @@
 
 
 .bg-qh {
-	background: rgb(209,0,0);
 	background: rgb(139,28,33);
 	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
 	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
@@ -51,7 +50,7 @@
 	width: 100%;
 	height: 100%;
 	padding: 5px;
-	margin-top: 1px;
+	margin-top: 0;
 }
 
 .svg-icon.qh-icon.ajuste {
@@ -59,14 +58,15 @@
 	height: 80%;
 	padding: 5px;
 	margin-top: 6px;
+    margin-left: 6px;
 }
 
 .svg-icon.qh-icon.ajuste2 {
 	width: 80%;
 	height: 80%;
 	padding: 5px;
-	margin-top: 6px;
-	margin-left: 7px;
+	margin-top: 4px;
+	margin-left: 5px;
 }
 
 .svg-icon.qh-icon.ajuste3 {
@@ -85,6 +85,7 @@
     margin-left: 5px;
 }
 
+
 .qh-icon path, .qh-icon rect, .qh-icon circle, .qh-icon polygon {
 	fill: #fff;
  }
@@ -102,15 +103,6 @@
 
 .f-QH .btn-default {
 	  color: #fff;
-}
-
-  
-.svg-icon.qh-icon.ajuste2 {
-	width: 80%;
-	height: 80%;
-	padding: 5px;
-	margin-top: 6px;
-	margin-left: 7px;
 }
 
 
@@ -147,6 +139,46 @@
     background: rgb(209,0,0) !important;
 }
 
+#familia-producto.series.f-QH .info-prod h5 {
+    font-weight: 600;
+    border-bottom: 8px solid rgb(209,0,0);
+}
+
+/*-- Certificaciones --*/
+
+#familia-producto.series.f-QH .info-prod .mas-cert {
+    font-weight: 600;
+    color:rgb(209,0,0);
+    margin: 60px 0 10px;
+	border: 0;
+}
+
+
+
+/*-- Info destacada --*/
+
+
+.series .info-destacada.dest-qh {
+	background: rgb(139,28,33);
+	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
+    border-top: 1px solid #222;
+}
+
+.series .info-destacada .btn-blanco.btn-qh {
+	color: #fff;
+    background-color: rgb(139,28,33);
+    border: 2px solid rgb(139,28,33);
+	margin-bottom: 15px;
+}
+
+.series .info-destacada .btn-blanco.btn-qs.btn-qh:hover, .series .info-destacada .btn-blanco.btn-qs.btn-qh:active, .btn-qh:focus {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);   
+	transition: all 0.3s ease-in-out;
+}
 
 
 

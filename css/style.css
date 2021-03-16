@@ -2,6 +2,11 @@
 /* CSS Document */
 
 /*---  Estilos Generales  ---*/
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+  }
 
 html {
 	scroll-behavior: smooth;
@@ -1020,6 +1025,12 @@ footer {
 	margin-right: 20px;
 }
 
+.fam .certificaciones img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
 .fam .titulo-familia h2 {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
@@ -1270,9 +1281,12 @@ footer {
     margin-top: 30px;
 }
 
-
 .serie .titulo-seccion .info-serie {
 	margin-top: 80px;
+}
+
+.series7 .serie .info-serie p {
+	margin-bottom: 40px;
 }
 
 .serie .img-series {
@@ -1282,10 +1296,29 @@ footer {
 }
 
 .serie .img-series img {
-	width: 100%;
+    width: 80%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+    max-width: -webkit-fill-available;
+    max-height: unset;
+}
+
+.series7 .serie .img-series img {
+	width: 80%;
 	height: auto;
     margin-right: 0;
     margin-bottom: 0;
+}
+
+.series7 .serie .precio {
+    display: flex;
+    background: #000;
+    border-radius: 50px;
+    padding: 4px;
+    width: 100%;
+    margin-top: 40px;
+    max-width: 700px;
 }
 
 .serie .precio {
@@ -1306,6 +1339,10 @@ footer {
 
 .serie .precio .btn-blanco {
     padding: 0.8rem 1.5rem 0.6rem;
+}
+
+.series7 .certificaciones .row {
+	margin: 0;
 }
 
 /*-- NAV Series --*/
