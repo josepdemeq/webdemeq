@@ -85,6 +85,14 @@
     margin-left: 5px;
 }
 
+.svg-icon.qh-icon.ajuste5 {
+    width: 85%;
+    height: 85%;
+    padding: 5px;
+    margin-top: 4px;
+    margin-left: 0px;
+}
+
 
 .qh-icon path, .qh-icon rect, .qh-icon circle, .qh-icon polygon {
 	fill: #fff;
