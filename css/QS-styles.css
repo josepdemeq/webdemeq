@@ -22,12 +22,12 @@
 /*- Headers -*/
 
 
-.QST.bg-qst {
+#productos .bg-qst {
 	background: rgb(0,80,133);
 	background: linear-gradient(0deg, rgba(238,254,94,1) 0%, rgba(238,254,94,0) 40%);
 }
 
-.QSV.bg-qsv {
+#productos .bg-qsv {
 	background: rgb(0,80,133);
 	background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(252,209,42,0) 40%);
 }

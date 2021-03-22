@@ -970,7 +970,7 @@ footer {
 .info-producto h6 {
 	font-style: italic;
 	margin-bottom: 15px;
-	font-size: 28px;
+	font-size: 26px;
 }
 
 .familia-prod img {
@@ -1470,7 +1470,7 @@ footer {
 
 .espec h6 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1572,6 +1572,8 @@ footer {
 
 .series .info-destacada p {
 	font-style: italic;
+	font-size: 22px;
+    line-height: normal;
 }
 
 
