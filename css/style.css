@@ -1282,10 +1282,10 @@ footer {
 }
 
 .serie .titulo-seccion .info-serie {
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
-.series7 .serie .info-serie p {
+.series7 .serie .info-serie p, .serie .info-serie p {
 	margin-bottom: 40px;
 }
 
@@ -1296,7 +1296,7 @@ footer {
 }
 
 .serie .img-series img {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-right: 0;
     margin-bottom: 0;
@@ -1305,8 +1305,8 @@ footer {
 }
 
 .series7 .serie .img-series img {
-	width: 80%;
-	height: auto;
+    width: 75%;
+    height: auto;
     margin-right: 0;
     margin-bottom: 0;
 }
@@ -1491,12 +1491,13 @@ footer {
 	font-size: 20px;
 }
 
-#accesorios .accesorio-uno img{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background: #fff;
-	padding: 10px;
+#accesorios .accesorio-uno img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    background: #fff;
+    padding: 10px;
+	overflow: hidden;
 }
 
 
@@ -1589,10 +1590,10 @@ footer {
 }
 
 .series7 .series .info-destacada .img-container img {
-    width: 100%;
+    width: auto;
     margin-bottom: 20px;
     outline: none;
-    max-height: unset;
+    max-height: 180px;
     text-align: center;
     margin: 20px auto;
 }

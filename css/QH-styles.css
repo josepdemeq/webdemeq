@@ -218,12 +218,90 @@
 @media (max-width: 768px) {
 	
     .barra-qh {
-        border-bottom: 8px solid rgb(139,28,33);
+        border-bottom: 8px solid rgb(209,0,0);
     }
 	
 	#QH7, #QH5, #QH5U, #QH2  {
 		scroll-margin: 100px 0;
-	}
+	}.foot .info-destacada {
+        vertical-align: middle;
+        margin: auto;
+    }
+
+    .foot.dest-qh {
+        background: rgb(139,28,33);
+        background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+        background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+        background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000",GradientType=1);
+        border-top: 1px solid #000;
+    }
+
+    .dest-btn-up.bg-qh {
+        background: rgb(139,28,33) !important;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        color: #fff;
+        font-weight: 600;
+        border-top: 2px solid rgb(139,28,33) !important;
+        position: absolute;
+        top: -1px;
+        width: 100%;
+        left: 0;
+        box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+    }
+
+    .slide-up .dest-btn-up.bg-qh {
+        background: #000 !important;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: #fff;
+        border-top: none !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .foot .info-destacada .btn-blanco.btn-qh {
+        color: #fff;
+        background-color: rgb(139,28,33);
+        border: 2px solid rgb(139,28,33);
+        margin-bottom: 10px;
+        padding: 0.5rem;
+    }
+	
+    .foot .info-destacada .btn-blanco.btn-qh.btn-qh:hover, .foot .info-destacada .btn-blanco.btn-qh.btn-qh:active, .btn-qh:focus {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);   
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-second {
+        color: rgb(209,0,0);
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-left: 30px;
+        margin-top: -15px;
+        font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+
+    .icon-bar.bg-qh-c {
+        background-color: rgb(209,0,0) !important;
+    }
+
+    .dest-btn-up .st-svg {
+        width: 20px;
+        height: auto;
+        fill: #fff !important;
+        margin-top: -5px;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 
