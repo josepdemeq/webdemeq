@@ -1627,3 +1627,35 @@ footer {
 .foot {
 	display: none;
 }
+
+
+/*--- COMPARATIVA ---*/
+
+.titulo-seccion.comparativa {
+    position: relative;
+    height: 600px;
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.titulo-seccion.comparativa h3 {
+    font-weight: 900;
+}
+
+.comparativa .img-familia img {
+    width: 65% !important;
+	height: auto !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: auto !important;
+    right: auto !important;
+    text-align: center !important;
+}
+
+.comparativa .img-familia {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
