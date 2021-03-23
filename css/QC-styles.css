@@ -217,6 +217,15 @@
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */
 /*--------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 1024px) {
+
+    #familia-producto.series .info-prod h5 {
+        margin-bottom: 20px;
+
+    }
+}
+
+
 @media (max-width: 992px) {
 
     .svg-icon.qc-icon.ajuste2 {
@@ -238,10 +247,152 @@
 }
 
 @media (max-width: 768px) {
-    
-    .barra-qc {
-        border-bottom: 8px solid rgb(0,113,184);
+
+    #QC5, #QC3, #QC2  {
+        scroll-margin: 100px 0;
     }
 
+    .barra-qc {
+        border-bottom: 8px solid rgb(20,113,184);
+    }
+
+    .icon-bar.bg-qc-c {
+        background-color: rgb(0,113,184) !important;
+    }
+
+    .foot .info-destacada {
+        vertical-align: middle;
+        margin: auto;
+    }
+
+    .foot.dest-qc {
+        background: rgb(0,113,184);
+        background: -moz-linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(0,0,0,1) 50%);
+        background: -webkit-linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(0,0,0,1) 50%);
+        background: linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(0,0,0,1) 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0071b8",endColorstr="#000",GradientType=1);
+        border-top: 1px solid #000;
+    }
+
+    .dest-btn-up.bg-qc {
+        background: rgb(0,113,184) !important;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        color: #000;
+        font-weight: 600;
+        border-top: 2px solid rgb(0,113,184) !important;
+        position: absolute;
+        top: -1px;
+        width: 100%;
+        left: 0;
+        box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px -3px 14px -1px rgba(0,0,0,0.75);
+    }
+
+    .slide-up .dest-btn-up.bg-qc {
+        background: #000 !important;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: #fff;
+        border-top: none !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        box-shadow: none;
+    }
+
+    .foot .info-destacada .btn-blanco.btn-qc {
+        color: #fff;
+        background-color: rgb(0,113,184);
+        border: 2px solid rgb(0,113,184);
+        margin-bottom: 10px;
+        padding: 0.5rem;
+    }
+	
+    .foot .info-destacada .btn-blanco.btn-qc.btn-qc:hover, .foot .info-destacada .btn-blanco.btn-qc.btn-qc:active, .btn-qc:focus {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3);   
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-second {
+        color: rgb(0,113,184);
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-left: 30px;
+        margin-top: -15px;
+        font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+    }
+
+    .icon-bar.bg-qc-c {
+        background-color: rgb(0,113,184) !important;
+    }
 }
 
+@media (max-width: 576px) {
+
+    .dest-btn-up.bg-qc {
+        top: -20px;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .foot {
+        bottom: -92%;
+    }
+
+    .slide-down {
+        bottom: -92% !important;
+    }
+
+    .dest-btn-up.bg-qc {
+        top: 0px;
+    }
+    
+    .foot.slide-up .info-destacada .img-container {
+        top: -18%;
+        left: -230%;
+    }
+    
+    .foot .info-destacada .img-container img {
+        height: 140%;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .foot.slide-up .info-destacada .col-12 {
+        width: 72% !important;
+        left: 25%;
+    }
+
+    .foot {
+        bottom: -92%;
+    }
+    
+    .slide-up .dest-btn-up {
+        padding: 0 20px;
+    }
+    
+    .dest-btn-up, .slide-down .dest-btn-up {
+        padding: 15px 0 20px;
+    }
+
+    .slide-down {
+        bottom: -92% !important;
+    }
+
+    .foot.slide-up .info-destacada .img-container {
+        top: -2%;
+        left: -160%;
+    }
+    
+    .foot .info-destacada .img-container img {
+        height: 110%;
+    }
+}

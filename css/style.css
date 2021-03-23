@@ -1039,8 +1039,14 @@ footer {
 }
 
 .fam .titulo-familia h4 {
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom: 20px;
+}
+
+.series7 .fam .titulo-familia h4 {
+	font-weight: normal;
+	margin-bottom: 20px;
+	padding-right: 130px;
 }
 
 /*- NAV familia -*/
