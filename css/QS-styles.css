@@ -172,8 +172,20 @@
 
 }
 
+#familia-producto.series .info-prod .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgb(143, 122, 30);
+}
+
+
 #accesorios .accesorio-uno .texto-acc{
 	padding: 20px 0 0;
+}
+
+.video-producto {
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
+    box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
 }
 
 /*-- Certificaciones --*/
@@ -192,11 +204,11 @@
 
 .series .info-destacada.dest-qs {
 	background: rgb(205,176,41);
-	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
-	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
-	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 50%);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 70%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 70%);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#111111",GradientType=1);
-    border-top: 1px solid #222;
+    border-top: none;
 }
 
 .series .info-destacada .btn-blanco.btn-qs {
@@ -217,6 +229,68 @@
 
 .fam-QS .titulo-seccion.comparativa h3 {
 	color: rgb(205,176,41);
+}
+
+.tr-border-qs {
+    border-top: 4px solid rgb(205,176,41);
+}
+
+.hor-grad-qs {
+    background: rgb(205,176,41);
+    background: -moz-linear-gradient(90deg, rgba(205,176,41,0.6) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(205,176,41,0.6) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(205,176,41,0.6) 0%, rgba(0,0,0,0) 100%);
+}
+
+#familia-producto.series .info-prod .table td.hor-grad-qs {
+    padding: 0;
+    vertical-align: middle;
+    border-top: none;
+    text-align: left;
+	position: relative;
+	width: 70px;
+}
+
+.hor-grad-qs img {
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.btn-tooltip:hover {
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 22px;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	color: rgb(205,176,41);
+}
+
+.tooltip .tooltip-inner {
+    background: rgb(205,176,41);
+    color: #000;
+  }
+
+  .comp thead tr:nth-child(1) th{ 
+    background: rgb(94,80,18);
+    background: -moz-linear-gradient(0deg, rgba(94,80,18,1) 0%, rgba(0,0,0,1) 10%);
+    background: -webkit-linear-gradient(0deg, rgba(94,80,18,1) 0%, rgba(0,0,0,1) 10%);
+    background: linear-gradient(0deg, rgba(94,80,18,1) 0%, rgba(0,0,0,1) 10%);
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+  }
+
+  .table-hover tbody tr:hover {
+    color: rgb(205,176,41);
+    background-color: rgba(94 80,18,0.2)!important;
 }
 
 /*--------------------------------------------------------------------------------------------------*/

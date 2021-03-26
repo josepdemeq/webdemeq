@@ -77,19 +77,6 @@
          width: 65px;
     }
 
-    .series .info-destacada .img-container {
-        max-height: 350px;
-        text-align: center;
-    }
-
-    .series .info-destacada .img-container img {
-        width: auto;
-        margin-bottom: 20px;
-        outline: none;
-        max-height: 350px;
-        text-align: center;
-        margin: 0 auto;
-    }
     
     /*--- SCROLL TOP ---*/
 
@@ -251,15 +238,6 @@
         height: auto;
         margin-right: 0;
         margin-bottom: 0;
-    }
-
-    .series7 .series .info-destacada .img-container img {
-        width: 100%;
-        margin-bottom: 20px;
-        outline: none;
-        max-height: unset;
-        text-align: center;
-        margin: 20px auto;
     }
 
 
@@ -467,10 +445,6 @@
         font-size: 15px;
     }
 
-    #accesorios .accesorio-uno img {
-        width: 80px;
-        height: 80px;
-    }
     
     .series .info-destacada.sticky-top {
         top: 120px;
@@ -499,15 +473,6 @@
         height: 100%;
         transition: all 0.3s ease-in-out;
         max-height: 500px !important;
-    }
-
-    .series .info-destacada .img-container img {
-        width: auto;
-        margin-bottom: 20px;
-        outline: none;
-        max-height: 500px;
-        text-align: center;
-        margin: 0 auto;
     }
 
     .series .info-destacada .col-12 {
@@ -661,8 +626,7 @@
         position: relative;
         z-index: 10;
         width: 49%;
-        display: inline-block;
-        vertical-align: top;
+        display: block;
         float: right;
     }
 
@@ -1510,17 +1474,18 @@
         padding: 10px 15px 0;
     }
 
-    #accesorios .accesorio-uno img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: #fff;
-        padding: 10px;
-    }
 
     #certificaciones .cert-uno img {
         max-width: 60px;
         margin-bottom: 20px;
+    }
+
+    #accesorios .accesorio-uno {
+        padding: 0 0 0 20px;
+    }
+
+    #accesorios .accesorio-uno .img-acc{
+        padding: 0;
     }
 
     /*-- Serie destacado --*/
@@ -1699,6 +1664,35 @@
         width: 100%;
         padding: 0 20px;
         font-size: 20px !important;
+    }
+    
+    .table-responsive-sm {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
+    .comparativa .img-familia img {
+        width: 100% !important;
+    }
+
+    
+    #familia-producto .comp .container, .card-datacenter .container {
+        margin: 0;
+    }
+
+    .card-datacenter .container {
+        text-align: center;
+    }
+
+    .card-datacenter .container .img-data{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .card-datacenter .container img{
+        width: 60%;
     }
 
 
@@ -2010,6 +2004,11 @@
         padding: 20px 25px;
     }
 
+
+    #accesorios .accesorio-uno, #accesorios .accesorio-uno .img-acc{
+        padding: 0;
+    }
+
     /*-- Serie destacado --*/
 
     .series .info-destacada.sticky-top {
@@ -2182,7 +2181,7 @@
     }
     
     #familia-producto section {
-        padding: 30px 20px;
+        padding: 30px 10px;
     }
     
     .whats svg, .whats-scroll svg {
@@ -2194,12 +2193,39 @@
     }
 
     #accesorios .accesorio-uno h6 {
-        font-size: 20px im !important;
+        font-size: 22px !important;
     }
     .fam .titulo-familia h2 {
         line-height: 1.4;
     }
 
+
+    /*-- Comparativa ---*/
+
+    .titulo-seccion.comparativa {
+        position: relative;
+        height: 600px;
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .comparativa .img-familia img {
+        width: 100% !important;
+    }
+
+    .card-datacenter .container {
+        text-align: left;
+    }
+
+    .card-datacenter .container .img-data{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .card-datacenter .container img{
+        width: 100%;
+    }
 
 }
 
@@ -2335,6 +2361,10 @@
     
     .fam .titulo-familia h2 {
         line-height: 1.7 !important;
+    }
+
+    .fam .titulo-seccion.comparativa {
+        height: 650px;
     }
 
 }

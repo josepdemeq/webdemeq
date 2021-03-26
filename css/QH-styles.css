@@ -93,6 +93,20 @@
     margin-left: 0px;
 }
 
+.svg-icon.qh-icon.ajuste6 {
+	width: 96%;
+	height: 96%;
+	padding: 5px;
+	margin-top: 4px;
+}
+
+.svg-icon.qh-icon.ajuste7 {
+	width: 97%;
+	height: 97%;
+	padding: 5px;
+	margin-top: 2px;
+    margin-left: 1px;
+}
 
 .qh-icon path, .qh-icon rect, .qh-icon circle, .qh-icon polygon {
 	fill: #fff;
@@ -112,7 +126,6 @@
 .f-QH .btn-default {
 	  color: #fff;
 }
-
 
   
 #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
@@ -152,6 +165,18 @@
     border-bottom: 8px solid rgb(209,0,0);
 }
 
+#familia-producto.series .info-prod .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgb(100, 20, 24);
+}
+
+
+.video-producto {
+    -webkit-box-shadow: 0px 0px 30px 1px rgba(139,28,33,0.5);
+    -moz-box-shadow: 0px 0px 30px 1px rgba(139,28,33,0.5);
+    box-shadow: 0px 0px 30px 1px rgba(139,28,33,0.5);
+}
+
 /*-- Certificaciones --*/
 
 #familia-producto.series.f-QH .info-prod .mas-cert {
@@ -168,11 +193,11 @@
 
 .series .info-destacada.dest-qh {
 	background: rgb(139,28,33);
-	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
-	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
-	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 70%);
+	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 70%);
+	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
-    border-top: 1px solid #222;
+    
 }
 
 .series .info-destacada .btn-blanco.btn-qh {
@@ -188,7 +213,82 @@
 	transition: all 0.3s ease-in-out;
 }
 
+/*--- COMPARATIVA ---*/
 
+
+.fam-QH .titulo-seccion.comparativa h3 {
+	color: rgb(209,0,0);
+}
+
+.tr-border-qh {
+    border-top: 4px solid rgb(139,28,33);
+}
+
+.hor-grad-qh {
+    background: rgb(139,28,33);
+    background: -moz-linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(0,0,0,0) 100%);
+}
+
+#familia-producto.series .info-prod .table td.hor-grad-qh {
+    padding: 0;
+    vertical-align: middle;
+    border-top: none;
+    text-align: left;
+    position: relative;
+    width: 70px;
+}
+
+.hor-grad-qh img {
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-tooltip:hover {
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 22px;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	color: rgb(209,0,0);
+}
+
+.tooltip .tooltip-inner {
+    background: rgb(209,0,0);
+    color: #fff;
+  }
+
+  .comp thead tr:nth-child(1) th{ 
+    background: rgb(99,0,0);
+    background: -moz-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(0,0,0,1) 10%);
+    background: -webkit-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(0,0,0,1) 10%);
+    background: linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(0,0,0,1) 10%);
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+  }
+  .comp.bg-gris thead tr:nth-child(1) th{ 
+    background: rgb(99,0,0);
+    background: -moz-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(17,17,17,1) 10%);
+    background: -webkit-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(17,17,17,1) 10%);
+    background: linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(17,17,17,1) 10%);
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+  }
+
+  .table-hover tbody tr:hover {
+    color: rgb(209,0,0);
+    background-color: rgba(99,0,0,0.2)!important;
+}
 
 /*--------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */

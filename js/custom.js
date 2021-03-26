@@ -150,3 +150,6 @@ nav.find('a').on('click', function () {
   
   return false;
 });
+
+
+$("[data-toggle=tooltip").tooltip();
