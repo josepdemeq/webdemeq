@@ -311,6 +311,7 @@
   .table-hover tbody tr:hover {
     color: rgb(0,113,184);
     background-color: rgba(1,54,87,0.2)!important;
+    transition: 0.2s all ease-in-out;
 }
 
 /*--------------------------------------------------------------------------------------------------*/

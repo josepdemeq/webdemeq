@@ -152,4 +152,67 @@ nav.find('a').on('click', function () {
 });
 
 
+
+// ---- Tooltips comparativa
+
+
 $("[data-toggle=tooltip").tooltip();
+
+
+
+// ---- Tab Datacenter
+
+var myvideo = document.getElementById('myvideo'),
+    jumplink1 = document.getElementById('jump1');
+
+jumplink1.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.currentTime = 0;
+    myvideo.play();
+}, false);
+
+var myvideo = document.getElementById('myvideo'),
+    jumplink2 = document.getElementById('jump2');
+
+jumplink2.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.currentTime = 3;
+    myvideo.play();
+}, false);
+
+var myvideo = document.getElementById('myvideo'),
+    jumplink3 = document.getElementById('jump3');
+
+jumplink3.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.currentTime = 11;
+    myvideo.play();
+}, false);
+
+var myvideo = document.getElementById('myvideo'),
+    jumplink4 = document.getElementById('jump4');
+
+jumplink4.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.currentTime = 4;
+    myvideo.play();
+}, false);
+
+var myvideo = document.getElementById('myvideo'),
+    jumplink5 = document.getElementById('jump5');
+
+jumplink5.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.currentTime = 20;
+    myvideo.play();
+}, false);
+
+var myvideo = document.getElementById('myvideo'),
+    jumplink6 = document.getElementById('jump6');
+
+jumplink6.addEventListener("click", function (event) {
+    event.preventDefault();
+    myvideo.currentTime = 5;
+    myvideo.play();
+}, false);
+
