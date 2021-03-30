@@ -967,7 +967,19 @@ footer {
 }
 
 .img-producto {
-	padding: 20px 35px 20px 0;}
+	padding: 20px 35px 20px 0;
+}
+
+.card .img-producto img {
+	transition: 0.3s all ease-in-out;
+}
+
+.card:hover .img-producto img {
+	transform: scale(1.1);
+	transition: 0.3s all ease-in-out;
+	transition-delay: 0.1s;
+
+}
 
 .familia-prod {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -1887,4 +1899,181 @@ footer {
   #datacenter .soft-datacenter .DC-icon {
 	width: 80px;
 	margin-bottom: 15px;
+}
+
+/*--- SOPORTE --*/
+
+#soporte {
+	padding: 60px 0 0;
+}
+
+#soporte .familia-prod {
+    line-height: 1.5
+}
+
+#soporte .familia-prod img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+#soporte .img-producto {
+    padding: 0;
+    margin: 0;
+    bottom: -1px;
+	margin-top: 20px;
+}
+
+#soporte .info-producto h6 {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 18px;
+	height: 50px;
+}
+
+#soporte .info-producto .btn {
+	position: relative;
+    top: 0px;
+}
+
+#soporte .card {
+	transition: 0.3s all ease-in-out;
+	border-radius: 0;
+}
+
+#soporte .card .img-producto img {
+	transition: 0.3s all ease-in-out;
+    margin: 0;
+    padding: 0;
+    margin-left: 1px;
+}
+
+#soporte .card:hover .img-producto img {
+	transform: scale(1);
+	margin: 0;
+	padding: 0;
+	margin-left: 1px;
+
+}
+
+.ttl-sop {
+	margin-bottom: 60px;
+}
+
+#soporte h5 {
+	color: rgb(239,125,45);
+}
+
+.sop-lic {
+	padding: 60px 0;
+}
+
+#soporte .bg-licencias {
+    background: linear-gradient(90deg,rgba(0,0,0,.8), rgba(0,0,0,.4)), url('../img/soporte/bg-licencias.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+	padding: 100px 40px;
+}
+
+#soporte .bg-licencias .container{
+	width: 60%;
+   margin-left: 40%;
+}
+#soporte .bg-registro {
+    background: linear-gradient(90deg,rgba(51,22,4,0.8), rgba(51,22,4,0.8)), url('../img/soporte/bg-registro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+	padding: 100px 40px;
+}
+
+
+#soporte .bg-registro  .container{
+	width: 60%;
+   margin-right: 40%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.5rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + 1.5rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right .75rem center/8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+  
+textarea.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.5rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	min-height: 150px;
+}
+
+.soporte-fam.bg-overlay {
+    background: linear-gradient(90deg,rgba(0,0,0,.8), rgba(0,0,0,.4)), url('../../img/datacenter/backgrund.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+}
+
+.soporte-fam .titulo-familia .row {
+	margin-bottom: 30px;
+}
+
+.soporte-fam .titulo-familia img {
+	width: 55px;
+	margin-right: 10px;
+}
+
+.soporte-fam .titulo-familia h2 {
+	font-size: 30px;
+	display: block;
+	margin: 8px 0 0;
+}
+
+.soporte-fam .titulo-familia h4 {
+	font-size: 18px;
+	display: block;
 }
