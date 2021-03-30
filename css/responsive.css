@@ -2236,6 +2236,7 @@
     .datacenter .container, #datacenter .container {
         margin-left: 0;
         margin-right: 0;
+        padding: 0 30px;
     }
     .datacenter .titulo-seccion {
         margin-top: 50px;
