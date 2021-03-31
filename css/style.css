@@ -1038,6 +1038,10 @@ footer {
   justify-content: flex-end;
 }
 
+.titulo-seccion h2, .titulo-seccion h3 {
+	font-weight: 600;
+}
+
 .img-familia img {
     width: 100% !important;
     height: fit-content !important;
@@ -1976,26 +1980,31 @@ footer {
     background-size: cover;
     background-position: center center;
     color: #fff;
-	padding: 100px 40px;
+	padding: 160px 40px;
 }
 
 #soporte .bg-licencias .container{
 	width: 60%;
-   margin-left: 40%;
+    margin-left: 40%;
 }
+
 #soporte .bg-registro {
     background: linear-gradient(90deg,rgba(51,22,4,0.8), rgba(51,22,4,0.8)), url('../img/soporte/bg-registro.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
-	padding: 100px 40px;
+	padding: 160px 40px;
 }
 
 
 #soporte .bg-registro  .container{
 	width: 60%;
-   margin-right: 40%;
+    margin-right: 40%;
+}
+
+#soporte .bg-registro h5, #soporte .bg-licencias h5 {
+	color: #fff;
 }
 
 .form-control {
@@ -2024,7 +2033,7 @@ footer {
     line-height: 1.5;
     color: #495057;
     vertical-align: middle;
-    background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right .75rem center/8px 10px;
+    background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right .75rem center 8px 10px;
     border: 1px solid #ced4da;
     border-radius: 50px;
     -webkit-appearance: none;
@@ -2077,3 +2086,133 @@ textarea.form-control {
 	font-size: 18px;
 	display: block;
 }
+
+.soporte-f table a svg {
+    fill: rgb(255,255,255);
+    width: 35px;
+    transition: 0.2s all ease-in-out;
+}
+
+.modal-sop {
+    transition: 0.2s all ease-in-out;
+}
+
+.modal-sop:hover {
+	transform: scale(1.02);
+    transition: 0.2s all ease-in-out;
+	cursor: pointer;
+}
+
+button.video-btn {
+	background-color: none;
+	border: none;
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+
+button span.yt-icon-video svg{
+	position: absolute;
+	width: 50px;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    fill: rgb(255,255,255);
+	opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+	cursor: pointer;
+
+}
+
+button:hover span.yt-icon-video svg path{
+    fill: rgb(255,0,0);
+	opacity: 1.0;
+    transition: 0.2s all ease-in-out;
+	cursor: pointer;
+
+}
+
+.txt-video-sop h6 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+}
+
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: none;
+    border-radius: none;
+}
+
+
+.modal-dialog {
+    max-width: 55%;
+}
+
+.modal-body {
+position:relative;
+padding:0px;
+}
+
+.videos-soporte {
+	min-height: 640px;
+}
+
+
+/*--- Licencias ---*/
+
+#licencias {
+	padding: 60px 0;
+}
+
+#licencias h5 {
+	color: rgb(239,125,45);
+}
+
+#licencias .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid rgb(239,125,45);
+}
+
+#licencias .table {
+    color: #fff;
+}
+
+#licencias .table td, #licencias .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: none;
+}
+
+.tr-border-qm {
+    border-top: 4px solid rgb(239,125,45);
+}
+
+optgroup[label] {
+	font-style: inherit;
+	font-weight: 600;
+	text-shadow: none;
+ }

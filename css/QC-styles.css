@@ -314,6 +314,47 @@
     transition: 0.2s all ease-in-out;
 }
 
+/*--- Soporte ---*/
+
+svg.qc-icon-sop {
+    width: auto;
+    height: 40px;
+    margin: -5px;
+    vertical-align: baseline;
+
+}
+
+.qc-icon-sop path, .qc-icon-sop rect, .qc-icon-sop circle, .qc-icon-sop polygon {
+	fill: rgb(0,113,184);
+ }
+
+ .soporte-f table a:hover svg {
+     fill: rgb(0,113,184);
+     transition: 0.2s all ease-in-out;
+ }
+
+ .txt-video-sop p {
+    color: rgb(0,113,184);
+}
+
+.videos-soporte .btn-borde:hover, .videos-soporte .btn-borde:active, .videos-soporte .btn-borde:focus {
+	color: #fff;
+	background-color: rgb(0,113,184);
+	border: 2px solid rgb(0,113,184);
+	transition: all 0.3s ease-in-out;
+}
+
+
+.videos-soporte .btn-borde.active {
+	color: #fff;
+	background-color: rgb(0,113,184);
+	border: 2px solid rgb(0,113,184);
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+
 /*--------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */
 /*--------------------------------------------------------------------------------------------------*/

@@ -296,6 +296,46 @@
     transition: 0.2s all ease-in-out;
 }
 
+/*--- Soporte ---*/
+
+svg.qs-icon-sop {
+    width: auto;
+    height: 40px;
+    margin: -5px;
+    vertical-align: baseline;
+
+}
+
+.qs-icon-sop path, .qs-icon-sop rect, .qs-icon-sop circle, .qs-icon-sop polygon {
+	fill: rgb(205,176,41);
+ }
+
+ .soporte-f table a:hover svg {
+     fill: rgb(205,176,41);
+     transition: 0.2s all ease-in-out;
+ }
+
+ .txt-video-sop p {
+    color: rgb(205,176,41);
+}
+
+.videos-soporte .btn-borde:hover, .videos-soporte .btn-borde:active, .videos-soporte .btn-borde:focus {
+	color: #000;
+	background-color: rgb(205,176,41);
+	border: 2px solid rgb(205,176,41);
+	transition: all 0.3s ease-in-out;
+}
+
+
+.videos-soporte .btn-borde.active {
+	color: #000;
+	background-color: rgb(205,176,41);
+	border: 2px solid rgb(205,176,41);
+	transition: all 0.3s ease-in-out;
+}
+
+
+
 /*--------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */
 /*--------------------------------------------------------------------------------------------------*/
