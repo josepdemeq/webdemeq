@@ -3,7 +3,7 @@
 
 .bg-qb {
 	background: rgb(57,163,143);
-	background: linear-gradient(0deg, rgba(57,163,143,1) 0%, rgba(57,163,143,0) 40%);
+	background: linear-gradient(0deg, rgba(57,163,143,1) 0%, rgba(0,0,0,1) 40%);
     border-top: 1px solid #000;
 }
 

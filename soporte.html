@@ -104,7 +104,7 @@
     </nav>
     <header class="bg-dark">
       <div class="container-fluid productos bg-overlay">
-        <div class="container titulo-seccion wow slideInDown">
+        <div class="container titulo-seccion wow slideIn">
           <div class="row centered text-left col">
             <h2>Soporte de producto</h2>
             <h6>En Demeq creemos cada equipo es el inicio de una relación a largo plazo, por eso nos esforzamos en dar el mejor soporte posventa, ayudándolo a sacar el máximo de su equipo, estando presentes para atender sus consultas y resolver cualquier problema.</h6>
@@ -113,13 +113,13 @@
       </div>
     </header>
     <main id="soporte" class="bg-gris">
-      <section class="container wow slideIn">
+      <section class="container  wow slideIn" data-wow-delay="0.2s">
         <div class="ttl-sop">
           <h5>Notas técnicas y videos de producto</h5>
           <p>Seleccione su equipo y acceda a documentación y videos sobre su uso así como la relacionada a las técnicas de medición y su aplicación práctica.</p>
         </div>
         <div class="card-deck">
-          <div class="card bg-qs col-12 wow slideIn">
+          <div class="card bg-qs wow slideIn">
             <div class="card-block">
                 <div class="row  h-100">
                     <div class="col-12 info-producto">
@@ -133,7 +133,7 @@
                 </div>
             </div>
           </div>
-          <div class="card bg-qh col-lg-3 col-md-12 wow slideIn" data-wow-delay="0.2s">
+          <div class="card bg-qh wow slideIn" data-wow-delay="0.2s">
            <div class="card-block">
                <div class="row  h-100">
                    <div class="col-12 info-producto">
@@ -147,9 +147,9 @@
                </div>
            </div>
           </div>
-          <div class="card bg-qc col-12 wow slideIn">
+          <div class="card bg-qc wow slideIn">
             <div class="card-block">
-                <div class="row  h-100">
+                <div class="row h-100">
                   <div class="col-12 info-producto">
                       <div class="familia-prod"><img src="img/fam-icons/QC-ico.svg" alt="">Familia QC</div>
                       <h6>Medidores de Espesores de Recubrimientos</h6>
@@ -161,16 +161,16 @@
                 </div>
             </div>
           </div>
-          <div class="card bg-qb col-lg-3 col-md-12 wow slideIn" data-wow-delay="0.2s">
+          <div class="card bg-qb wow slideIn" data-wow-delay="0.2s">
            <div class="card-block">
-               <div class="row  h-100">
+               <div class="row h-100">
                 <div class="col-12 info-producto">
                   <div class="familia-prod"><img src="img/fam-icons/QB-ico.svg" alt="">Familia QB</div>
                   <h6>Medidores de Espesores por Efecto Hall</h6>
                   <a href="productos/qb/soporte-QB.html" class="btn btn-blanco">Más información</a>
                 </div>
                 <div class="col-12 img-producto">
-                    <img class="img-fluid" src="img/soporte/sop-QB.png" alt="image">
+                    <img class="img-fluid series7" src="img/soporte/sop-QB.png" alt="image">
                 </div>
                </div>
            </div>
@@ -204,86 +204,90 @@
             <h5>Contacto</h5>
             <p>Si desea hacernos alguna consulta o tiene algún inconveniente con su equipo no dude en escribirnos, estamos para ayudarlo.</p>
           </div>
-          <form class="col-lg-12 mb-5">
+          <form class="col-lg-12 mb-5" action="soporte.php" method="post" name="contactform">
             <div class="form-row">
               <div class="col-md-4">
-                <label for="validationDefault01"></label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre*" required>
+                <label for="first_name"></label>
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Nombre*" required>
               </div>
               <div class="col-md-4">
-                <label for="validationDefault02"></label>
-                <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido*"  required>
+                <label for="last_name"></label>
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Apellido*"  required>
               </div>
               <div class="col-md-4">
-                <label for="validationDefault02"></label>
-                <input type="email" class="form-control" id="validationDefault03" placeholder="Email*" required>
+                <label for="email"></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required>
               </div>
             </div>
             <div class="form-row">
               <div class="col-md-4">
-                <label for="validationDefault03"></label>
-                <input type="tel" class="form-control" id="validationDefault04" placeholder="Teléfono*" required>
+                <label for="telephone"></label>
+                <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="Teléfono*" required>
               </div>
               <div class="col-md-2">
-                <label for="validationDefault04"></label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <label for="model"></label>
+                <select class="custom-select mr-sm-2" id="model" name="model" required>
                   <option selected>Modelo</option>
-                  <optgroup>
-                    <option value="1">QB7</option>
+                  <option disabled></option>
+                  <optgroup label="Serie QB">
+                    <option value="QB7">QB7</option>
+                    <option disabled></option>
                   </optgroup>
-                  <optgroup>
-                    <option value="2">QC5 F</option>
-                    <option value="3">QC5 N</option>
-                    <option value="4">QC5 C</option>
-                    <option value="5">QC5 DLF</option>
-                    <option value="6">QC5 DLN</option>
-                    <option value="7">QC5 DLC</option>
-                    <option value="8">QC3 F</option>
-                    <option value="9">QC3 N</option>
-                    <option value="10">QC3 C</option>
-                    <option value="11">QC3 DLF</option>
-                    <option value="12">QC3 DLN</option>
-                    <option value="13">QC3 DLC</option>
-                    <option value="14">QC2 F</option>
-                    <option value="15">QC2 DLF</option>
+                  <optgroup label="Serie QC">
+                    <option value="QC5-F">QC5 F</option>
+                    <option value="QC5-N">QC5 N</option>
+                    <option value="QC5-C">QC5 C</option>
+                    <option value="QC5-DLF">QC5 DLF</option>
+                    <option value="QC5-DLN">QC5 DLN</option>
+                    <option value="QC5-DLC">QC5 DLC</option>
+                    <option value="QC3-F">QC3 F</option>
+                    <option value="QC3-N">QC3 N</option>
+                    <option value="QC3-C">QC3 C</option>
+                    <option value="QC3-DLF">QC3 DLF</option>
+                    <option value="QC3-DLN">QC3 DLN</option>
+                    <option value="QC3-DLC">QC3 DLC</option>
+                    <option value="QC2-F">QC2 F</option>
+                    <option value="QC2-DLF">QC2 DLF</option>
+                    <option disabled></option>
                   </optgroup>
-                  <optgroup>
-                    <option value="16">QH7 L</option>
-                    <option value="17">QH7 U</option>
-                    <option value="18">QH7 C</option>
-                    <option value="19">QH5 D</option>
-                    <option value="20">QH5 G</option>
-                    <option value="21">QH5 M</option>
-                    <option value="22">QH5 U</option>
-                    <option value="23">QH2 S</option>
-                    <option value="24">QH2 DLS</option>
+                  <optgroup label="Serie QH">
+                    <option value="QH7-L">QH7 L</option>
+                    <option value="QH7-U">QH7 U</option>
+                    <option value="QH7-C">QH7 C</option>
+                    <option value="QH5-D">QH5 D</option>
+                    <option value="QH5-G">QH5 G</option>
+                    <option value="QH5-M">QH5 M</option>
+                    <option value="QH5-U">QH5 U</option>
+                    <option value="QH2-S">QH2 S</option>
+                    <option value="QH2-DLS">QH2 DLS</option>
+                    <option disabled></option>
                   </optgroup>
-                  <optgroup>
-                    <option value="25">QS5 B</option>
-                    <option value="26">QS5 DL</option>
-                    <option value="27">QS5 E</option>
-                    <option value="28">QS5 DLE</option>
-                    <option value="29">QS3 B</option>
-                    <option value="30">QS3 DL</option>
-                    <option value="31">QS2 S</option>
-                    <option value="32">QS2 DLS</option>
-                    <option value="33">QS2 V</option>
-                    <option value="34">QS2 DLV</option>
+                  <optgroup label="Serie QS">
+                    <option value="QS5-B">QS5 B</option>
+                    <option value="QS5-DL">QS5 DL</option>
+                    <option value="QS5-E">QS5 E</option>
+                    <option value="QS5-DLE">QS5 DLE</option>
+                    <option value="QS3-B">QS3 B</option>
+                    <option value="QS3-DL">QS3 DL</option>
+                    <option value="QS2-S">QS2 S</option>
+                    <option value="QS2-DLS">QS2 DLS</option>
+                    <option value="QS2-V">QS2 V</option>
+                    <option value="QS2-DLV">QS2 DLV</option>
                   </optgroup>
                 </select>
               </div>
               <div class="col-md-2">
-                <label for="validationDefault04"></label>
-                <input type="text" class="form-control" id="validationDefault06" placeholder="Numero de serie*" required>
+                <label for="serial_number"></label>
+                <input type="text" class="form-control" id="serial_number" name="serial_number" placeholder="Numero de serie*" required>
               </div>
               <div class="col-md-4">
-                <label for="validationDefault05"></label>
-                <input type="text" class="form-control" id="validationDefault07" placeholder="Empresa*" required>
+                <label for="business"></label>
+                <input type="text" class="form-control" id="company" name="company" placeholder="Empresa*" required>
               </div>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1"></label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Mensaje*" required></textarea>
+              <label for="msg"></label>
+              <textarea class="form-control" cols="25" maxlength="1000" id="msg" name="comments" rows="6" placeholder="Mensaje*" required></textarea>
             </div>
             <div class="text-center mt-4">
               <button class="btn btn-naranja" type="submit">Enviar</button>

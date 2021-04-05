@@ -240,8 +240,41 @@
         margin-bottom: 0;
     }
 
+    /*--- Datacenter ---*/
+    #soporte .bg-licencias .container {
+        width: 60%;
+        margin-left: 40%;
+    }
+    
+    #soporte .bg-registro .container {
+        width: 60%;
+        margin-right: 40%;
+    }
+
+    /*--- Soporte ---*/
+
+      .card-deck .card {
+        display: block;
+        flex-basis: 22%; /* change this value for each breakpoint*/
+      }
+
 
   }
+
+@media (max-width: 1440px) {
+    
+
+    /*--- Datacenter ---*/
+    #soporte .bg-licencias .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    #soporte .bg-registro .container {
+        width: 90%;
+        margin-right: 5%;
+    }
+}
 
 
 @media (max-width: 1200px) { 
@@ -282,6 +315,17 @@
         width: 50px;
         margin: 0 10px 50px 0;
         vertical-align: middle;
+    }
+
+    /*--- Datacenter ---*/
+    #soporte .bg-licencias .container {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    #soporte .bg-registro .container {
+        width: 100%;
+        margin-right: 0%;
     }
 
 }
@@ -625,6 +669,30 @@
         display: block;
         float: right;
     }
+
+
+    /*--- Datacenter ---*/
+
+    #soporte .familia-prod img {
+        width: 30px;
+    }
+    .familia-prod {
+        font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        font-weight: bold;
+        font-size: 21px;
+        letter-spacing: 0.1rem;
+        line-height: 60px;
+    }
+
+    /*--- Soporte ---*/
+    
+    #soporte .info-producto h6 {
+    font-size: 16px;
+}
+
+    #soporte .info-producto .btn {
+      font-size: 16px;
+     }
 
 
 }
@@ -1699,6 +1767,34 @@
         margin-right: 0;
     }
 
+    .datacenter .titulo-seccion img {
+        width: 50%;
+    }
+
+    .titulo-spdc {
+        margin-bottom: 40px;
+    }
+
+    /*--- Soporte ---*/
+
+    #soporte .container {
+        margin: 0px 25px;
+    }
+
+    .card-deck .card {
+        display: block;
+        flex-basis: 33.3%; /* change this value for each breakpoint*/
+        margin-bottom: 20px;
+    }
+    
+    #soporte .familia-prod img {
+        width: 40px;
+    }
+
+    #soporte .familia-prod {
+        font-size: 27px;
+    }
+
 
  }
 
@@ -1874,6 +1970,23 @@
 
     .datos-empresa .logo {
         margin: 20px 0 40px 0;
+    }
+
+    .datos-empresa {
+        margin: 0 10px 40px;
+    }
+    
+    .redes-empresa {
+        padding: 40px 10px;
+    }
+    
+    .datos-productos {
+        margin: 40px 25px;
+    }
+
+    .mas-datos {
+        padding: 40px 5px;
+        margin: 0 20px;
     }
 
     /*--- PORDUCTOS ---*/
@@ -2242,6 +2355,10 @@
         margin-top: 50px;
     }
 
+    .datacenter .titulo-seccion img {
+      width: 90%;
+  }
+
     .info-datacenter p {
         margin-bottom: 40px;
     }
@@ -2257,7 +2374,54 @@
         background: linear-gradient(0deg, rgba(214,90,0,1) 0%, rgba(0,0,0,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d65a00",endColorstr="#000000",GradientType=1);
       }
+      .text-sm-center {
+          text-align: center;
+      }
 
+      #datacenter a .spec {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    /*--- Soprte ---*/
+    
+    #soporte .container {
+        margin: 0px;
+    }
+
+    .card-deck .card {
+        flex-basis: 100%;
+    }
+    
+    .ttl-sop {
+        margin-bottom: 20px;
+    }
+    
+    #soporte .familia-prod img {
+        width: 60px;
+    }
+    
+    #soporte .familia-prod {
+        font-size: 40px;
+    }
+
+    #soporte .info-producto h6 {
+        font-size: 22px;
+    }
+
+    #soporte .info-producto .btn {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #soporte .bg-licencias, #soporte .bg-registro {
+        padding: 60px 15px;
+    }
+
+    #soporte .contact-form  {
+        padding: 0 15px;
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 376px) {

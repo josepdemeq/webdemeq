@@ -104,7 +104,7 @@
     </nav>
     <header class="bg-dark">
       <div class="container-fluid productos bg-overlay">
-        <div class="container titulo-seccion wow slideInDown">
+        <div class="container titulo-seccion wow slideIn">
           <div class="row centered text-left col">
             <h2>Licencias</h2>
             <h6>Las licencias le permiten convertir su equipo en un modelo superior al incorporar prestaciones que tal vez no necesitaba al momento de la comprar pero que con el tiempo podrían serle necesarias o hacerle más fácil su trabajo.</h6>
@@ -113,7 +113,7 @@
       </div>
     </header>
     <main id="licencias">
-      <section class="container pb-5">
+      <section class="container wow slideIn" data-wow-delay="0.2s">
         <div class="ttl-sop mb-5">
           <h5>Cómo adquirir una licencia</h5>
           <p>Adquirir una licencia es sencillo, solo tiene que decirnos que licencia necesita y enviarnos sus datos y los del equipo. Con esta información le enviaremos una clave que al ingresarla al equipo activa la función requerida.</p>
@@ -166,14 +166,14 @@
     <section class="container-fluid bg-gris pb-5 pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-7 pb-5 wow slideIn">
             <h5>Adquiera su licencia</h5>
             <p>Cargue aquí la información para adquirir su licencia, se recomienda tener el equipo a mano.</p>
             <form class="col-lg-12 mb-5">
               <div class="form-row">
                 <div class="col-md-7">
-                  <label for="validationDefault04"></label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <label for="modelo_licencia"></label>
+                  <select class="custom-select mr-sm-2" id="modelo_licencia">
                     <option selected>Seleccione la licencia que desea adquirir*</option>
                     <option disabled></option>
                     <optgroup label="Serie QB">
@@ -224,8 +224,8 @@
                   </select>
                 </div>
                 <div class="col-md-2">
-                  <label for="validationDefault04"></label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <label for="modelo"></label>
+                  <select class="custom-select mr-sm-2" id="modelo">
                     <option selected>Modelo</option>
                     <option disabled></option>
                     <optgroup label="Serie QB">
@@ -300,7 +300,7 @@
             </form>
           </div>
           <div class="col-lg-1"></div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow slideIn" data-wow-delay="0.2s">
             <h5>¿Cómo saber modelo y numero serial del equipo?</h5>
           </div>
         </div>

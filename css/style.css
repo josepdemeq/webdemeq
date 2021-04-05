@@ -1852,6 +1852,11 @@ footer {
 	font-weight: 900;
 }
 
+#datacenter a .spec p {
+	margin: 0;
+}
+
+
 .tabla-datacenter img {
 	height: 100px;
 }
@@ -1942,9 +1947,26 @@ footer {
     top: 0px;
 }
 
+
+#soporte .card-deck {
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row wrap; 
+	align-items: stretch;
+  }
+
 #soporte .card {
 	transition: 0.3s all ease-in-out;
 	border-radius: 0;
+	padding: 20px 20px 0;
+}
+
+#soporte .card .info-producto {
+	padding: 0 15px;
+}
+
+#soporte .card .img-producto img.series7  {
+    margin-left: 6px;
 }
 
 #soporte .card .img-producto img {
@@ -1959,6 +1981,11 @@ footer {
 	margin: 0;
 	padding: 0;
 	margin-left: 1px;
+
+}
+
+#soporte .card:hover .img-producto img.series7 {
+	margin-left: 6px;
 
 }
 
@@ -2216,3 +2243,5 @@ optgroup[label] {
 	font-weight: 600;
 	text-shadow: none;
  }
+
+ 
