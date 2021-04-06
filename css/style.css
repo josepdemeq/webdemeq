@@ -734,6 +734,8 @@ header#home {
 	vertical-align: bottom;
     margin: auto auto 0;
     padding: 0;
+	position: absolute;
+	bottom: 0;
 }
 
 .destacados-inicio .card-img-overlay .btn {
@@ -2025,7 +2027,7 @@ footer {
 }
 
 
-#soporte .bg-registro  .container{
+#soporte .bg-registro .container {
 	width: 60%;
     margin-right: 40%;
 }
@@ -2033,6 +2035,25 @@ footer {
 #soporte .bg-registro h5, #soporte .bg-licencias h5 {
 	color: #fff;
 }
+
+
+#soporte .container.form-iframe {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 35%; /* 4:3 Aspect Ratio */
+  }
+  
+  #soporte .responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+  }
 
 .form-control {
     display: block;

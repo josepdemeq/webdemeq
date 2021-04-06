@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto Ajax</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css">
+</head>
+<body>
+
+    <!-- ajax contact form -->
+    <section style="margin: 50px 0;">
+        <div class="container-fluid">
+            <h5>Contacto</h5>
+            <p>Si desea hacernos alguna consulta o tiene algún inconveniente con su equipo no dude en escribirnos, estamos para ayudarlo.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <form class="contact__form" method="post" action="mail.php">
+                        
+                        <!-- form message -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                    Tu mensaje fue enviado exitosamente.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end message -->
+
+                        <!-- form element -->
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input name="name" type="text" class="form-control" placeholder="Nombres" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="email" type="email" class="form-control" placeholder="E-mail" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="phone" type="text" class="form-control" placeholder="Teléfono" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input name="subject" type="text" class="form-control" placeholder="Asunto" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <textarea name="message" class="form-control"  cols="25" maxlength="1000" rows="6" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <input name="submit" type="submit" class="btn btn-naranja" value="Enviar mensaje">
+                            </div>
+                        </div>
+                        <!-- end form element -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
