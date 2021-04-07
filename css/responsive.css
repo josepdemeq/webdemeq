@@ -253,10 +253,15 @@
 
     /*--- Soporte ---*/
 
-      .card-deck .card {
-        display: block;
+    .card-deck .card {
+     display: block;
         flex-basis: 22%; /* change this value for each breakpoint*/
-      }
+    }
+
+    #soporte .container.form-iframe {
+        padding-top: 35%;
+    }
+
 
 
   }
@@ -273,6 +278,12 @@
     #soporte .bg-registro .container {
         width: 90%;
         margin-right: 5%;
+    }
+
+    /*--- Soporte ---*/
+
+    #soporte .container.form-iframe {
+        padding-top: 45%;
     }
 }
 
@@ -317,7 +328,7 @@
         vertical-align: middle;
     }
 
-    /*--- Datacenter ---*/
+    /*--- Soporte ---*/
     #soporte .bg-licencias .container {
         width: 100%;
         margin-left: 0%;
@@ -327,7 +338,6 @@
         width: 100%;
         margin-right: 0%;
     }
-
 }
 
 @media (max-width: 1310px) { 
@@ -693,6 +703,11 @@
     #soporte .info-producto .btn {
       font-size: 16px;
      }
+
+     #soporte .container.form-iframe {
+         padding-top: 65% !important;
+     }
+ 
 
 
 }
@@ -1794,6 +1809,27 @@
     #soporte .familia-prod {
         font-size: 27px;
     }
+     
+     #soporte .container.form-iframe {
+         padding-top: 120% !important;
+     }
+
+     .gif-serial .container {
+         margin:15px;
+         padding: 0 10px;
+     }
+
+     .gif-serial h5 {
+         text-align: center;
+     }
+
+     .gif-serial .boton-encendido {
+         width: 80px;
+     }
+
+     .gif-serial .gif {
+        max-height: 250px;
+    }
 
 
  }
@@ -2422,6 +2458,21 @@
         padding: 0 15px;
         margin-bottom: 60px;
     }
+    
+    #soporte .container.form-iframe {
+        padding-top: 240% !important;
+    }
+
+    .gif-serial .container {
+        margin: auto;
+        padding: 0 10px;
+    }
+
+    .gif-serial .gif {
+        max-height: 205px;
+        text-align: center;
+        left: 0;
+    }
 }
 
 @media (max-width: 376px) {
@@ -2561,6 +2612,24 @@
     .fam .titulo-seccion.comparativa {
         height: 650px;
     }
+    
+    #soporte .container.form-iframe {
+        padding-top: 290% !important;
+    }
 
+    .gif-serial .gif {
+        left: 24px;
+        position: relative;
+    }
 }
 
+@media (max-width: 320px){
+    #soporte .container.form-iframe {
+        padding-top: 340% !important;
+    }
+    
+    .gif-serial .gif {
+        max-height: 175px;
+        left: 24px;
+    }
+}

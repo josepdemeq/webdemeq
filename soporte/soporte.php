@@ -25,56 +25,58 @@
         # Contenido del correo
         $content = "<html>
                     <body style='font-family:Calibri, Lucida Grande, Arial, sans-serif;max-width:600px;margin:20px auto;'>
-                    <h1 style='color:#000000;font-weight:bold;margin:0;'> " . $name . " de  " . $company . "  necesita nuestra ayudacon su  " . $model . " </h1>
-                    <h2 style='color:rgb(239,125,45);font-weight:bold;margin-top:0;margin-bottom:20px'>Nos env&iacute;a un mail desde la web para darle soporte</h2>
-                    <p>A continuaci&oacute;n pod&eacute;s ver todo lo relacionado con su consulta.</p>
+                    <h1 style='color:#000000;font-weight:bold;'> " . $name . " de  " . $company . "  necesita nuestra ayuda con su  " . $model . " </h1>
+                    <h2 style='color:rgb(239,125,45);font-weight:bold;margin-top:0;margin-bottom:0;'>Nos env&iacute;a un mail desde la web para darle soporte</h2>
+                    <p style='margin-top:0;margin-bottom:20px;'>A continuaci&oacute;n pod&eacute;s ver su consulta:</p>
                     <div style='border: 1px solid #333;overflow: hidden;width: 100%;max-width: 600px;'>
                         <div style='font-size: 18px;font-weight: 600; color: rgb(239,125,45);width:100%;padding:10px;border-bottom:2px solid rgb(239,125,45);'>
                         Datos personales
                         </div>
                         <div style='background: #ffffff;color: #000;width:100%;padding:10px;border-bottom:2px solid #000;font-weight: 600;'>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'>Email</div>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'>Tel&eacute;fono</div>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'>Empresa</div>
-                         </div>
-                         <div style='background: #ffffff;;width:100%;padding:10px;border-bottom:1px solid #000000;margin-bottom: 20px;'>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'> " . $name . " </div>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'> " . $email . " </div>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'> " . $phone . " </div>
-                            <div style='width: 24.5%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
                         </div>
+                        <div style='background: #ffffff;;width:100%;padding:10px;border-bottom:1px solid #000000;'>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $name . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                        </div>
+                        <div style='background: #ffffff;color: #000;width:100%;padding:10px;border-bottom:2px solid #000;font-weight: 600;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'>Email</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Tel&eacute;fono</div>
+                        </div>
+                        <div style='background: #ffffff;;width:100%;padding:10px;'>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $email . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $phone . " </div>
+                        </div>
+                    </div>
+                    <div style='border: 1px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
                         <div style='font-size: 18px;font-weight: 600; color: rgb(239,125,45);width:100%;padding:10px;border-bottom:2px solid rgb(239,125,45);'>
                         Datos del equipo
                         </div>
                         <div style='background: #ffffff;color: #000;width:100%;padding:10px;border-bottom:2px solid #000;font-weight: 600;'>
-                            <div style='width: 49.5%;display: inline-block;margin: 0;'>Modelo</div>
-                            <div style='width: 49.5%;display: inline-block;margin: 0;'>N&uacute;mero de serie</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Modelo</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>N&uacute;mero de serie</div>
                         </div>
-                        <div style='background: #ffffff;;width:100%;padding:10px;border-bottom:1px solid #000000;margin-bottom: 20px;'>
-                            <div style='width: 49.5%;display: inline-block;margin: 0;'> " . $model . " </div>
-                            <div style='width: 49.5%;display: inline-block;margin: 0;'> " . $serial . " </div>
+                        <div style='background: #ffffff;;width:100%;padding:10px;'>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $model . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $serial . " </div>
                         </div>
+                    </div>
+                    <div style='border: 1px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
                         <div style='font-size: 18px;font-weight: 600; color: rgb(239,125,45);width:100%;padding:10px;border-bottom:2px solid rgb(239,125,45);'>
                             Mensaje
                         </div>
                         <div style='background: #ffffff;;width:100%;padding:10px;'>
-                            <div style='width: 100%;display: inline-block;margin: 0;'> " . $message . " </div>
+                            <div style='width: 100%;display: inline-block;margin: 0;padding-right:10px;'> " . $message . " </div>
                         </div>
                     </div>
                     </body>
                     </html>";
 
-                    if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($company) OR empty($model) OR empty($serial) OR empty($message)) {
-                        # Establecer un código de respuesta y salida.
-                        http_response_code(400);
-                        echo "Por favor completa el formulario y vuelve a intentarlo.";
-                        exit;
-                    }
 
         # Encabezados de correo electrónico.
         $headers = "From: $name <$email>";
-        # $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
         # Envía el correo.
@@ -96,3 +98,5 @@
     }
 
 ?>
+
+

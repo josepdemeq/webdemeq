@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto Ajax</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css">
+</head>
+<body>
+
+    <!-- ajax contact form -->
+    <section style="margin: 50px 0;">
+        <div class="container-fluid">
+            <h5>Adquiera su licencia</h5>
+            <p>Cargue aquí la información para adquirir su licencia, se recomienda tener el equipo a mano.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <form class="contact__form" method="post" action="licencia.php">
+
+                        <!-- form element -->
+                        <div class="row">
+                          <div class="col-md-4 form-group">
+                              <select id="modelo" class="custom-select mr-sm-2" name="model" required>
+                                  <option selected disabled>Modelo de su equipo</option>
+                                  <option disabled></option>
+                                  <optgroup label="Serie QB" class="">
+                                    <option value="QB7-B" class="QB7-E">QB7 B</option>
+                                    <option disabled></option>
+                                  </optgroup>
+                                  <optgroup label="Serie QC" class="">
+                                    <option value="QC5-F" class="QC5-DLF QC5-E QC5-DLE">QC5 F</option>
+                                    <option value="QC5-N" class="QC5-DLN">QC5 N</option>
+                                    <option value="QC5-N" class="QC5-C">QC5 N</option>
+                                    <option value="QC5-N" class="QC5-DLC">QC5 N</option>
+                                    <option value="QC5-C" class="QC5-DLC">QC5 C</option>
+                                    <option value="QC5-DLF" class="QC5-DLC">QC5 DLF</option>
+                                    <option value="QC5-DLN" class="QC5-DLC">QC5 DLN</option>
+                                    <option value="QC3-F" class="QC3-DLF">QC3 F</option>
+                                    <option value="QC3-N" class="QC3-DLN">QC3 N</option>
+                                    <option disabled></option>
+                                  </optgroup>
+                                  <optgroup label="Serie QH" class="">
+                                    <option value="QH7-L" class="QH7-C">QH7 L</option>
+                                    <option value="QH7-U" class="QH7-C">QH7 U</option>
+                                    <option value="QH5-D" class="QH5-M">QH5 D</option>
+                                    <option value="QH5-G" class="QH5-M">QH5 G</option>
+                                    <option disabled></option>
+                                  </optgroup>
+                                  <optgroup label="Serie QS" class="">
+                                    <option value="QS5-B" class="QS5-DL">QS5 B</option>
+                                    <option value="QS5-B" class="QS5-E">QS5 B</option>
+                                    <option value="QS5-B" class="QS5-DLE">QS5 B</option>
+                                    <option value="QS5-DL" class="QS5-DLE">QS5 DL</option>
+                                    <option value="QS5-E" class="QS5-DLE">QS5 E</option>
+                                  </optgroup>
+                                </select>
+                          </div>
+                            <div class="col-md-4 form-group">
+                                <select id="licencia" class="custom-select mr-sm-2" name="license" required>
+                                    <option selected>Licencias disponibles</option>
+                                    <option disabled disabled></option>
+                                      <option value="Licencia QB7-E" class="QB7-E">QB7 E</option>
+                                      <option value="Licencia QC5-C" class="QC5-C">QC5 C</option>
+                                      <option value="Licencia QC5-DLF" class="QC5-DLF">QC5 DLF</option>
+                                      <option value="Licencia QC5-DLN" class="QC5-DLN">QC5 DLN</option>
+                                      <option value="Licencia QC5-DLC" class="QC5-DLC">QC5 DLC</option>
+                                      <option value="Licencia QC3-DLF" class="QC3-DLF">QC3 DLF</option>
+                                      <option value="Licencia QC3-DLN" class="QC3-DLN">QC3 DLN</option>
+                                      <option value="Licencia QH7-C" class="QH7-C">QH7 C</option>
+                                      <option value="Licencia QH5-M" class="QH5-M">QH5 M</option>
+                                      <option value="Licencia QS5-DL" class="QS5-DL">QS5 DL</option>
+                                      <option value="Licencia QS5-E" class="QS5-E">QS5 E</option>
+                                      <option value="Licencia QS5-DLE" class="QS5-DLE">QS5 DLE</option>
+                                  </select>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input name="serial" type="text" class="form-control" placeholder="Número de serie" required>
+                            </div>
+                            <div class="col-md-8 form-group">
+                                <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido" required>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input name="email" type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-12 text-center">
+                                <input name="submit" type="submit" class="btn btn-naranja" value="Enviar mensaje">
+                            </div>
+                        </div>
+                        <!-- end form element -->
+                    </form>
+                    <br><br>
+                    <!-- form message -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-sucess contact__msg" style="display: none" role="alert">
+                                ¡Gracias! Su mensaje fue enviado exitosamente.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end message -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="filter.js"></script>
+</body>
+</html>

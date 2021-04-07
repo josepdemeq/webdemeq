@@ -20,7 +20,7 @@
 	vertical-align: middle;
 }
 
-.series7 .fam-QH.bg-qh {
+.series7 .fam-QH.bg-qh, .bg-qh-80 {
 	background: rgb(139,28,33);
 	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);
 	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);

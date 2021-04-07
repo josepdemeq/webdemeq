@@ -2107,12 +2107,33 @@ textarea.form-control {
 }
 
 .soporte-fam.bg-overlay {
-    background: linear-gradient(90deg,rgba(0,0,0,.8), rgba(0,0,0,.4)), url('../../img/datacenter/backgrund.png');
+    background: linear-gradient(90deg,rgba(0,0,0,.8), rgba(0,0,0,.4)), url('../img/datacenter/backgrund.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
     height: 450px;
+}
+
+.gif-serial {
+	padding: 0 !important;
+
+}
+
+.gif-serial h5 {
+	font-weight: 600;
+}
+
+.gif-serial .boton-encendido {
+	width: 35%;
+	margin-bottom: 10px;
+}
+.gif-serial p {
+	margin: 0;
+}
+
+.gif-serial .gif {
+    max-height: 300px;
 }
 
 .soporte-fam .titulo-familia .row {
@@ -2232,9 +2253,6 @@ padding:0px;
 
 /*--- Licencias ---*/
 
-#licencias {
-	padding: 60px 0;
-}
 
 #licencias h5 {
 	color: rgb(239,125,45);
@@ -2259,10 +2277,22 @@ padding:0px;
     border-top: 4px solid rgb(239,125,45);
 }
 
-optgroup[label] {
-	font-style: inherit;
-	font-weight: 600;
-	text-shadow: none;
- }
-
+ #licencias .container.form-iframe {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 25%; /* 4:3 Aspect Ratio */
+  }
+  
+  #licencias .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+ 
  

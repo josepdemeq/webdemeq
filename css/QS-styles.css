@@ -11,7 +11,14 @@
     border-top: 1px solid #000;
 }
 
-
+.bg-qs-80 {
+	background: rgb(205,176,41);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 80%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 80%);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#000000",GradientType=1);
+    border-top: 1px solid #000;
+}
 
 .txt-qs {
 	color:#fae929;

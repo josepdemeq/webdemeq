@@ -80,3 +80,11 @@ textarea.form-control {
 	transition: all 0.3s ease-in-out;
     box-shadow: none;
 }
+
+
+@media (max-width: 992px) {
+    .btn-naranja {
+        font-size: 16px;
+        padding: 0.5rem 2rem;
+    }
+}
