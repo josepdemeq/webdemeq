@@ -708,7 +708,9 @@
          padding-top: 65% !important;
      }
  
-
+     #licencias .cont.form-iframe {
+        padding-top: 111%;
+    }
 
 }
 
@@ -1831,6 +1833,16 @@
         max-height: 250px;
     }
 
+    /*--- Licencias ---*/
+
+    #licencias .container {
+        padding: 0 0 0 50px;
+    }
+
+    #licencias .cont.form-iframe {
+        padding-top: 100%;
+    }
+
 
  }
 
@@ -2472,6 +2484,20 @@
         max-height: 205px;
         text-align: center;
         left: 0;
+    }
+
+    /*--- Licencias ---*/
+
+    #licencias .container {
+        padding: 0 20px;
+    }
+
+    #licencias .cont.form-iframe {
+        padding-top: 180%;
+    }
+    
+    #licencias .lic-serial {
+        padding: 0px 30px 140px 30px;
     }
 }
 

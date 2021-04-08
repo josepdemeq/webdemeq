@@ -2277,11 +2277,11 @@ padding:0px;
     border-top: 4px solid rgb(239,125,45);
 }
 
- #licencias .container.form-iframe {
+ #licencias .cont.form-iframe {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	padding-top: 25%; /* 4:3 Aspect Ratio */
+	padding-top: 65%; /* 4:3 Aspect Ratio */
   }
   
   #licencias .responsive-iframe {
@@ -2295,4 +2295,100 @@ padding:0px;
     border: none;
 }
  
+#licencias .lic-serial {
+	padding: 40px 0 40px 40px;
+}
  
+
+#licencias .lic-serial img {
+	width: 100%;
+}
+
+
+/*--- Empresa ---*/
+
+#empresa .historia-demeq, #empresa .trabajo-demeq, #empresa .equipo-demeq {
+	padding: 60px 0;
+}
+
+#empresa h5 {
+	color: rgb(239,125,45);
+}
+
+#empresa .historia-demeq img {
+	width: 100%;
+}
+
+#empresa .historia-demeq .datos-empresa {
+	padding: 20px;
+	background: #111111;
+}
+
+#empresa .historia-demeq .datos-empresa .dato-logo {
+    float: left;
+    width: 28px;
+    margin: 6px auto -10px 0;
+    vertical-align: middle;
+    height: auto;
+    padding: 0 10px 0 0;
+}
+ 
+#empresa .historia-demeq .datos-empresa .dato-logo.ajuste {
+    margin: 0px auto -10px 0;
+}
+
+.video-trabajo {
+	padding-right: 60px;
+}
+
+.texto-trabajo {
+	padding-left: 60px;
+}
+ 
+
+#empresa .sup-titulo {
+	font-size: 18px;
+
+}
+
+#empresa .trabajo h5 {
+	font-size: 22px;
+}
+
+#empresa .equipo-demeq .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+}
+
+#empresa .equipo-demeq .card:hover {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+#empresa .equipo-demeq .card h6 {
+    font-size: 20px;
+	color: rgb(239,125,45);
+	font-weight: 600;
+}
+
+#empresa .equipo-demeq .card-img, #empresa .equipo-demeq .card-img-top {
+    border-radius: 0;
+}
+
+#empresa .bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/headers-secciones/productos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+}
