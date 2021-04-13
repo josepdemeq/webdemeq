@@ -2307,7 +2307,7 @@ padding:0px;
 
 /*--- Empresa ---*/
 
-#empresa .historia-demeq, #empresa .trabajo-demeq, #empresa .equipo-demeq {
+#empresa .historia-demeq, #empresa .trabajo-demeq, #empresa .equipo-demeq, .clientes-demeq {
 	padding: 60px 0;
 }
 
@@ -2392,3 +2392,22 @@ padding:0px;
     color: #fff;
     height: 450px;
 }
+
+
+.trabajo-distribuidor {
+    background: linear-gradient(rgba(239,125,45,0) 20%, rgba(239,125,45,1) 75%), url('../img/empresa/distribuidores.jpg');
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+	background-position: bottom center;
+  }
+  
+  .trabajo-distribuidor .card {
+	width: 90%;
+	height: 0%;
+  }
+  
+ #empresa .trabajo-distribuidor h5 {
+	color: #FFF;
+  }
+

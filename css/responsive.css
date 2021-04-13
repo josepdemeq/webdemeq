@@ -1844,6 +1844,31 @@
     }
 
 
+    /*--- Empresa ---*/
+
+    #empresa .historia-demeq, #empresa .trabajo-demeq, #empresa .equipo-demeq, .clientes-demeq {
+        padding: 60px 0 60px 30px;
+    }
+
+    #empresa .historia {
+        margin-bottom: 40px;
+    }
+
+    .video-trabajo {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .texto-trabajo {
+        padding-left: 15px;
+        padding-bottom: 40px;
+    }
+
+    .trabajo-distribuidor {
+        height: 300px;
+    }
+
+
  }
 
  @media screen and (orientation:landscape) and (max-width: 768px) {
@@ -2498,6 +2523,16 @@
     
     #licencias .lic-serial {
         padding: 0px 30px 140px 30px;
+    }
+
+    /*--- Empresa ---*/
+
+    #empresa .historia-demeq, #empresa .trabajo-demeq, #empresa .equipo-demeq, .clientes-demeq {
+        padding: 60px 15px;
+    }
+    
+    .trabajo-distribuidor {
+        height: 500px;
     }
 }
 
