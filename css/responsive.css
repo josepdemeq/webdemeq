@@ -1557,7 +1557,7 @@
     }
 
     #familia-producto.series section.quokka {
-        padding: 40px 0;
+        padding: 40px 0 0;
     }
 
     #familia-producto.series .info-prod .col-lg-8 {
@@ -2127,7 +2127,7 @@
         margin-right: 0;
     }
 
-    .titulo-seccion {
+    .titulo-seccion, .sol-distr .titulo-seccion {
         padding: 20px 0;
         margin-top: 50px;
     }
@@ -2153,8 +2153,7 @@
     }
 
     .centered {
-        left: 0;
-        position: relative;
+        left: 15px;
     }
 
     .img-familia img {
@@ -2502,6 +2501,7 @@
     }
     .datacenter .titulo-seccion {
         margin-top: 50px;
+        padding: 0 15px;
     }
 
     .datacenter .titulo-seccion img {
@@ -2536,6 +2536,24 @@
     
     #soporte .container {
         margin: 0px;
+        padding: 0 30px;
+    }
+
+    .soporte-fam .titulo-seccion .titulo-familia {
+        padding: 0 !important;
+    }
+
+    .soporte-fam .centered {
+        left: 15px;
+        margin-top: 50px;
+    }
+
+    .ttl-fam {
+        display: contents;
+    }
+
+    .soporte-fam .titulo-familia h4 {
+        margin-top: 15px;
     }
 
     .card-deck .card {
@@ -2585,6 +2603,16 @@
         max-height: 205px;
         text-align: center;
         left: 0;
+    }
+
+    .filter-button.all {
+        width: 97%;
+        margin: 10px 5px !important;
+    }
+
+    .filter-button {
+        width: 46%;
+        margin: 10px 5px !important;
     }
 
     /*--- Licencias ---*/
@@ -2766,7 +2794,8 @@
     }
 
     .titulo-seccion .titulo-familia {
-        padding: 0 20px !important;
+        padding: 0 !important;
+        margin-top: 100px;
     }
 
     
