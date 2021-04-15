@@ -2652,14 +2652,14 @@
     /*---Testimonials ---*/
 
     .owl-carousel .item .content-testimonial {
-        margin: -60px 30px 0 30px;
+        margin: -60px 10px 0 10px;
     }
 
     .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-prev:active, .owl-carousel .owl-nav .owl-prev:focus {
         background: url(../img/empresa/testimonials/left_hover.svg) no-repeat !important;
         width: 50px;
         height: 50px;
-        margin: 0 0 0 40px !important;
+        margin: 0 0 0 20px !important;
         outline: none;
         transition: all 0.2s ease-in-out;
     }
@@ -2668,7 +2668,7 @@
         background: url(../img/empresa/testimonials/right_hover.svg) no-repeat !important;
         width: 50px;
         height: 50px;
-        margin: 0 40px 0 0 !important;
+        margin: 0 20px 0 0 !important;
         outline: none;
         transition: all 0.2s ease-in-out;
     }
