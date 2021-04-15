@@ -182,7 +182,7 @@
 }
 
 #familia-producto.series .info-prod .table thead th {
-    vertical-align: bottom;
+    vertical-align: top;
     border-bottom: 2px solid rgb(143, 122, 30);
 }
 
@@ -195,6 +195,11 @@
     -webkit-box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
     -moz-box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
     box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
+}
+
+/*--- Accesorios --*/
+#accesorios .accesorio-uno .texto-acc h6 {
+    color:rgb(205,176,41);
 }
 
 /*-- Certificaciones --*/
@@ -213,9 +218,9 @@
 
 .series .info-destacada.dest-qs {
 	background: rgb(205,176,41);
-	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 70%);
-	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 70%);
-	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(17,17,17,1) 70%);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 70%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 70%);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(0,0,0,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#111111",GradientType=1);
     border-top: none;
 }

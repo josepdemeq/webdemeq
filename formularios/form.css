@@ -81,14 +81,14 @@ textarea.form-control {
     box-shadow: none;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1200px) {
 
     h5 {
         font-size: 35px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
 
     .btn-naranja {
         font-size: 16px;

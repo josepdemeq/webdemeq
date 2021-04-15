@@ -38,16 +38,15 @@ $(document).ready(function(){
       
       if(value == "all")
       {
-          //$('.filter').removeClass('hidden');
-          $('.filter').show('1000');
+         //$('.filter').removeClass('hidden');
+          $('.filter').show();
       }
       else
       {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-              $(".filter").not('.'+value).hide('1000');
-              $('.filter').filter('.'+value).show('1000');
-              
+          // $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+          // $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+              $(".filter").not('.'+value).hide();
+              $('.filter').filter('.'+value).show();
           }
       });
       
