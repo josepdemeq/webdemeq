@@ -22,6 +22,7 @@
 
 .bg-qb-c {
 	background: rgb(57,163,143);
+	transition: all 0.3s ease-in-out;
 	padding: 0;
 }
 
@@ -89,10 +90,6 @@
 	scroll-margin: 80px 0;
 }
 
-.bg-qb-c {
-	background: rgb(57,163,143);
-	transition: all 0.3s ease-in-out;
-}
 
 .second-nav-scroll.bg-qb-c {
 	background: rgba(0,0,0,1);
@@ -137,26 +134,33 @@
 
 /*-- NAV Series --*/
 
-
-.series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active {
-    color: rgb(57,163,143);
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid rgb(57,163,143);
-	transition: all 0.3s ease-in-out;
-	outline: none;
+.series .series-nav {
+    top: 50px;
+    border-top: 0;
+    border-bottom: 0;
+    background: rgba(57,163,143, 0.95);
 }
 
 .activado .nav-link {
     color: rgb(57,163,143) !important;
-    border-top: 0;
-    border-bottom: 4px solid rgb(57,163,143) !important;
 	transition: all 0.3s ease-in-out;
-	background: #000;
+	background: #fff;
+    border-radius: 50px;
+    padding: 5px 25px;
 }
 
 .activado .nav-link .dot {
     background: rgb(57,163,143) !important;
 }
+
+
+.series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active {
+    color: #fff;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+    padding: 5px 25px;
+}
+
 
 #familia-producto.series.f-QB .info-prod h5 {
 	font-weight: 600;
@@ -385,7 +389,7 @@ svg.qb-icon-sop {
     }
 
     .menu-second {
-        color: rgb(57,163,143);
+        color: #fff;
         float: left;
         width: 100%;
         position: relative;
@@ -393,10 +397,11 @@ svg.qb-icon-sop {
         margin-top: -15px;
         font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
         font-weight: bold;
+        letter-spacing: 1px;
     }
 
     .icon-bar.bg-qb-c {
-        background-color: rgb(057,163,143) !important;
+        background-color: #fff !important;
     }
 }
 

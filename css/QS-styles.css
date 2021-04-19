@@ -42,30 +42,6 @@
 }
 
 /*- NAV familia -*/
-  
-#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-	  color: #fff;
-	  transition: 0.3s all ease-in-out;
-	  background-color: #000;
-	  border-left: 1px solid #000;
-	  border-right: 1px solid #000;
-	  border-bottom: 4px solid rgb(205,176,41) !important;
-  
-}
-  
-#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-	color: rgb(205,176,41);
-	transition: 0.3s all ease-in-out;
-	background-color: #000;
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
-	border-bottom: 4px solid rgb(205,176,41) !important;
-
-}
-
-#familia-producto nav a.link-negro:hover .dot, #familia-producto nav a.link-blanco:hover {
-  background-color: #fff;
-}
 
 
 /*- Familia producto section -*/
@@ -79,41 +55,6 @@
 .bg-qs-c {
 	background: rgb(205,176,41);
 	transition: all 0.3s ease-in-out;
-}
-
-.second-nav-scroll.bg-qs-c {
-	background: rgba(0,0,0,1);
-	padding: 0;
-}
-
-.second-nav-scroll.bg-qs-c.navbar-expand-sm .navbar-nav .nav-link.link-negro {
-    color: #fff;
-	font-weight: normal;
-
-}
-
-.second-nav-scroll.bg-qs-c .link-negro .dot {
-	background-color: #fff;
-  }
-  
-#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-    color: #fff;
-    transition: 0.3s all ease-in-out;
-    background-color: #000;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    border-bottom: 4px solid rgb(205,176,41) !important;
-
-}
-
-#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-  color: #fff;
-  transition: 0.3s all ease-in-out;
-  background-color: #000;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  border-bottom: 4px solid rgb(205,176,41) !important;
-
 }
 
 
@@ -154,26 +95,81 @@
 
 /*-- NAV Series --*/
 
-
-.series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
-    color: rgb(205,176,41);
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid rgb(205,176,41);
-	transition: all 0.3s ease-in-out;
-	outline: none;
+.series .series-nav {
+    top: 50px;
+    border-top: 0;
+    border-bottom: 0;
+    background: rgba(205,176,41, 0.95);
 }
 
-.activado .nav-link {
-    color: rgb(205,176,41) !important;
-    border-top: 0;
-    border-bottom: 4px solid rgb(205,176,41) !important;
+.series .series-nav .nav-link {
+    color: #000 !important;
+}
+
+
+.series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+    color: #000;
 	transition: all 0.3s ease-in-out;
-	background: #000;
+	outline: none;
+    padding: 5px 25px;
+    border: 0 !important;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+
+.navbar-expand-sm .navbar-nav .nav-link.link-negro {
+    color: #000;
+    font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 1px;
+    margin: 8px 18%;
+    padding: 5px 25px;
+    border-radius: 50px;
+    border: 0 !important;
+}
+  
+#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+    color: #000;
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.3s all ease-in-out;
+    margin: 8px 20%;
+    padding: 5px 25px;
+    border: 0 !important;
+
+}
+
+
+.activado .nav-link {
+    color: #000 !important;
+	transition: all 0.3s ease-in-out;
+	background: #fff;
+    border-radius: 50px;
+    margin: 8px 18%;
+    padding: 5px 25px;
+    border: 0 !important;
 }
 
 .activado .nav-link .dot {
-    background: rgb(205,176,41) !important;
+    background: #000 !important;
 }
+
+#familia-producto nav a.link-negro:hover .dot, #familia-producto nav a.link-blanco:hover .dot {
+    background-color: #000;
+    transition: 0.3s all ease-in-out;
+}
+
+
+.second-nav-scroll.bg-qs-c {
+	background: rgba(205,176,41, 0.95);
+    padding: 0;
+}
+
+
+
 
 #familia-producto.series.f-QS .info-prod h5 {
 	font-weight: 600;
@@ -358,6 +354,23 @@ svg.qs-icon-sop {
         margin-bottom: 20px;
 
     }
+
+    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+        margin: 8px 15%;
+        padding: 5px 25px;
+    }
+    
+    
+    .navbar-expand-sm .navbar-nav .nav-link.link-negro {
+        margin: 8px 15%;
+        padding: 5px 25px;
+    }
+      
+    #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+        margin: 8px 15%;
+        padding: 5px 25px;
+    
+    }
 }
 
 
@@ -433,7 +446,7 @@ svg.qs-icon-sop {
     }
 
     .menu-second {
-        color: rgb(205,176,41);
+        color: #000;
         float: left;
         width: 100%;
         position: relative;
@@ -444,7 +457,30 @@ svg.qs-icon-sop {
     }
 
     .icon-bar.bg-qs-c {
-        background-color: rgb(205,176,41) !important;
+        background-color: #000 !important;
+    }
+
+
+    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+        margin: 8px 10%;
+        padding: 5px 25px;
+    }
+    
+    
+    .navbar-expand-sm .navbar-nav .nav-link.link-negro {
+        margin: 8px 10%;
+        padding: 5px 25px;
+    }
+      
+    #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+        margin: 8px 10%;
+        padding: 5px 25px;
+    
+    }
+
+    .activado .nav-link {
+        color: #000 !important;
+        background: #fff ;
     }
 }
 
@@ -452,6 +488,30 @@ svg.qs-icon-sop {
 
     .dest-btn-up.bg-qs {
         top: -20px;
+    }
+
+    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+        padding: 5px;
+        margin: 0 4px 4px;
+        border-radius: 0 0 25px 25px;
+    }
+    
+    
+    .navbar-expand-sm .navbar-nav .nav-link.link-negro {
+        padding: 5px;
+        margin: 0 4px 4px;
+        border-radius: 0 0 25px 25px;
+    }
+      
+    #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
+        padding: 5px;
+        margin: 0 4px 4px;
+        border-radius: 0 0 25px 25px;
+    
+    }
+
+    .link-negro .serie-txt-dot {
+        line-height: 0;
     }
 }
 

@@ -815,6 +815,7 @@
     .btn-lang {
         text-align: center!important;
         border-top: 2px solid #555555;
+        margin-top: 30px;
     }
 
     .btn-lang .dropdown-menu .dropdown-item {
@@ -1064,13 +1065,22 @@
         vertical-align: top;
         padding-top: 0;
     }
+
+    #global-nav .nav-item.col.col-lg-2 {
+        padding: 0;
+    }
     
     .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active, .navbar-nav:hover .nav-link.active, .navbar-nav:hover .nav-link:hover.active {
         line-height: 27px!important;
+        padding: 30px 0 0 0;
+    }
+
+    .navbar-nav {
+        padding-left: 15px;
     }
     
     .navbar-collapse {
-        top: 50px!important;
+        top: 40px!important;
         transition: all 0.5s ease-in-out;
     }
 
@@ -1082,6 +1092,10 @@
 
     .container, .container-md, .container-sm {
         max-width: 698px;
+    }
+
+    #productos.relacionados .container {
+        margin: 0 0 0 0;
     }
 
     .navbar .container {
@@ -1265,7 +1279,7 @@
     }
 
     #familia-producto section {
-        padding: 0 20px;
+        padding: 0;
     }
 
     #productos {
@@ -1349,7 +1363,8 @@
         border-radius: 0;
         outline: 0;
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 50px;
+        margin-left: 0;
     }
 
     .info-serie h4 {
@@ -1548,6 +1563,12 @@
 
     .series .series-nav .navbar-collapse {
         top: 95px!important;
+    }
+
+    
+
+    .series .series-nav .nav-link {
+        padding: 15px;
     }
 
     /*-- Series info --*/
@@ -2275,6 +2296,10 @@
     .serie .titulo-seccion {
         margin-top: 0px;
     }
+
+    .titulo-seccion .titulo-familia {
+        padding: 0 30px !important;
+    }
     
     #familia-producto.series .info-prod .bg-gris {
         padding: 20px 25px;
@@ -2523,8 +2548,12 @@
         margin-bottom: 40px;
     }
     
-    .info-datacenter, .specs-datacenter {
+    .info-datacenter{
         padding: 60px 0 0 0;
+    }
+    
+    .specs-datacenter {
+        padding: 60px 0;
     }
     
     #datacenter .soft-datacenter .bg-m {
@@ -2580,7 +2609,7 @@
     }
     
     #soporte .familia-prod {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     #soporte .info-producto h6 {
@@ -2805,7 +2834,6 @@
     }
 
     .titulo-seccion .titulo-familia {
-        padding: 0 !important;
         margin-top: 100px;
     }
 
