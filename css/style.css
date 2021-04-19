@@ -2,17 +2,15 @@
 /* CSS Document */
 
 /*---  Estilos Generales  ---*/
-body, html {
-	height: 100%;
-	width: 100%;
-	margin: 0;
-  }
 
 html {
 	scroll-behavior: smooth;
   }
 
 body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
 	background: #000;
 	font-family: 'Adobe Clean', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 400;
@@ -400,6 +398,39 @@ header#home {
 	transition: all 0.5s ease-in-out;
 }
 
+button.nav-link {
+	background-color: transparent;
+	outline: none;
+	text-align: center;
+	border-color: none;
+	appearance: unset;
+    -webkit-writing-mode: unset;
+    text-rendering: auto;
+    color: unset;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font: unset;
+    padding: 8px;
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+	line-height: 56px;
+	width: 100%;
+}
+
+.dropdown-divider {
+	border: 1px solid #555555;;
+}
+
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active, .navbar-nav:hover .nav-link.active, .navbar-nav:hover .nav-link:hover.active {
 	line-height: 56px;
 }
@@ -407,8 +438,6 @@ header#home {
 .scrolled-nav.navbar-dark .navbar-nav .nav-link:focus, .scrolled-nav.navbar-dark .navbar-nav .nav-link, .scrolled-nav.navbar-dark .navbar-nav .nav-link:focus, .scrolled-nav.navbar-dark .navbar-nav .nav-link:hover, .scrolled-nav.navbar-dark .navbar-nav .nav-link.active, .scrolled-nav.navbar-nav:hover .nav-link.active, .scrolled-nav.navbar-nav:hover .nav-link:hover.active {
 	line-height: 27px;
 }
-
-
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
 	color: rgba(239,125,45,1) !important;
@@ -481,6 +510,7 @@ header#home {
 .dropdown-menu .dropdown-item:hover {
     color: #ef7d2d;
 }
+
 
 .btn-nav {
 	background-color: none;

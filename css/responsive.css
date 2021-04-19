@@ -814,7 +814,7 @@
 
     .btn-lang {
         text-align: center!important;
-        border-top: 2px solid #222222;
+        border-top: 2px solid #555555;
     }
 
     .btn-lang .dropdown-menu .dropdown-item {
@@ -838,6 +838,7 @@
     .lang-ico {
         margin-left: -20px;
     }
+
 
     /*-- LEMA --*/
 
@@ -1882,6 +1883,14 @@
          width: 80px;
      }
 
+     .videos-soporte .modal-dialog {
+        max-width: 90%;
+    }
+
+    .modal-content {
+        margin-left: 25px;
+    }
+
      .gif-serial .gif {
         max-height: 250px;
     }
@@ -1949,8 +1958,6 @@
         margin-left: auto;
     }
 
-    /*--- HEADER ---*/
-
     .cel {
         display: block;
     }
@@ -1963,6 +1970,10 @@
         height: 60px;
     }
 
+    /*--- NAV ---*/
+    .dropdown-menu .dropdown-item  {
+        font-size: 18px;
+    }
      /*--- HEADER ---*/
 
     header {
@@ -2798,13 +2809,10 @@
         margin-top: 100px;
     }
 
-    
-
     .foot .info-destacada p {
         font-size: 16px !important;
     }
 
-    
     .fam .titulo-familia h2 {
         line-height: 1.7 !important;
     }
@@ -2820,6 +2828,15 @@
     .gif-serial .gif {
         left: 24px;
         position: relative;
+    }
+
+    .filter-button {
+        width: 45%;
+        margin: 10px 5px !important;
+    }
+
+    .soporte-fam .centered {
+        margin-top: 0;
     }
 }
 

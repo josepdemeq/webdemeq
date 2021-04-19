@@ -71,8 +71,18 @@
       <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="dmq"></a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
-          <li class="nav-item col col-lg-2">
-          <a class="nav-link" href="productos.html">Productos</a>
+          <li class="nav-item col col-lg-2 dropdown">
+            <button class="nav-link dropdown-toggle"id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+            <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="productos/qb/familia-QB.html">Medidores de espesores Hall</a>
+              <a class="dropdown-item" href="productos/qc/familia-QC.html">Medidores de capas</a>
+              <a class="dropdown-item" href="productos/qh/familia-QH.html">Durómetros Leeb y UCI</a>
+              <a class="dropdown-item" href="productos/qs/familia-QS.html">Medidores de espesores</a>
+            </div>
           </li>
           <li class="nav-item col col-lg-2">
           <a class="nav-link" href="datacenter.html">DataCenter</a>

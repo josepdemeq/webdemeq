@@ -65,8 +65,18 @@
       <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.svg" alt="dmq"></a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
-          <li class="nav-item col col-lg-2">
-          <a class="nav-link active" href="../../productos.html">Productos</a>
+          <li class="nav-item col col-lg-2 dropdown">
+            <button class="nav-link active dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+            <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../../productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../qb/familia-QB.html">Medidores de espesores Hall</a>
+              <a class="dropdown-item" href="../qc/familia-QC.html">Medidores de capas</a>
+              <a class="dropdown-item" href="familia-QH.html">Durómetros Leeb y UCI</a>
+              <a class="dropdown-item" href="../qs/familia-QS.html">Medidores de espesores</a>
+            </div>
           </li>
           <li class="nav-item col col-lg-2">
           <a class="nav-link" href="../../datacenter.html">DataCenter</a>
@@ -121,7 +131,7 @@
         <div class="container pt-4 pb-5">
           <h5>Modelos disponibles</h5>
           <p class="italic cel">Deslice horizontalmente la tabla para visualizar por completo el contenido de la misma.</p>
-          <table class="table table-responsive-sm table-striped table-hover w-100 text-center vertical-align">
+          <table class="table table-responsive-md table-striped table-hover w-100 text-center vertical-align">
             <thead>
               <tr>
                 <th colspan="2" class="text-center">
