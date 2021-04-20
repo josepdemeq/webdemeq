@@ -178,7 +178,7 @@ p {
 	color: #fff;
     background-color: transparent;
     font-size: 20px;
-    border: 2px solid #efff;
+    border: 2px solid #fff;
     border-radius: 50px;
     padding: 0.4rem 1.5rem 0.2em;
     transition: all 0.3s ease-in-out;
@@ -428,7 +428,7 @@ button.nav-link {
 }
 
 .dropdown-divider {
-	border: 1px solid #555555;;
+	border-top: 1px solid #555555;;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active, .navbar-nav:hover .nav-link.active, .navbar-nav:hover .nav-link:hover.active {
@@ -481,6 +481,14 @@ button.nav-link {
     margin-top: 0;
     border-radius: 0;
 	line-height: 40px;
+}
+
+.btn-lang .dropdown-menu {
+	top: 90px;
+}
+
+.scrolled-nav .btn-lang .dropdown-menu {
+	top: 50px;
 }
 
 .navbar-nav .dropdown-menu {
@@ -2570,3 +2578,61 @@ button:focus {
 	width: 30px;
 	transition: all 0.3s ease-in-out;
 }
+
+/*--- Contacto ---*/
+
+#contacto {
+	padding: 60px 0;
+}
+
+#contacto h5{
+	color: #ef7d2d;
+}
+
+#contacto .datos-empresa .dato-logo.ajuste, #contacto .datos-empresa .dato-logo {
+    float: left;
+    width: 28px;
+    margin: 0 auto -4px 0;
+    vertical-align: middle;
+    height: auto;
+    padding: 0 10px 0 0;
+}
+#contacto .cont-dat-empr.ajuste2 .dato-logo {
+    float: left;
+    width: 28px;
+    margin: 6px auto 0 0;
+    vertical-align: middle;
+    height: auto;
+    padding: 0 10px 0 0;
+}
+
+#contacto .cont-dat-empr {
+	margin-bottom: 20px;
+}
+
+#contacto .cont-dat-empr a:hover {
+	color: #ef7d2d;
+}
+
+#contacto .cont.form-iframe {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 110%; /* 4:3 Aspect Ratio */
+  }
+  
+  #contacto .responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+  }
+
+  #contacto .google-maps {
+	width: 100%; 
+	height: 250px;
+  }

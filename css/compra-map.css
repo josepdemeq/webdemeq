@@ -1,0 +1,121 @@
+.mapa-distribuidores {
+  padding: 60px 0;
+  height: 100%;
+  text-align: center;
+}
+
+.panzoom svg#map{
+  height: 800px;
+  text-align: center;
+}
+
+svg, .panzoom {
+  display:block;
+  width:100%;
+  height: 100%;
+}
+
+.panzoom {
+  cursor: all-scroll;
+}
+
+.land {
+  cursor:pointer;
+  fill:#f7be96;
+  fill-opacity: 0.8;
+  stroke:#000;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+  transition: 0.3s fill ease-in-out;
+}
+      
+
+#AE.land:hover,
+#AR.land:hover,
+#SA.land:hover,
+#AU.land:hover,
+#BR.land:hover,
+#CL.land:hover,
+#EC.land:hover,
+#IN.land:hover,
+#IT.land:hover,
+#IQ.land:hover,
+#KR.land:hover,
+#MX.land:hover,
+#MY.land:hover,
+#PE.land:hover,
+#RU.land:hover,
+#SA.land:hover,
+#US.land:hover,
+#ZA.land:hover {
+  fill: #ef7d2d;
+  transition: 0.3s fill ease-in-out;
+}
+
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width:auto;
+  max-width: 500px;
+  margin: 20px auto;
+  font-family:Arial;
+}
+
+
+#AE,
+#AR,
+#AU,
+#BR,
+#CL,
+#EC,
+#IN,
+#IT,
+#IQ,
+#KR,
+#MX,
+#MY,
+#PE,
+#RU,
+#SA, 
+#US,
+#ZA {
+  fill:#f7be96;
+  fill-opacity: 1;
+}
+
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}

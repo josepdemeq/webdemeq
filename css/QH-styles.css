@@ -543,6 +543,17 @@ svg.qh-icon-sop {
     .dest-btn-up.bg-qh {
         top: -20px;
     }
+    
+    #familia-producto nav .col {
+        padding: 0;
+        vertical-align: top;
+        margin: -8px 0 0;
+        top: 0;
+    }
+    
+    .link-blanco .serie-txt-dot {
+        line-height: 1;
+    }
 }
 
 @media (max-width: 320px) {

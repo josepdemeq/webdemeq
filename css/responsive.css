@@ -712,6 +712,20 @@
         padding-top: 111%;
     }
 
+    /*--- Contacto ---*/
+    #contacto .cont.form-iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 195%; /* 4:3 Aspect Ratio */
+      }
+      
+    
+      #contacto .google-maps {
+        width: 100%; 
+        height: 525px;
+      }
+
 }
 
 @media (max-width: 992px) { 
@@ -1082,6 +1096,10 @@
     .navbar-collapse {
         top: 40px!important;
         transition: all 0.5s ease-in-out;
+    }
+    
+    .scrolled-nav .btn-lang .dropdown-menu, .btn-lang .dropdown-menu  {
+        top: 60px;
     }
 
     .carousel-index {
@@ -1957,6 +1975,25 @@
         margin: -60px 60px 0;
     }
 
+    /*--- Contacto ---*/
+    #contacto .cont.form-iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 100%; /* 4:3 Aspect Ratio */
+      }
+      
+    
+      #contacto .google-maps {
+        width: 100%; 
+        height: 300px;
+      }
+
+      #contacto .col-lg-6 {
+          margin-bottom: 40px;
+      }
+
+
 
  }
 
@@ -2712,6 +2749,19 @@
         outline: none;
         transition: all 0.2s ease-in-out;
     }
+
+    /*--- Contacto ---*/
+    
+    #contacto {
+        padding: 60px 15px;
+    }
+
+    #contacto .cont.form-iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 245%; /* 4:3 Aspect Ratio */
+      }
 }
 
 @media (max-width: 376px) {
@@ -2866,6 +2916,15 @@
     .soporte-fam .centered {
         margin-top: 0;
     }
+
+    /*--- Contacto ---*/
+
+    #contacto .cont.form-iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 275%; /* 4:3 Aspect Ratio */
+      }
 }
 
 @media (max-width: 320px){
@@ -2877,4 +2936,13 @@
         max-height: 175px;
         left: 24px;
     }
+
+    /*--- Contacto ---*/
+
+    #contacto .cont.form-iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 340%; /* 4:3 Aspect Ratio */
+      }
 }

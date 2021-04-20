@@ -13,6 +13,8 @@ p {
     margin-bottom: 40px;    
 }
 
+
+
 .form-control {
     display: block;
     width: 100%;
@@ -58,9 +60,8 @@ textarea.form-control {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border: none;
     border-radius: 0;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	min-height: 150px;
 }
 
@@ -81,6 +82,24 @@ textarea.form-control {
     box-shadow: none;
 }
 
+
+.btn-borde {
+	color: #fff;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 0.4rem 1.5rem 0.2em;
+    transition: all 0.3s ease-in-out;
+}
+.btn-borde:hover, .btn-borde:active, .btn-borde:focus {
+	color: #000;
+	background-color: #fff;
+	border: 2px solid #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+
 @media (min-width: 1200px) {
 
     h5 {
@@ -90,7 +109,7 @@ textarea.form-control {
 
 @media (max-width: 900px) {
 
-    .btn-naranja {
+    .btn-naranja, .btn-borde {
         font-size: 16px;
         padding: 0.5rem 2rem;
     }
