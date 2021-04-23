@@ -40,3 +40,12 @@ var panZoomMap = svgPanZoom('#map', {
      closeBtnInside: true,
     mainClass: 'mfp-fade'
   });
+
+  
+
+  var modalBtn = document.quertSelector('.modal-btn')
+  var modalBg = document.quertSelector('.modal-bg')
+
+  modalBtn.addEventListener('click', function(){
+    modalBg.classList.add('bg-active');
+  });
