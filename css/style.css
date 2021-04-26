@@ -2636,3 +2636,31 @@ button:focus {
 	width: 100%; 
 	height: 250px;
   }
+
+
+  /*--- CCOMPRAR ---*/
+
+  #comprar {
+	  padding: 60px 0;
+  }
+
+  #comprar h5{
+	color: #ef7d2d;
+}
+
+#comprar .table td, #comprar .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: none;
+	color: #fff;
+}
+
+#comprar .table a {
+	transition: 0.3s all ease-in-out;
+}
+
+#comprar .table a:hover {
+	color: #ef7d2d;
+	transition: 0.3s all ease-in-out;
+}
+

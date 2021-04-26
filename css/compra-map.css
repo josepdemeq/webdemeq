@@ -4,24 +4,28 @@
   text-align: center;
 }
 
-.panzoom svg#map{
-  height: 800px;
-  text-align: center;
+.mapa-distribuidores svg {
+	display:block;
+	width:100%;
+	height:auto;
+	max-height:100vh;
+	display:block;
+	margin: auto;
 }
 
-svg, .panzoom {
-  display:block;
-  width:100%;
-  height: 100%;
-}
-
-.panzoom {
-  cursor:default;
+.mapa-distribuidores path {
+	$fill:#f2f2f2;
+	fill-rule:evenodd; fill:$fill;
+	transition:fill 180ms;
+	cursor:pointer;
+	&.selected, &:hover {
+		$fillSelected:#E5BD47;
+		fill:$fillSelected;
+	}
 }
 
 .land {
   fill:#f7be96;
-  fill-opacity: 0.8;
   stroke:#000;
   stroke-opacity: 1;
   stroke-width:0.5;
@@ -36,11 +40,13 @@ svg, .panzoom {
 #BR.land:hover,
 #CA.land:hover,
 #CL.land:hover,
+#CO.land:hover,
 #EC.land:hover,
 #EG.land:hover,
 #IN.land:hover,
 #IT.land:hover,
 #IQ.land:hover,
+#JP.land:hover,
 #LK.land:hover,
 #KR.land:hover,
 #MX.land:hover,
@@ -48,26 +54,18 @@ svg, .panzoom {
 #PE.land:hover,
 #RU.land:hover,
 #SA.land:hover,
+#SG.land:hover,
 #TH.land:hover,
 #TW.land:hover,
 #US.land:hover,
 #VN.land:hover,
 #ZA.land:hover {
-  fill: #ef7d2d;
+  fill:#fff;
   cursor:pointer;
   transition: 0.3s fill ease-in-out;
 }
 
 
-.white-popup {
-  position: relative;
-  background: #FFF;
-  padding: 20px;
-  width:auto;
-  max-width: 500px;
-  margin: 20px auto;
-  font-family:Arial;
-}
 
 
 #AE,
@@ -76,11 +74,13 @@ svg, .panzoom {
 #BR,
 #CA,
 #CL,
-#EG,
+#CO,
 #EC,
+#EG,
 #IN,
 #IT,
 #IQ,
+#JP,
 #KR,
 #LK,
 #MX,
@@ -88,75 +88,137 @@ svg, .panzoom {
 #PE,
 #RU,
 #SA, 
+#SG, 
 #TH, 
 #TW, 
 #US,
 #VN,
 #ZA {
-  fill:#f7be96;
   fill-opacity: 1;
+  fill: #ef7d2d;
 }
 
-
-/* overlay at start */
-.mfp-fade.mfp-bg {
-  opacity: 0;
-
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-/* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
-}
-/* overlay animate out */
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-}
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-/* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-}
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-}
-
-
-/* modal */
-.modal-bg {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
+.mapa-distribuidores .modal.fade.show {
+  backdrop-filter: blur(2px);
   background-color: rgba(0,0,0,0.5);
+}
+
+.mapa-distribuidores .modal-dialog {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  z-index: 500;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
 }
 
-.bg-active {
-  visibility: visible;
-  opacity: 1;
+.mapa-distribuidores .modal-content {
+  max-width: 600px;
+  background-color: #333;
+  margin: 10px;
 }
 
-.modal-map {
+.mapa-distribuidores .modal-body {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.mapa-distribuidores .modal-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
   background-color: #FFF;
-  width: 30%;
-  height: 30%;
+  padding: 30px;
 }
+
+.mapa-distribuidores .modal-logo img{
+  width: 100%;
+}
+
+.mapa-distribuidores .modal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  min-height: 200px;
+}
+
+.mapa-distribuidores .modal-info h5, .mapa-distribuidores .modal-info p {
+  color:#ef7d2d;
+}
+
+.mapa-distribuidores .modal-footer {
+  background-color:#ef7d2d;
+  justify-content: center;
+  position: relative;
+  border-radius: 0;
+}
+
+.mapa-distribuidores .modal-footer .pais {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+}
+
+.mapa-distribuidores .modal-footer .close {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.3s all;
+  position: absolute;
+  right: 20px;
+  border: 2px solid white;
+  padding: 5px 9px;
+  border-radius: 50px;
+}
+
+.mapa-distribuidores .modal-dialog.mod-cuatro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mapa-distribuidores .modal-dialog.mod-cuatro .col-12.cuatro {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 50%;
+  max-width: 100%;
+}
+
+.mapa-distribuidores .modal-dialog.mod-cuatro .modal-content {
+  max-width: 600px;
+  background-color: #333;
+  margin: 20px;
+  padding: 0;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .mapa-distribuidores .modal-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: max-content;
+}
+  
+}
+
+@media (max-width: 576px) {
+
+  #comprar {
+    padding: 0 15px 60px;
+  }
+
+  .map-pc {
+    display: none !important;
+  }
+}   
