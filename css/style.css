@@ -2391,7 +2391,7 @@ padding:0px;
 	font-size: 22px;
 }
 
-#empresa .equipo-demeq .card {
+#empresa .equipo-demeq .card, #distri .trabajo-distribuidor .card {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -2405,7 +2405,7 @@ padding:0px;
     border-radius: 0;
 }
 
-#empresa .equipo-demeq .card:hover {
+#empresa .equipo-demeq .card:hover, #distri .trabajo-distribuidor .card {
     transform: scale(1);
     box-shadow: none;
 }
@@ -2442,8 +2442,13 @@ padding:0px;
 	width: 90%;
 	height: 0%;
   }
+
+  #distri .trabajo-distribuidor {
+	margin: 60px 0;
+  }
   
- #empresa .trabajo-distribuidor h5 {
+  
+ #empresa .trabajo-distribuidor h5,  #distri .trabajo-distribuidor h5 {
 	color: #FFF;
   }
 

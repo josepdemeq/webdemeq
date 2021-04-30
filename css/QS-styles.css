@@ -90,7 +90,16 @@
 }
 
 #productos.relacionados .card-block {
-    margin-bottom: 160px;
+    margin: 0 0 160px;
+}
+
+
+#productos.relacionados .card-deck {
+    margin: 0;
+}
+
+#productos.relacionados .card-deck .row {
+    height: 340px !important;
 }
 
 
