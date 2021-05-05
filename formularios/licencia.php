@@ -26,11 +26,11 @@
                     <h1 style='color:#000000;font-weight:bold;'> " . $name . "  Solicita la " . $license ." para su " . $model . " </h1>
                     <h2 style='color:rgb(239,125,45);font-weight:bold;margin-top:0;margin-bottom:0;'>Nos env&iacute;a un mail desde la web</h2>
                     <p style='margin-top:0;margin-bottom:20px;'>A continuaci&oacute;n pod&eacute;s ver su consulta:</p>
-                    <div style='border: 1px solid #333;overflow: hidden;width: 100%;max-width: 600px;'>
-                        <div style='font-size: 18px;font-weight: 600; color: rgb(239,125,45);width:100%;padding:10px;border-bottom:2px solid rgb(239,125,45);'>
+                    <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;'>
+                        <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
                         Datos personales
                         </div>
-                        <div style='background: #ffffff;color: #000;width:100%;padding:10px;border-bottom:2px solid #000;font-weight: 600;'>
+                        <div style='background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
                             <div style='width: 49%;display: inline-block;margin: 0;'>email</div>
                         </div>
@@ -39,19 +39,19 @@
                             <div style='width: 49%;display: inline-block;margin: 0;'> " . $email . " </div>
                         </div>
                     </div>
-                    <div style='border: 1px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
-                        <div style='font-size: 18px;font-weight: 600; color: rgb(239,125,45);width:100%;padding:10px;border-bottom:2px solid rgb(239,125,45);'>
+                    <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
+                        <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
                             Licencia solicitada
                         </div>
                         <div style='background: #ffffff;;width:100%;padding:10px;'>
                             <div style='width: 100%;display: inline-block;margin: 0;padding-right:10px;'> " . $license . " </div>
                         </div>
                     </div>
-                    <div style='border: 1px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
-                        <div style='font-size: 18px;font-weight: 600; color: rgb(239,125,45);width:100%;padding:10px;border-bottom:2px solid rgb(239,125,45);'>
+                    <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
+                        <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
                         Datos del equipo
                         </div>
-                        <div style='background: #ffffff;color: #000;width:100%;padding:10px;border-bottom:2px solid #000;font-weight: 600;'>
+                        <div style='background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'>Modelo</div>
                             <div style='width: 49%;display: inline-block;margin: 0;'>N&uacute;mero de serie</div>
                         </div>

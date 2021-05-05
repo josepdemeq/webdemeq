@@ -1,5 +1,6 @@
 body {
     background: transparent;
+    font-family: 'Adobe Clean', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h5 {
@@ -100,10 +101,19 @@ textarea.form-control {
 }
 
 
-@media (min-width: 1200px) {
+
+@media (min-width: 1920px) {
 
     h5 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    .btn-naranja, .btn-borde {
+        font-size: 14px;
     }
 }
 
@@ -118,3 +128,12 @@ textarea.form-control {
         font-size: 24px;
     }
 }
+
+
+
+
+
+
+
+
+

@@ -4,9 +4,9 @@
 
 .bg-qh {
 	background: rgb(139,28,33);
-	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
-	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
-	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
+	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
     border-top: 1px solid #000;
 }
@@ -22,9 +22,9 @@
 
 .series7 .fam-QH.bg-qh, .bg-qh-80 {
 	background: rgb(139,28,33);
-	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);
-	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);
-	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 80%);
+	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
+	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
 }
 
@@ -182,9 +182,9 @@
 
 .bg-qh-icon {
 	background: rgb(209,0,0);
-	background: -moz-linear-gradient(45deg, rgba(209,0,0,1) 0%, rgba(237,28,36,1) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(209,0,0,1) 0%, rgba(237,28,36,1) 100%);
-	background: linear-gradient(45deg, rgba(209,0,0,1) 0%, rgba(237,28,36,1) 100%);
+	background: -moz-linear-gradient(45deg, rgba(139,28,33,1) 0%, rgba(237,28,36,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(139,28,33,1) 0%, rgba(237,28,36,1) 100%);
+	background: linear-gradient(45deg, rgba(139,28,33,1) 0%, rgba(237,28,36,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d10000",endColorstr="#ed1c24",GradientType=1);
 	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -230,9 +230,9 @@
 
 .series .info-destacada.dest-qh {
 	background: rgb(139,28,33);
-	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 70%);
-	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 70%);
-	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 70%);
+	background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 70%);
+	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 70%);
+	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
     
 }
@@ -263,9 +263,9 @@
 
 .hor-grad-qh {
     background: rgb(139,28,33);
-    background: -moz-linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(0,0,0,0) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(0,0,0,0) 100%);
-    background: linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(0,0,0,0) 100%);
+    background: -moz-linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(18,18,18,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(18,18,18,1) 100%);
+    background: linear-gradient(90deg, rgba(139,28,33,0.6) 0%, rgba(18,18,18,1) 100%);
 }
 
 #familia-producto.series .info-prod .table td.hor-grad-qh {
@@ -305,9 +305,9 @@
 
   .comp thead tr:nth-child(1) th{ 
     background: rgb(99,0,0);
-    background: -moz-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(0,0,0,1) 10%);
-    background: -webkit-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(0,0,0,1) 10%);
-    background: linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(0,0,0,1) 10%);
+    background: -moz-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(18,18,18,1) 10%);
+    background: -webkit-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(18,18,18,1) 10%);
+    background: linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(18,18,18,1) 10%);
     position: sticky;
     top: 50px;
     z-index: 10;
@@ -402,16 +402,27 @@ svg.qh-icon-sop {
 	
 	#QH7, #QH5, #QH5U, #QH2  {
 		scroll-margin: 100px 0;
-	}.foot .info-destacada {
+	}
+    
+    .foot .info-destacada {
         vertical-align: middle;
         margin: auto;
     }
 
     .foot.dest-qh {
         background: rgb(139,28,33);
-        background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
-        background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
-        background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(0,0,0,1) 50%);
+        background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
+        background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
+        background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000",GradientType=1);
+        border-top: 1px solid #000;
+    }
+
+    .series7 .foot.dest-qh {
+        background: rgb(139,28,33);
+        background: -moz-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 80%);
+        background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 80%);
+        background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 80%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000",GradientType=1);
         border-top: 1px solid #000;
     }
@@ -433,7 +444,7 @@ svg.qh-icon-sop {
     }
 
     .slide-up .dest-btn-up.bg-qh {
-        background: #000 !important;
+        background: #121212 !important;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         color: #fff;
