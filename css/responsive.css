@@ -296,7 +296,7 @@
 
     #contacto .google-maps {
         width: 100%;
-        height: 505px;
+        height: 460px;
     }
 
     #contacto .cont.form-iframe {
@@ -803,13 +803,13 @@
         position: relative;
         width: 100%;
         overflow: hidden;
-        padding-top: 195%; /* 4:3 Aspect Ratio */
+        padding-top: 210%; /* 4:3 Aspect Ratio */
       }
       
     
       #contacto .google-maps {
         width: 100%; 
-        height: 525px;
+        height: 475px;
       }
 
       /*--- Empresa ---*/
@@ -1388,13 +1388,23 @@
         margin-bottom: 0;
     }
 
+    .datos-empresa .cont-dat-empr{
+        display: flex;
+        align-items: center;
+        /* text-align: left; */
+    }
+
     .datos-empresa .dato-logo {
-        float: left;
-        width: 28px;
-        margin: 0px auto 4px 0;
+        float: none;
+        width: 18px;
+        margin: 0 10px 0 0;
         vertical-align: middle;
         height: auto;
-        padding: 0 10px 0 0;
+        padding: 0;
+    }
+
+    .datos-empresa .dato-logo img {
+        margin-bottom: 15px;
     }
 
     .foot-border {
@@ -1458,6 +1468,12 @@
 
     .productos.bg-overlay, .titulo-seccion, .sol-distr.bg-overlay, .sol-distr .titulo-seccion {
         height: 250px;
+    }
+
+    
+
+    .soporte-fam .titulo-seccion, .soporte-fam.bg-overlay {
+        height: 350px;
     }
 
     .fam .titulo-seccion {
@@ -2127,6 +2143,15 @@
         margin-bottom: 40px;
     }
 
+    #empresa .historia-demeq .datos-empresa .dato-logo {
+        float: left;
+        max-width: 34px;
+        margin: 0 20px 10px 0;
+        vertical-align: middle;
+        height: auto;
+        padding: 0;
+    }
+
     .video-trabajo {
         padding-right: 15px;
         padding-left: 15px;
@@ -2238,7 +2263,7 @@
     }
 
     .lema.cel {
-        margin:10px 0 40px;
+        margin:40px 0;
     }
     
     .lema h1 {
@@ -2250,10 +2275,10 @@
 
     /*--- CAROUSEL ---*/
 
-    #carouselInicio {
+    /* #carouselInicio {
         height: 95%;
         margin-top: 30px;
-    }
+    } */
 
     .carousel-item .row {
         height: 80%;
@@ -2261,7 +2286,7 @@
     
     .img-car, .info-car {
         margin: auto;
-        padding: 10px 20px;
+        padding: 10px 40px;
         text-align: center !important;
     }
     
@@ -2379,6 +2404,13 @@
     .mas-datos {
         padding: 40px 5px;
         margin: 0 20px;
+    }
+
+
+    /*--- Footer ---*/
+
+    .datos-empresa .dato-logo {
+        width: 30px;
     }
 
 
@@ -2983,6 +3015,9 @@
         padding: 0 !important;
     }
 
+    .soporte-fam.bg-overlay {
+        height: 450px;
+    }
 
     .soporte-fam .centered {
         left: 15px;
@@ -2990,23 +3025,27 @@
     }
     
     .soporte-fam .titulo-seccion .icon-familia {
-        justify-content: space-around;
         display: flex;
-        flex-direction: column;
     }
 
     .ttl-fam {
         display: contents;
     }
+
+    .soporte-fam .titulo-familia img {
+        width: 50px;
+        margin-right: 10px;
+    }
+
     .soporte-fam .titulo-familia h2 {
         font-size: 30px;
         display: block;
-        margin: 0;
-        line-height: unset;
+        margin: 5px 0 0 0;
+        line-height: 2.5;
     }
 
     .soporte-fam .titulo-familia h4 {
-        margin-top: 0;
+        margin-top: 0px;
     }
 
     .card-deck .card {
@@ -3095,14 +3134,10 @@
         padding: 60px 15px;
     }
 
-    #empresa .historia-demeq .datos-empresa .dato-logo.ajuste {
-        margin: 5px auto 0px 0;
-    }
-
     .datos-empresa img {
         width: 100%;
         max-width: 200px;
-        margin: 3px 0 15px 0;
+        margin: 0 0 15px 0;
     }
     
     .trabajo-distribuidor {
@@ -3152,6 +3187,12 @@
         padding-top: 310%;
     }
 
+    /*--- Empresa ---*/
+
+    .fundador {
+        font-size: 13px !important;
+    }
+
     /*--- Contacto ---*/
     
     #contacto {
@@ -3165,13 +3206,20 @@
         padding-top: 245%; /* 4:3 Aspect Ratio */
       }
 
-      #contacto .datos-empresa .dato-logo.ajuste, #contacto .datos-empresa .dato-logo {
+      #contacto .datos-empresa .cont-dat-empr {
+        display: flex;
+        align-items: center;
+        /* text-align: left; */
+        align-items: end;
+    }
+
+    #contacto .datos-empresa .dato-logo.ajuste, #contacto .datos-empresa .dato-logo {
         float: left;
         width: 28px;
-        margin: 0 auto 10px 0;
+        margin: 8px 10px 0 0;
         vertical-align: middle;
         height: auto;
-        padding: 0 10px 0 0;
+        padding: 0;
     }
 }
 
@@ -3191,7 +3239,7 @@
 
     .img-car, .info-car {
         margin: 10px auto;
-        padding: 0 60px;
+        padding: 0 30px;
         text-align: center !important;
     }
     

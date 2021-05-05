@@ -909,17 +909,23 @@ footer {
 .datos-empresa img {
 	width: 100%;
 	max-width: 200px;
-	margin-bottom: 20px;
+	margin: 10px 0;
 }
 
 .datos-empresa .dato-logo{
 	float: left;
-    width: 28px;
-    margin: 6px auto -4px 0;
+    max-width: 20px;
+    margin: 0 10px 0 0;
     vertical-align: middle;
     height: auto;
-    padding: 0 10px 0 0;
 }
+
+.datos-empresa .cont-dat-empr{
+	display: flex; 
+	align-items: baseline;
+    margin: 5px 0;
+}
+
 
 .redes-empresa .col-3 {
 	padding-left: 0;
@@ -988,6 +994,7 @@ footer {
 }
 .prod-txt p {
 	margin-bottom: 4px;
+	font-style: italic;
 }
 
 .mas-datos {
@@ -2200,7 +2207,7 @@ textarea.form-control {
     background-size: cover;
     background-position: center center;
     color: #fff;
-    height: 450px;
+    height: 300px;
 }
 
 .gif-serial {
@@ -2226,6 +2233,11 @@ textarea.form-control {
 
 .soporte-fam .titulo-familia .row {
 	margin-bottom: 30px;
+	flex-direction: column;
+}
+
+.soporte-fam .titulo-familia .ttl-fam {
+	display: flex;
 }
 
 .soporte-fam .titulo-familia img {
@@ -2234,14 +2246,15 @@ textarea.form-control {
 }
 
 .soporte-fam .titulo-familia h2 {
-	font-size: 30px;
-	display: block;
-	margin: 8px 0 0;
+    font-size: 35px;
+    display: block;
+    margin: 8px 0 0;
 }
 
 .soporte-fam .titulo-familia h4 {
 	font-size: 18px;
 	display: block;
+	margin-top: 10px;
 }
 
 .soporte-f table a svg {
@@ -2404,21 +2417,17 @@ padding:0px;
 }
 
 #empresa .historia-demeq .datos-empresa {
-	padding: 20px;
+	padding: 20px 20px 10px;
 	background: #202020;
 }
 
 #empresa .historia-demeq .datos-empresa .dato-logo {
     float: left;
-    width: 28px;
-    margin: 6px auto -10px 0;
+    max-width: 28px;
+    margin: 0 0 10px 0;
     vertical-align: middle;
     height: auto;
     padding: 0 10px 0 0;
-}
- 
-#empresa .historia-demeq .datos-empresa .dato-logo.ajuste {
-    margin: 0px auto -10px 0;
 }
 
 .video-trabajo {
@@ -2671,25 +2680,16 @@ button:focus {
 	color: #ef7d2d;
 }
 
-#contacto .datos-empresa .dato-logo.ajuste, #contacto .datos-empresa .dato-logo {
+#contacto .datos-empresa .dato-logo {
     float: left;
-    width: 28px;
-    margin: 0 auto -4px 0;
-    vertical-align: middle;
-    height: auto;
-    padding: 0 10px 0 0;
+    max-width: 20px;
+    margin: 0 10px 0 0;
+    vertical-align: unset;
+    padding: 0;
+    /* align-items: baseline; */
 }
-#contacto .cont-dat-empr.ajuste2 .dato-logo {
-    float: left;
-    width: 28px;
-    margin: 6px auto 0 0;
-    vertical-align: middle;
-    height: auto;
-    padding: 0 10px 0 0;
-}
-
 #contacto .cont-dat-empr {
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 #contacto .cont-dat-empr a:hover {
@@ -2716,7 +2716,7 @@ button:focus {
 
   #contacto .google-maps {
 	width: 100%; 
-	height: 250px;
+	height: 220px;
   }
 
 

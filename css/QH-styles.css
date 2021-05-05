@@ -8,7 +8,7 @@
 	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
 	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
-    border-top: 1px solid #000;
+    border: none !important;
 }
 
 .txt-qh {
@@ -26,6 +26,7 @@
 	background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
 	background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000000",GradientType=1);
+    border: none !important;
 }
 
 #QH7, #QH5, #QH5U, #QH2  {
@@ -415,7 +416,7 @@ svg.qh-icon-sop {
         background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
         background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 50%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000",GradientType=1);
-        border-top: 1px solid #000;
+        border-top: none;
     }
 
     .series7 .foot.dest-qh {
@@ -424,7 +425,7 @@ svg.qh-icon-sop {
         background: -webkit-linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 80%);
         background: linear-gradient(0deg, rgba(139,28,33,1) 0%, rgba(18,18,18,1) 80%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8b1c21",endColorstr="#000",GradientType=1);
-        border-top: 1px solid #000;
+        border-top: none;
     }
 
     .dest-btn-up.bg-qh {
