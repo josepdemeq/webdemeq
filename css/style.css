@@ -14,7 +14,7 @@ body {
 	background: #121212;
 	font-family: 'Adobe Clean', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 16px;
 	color: white;
 	user-select: none;
 }
@@ -65,7 +65,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 h1 {
-	font-size: 56px;
+	font-size: 54px;
 	line-height: 1.3;
 }
 
@@ -80,22 +80,22 @@ h3 {
 }
 
 h4 {
-	font-size: 34px;
+	font-size: 32px;
 	line-height: 1.3;
 }
 
 h5 {
-	font-size: 28px;
+	font-size: 24px;
 	line-height: 1.3;
 }
 
 h6 {
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1.3;
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 15px;
 }
 
@@ -130,7 +130,6 @@ p {
 .btn-blanco {
 	color: #000;
     background-color: #fff;
-    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 0.4rem 1.5rem 0.2em;
@@ -146,7 +145,6 @@ p {
 .btn-negro {
 	color: #fff;
     background-color: #000;
-    font-size: 20px;
     border: 2px solid #000;
     border-radius: 50px;
     padding: 0.4rem 1.5rem 0.2em;
@@ -163,7 +161,6 @@ p {
 .btn-naranja {
 	color: #fff;
     background-color: #ef7d2d;
-    font-size: 20px;
     border: 2px solid #ef7d2d;
     border-radius: 50px;
     padding: 0.4rem 1.5rem 0.2em;
@@ -179,7 +176,6 @@ p {
 .btn-borde {
 	color: #fff;
     background-color: transparent;
-    font-size: 20px;
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 0.4rem 1.5rem 0.2em;
@@ -348,6 +344,7 @@ header#home {
 	height: 80px;
 	width: 100%;
 	color: #fff;
+	font-size: 18px;
 	line-height: 100px;
 	  -webkit-transition: height .5s, line-height .5s; /* Safari */
 	  transition: height .5s, line-height .5s;
@@ -800,7 +797,7 @@ button.nav-link {
 .info-car h2 {
 	display: inline-flex;
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-size: 3.5rem;
+	font-size: ;
 	vertical-align: middle;
 	font-weight: 600;
 	margin: auto;
@@ -1061,21 +1058,11 @@ footer {
 
 
 #productos .card {
-	height: 340px;
-	position: relative;
-    display: -ms-flexbox;
+	height: 270px;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #000;
-    background-clip: border-box;
-    border: none;
+    padding: 0;
     border-radius: 0;
-	margin-bottom: 30px;
-	transition: 0.2s all ease-in-out;
-	
+    margin-bottom: 30px;
 }
 
 .card:hover {
@@ -1085,31 +1072,41 @@ footer {
   }
 
 #productos .card-block {
-	height: 340px;
-	position: relative;
 	z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 
 .info-producto {
-	padding: 20px;
 	z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	align-items: flex-start;
+}
+
+#productos .info-producto .familia-prod img {
+	width: 50px;
+}
+
+#productos .info-producto .familia-prod {
+    font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
 }
 
 .img-producto {
-	padding: 20px 35px 20px 0;
 	z-index: 1;
+    display: flex;
+	justify-content: center;
 }
 
 .card .img-producto img {
 	transition: 0.3s all ease-in-out;
-	display: block;
-}
-
-.card:hover .img-producto img {
-	transform: scale(1.1);
-	transition: 0.3s all ease-in-out;
-	transition-delay: 0.05s;
-
+	 max-height: 240px;
 }
 
 .card:hover .img-producto img {
@@ -1130,7 +1127,7 @@ footer {
 .info-producto h6 {
 	font-style: italic;
 	margin-bottom: 15px;
-	font-size: 26px;
+	font-size: 22px;
 }
 
 .familia-prod img {
@@ -1141,16 +1138,12 @@ footer {
 	margin-bottom: 10px;
 }
 
-.info-producto .btn {
-	position: absolute;
-    bottom: 60px;
-}
-
 .info-producto p {
-	position: absolute;
-    bottom: 0px;
-	text-transform: uppercase;
-	font-size: 16px;
+	font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+	margin-bottom: 0;
+
 }
 
 .info-producto p.txt-negro {
@@ -1205,7 +1198,7 @@ footer {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
 	margin: 0;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 
 .fam .titulo-familia h4 {
@@ -1233,7 +1226,7 @@ footer {
     color: #000;
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 18px;
 	transition: 0.3s all ease-in-out;
 	letter-spacing: 1px;
 }
@@ -1291,8 +1284,13 @@ footer {
 	scroll-margin: 80px 0;
 }
 
-  #familia-producto section {
-	  padding: 60px 0 0 0;
+
+#familia-producto section {
+	padding: 60px 0 0 0;
+}
+
+  #familia-producto .series section {
+	  padding: 60px 25px 0 0;
   }
 
   .img-serie {
@@ -1328,7 +1326,7 @@ footer {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
 	margin-bottom: 0;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 
   
@@ -1388,10 +1386,6 @@ footer {
     margin: 0 auto auto 3px;
 }
 
-  .media-body p{
-	  font-size: 20px;
-  }
-
   .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -1409,16 +1403,12 @@ footer {
 
   /* --- SERES ---*/
 
-  .series li {
-    padding-left: 5px;
-}
-
   .scrll-sect  {
 	scroll-margin: 80px 0;
 }
 
 .cont-serie, .serie {
-	height: calc(100vh - 55px);
+	height: calc(100vh - 85px);
 }
 
 .serie .titulo-seccion {
@@ -1427,38 +1417,56 @@ footer {
     display: flex;
     width: 100%;
     margin-top: 30px;
+    align-content: center;
+}
+
+.serie .titulo-seccion .titulo-familia {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .serie .titulo-seccion .info-serie {
 	text-shadow: 3px 3px 6px rgb(0,0,0,0.5);
 }
 
-
+.series7 .serie .titulo-seccion .info-serie {
+    text-shadow: 3px 3px 6px rgb(0 0 0 / 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .series7 .serie .info-serie p, .serie .info-serie p {
 	margin-bottom: 20px;
 }
 
 .serie .img-series {
-	display: block;
-	width: 100%;
-	height: auto;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.series7 .serie .img-series {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .serie .img-series img {
-    width: 100%;
+    width: auto;
     height: auto;
-    margin-right: 0;
-    margin-bottom: 0;
     max-width: -webkit-fill-available;
-    max-height: unset;
+    max-height: 433px;
 }
 
-.series7 .serie .img-series img {
-    width: 75%;
-    height: auto;
-    margin-right: 0;
-    margin-bottom: 0;
-}
 
 .series7 .serie .precio {
     display: flex;
@@ -1466,7 +1474,7 @@ footer {
     background: #000;
     border-radius: 50px;
     padding: 4px;
-    width: 100%;
+    width: 85%;
     max-width: 700px;
 	margin: 20px 0 0;
 }
@@ -1480,16 +1488,19 @@ footer {
     margin: 40px auto 0;
     flex-direction: column;
     justify-content: center;
+    max-height: 100px;
+	box-shadow: 1px 3px 12px rgb(0 0 0 / 10%); 
 }
 .serie .precio p {
     line-height: 2;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     margin: auto;
 }
 
 .serie .precio .btn-blanco {
     padding: 0.8rem 1.5rem 0.6rem;
+	font-size: 18px;
 }
 
 .series7 .certificaciones .row {
@@ -1507,6 +1518,7 @@ footer {
 	transition: all 0.3s ease-in-out;
     padding: 5px 25px;
 	margin: 8px auto;
+	line-height: 1.8;
 }
 
 #familia-producto.series .info-prod .col-lg-8 {
@@ -1525,7 +1537,7 @@ footer {
     position: relative;
     top: 0;
     transform: translateY(0);
-	padding: 60px 30px 60px;
+	padding: 60px 40px 60px 0px;
 	margin: 0 -15px 0 0;
 }
 
@@ -1538,6 +1550,10 @@ footer {
     width: 999em;
     top: 0;
     bottom: 0;
+}
+
+#familia-producto.series section {
+    padding: 60px 25px 0 0;
 }
 
 .scrll-sect {
@@ -1682,15 +1698,17 @@ footer {
 
 .series .info-destacada {
     background: #222;
-	padding: 40px 20px;
+	padding: 20px 10px 0;
+	/* position: -webkit-sticky; */
 	position: sticky;
 	margin-top: 40px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .series .info-destacada.sticky-top {
-	top: 140px;
+	top: 120px;
 	height: fit-content;
+	height: -moz-fit-content;
 	margin-bottom: 60px;
     z-index: 1;
 }
@@ -1707,7 +1725,7 @@ footer {
 	letter-spacing: 2px;
 	margin-bottom: 15px;
 	line-height: 50px;
-	font-size: 35px;
+	font-size: 30px;
 }
 
 .series .info-destacada p {
@@ -1718,18 +1736,14 @@ footer {
 
 
 .series .info-destacada .img-container {
-    /* max-height: 200px; */
-    /* text-align: center; */
     position: relative;
     min-height: 200px;
     padding: 0;
-    margin: 0 -35px;
+    margin: 0 -25px;
 }
 
 .series .info-destacada .img-container img {
-    position: absolute;
     width: 100%;
-    bottom: -40px;
 }
 
 .series7 .series .info-destacada .img-container img {
@@ -2012,8 +2026,10 @@ footer {
 }
 
 #soporte .familia-prod {
-    line-height: 1.5
+    line-height: 1.8;
+    font-size: 27px;
 }
+
 
 #soporte .familia-prod img {
     width: 50px;
@@ -2063,7 +2079,7 @@ footer {
 }
 
 #soporte .card .img-producto img.series7  {
-    margin-left: 6px;
+    margin-left: 10px;
 }
 
 #soporte .card .img-producto img {
@@ -2096,6 +2112,7 @@ footer {
 
 .sop-lic {
 	padding: 60px 0;
+	overflow-x: hidden;
 }
 
 #soporte .bg-licencias {
@@ -2105,7 +2122,11 @@ footer {
     background-position: center center;
     color: #fff;
 	padding: 160px 40px;
+	transition: all 0.3s ease-in-out;
+	position: relative;
 }
+
+
 
 #soporte .bg-licencias .container{
 	width: 60%;
@@ -2136,7 +2157,7 @@ footer {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	padding-top: 55%; /* 4:3 Aspect Ratio */
+	padding-top: 35%; /* 4:3 Aspect Ratio */
   }
   
   #soporte .responsive-iframe,  #sol-distribuidor .responsive-iframe {
@@ -2393,7 +2414,9 @@ padding:0px;
 }
  
 #licencias .lic-serial {
-	padding: 40px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
  
 

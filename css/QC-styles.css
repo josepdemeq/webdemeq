@@ -14,7 +14,7 @@
 }
 
 .txt-qc {
-	color:#0071bc;
+	color:#289ee8;;
 }
 
 .fam-QC.bg-qc {
@@ -131,13 +131,13 @@
 }
 
 .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
+    display: inline-block;
     color: #fff;
     font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.3s all ease-in-out;
-    letter-spacing: 1px;
-    margin: 8px 20%;
+    letter-spacing: 0.5px;
+    margin: 8px auto;
     padding: 5px 25px;
     border-radius: 50px;
 }
@@ -147,18 +147,7 @@
     background-color: #fff;
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
-    margin: 8px 20%;
-    padding: 5px 25px;
-
-}
-
-#familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-  color: rgb(0,113,184);
-  background-color: #fff;
-  border-radius: 50px;
-  transition: 0.3s all ease-in-out;
-  padding: 5px 25px;
-  margin: 8px 18%;
+    padding: 5px 30px;
 
 }
 

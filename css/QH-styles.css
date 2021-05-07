@@ -56,21 +56,21 @@
     background: #fff;
 	transition: all 0.3s ease-in-out;
 	outline: none;
-    padding: 5px 25px;
+    padding: 5px 30px;
     color: rgb(139,28,33);
     border-radius: 50px;
 }
 
 
 .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
+    display: inline-block;
     color: #fff;
     font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.3s all ease-in-out;
-    letter-spacing: 1px;
-    margin: 8px 18%;
+    letter-spacing: 0.5px;
     padding: 5px 25px;
+    margin: 8px auto;
     border-radius: 50px;
 }
   
@@ -79,8 +79,7 @@
     background-color: #fff;
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
-    margin: 8px 16%;
-    padding: 5px 25px;
+    padding: 5px 30px;
 
 }
 
