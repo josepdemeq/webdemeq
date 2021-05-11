@@ -109,7 +109,7 @@
 }
 
 
-#familia-producto.series.f-QH .info-prod h5 {
+#familia-producto.series.f-QH .info-prod h5, #soporte-producto.series.f-QH .info-prod h5 {
     font-weight: 600;
     border-bottom: 8px solid rgb(209,0,0);
 }
@@ -196,7 +196,7 @@
 }
 
 
-#familia-producto.series .info-prod .table thead th {
+#familia-producto.series .info-prod .table thead th, #soporte-producto.series .info-prod .table thead th {
     vertical-align: top;
     border-bottom: 2px solid rgb(100, 20, 24);
 }
@@ -495,17 +495,17 @@ svg.qh-icon-sop {
     }
 
     .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
-        padding: 5px 0;
+        padding: 5px 10px;
         margin: 8px 10%;
     }
     
     #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-        padding: 5px 0;
+        padding: 5px 10px;
         margin: 8px 10%;
     }
 
     #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-    padding: 5px 0;
+    padding: 5px 10px;
     margin: 8px 10%;
     }
 }

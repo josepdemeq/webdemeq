@@ -187,13 +187,13 @@
 
 
 
-#familia-producto.series.f-QS .info-prod h5 {
+#familia-producto.series.f-QS .info-prod h5, #soporte-producto.series.f-QS .info-prod h5 {
 	font-weight: 600;
 	border-bottom: 8px solid rgb(205,176,41);
 
 }
 
-#familia-producto.series .info-prod .table thead th {
+#familia-producto.series .info-prod .table thead th, #soporte-producto.series .info-prod .table thead th {
     vertical-align: top;
     border-bottom: 2px solid rgb(143, 122, 30);
 }
@@ -386,6 +386,18 @@ svg.qs-icon-sop {
         margin: 8px 15%;
         padding: 5px 25px;
     
+    }
+    
+    #productos.relacionados .card-deck .row {
+        height: 200px !important;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    #productos.relacionados .card-deck .card {
+        max-width: 97%;
     }
 }
 

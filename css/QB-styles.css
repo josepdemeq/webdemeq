@@ -172,13 +172,13 @@
 }
 
 
-#familia-producto.series.f-QB .info-prod h5 {
+#familia-producto.series.f-QB .info-prod h5, #soporte-producto.series.f-QB .info-prod h5 {
 	font-weight: 600;
 	border-bottom: 8px solid rgb(57,163,143);
 
 }
 
-#familia-producto.series .info-prod .table thead th {
+#familia-producto.series .info-prod .table thead th, #soporte-producto.series .info-prod .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid rgb(39, 110, 97);
 }

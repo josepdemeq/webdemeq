@@ -189,6 +189,16 @@
 }
 
 
+@media (max-width: 1440px) {
+
+  .mapa-distribuidores .modal-dialog.mod-cuatro .col-12.cuatro {
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 100%;
+  }
+}
+
+
 
 @media (max-width: 768px) {
 

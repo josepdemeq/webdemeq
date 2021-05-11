@@ -104,18 +104,24 @@ textarea.form-control {
 
 @media (max-width: 1024px) {
 
-    .btn-naranja, .btn-borde {
+    .btn-naranja, .btn-borde, .form-control, .custom-select, textarea.form-control {
         font-size: 14px;
     }
-}
-
-@media (max-width: 900px) {
-
-    .btn-naranja, .btn-borde {
-        font-size: 16px;
-        padding: 0.5rem 2rem;
+    .form-control, .custom-select {
+        height: calc(1em + 1rem + 10px);
     }
 }
+
+@media (max-width: 692x) {
+
+    .btn-naranja, .btn-borde, .form-control, .custom-select, textarea.form-control {
+        font-size: 16px;
+    }
+    .form-control, .custom-select {
+        height: calc(1em + 1rem + 10px);
+    }
+}
+
 
 
 
