@@ -2065,6 +2065,11 @@
         margin: 40px 0;
     }
 
+    .titulo-seccion .titulo-familia {
+        padding: 20px 30px !important;
+        margin-left: 0;
+    }
+
 
     /*--- Nav Familia Productos ---*/
 
@@ -2075,6 +2080,7 @@
 
     .navbar-expand-sm .navbar-nav .nav-link.link-negro, .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
         padding: 9px 15px 5px 15px !important;
+        margin: 0 4px 4px !important;
     }
 
     .link-negro .serie-txt-dot, .link-blanco .serie-txt-dot {
@@ -2230,7 +2236,7 @@
 
     .dest-btn-up {
         display: block;
-        padding: 15px 0 20px;
+        padding: 10px 0 20px;
         text-align: center;
         transition: all 0.3s ease-in-out;
         font-size: 18px;
@@ -2416,7 +2422,6 @@
         flex: 0 0 100%;
         padding: 0 30px !important;
         margin: 0;
-    } {
         padding: 0 30px !important;
     }
 
@@ -2470,6 +2475,11 @@
     }
 
     /*--- DataCenter ---*/
+
+    .datacenter .container, #datacenter .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     #datacenter .container {
         margin-left: auto;
@@ -2751,6 +2761,14 @@
 
 @media (max-width: 376px) {
 
+    .carousel-item .info-car h4 {
+        font-size: 24px !important;
+    }
+
+    .carousel-item .info-car p {
+        font-size: 12px !important;
+    }
+
     .titulo-seccion h2 {
         font-size: 26px;
     }
@@ -2780,19 +2798,304 @@
         font-size: 40px;
     }
 
+    .series7 .foot .info-destacada .btn-blanco {
+        padding: 0.5rem 3.2rem !important;
+    }
+
+    .series7 .foot.slide-up .info-destacada .img-container {
+        top: 414px;;
+        left: -57px;
+    }
+
+    .series7 .foot .info-destacada .img-container img {
+        height: 80%;
+    }
+
+    .foot.slide-up .info-destacada .col-12 {
+        width: 65%;
+        left: 34%;
+    }
+
+    .foot.slide-up .info-destacada .img-container {
+        left: -203%;
+        top: -70px;
+    }
+
+    .slide-up .dest-btn-up{
+        top: -10px !important;
+        z-index: 5000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dest-btn-up {
+        top: 0px !important;
+    }
+
+    .foot .info-destacada .img-container img {
+        height: 130%;
+    }
+
+    .foot .info-destacada h4 {
+        margin: 10px 0 20px 0;
+    }
+
+    .foot .info-destacada h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
     #soporte .container.form-iframe, #sol-distribuidor .container.form-iframe {
-        padding-top: 215% !important;
+        padding-top: 250% !important;
+    }
+
+    .filter-button {
+        width: 45.5%;
     }
 
     #licencias .cont.form-iframe {
-        padding-top: 170%;
+        padding-top: 190%;
+    }
+
+    .trabajo-distribuidor {
+        height: 380px;
     }
 
     #contacto .cont.form-iframe {
-        padding-top: 250%;
+        padding-top: 290%;
     }
 
     #contacto {
         padding: 60px 15px 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .info-car .car-ico {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info-car h2 {
+        font-size: 36px;
+    }
+
+    .carousel-item .info-car p {
+        font-size: 11px !important;
+    }
+
+    .carousel-item {
+        padding-top: 30px;
+    }
+
+    .img-car{
+        padding: 10px 0;
+    }
+
+    .dropdown-menu .dropdown-item.drop-fam-cont .drop-prod {
+        font-size: 16px;
+    }
+
+    .titulo-seccion .titulo-familia {
+        margin-left: 0 !important;
+    }
+
+    .fam .titulo-familia img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fam .titulo-familia h2 {
+        line-height: 1.25;
+        font-size: 30px;
+    }
+
+    .link-blanco .dot, .link-negro .dot {
+        height: 9px;
+        width: 9px;
+    }
+
+    #familia-producto.series section.quokka h4, .quokka h4 {
+        font-size: 20px !important;
+    }
+
+    #productos .card {
+        height: 600px;
+    }
+
+    #productos .info-producto {
+        height: 570px;
+    }
+
+    .titulo-seccion h6 {
+        font-size: 16px;
+    }
+
+    .info-producto h6 {
+        font-size: 24px;
+    }
+
+    .info-producto p {
+        font-size: 13px !important;
+    }
+
+    .dmq-quokka {
+        height: 14px;
+    }
+
+    .serie .precio p {
+        font-size: 16px !important;
+    }
+
+    .series .series-nav .nav-link {
+        line-height: 1.7;
+    }
+
+    .foot {
+        width: 75%;
+        bottom: -94%;
+    }
+
+    .foot.slide-up {
+        width: 100%;
+    }
+
+    .series7 .foot .info-destacada .btn-blanco {
+        padding: 0.5rem 2.6rem !important;
+    }
+
+    .series7 .foot.slide-up .info-destacada .col-12 {
+        margin-top: 50px;
+    }
+
+    .foot.slide-up .info-destacada .col-12 {
+        width: 70%;
+        margin-top: 50px;
+        left: 30%;
+    }
+
+    .foot .info-destacada h4 {
+        font-size: 20px !important;
+    }
+
+    .series7 .foot.slide-up .info-destacada .img-container {
+        top: 389px;
+    }
+
+    .foot.slide-up .info-destacada .img-container {
+        top: -4%;
+        left: -150%;
+    }
+
+    .foot .info-destacada .img-container img {
+        height: 110%;
+    }
+
+    .foot .info-destacada h3 {
+        font-size: 30px;    
+        line-height: 20px;
+    }
+    .foot .info-destacada .fam-icon {
+        width: 40px;
+        margin: 0 0 15px;
+        float: none;
+    }
+
+    .foot .info-destacada .btn-blanco {
+        font-size: 16px;
+    }
+
+    .foot .info-destacada .precio-container p {
+        font-size: 18px !important;
+    }
+
+    .datacenter .container, #datacenter .container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #datacenter .container.img-quokka {
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+    }
+
+    #soporte .container.img-quokka {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #soporte .container.form-iframe, #sol-distribuidor .container.form-iframe {
+        padding-top: 260% !important;
+    }
+
+    .soporte-fam .titulo-familia img {
+        width: 40px;
+    }
+
+    .soporte-fam .titulo-familia h2 {
+        font-size: 30px;
+        margin: 2px 0 0 0;
+    }
+
+    .titulo-seccion h2, .titulo-seccion h3 {
+        font-weight: 600;
+        font-size: 28px;
+    }
+
+    #licencias .cont.form-iframe {
+        padding-top: 195%;
+    }
+
+    .filter-button, .filter-button.all {
+        width: 100%;
+        margin: 5px !important;
+    }
+
+    .redes-empresa .col-3 {
+        margin-right: 0px;
+    }
+
+    .datos-empresa .dato-logo img {
+        margin-bottom: 18px;
+    }
+
+    .datos-productos .prod-logo {
+        margin: 0 15px 40px 0;
+    }
+
+    .owl-carousel .item .content-testimonial p {
+        padding: 0px 0 0 10px;
+        font-size: 16px !important;
+    }
+
+    .centered.empr {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+    .datos-empresa .cont-dat-empr {
+        display: flex;
+        align-items: start;
+    }
+
+    .datos-empresa .dato-logo {
+        max-width: 20px !important;
+        margin: 5px 10px 0 0 !important;
+    }
+
+    .equipo-demeq .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #contacto .cont.form-iframe {
+        padding-top: 310%;
     }
 }

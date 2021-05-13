@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto Ajax</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css">
+</head>
+<body>
+
+    <!-- ajax contact form -->
+    <section style="margin: 50px 0;">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <form class="contact__form" method="post" action="sol-distribuidor.php">
+
+                        <!-- form element -->
+                        <div class="row">
+                            <div class="col-12 form-group">
+                                <input name="name" type="text" class="form-control" placeholder="Nombre y Apellido" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input name="email" type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input name="phone" type="text" class="form-control" placeholder="Teléfono" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <select class="custom-select mr-sm-2" name="model" required>
+                                    <option selected>Modelo</option>
+                                    <option disabled></option>
+                                    <optgroup label="Serie QB">
+                                      <option value="QB7">QB7</option>
+                                      <option disabled></option>
+                                    </optgroup>
+                                    <optgroup label="Serie QC">
+                                      <option value="QC5-F">QC5 F</option>
+                                      <option value="QC5-N">QC5 N</option>
+                                      <option value="QC5-C">QC5 C</option>
+                                      <option value="QC5-DLF">QC5 DLF</option>
+                                      <option value="QC5-DLN">QC5 DLN</option>
+                                      <option value="QC5-DLC">QC5 DLC</option>
+                                      <option value="QC3-F">QC3 F</option>
+                                      <option value="QC3-N">QC3 N</option>
+                                      <option value="QC3-C">QC3 C</option>
+                                      <option value="QC3-DLF">QC3 DLF</option>
+                                      <option value="QC3-DLN">QC3 DLN</option>
+                                      <option value="QC3-DLC">QC3 DLC</option>
+                                      <option value="QC2-F">QC2 F</option>
+                                      <option value="QC2-DLF">QC2 DLF</option>
+                                      <option disabled></option>
+                                    </optgroup>
+                                    <optgroup label="Serie QH">
+                                      <option value="QH7-L">QH7 L</option>
+                                      <option value="QH7-U">QH7 U</option>
+                                      <option value="QH7-C">QH7 C</option>
+                                      <option value="QH5-D">QH5 D</option>
+                                      <option value="QH5-G">QH5 G</option>
+                                      <option value="QH5-M">QH5 M</option>
+                                      <option value="QH5-U">QH5 U</option>
+                                      <option value="QH2-S">QH2 S</option>
+                                      <option value="QH2-DLS">QH2 DLS</option>
+                                      <option disabled></option>
+                                    </optgroup>
+                                    <optgroup label="Serie QS">
+                                      <option value="QS5-B">QS5 B</option>
+                                      <option value="QS5-DL">QS5 DL</option>
+                                      <option value="QS5-E">QS5 E</option>
+                                      <option value="QS5-DLE">QS5 DLE</option>
+                                      <option value="QS3-B">QS3 B</option>
+                                      <option value="QS3-DL">QS3 DL</option>
+                                      <option value="QS2-S">QS2 S</option>
+                                      <option value="QS2-DLS">QS2 DLS</option>
+                                      <option value="QS2-V">QS2 V</option>
+                                      <option value="QS2-DLV">QS2 DLV</option>
+                                    </optgroup>
+                                  </select>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input name="serial" type="text" class="form-control" placeholder="Número de serie" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <input name="company" type="text" class="form-control" placeholder="Empresa" required>
+                            </div>
+                            <div class="col-12 form-group">
+                                <textarea name="message" class="form-control"  cols="25" maxlength="1000" rows="6" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <input name="submit" type="submit" class="btn btn-naranja" value="Enviar mensaje">
+                            </div>
+                        </div>
+                        <!-- end form element -->
+                    </form>
+                    <br><br>
+                    <!-- form message -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-sucess contact__msg" style="display: none" role="alert">
+                                ¡Gracias! Su mensaje fue enviado exitosamente.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end message -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
