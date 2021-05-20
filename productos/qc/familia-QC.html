@@ -66,34 +66,39 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
           <li class="nav-item col col-lg-2 dropdown">
-            <button class="nav-link active dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <a href="../../productos.html" class="pc">
+              <button class="nav-link active dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+          </a>
+            <button class="nav-link dropdown-toggle cel" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Productos
             </button>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item prods prods-item-item mt-2 mb-2" href="../../productos.html">Todos nuestros productos</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item drop-fam-cont drop-qb" href="../../productos/qb/familia-QB.html">
+              <a class="dropdown-item prods-item mt-2 mb-2 cel" href="../../productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider cel"></div>
+              <a class="dropdown-item drop-fam-cont drop-qb" href="../qb/familia-QB.html">
               <img src="../../img/fam-icons/QB-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QB</div>
                 <div class="drop-prod">Medidores de esperores Hall</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qc" href="../../productos/qc/familia-QC.html">
+              <a class="dropdown-item drop-fam-cont drop-qc" href="familia-QC.html">
               <img src="../../img/fam-icons/QC-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QC</div>
                 <div class="drop-prod">Medidores de capas</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qh" href="../../productos/qh/familia-QH.html">
+              <a class="dropdown-item drop-fam-cont drop-qh" href="../qh/familia-QH.html">
               <img src="../../img/fam-icons/QH-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QH</div>
                 <div class="drop-prod">Durómetros Leeb y UCI</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qs" href="../../productos/qs/familia-QS.html">
+              <a class="dropdown-item drop-fam-cont drop-qs" href="../qs/familia-QS.html">
               <img src="../../img/fam-icons/QS-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QS</div>
@@ -133,27 +138,25 @@
     <header class="bg-dark">
       <div class="container-fluid fam fam-QC bg-overlay bg-qc">
         <div class="container titulo-seccion">
-          <div class="row align-self-center">
-            <div class="col col-lg-7 my-auto titulo-familia">
-              <div class="row">
-                <img src="../../img/fam-icons/QC-ico.svg" alt="">
-                <h2>Familia QC</h2>
-              </div>
-              <h4 class="italic">Medidores de espesores de recubrimientos</h4>
-              <h6>La familia de medidores de espesores QC ofrece una solución para cada necesidad adaptándose a su aplicación y presupuesto. Ideales para medir pinturas de todo tipo y tratamientos como cromados de modo rápido y sencillo sobre bases ferrosas o no ferrosas.</h6>
+          <div class="col col-lg-12 titulo-familia">
+            <div class="row">
+              <img src="../../img/fam-icons/QC-ico.svg" alt="">
+              <h2>Familia QC</h2>
             </div>
-            <div class="col col-lg-5 my-auto img-familia">
-              <img src="../../img/productos/familia-QH.png" alt="">
-            </div>
+            <h4 class="italic">Medidores de espesores de recubrimientos</h4>
+            <h6>La familia de medidores de espesores QC ofrece una solución para cada necesidad adaptándose a su aplicación y presupuesto. Ideales para medir pinturas de todo tipo y tratamientos como cromados de modo rápido y sencillo sobre bases ferrosas o no ferrosas.</h6>
+          </div>
+          <div class="col col-lg-12 img-familia">
+            <img src="../../img/productos/familia-QH.png" alt="">
           </div>
         </div>
       </div>
     </header>
     <main id="familia-producto" class="f-QC">
-      <nav class="navbar navbar-expand-sm bg-qc-c sticky-top second-nav">
+      <nav  class="navbar navbar-expand-sm bg-qc-c sticky-top second-nav">
         <ul class="container navbar-nav">
-            <li class="nav-item col col-4 text-center">
-                <a class="nav-link link-blanco punta-inicio" href="#QC5">
+            <li class="nav-item">
+                <a class="nav-link link-blanco" href="#QC5">
                   <span class="serie-txt-dot">Serie QC5</span>
                   <span class="text-center">
                     <span class="dot"></span>
@@ -162,7 +165,7 @@
                   </span>
                 </a>
             </li>
-            <li class="nav-item col col-4 text-center">
+            <li class="nav-item">
                 <a class="nav-link link-blanco" href="#QC3">
                   <span class="serie-txt-dot">Serie QC3</span>
                   <span class="text-center">
@@ -171,8 +174,8 @@
                   </span>
                 </a>
             </li>
-            <li class="nav-item col col-4 text-center">
-                <a class="nav-link link-blanco punta-fin" href="#QC2">
+            <li class="nav-item">
+                <a class="nav-link link-blanco" href="#QC2">
                   <span class="serie-txt-dot">Serie QC2</span>
                   <span class="text-center">
                     <span class="dot"></span>
@@ -181,6 +184,17 @@
             </li>
         </ul>
       </nav>
+      <section class="sect-bread">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="../../productos.html">Productos</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Familia QC</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
       <section id="QC5">
         <div class="container-fluid fam-QC bg-qc product-pc">
           <div class="container">
@@ -195,7 +209,7 @@
                   <div class="col-12 caract-serie wow slideIn" data-wow-delay="0.6s">
                     <div class="row">
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.59 49.59"><g><g><path d="M24.79,27.92h24.6a26.83,26.83,0,0,0,.2-3.13,26.66,26.66,0,0,0-.2-3.12H.2a24.51,24.51,0,0,0,0,6.25Z"/><path d="M22.48,11.26H17.74L24.8,21.67l7.05-10.41H27.11V.11L26,0c-.39,0-.78,0-1.18,0S24,0,23.62,0L22.48.11Z"/><path d="M27.11,38.32h4.74l-7.06-10.4-7,10.4h4.73V49.48l1.15.08,1.17,0q.6,0,1.17,0l1.15-.08Z"/></g></g></svg>
@@ -206,7 +220,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.5 39.1"><g><g><g ><g><path d="M13.7,0H4.6A4.65,4.65,0,0,0,0,4.6V34.5a4.65,4.65,0,0,0,4.6,4.6H20.9a4.65,4.65,0,0,0,4.6-4.6V11.8ZM4.6,1.9h7.8v7a4.33,4.33,0,0,0,4.3,4.3h7V34.6a2.86,2.86,0,0,1-2.8,2.8H4.6a2.8,2.8,0,0,1-2.8-2.8V4.6A2.78,2.78,0,0,1,4.6,1.9Zm12.1,9.4a2.43,2.43,0,0,1-2.4-2.4V3.2l8.1,8.1Z"/><rect x="4" y="5.5" width="7.1" height="2.1"/><rect x="4" y="10.8" width="7.1" height="2.1"/><rect x="4" y="16" width="17.5" height="2.1"/><rect x="4" y="21.3" width="17.5" height="2.1"/><rect x="4" y="26.5" width="17.5" height="2.1"/><rect x="4" y="31.8" width="17.5" height="2.1"/></g></g></g></g></svg>
@@ -217,7 +231,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.07 35.56"><g><g><path d="M29.55,5.5l-.75-.75a.62.62,0,0,0-.26-.17C28,4.36,28,4.36,25.46,7a.74.74,0,0,0,0,1.05l.75.76a.76.76,0,0,0,1.07,0l2.26-2.26A.77.77,0,0,0,29.55,5.5Z"/><path d="M31.06,12.6l2.26-2.26a.75.75,0,0,0,0-1.07l-.75-.75a.65.65,0,0,0-.26-.17c-.52-.22-.53-.22-3.08,2.44a.75.75,0,0,0,0,1.06l.75.75a.76.76,0,0,0,1.07,0Z"/><path d="M8.74,31.89a8.3,8.3,0,0,0,4.44,1.29,8.09,8.09,0,0,0,5.68-2.35l13-12.95a.75.75,0,0,0,0-1.07l-.22-.22,6.25-6.25a.75.75,0,0,0,0-1.07l-9-9a.77.77,0,0,0-1.07,0L21.48,6.47l-.22-.22a.77.77,0,0,0-1.07,0L7.24,19.2a8,8,0,0,0-2.35,5.68A8.28,8.28,0,0,0,6.63,30c-1.1,1.6-3.69,2.36-6,3L0,33.19a24.85,24.85,0,0,0,2,2.37C4.41,34.84,7.16,33.92,8.74,31.89ZM28.26,1.82l8,8-5.72,5.72-8-8ZM11.38,23.37A2.25,2.25,0,0,1,14.14,23l.62-.61L13.1,18.92a.53.53,0,0,1,.1-.61l1.51-1.5a1.68,1.68,0,0,1,2.69-1.94,1.68,1.68,0,0,1-1.93,2.7L14.23,18.8l1.33,2.82,5.56-5.56-.84-.83a.54.54,0,0,1,.25-.9l3.26-.84a.54.54,0,0,1,.66.66l-.84,3.26a.54.54,0,0,1-.9.25l-.83-.84-5.45,5.45,3.87,1.08,1.22-1.22-.43-.43a.54.54,0,0,1,0-.76l1.62-1.61a.54.54,0,0,1,.76,0l1.62,1.61a.54.54,0,0,1,0,.76l-1.62,1.62a.54.54,0,0,1-.76,0l-.43-.43-1.44,1.44a.53.53,0,0,1-.52.14l-4.76-1.33-.66.66a2.25,2.25,0,0,1-.33,2.76,2.26,2.26,0,1,1-3.19-3.19Z"/></g></g></svg>
@@ -228,7 +242,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.07 36.05"><g><g><path d="M17.24,31.78c-1.57,0-3.13-8.31-3.13-8.31h0l7.45-15H15.4L12,15.27,12,15s-.9-6.73-5.52-6.73S1.57,16.8,1.57,16.8l3.42,0s.07-3.95,1.74-3.94c1.14,0,2.76,7.47,2.76,7.47h0L1.91,35.65H8.07l3.57-7.21.88,3.29s1,4.32,4.92,4.32,4.89-6.06,4.89-8.37H19S19.11,31.78,17.24,31.78Z"/><path d="M22.06,0H2A2,2,0,0,0,2,4h20a2,2,0,1,0,0-4Z"/></g></g></svg>
@@ -239,7 +253,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.57 22.85"><g><g><rect y="21.32" width="31.57" height="1.53"/><rect x="-10.66" y="10.66" width="22.85" height="1.53" transform="translate(12.19 10.66) rotate(90)"/><rect x="-2.05" y="11.28" width="13.88" height="4.51" transform="translate(18.43 8.65) rotate(90)"/><rect x="5.37" y="12.85" width="10.75" height="4.51" transform="translate(25.85 4.36) rotate(90)"/><rect x="8.98" y="10.61" width="15.22" height="4.51" transform="translate(29.46 -3.72) rotate(90)"/><rect x="21.69" y="11.62" width="13.21" height="4.51" transform="translate(42.16 -14.42) rotate(90)"/><rect x="13.23" y="9.01" width="18.43" height="4.51" transform="translate(33.71 -11.18) rotate(90)"/></g></g></svg>
@@ -250,7 +264,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.25 24.88"><g><g><path d="M0,2H2V0H13.29V2h2V24.88H9.77V17.06H5.9v-5.3H9.77V5.44H5.44V24.88H0Z"/></g></g></svg>
@@ -261,7 +275,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.19 24.88"><g><g><path d="M0,2H2V0H15.25V5.44H5.44V24.88H0ZM5.9,9.77h7.39V15.1H5.9Z"/><path d="M18.94,2h2V0H34.19V5.44H24.38v14h9.81v5.44H20.9v-2h-2Zm5.9,7.82h7.4V15.1h-7.4Z"/></g></g></svg>
@@ -272,7 +286,7 @@
                         </div>
                       </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.19 24.88"><g><g><path d="M0,0H5.44V24.88H0ZM6.61,7.82H9.35V9.77h.42V0h5.48V24.88H9.77V17.06H7.82v-2H6.61Z"/><path d="M18.94,2h2V0H34.19V5.44H24.38V24.88H18.94Zm5.9,7.82h7.4V15.1h-7.4Z"/></g></g></svg>
@@ -283,7 +297,7 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.27 37.4"><g><g><polygon points="16.86 19.01 21.87 24.02 23.87 22.02 18.86 17.02 20.9 14.98 13.14 13.29 14.83 21.05 16.86 19.01"/><path d="M19.36,1.57A17.77,17.77,0,0,0,10.72,3.8l.53,2.44L14,9a12.12,12.12,0,0,0-1.68,1.05L12,9.72l.11.5s-.49.41-1,.89l-1.75-8L7.27,5.2,2.07,0,0,2.07l5.2,5.2L3.08,9.39l8,1.75a6.59,6.59,0,0,0-.87,1l-.83-.18.51.52a11.4,11.4,0,0,0-1,1.67l-3-2.94-2.18-.48A17.91,17.91,0,1,0,19.36,1.57Zm15.3,12L25.32,4.18A16.46,16.46,0,0,1,34.66,13.53ZM23.74,3.65,35.19,15.1a16.78,16.78,0,0,1,.56,3.28L20.46,3.1A16.06,16.06,0,0,1,23.74,3.65Zm-4.38-.59h0l7,6.94a11.69,11.69,0,0,0-4.81-2.08L16.85,3.25A15.85,15.85,0,0,1,19.36,3.06ZM16,3.41,20.3,7.76c-.31,0-.62,0-.94,0a11.69,11.69,0,0,0-1.69.12L13.84,4A16.62,16.62,0,0,1,16,3.41ZM11.26,5.2a18.11,18.11,0,0,1,1.82-.9L16.78,8a11.27,11.27,0,0,0-2.06.67Zm8.1,5.48a8.81,8.81,0,1,1-8.8,8.8A8.81,8.81,0,0,1,19.36,10.68Zm-14.28.7,3.46,3.46a12.07,12.07,0,0,0-.66,2.06l-3.7-3.7A15.38,15.38,0,0,1,5.08,11.38ZM3.89,14l3.82,3.82a12,12,0,0,0-.12,1.7c0,.32,0,.63,0,.94L3.29,16.08A15.13,15.13,0,0,1,3.89,14Zm-1,5.52A17.59,17.59,0,0,1,3.12,17l4.67,4.67a11.69,11.69,0,0,0,2.06,4.79L2.93,19.49Zm1.12,5.95,9.37,9.37A16.52,16.52,0,0,1,4.05,25.43ZM15,35.32,3.52,23.86A16.17,16.17,0,0,1,3,20.58L18.26,35.87A16.08,16.08,0,0,1,15,35.32Zm4.37.59h0L12.43,29a11.74,11.74,0,0,0,4.78,2.07l4.67,4.66A16.07,16.07,0,0,1,19.36,35.91Zm3.4-.35-4.34-4.35c.31,0,.62,0,.94,0a11.94,11.94,0,0,0,1.7-.12L24.88,35A17.88,17.88,0,0,1,22.76,35.56Zm2.88-.9L21.94,31A12.1,12.1,0,0,0,24,30.3l3.46,3.47A16.14,16.14,0,0,1,25.64,34.66Zm2.48-1.29L24.71,30a12.06,12.06,0,0,0,1.68-1l3.31,3.32A16.16,16.16,0,0,1,28.12,33.37Zm2.15-1.62L27,28.45a11.65,11.65,0,0,0,1.36-1.36l3.3,3.3A15.87,15.87,0,0,1,30.27,31.75Zm1.84-1.92L28.8,26.51a12.06,12.06,0,0,0,1-1.68l3.41,3.41A17.72,17.72,0,0,1,32.11,29.83Zm1.53-2.24-3.46-3.47a12.07,12.07,0,0,0,.66-2.06l3.7,3.7A15.52,15.52,0,0,1,33.64,27.59ZM34.83,25,31,21.18a11.93,11.93,0,0,0,.13-1.7c0-.31,0-.63,0-.94l4.34,4.34A14.75,14.75,0,0,1,34.83,25Zm-3.9-7.67a11.76,11.76,0,0,0-2.09-4.81l7,7h0A17.38,17.38,0,0,1,35.6,22Z"/></g></g></svg>
@@ -294,7 +308,7 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.29 47.13"><g><g><path d="M45,36.33a24.36,24.36,0,0,0,2.28-5.49v-.26H0a24.16,24.16,0,0,0,2.36,5.75H45Z"/><polygon points="34.81 25.3 34.81 19.71 32.46 19.71 32.46 25.3 30.06 25.3 33.64 30.58 37.21 25.3 34.81 25.3"/><path d="M37.21,41.61l-3.58-5.28-3.57,5.28h2.4v5.52a24.73,24.73,0,0,0,2.35-1.05V41.61Z"/><rect x="15.28" y="28.75" width="6.63" height="1"/><rect x="15.28" y="16.09" width="6.63" height="6.54"/><path d="M20,8V0a24.62,24.62,0,0,0-2.71.58V8Z"/><polygon points="16.23 8.79 15.28 15.32 21.91 15.32 20.96 8.79 16.23 8.79"/><rect x="15.28" y="26.93" width="6.63" height="1" rx="0.29"/><rect x="15.28" y="25.16" width="6.63" height="1" rx="0.29"/><rect x="15.28" y="23.39" width="6.63" height="1" rx="0.29"/></g></g></svg>
@@ -305,7 +319,7 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon ajuste4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.34 39.74"><g><g><path d="M15.2,0a15,15,0,1,0,15,15A15,15,0,0,0,15.2,0ZM22,6.74,21.17,8.8A1.17,1.17,0,0,1,20,9.64H15.86c-.13.37-.31.91-.56,1.69l1,.35a14.53,14.53,0,0,1,1.91.9A8.12,8.12,0,0,1,20,13.89a6.12,6.12,0,0,1,1.74,4.35A6.06,6.06,0,0,1,19.72,23a7.57,7.57,0,0,1-5.13,1.73,9.87,9.87,0,0,1-5.78-1.67A1.25,1.25,0,0,1,8.28,22l0-.2.55-2.51a1.13,1.13,0,0,1,.82-.69,1.1,1.1,0,0,1,.94.26,6.37,6.37,0,0,0,3.85,1.34,2.33,2.33,0,0,0,1.64-.49,1.74,1.74,0,0,0,.49-1.33,1.85,1.85,0,0,0-.38-1.15,3.62,3.62,0,0,0-1.29-1,13.24,13.24,0,0,0-1.85-.81c-.55-.19-1.23-.39-2-.6h-.33l-.33-.36a1.38,1.38,0,0,1-.23-1.13l.19-1.08c.51-1.65,1.27-3.8,2.24-6.36a1.13,1.13,0,0,1,1.12-.73H21a1.14,1.14,0,0,1,1,.55A1.11,1.11,0,0,1,22,6.74Z"/><path d="M3.82,26.3l-3.73,8a1,1,0,0,0,.16,1.06,1,1,0,0,0,1,.25l5.47-2,2,5.47a1,1,0,0,0,.86.63h.13a1,1,0,0,0,.78-.55L14,31.6A12.44,12.44,0,0,1,3.82,26.3Z"/><path d="M30.26,34.53l-3.49-8.14a12.48,12.48,0,0,1-10.37,5l3.3,7.68a1,1,0,0,0,.77.57h.12a1,1,0,0,0,.88-.61l2.15-5.41L29,35.8a1,1,0,0,0,1.05-.22A1,1,0,0,0,30.26,34.53Z"/></g></g></svg>
@@ -317,7 +331,7 @@
                         </div>
                         
                     </div>
-                    <p class="italic">(*) Dependiendo de la versión, para saber ingrese en "Más Información".</p>
+                    <p class="italic mt-3">(*) Dependiendo de la versión, para saber ingrese en "Más Información".</p>
                     <div class="btn-group w-100">
                       <a href="QC5.html" class="btn btn-negro mr-5">Más información</a>
                       <a href="comparativa-QC.html" class="btn btn-negro mr-5">Comparar equipos</a>
@@ -508,7 +522,7 @@
                   <div class="col-12 caract-serie wow slideIn" data-wow-delay="0.6s">
                     <div class="row">
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.59 49.59"><g><g><path d="M24.79,27.92h24.6a26.83,26.83,0,0,0,.2-3.13,26.66,26.66,0,0,0-.2-3.12H.2a24.51,24.51,0,0,0,0,6.25Z"/><path d="M22.48,11.26H17.74L24.8,21.67l7.05-10.41H27.11V.11L26,0c-.39,0-.78,0-1.18,0S24,0,23.62,0L22.48.11Z"/><path d="M27.11,38.32h4.74l-7.06-10.4-7,10.4h4.73V49.48l1.15.08,1.17,0q.6,0,1.17,0l1.15-.08Z"/></g></g></svg>
@@ -519,7 +533,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.5 39.1"><g><g><g ><g><path d="M13.7,0H4.6A4.65,4.65,0,0,0,0,4.6V34.5a4.65,4.65,0,0,0,4.6,4.6H20.9a4.65,4.65,0,0,0,4.6-4.6V11.8ZM4.6,1.9h7.8v7a4.33,4.33,0,0,0,4.3,4.3h7V34.6a2.86,2.86,0,0,1-2.8,2.8H4.6a2.8,2.8,0,0,1-2.8-2.8V4.6A2.78,2.78,0,0,1,4.6,1.9Zm12.1,9.4a2.43,2.43,0,0,1-2.4-2.4V3.2l8.1,8.1Z"/><rect x="4" y="5.5" width="7.1" height="2.1"/><rect x="4" y="10.8" width="7.1" height="2.1"/><rect x="4" y="16" width="17.5" height="2.1"/><rect x="4" y="21.3" width="17.5" height="2.1"/><rect x="4" y="26.5" width="17.5" height="2.1"/><rect x="4" y="31.8" width="17.5" height="2.1"/></g></g></g></g></svg>
@@ -530,7 +544,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.07 35.56"><g><g><path d="M29.55,5.5l-.75-.75a.62.62,0,0,0-.26-.17C28,4.36,28,4.36,25.46,7a.74.74,0,0,0,0,1.05l.75.76a.76.76,0,0,0,1.07,0l2.26-2.26A.77.77,0,0,0,29.55,5.5Z"/><path d="M31.06,12.6l2.26-2.26a.75.75,0,0,0,0-1.07l-.75-.75a.65.65,0,0,0-.26-.17c-.52-.22-.53-.22-3.08,2.44a.75.75,0,0,0,0,1.06l.75.75a.76.76,0,0,0,1.07,0Z"/><path d="M8.74,31.89a8.3,8.3,0,0,0,4.44,1.29,8.09,8.09,0,0,0,5.68-2.35l13-12.95a.75.75,0,0,0,0-1.07l-.22-.22,6.25-6.25a.75.75,0,0,0,0-1.07l-9-9a.77.77,0,0,0-1.07,0L21.48,6.47l-.22-.22a.77.77,0,0,0-1.07,0L7.24,19.2a8,8,0,0,0-2.35,5.68A8.28,8.28,0,0,0,6.63,30c-1.1,1.6-3.69,2.36-6,3L0,33.19a24.85,24.85,0,0,0,2,2.37C4.41,34.84,7.16,33.92,8.74,31.89ZM28.26,1.82l8,8-5.72,5.72-8-8ZM11.38,23.37A2.25,2.25,0,0,1,14.14,23l.62-.61L13.1,18.92a.53.53,0,0,1,.1-.61l1.51-1.5a1.68,1.68,0,0,1,2.69-1.94,1.68,1.68,0,0,1-1.93,2.7L14.23,18.8l1.33,2.82,5.56-5.56-.84-.83a.54.54,0,0,1,.25-.9l3.26-.84a.54.54,0,0,1,.66.66l-.84,3.26a.54.54,0,0,1-.9.25l-.83-.84-5.45,5.45,3.87,1.08,1.22-1.22-.43-.43a.54.54,0,0,1,0-.76l1.62-1.61a.54.54,0,0,1,.76,0l1.62,1.61a.54.54,0,0,1,0,.76l-1.62,1.62a.54.54,0,0,1-.76,0l-.43-.43-1.44,1.44a.53.53,0,0,1-.52.14l-4.76-1.33-.66.66a2.25,2.25,0,0,1-.33,2.76,2.26,2.26,0,1,1-3.19-3.19Z"/></g></g></svg>
@@ -541,7 +555,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.07 36.05"><g><g><path d="M17.24,31.78c-1.57,0-3.13-8.31-3.13-8.31h0l7.45-15H15.4L12,15.27,12,15s-.9-6.73-5.52-6.73S1.57,16.8,1.57,16.8l3.42,0s.07-3.95,1.74-3.94c1.14,0,2.76,7.47,2.76,7.47h0L1.91,35.65H8.07l3.57-7.21.88,3.29s1,4.32,4.92,4.32,4.89-6.06,4.89-8.37H19S19.11,31.78,17.24,31.78Z"/><path d="M22.06,0H2A2,2,0,0,0,2,4h20a2,2,0,1,0,0-4Z"/></g></g></svg>
@@ -552,7 +566,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.19 24.88"><g><g><path d="M0,2H2V0H15.25V5.44H5.44V24.88H0ZM5.9,9.77h7.39V15.1H5.9Z"/><path d="M18.94,2h2V0H34.19V5.44H24.38v14h9.81v5.44H20.9v-2h-2Zm5.9,7.82h7.4V15.1h-7.4Z"/></g></g></svg>
@@ -563,7 +577,7 @@
                         </div>
                       </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.19 24.88"><g><g><path d="M0,0H5.44V24.88H0ZM6.61,7.82H9.35V9.77h.42V0h5.48V24.88H9.77V17.06H7.82v-2H6.61Z"/><path d="M18.94,2h2V0H34.19V5.44H24.38V24.88H18.94Zm5.9,7.82h7.4V15.1h-7.4Z"/></g></g></svg>
@@ -574,7 +588,7 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.27 37.4"><g><g><polygon points="16.86 19.01 21.87 24.02 23.87 22.02 18.86 17.02 20.9 14.98 13.14 13.29 14.83 21.05 16.86 19.01"/><path d="M19.36,1.57A17.77,17.77,0,0,0,10.72,3.8l.53,2.44L14,9a12.12,12.12,0,0,0-1.68,1.05L12,9.72l.11.5s-.49.41-1,.89l-1.75-8L7.27,5.2,2.07,0,0,2.07l5.2,5.2L3.08,9.39l8,1.75a6.59,6.59,0,0,0-.87,1l-.83-.18.51.52a11.4,11.4,0,0,0-1,1.67l-3-2.94-2.18-.48A17.91,17.91,0,1,0,19.36,1.57Zm15.3,12L25.32,4.18A16.46,16.46,0,0,1,34.66,13.53ZM23.74,3.65,35.19,15.1a16.78,16.78,0,0,1,.56,3.28L20.46,3.1A16.06,16.06,0,0,1,23.74,3.65Zm-4.38-.59h0l7,6.94a11.69,11.69,0,0,0-4.81-2.08L16.85,3.25A15.85,15.85,0,0,1,19.36,3.06ZM16,3.41,20.3,7.76c-.31,0-.62,0-.94,0a11.69,11.69,0,0,0-1.69.12L13.84,4A16.62,16.62,0,0,1,16,3.41ZM11.26,5.2a18.11,18.11,0,0,1,1.82-.9L16.78,8a11.27,11.27,0,0,0-2.06.67Zm8.1,5.48a8.81,8.81,0,1,1-8.8,8.8A8.81,8.81,0,0,1,19.36,10.68Zm-14.28.7,3.46,3.46a12.07,12.07,0,0,0-.66,2.06l-3.7-3.7A15.38,15.38,0,0,1,5.08,11.38ZM3.89,14l3.82,3.82a12,12,0,0,0-.12,1.7c0,.32,0,.63,0,.94L3.29,16.08A15.13,15.13,0,0,1,3.89,14Zm-1,5.52A17.59,17.59,0,0,1,3.12,17l4.67,4.67a11.69,11.69,0,0,0,2.06,4.79L2.93,19.49Zm1.12,5.95,9.37,9.37A16.52,16.52,0,0,1,4.05,25.43ZM15,35.32,3.52,23.86A16.17,16.17,0,0,1,3,20.58L18.26,35.87A16.08,16.08,0,0,1,15,35.32Zm4.37.59h0L12.43,29a11.74,11.74,0,0,0,4.78,2.07l4.67,4.66A16.07,16.07,0,0,1,19.36,35.91Zm3.4-.35-4.34-4.35c.31,0,.62,0,.94,0a11.94,11.94,0,0,0,1.7-.12L24.88,35A17.88,17.88,0,0,1,22.76,35.56Zm2.88-.9L21.94,31A12.1,12.1,0,0,0,24,30.3l3.46,3.47A16.14,16.14,0,0,1,25.64,34.66Zm2.48-1.29L24.71,30a12.06,12.06,0,0,0,1.68-1l3.31,3.32A16.16,16.16,0,0,1,28.12,33.37Zm2.15-1.62L27,28.45a11.65,11.65,0,0,0,1.36-1.36l3.3,3.3A15.87,15.87,0,0,1,30.27,31.75Zm1.84-1.92L28.8,26.51a12.06,12.06,0,0,0,1-1.68l3.41,3.41A17.72,17.72,0,0,1,32.11,29.83Zm1.53-2.24-3.46-3.47a12.07,12.07,0,0,0,.66-2.06l3.7,3.7A15.52,15.52,0,0,1,33.64,27.59ZM34.83,25,31,21.18a11.93,11.93,0,0,0,.13-1.7c0-.31,0-.63,0-.94l4.34,4.34A14.75,14.75,0,0,1,34.83,25Zm-3.9-7.67a11.76,11.76,0,0,0-2.09-4.81l7,7h0A17.38,17.38,0,0,1,35.6,22Z"/></g></g></svg>
@@ -585,7 +599,7 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.29 47.13"><g><g><path d="M45,36.33a24.36,24.36,0,0,0,2.28-5.49v-.26H0a24.16,24.16,0,0,0,2.36,5.75H45Z"/><polygon points="34.81 25.3 34.81 19.71 32.46 19.71 32.46 25.3 30.06 25.3 33.64 30.58 37.21 25.3 34.81 25.3"/><path d="M37.21,41.61l-3.58-5.28-3.57,5.28h2.4v5.52a24.73,24.73,0,0,0,2.35-1.05V41.61Z"/><rect x="15.28" y="28.75" width="6.63" height="1"/><rect x="15.28" y="16.09" width="6.63" height="6.54"/><path d="M20,8V0a24.62,24.62,0,0,0-2.71.58V8Z"/><polygon points="16.23 8.79 15.28 15.32 21.91 15.32 20.96 8.79 16.23 8.79"/><rect x="15.28" y="26.93" width="6.63" height="1" rx="0.29"/><rect x="15.28" y="25.16" width="6.63" height="1" rx="0.29"/><rect x="15.28" y="23.39" width="6.63" height="1" rx="0.29"/></g></g></svg>
@@ -596,7 +610,7 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 una-caract">
+                        <div class="col-lg-6 col-sm-6 una-caract">
                           <div class="media">
                             <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                               <svg class="svg-icon qc-icon ajuste4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.34 39.74"><g><g><path d="M15.2,0a15,15,0,1,0,15,15A15,15,0,0,0,15.2,0ZM22,6.74,21.17,8.8A1.17,1.17,0,0,1,20,9.64H15.86c-.13.37-.31.91-.56,1.69l1,.35a14.53,14.53,0,0,1,1.91.9A8.12,8.12,0,0,1,20,13.89a6.12,6.12,0,0,1,1.74,4.35A6.06,6.06,0,0,1,19.72,23a7.57,7.57,0,0,1-5.13,1.73,9.87,9.87,0,0,1-5.78-1.67A1.25,1.25,0,0,1,8.28,22l0-.2.55-2.51a1.13,1.13,0,0,1,.82-.69,1.1,1.1,0,0,1,.94.26,6.37,6.37,0,0,0,3.85,1.34,2.33,2.33,0,0,0,1.64-.49,1.74,1.74,0,0,0,.49-1.33,1.85,1.85,0,0,0-.38-1.15,3.62,3.62,0,0,0-1.29-1,13.24,13.24,0,0,0-1.85-.81c-.55-.19-1.23-.39-2-.6h-.33l-.33-.36a1.38,1.38,0,0,1-.23-1.13l.19-1.08c.51-1.65,1.27-3.8,2.24-6.36a1.13,1.13,0,0,1,1.12-.73H21a1.14,1.14,0,0,1,1,.55A1.11,1.11,0,0,1,22,6.74Z"/><path d="M3.82,26.3l-3.73,8a1,1,0,0,0,.16,1.06,1,1,0,0,0,1,.25l5.47-2,2,5.47a1,1,0,0,0,.86.63h.13a1,1,0,0,0,.78-.55L14,31.6A12.44,12.44,0,0,1,3.82,26.3Z"/><path d="M30.26,34.53l-3.49-8.14a12.48,12.48,0,0,1-10.37,5l3.3,7.68a1,1,0,0,0,.77.57h.12a1,1,0,0,0,.88-.61l2.15-5.41L29,35.8a1,1,0,0,0,1.05-.22A1,1,0,0,0,30.26,34.53Z"/></g></g></svg>
@@ -608,7 +622,7 @@
                         </div>
                         
                     </div>
-                    <p class="italic">(*) Dependiendo de la versión, para saber ingrese en "Más Información".</p>
+                    <p class="italic mt-3">(*) Dependiendo de la versión, para saber ingrese en "Más Información".</p>
                     <div class="btn-group w-100">
                       <a href="QC3.html" class="btn btn-negro mr-5">Más información</a>
                       <a href="comparativa-QC.html" class="btn btn-negro mr-5">Comparar equipos</a>
@@ -779,7 +793,7 @@
                 <div class="col-12 caract-serie wow slideIn" data-wow-delay="0.6s">
                   <div class="row">
 
-                    <div class="col-lg-4 col-sm-6 una-caract">
+                    <div class="col-lg-6 col-sm-6 una-caract">
                       <div class="media">
                         <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                           <svg class="svg-icon qc-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.59 49.59"><g><g><path d="M24.79,27.92h24.6a26.83,26.83,0,0,0,.2-3.13,26.66,26.66,0,0,0-.2-3.12H.2a24.51,24.51,0,0,0,0,6.25Z"/><path d="M22.48,11.26H17.74L24.8,21.67l7.05-10.41H27.11V.11L26,0c-.39,0-.78,0-1.18,0S24,0,23.62,0L22.48.11Z"/><path d="M27.11,38.32h4.74l-7.06-10.4-7,10.4h4.73V49.48l1.15.08,1.17,0q.6,0,1.17,0l1.15-.08Z"/></g></g></svg>
@@ -790,7 +804,7 @@
                       </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 una-caract">
+                    <div class="col-lg-6 col-sm-6 una-caract">
                       <div class="media">
                         <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                           <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.5 39.1"><g><g><g ><g><path d="M13.7,0H4.6A4.65,4.65,0,0,0,0,4.6V34.5a4.65,4.65,0,0,0,4.6,4.6H20.9a4.65,4.65,0,0,0,4.6-4.6V11.8ZM4.6,1.9h7.8v7a4.33,4.33,0,0,0,4.3,4.3h7V34.6a2.86,2.86,0,0,1-2.8,2.8H4.6a2.8,2.8,0,0,1-2.8-2.8V4.6A2.78,2.78,0,0,1,4.6,1.9Zm12.1,9.4a2.43,2.43,0,0,1-2.4-2.4V3.2l8.1,8.1Z"/><rect x="4" y="5.5" width="7.1" height="2.1"/><rect x="4" y="10.8" width="7.1" height="2.1"/><rect x="4" y="16" width="17.5" height="2.1"/><rect x="4" y="21.3" width="17.5" height="2.1"/><rect x="4" y="26.5" width="17.5" height="2.1"/><rect x="4" y="31.8" width="17.5" height="2.1"/></g></g></g></g></svg>
@@ -801,7 +815,7 @@
                       </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 una-caract">
+                    <div class="col-lg-6 col-sm-6 una-caract">
                       <div class="media">
                         <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                           <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.07 35.56"><g><g><path d="M29.55,5.5l-.75-.75a.62.62,0,0,0-.26-.17C28,4.36,28,4.36,25.46,7a.74.74,0,0,0,0,1.05l.75.76a.76.76,0,0,0,1.07,0l2.26-2.26A.77.77,0,0,0,29.55,5.5Z"/><path d="M31.06,12.6l2.26-2.26a.75.75,0,0,0,0-1.07l-.75-.75a.65.65,0,0,0-.26-.17c-.52-.22-.53-.22-3.08,2.44a.75.75,0,0,0,0,1.06l.75.75a.76.76,0,0,0,1.07,0Z"/><path d="M8.74,31.89a8.3,8.3,0,0,0,4.44,1.29,8.09,8.09,0,0,0,5.68-2.35l13-12.95a.75.75,0,0,0,0-1.07l-.22-.22,6.25-6.25a.75.75,0,0,0,0-1.07l-9-9a.77.77,0,0,0-1.07,0L21.48,6.47l-.22-.22a.77.77,0,0,0-1.07,0L7.24,19.2a8,8,0,0,0-2.35,5.68A8.28,8.28,0,0,0,6.63,30c-1.1,1.6-3.69,2.36-6,3L0,33.19a24.85,24.85,0,0,0,2,2.37C4.41,34.84,7.16,33.92,8.74,31.89ZM28.26,1.82l8,8-5.72,5.72-8-8ZM11.38,23.37A2.25,2.25,0,0,1,14.14,23l.62-.61L13.1,18.92a.53.53,0,0,1,.1-.61l1.51-1.5a1.68,1.68,0,0,1,2.69-1.94,1.68,1.68,0,0,1-1.93,2.7L14.23,18.8l1.33,2.82,5.56-5.56-.84-.83a.54.54,0,0,1,.25-.9l3.26-.84a.54.54,0,0,1,.66.66l-.84,3.26a.54.54,0,0,1-.9.25l-.83-.84-5.45,5.45,3.87,1.08,1.22-1.22-.43-.43a.54.54,0,0,1,0-.76l1.62-1.61a.54.54,0,0,1,.76,0l1.62,1.61a.54.54,0,0,1,0,.76l-1.62,1.62a.54.54,0,0,1-.76,0l-.43-.43-1.44,1.44a.53.53,0,0,1-.52.14l-4.76-1.33-.66.66a2.25,2.25,0,0,1-.33,2.76,2.26,2.26,0,1,1-3.19-3.19Z"/></g></g></svg>
@@ -812,7 +826,7 @@
                       </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 una-caract">
+                    <div class="col-lg-6 col-sm-6 una-caract">
                       <div class="media">
                         <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                           <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon qc-icon ajuste2" viewBox="0 0 31.05 39.01"><g><g><path d="M9,35.35a3.42,3.42,0,0,0,2.36-4.08,3.35,3.35,0,0,0,3-1,3.24,3.24,0,0,0,.82-3.12,2.25,2.25,0,0,1,.26,0A3.31,3.31,0,0,0,19.18,24a3.2,3.2,0,0,0-1-2.49L14.88,18.4l-5-4.73L5.13,9.14l-.42-.4a2.35,2.35,0,0,1,0-3.23,2.32,2.32,0,0,1,3.26-.14c.74.66,1.45,1.35,2.17,2l5.77,5.47,2.36,2.23a6.52,6.52,0,0,0,1.83,1.29,2.42,2.42,0,0,0,3.05-.54,6.8,6.8,0,0,0,.95-1.24c.58-.93,1.14-1.88,1.7-2.82a2.88,2.88,0,0,1,1.61-1.34,2.83,2.83,0,0,1,3,.87,2.76,2.76,0,0,1,.29,3.18c-.35.64-.75,1.26-1.13,1.89L25.8,22.62c-.07.12-.14.24-.21.38.56,1.16,1.12,2.32,1.67,3.49a6.3,6.3,0,0,1-.38,6.37A5.73,5.73,0,0,1,24.46,35c-2.35,1.14-4.7,2.29-7.07,3.39a6.37,6.37,0,0,1-8.12-2.51C9.16,35.74,9.07,35.55,9,35.35Z"/><path d="M14.32,28.25a2.2,2.2,0,0,1-1.38,1.89,2.21,2.21,0,0,1-2.52-.42c-.93-.84-1.83-1.72-2.74-2.58l-4-3.75a2.4,2.4,0,0,1-.62-2.72,2.34,2.34,0,0,1,3.76-.74l3.08,2.9,3.65,3.44A2.45,2.45,0,0,1,14.32,28.25Z"/><path d="M8.93,15.18a2.42,2.42,0,0,1,1.88.7l2.47,2.34,3.91,3.71a3,3,0,0,1,.93,1.3,2.35,2.35,0,0,1-.9,2.59,2.29,2.29,0,0,1-2.77-.1c-.65-.56-1.26-1.16-1.88-1.75L7.78,19.44a2.82,2.82,0,0,1-.9-1.32A2.28,2.28,0,0,1,8.93,15.18Z"/><path d="M8.1,34.45a2.29,2.29,0,0,1-1.64-.67L2.47,30c-.61-.58-1.23-1.14-1.81-1.74a2.3,2.3,0,0,1,1-3.81A2.24,2.24,0,0,1,3.94,25c.77.71,1.52,1.43,2.28,2.15l3.31,3.12a2.83,2.83,0,0,1,.83,1.31A2.32,2.32,0,0,1,8.1,34.45Z"/><path d="M23.7,8.16a1,1,0,0,1-1-.53.88.88,0,0,1,.13-1,1.25,1.25,0,0,1,.27-.24l2.58-1.89a1,1,0,0,1,.77-.24.92.92,0,0,1,.79.68.94.94,0,0,1-.36,1c-.47.36-1,.7-1.43,1l-1.23.89A5.78,5.78,0,0,1,23.7,8.16Z"/><path d="M15.89,5.23a1,1,0,0,1-.56,1A1,1,0,0,1,14.24,6a6.13,6.13,0,0,1-.38-.51l-1.6-2.19A1.16,1.16,0,0,1,12,2.52a.91.91,0,0,1,.63-.82.9.9,0,0,1,1,.26c.18.21.34.45.5.67.5.68,1,1.35,1.48,2A3.6,3.6,0,0,1,15.89,5.23Z"/><path d="M21.15,6a.91.91,0,0,1-.89-1,2.28,2.28,0,0,1,.15-.44l1.23-2.77a1.62,1.62,0,0,1,.22-.41A.9.9,0,0,1,23,1.05a.93.93,0,0,1,.5,1c0,.1-.07.2-.11.3-.43,1-.87,2-1.3,3A.91.91,0,0,1,21.15,6Z"/><path d="M16.73,1.13A1,1,0,0,1,17,.31a.88.88,0,0,1,.9-.28.84.84,0,0,1,.67.66c.07.37.12.75.16,1.13.08.73.16,1.46.23,2.19a2.82,2.82,0,0,1,0,.41.92.92,0,0,1-.81.89.91.91,0,0,1-1-.65A6.64,6.64,0,0,1,17,3.78C16.92,2.9,16.82,2,16.73,1.13Z"/></g></g></svg>
@@ -823,7 +837,7 @@
                       </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 una-caract">
+                    <div class="col-lg-6 col-sm-6 una-caract">
                       <div class="media">
                         <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                           <svg class="svg-icon qc-icon ajuste2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.19 24.88"><g><g><path d="M0,2H2V0H15.25V5.44H5.44V24.88H0ZM5.9,9.77h7.39V15.1H5.9Z"/><path d="M18.94,2h2V0H34.19V5.44H24.38v14h9.81v5.44H20.9v-2h-2Zm5.9,7.82h7.4V15.1h-7.4Z"/></g></g></svg>
@@ -834,7 +848,7 @@
                       </div>
                     </div>
 
-                      <div class="col-lg-4 col-sm-6 una-caract">
+                      <div class="col-lg-6 col-sm-6 una-caract">
                         <div class="media">
                           <div class="align-self-start mr-3 dot-icon bg-qc-icon">
                             <svg class="svg-icon qc-icon ajuste4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.34 39.74"><g><g><path d="M15.2,0a15,15,0,1,0,15,15A15,15,0,0,0,15.2,0ZM22,6.74,21.17,8.8A1.17,1.17,0,0,1,20,9.64H15.86c-.13.37-.31.91-.56,1.69l1,.35a14.53,14.53,0,0,1,1.91.9A8.12,8.12,0,0,1,20,13.89a6.12,6.12,0,0,1,1.74,4.35A6.06,6.06,0,0,1,19.72,23a7.57,7.57,0,0,1-5.13,1.73,9.87,9.87,0,0,1-5.78-1.67A1.25,1.25,0,0,1,8.28,22l0-.2.55-2.51a1.13,1.13,0,0,1,.82-.69,1.1,1.1,0,0,1,.94.26,6.37,6.37,0,0,0,3.85,1.34,2.33,2.33,0,0,0,1.64-.49,1.74,1.74,0,0,0,.49-1.33,1.85,1.85,0,0,0-.38-1.15,3.62,3.62,0,0,0-1.29-1,13.24,13.24,0,0,0-1.85-.81c-.55-.19-1.23-.39-2-.6h-.33l-.33-.36a1.38,1.38,0,0,1-.23-1.13l.19-1.08c.51-1.65,1.27-3.8,2.24-6.36a1.13,1.13,0,0,1,1.12-.73H21a1.14,1.14,0,0,1,1,.55A1.11,1.11,0,0,1,22,6.74Z"/><path d="M3.82,26.3l-3.73,8a1,1,0,0,0,.16,1.06,1,1,0,0,0,1,.25l5.47-2,2,5.47a1,1,0,0,0,.86.63h.13a1,1,0,0,0,.78-.55L14,31.6A12.44,12.44,0,0,1,3.82,26.3Z"/><path d="M30.26,34.53l-3.49-8.14a12.48,12.48,0,0,1-10.37,5l3.3,7.68a1,1,0,0,0,.77.57h.12a1,1,0,0,0,.88-.61l2.15-5.41L29,35.8a1,1,0,0,0,1.05-.22A1,1,0,0,0,30.26,34.53Z"/></g></g></svg>
@@ -846,7 +860,7 @@
                       </div>
                       
                   </div>
-                  <p class="italic">(*) Dependiendo de la versión, para saber ingrese en "Más Información".</p>
+                  <p class="italic mt-3">(*) Dependiendo de la versión, para saber ingrese en "Más Información".</p>
                   <div class="btn-group w-100">
                     <a href="QC2.html" class="btn btn-negro mr-5">Más información</a>
                     <a href="comparativa-QC.html" class="btn btn-negro mr-5">Comparar equipos</a>

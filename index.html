@@ -41,7 +41,7 @@
     <meta name="theme-color" content="#ffffff">
 
   </head>
-  <body onload="myFunction()">
+  <body onload="myFunction()" id="top">
     <div class="container-btn-contacto">
       <div id="mybutton" class="cel whats">
         <a href="https://api.whatsapp.com/send?phone=+5491133306728" target="_blank">
@@ -69,12 +69,17 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
           <li class="nav-item col col-lg-2 dropdown">
-            <button class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <a href="productos.html" class="pc">
+              <button class="nav-link dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+          </a>
+            <button class="nav-link dropdown-toggle cel" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Productos
             </button>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item prods-item mt-2 mb-2" href="productos.html">Todos nuestros productos</a>
-              <div class="dropdown-divider"></div>
+              <a class="dropdown-item prods-item mt-2 mb-2 cel" href="productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider cel"></div>
               <a class="dropdown-item drop-fam-cont drop-qb" href="productos/qb/familia-QB.html">
               <img src="img/fam-icons/QB-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
@@ -121,7 +126,7 @@
           <a class="nav-link" href="contacto.html">Contacto</a>
           </li>
         </ul>
-        <div class="dropdown btn-lang col col-lg-2 text-right p-0">
+        <div class="dropdown btn-lang col text-right p-0">
             <button class="btn btn-nav dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img class="lang-ico" src="img/lang.svg" alt="..."> Español
             </button>
@@ -133,104 +138,134 @@
       </div>
       </div>
     </nav>
-    <header id="home" class="bg-dark">
-        <div class="container lema pc">
-            <div class="row">
-                <div class="col col-12 text-center mt-5 mb-5">
-                    <h1 class="wow fadeIn">Medición <span class="naranja text-black">+ Control</span></h1>
-                    <h5 class="wow fadeInDown" data-wow-delay="0.2s">Especializados en la medición de dureza de metales, espesores de pared y recubrimientos.</h5>
-                    <h5 class="naranja wow fadeInDown" data-wow-delay="0.4s">Siempre con la alta calidad que nos diferencia.</h5>
-                </div>
+    <header>
+      <div class="video-background-holder">
+        <div class="video-background-overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="img/videos/index.webm" type="video/webm">
+          </video>
+        <div class="video-background-content container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 logo-demeq">
+              <img src="img/logo.svg" alt="dmq" width="500" class="mb-5">
+              <h2 class="wow fadeIn">Medición <span class="text-black d-block">+ Control</span></h2>
             </div>
-        </div>
-        <div class="container-fluid carousel-index">
-            <div id="carouselInicio" class="carousel slide" data-ride="carousel" >
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselInicio" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselInicio" data-slide-to="1"></li>
-                  <li data-target="#carouselInicio" data-slide-to="2"></li>
-                  <li data-target="#carouselInicio" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item align-self-center bg-qh active">
-                    <div class="row">
-                      <div class="col align-self-center img-car text-right order-2 order-sm-1">
-                        <img src="img/carrousel/qh7.png" alt="..." class="serie-7">
-                      </div>
-                      <div class="col align-self-center info-car order-1 order-sm-2">
-                          <img src="img/fam-icons/QH-ico.svg" alt="QH" class="car-ico">
-                          <h2>Familia QH</h2>
-                          <h4 class="txt-qh">Durómetros Leeb y UCI</h4>
-                          <p>Aluminio  |  Plástico  |  Vidrio</p>
-                          <a class="btn btn-blanco" href="productos/qh/familia-QH.html" role="button">Más información</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item align-self-center bg-qb">
-                    <div class="row">
-                      <div class="col align-self-center img-car text-right order-2 order-sm-1">
-                        <img src="img/carrousel/qh7.png" alt="..." class="serie-7">
-                      </div>
-                      <div class="col align-self-center info-car order-1 order-sm-2">
-                          <img src="img/fam-icons/QB-ico.svg" alt="QB" class="car-ico">
-                          <h2>Familia QB</h2>
-                          <h4 class="txt-qb">Medidores de espesores por efecto Hall</h4>
-                          <p>Aluminio  |  Plástico  |  Vidrio</p>
-                          <a class="btn btn-blanco" href="productos/qb/familia-QB.html" role="button">Más información</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item align-self-center bg-qs">
-                    <div class="row">
-                      <div class="col align-self-center img-car text-right order-2 order-sm-1">
-                        <img src="img/carrousel/qs5.png" alt="...">
-                      </div>
-                      <div class="col align-self-center info-car order-1 order-sm-2">
-                          <img src="img/fam-icons/QS-ico.svg" alt="QS" class="car-ico">
-                          <h2>Familia QS</h2>
-                          <h4 class="txt-qs">Medidores de Espesores de Pared por Ultrasonido</h4>
-                          <p>Acero  |  Aluminio  |  Plástico  |  Vidrio</p>
-                          <a class="btn btn-blanco" href="productos/qs/familia-QS.html" role="button">Más información</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item align-self-center bg-qc">
-                    <div class="row">
-                      <div class="col align-self-center img-car text-right order-2 order-sm-1">
-                        <img src="img/carrousel/qc.png" alt="...">
-                      </div>
-                      <div class="col align-self-center info-car order-1 order-sm-2">
-                          <img src="img/fam-icons/QC-ico.svg" alt="QC" class="car-ico">
-                          <h2>Familia QC</h2>
-                          <h4 class="txt-qc">Medidores de Espesores de Recubrimientos</h4>
-                          <p>Pinturas  |  Anodizados  |  cromados</p>
-                          <a class="btn btn-blanco" href="productos/qc/familia-QC.html" role="button">Más información</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselInicio" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselInicio" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-        </div>
-    </header>
-
-    <main>
-      <div class="container lema cel">
-        <div class="row">
-            <div class="col col-12 text-center">
-              <h1 class="wow fadeIn">Medición <span class="naranja text-black">+ Control</span></h1>
-              <h5 class="wow fadeInDown" data-wow-delay="0.2s">Especializados en la medición de dureza de metales, espesores de pared y recubrimientos.</h5>
-              <h5 class="naranja wow fadeInDown" data-wow-delay="0.4s">Siempre con la alta calidad que nos diferencia.</h5>
-            </div>
+          </div>
         </div>
       </div>
+    </header>
+
+    <main id="index">
+      <section class="introduccion">
+        <div class="container">
+          <h5 class="sup-titulo">Duis sed sagittis massa</h5>
+          <h1 class="naranja"> Pellentesque habitant morbi tristique</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed sagittis massa. Phasellus et tellus neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla fringilla odio leo, et eleifend nulla viverra eget. Aenean purus sem, vehicula eget elit id, euismod aliquet velit. Sed luctus, metus dapibus hendrerit dignissim, elit nibh mattis ante, eu posuere quam ligula a quam. Aliquam erat volutpat. Duis ornare dui orci, non sodales lectus sagittis at. Vivamus convallis elementum nisi id varius. Donec molestie sapien lacus.</p>
+        </div>
+      </section>
+
+      <section id="productos" class="container-fluid wow slideIn" data-wow-delay="0.2s">
+        <div class="container">
+          <h5 class="naranja">Nuestros productos</h5>
+          <div class="card-deck">
+            <div class="card bg-qs col-lg-6 col-md-12 wow slideIn">
+              <div class="card-block">
+                  <div class="row  h-100">
+                      <div class="col-lg-6 col-sm-12 info-producto">
+                         <div class="familia-prod"><img src="img/fam-icons/QS-ico.svg" alt="">Familia QS</div>
+                         <h6>Medidores de Espesores de Pared por Ultrasonido</h6>
+                         <a href="productos/qs/familia-QS.html" class="btn btn-blanco">Más información</a>
+                         <p class="txt-negro">Acero  |  Aluminio  |  Plástico  |  Vidrio</p>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 my-auto img-producto">
+                          <img class="img-fluid" src="img/carrousel/qs5.png" alt="image">
+                      </div>
+                  </div>
+              </div>
+           </div>
+           <div class="card bg-qh col-lg-6 col-md-12 wow slideIn" data-wow-delay="0.2s">
+             <div class="card-block">
+                 <div class="row  h-100">
+                     <div class="col-lg-6 col-sm-12 info-producto">
+                        <div class="familia-prod"><img src="img/fam-icons/QH-ico.svg" alt="">Familia QH</div>
+                        <h6>Durómetros Leeb y UCI</h6>
+                        <a href="productos/qh/familia-QH.html" class="btn btn-blanco">Más información</a>
+                        <p>Acero  |  Aluminio  |  inoxidable</p>
+                     </div>
+                     <div class="col-lg-6 col-sm-12 my-auto img-producto">
+                         <img class="img-fluid" src="img/carrousel/qh7.png" alt="image">
+                     </div>
+                 </div>
+             </div>
+           </div>
+          </div>
+          <div class="card-deck">
+            <div class="card bg-qc col-lg-6 col-md-12 wow slideIn">
+              <div class="card-block">
+                  <div class="row  h-100">
+                      <div class="col-lg-6 col-sm-12 info-producto">
+                         <div class="familia-prod"><img src="img/fam-icons/QC-ico.svg" alt="">Familia QC</div>
+                         <h6>Medidores de Espesores de Recubrimientos</h6>
+                         <a href="productos/qc/familia-QC.html" class="btn btn-blanco">Más información</a>
+                         <p>Pinturas  |  Anodizados  |  cromados</p>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 my-auto img-producto">
+                          <img class="img-fluid" src="img/productos/QC5-.png" alt="image">
+                      </div>
+                  </div>
+              </div>
+           </div>
+           <div class="card bg-qb col-lg-6 col-md-12 wow slideIn" data-wow-delay="0.2s">
+             <div class="card-block">
+                 <div class="row  h-100">
+                     <div class="col-lg-6 col-sm-12 info-producto">
+                        <div class="familia-prod"><img src="img/fam-icons/QB-ico.svg" alt="">Familia QB</div>
+                        <h6>Medidores de Espesores por Efecto Hall</h6>
+                        <a href="productos/qb/familia-QB.html" class="btn btn-blanco">Más información</a>
+                        <p>Aluminio  |  Plástico  |  Vidrio</p>
+                     </div>
+                     <div class="col-lg-6 col-sm-12 my-auto img-producto">
+                         <img class="img-fluid" src="img/carrousel/qh7.png" alt="image">
+                     </div>
+                 </div>
+             </div>
+           </div>
+          </div>
+          <div class="card-deck">
+            <div class="card bg-qst col-lg-6 col-md-12 wow slideIn">
+              <div class="card-block">
+                  <div class="row  h-100">
+                      <div class="col-lg-6 col-sm-12 info-producto">
+                         <div class="familia-prod"><img src="img/fam-icons/QST-ico.svg" alt="">QST</div>
+                         <h6>Medidor de Espesores para Caños en Producción</h6>
+                         <a href="productos/qst/QST.html" class="btn btn-blanco">Más información</a>
+                         <p class="txt-negro">Acero  |  Aluminio  |  Plástico  |  Vidrio</p>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 my-auto img-producto">
+                          <img class="img-fluid" src="img/productos/QST-22.png" alt="image">
+                      </div>
+                  </div>
+              </div>
+           </div>
+           <div class="card bg-qsv col-lg-6 col-md-12 wow slideIn" data-wow-delay="0.2s">
+             <div class="card-block">
+                 <div class="row  h-100">
+                     <div class="col-lg-6 col-sm-12 info-producto">
+                        <div class="familia-prod"><img src="img/fam-icons/QSV-ico.svg" alt="">QSV</div>
+                        <h6>Medidor de Velocidad por Ultrasonido</h6>
+                        <a href="productos/qsv/QSV.html" class="btn btn-blanco">Más información</a>
+                        <p class="txt-negro">Aluminio  |  Plástico  |  Vidrio</p>
+                     </div>
+                     <div class="col-lg-6 col-sm-12 my-auto img-producto">
+                         <img class="img-fluid" src="img/carrousel/qs5.png" alt="image">
+                     </div>
+                 </div>
+             </div>
+           </div>
+          </div>
+        </div>
+    </section>
+
       <section class="destacados-inicio">
         <div class="container">
           <div class="card-deck">

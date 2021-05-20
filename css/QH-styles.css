@@ -56,7 +56,7 @@
     background: #fff;
 	transition: all 0.3s ease-in-out;
 	outline: none;
-    padding: 5px 25px;
+    padding: 5px 15px;
     color: rgb(139,28,33);
     border-radius: 50px;
 }
@@ -69,7 +69,7 @@
     font-weight: bold;
     transition: 0.3s all ease-in-out;
     letter-spacing: 0.5px;
-    padding: 5px 25px;
+    padding: 5px 15px;
     margin: 8px auto;
     border-radius: 50px;
 }
@@ -79,7 +79,7 @@
     background-color: #fff;
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
-    padding: 5px 30px;
+    padding: 5px 15px;
 
 }
 
@@ -89,7 +89,7 @@
 	transition: all 0.3s ease-in-out;
 	background: #fff;
     border-radius: 50px;
-    padding: 5px 25px;
+    padding: 5px 15px;
 }
 
 .activado .nav-link .dot {
@@ -101,12 +101,37 @@
     transition: 0.3s all ease-in-out;
 }
 
-
-
 .second-nav-scroll.bg-qh-c {
 	background: rgba(139,28,33, 0.95);
     padding: 0;
 }
+
+.series .series-nav .dropdown-menu {
+    background-color: rgba(139,28,33, 0.95);
+}
+
+.series .series-nav .dropdown-toggle:hover {
+    color: rgb(209,0,0);
+    transition: 0.3s all ease-in-out;
+}
+
+.series .series-nav .dropdown-menu .dropdown-item {
+    color: #fff;
+}
+
+.series .series-nav .dropdown-menu .dropdown-item:hover {
+    color: ed1c24;
+    background: #202020;
+}
+
+.series .series-nav .dropdown-menu .dropdown-item:hover .dot {
+    background: #fff;
+}
+
+.series .series-nav .dropdown-menu .dropdown-item .dot {
+    background: #fff;
+}
+
 
 
 #familia-producto.series.f-QH .info-prod h5, #soporte-producto.series.f-QH .info-prod h5 {
@@ -122,35 +147,28 @@
 }
 
 .svg-icon.qh-icon.ajuste {
-	width: 80%;
-	height: 80%;
+	width: 85%;
+	height: 85%;
 	padding: 5px;
-	margin-top: 6px;
-    margin-left: 6px;
 }
 
 .svg-icon.qh-icon.ajuste2 {
 	width: 80%;
 	height: 80%;
-	padding: 5px;
-	margin-top: 4px;
-	margin-left: 5px;
 }
 
 .svg-icon.qh-icon.ajuste3 {
     width: 90%;
     height: 90%;
     padding: 5px;
-    margin-top: 8px;
-    margin-left: 3px;
+    margin-top: 5px;
 }
 
 .svg-icon.qh-icon.ajuste4 {
     width: 80%;
     height: 80%;
     padding: 5px;
-    margin-top: 8px;
-    margin-left: 5px;
+    margin-left: -3px;
 }
 
 .svg-icon.qh-icon.ajuste5 {
@@ -367,6 +385,11 @@ svg.qh-icon-sop {
 	transition: all 0.3s ease-in-out;
 }
 
+
+.breadcrumb a:hover {
+	color: rgb(209,0,0);
+	transition: 0.3s all ease-in-out;
+}
 
 
 /*--------------------------------------------------------------------------------------------------*/

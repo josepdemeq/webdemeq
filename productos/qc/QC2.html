@@ -66,34 +66,39 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
           <li class="nav-item col col-lg-2 dropdown">
-            <button class="nav-link active dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <a href="../../productos.html" class="pc">
+              <button class="nav-link active dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+          </a>
+            <button class="nav-link dropdown-toggle cel" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Productos
             </button>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item prods-item mt-2 mb-2" href="../../productos.html">Todos nuestros productos</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item drop-fam-cont drop-qb" href="../../productos/qb/familia-QB.html">
+              <a class="dropdown-item prods-item mt-2 mb-2 cel" href="../../productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider cel"></div>
+              <a class="dropdown-item drop-fam-cont drop-qb" href="../qb/familia-QB.html">
               <img src="../../img/fam-icons/QB-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QB</div>
                 <div class="drop-prod">Medidores de esperores Hall</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qc" href="../../productos/qc/familia-QC.html">
+              <a class="dropdown-item drop-fam-cont drop-qc" href="familia-QC.html">
               <img src="../../img/fam-icons/QC-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QC</div>
                 <div class="drop-prod">Medidores de capas</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qh" href="../../productos/qh/familia-QH.html">
+              <a class="dropdown-item drop-fam-cont drop-qh" href="../qh/familia-QH.html">
               <img src="../../img/fam-icons/QH-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QH</div>
                 <div class="drop-prod">Durómetros Leeb y UCI</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qs" href="../../productos/qs/familia-QS.html">
+              <a class="dropdown-item drop-fam-cont drop-qs" href="../qs/familia-QS.html">
               <img src="../../img/fam-icons/QS-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QS</div>
@@ -170,15 +175,51 @@
       <div id="familia-producto" class="series f-QC">
         <nav class="navbar navbar-expand-lg sticky-top series-nav">
           <button class="navbar-toggler larr" type="button" data-toggle="collapse" data-target="#navbarTogglerSecondary" aria-controls="#navbarTogglerSecondary" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar bg-qc-c"></span>
-            <span class="icon-bar bg-qc-c"></span>
-            <span class="icon-bar bg-qc-c"></span>
+            <span class="icon-bar bg-qh-c"></span>
+            <span class="icon-bar bg-qh-c"></span>
+            <span class="icon-bar bg-qh-c"></span>
             <span class="menu-second">Serie QC2</span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerSecondary">
-            <ul class="container navbar-nav  nav-qc wow fadeIn" data-wow-delay="0.8s">
-              <li class="nav-item  text-center activado">
-                  <a class="nav-link demeq" href="#top">Serie QC2</a>
+            <ul class="container navbar-nav  nav-qh wow fadeIn" data-wow-delay="0.8s">
+              <li class="nav-item dropdown">
+                <a href="familia-QC.html" class="pc">
+                  <button class="nav-item dropdown-toggle pc" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
+                    Familia QC
+                  </button>
+                </a>
+                <button class="nav-item dropdown-toggle cel" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Familia QC
+                </button>
+                <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="QC5.html">
+                  <div class="txt-drop">
+                    <span class="serie-txt-dot">Serie QC5</span>
+                    <span class="cont-dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </span>
+                  </div>
+                  </a>
+                  <a class="dropdown-item" href="QC3.html">
+                  <div class="txt-drop">
+                    <span class="serie-txt-dot">QC3</span>
+                    <span class="cont-dots">
+                      <span class="dot"></span>
+                      <span class="dot"></span>
+                    </span>
+                  </div>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                  <div class="txt-drop">
+                    <span class="serie-txt-dot">Serie QC2</span>
+                    <span class="cont-dots">
+                      <span class="dot"></span>
+                    </span>
+                  </div>
+                  </a>
+                </div>
               </li>
               <li class="nav-item  text-center">
                   <a class="nav-link" href="#caracteristicas">Caracteríesticas</a>
@@ -196,14 +237,23 @@
                   <a class="nav-link" href="#listo">Listo para usar</a>
               </li>
               <li class="nav-item text-center">
-                  <a class="nav-link" href="#accesorios">Accesorios</a>
-              </li>
-              <li class="nav-item text-center">
                   <a class="nav-link" href="#certificaciones">Certificaciones</a>
               </li>
           </ul>
         </div>
         </nav>
+        <section class="sect-bread">
+          <div class="container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="../../productos.html">Productos</a></li>
+                <li class="breadcrumb-item"><a href="familia-QC.html">Familia QC</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Serie QC2</li>
+              </ol>
+            </nav>
+          </div>
+        </section>
         <div class="container info-prod">
           <div class="row">
             <div class="col-lg-9">
@@ -416,51 +466,6 @@
                   <div class="mas-videos">
                     <p>Puede encontrar más videos del QC2 en nuestro canal de Youtube.</p>
                     <a href="https://www.youtube.com/channel/UC_aDutY84Dx2TnJ9w_vwyAQ" target="_blank" class="btn btn-borde">Ver videos</a>
-                  </div>
-                </div>
-              </section>
-              <section id="accesorios" class="scrll-sect bg-gris wow slideIn">
-                <h5>Accesorios y Consumibles</h5>
-                <div class="container">
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qc/ext-5mm.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QCS-104</h6>
-                      <p>Sonda ferrosa de rango extendido.</p>
-                      <p>Rango: 0 a 5 mm</p>
-                    </div>
-                  </div>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qc/mini-recta.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QCS-201</h6>
-                      <p>Sonda ferrosa miniatura recta.</p>
-                      <p>Rango: 0 a 750 μm</p>
-                    </div>
-                  </div>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qc/mini-45.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12  my-auto texto-acc">
-                      <h6>QCS-202</h6>
-                      <p>Sonda ferrosa miniatura 45º.</p>
-                      <p>Rango: 0 a 750 μm</p>
-                    </div>
-                  </div>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qc/mini-90.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QCS-203</h6>
-                      <p>Sonda ferrosa miniatura 90º.</p>
-                      <p>Rango: 0 a 750 μm</p>
-                    </div>
                   </div>
                 </div>
               </section>

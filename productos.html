@@ -72,12 +72,17 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
           <li class="nav-item col col-lg-2 dropdown">
-            <button class="nav-link active dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <a href="productos.html" class="pc">
+              <button class="nav-link active active dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+          </a>
+            <button class="nav-link dropdown-toggle cel" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Productos
             </button>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item prods-item mt-2 mb-2" href="productos.html">Todos nuestros productos</a>
-              <div class="dropdown-divider"></div>
+              <a class="dropdown-item prods-item mt-2 mb-2 cel" href="productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider cel"></div>
               <a class="dropdown-item drop-fam-cont drop-qb" href="productos/qb/familia-QB.html">
               <img src="img/fam-icons/QB-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
@@ -139,13 +144,23 @@
     <header class="bg-dark">
       <div class="container-fluid productos bg-overlay">
         <div class="container titulo-seccion wow slideIn">
-          <div class="row centered text-left col">
+          <div class="row text-left">
             <h2>Nuestras familias de productos</h2>
                 <h6>Nos especializamos en la medición de dureza de metales, espesores de pared y recubrimientos. Ofrecemos en cada tipo de instrumentos opciones para cada presupuesto yaplicación, siempre con la alta calidad que nos diferencia.</h6>
           </div>
         </div>
       </div>
     </header>
+    <section class="sect-bread">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb naranja">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Productos</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
     <main id="productos">
       <section class="container wow slideIn" data-wow-delay="0.2s">
         <div class="card-deck">

@@ -14,13 +14,20 @@
 }
 
 .txt-qc {
-	color:#289ee8;;
+	color:#289ee8;
 }
 
 .fam-QC.bg-qc {
 	background: rgb(0,113,184);
 	background: linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 40%);
 } 
+
+
+.breadcrumb a:hover {
+	color: #289ee8;
+	transition: 0.3s all ease-in-out;
+}
+
 
 
 /*- QC Series -*/
@@ -138,7 +145,7 @@
     transition: 0.3s all ease-in-out;
     letter-spacing: 0.5px;
     margin: 8px auto;
-    padding: 5px 25px;
+    padding: 5px 15px;
     border-radius: 50px;
 }
   
@@ -147,13 +154,41 @@
     background-color: #fff;
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
-    padding: 5px 30px;
+    padding: 5px 15px;
 
 }
 
 .second-nav-scroll.bg-qc-c .link-negro .dot {
 	background-color: #fff;
 }
+
+
+.series .series-nav .dropdown-menu {
+    background-color: rgba(0,113,184, 0.95);
+}
+
+.series .series-nav .dropdown-toggle:hover {
+    color: #289ee8;;
+    transition: 0.3s all ease-in-out;
+}
+
+.series .series-nav .dropdown-menu .dropdown-item {
+    color: #fff;
+}
+
+.series .series-nav .dropdown-menu .dropdown-item:hover {
+    color: #289ee8;;
+    background: #202020;
+}
+
+.series .series-nav .dropdown-menu .dropdown-item:hover .dot {
+    background: rgb(0,113,184);
+}
+
+.series .series-nav .dropdown-menu .dropdown-item .dot {
+    background: #fff;
+}
+
 
 #familia-producto nav a.link-negro:hover .dot, #familia-producto nav a.link-blanco:hover .dot {
     background-color: rgb(0,113,184);
@@ -180,15 +215,16 @@
     color: #fff;
 	transition: all 0.3s ease-in-out;
 	outline: none;
-    padding: 5px 25px;
+    padding: 5px 15px;
 }
+
 
 .series .series-nav .nav-link:hover   {
     color: rgb(0,113,184) !important;
 	transition: all 0.3s ease-in-out;
 	background: #fff;
     border-radius: 50px;
-    padding: 5px 25px;
+    padding: 5px 15px;
 }
 
 .activado .nav-link {
@@ -196,7 +232,7 @@
 	transition: all 0.3s ease-in-out;
 	background: #fff;
     border-radius: 50px;
-    padding: 5px 25px;
+    padding: 5px 15px;
 }
 
 .activado .nav-link .dot {
@@ -364,7 +400,7 @@ svg.qc-icon-sop {
  }
 
  .txt-video-sop p {
-    color: rgb(0,113,184);
+    color: #289ee8;
 }
 
 .videos-soporte .btn-borde:hover, .videos-soporte .btn-borde:active, .videos-soporte .btn-borde:focus {

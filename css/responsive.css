@@ -574,7 +574,7 @@
         background-color: rgba(255, 255, 255, 0.05);
     }
 
-    .dropdown, .dropleft, .dropright, .dropup {
+    .dropdown, .dropleft, .dropright, .dropup, .nav-item {
         padding: 0;
     }
 
