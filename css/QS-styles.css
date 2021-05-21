@@ -37,13 +37,13 @@
 /*- Headers -*/
 
 
-#productos .bg-qst {
+ .bg-qst {
 	background: rgb(238,254,94);
 	background: linear-gradient(0deg, rgba(238,254,94,1) 0%, rgba(18,18,18,1) 40%);
     border: none !important;
 }
 
-#productos .bg-qsv {
+ .bg-qsv {
 	background: rgb(252,209,42);
 	background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 40%);
     border: none !important;
@@ -184,7 +184,7 @@
   
 #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
     color: #000;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.3);
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
     padding: 5px 15px;
@@ -423,6 +423,20 @@ svg.qs-icon-sop {
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */
 /*--------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 1440px) {
+    .svg-icon {
+        margin-top: 4px;
+    }
+
+    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active, .activado .nav-link {
+        padding: 2px 15px !important;
+    }
+
+    .svg-icon.ajuste5 {
+        margin-top: 0px;
+    }
+}
+
 @media (max-width: 1024px) {
 
     #familia-producto.series .info-prod h5 {
@@ -430,20 +444,20 @@ svg.qs-icon-sop {
 
     }
 
-    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
-        margin: 8px 15%;
-        padding: 5px 25px;
+    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active, .series-nav .activado .nav-link {
+        padding: 2px 15px;
+        line-height: 1.9;
     }
     
     
     .navbar-expand-sm .navbar-nav .nav-link.link-negro {
-        margin: 8px 15%;
-        padding: 5px 25px;
+        margin: 8px;
+        padding: 2px 15px;
     }
       
     #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-        margin: 8px 15%;
-        padding: 5px 25px;
+        margin: 8px;
+        padding: 2px 15px;
     
     }
     
@@ -561,6 +575,7 @@ svg.qs-icon-sop {
     .navbar-expand-sm .navbar-nav .nav-link.link-negro {
         margin: 8px 10%;
         padding: 5px 25px;
+        text-align: center;
     }
       
     #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {

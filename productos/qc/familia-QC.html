@@ -81,7 +81,7 @@
               <img src="../../img/fam-icons/QB-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QB</div>
-                <div class="drop-prod">Medidores de esperores Hall</div>
+                <div class="drop-prod">Medidores de espesores Hall</div>
               </div>
               </a>
               <a class="dropdown-item drop-fam-cont drop-qc" href="familia-QC.html">
@@ -138,12 +138,12 @@
     <header class="bg-dark">
       <div class="container-fluid fam fam-QC bg-overlay bg-qc">
         <div class="container titulo-seccion">
-          <div class="col col-lg-12 titulo-familia">
+          <div class="col col-lg-12 titulo-familia wow slideIn">
             <div class="row">
               <img src="../../img/fam-icons/QC-ico.svg" alt="">
               <h2>Familia QC</h2>
             </div>
-            <h4 class="italic">Medidores de espesores de recubrimientos</h4>
+            <h1 class="italic">Medidores de espesores de recubrimientos</h1>
             <h6>La familia de medidores de espesores QC ofrece una solución para cada necesidad adaptándose a su aplicación y presupuesto. Ideales para medir pinturas de todo tipo y tratamientos como cromados de modo rápido y sencillo sobre bases ferrosas o no ferrosas.</h6>
           </div>
           <div class="col col-lg-12 img-familia">
@@ -200,13 +200,16 @@
           <div class="container">
             <div class="col-12">
               <div class="row">
+                <h2 class="watermark">QC5</h2>
                 <div class="col-lg-4 col-sm-12 img-serie wow slideInLeft">
-                  <img src="../../img/productos/QC5.png" alt="...">
+                  <a href="QC5.html">
+                    <img src="../../img/productos/QC5.png" alt="...">
+                  </a>
                 </div>
                 <div class="col-lg-8 col-sm-12 info-serie">
-                  <h2 class="wow slideIn" data-wow-delay="0.2s">Serie QC5</h2>
-                  <h4 class="wow slideIn" data-wow-delay="0.4s">Medidor de espesores de recubrimiento avanzado</h4>
-                  <div class="col-12 caract-serie wow slideIn" data-wow-delay="0.6s">
+                  <h2>Serie QC5</h2>
+                  <h4>Medidor de espesores de recubrimiento avanzado</h4>
+                  <div class="col-12 caract-serie">
                     <div class="row">
 
                       <div class="col-lg-6 col-sm-6 una-caract">
@@ -513,13 +516,16 @@
           <div class="container">
             <div class="col-12">
               <div class="row">
+                <h2 class="watermark">QC3</h2>
                 <div class="col-lg-4 col-sm-12 img-serie wow slideInLeft">
-                  <img src="../../img/productos/QC5.png" alt="...">
+                  <a href="QC3.html">
+                    <img src="../../img/productos/QC5.png" alt="...">
+                  </a>
                 </div>
                 <div class="col-lg-8 col-sm-12 info-serie">
-                  <h2 class="wow slideIn" data-wow-delay="0.2s">Serie QC3</h2>
-                  <h4 class="wow slideIn" data-wow-delay="0.4s">Medidor de espesores de recubrimiento</h4>
-                  <div class="col-12 caract-serie wow slideIn" data-wow-delay="0.6s">
+                  <h2>Serie QC3</h2>
+                  <h4>Medidor de espesores de recubrimiento</h4>
+                  <div class="col-12 caract-serie wow slideIn">
                     <div class="row">
 
                       <div class="col-lg-6 col-sm-6 una-caract">
@@ -784,13 +790,16 @@
         <div class="container">
           <div class="col-12">
             <div class="row">
+              <h2 class="watermark">QC2</h2>
               <div class="col-lg-4 col-sm-12 img-serie wow slideInLeft">
-                <img src="../../img/productos/QC5.png" alt="...">
+                <a href="QC2.html">
+                  <img src="../../img/productos/QC5.png" alt="...">
+                </a>
               </div>
               <div class="col-lg-8 col-sm-12 info-serie">
-                <h2 class="wow slideIn" data-wow-delay="0.2s">Serie QC2</h2>
-                <h4 class="wow slideIn" data-wow-delay="0.4s">Medidor de espesores de recubrimiento de sensor integrado</h4>
-                <div class="col-12 caract-serie wow slideIn" data-wow-delay="0.6s">
+                <h2>Serie QC2</h2>
+                <h4>Medidor de espesores de recubrimiento de sensor integrado</h4>
+                <div class="col-12 caract-serie wow slideIn">
                   <div class="row">
 
                     <div class="col-lg-6 col-sm-6 una-caract">
@@ -1163,7 +1172,13 @@
 
     <script src="../../plugins/WOW-master/dist/wow.min.js"></script>
     <script>
-    new WOW().init();
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset: 350
+        }
+      );
+      wow.init();
     </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

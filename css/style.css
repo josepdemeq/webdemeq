@@ -50,7 +50,11 @@ a:hover, a:visited, a:link, a:active
 } */
 
 .bg-dark {
-	background-color: #121212 !important;
+	background: #121212!important;
+}
+
+.bg-darker {
+	background: #0f0f0f !important;
 }
 
 .bg-naranja {
@@ -67,12 +71,12 @@ a:hover, a:visited, a:link, a:active
 }
 
 h1 {
-	font-size: 54px;
+	font-size: 50px;
 	line-height: 1.3;
 }
 
 h2 {
-	font-size: 46px;
+	font-size: 45px;
 	line-height: 1.3;
 }
 
@@ -131,7 +135,7 @@ p {
 }
 
 .btn {
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 	font-size: 18px;
 }
 
@@ -290,7 +294,7 @@ header#home {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
-	z-index: 10;
+	z-index: 1000;
 	transition: bottom 0.3s ease-in-out;
 
 }
@@ -467,21 +471,21 @@ button.nav-link {
 	color: rgba(239,125,45,1) !important;
 	border-bottom: 4px solid rgba(239,125,45,1);
 	border-top: 4px solid transparent;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
 	color: rgba(239,125,45,1);
 	border-bottom: 4px solid rgba(239,125,45,1);
 	border-top: 4px solid transparent;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav:hover .nav-link.active {
 	color: #fff;
 	border-bottom: 4px solid transparent;
 	border-top: 4px solid transparent;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav:hover .nav-link:hover.active {
@@ -1157,11 +1161,13 @@ footer p.naranja{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: .5rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     list-style: none;
-    background-color: #121212;
+    background-color: transparent !important;
     border-radius: 0;
 	font-size: 16px;
+    position: relative;
+    z-index: 2;
 }
 
 .breadcrumb a {
@@ -1307,6 +1313,32 @@ footer p.naranja{
 
 /*--- FAMILIAS PRODUCTOS ---*/
 
+.watermark {
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    position: absolute;
+    font-size: 75vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.04;
+    filter: blur(5px);
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.watermark-u {
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    position: absolute;
+    font-size: 52vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.04;
+    filter: blur(5px);
+    font-weight: 600;
+    margin: 0 auto;
+}
+
 /*- Headers -*/
 
 .fam {
@@ -1315,6 +1347,10 @@ footer p.naranja{
 
 .titulo-familia {
 	flex-basis: auto;
+}
+
+.titulo-familia h1{
+	margin-bottom: 40px;
 }
 
 .titulo-familia .row {
@@ -1332,10 +1368,11 @@ footer p.naranja{
 }
 
 .img-familia img {
-    width: 100% !important;
+	width: 75% !important;
     height: fit-content !important;
-    margin-right: 0 !important;
+    margin-right: auto !important;
     margin-bottom: 0 !important;
+    margin-left: auto;
 }
 
 .fam .titulo-familia img {
@@ -1379,9 +1416,10 @@ footer p.naranja{
 .second-nav-scroll{
     top: 50px;
 	backdrop-filter: blur(5px);
+	justify-content: space-around;
 }
 
-.second-nav .container.navbar-nav {
+.second-nav .container.navbar-nav, .second-nav-scroll .container.navbar-nav {
     justify-content: space-around;
 }
 
@@ -1452,6 +1490,12 @@ footer p.naranja{
 	padding: 60px 0 0 0;
 }
 
+
+#familia-producto section.series7 {
+	padding: 0;
+}
+
+
   #familia-producto .series section {
 	  padding: 60px 25px 0 0;
   }
@@ -1476,6 +1520,12 @@ footer p.naranja{
 	margin: 0;
 }
 
+.series7 .img-serie img {
+	width: 100%;
+    height: auto;
+}
+
+
 .series7 .caract-serie {
 	margin-bottom: 60px;
 }
@@ -1483,6 +1533,11 @@ footer p.naranja{
 
 .col-12.caract-serie {
 	padding: 0 !important;
+}
+
+.img-serie, .info-serie, .caract-serie {
+	position: relative;
+	z-index: 5;
 }
   
 #familia-producto h2 {
@@ -1550,7 +1605,8 @@ footer p.naranja{
     align-content: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15px;   
+	z-index: 2;
 }
 .serie .titulo-seccion .titulo-familia {
     flex: 1;
@@ -1594,6 +1650,15 @@ footer p.naranja{
     display: flex;
     width: 100%;
     height: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.series7 .serie .img-series .img-s7 {
+    display: flex;
+    width: 100%;
+    height: auto;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -1602,7 +1667,7 @@ footer p.naranja{
     width: auto;
     height: auto;
     max-width: -webkit-fill-available;
-    max-height: 433px;
+    max-height: 560px;
 }
 
 
@@ -1649,7 +1714,7 @@ footer p.naranja{
 /*-- NAV Series --*/
 
 .series .series-nav.sticky-top{
-    z-index:2;
+    z-index:3;
 }
 
 .series .series-nav .nav-link {
@@ -1677,13 +1742,18 @@ footer p.naranja{
 .series .series-nav .dropdown-toggle {
     font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     padding: 5px 25px;
-    background: #121212;
+    background: rgba(0,0,0,0.5);
     color: #fff;
     width: 95%;
     border: 0;
     border-radius: 50px;
     letter-spacing: 1.5px;
 	line-height: 1.7;
+    transition: 0.3s all ease-in-out;
+}
+
+.series .series-nav .dropdown-toggle:hover {
+    background: rgba(0,0,0,1);
     transition: 0.3s all ease-in-out;
 }
 
@@ -2010,7 +2080,7 @@ footer p.naranja{
 	font-style: normal;
 	font-weight: 600;
 	width: 100%;
-	padding: 0 20x;
+	padding: 0 20px;
 	font-size: 20px;
 
 }
@@ -2278,7 +2348,8 @@ footer p.naranja{
 
 #soporte .familia-prod {
     line-height: 1.8;
-    font-size: 27px;
+    font-size: 27px;    
+	letter-spacing: 2px;
 }
 
 
@@ -2294,22 +2365,15 @@ footer p.naranja{
     padding: 0;
     margin: 0;
     bottom: -1px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 #soporte .info-producto h6 {
     font-style: italic;
-    margin-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 10px;
 	height: 50px;
 }
 
-#soporte .info-producto .btn {
-	position: relative;
-    top: 0px;
-	left: 50%;
-    transform: translateX(-50%);
-}
 
 
 #soporte .card-deck {
@@ -2333,23 +2397,32 @@ footer p.naranja{
     margin-left: 10px;
 }
 
+#soporte .card .img-producto img.qst {
+    margin-right: 12px;
+}
+
 #soporte .card .img-producto img {
 	transition: 0.3s all ease-in-out;
     margin: 0;
     padding: 0;
     margin-left: 1px;
+	max-height: none;
 }
 
 #soporte .card:hover .img-producto img {
 	transform: scale(1);
 	margin: 0;
 	padding: 0;
-	margin-left: 1px;
 
 }
 
 #soporte .card:hover .img-producto img.series7 {
-	margin-left: 6px;
+	margin-left: 11px;
+
+}
+
+#soporte .card:hover .img-producto img.qst {
+	margin-right: 11px;
 
 }
 
@@ -2479,7 +2552,7 @@ textarea.form-control {
     background-size: cover;
     background-position: center center;
     color: #fff;
-	padding:0 0 60px 0;
+	padding:60px 0;
 }
 
 .gif-serial {
@@ -2532,6 +2605,7 @@ textarea.form-control {
     display: block;
     margin: 4px 0 0;
 	letter-spacing: 2px;
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
 
 .soporte-fam .titulo-familia h4 {
@@ -2995,7 +3069,7 @@ button:focus {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	padding-top: 110%; /* 4:3 Aspect Ratio */
+	padding-top: 130%; /* 4:3 Aspect Ratio */
   }
   
   #contacto .responsive-iframe {

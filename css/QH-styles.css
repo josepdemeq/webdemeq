@@ -53,11 +53,11 @@
 
 
 .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active {
-    background: #fff;
+    background: rgba(255,255,255,0.3);
 	transition: all 0.3s ease-in-out;
 	outline: none;
     padding: 5px 15px;
-    color: rgb(139,28,33);
+    color: #FFF;
     border-radius: 50px;
 }
 
@@ -66,17 +66,16 @@
     display: inline-block;
     color: #fff;
     font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    font-weight: bold;
     transition: 0.3s all ease-in-out;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     padding: 5px 15px;
     margin: 8px auto;
     border-radius: 50px;
 }
   
 #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-    color: rgb(139,28,33);
-    background-color: #fff;
+    color: #fff;
+    background-color: rgba(255,255,255,0.3);
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
     padding: 5px 15px;
@@ -97,7 +96,7 @@
 }
 
 #familia-producto nav a.link-negro:hover .dot, #familia-producto nav a.link-blanco:hover .dot {
-    background-color: rgb(139,28,33);
+    background-color: #fff;
     transition: 0.3s all ease-in-out;
 }
 
@@ -172,11 +171,9 @@
 }
 
 .svg-icon.qh-icon.ajuste5 {
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
     padding: 5px;
-    margin-top: 4px;
-    margin-left: 0px;
 }
 
 .svg-icon.qh-icon.ajuste6 {
@@ -396,14 +393,34 @@ svg.qh-icon-sop {
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */
 /*--------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 1440px) {
+
+    .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-H .series-nav .nav-link:active, .activado .nav-link {
+        padding: 2px 15px !important;
+    }
+
+    .svg-icon.ajuste5 {
+        margin-top: 0px;
+    }
+
+    .svg-icon.qh-icon.ajuste5 {
+        width: 90%;
+        height: 90%;
+    }
+    
+    .svg-icon.qh-icon.ajuste3 {
+        margin-top: 4px;
+    }
+}
+
+
 @media (max-width: 992px) {
 
     .svg-icon.qh-icon.ajuste2 {
         width: 80%;
         height: 80%;
         padding: 5px;
-        margin-top: 5px;
-        margin-left: 5px;
+        margin-top: -2px;
     }
     
     .svg-icon.qh-icon.ajuste3 {

@@ -64,16 +64,12 @@
 .svg-icon.qc-icon.ajuste {
 	width: 80%;
 	height: 80%;
-	padding: 5px;
-	margin-top: 6px;
 }
 
 .svg-icon.qc-icon.ajuste2 {
 	width: 80%;
 	height: 80%;
 	padding: 5px;
-	margin-top: 6px;
-	margin-left: 7px;
 }
 
 .svg-icon.qc-icon.ajuste3 {
@@ -88,29 +84,25 @@
 	width: 80%;
 	height: 80%;
 	padding: 5px;
-	margin-top: 6px;
-	margin-left: 6px;
 }
 
 .svg-icon.qc-icon.ajuste5 {
-	width: 85%;
-    height: 85%;
+	width: 80%;
+    height: 80%;
     padding: 5px;
-    margin-top: 3px;
 }
 
 .svg-icon.qc-icon.ajuste6 {
-    width: 85%;
-    height: 85%;
+	width: 80%;
+    height: 80%;
     padding: 5px;
-    margin-top: 5px;
 }
 
 .svg-icon.qc-icon.ajuste7 {
     width: 100%;
     height: 100%;
     padding: 5px;
-    margin-top: 11px;
+    margin-top: 18px;
 }
 
 .bg-qc .btn-default {
@@ -141,17 +133,16 @@
     display: inline-block;
     color: #fff;
     font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    font-weight: bold;
     transition: 0.3s all ease-in-out;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin: 8px auto;
     padding: 5px 15px;
     border-radius: 50px;
 }
   
 #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-    color: rgb(0,113,184);
-    background-color: #fff;
+    color: #fff;
+    background-color: rgba(255,255,255,0.3);
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
     padding: 5px 15px;
@@ -168,7 +159,7 @@
 }
 
 .series .series-nav .dropdown-toggle:hover {
-    color: #289ee8;;
+    color: #289ee8;
     transition: 0.3s all ease-in-out;
 }
 
@@ -191,7 +182,7 @@
 
 
 #familia-producto nav a.link-negro:hover .dot, #familia-producto nav a.link-blanco:hover .dot {
-    background-color: rgb(0,113,184);
+    background-color: #fff;
     transition: 0.3s all ease-in-out;
 }
 
@@ -220,9 +211,9 @@
 
 
 .series .series-nav .nav-link:hover   {
-    color: rgb(0,113,184) !important;
+    color: #fff !important;
 	transition: all 0.3s ease-in-out;
-	background: #fff;
+	background: rgba(255,255,255,0.3);
     border-radius: 50px;
     padding: 5px 15px;
 }
@@ -425,6 +416,18 @@ svg.qc-icon-sop {
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */
 /*--------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 1440px) {
+
+    .svg-icon.qc-icon.ajuste4 {
+        width: 85%;
+        height: 85%;
+    }
+
+    .navbar-expand-sm .navbar-nav .nav-link.link-blanco, #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover, .activado .nav-link, .series .series-nav .nav-link:hover  {
+        padding: 2px 15px !important;
+    }
+}
+
 @media (max-width: 1024px) {
 
     #familia-producto.series .info-prod h5 {
@@ -433,16 +436,11 @@ svg.qc-icon-sop {
     }
 
     .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
-        margin: 8px 10%;
+        margin: 8px;
     }
     
     #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-        margin: 8px 10%;
-
-    }
-
-    #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-    margin: 8px 8%;
+        margin: 8px;
 
     }
 }
@@ -480,6 +478,12 @@ svg.qc-icon-sop {
 
     .icon-bar.bg-qc-c {
         background-color: rgb(0,113,184) !important;
+    }
+
+    
+
+    .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
+        text-align: center;
     }
 
     .foot .info-destacada {
@@ -551,8 +555,7 @@ svg.qc-icon-sop {
         margin-left: 30px;
         margin-top: -15px;
         font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-        font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
     }
 
     .icon-bar.bg-qc-c {
@@ -574,6 +577,7 @@ svg.qc-icon-sop {
         padding: 5px;
         margin: 0 4px 4px;
         border-radius: 0 0 25px 25px;
+        text-align: center;
     }
     
     #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {

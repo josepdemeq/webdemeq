@@ -24,36 +24,260 @@
 }
 
 
+@media (max-width: 1920px) {
+
+    .myBtn, .myBtn:hover {
+        padding: 10px 8px;
+    }
+
+    .mail, .mail:hover {
+        padding: 11px 10px;
+    }
+
+    .mail svg, .mail-scroll svg {
+        width: 28px;
+    }
+
+    .mail-btn-scroll {
+        bottom: 100px;
+    }
+
+    /*--- Series productos ---*/
+
+    .serie .titulo-seccion {
+        margin: 30px auto 0;
+    }
+
+    .serie .img-series img {
+        max-height: 500px;
+    }
+
+    .fam .titulo-familia img {
+        width: 55px;
+        height: 55px;
+        margin: 0 15px 10px 0;
+    }
+
+    /*--- Soporte ---*/
+
+    #soporte .card .img-producto img {
+        max-height: 200px;
+    }
+}
+
+
 @media (max-width: 1440px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .myBtn, .myBtn:hover {
+        padding: 8px 9px;
+    }
+
+    .st-svg {
+        width: 24px;
+    }
+
+    .mail, .mail:hover {
+        padding: 8px 10px;
+    }
+    
+    .mail svg, .mail-scroll svg {
+        width: 23px;
+    }
+
+    .mail-btn .txt-btn, .mail-btn-scroll .txt-btn, #myBtn .txt-btn {
+        font-size: 16px;
+    }
+
+    /*--- Index ---*/
+
+    .video-background-content {
+        margin-top: 50px;
+    }
+
+    .logo-demeq img {
+        height: 80px;
+        margin-bottom: 28px !important;
+    }
+
+    .logo-demeq h2 {
+        border-left: 3px solid #fff;
+        font-size: 30px;
+    }
+
+    .mail-btn-scroll {
+        bottom: 95px;
+    }
 
     /*--- Familia Productos ---*/
 
+    .fam .titulo-familia img {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px 10px 0;
+    }
+
+    .fam .titulo-familia h2 {
+        margin: 4px 0 0 0;
+    }
+
+    .titulo-familia h1 {
+        margin-bottom: 10px;
+    }
+
+    .img-familia img {
+        width: 42% !important;
+    }
+
+    .series7 .img-serie {
+        min-height: 420px;
+    }
+
+    .series7 .img-serie img {
+        width: 90%;
+    }
+
     .series7 .serie .img-series img {
-        max-height: 360px;
+        width: 70% !important;
+        height: auto;
+    }
+
+    .series7 .serie .precio p {
+        padding: 0 20px;
+    }
+
+    .dot-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .svg-icon {
+        padding: 4px;
+    }
+
+    .img-serie img {
+        width: 100%;
+    }
+
+    #familia-producto h4 {
+        margin-bottom: 10px;
+    }
+
+    .cont-serie, .serie {
+        height: 100%;
+    }
+
+    /*--- Familias producto ---*/
+
+    .series .info-destacada .fam-icon {
+        width: 40px;
+    }
+
+    .series .info-destacada h3 {
+        line-height: 43px;
+        margin-bottom: 5px;
+    }
+
+    .series .info-destacada .btn-blanco {
+        padding: 2px 0 0 0;
+    }
+
+    .series .series-nav .dropdown-toggle, .series .series-nav .nav-link {
+        padding: 2px 15px;
+        margin: 4px auto;
+    }
+
+    .serie .precio {
+        border-radius: 30px;
+        padding: 4px;
+        width: 70%;
+        max-height: 136px;
+    }
+
+    .serie .precio p {
+        line-height: 1.5;
+        margin: auto;
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .series .info-destacada.sticky-top {
+        top: 90px;
+    }
+
+    .series .info-destacada .precio-container {
+        border-radius: 20px;
+    }
+
+    .series .info-destacada .precio-container p {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    #certificaciones .cert-uno img {
+        width: 100%;
+        max-width: 55px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        display: flex;
     }
 
     /*--- QUOKKA ---*/
 
     .quokka .col-6, .img-quokka{
-        min-height: 330px;
+        min-height: 220px;
     }
 
     /*--- Footer ---*/
 
+    .datos-productos .prod-logo img {
+        width: 40px;
+        height: 40px;
+    }
+
     .datos-productos .prod-logo {
-        width: 48px;
+        width: 40px;
     }
 
     /*--- Soporte ---*/
 
     #soporte .bg-licencias .container {
-        width: 80%;
-        margin-left: 17%;
+        width: 90%;
+        margin-left: 10%;
     }
 
     #soporte .bg-registro .container {
-        width: 80%;
-        margin-right: 17%;
+        width: 90%;
+        margin-right: 10%;
+    }
+
+    #soporte .card .img-producto img.series7, #soporte .card:hover .img-producto img.series7 {
+        margin-left: 83px;
+    }
+
+    #soporte .card .img-producto img.qst, #soporte .card:hover .img-producto img.qst {
+        margin-right: 83px;
+    }
+
+    /*--- Comprar ---*/
+
+    .locations {
+        top: -85px !important;
+        left: -292px !important;
+        width: 74.8% !important;
+    }
+
+    .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-next:active, .owl-carousel .owl-nav .owl-next:focus, .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-prev:active, .owl-carousel .owl-nav .owl-prev:focus  {
+        width: 48px;
+        height: 48px;
     }
 }
 
@@ -82,16 +306,8 @@
 
     /*--- Productos ---*/
 
-    .cont-serie, .serie {
-        height: calc(100vh - 134px);
-    }
-
     .serie .titulo-seccion {
         margin-top: 80px;
-    }
-
-    .series7 .serie .img-series img {
-        max-height: 320px;
     }
 
     .serie .titulo-seccion {
@@ -120,29 +336,9 @@
         font-size: 16px;
     }
 
-    p {
-        font-size: 14px;
+    p, .breadcrumb {
+        font-size: 15px;
         margin-bottom: 15px;
-    }
-
-    .mail {
-        padding: 8px 6px;
-    }
-
-    .mail-btn-scroll {
-        bottom: 90px;
-    }
-
-    .myBtn {
-        padding: 8px;
-    }
-
-    .mail svg, .mail-scroll svg, .st-svg {
-        width: 24px;
-    }
-
-    .mail-btn .txt-btn, .mail-btn-scroll .txt-btn, #myBtn .txt-btn {
-        font-size: 16px;
     }
 
     .btn {
@@ -165,10 +361,7 @@
 
     #global-nav {
         font-size: 16px;
-    }
-
-    .lema {
-        margin-top: 25px;
+        padding: 0;
     }
 
     .nav-item.col-lg-2 {
@@ -176,6 +369,16 @@
         padding-right: 0;
     }
 
+    
+
+    .dropdown-menu .dropdown-item.drop-fam-cont .drop-fam, .dropdown-menu .dropdown-item.drop-fam-cont .drop-prod {
+        font-size: 16px;
+    }
+
+
+    .datos-productos a .cont-dat-prod {
+        padding: 10px;
+    }
     /*--- Productos ---*/
 
     .productos.bg-overlay {
@@ -196,20 +399,30 @@
     }
 
     #productos .info-producto .familia-prod {
-        font-size: 26px;
-        line-height: 42px;
+        font-size: 24px;
+        line-height: 40px;
     }
 
     .info-producto h6 {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .info-producto p {
         font-size: 10px;
+        font-weight: 400 !important;
+    }
+
+    .info-producto .btn {
+        margin-bottom: 10px;
+    }
+
+    .fam {
+        padding: 80px 0;
     }
 
     .titulo-seccion {
         height: 260px;
+        padding: 0 30px;
     }
 
     .titulo-seccion .titulo-familia {
@@ -221,6 +434,17 @@
         font-size: 14px;
         letter-spacing: 0.5px;
     }
+
+    .navbar-expand-sm .navbar-nav .nav-link.link-blanco, .navbar-expand-sm .navbar-nav .nav-link.link-negro {
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    .link-negro .dot, .series .series-nav .dropdown-menu .dropdown-item .dot, .link-blanco .dot {
+        height: 9px;
+        width: 9px;
+
+    }
     
     .series7 .img-serie {
         min-height: 400px;
@@ -228,22 +452,21 @@
     }
 
     .cont-serie, .serie {
-        height: calc(100vh - 124px);
-    }
-
-    .btn-negro {
-        padding: 0.4rem 1.1rem 0.2em;
-        margin-right: 15px !important;
+        padding: 20px 0 0 0;
     }
 
     .series .series-nav .nav-link {
-        padding: 8px 15px;
-        line-height: 1;
+        padding: 2px 15px;
+        line-height: 1.7;
         font-size: 13px;
     }
 
     .serie .titulo-seccion .titulo-familia {
-        max-width: 70%;
+        padding-bottom: 40px;
+    }
+
+    .series7 .serie .titulo-seccion {
+        padding-bottom: 40px;
     }
 
     .series7 .serie .titulo-seccion .titulo-familia {
@@ -257,7 +480,7 @@
     }
 
     .serie .img-series img {
-        max-height: 360px;
+        margin-bottom: 40px;
     }
 
     .series7 .fam .titulo-familia h4 {
@@ -275,35 +498,38 @@
     }
 
     .series7 .serie .img-series img {
-        max-height: 250px;
-        width: auto;
-        height: auto;
+        width: 90% !important;
     }
 
     .serie .precio {
         margin: 0;
         padding: 4px;
-        max-height: 76px;
         border-radius: 24px;
-        max-height: 80px;
+        max-height: 110px;
         justify-content: flex-end;
         width: 100%;
     }
-
     .series7 .serie .precio {
         padding: 4px;
         width: 100%;
         margin: 0;
     }
 
-    .serie .precio p {
-        font-size: 16px;
-        margin: auto;
+    .series7 .serie .precio p  {
+        padding: 0px 20px;
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .serie .precio p  {
+        padding: 0px 50px;
+        width: 100%;
+        font-size: 15px;
     }
 
     .serie .precio .btn-blanco {
-        padding: 0.2rem 1rem;
-        font-size: 16px;
+        padding: 12px 15px 10px 15px;
+        font-size: 15px;
     }
 
     .series7 .serie .titulo-seccion .info-serie {
@@ -311,9 +537,13 @@
         flex: 0 0 50%;
     }
 
+    .series .series-nav .dropdown-toggle, .series .series-nav .nav-link, .series .series-nav .dropdown-menu .dropdown-item .serie-txt-dot {
+        font-size: 12px;
+    }
+
     .dot-icon {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .nombre-modelo {
@@ -382,9 +612,23 @@
         width: 40px;
         margin-right: 10px;
     }
+
+    
+
+    #soporte .card .img-producto img.series7, #soporte .card:hover .img-producto img.series7 {
+        margin-left: 23px;
+    }
+
+    #soporte .card .img-producto img.qst, #soporte .card:hover .img-producto img.qst {
+        margin-right: 23px;
+    }
     
     #soporte .info-producto h6 {
         font-size: 16px;
+    }
+
+    #soporte .container.form-iframe, #sol-distribuidor .container.form-iframe {
+        padding-top: 75%;
     }
 
     #soporte .bg-licencias {
@@ -423,6 +667,18 @@
 
     /*--- Comprar ---*/
 
+    .locations {
+        top: -54px !important;
+        left: -307px !important;
+        width: 84% !important;
+    }
+
+    .mapa-distribuidores {
+        padding: 0;
+    }
+    
+    
+
     .sol-distr.bg-overlay {
         height: 260px;
     }
@@ -457,7 +713,7 @@
     }
 
     #contacto .google-maps {
-        height: 200px;
+        height: 242px;
     }
 
     #contacto .cont.form-iframe {
@@ -892,6 +1148,7 @@
 
     .datos-productos a .cont-dat-prod {
         padding: 0;
+        display: block;
     }
 
     .datos-productos a:hover .cont-dat-prod {
@@ -968,6 +1225,35 @@
 
     .product-mobile {
         display: block;
+        overflow: hidden;
+    }
+
+    .fam {
+        padding: 15px;
+    }
+
+    .watermark {
+        position: absolute;
+        font-size: 30vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.04;
+        filter: blur(2px);
+        font-weight: 600;
+        margin: 0 auto;
+    } 
+    
+    .watermark-u {
+        position: absolute;
+        font-size: 22vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.04;
+        filter: blur(2px);
+        font-weight: 600;
+        margin: 0 auto;
     }
 
      /*--- FAMILIA PRODUCTO ---*/
@@ -1021,7 +1307,24 @@
     .second-nav {
         padding: 0;
     }
-    
+
+    .series .series-nav .dropdown-toggle, .series .series-nav .dropdown-toggle:hover {
+        font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        padding: 8px 15px;
+        background: rgba(255,255,255,0.1);
+        color: #fff;
+        width: 100%;
+        border: 0;
+        border-radius: 50px;
+        letter-spacing: 1.5px;
+        line-height: 2.5;
+        transition: 0.3s all ease-in-out;
+        margin: 8px 0;
+    }
+
+    .series .series-nav .dropdown-menu .dropdown-item .txt-drop {
+        align-items: center;
+    }
 
     .una-caract {
         margin: 10px 0;
@@ -1034,10 +1337,6 @@
 
     .svg-icon {
         margin-top: 2px;
-    }
-
-    .svg-icon.ajuste {
-        margin: 6px auto auto 5px;
     }
 
     .svg-icon.ajuste2 {
@@ -1843,6 +2142,10 @@
     #contacto .cont.form-iframe {
         padding-top: 90%;
     }
+
+    #familia-producto section.sect-bread, #familia-producto.series section.sect-bread, section.sect-bread, #soporte-producto.series section.sect-bread {
+        padding: 20px 15px 0 15px;
+    }
 }
 
 
@@ -2401,7 +2704,7 @@
     }
 
     .cont-serie, .serie {
-        margin-top: 70px;
+        margin-top: 0px;
     }
     
     #familia-producto section {

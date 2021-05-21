@@ -2,6 +2,26 @@
   padding: 60px 0;
   height: 100%;
   text-align: center;
+  position: relative;
+}
+
+
+.locations {
+  position: absolute;
+  top: -84px;
+  left: 126px;
+  margin: 0 auto;
+  width: 46.2%;
+  transform: translate(50%, 50%);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s all ease-in-out;
+}
+
+.mapa-distribuidores .container:hover .locations {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
 }
 
 .mapa-distribuidores svg {
@@ -186,6 +206,17 @@
   margin: 20px;
   padding: 0;
   display: inline-block;
+}
+
+
+@media (max-width: 1920px) {
+  
+    .locations {
+      top: -85px;
+      left: -14px;
+      width: 53%;
+  }
+
 }
 
 

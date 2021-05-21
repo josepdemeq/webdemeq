@@ -66,34 +66,39 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
           <li class="nav-item col col-lg-2 dropdown">
-            <button class="nav-link active dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <a href="../../productos.html" class="pc">
+              <button class="nav-link dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+            </a>
+            <button class="nav-link dropdown-toggle cel" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Productos
             </button>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item prods-item mt-2 mb-2" href="../../productos.html">Todos nuestros productos</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item drop-fam-cont drop-qb" href="../../productos/qb/familia-QB.html">
+              <a class="dropdown-item prods-item mt-2 mb-2 cel" href="../../productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider cel"></div>
+              <a class="dropdown-item drop-fam-cont drop-qb" href="familia-QB.html">
               <img src="../../img/fam-icons/QB-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QB</div>
-                <div class="drop-prod">Medidores de esperores Hall</div>
+                <div class="drop-prod">Medidores de espesores Hall</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qc" href="../../productos/qc/familia-QC.html">
+              <a class="dropdown-item drop-fam-cont drop-qc" href="../qc/familia-QC.html">
               <img src="../../img/fam-icons/QC-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QC</div>
                 <div class="drop-prod">Medidores de capas</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qh" href="../../productos/qh/familia-QH.html">
+              <a class="dropdown-item drop-fam-cont drop-qh" href="../qh/familia-QH.html">
               <img src="../../img/fam-icons/QH-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QH</div>
                 <div class="drop-prod">Durómetros Leeb y UCI</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qs" href="../../productos/qs/familia-QS.html">
+              <a class="dropdown-item drop-fam-cont drop-qs" href="../qs/familia-QS.html">
               <img src="../../img/fam-icons/QS-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QS</div>
@@ -133,16 +138,15 @@
     <header class="bg-dark">
       <div class="container-fluid fam fam-QB bg-overlay bg-qb">
         <div class="container titulo-seccion">
-          <div class="row align-self-center">
-            <div class="col col-lg-7 my-auto titulo-familia">
-              <div class="row">
+          <div class="col col-lg-12 titulo-familia wow fadeIn">
+            <div class="row">
                 <img src="../../img/fam-icons/QB-ico.svg" alt="">
                 <h2>Familia QB</h2>
               </div>
-              <h4 class="italic">Medidores de espesores por efecto Hall</h4>
+              <h1 class="italic">Medidores de espesores por efecto Hall</h1>
               <h6>La serie de medidores de espesores QB permiten medir donde las técnicas clásicas no pueden aplicarse. Precisos y fáciles de usar son ideales para medir piezas complejas en cualquier material no ferroso, tanto en paredes muy delgadas como de gran espesor.</h6>
             </div>
-            <div class="col col-lg-5 my-auto img-familia">
+            <div class="col col-lg-12 my-auto img-familia">
               <img src="../../img/productos/familia-QH.png" alt="">
             </div>
           </div>
@@ -150,61 +154,33 @@
       </div>
     </header>
     <main id="familia-producto" class="f-QB">
-      <!--
-      <nav class="navbar navbar-expand-sm bg-qb-c sticky-top second-nav">
-        <ul class="container navbar-nav">
-            <li class="nav-item col col-3 text-center">
-                <a class="nav-link link-negro punta-inicio" href="#QB7">
-                  <span class="serie-txt-dot">Serie QB7</span>
-                  <span class="text-center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </span>
-                </a>
-            </li>
-            <li class="nav-item col col-3 text-center">
-                <a class="nav-link link-negro" href="#QH5">
-                  <span class="serie-txt-dot">Serie QH5</span>
-                  <span class="text-center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </span>
-                </a>
-            </li>
-            <li class="nav-item col col-3 text-center">
-                <a class="nav-link link-negro" href="#QH5U">
-                  <span class="serie-txt-dot">Serie QH5U</span>
-                  <span class="text-center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                  </span>
-                </a>
-            </li>
-            <li class="nav-item col col-3 text-center">
-                <a class="nav-link link-negro punta-fin" href="#QH2">
-                  <span class="serie-txt-dot">Serie QH2</span>
-                  <span class="text-center">
-                    <span class="dot"></span>
-                  </span>
-                </a>
-            </li>
-        </ul>
-      </nav>
-      -->
+      <section class="sect-bread">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="../../productos.html">Productos</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Familia QB</li>
+            </ol>
+          </nav>
+        </div>
+      </section>
       <section id="QH7" class="series7">
         <div class="container-fluid fam-QB bg-qb product-pc">
           <div class="container">
             <div class="col-12">
               <div class="row">
-                <div class="col-lg-8 col-sm-12 img-serie wow slideInLeft">
-                  <img src="../../img/carrousel/qh7.png" alt="...">
+                <h2 class="watermark">QB7</h2>
+                <div class="col-lg-6 col-sm-12 img-serie wow slideInLeft">
+                  <a href="QB7.html">
+                    <img src="../../img/productos/qh/qh7.png" alt="...">
+                  </a>
                 </div>
-                <div class="col-lg-4 col-sm-12 info-serie align-self-center">
-                  <h2 class="wow slideIn" data-wow-delay="0.2s">Serie QB7</h2>
-                  <h4 class="wow slideIn" data-wow-delay="0.4s">Durómetro portátil “Heavy duty” combinado Rebote + UCI para metales</h4>
+                <div class="col-lg-6 col-sm-12 info-serie align-self-center">
+                  <h2>Serie QB7</h2>
+                  <h4>Durómetro portátil “Heavy duty” combinado Rebote + UCI para metales</h4>
                 </div>
-                  <div class="col-12 caract-serie wow slideIn" data-wow-delay="0.6s">
+                  <div class="col-12 caract-serie wow slideIn">
                     <div class="row">
 
                       <div class="col-lg-4 col-sm-6 una-caract">
@@ -372,6 +348,7 @@
                 <button type="button" class="btn btn-blanco" data-toggle="modal" data-target="#modalQB7">Ver más</button>
               </div>
               <div class="col my-auto">
+                <h2 class="watermark">QB7</h2>
                 <img src="../../img/carrousel/qh7.png" alt="...">
               </div>
             </div>
@@ -715,7 +692,13 @@
 
     <script src="../../plugins/WOW-master/dist/wow.min.js"></script>
     <script>
-    new WOW().init();
+      wow = new WOW(
+        {
+          animateClass: 'animated',
+          offset: 280
+        }
+      );
+      wow.init();
     </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

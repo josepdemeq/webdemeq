@@ -72,17 +72,22 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
           <li class="nav-item col col-lg-2 dropdown">
-            <button class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <a href="productos.html" class="pc">
+              <button class="nav-link dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
+              Productos
+            </button>
+          </a>
+            <button class="nav-link dropdown-toggle cel" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Productos
             </button>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item prods-item mt-2 mb-2" href="productos.html">Todos nuestros productos</a>
-              <div class="dropdown-divider"></div>
+              <a class="dropdown-item prods-item mt-2 mb-2 cel" href="productos.html">Todos nuestros productos</a>
+              <div class="dropdown-divider cel"></div>
               <a class="dropdown-item drop-fam-cont drop-qb" href="productos/qb/familia-QB.html">
               <img src="img/fam-icons/QB-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QB</div>
-                <div class="drop-prod">Medidores de esperores Hall</div>
+                <div class="drop-prod">Medidores de espesores Hall</div>
               </div>
               </a>
               <a class="dropdown-item drop-fam-cont drop-qc" href="productos/qc/familia-QC.html">
@@ -112,7 +117,7 @@
           <a class="nav-link" href="datacenter.html">DataCenter</a>
           </li>
           <li class="nav-item col col-lg-2">
-          <a class="nav-link active" href="soporte.html">Soporte</a>
+          <a class="nav-link active" href="#">Soporte</a>
           </li>
           <li class="nav-item col col-lg-2">
           <a class="nav-link" href="comprar.html">Comprar</a>
@@ -146,8 +151,18 @@
         </div>
       </div>
     </header>
+    <section class="sect-bread bg-darker">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb naranja">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Soporte</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
     <main id="soporte">
-      <section class="container  wow slideIn" data-wow-delay="0.2s">
+      <section class="container wow slideIn" data-wow-delay="0.2s">
         <div class="ttl-sop">
           <h5>Notas técnicas y videos de producto</h5>
           <p>Seleccione su equipo y acceda a documentación y videos sobre su uso así como la relacionada a las técnicas de medición y su aplicación práctica.</p>
@@ -195,21 +210,51 @@
                 </div>
             </div>
           </div>
-          <div class="card bg-qb wow slideIn" data-wow-delay="0.2s">
-           <div class="card-block">
-               <div class="row h-100">
-                <div class="col-12 info-producto">
-                  <div class="familia-prod"><img src="img/fam-icons/QB-ico.svg" alt="">Familia QB</div>
-                  <h6>Medidores de Espesores por Efecto Hall</h6>
-                  <a href="productos/qb/soporte-QB.html" class="btn btn-blanco">Más información</a>
-                </div>
-                <div class="col-12 img-producto">
-                    <img class="img-fluid series7" src="img/soporte/sop-QB.png" alt="image">
-                </div>
-               </div>
-           </div>
-          </div>
       </div>
+      <div class="card-deck mt-3">
+        <div class="card bg-qb wow slideIn" data-wow-delay="0.2s">
+         <div class="card-block">
+             <div class="row h-100">
+              <div class="col-12 info-producto">
+                <div class="familia-prod"><img src="img/fam-icons/QB-ico.svg" alt="">Familia QB</div>
+                <h6>Medidores de Espesores por Efecto Hall</h6>
+                <a href="productos/qb/soporte-QB.html" class="btn btn-blanco">Más información</a>
+              </div>
+              <div class="col-12 img-producto">
+                  <img class="img-fluid series7" src="img/soporte/sop-QB.png" alt="image">
+              </div>
+             </div>
+         </div>
+        </div>
+        <div class="card bg-qst wow slideIn" data-wow-delay="0.2s">
+         <div class="card-block">
+             <div class="row h-100">
+              <div class="col-12 info-producto">
+                <div class="familia-prod"><img src="img/fam-icons/QST-ico.svg" alt="">QST</div>
+                <h6>Medidores de Espesores para Caños en Producción</h6>
+                <a href="productos/qs/soporte-QS.html" class="btn btn-blanco">Más información</a>
+              </div>
+              <div class="col-12 img-producto">
+                  <img class="img-fluid qst" src="img/soporte/sop-QST.png" alt="image">
+              </div>
+             </div>
+         </div>
+        </div>
+        <div class="card bg-qsv wow slideIn" data-wow-delay="0.2s">
+         <div class="card-block">
+             <div class="row h-100">
+              <div class="col-12 info-producto">
+                <div class="familia-prod"><img src="img/fam-icons/QSV-ico.svg" alt="">QSV</div>
+                <h6>Medidor de Velocidad por Ultrasonido</h6>
+                <a href="productos/qs/soporte-QSV.html" class="btn btn-blanco">Más información</a>
+              </div>
+              <div class="col-12 img-producto">
+                  <img class="img-fluid" src="img/soporte/sop-QS.png" alt="image">
+              </div>
+             </div>
+         </div>
+        </div>
+    </div>
     </section>
     <section class="sop-lic">
       <div class="container-fluid">
@@ -418,7 +463,7 @@
 
     <script src="plugins/WOW-master/dist/wow.min.js"></script>
     <script>
-    new WOW().init();
+      new WOW().init();
     </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
