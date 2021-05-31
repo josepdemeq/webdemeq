@@ -158,7 +158,7 @@
 }
 
 
-.series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+.series.f-QS .series-nav .nav-link:hover {
     color: #000;
 	transition: all 0.3s ease-in-out;
 	outline: none;
@@ -194,7 +194,7 @@
 }
 
 
-.activado .nav-link {
+.activado .nav-link, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active, #familia-producto nav .activado a.link-negro:hover {
     color: #000 !important;
 	transition: all 0.3s ease-in-out;
 	background: #fff;
@@ -428,8 +428,9 @@ svg.qs-icon-sop {
         margin-top: 4px;
     }
 
-    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active, .activado .nav-link {
-        padding: 2px 15px !important;
+    .series.f-QS .series-nav .nav-link, .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+        padding: 9px 15px 5px 15px !important;
+        line-height: 1;
     }
 
     .svg-icon.ajuste5 {
@@ -444,9 +445,8 @@ svg.qs-icon-sop {
 
     }
 
-    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active, .series-nav .activado .nav-link {
-        padding: 2px 15px;
-        line-height: 1.9;
+    .series.f-QS .series-nav .nav-link, .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+        padding: 6px 15px 4px 15px !important;
     }
     
     
@@ -471,6 +471,24 @@ svg.qs-icon-sop {
 
     #productos.relacionados .card-deck .card {
         max-width: 97%;
+    }
+
+    .series .series-nav .nav-item.activado .nav-link {
+        color: #000 !important;
+        background: #fff;
+        line-height: 2.8;
+    }
+
+    .series.f-QS .series-nav .nav-link, .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
+        line-height: 3.4;
+    }
+
+    .dest-btn-up .st-svg {
+        width: 20px;
+        height: auto;
+        fill: #000 !important;
+        margin-top: -5px;
+        transition: all 0.3s ease-in-out;
     }
 }
 
@@ -534,6 +552,7 @@ svg.qs-icon-sop {
         right: 0;
         top: 0;
         box-shadow: none;
+        z-index: 5000;
     }
 
     .foot .info-destacada .btn-blanco.btn-qs {
@@ -565,37 +584,14 @@ svg.qs-icon-sop {
         background-color: #000 !important;
     }
 
-
-    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
-        margin: 8px 10%;
-        padding: 5px 25px;
-    }
-    
-    
-    .navbar-expand-sm .navbar-nav .nav-link.link-negro {
-        margin: 8px 10%;
-        padding: 5px 25px;
-        text-align: center;
-    }
-      
-    #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover  {
-        margin: 8px 10%;
-        padding: 5px 25px;
-    
-    }
-
-    .series .series-nav .nav-link {
-        color: #fff !important;
-    }
-
-    .series .series-nav .nav-item.activado .nav-link {
-        color: #000 !important;
-        background: #fff ;
-    }
-
     .activado .nav-link {
         color: #000 !important;
-        background: #fff ;
+        background: #fff;
+    }
+
+    .series-nav .navbar-collapse.show {
+        margin-top: 56px;
+        background-color: rgba(205,176,41, 0.95);
     }
 }
 
@@ -604,13 +600,6 @@ svg.qs-icon-sop {
     .dest-btn-up.bg-qs {
         top: -20px;
     }
-
-    .series.f-QS .series-nav .nav-link:hover, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active {
-        padding: 5px;
-        margin: 0 4px 4px;
-        border-radius: 0 0 25px 25px;
-    }
-    
     
     .navbar-expand-sm .navbar-nav .nav-link.link-negro {
         padding: 5px;
@@ -627,6 +616,10 @@ svg.qs-icon-sop {
 
     .link-negro .serie-txt-dot {
         line-height: 0;
+    }
+
+    #familia-producto.series .info-prod .table td.hor-grad-qs {
+        padding: 25px;
     }
 }
 
@@ -659,6 +652,12 @@ svg.qs-icon-sop {
 }
 
 @media (max-width: 320px) {
+
+    
+
+    .navbar-expand-sm .navbar-nav .nav-link.link-blanco, #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover, .activado .nav-link, .series .series-nav .nav-link:hover {
+        padding: 2px 10px !important;
+    }
 
     .foot.slide-up .info-destacada .col-12 {
         width: 72% !important;

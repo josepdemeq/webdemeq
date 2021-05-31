@@ -338,6 +338,15 @@ svg.qb-icon-sop {
 /* ------------------------------------------ RESPONSIVE ------------------------------------------ */
 /*--------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 1440px) {
+
+    .series.f-QB .series-nav .nav-link, .series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active {
+        padding: 9px 15px 5px 15px !important;
+        line-height: 1;
+    }
+}
+
+
 @media (max-width: 1024px) {
 
     #familia-producto.series .info-prod h5 {
@@ -345,11 +354,11 @@ svg.qb-icon-sop {
 
     }
 
-    
 
-.series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active, .navbar-expand-sm .navbar-nav .nav-link.link-negro, #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover, #familia-producto .nav-item .activado .nav-link-blanco {
-    padding: 2px 15px;
-}
+    .series.f-QB .series-nav .nav-link, .series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active {
+        padding: 6px 15px 4px 15px !important;
+        line-height: 1;
+    }
 
 
 
@@ -364,18 +373,6 @@ svg.qb-icon-sop {
     .svg-icon.qb-icon {
         margin-top: 0;
     }
-
-    .svg-icon.qb-icon.ajuste3 {
-        margin-top: 2px;
-    }
-
-    .svg-icon.qb-icon.ajuste4 {
-        margin-left: 5px;
-    }
-}
-
-@media (max-width: 992px) {
-
     .svg-icon.qb-icon.ajuste2 {
         width: 80%;
         height: 80%;
@@ -389,7 +386,34 @@ svg.qb-icon-sop {
         height: 85%;
         padding: 5px;
         margin-top: 5px;
+    }
+
+    .svg-icon.qb-icon.ajuste3 {
+        margin-top: 2px;
+    }
+
+    .svg-icon.qb-icon.ajuste4 {
         margin-left: 5px;
+        margin-top: 4px;
+    }
+
+
+    .series .series-nav .nav-item.activado .nav-link {
+        line-height: 2.8;
+    }
+
+
+    .series.f-QB .series-nav .nav-link, .series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active {
+        line-height: 3.4;
+    }
+
+
+    .dest-btn-up .st-svg {
+        width: 20px;
+        height: auto;
+        fill: #fff !important;
+        margin-top: -5px;
+        transition: all 0.3s ease-in-out;
     }
     
 }
@@ -436,7 +460,7 @@ svg.qb-icon-sop {
         background: rgb(57,163,143) !important;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
-        color: #000;
+        color: #fff;
         font-weight: 600;
         border-top: 2px solid rgb(57,163,143) !important;
         position: absolute;
@@ -463,6 +487,13 @@ svg.qb-icon-sop {
         right: 0;
         top: 0;
         box-shadow: none;
+    }
+
+    
+
+    .series-nav .navbar-collapse.show {
+        margin-top: 56px;
+        background-color: rgba(57,163,143, 0.95);
     }
 
     .foot .info-destacada .btn-blanco.btn-qb {

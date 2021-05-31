@@ -249,7 +249,7 @@
 @media (max-width: 576px) {
 
   #comprar {
-    padding: 0 15px;
+    padding: 0;
   }
 
   .map-pc {

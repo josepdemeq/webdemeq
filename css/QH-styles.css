@@ -52,7 +52,7 @@
 }
 
 
-.series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active {
+.series.f-QH .series-nav .nav-link:hover {
     background: rgba(255,255,255,0.3);
 	transition: all 0.3s ease-in-out;
 	outline: none;
@@ -82,8 +82,7 @@
 
 }
 
-
-.activado .nav-link {
+.activado .nav-link, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active, #familia-producto nav .activado a.link-blanco:hover  {
     color: rgb(139,28,33) !important;
 	transition: all 0.3s ease-in-out;
 	background: #fff;
@@ -329,9 +328,9 @@
   }
   .comp.bg-gris thead tr:nth-child(1) th{ 
     background: rgb(99,0,0);
-    background: -moz-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(17,17,17,1) 10%);
-    background: -webkit-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(17,17,17,1) 10%);
-    background: linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(17,17,17,1) 10%);
+    background: -moz-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(23,23,23,1) 10%);
+    background: -webkit-linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(23,23,23,1) 10%);
+    background: linear-gradient(0deg, rgba(99,0,0,1) 0%, rgba(23,23,23,1) 10%);
     position: sticky;
     top: 50px;
     z-index: 10;
@@ -395,8 +394,9 @@ svg.qh-icon-sop {
 
 @media (max-width: 1440px) {
 
-    .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-H .series-nav .nav-link:active, .activado .nav-link {
-        padding: 2px 15px !important;
+    .series.f-QH .series-nav .nav-link, .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active {
+        padding: 9px 15px 5px 15px !important;
+        line-height: 1;
     }
 
     .svg-icon.ajuste5 {
@@ -410,6 +410,12 @@ svg.qh-icon-sop {
     
     .svg-icon.qh-icon.ajuste3 {
         margin-top: 4px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .series.f-QH .series-nav .nav-link, .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active {
+        padding: 6px 15px 4px 15px !important;
     }
 }
 
@@ -431,6 +437,23 @@ svg.qh-icon-sop {
     .svg-icon.qh-icon.ajuste4 {
         margin-top: 5px;
         margin-left: 4px;
+    }
+
+    .series .series-nav .nav-item.activado .nav-link {
+        line-height: 2.8;
+    }
+
+
+    .series.f-QH .series-nav .nav-link, .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active {
+        line-height: 3.4;
+    }
+
+    .dest-btn-up .st-svg {
+        width: 20px;
+        height: auto;
+        fill: #fff !important;
+        margin-top: -5px;
+        transition: all 0.3s ease-in-out;
     }
 }
 
@@ -552,6 +575,11 @@ svg.qh-icon-sop {
     padding: 5px 10px;
     margin: 8px 10%;
     }
+
+    .series-nav .navbar-collapse.show {
+        margin-top: 56px;
+        background-color: rgba(139,28,33, 0.95);
+    }
 }
 
 
@@ -572,7 +600,7 @@ svg.qh-icon-sop {
     }
 
     .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
-        padding: 5px;
+        padding: 5px 12px !important;
         margin: 0 4px 4px;
         border-radius: 0 0 25px 25px;
     }
@@ -591,6 +619,10 @@ svg.qh-icon-sop {
     
     .link-blanco .serie-txt-dot {
         line-height: 0;
+    }
+
+    #familia-producto.series .info-prod .table td.hor-grad-qh {
+        padding: 25px;
     }
 }
 

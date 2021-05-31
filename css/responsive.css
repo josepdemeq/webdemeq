@@ -52,6 +52,10 @@
         max-height: 500px;
     }
 
+    .series7 .serie .img-series .img-s7 {
+        width: 85%;
+    }
+
     .fam .titulo-familia img {
         width: 55px;
         height: 55px;
@@ -118,7 +122,7 @@
 
     /*--- Familia Productos ---*/
 
-    .fam .titulo-familia img {
+    .fam .titulo-familia img, .fam .certificaciones img {
         width: 50px;
         height: 50px;
         margin: 0 10px 10px 0;
@@ -134,10 +138,6 @@
 
     .img-familia img {
         width: 42% !important;
-    }
-
-    .series7 .img-serie {
-        min-height: 420px;
     }
 
     .series7 .img-serie img {
@@ -304,11 +304,11 @@
         margin: 0 0 0.5rem 0;
     }
 
-    /*--- Productos ---*/
-
-    .serie .titulo-seccion {
-        margin-top: 80px;
+    .datos-productos a .cont-dat-prod {
+        min-height: unset;
     }
+
+    /*--- Productos ---*/
 
     .serie .titulo-seccion {
         margin-top: 80px;
@@ -327,10 +327,6 @@
     h2 {
         font-size: 40px;
     }
-
-    h4 {
-        font-size: 20px;
-    }
     
     h6 {
         font-size: 16px;
@@ -338,7 +334,6 @@
 
     p, .breadcrumb {
         font-size: 15px;
-        margin-bottom: 15px;
     }
 
     .btn {
@@ -373,6 +368,15 @@
 
     .dropdown-menu .dropdown-item.drop-fam-cont .drop-fam, .dropdown-menu .dropdown-item.drop-fam-cont .drop-prod {
         font-size: 16px;
+    }
+
+    .quokka h4 {
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 60px 0;
+        font-size: 14px;
     }
 
 
@@ -422,12 +426,7 @@
 
     .titulo-seccion {
         height: 260px;
-        padding: 0 30px;
-    }
-
-    .titulo-seccion .titulo-familia {
-        flex: 1;
-        margin-left: 30px;
+        padding: 0 15px;
     }
 
     .navbar-expand-sm .navbar-nav .nav-link.link-negro {
@@ -444,11 +443,6 @@
         height: 9px;
         width: 9px;
 
-    }
-    
-    .series7 .img-serie {
-        min-height: 400px;
-        margin: 0;
     }
 
     .cont-serie, .serie {
@@ -473,6 +467,10 @@
         max-width: 50%;
     }
 
+    .fam .titulo-familia h2 {
+        margin: 0;
+    }
+
     .fam .titulo-familia img {
         width: 50px;
         height: 50px;
@@ -485,11 +483,6 @@
 
     .series7 .fam .titulo-familia h4 {
         padding-right: 0;
-    }
-
-    .serie .img-series {
-        flex: 0 0 30%;
-        max-width: 30%;
     }
 
     .series7 .serie .img-series {
@@ -505,9 +498,10 @@
         margin: 0;
         padding: 4px;
         border-radius: 24px;
-        max-height: 110px;
+        /* max-height: 110px; */
         justify-content: flex-end;
-        width: 100%;
+        width: 95%;
+        margin-bottom: 60px;
     }
     .series7 .serie .precio {
         padding: 4px;
@@ -516,13 +510,13 @@
     }
 
     .series7 .serie .precio p  {
-        padding: 0px 20px;
-        width: 50%;
+        padding: 0px;
+        width: 60%;
         font-size: 15px;
     }
 
     .serie .precio p  {
-        padding: 0px 50px;
+        padding: 10px;
         width: 100%;
         font-size: 15px;
     }
@@ -588,7 +582,15 @@
         padding: 60px 0 0 0;
     }
 
-    /*--- CataCenter ---*/
+    #comparativa.fam {
+        padding: 40px 0 0;
+    }
+
+    #familia-producto.series .info-prod .table td, .table th {
+        padding: .75rem 5px;
+    }
+
+    /*--- DataCenter ---*/
     .datacenter.bg-overlay {
         height: 260px;
     }
@@ -637,7 +639,7 @@
 
     #soporte .bg-licencias .container {
         width: 90%;
-        margin-left: 6%;
+        margin-left: 5%;
     }
 
     #soporte .bg-registro {
@@ -646,11 +648,11 @@
 
     #soporte .bg-registro .container {
         width: 90%;
-        margin-right: 6%;
+        margin-right: 5%;
     }
 
     .soporte-fam.bg-overlay {
-        height: 260px;
+        height: 415px;
     }
 
     .soporte-fam .titulo-familia .row {
@@ -676,8 +678,6 @@
     .mapa-distribuidores {
         padding: 0;
     }
-    
-    
 
     .sol-distr.bg-overlay {
         height: 260px;
@@ -713,7 +713,7 @@
     }
 
     #contacto .google-maps {
-        height: 242px;
+        height: 255px;
     }
 
     #contacto .cont.form-iframe {
@@ -724,19 +724,19 @@
 @media (max-width: 992px) { 
 
     h1 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     h2 {
-        font-size: 42px;
-    }
-
-    h3 {
         font-size: 36px;
     }
 
+    h3 {
+        font-size: 32px;
+    }
+
     h4 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     h5 {
@@ -748,11 +748,11 @@
     }
 
     p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .btn {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .btn-naranja {
@@ -938,72 +938,24 @@
 
     /*--- Index ---*/
 
-    .lema {
-        margin-top: 0;
-    }
-    
-    .lema .mt-5 {
-        margin-top: 5rem !important;
-    }
-
-    .lema h5  {
-        font-size: 18px;
-    }
-
-    .carousel-inner img {
-        max-height: 260px;
-    }
-
-    .serie-7 {
-        max-width: 260px;
-    }
-
-    .info-car {
-        padding-right: 50px;
-    }
-    
-    .info-car .car-ico {
-        width: 50px;
-        height: 50px;
-        display: inline-flex;
-        margin: 12px 10px 20px 0;
-        vertical-align: middle;
-        border-radius: 8px;
-        box-shadow: 0px -10px 30px #2c2c2c;
-    }
-
-    .info-car h2 {
-        font-size: 40px;
-    }
-
-    .info-car h4 {
-        font-size: 24px;
-    }
-
-    .info-car p {
-        font-size: 14px;
-    }
-
-    .carousel-item .row {
-        margin-right: 0;
-        margin-left: 0;
+    .video-background-holder {
+        height: 45vh;
     }
 
     .destacados-inicio {
-        padding: 20px 0;
+        padding: 80px 0;
     }
 
-    .destacados-inicio .card-deck {
-        display: block;
-    }
 
-    .destacados-inicio .card {
+    .destacados-inicio .card-deck .card {
         margin-bottom: 15px;
-        min-height: 700px;
+        display: flex;
+        flex: 0 0 29%;
     }
 
     .destacados-inicio .card-img {
-        margin-top: 60px;
+        margin-top: 51px;
+        padding: 0;
     }
 
 
@@ -1025,11 +977,11 @@
         background: url(../img/quokka/quokka-index-cel.png);
         background-position: bottom center;
         background-repeat: no-repeat;
-        min-height: 500px;
+        min-height: 450px;
         margin: 0 auto;
         position: relative;
         z-index: 1;
-        width: 90%;
+        width: 70%;
     }
 
     .quokka.mt-5 {
@@ -1037,7 +989,7 @@
     }
 
     .quokka .col-6 {
-        min-height: 500px;
+        min-height: 450px;
         max-width: 100%;
         flex: 0 0 100%;
     }
@@ -1064,7 +1016,8 @@
     }
 
     .datos-empresa .logo {
-        margin: 40px 0;
+        margin-bottom: 40px !important;
+        margin-top: 40px !important;
     }
 
     .datos-empresa img {
@@ -1073,20 +1026,11 @@
 
     .datos-empresa .cont-dat-empr{
         display: flex;
-        align-items: center;
     }
 
     .datos-empresa .dato-logo {
-        float: none;
-        width: 18px;
-        margin: 0 10px 0 0;
-        vertical-align: middle;
-        height: auto;
-        padding: 0;
-    }
-
-    .datos-empresa .dato-logo img {
-        margin-bottom: 15px;
+        margin: 0 15px 0 0;
+        max-width: 24px;
     }
 
     .redes-empresa {
@@ -1117,7 +1061,7 @@
     }
 
     .datos-productos {
-        margin: 40px 0;
+        margin: 0;
     }
 
     .datos-productos .naranja {
@@ -1133,6 +1077,8 @@
 
     .datos-productos .prod-logo img {
         max-width: 50px;
+        width: 50px;
+        height: 50px;
     }
 
     .datos-productos .prod-txt {
@@ -1189,13 +1135,13 @@
         width: 50px;
     }
 
-    #productos .card {
-        height: 300px;
+    #productos .card-deck .card, .introduccion .card-deck .card  {
+        min-height:300px;
     }
 
     #productos .card.col-lg-6 {
         flex: 0 0 100%;
-        max-width: 100%;
+        max-width: 96%;
     }
 
     #productos .card-block {
@@ -1208,6 +1154,10 @@
         justify-content: center;
         flex: 0 0 40%;
         max-width: 40%;
+    }
+
+    .card .img-producto img {
+        max-height: 240px;
     }
 
     #productos.relacionados .container {
@@ -1260,20 +1210,15 @@
 
      .titulo-seccion {
         width: 100%;
-        display: block;
         height: auto;
     }
 
     .cont-serie, .serie {
         height: 100%;
-        margin-top: 50px;
         z-index: 200;
         position: relative;
     }
     
-    .titulo-seccion .titulo-familia {
-        padding: 0 20px !important;
-    }
 
     .titulo-seccion .img-familia {
         width: 100%;
@@ -1284,6 +1229,10 @@
         height: 100%;
         margin: auto;
         text-align: center;
+    }
+
+    .navbar-expand-sm {
+        justify-content: space-around;
     }
 
     .navbar .container {
@@ -1311,7 +1260,6 @@
     .series .series-nav .dropdown-toggle, .series .series-nav .dropdown-toggle:hover {
         font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
         padding: 8px 15px;
-        background: rgba(255,255,255,0.1);
         color: #fff;
         width: 100%;
         border: 0;
@@ -1320,6 +1268,11 @@
         line-height: 2.5;
         transition: 0.3s all ease-in-out;
         margin: 8px 0;
+    }
+
+    .series .series-nav .dropdown-menu {
+        background-color: rgba(0,0,0, 0.2) !important;
+        margin-bottom: 10px;
     }
 
     .series .series-nav .dropdown-menu .dropdown-item .txt-drop {
@@ -1338,33 +1291,28 @@
     .svg-icon {
         margin-top: 2px;
     }
-
-    .svg-icon.ajuste2 {
-        padding: 10px;
-    }
     
     .svg-icon.ajuste4 {
         margin: 0 auto auto 2px;
     }
 
    .series-nav .navbar-collapse.show {
-        margin-top: 57px;
+        margin-top: 56px;
+        background-color: rgba(18,18,18,0.7);
     }
 
-    .series .series-nav .nav-link {
-        padding: 8px 15px;
+    .series .series-nav .nav-link, .series .series-nav .nav-link:hover{
+        padding: 8px 15px !important;
         line-height: 3;
         font-size: 16px;
     }
 
     /*--- PRODUCTOS ---*/
 
-    .titulo-seccion, .sol-distr .titulo-seccion {
-        margin-top: 50px;
-    }
 
-    .productos.bg-overlay, .titulo-seccion, .sol-distr.bg-overlay, .sol-distr .titulo-seccion {
-        height: 250px;
+    .productos.bg-overlay, .titulo-seccion, .sol-distr.bg-overlay, .sol-distr .titulo-seccion, .soporte .titulo-seccion {
+        margin: 50px auto 0 !important;
+        padding: 0 15px !important;
     }
 
     
@@ -1388,6 +1336,7 @@
 
     .img-familia img {
         height: auto !important;
+        width: 75% !important;
     }
 
     #familia-producto section {
@@ -1398,14 +1347,10 @@
         padding: 20px 0 0;
     }
 
-    #productos .card .img-producto {
-        left: 15px;
-    }
-
 
     .btn-producto {
         width: 100%;
-        padding: 40px;
+        padding: 40px 0;
         color: #fff;
         border-radius: 0;
     }
@@ -1422,6 +1367,14 @@
 
     .series7 .caract-serie {
         margin-bottom: 0px;
+    }
+
+    .series7 .serie .precio p, .serie .precio p, .serie .precio .btn-blanco, .series .series-nav .dropdown-toggle, .series .series-nav .nav-link, .series .series-nav .dropdown-menu .dropdown-item .serie-txt-dot {
+        font-size: 18px;
+    } 
+
+    .serie .precio p {
+        padding: 9px 50px;
     }
 
     .modal-prod .btn {
@@ -1554,6 +1507,10 @@
         width: 60%;
     }
 
+    #familia-producto.series .info-prod .table td, .table th {
+        padding: .75rem;
+    }
+
 
     /*-- Series info --*/
 
@@ -1566,15 +1523,11 @@
     }
 
     #familia-producto.series section.quokka {
-        padding: 40px 0 0;
+        padding: 0 !important;
     }
 
     #familia-producto.series .info-prod .col-lg-8 {
         padding: 15px;
-    }
-
-    #familia-producto.series .scrll-sect {
-        scroll-margin: 120px 0;
     }
 
     #familia-producto.series .info-prod .bg-gris {
@@ -1623,7 +1576,7 @@
 
     #certificaciones .cert-uno img {
         max-width: 60px;
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
 
     #accesorios .accesorio-uno .texto-acc {
@@ -1661,7 +1614,7 @@
         left: 0;
         margin-right: auto;
         margin-left: 0;
-        bottom: -95%;
+        bottom: -94%;
         background: #111;
         transition: all 0.3s ease-in-out;
     }
@@ -1752,7 +1705,7 @@
     }
 
     .foot .info-destacada .fam-icon {
-        width: 100px;
+        width: 80px;
         margin: 0;
         float: none;
     }
@@ -1876,6 +1829,7 @@
 
     .card-datacenter .container {
         text-align: center;
+        padding: 40px 40px 0;
     }
 
     .card-datacenter .container .img-data{
@@ -1897,11 +1851,7 @@
         width: 100%;
         margin-top: 50px;
         justify-content: center;
-    }
-
-    .datacenter .container, #datacenter .container {
-        margin-left: 15px ;
-        margin-right: 0;
+        margin-left: 8PX !important;
     }
 
     .datacenter .titulo-seccion img {
@@ -1928,6 +1878,10 @@
         margin: 0px 25px;
     }
 
+    #soporte .quokka .container {
+        margin: 0px auto;
+    }
+
     .card-deck .card {
         display: block;
         flex-basis: 33.3%; /* change this value for each breakpoint*/
@@ -1935,8 +1889,9 @@
         min-height: 470px;   
     }
 
-    #soporte .card-block { 
+    #soporte .card-block, #soporte .card-block .h-100 {
         height: 100%;
+        min-height: 450px;
     }
 
     #soporte .card .info-producto {
@@ -2014,6 +1969,17 @@
         width: 100%;
         overflow: hidden;
         padding-top: 125%;
+    }
+
+    .soporte-fam .titulo-seccion, .soporte-fam.bg-overlay {
+        height: 430px;
+    }
+
+    #licencias .cont.form-iframe {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 95%;
     }
 
     /*--- COMPRAR ---*/
@@ -2097,6 +2063,10 @@
         display: block !important;
     }
 
+    .anotacion {
+        font-size: 15px !important;
+    }
+
     /*--- BTN WHATSAPP ---*/
     
     .whats svg, .whats-scroll svg{
@@ -2126,7 +2096,7 @@
          right: 10px;
          z-index: 100;
          background-color : #25d366;
-         padding: 10px;
+         padding: 9px 10px;
          border-radius: 50px;
          border:  none;
          box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
@@ -2135,12 +2105,9 @@
          transition: bottom 0.3s ease-in-out;
      }
 
-     .datos-empresa .dato-logo img {
-        margin-bottom: 28px;
-    }
 
     #contacto .cont.form-iframe {
-        padding-top: 90%;
+        padding-top: 140%;
     }
 
     #familia-producto section.sect-bread, #familia-producto.series section.sect-bread, section.sect-bread, #soporte-producto.series section.sect-bread {
@@ -2178,11 +2145,45 @@
 
      /*--- NAV ---*/
 
-     .dropdown-menu .dropdown-item  {
+
+    #global-nav {
+        line-height: 0 !important;
+        height: 50px !important;
+        position: fixed;
+        top: 0;
+        z-index: 2000;
+        width: 100%;
+        color: #fff;
+        padding: .5rem 0;
+        box-shadow: none !important;
+      }
+
+     .navbar-nav .dropdown-menu {
+        margin: 0 -30px;
+        padding: 0;
+    }
+
+    .dropdown-menu .dropdown-item {
         font-size: 18px;
+        padding: 15px 30px;
+    }
+    
+    .dropdown-menu .dropdown-item.drop-fam-cont {
+        padding: 15px 30px;
     }
     
      /*--- HEADER ---*/
+
+     .logo-demeq img {
+        height: 60px;
+        margin-bottom: 28px !important;
+    }
+
+    .logo-demeq h2 {
+        border-left: 2px solid #fff;
+        font-size: 24px;
+        padding: 0 15px;
+    }
 
      header {
         z-index: 200;
@@ -2194,64 +2195,33 @@
         height: 100vh;
     }
 
-    .lema.pc {
-        padding:0;
-    }
-
-    .lema.cel {
-        margin:40px 0;
-    }
-    
-    .lema h1 {
-        font-size: 30px;
-    }
-    .lema h5 {
-        font-size: 18px;
+    #familia-producto section.sect-bread, #familia-producto.series section.sect-bread, section.sect-bread, #soporte-producto.series section.sect-bread {
+        padding: 20px 0 0 0;
     }
     
 
-    /*--- CAROUSEL ---*/
-
-    .carousel-item {
-        padding-top: 50px;
+    #productos .card.col-lg-6 {
+        max-width: 100%;
     }
 
-    .carousel-item .row {
-        height: 80%;
+    .destacados-inicio {
+        padding: 100px 0 0 0;
     }
-    
-    .img-car, .info-car {
-        margin: auto;
-        padding: 10px 40px;
-        text-align: center !important;
-    }
-    
-    .carousel-inner img {
-        max-height: 240px;
-    }
-
-    .serie-7 {
-        max-width: 280px;
-        margin-top: 50px !important;
-    }
-
-    .info-car h4 {
-        font-style: italic;
-        margin-bottom: 10px;
-        font-size: 30px;
-        line-height: 1.2;
-    }
-
-    .carousel-indicators {
-        bottom: 5px;
-    }
-
 
     /*--- Quokka ---*/
 
-    .img-quokka, .quokka .col-6 {
-        min-height: 330px;
+    section.quokka {
+        padding-top: 0 !important;
+    }
+
+    .quokka .col-6 {
+        min-height: 360px;
+    }
+
+    .img-quokka {
+        min-height: 360px;
         padding: 0;
+        width: 100%;
     }
 
     .dmq-quokka {
@@ -2264,17 +2234,39 @@
 
     /*--- Footer ---*/
 
+    footer {
+        padding: 40px 0;
+    }
+
     .datos-empresa .dato-logo img {
-        margin-bottom: 28px;
+        margin-bottom: 18px;
         width: 20px;
     }
 
     .redes-empresa .col-3 {
         margin-right: 10px;
     }
+    
 
     .redes-empresa .redes-ico {
         width: 40px;
+    }
+
+    .datos-productos {
+        padding: 40px 15px 0;
+        margin: 0;
+    }
+
+    .datos-productos a .cont-dat-prod {
+        min-height: unset;
+    }
+
+    .datos-productos a:hover .cont-dat-prod {
+        background-color: transparent;
+    }
+
+    .datos-productos .prod-logo {
+        margin: 0 15px 40px 0;
     }
 
     /*--- Botones laterales ---*/
@@ -2289,6 +2281,28 @@
 
 
     /*--- PORDUCTOS ---*/
+
+    .fam {
+        padding: 0;
+    }
+
+    .productos.bg-overlay {
+        margin: 50px auto 0;
+        padding: 0px 5px;
+        height: 300px;
+    }
+
+    .titulo-seccion {
+        margin: auto;
+        padding: 0 !important;
+        height: inherit;
+    }
+
+    .titulo-familia h1 {
+        margin-bottom: 20px;
+        font-size: 34px;
+        line-height: 1.2;
+    }
     
     .titulo-seccion h2{
         font-size: 30px;
@@ -2369,8 +2383,12 @@
     }
 
     .titulo-seccion .titulo-familia {
-        padding: 20px 30px !important;
-        margin-left: 0;
+        padding: 20px 15px !important;
+    }
+
+    .img-familia img {
+        width: 100% !important;
+        margin-bottom: 20px !important;
     }
 
 
@@ -2379,6 +2397,7 @@
     .second-nav-scroll, .second-nav {
         vertical-align: top;
         align-items: flex-start;
+        text-align: center;
     }
 
     .navbar-expand-sm .navbar-nav .nav-link.link-negro, .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
@@ -2386,15 +2405,37 @@
         margin: 0 4px 4px !important;
     }
 
+    .navbar-expand-sm.second-nav-scroll .navbar-nav .activado .nav-link.link-blanco {
+        background: #fff !important;
+    }
+
     .link-negro .serie-txt-dot, .link-blanco .serie-txt-dot {
         line-height: 1 !important;
         width: 100%;
         display: block;
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .series .series-nav.sticky-top {
+        padding: 10px 0px;
+    }
+
+    .series .series-nav .dropdown-menu .dropdown-item {
+        padding: 10px 55px;
+    }
+    
+
+    #familia-producto.series .scrll-sect {
+        scroll-margin: 120px 0;
+    }
+
+    .serie .titulo-seccion {
+        margin-top: 30px !important;
+        padding: 20px !important;
     }
 
     #familia-producto .product-mobile .btn-producto {
-        padding: 20px;
+        padding: 20px 0;
     }
 
     #familia-producto .product-mobile .btn-producto .col {
@@ -2407,23 +2448,29 @@
         font-size: 26px;
     }
 
+    .modal-prod .modal-content {
+        padding: 20px;
+    }
+
     #familia-producto section#productos.relacionados {
-        padding: 40px 0 0 0;
+        padding: 60px 0 0 !important;
     }
 
     #productos.relacionados .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 25px;
+        padding: 0 10px;
         justify-content: center;
         margin: 0 auto;
     }
 
     #productos.relacionados .container .row {
-        max-width: 576px;
-        flex: 0 0 100%;
         width: 100%;
+    }
+
+    #productos.relacionados .card-block {
+        margin: 0 0 30px !important;
     }
 
     #productos.relacionados .card-deck .card {
@@ -2432,21 +2479,33 @@
 
     /*--- Serie Producto ---*/
 
+    .series .series-nav .nav-link, .series .series-nav .nav-link:hover, .series .series-nav .nav-item.activado .nav-link {
+        padding: 4px 15px !important;
+        line-height: 3 !important;
+    }
+
     .series7 .serie .img-series img {
-        width: 100%;
+        width: 100% !important;
         margin: 20px auto;
     }
 
-    .series7 .serie .precio {
+    .series7 .serie .precio, .serie .precio {
         flex-direction: column;
-        border-radius: 24px;
+        border-radius: 28px;
         max-height: 100px;
+        width: 95%;
+        margin-bottom: 0;
+    }
+
+    .series7 .serie .precio p {
+        padding: 9px 20px;
     }
 
     .serie .precio p {
         margin: auto;
-        width: 100%;
+        width: 100% !important;
         text-align: center;
+        padding: 9px 20px;
     }
 
     .serie .img-series img {
@@ -2454,17 +2513,11 @@
         margin: 40px 0;
     }
 
-    .serie .precio {
-        width: 85%;
-        max-height: 100px;
-    }
 
     #familia-producto.series .info-prod .bg-gris {
         margin: 0px -15px;
-    }
-
-    #familia-producto.series .info-prod .bg-gris {
-        padding: 40px 30px;
+        overflow: hidden;
+        padding: 30px 15px !important;
     }
 
     #accesorios .accesorio-uno .img-acc {
@@ -2545,14 +2598,6 @@
         font-size: 18px;
     }
 
-    .dest-btn-up .st-svg {
-        width: 20px;
-        height: auto;
-        fill: #000 !important;
-        margin-top: -5px;
-        transition: all 0.3s ease-in-out;
-    }
-
     .slide-up .dest-btn-up .st-svg {
         transform: rotate(180deg);
         padding: 20px 0 10px;
@@ -2599,6 +2644,10 @@
         line-height: 50px;
     }
 
+    .foot .info-destacada h4 {
+        font-size: 18px !important;
+    }
+
     .foot .info-destacada p {
         font-size: 18px !important;
     }
@@ -2608,7 +2657,7 @@
         position: absolute;
         top: -30%;
         bottom: 0;
-        left: -240%;
+        left: -150%;
         height: 100%;
         transition: all 0.3s ease-in-out;
     }
@@ -2651,6 +2700,13 @@
         font-size: 20px;
     }
 
+    
+
+    .slide-up .dest-btn-up {
+        top: 0 !important;
+        z-index: 5000;
+    }
+
     .series7 .foot.slide-up .info-destacada .col-12 {
         width: 100%;
         float: none;
@@ -2679,7 +2735,7 @@
     }
 
     .series7 .foot .info-destacada .btn-blanco {
-        padding: 0.5rem 3.3rem !important;
+        padding: 0.5rem 3.9rem !important;
         width: max-content !important;
     }
 
@@ -2708,7 +2764,7 @@
     }
     
     #familia-producto section {
-        padding: 30px 10px;
+        padding: 30px 0 !important;
     }
     
     .whats svg, .whats-scroll svg {
@@ -2725,18 +2781,19 @@
         flex: 0 0 100%;
         padding: 0 30px !important;
         margin: 0;
-        padding: 0 30px !important;
+        padding: 0 10px !important;
     }
 
     .fam .titulo-familia h2 {
-        line-height: 1.4;
-        font-size: 45px
+        line-height: 1.5;
+        font-size: 34px;
+        margin: 0;
     }
 
     /*--- Comparativa ---*/
 
     .titulo-seccion.comparativa {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .titulo-seccion.comparativa .titulo-familia {
@@ -2744,20 +2801,32 @@
         padding: 0 15px !important;
     }
 
-    .titulo-seccion.comparativa .img-familia {
-        max-height: 15.4%;
+    .comparativa .img-familia img {
+        width: 100% !important;
+        position: relative !important;
+        margin: 0 !important;
     }
 
     #familia-producto.series section.comp {
-        padding: 40px 30px;
+        padding: 40px 0px !important;
+    }
+
+    .comp h5, .comp h6, .comp p  {
+        margin: 0 15px;
+    }
+
+    #familia-producto section.card-datacenter {
+        margin: 0;
+        padding: 0 15px !important;
     }
 
     .card-datacenter .container {
-        padding: 40px 20px;
+        padding: 20px 20px 0 ;
+        text-align: left;
     }
 
-    .card-datacenter {
-        margin: 0;
+    .card-datacenter .container img {
+        width: 100%;
     }
 
     .comp thead tr:nth-child(1) th {
@@ -2771,24 +2840,37 @@
 
     .comp .dsp-dispo {
         margin-bottom: 0;
+        padding: 0 15px;
+    }
+
+    .comp .dsp-dispo h6 {
+        margin: 0;
     }
     
     #familia-producto .comp .container.pb-5 {
         padding-bottom: 0 !important;
     }
 
+    .comp thead tr:nth-child(1) th {
+        position: relative !important;
+    }
+
+    .table td {
+        vertical-align: middle !important;
+    }
+
     /*--- DataCenter ---*/
 
     .datacenter .container, #datacenter .container {
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     #datacenter .container {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     #datacenter .container.img-quokka {
@@ -2806,10 +2888,23 @@
     }
 
      /*--- Soprte ---*/
+
+     #soporte {
+         padding: 40px 0 0 0;
+     }
+
+    .soporte.bg-overlay {
+        margin: 50px auto 0;
+        padding: 0px 5px;
+        height: 300px;
+    }
+
+    .soporte .titulo-seccion {
+        padding: 0 10px !important;
+    }
     
      #soporte .container {
-        margin: 0px;
-        padding: 0 25px;
+        margin: 0;
     }
 
     .soporte-fam .titulo-seccion .titulo-familia {
@@ -2859,7 +2954,7 @@
     }
     
     .ttl-sop {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     
     #soporte .familia-prod {
@@ -2868,19 +2963,27 @@
 
     #soporte .info-producto .btn {
         font-size: 18px;
-        top: 60px;
+        left: 15px;
     }
 
-    #soporte .card .img-producto img.series7 {
-        margin-left: 43px;
+    #soporte .card .img-producto img.series7, #soporte .card:hover .img-producto img.series7 {
+        margin-left: 64px;
+    }
+
+    .card .img-producto img.qst, #soporte .card:hover .img-producto img.qst {
+        margin-right: 65px !important;
     }
 
     #soporte .img-producto {
         margin-top: 0;
     }
 
+    .soporte-fam.bg-overlay {
+        padding: 25px 15px;
+    }
+
     #soporte .bg-licencias, #soporte .bg-registro {
-        padding: 60px 15px;
+        padding: 60px 0;
     }
 
     #soporte .bg-licencias .container, #soporte .bg-registro .container {
@@ -2891,7 +2994,7 @@
     }
 
     #soporte .contact-form  {
-        padding: 0 15px;
+        padding: 0;
         margin-bottom: 60px;
     }
 
@@ -2918,8 +3021,19 @@
 
     /*--- Licencias ---*/
 
+    .licencias.bg-overlay {
+        margin: 50px auto 0;
+        padding: 0px 15px;
+        height: 300px;
+    }
+
+    .licencias .titulo-seccion {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+
     #licencias .container {
-        padding: 0 30px;
+        padding: 0 15px;
     }
 
     #licencias .cont.form-iframe {
@@ -2941,10 +3055,18 @@
         padding: 60px 15px;
     }
 
+    .datos-empresa .cont-dat-empr {
+        margin: 15px 0 !important;
+    }
+
     .datos-empresa img {
         width: 100%;
         max-width: 200px;
-        margin: 0 0 15px 0;
+        margin: 0 !important;
+    }
+
+    .datos-empresa p {
+        margin-bottom: 0;
     }
     
     .trabajo-distribuidor {
@@ -2958,15 +3080,26 @@
     /*--- Solicitud Distribuidores ---*/
 
     .sol-distr .titulo-seccion {
-        padding: 0 15px;
+        padding: 0 !important;
     }
 
     #sol-distribuidor section .container {
-        padding: 0 30px;
+        padding: 0 15px;
     }
 
 
     /*--- Comparar ---*/
+
+    .comprar.bg-overlay {
+        margin: 50px auto 0;
+        padding: 0px 5px;
+        height: 300px;
+    }
+
+    .comprar .titulo-seccion {
+        margin-top: 0;
+        padding: 0 5px !important;
+    }
 
     .mapa-distribuidores {
         padding: 60px 0 !important;
@@ -2976,23 +3109,34 @@
         height: 300px;
     }
 
+    .sol-distr.bg-overlay{
+        padding: 0 15px;
+    }
+
     #sol-distribuidor section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     
     #sol-distribuidor section.contact-form {
-        padding: 60px 15px;
+        padding: 40px 0;
     }
 
-    #sol-distribuidor section.contact-form .container {
+    #sol-distribuidor section.contact-form .container, #sol-distribuidor section.contact-form .container .container {
         padding: 0 15px;
     }
 
+    .testimonials {
+        padding: 0 15px;
+    }
 
     .testimonials .owl-item .item {
         margin: 50px 0;
         margin-left: -15px;
+    }
+
+    .owl-carousel .item .content-testimonial {
+        padding: 80px 30px 20px 45px;
     }
 
     .owl-carousel .item .content-testimonial p {
@@ -3002,21 +3146,21 @@
     .owl-carousel .owl-nav .owl-prev, .owl-carousel .owl-nav .owl-prev:active, .owl-carousel .owl-nav .owl-prev:focus {
         width: 50px;
         height: 50px;
-        margin: 0 0 0 20px;
+        margin: 0 0 0 35px;
     }
 
     .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-next:active, .owl-carousel .owl-nav .owl-next:focus {
         width: 50px;
         height: 50px;
-        margin: 0 20px 0 0;
+        margin: 0 35px 0 0;
+    }
+
+    section.contact-form .container .container {
+        padding: 0 40px !important;
     }
 
     #soporte .container.form-iframe, #sol-distribuidor .container.form-iframe {
-        padding-top: 190% !important;
-    }
-
-    #soporte-producto.series section {
-        padding: 60px 15px 0;
+        padding-top: 230% !important;
     }
 
     #soporte-producto.series section.quokka {
@@ -3024,7 +3168,6 @@
     }
 
     #soporte .container.img-quokka {
-        margin: 0px 25px;
         padding: 0;
     }
 
@@ -3035,8 +3178,19 @@
 
     /*--- Empresa ---*/
 
+    .empresa.bg-overlay {
+        margin: 50px auto 0;
+        padding: 0px 15px;
+        height: 300px;
+    }
+
+    .empresa .titulo-seccion {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+
     #empresa .historia-demeq, #empresa .trabajo-demeq, #empresa .equipo-demeq, .clientes-demeq {
-        padding: 60px 15px;
+        padding: 40px 0;
     }
 
     .equipo-demeq .col-6 {
@@ -3045,35 +3199,68 @@
         max-width: 50%;
     }
 
-    .carousel-control-next, .carousel-control-prev {
-        margin-top: 30px;
+    #empresa .historia-demeq .datos-empresa .dato-logo {
+        float: left;
+        max-width: 24px;
+        margin: 0px 15px 0px 0;
+        vertical-align: middle;
+        height: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .trabajo {
+        margin-bottom: 20px;
     }
 
 
     /*--- Contacto ---*/
 
+    .contacto .bg-overlay {
+        margin: 50px auto 0;
+        padding: 0px 5px;
+        height: 300px;
+    }
+
+    .contacto  .titulo-seccion {
+        margin-top: 50px;
+        padding: 0 10px;
+    }
+
     #contacto {
-        padding: 60px 15px;
+        padding: 40px 0;
     }
 
     #contacto .cont.form-iframe {
-        padding-top: 225%;
+        padding-top: 260%;
+    }
+
+    #contacto .col-lg-6 {
+        padding: 0 !important;
     }
 }
 
 
 @media (max-width: 376px) {
 
-    .carousel-item .info-car h4 {
-        font-size: 24px !important;
-    }
-
-    .carousel-item .info-car p {
-        font-size: 12px !important;
+    .whats-scroll {
+        padding: 10px;
     }
 
     .titulo-seccion h2 {
         font-size: 26px;
+    }
+
+    .video-background-holder {
+        min-height: 375px;
+    }
+
+    .quokka h4 {
+        font-size: 20px !important;
+    }
+
+    .dmq-quokka {
+        height: 14px;
     }
 
     .info-producto h6 {
@@ -3147,9 +3334,26 @@
         line-height: 40px;
     }
 
+    .series .series-nav .dropdown-toggle, .series .series-nav .dropdown-toggle:hover {
+        padding: 2px 15px;
+    }
+
+    .series .series-nav .nav-link, .series .series-nav .nav-link:hover, .series .series-nav .nav-item.activado .nav-link {
+        padding: 6px 15px !important;
+        line-height: 2 !important;
+    }
+
+
+    .series7 .serie .precio, .serie .precio {
+        width: 100%;
+    }
+
+    .soporte-fam .titulo-familia .row {
+        margin-bottom: 0px;
+    }
+
     h3 {
         font-size: 30px;
-        margin-bottom: 20px;
     }
 
     #soporte .container.form-iframe, #sol-distribuidor .container.form-iframe {
@@ -3158,6 +3362,14 @@
 
     .filter-button {
         width: 45.5%;
+    }
+
+    #soporte .card .img-producto img.series7, #soporte .card:hover .img-producto img.series7 {
+        margin-left: 10px;
+    }
+
+    .card .img-producto img.qst, #soporte .card:hover .img-producto img.qst {
+        margin-right: 10px !important;
     }
 
     #licencias .cont.form-iframe {
@@ -3179,29 +3391,31 @@
 
 @media (max-width: 320px) {
 
-    .info-car .car-ico {
-        width: 40px;
-        height: 40px;
+    .video-background-holder {
+        min-height: 305px;
     }
 
-    .info-car h2 {
-        font-size: 36px;
+    .video-background-content {
+        margin-top: 30px;
     }
 
-    .carousel-item .info-car p {
-        font-size: 11px !important;
+    .logo-demeq img {
+        height: 45px;
+        margin-right: 15px;
+        margin-bottom: 21px !important;
     }
 
-    .carousel-item {
-        padding-top: 30px;
-    }
-
-    .img-car{
-        padding: 10px 0;
+    .logo-demeq h2 {
+    font-size: 20px;
+    padding: 0 0 0 15px;
     }
 
     .dropdown-menu .dropdown-item.drop-fam-cont .drop-prod {
         font-size: 16px;
+    }
+
+    #productos .card .img-fluid {
+        max-height: 70%;
     }
 
     .titulo-seccion .titulo-familia {
@@ -3224,7 +3438,7 @@
     }
 
     #familia-producto.series section.quokka h4, .quokka h4 {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     #productos .card {
@@ -3248,15 +3462,29 @@
     }
 
     .dmq-quokka {
-        height: 14px;
+        height: 13px;
+    }
+
+    .dest-btn-up {
+        top: -10px !important;
+        font-size: 16px;
     }
 
     .serie .precio p {
-        font-size: 16px !important;
+        font-size: 18px !important;
+        padding: 9px 45px;
     }
 
     .series .series-nav .nav-link {
         line-height: 1.7;
+    }
+
+    .series7 .serie .precio, .serie .precio {
+        max-height: 130px;
+    }
+
+    .series7 .serie .precio p {
+        padding: 12px 60px;
     }
 
     .foot {
@@ -3273,7 +3501,12 @@
     }
 
     .series7 .foot.slide-up .info-destacada .col-12 {
-        margin-top: 50px;
+        margin-top: 70px;
+        width: 100% !important;
+    }
+
+    .slide-up .dest-btn-up {
+        top: 0px !important;
     }
 
     .foot.slide-up .info-destacada .col-12 {
@@ -3286,7 +3519,7 @@
         font-size: 20px !important;
     }
 
-    .series7 .foot.slide-up .info-destacada .img-container {
+     .foot.slide-up .info-destacada .img-container {
         top: 389px;
     }
 
@@ -3303,10 +3536,23 @@
         font-size: 30px;    
         line-height: 20px;
     }
+
     .foot .info-destacada .fam-icon {
-        width: 40px;
-        margin: 0 0 15px;
-        float: none;
+        margin: 0 0 10px;
+    }
+
+    .series7 .foot .info-destacada .precio-container p {
+        padding: 0 50px;
+    }
+
+    .series7 .foot .info-destacada .ttl-info-dest {
+        text-align: center;
+    }
+
+    .series7 .foot .info-destacada .fam-icon {
+        width: 40px !important;
+        margin: 0 auto 10px auto !important;
+        float: none !important;
     }
 
     .foot .info-destacada .btn-blanco {
@@ -3348,7 +3594,7 @@
 
     .titulo-seccion h2, .titulo-seccion h3 {
         font-weight: 600;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     #licencias .cont.form-iframe {
@@ -3377,6 +3623,10 @@
         font-size: 16px !important;
     }
 
+    .info-producto .btn {
+        bottom: 15px;
+    }
+
     .centered.empr {
         padding-left: 0;
         padding-right: 30px;
@@ -3400,5 +3650,5 @@
 
     #contacto .cont.form-iframe {
         padding-top: 310%;
-    }
+    } 
 }

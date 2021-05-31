@@ -808,7 +808,7 @@ button.nav-link {
 
 .logo-demeq h2 {
 	border-left: 4px solid #fff;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     line-height: 1;
 	letter-spacing: 2px;
 }
@@ -1007,7 +1007,7 @@ section.quokka {
 }
 
 .dmq-quokka {
-	height: 25px;
+	height: 23px;
 	display: inline-flex;
 	margin-top: -5px;
 }
@@ -1023,13 +1023,17 @@ footer p.naranja{
 }
 
 .datos-empresa {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
-.datos-empresa img {
+.datos-empresa img.logo {
 	width: 100%;
 	max-width: 200px;
-	margin: 10px 0;
+	margin: 10px 0 20px 0;
+}
+
+footer .datos-empresa p.naranja {
+	margin-bottom: 0;
 }
 
 .datos-empresa .dato-logo{
@@ -1038,12 +1042,17 @@ footer p.naranja{
     margin: 0 10px 0 0;
     vertical-align: middle;
     height: auto;
+	width: 100%;
 }
 
 .datos-empresa .cont-dat-empr{
 	display: flex; 
-	align-items: baseline;
-    margin: 5px 0;
+	align-items: flex-start;
+    margin: 20px 0;
+}
+
+.datos-empresa .cont-dat-empr .dato-txt p {
+    margin: 0;
 }
 
 
@@ -1195,7 +1204,8 @@ footer p.naranja{
 
 .centered {
 	position: absolute;
-	top: 50%;
+	top: 50%;  
+	left: 0;
 	transform: translate(0, -50%);
   }
 
@@ -1347,6 +1357,7 @@ footer p.naranja{
 
 .titulo-familia {
 	flex-basis: auto;
+	padding: 0;
 }
 
 .titulo-familia h1{
@@ -1516,8 +1527,7 @@ footer p.naranja{
 }
 
 .series7 .img-serie{
-    min-height: 500px;
-	margin: 0;
+	margin: 60px 0 0;
 }
 
 .series7 .img-serie img {
@@ -1605,7 +1615,7 @@ footer p.naranja{
     align-content: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 15px;   
+    padding: 0 30px;   
 	z-index: 2;
 }
 .serie .titulo-seccion .titulo-familia {
@@ -1648,7 +1658,7 @@ footer p.naranja{
 
 .series7 .serie .img-series {
     display: flex;
-    width: 100%;
+    width: 90%;
     height: auto;
     justify-content: flex-start;
     flex-direction: column;
@@ -1868,6 +1878,11 @@ footer p.naranja{
     padding: 60px 25px 0 0;
 }
 
+#familia-producto.series section.comp {
+    padding: 60px 0 0 0;
+}
+
+
 #familia-producto.series section.quokka {
     padding: 120px 0 0 0;
 }
@@ -1894,7 +1909,7 @@ footer p.naranja{
 	width: 85%;
     height: 85%;
     padding: 5px;
-    margin-top: 3px;
+    margin-top: 0px;
 }
 
   
@@ -1937,6 +1952,14 @@ footer p.naranja{
 
 /*--Listo para usar --*/
 
+#listo .col-12 {
+	padding: 0;
+}
+
+#listo li {
+	padding-left: 4px;
+}
+
 .video-producto {
 	margin-top: 40px;
 }
@@ -1946,6 +1969,10 @@ footer p.naranja{
 }
 
 /*-- accesorios --*/
+
+#accesorios .container{
+	padding: 0;
+}
 
 #accesorios .accesorio-uno{
 	border-bottom: 1px solid #333;
@@ -2341,6 +2368,30 @@ footer p.naranja{
 
 /*--- SOPORTE --*/
 
+
+
+.soporte.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/headers-secciones/productos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 300px;
+}
+
+.soporte .titulo-seccion {
+    position: relative;
+    height: 300px;
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+}
+.soporte .titulo-seccion img {
+	width: auto;
+    max-height: 300px;
+}
+
 #soporte {
 	background: #0f0f0f;
 	padding: 60px 0 0;
@@ -2718,6 +2769,31 @@ padding:0px;
 /*--- Licencias ---*/
 
 
+
+.licencias.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/headers-secciones/productos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 300px;
+}
+
+.licencias .titulo-seccion {
+    position: relative;
+    height: 300px;
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+}
+
+.licencias .titulo-seccion img {
+	width: auto;
+    max-height: 300px;
+}
+
+
 #licencias h5 {
 	color: rgb(239,125,45);
 }
@@ -2772,6 +2848,31 @@ padding:0px;
 
 
 /*--- Empresa ---*/
+
+
+
+.empresa.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/headers-secciones/productos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 300px;
+}
+
+.empresa .titulo-seccion {
+    position: relative;
+    height: 300px;
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+}
+
+.empresa .titulo-seccion img {
+	width: auto;
+    max-height: 300px;
+}
 
 #empresa .historia-demeq, #empresa .trabajo-demeq, #empresa .equipo-demeq, .clientes-demeq {
 	padding: 60px 0;
@@ -2885,6 +2986,28 @@ padding:0px;
  #empresa .trabajo-distribuidor h5,  #distri .trabajo-distribuidor h5 {
 	color: #FFF;
   }
+
+  
+
+.carousel-control-next, .carousel-control-prev {
+	width: 15% !important;
+	opacity: 1;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	display: inline-block;
+	width: 50px !important;
+	height: 50px !important;
+	background: no-repeat 50%/100% 100%;
+}
+
+.carousel-control-prev-icon {
+	background-image: url(../img/empresa/testimonials/left_hover.svg) !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url(../img/empresa/testimonials/right_hover.svg) !important;
+}
 
   /*--- Solicitud Distibuidor ---*/
 
@@ -3041,6 +3164,30 @@ button:focus {
 
 /*--- Contacto ---*/
 
+
+.contacto.bg-overlay {
+    background: linear-gradient(90deg,rgba(0,0,0,.8), rgba(0,0,0,.4)), url('../img/empresa/distribuidores.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 300px;
+}
+
+.contacto .titulo-seccion {
+    position: relative;
+    height: 300px;
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+}
+
+.contacto .titulo-seccion img {
+	width: auto;
+    max-height: 300px;
+}
+
 #contacto {
 	padding: 60px 0;
 }
@@ -3085,11 +3232,35 @@ button:focus {
 
   #contacto .google-maps {
 	width: 100%; 
-	height: 220px;
+	height: 260px;
   }
 
 
-  /*--- CCOMPRAR ---*/
+  /*--- COMPRAR ---*/
+
+  .comprar.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/headers-secciones/productos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 300px;
+}
+
+.comprar .titulo-seccion {
+    position: relative;
+    height: 300px;
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: column;
+}
+
+.comprar .titulo-seccion img {
+	width: auto;
+    max-height: 300px;
+}
+
 
   #comprar {
 	  padding: 60px 0;
