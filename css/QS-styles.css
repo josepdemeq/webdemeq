@@ -621,6 +621,11 @@ svg.qs-icon-sop {
     #familia-producto.series .info-prod .table td.hor-grad-qs {
         padding: 25px;
     }
+    
+
+    .activado .nav-link, .series.f-QS .series-nav .nav-link:focus, .series.f-QS .series-nav .nav-link:active, #familia-producto nav .activado a.link-blanco:hover {
+        border-radius: 0 0 25px 25px !important;
+    }
 }
 
 @media (max-width: 376px) {
@@ -638,12 +643,12 @@ svg.qs-icon-sop {
     }
     
     .foot.slide-up .info-destacada .img-container {
-        top: -18%;
-        left: -230%;
+        top: 0%;
+        left: -95%;
     }
     
     .foot .info-destacada .img-container img {
-        height: 140%;
+        height: 110%;
     }
 
     .series .series-nav .nav-link {

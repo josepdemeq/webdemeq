@@ -595,9 +595,7 @@ svg.qh-icon-sop {
 
 
 @media (max-width: 576px) {
-    .dest-btn-up.bg-qh {
-        top: -20px;
-    }
+
 
     .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
         padding: 5px 12px !important;
@@ -624,14 +622,30 @@ svg.qh-icon-sop {
     #familia-producto.series .info-prod .table td.hor-grad-qh {
         padding: 25px;
     }
-}
 
-@media (max-width: 376px) {
+    .activado .nav-link, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active, #familia-producto nav .activado a.link-blanco:hover {
+        border-radius: 0 0 25px 25px;
+    }
 
     .dest-btn-up.bg-qh {
         top: -20px;
     }
-    
+}
+
+@media (max-width: 376px) {
+
+    .foot {
+        bottom: -92%;
+    }
+
+    .slide-down {
+        bottom: -92% !important;
+    }
+
+    .dest-btn-up.bg-qh {
+        top: 0px;
+    }
+
     #familia-producto nav .col {
         padding: 0;
         vertical-align: top;

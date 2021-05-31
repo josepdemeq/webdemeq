@@ -477,7 +477,12 @@ svg.qc-icon-sop {
         margin-top: -5px;
         transition: all 0.3s ease-in-out;
     }
-    
+
+    .svg-icon.qc-icon.ajuste4 {
+        width: 85%;
+        height: 85%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -618,17 +623,16 @@ svg.qc-icon-sop {
     #familia-producto.series .info-prod .table td.hor-grad-qc {
         padding: 25px;
     }
+
+    .activado .nav-link, .series.f-QC .series-nav .nav-link:focus, .series.f-QC .series-nav .nav-link:active, #familia-producto nav .activado a.link-blanco:hover {
+        border-radius: 0 0 25px 25px;
+    }
 }
 
 @media (max-width: 376px) {
 
-    .foot {
-        bottom: -92%;
-    }
 
-    .slide-down {
-        bottom: -92% !important;
-    }
+    
 
     .dest-btn-up.bg-qc {
         top: 0px;
