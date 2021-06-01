@@ -157,7 +157,7 @@
     }
 
     .svg-icon {
-        padding: 4px;
+        padding: 4px !important;
     }
 
     .img-serie img {
@@ -190,6 +190,10 @@
     .series .series-nav .dropdown-toggle, .series .series-nav .nav-link {
         padding: 2px 15px;
         margin: 4px auto;
+    }
+
+    .series .series-nav .dropdown-toggle {
+        width: 100%;
     }
 
     .serie .precio {
@@ -936,6 +940,10 @@
 
     .video-background-holder {
         height: 45vh;
+    }
+
+    .card:hover, .card:hover .img-producto img {
+        transform: scale(1);
     }
 
     .destacados-inicio {

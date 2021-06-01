@@ -1,0 +1,2 @@
+RewriteEngine on
+ErrorDocument 404   http://demeqcom.ipage.com/webdemeq/not-found-page.html
