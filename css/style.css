@@ -118,6 +118,10 @@ p {
 	display: none;
 }
 
+.mob {
+	display: none;
+}
+
 .product-pc {
 	display: block;
 }
@@ -818,100 +822,6 @@ button.nav-link {
 }
 
 
-  /*---  CAROUSEL  ---*/
-
-#carouselInicio {
-	height: 100%;
-	margin: auto;
-}
-.carousel-index {
-	padding: 0 !important;
-	height: 100%;
-	margin: auto;
-}
-
-.carousel-control-next, .carousel-control-prev {
-	width: 5%;
-}
-
-.carousel-indicators li {
-    width: 8px;
-    height: 8px;
-	border-radius: 20px !important;
-	background-clip: unset !important;
-	border-top: 0;
-	border-bottom: 0;
-	transition: all 0.3s ease-in;
-}
-
-.carousel-indicators .active {
-    opacity: 1;
-    width: 24px;
-	transition: all 0.3s ease-in;
-}
-
-.carousel-inner {
-	height: 100%;
-}
-
-.carousel-inner img {
-	height: 100%;
-	max-height: 460px;
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: 20px;
-	vertical-align: middle;
-}
-
-.serie-7 {
-	max-width: 500px;
-	height: auto !important;
-}
-
-
-.carousel-item .row {
-	height: 90%;
-}
-
-.img-car, .info-car {
-	margin: auto 20px;
-	
-}
-
-.info-car {
-	vertical-align: middle;
-}
-
-.info-car .car-ico {
-	width: 80px;
-	height: 80px;
-	display: inline-flex;
-	margin: 12px 10px 20px 0;
-	vertical-align: middle;
-	border-radius: 20px;
-	box-shadow: 0px -10px 30px #2c2c2c;
-}
-
-.info-car h2 {
-	display: inline-flex;
-	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	vertical-align: middle;
-	font-weight: 600;
-	margin: auto;
-}
-
-.info-car h4 {
-	font-style: italic;
-	margin-bottom: 20px;
-}
-
-.info-car p {
-	color: #fff;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	letter-spacing: 0.1em;
-}
-
 /*--- Introduccion ---*/
 
 .introduccion {
@@ -952,6 +862,10 @@ button.nav-link {
 	transition: 0.2s all ease-in-out;
 }
 
+.card-body {
+    padding: 20px;
+}
+
 .destacados-inicio .card-text {
 	font-weight: bold;
 }
@@ -973,6 +887,8 @@ button.nav-link {
 .destacados-inicio .card-img-overlay .btn {
     position: absolute;
     bottom: 20px;
+    left: 16px;
+    top: 86%;
 }
 
 /*--- QUOKKA ---*/
@@ -1256,6 +1172,7 @@ footer .datos-empresa p.naranja {
     flex-direction: column;
     justify-content: space-between;
 	align-items: flex-start;
+	padding-left: 16px;
 }
 
 #productos .info-producto .familia-prod img {
@@ -2304,7 +2221,7 @@ footer .datos-empresa p.naranja {
 
 #datacenter a .spec h6 {
 	font-size: 18px;
-	font-weight: 900;
+	font-weight: 600;
 }
 
 #datacenter a .spec p {
@@ -2426,7 +2343,6 @@ footer .datos-empresa p.naranja {
 }
 
 
-
 #soporte .card-deck {
 	display: flex;
 	justify-content: flex-start;
@@ -2442,6 +2358,11 @@ footer .datos-empresa p.naranja {
 
 #soporte .card .info-producto {
 	padding: 0 15px;
+}
+
+
+#soporte .card .btn-blanco {
+	margin: 2px;
 }
 
 #soporte .card .img-producto img.series7  {

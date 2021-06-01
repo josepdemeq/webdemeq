@@ -27,11 +27,15 @@
 @media (max-width: 1920px) {
 
     .myBtn, .myBtn:hover {
-        padding: 10px 8px;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
     }
 
     .mail, .mail:hover {
         padding: 11px 10px;
+        width: 50px;
+        height: 50px;
     }
 
     .mail svg, .mail-scroll svg {
@@ -80,16 +84,10 @@
         font-size: 34px;
     }
 
-    .myBtn, .myBtn:hover {
-        padding: 8px 10px;
-    }
+    
 
     .st-svg {
-        width: 24px;
-    }
-
-    .mail, .mail:hover {
-        padding: 8px 10px;
+        width: 26px;
     }
     
     .mail svg, .mail-scroll svg {
@@ -814,8 +812,6 @@
         width: 100%;
         background-color: rgba(18,18,18, 0.95);
         backdrop-filter: blur(10px);
-
-
     }
 
     .navbar-toggler.collapsed ~ .navbar-collapse {
@@ -1305,6 +1301,9 @@
         padding: 8px 15px !important;
         line-height: 3;
         font-size: 16px;
+    }
+    .series .series-nav .nav-item.activado .nav-link {
+        border-radius: 50px !important;
     }
 
     /*--- PRODUCTOS ---*/
@@ -2074,10 +2073,9 @@
     /*--- BTN WHATSAPP ---*/
     
     .whats svg, .whats-scroll svg{
-        width: 24px;
+        width: 30px;
         height: auto;
         fill: #fff;
-        padding-left: 1px;
     }
     
    .whats {
@@ -2085,8 +2083,11 @@
         bottom: 10px;
         right: 10px;
         z-index: 100;
+        width: 50px;
+        height: 50px;display: flex !important;
+        justify-content: center;
+        align-items: center;
         background-color : #25d366;
-        padding: 11px 10px;;
         border-radius: 50px;
         border:  none;
         box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
@@ -2099,8 +2100,11 @@
          bottom: 100px;
          right: 10px;
          z-index: 100;
+         width: 50px;
+         height: 50px;display: flex !important;
+         justify-content: center;
+         align-items: center;
          background-color : #25d366;
-         padding: 9px 10px;
          border-radius: 50px;
          border:  none;
          box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
@@ -2271,16 +2275,6 @@
 
     .datos-productos .prod-logo {
         margin: 0 15px 40px 0;
-    }
-
-    /*--- Botones laterales ---*/
-
-    .myBtn, .myBtn:hover {
-        padding: 10px 12px;
-    }
-
-    .whats-scroll {
-        padding: 11px 10px;;
     }
 
 
@@ -2781,10 +2775,6 @@
     .series7 .foot .info-destacada .img-container img {
         width: auto;
         height: 120%;
-    }
-
-    .whats svg, .whats-scroll svg {
-        width: 30px;
     }
     
 
