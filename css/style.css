@@ -12,10 +12,10 @@ body {
 	width: 100%;
 	margin: 0;
 	background: #121212;
-	font-family: 'Adobe Clean', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Exo', sans-serif;
 	font-weight: 300;
 	font-size: 18px;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	color: white;
 	user-select: none;
 }
@@ -102,7 +102,7 @@ h6 {
 }
 
 p {
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	font-weight: 300;
 }
 
@@ -140,7 +140,7 @@ p {
 
 .btn {
 	letter-spacing: 0.5px;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .btn-blanco {
@@ -148,9 +148,7 @@ p {
     background-color: #fff;
     border: 2px solid #fff;
     border-radius: 50px;
-	padding-top: 9px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 8px 15px;
     transition: all 0.3s ease-in-out;
 }
 .btn-blanco:hover, .btn-blanco:active, .btn-blanco:focus {
@@ -165,9 +163,7 @@ p {
     background-color: #000;
     border: 2px solid #000;
     border-radius: 50px;
-	padding-top: 9px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 8px 15px;
     transition: all 0.3s ease-in-out;
 }
 .btn-negro:hover, .btn-negro:active, .btn-negro:focus {
@@ -183,9 +179,7 @@ p {
     background-color: #ef7d2d;
     border: 2px solid #ef7d2d;
     border-radius: 50px;
-	padding-top: 9px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 8px 15px;
     transition: all 0.3s ease-in-out;
 }
 .btn-naranja:hover, .btn-naranja:active, .btn-naranja:focus {
@@ -200,22 +194,35 @@ p {
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 50px;
-	padding-top: 9px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 8px 15px;
     transition: all 0.3s ease-in-out;
 	backdrop-filter: blur(5px);
 }
-.btn-borde:hover, .btn-borde:active, .btn-borde:focus {
+.btn-borde:hover, .btn-borde:active, .btn-borde:focus, .btn-borde-negro:hover, .btn-borde-negro:active, .btn-borde-negro:focus  {
 	color: #000;
 	background-color: #fff;
 	border: 2px solid #fff;
 	transition: all 0.3s ease-in-out;
 }
 
+.btn-borde-negro {
+	color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 50px;
+	padding: 8px 14px;
+    transition: all 0.3s ease-in-out;
+	backdrop-filter: blur(5px);
+}
+
 .btn-lang .btn {
 	font-size: 16px;
-	font-weight: 300;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
 }
 
 
@@ -246,7 +253,7 @@ header#home {
 	background-color:#61615f;
 	border-radius:42px;
 	border:2px solid #4f4f4f;
-	padding:13px 11px;
+	padding:11px;
 	text-decoration:none;
 	transition: background 00.3s ease-in-out;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
@@ -265,7 +272,7 @@ header#home {
 	width: 30px;
     height: auto;
     fill: #fff !important;
-    margin-top: -3px;
+    margin-top: -7px;
 }
 
 
@@ -292,6 +299,7 @@ header#home {
 	width: 30px;
 	height: auto;
 	fill: #fff !important;
+	margin-top: -3px;
 }
 
 .mail-btn {
@@ -322,7 +330,7 @@ header#home {
 	color: white;
 	cursor: pointer;
 	border-radius:42px;
-	padding:13px 11px;
+	padding:11px;
 	transition: all 0.3s ease-in-out;
 	text-decoration:none;
 }
@@ -339,7 +347,6 @@ header#home {
 	color: white;
 	cursor: pointer;
 	border-radius:42px;
-	padding:13px 11px;
 	transition: all 0.3s ease-in-out;
 	text-decoration:none;
 }
@@ -385,8 +392,6 @@ header#home {
 	box-shadow: 0 8px 12px rgba(0,0,0,.45)!important;
   }
 
-
-
 .shadow {
     box-shadow: none;
 }
@@ -409,6 +414,10 @@ header#home {
 	padding-top: 0;
 	-webkit-transition: width .5s; /* Safari */
 	transition: width .5s;
+}
+
+.navbar-brand img {
+    max-width: 107px;
 }
 
 .scrolled-nav .navbar-brand {
@@ -517,7 +526,7 @@ button.nav-link {
 }
 
 .btn-lang .dropdown-menu {
-	top: 90px;
+	top: 50px;
 }
 
 .btn-lang .dropdown-menu .dropdown-item:hover, .btn-lang .dropdown-toggle:hover {
@@ -525,7 +534,7 @@ button.nav-link {
 }
 
 .scrolled-nav .btn-lang .dropdown-menu {
-	top: 50px;
+	top: 37px;
 }
 
 .navbar-nav .dropdown-menu {
@@ -629,6 +638,24 @@ button.nav-link {
 	width: 40px;
 	height: 40px;
 	transition: width 0.3s ease-in-out;
+}
+
+.dropdown-menu.drop-sop {
+    padding: 0;
+}
+
+.dropdown-menu.drop-sop p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu.drop-sop .dropdown-item:hover {
+    background-color: rgba(55,55,55,0.9);
+	align-items: center;
+	backdrop-filter: blur(5px);
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.5s ease-in-out;
 }
 
 .btn-nav {
@@ -815,6 +842,7 @@ button.nav-link {
     padding: 0 0 0 20px;
     line-height: 1;
 	letter-spacing: 2px;
+	font-family: 'Adobe Clean', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo-demeq h2 span{
@@ -833,7 +861,6 @@ button.nav-link {
 /*--- Productos Inicio ---*/
 
 #index #productos {
-	background: #202020;
 	padding: 60px 0;
 }
 
@@ -917,6 +944,7 @@ section.quokka {
 } 
 
 .quokka h4{
+	font-size: 30px;
     margin-bottom:20px;
 	font-style: normal !important;
 }
@@ -931,6 +959,7 @@ section.quokka {
 /*--- FOOTER ---*/
 footer {
 	padding: 60px;
+	font-size: 16px;
 }
 
 footer p.naranja{
@@ -938,13 +967,13 @@ footer p.naranja{
 }
 
 .datos-empresa {
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 }
 
 .datos-empresa img.logo {
 	width: 100%;
 	max-width: 200px;
-	margin: 10px 0 20px 0;
+	margin: 10px 0 60px 0;
 }
 
 footer .datos-empresa p.naranja {
@@ -962,7 +991,7 @@ footer .datos-empresa p.naranja {
 
 .datos-empresa .cont-dat-empr{
 	display: flex; 
-	align-items: flex-start;
+	align-items: center;
     margin: 20px 0;
 }
 
@@ -970,10 +999,22 @@ footer .datos-empresa p.naranja {
     margin: 0;
 }
 
+.cont-dat-empr a {
+	transition: all 0.3s ease-in-out;
+}
 
-.redes-empresa .col-3 {
+.cont-dat-empr a:hover {
+	color: #ef7d2d;
+	transition: all 0.3s ease-in-out;
+}
+
+.redes-empresa .redes-ico {
 	padding-left: 0;
-	padding-right: 30px;
+	padding-right: 25px;
+}
+
+.redes-empresa .redes-ico svg {
+	width: 36px;
 }
 
 .social {
@@ -1002,13 +1043,12 @@ footer .datos-empresa p.naranja {
 .datos-productos a .cont-dat-prod {
 	background-color: transparent;
 	color: #fff;
-	padding: 20px;
+	padding: 10px 20px;
 	transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     align-content: center;
-    min-height: 125px;
 }
 
 .datos-productos a:hover .cont-dat-prod {
@@ -1026,12 +1066,12 @@ footer .datos-empresa p.naranja {
 }
 
 .datos-productos .prod-logo{
-	margin: 0 10px 0 0;
+	margin: auto 15px auto 0;
 }
 
 .datos-productos .prod-logo img{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 }
 .prod-txt {
 	vertical-align: middle;
@@ -1044,16 +1084,18 @@ footer .datos-empresa p.naranja {
     letter-spacing: 2px;
 }
 .prod-txt p {
-	margin-bottom: 4px;
+	margin-bottom: 0;
 	font-style: italic;
 }
 
 .mas-datos {
 	padding: 0 0 0 30px;
+	transition: all 0.3s ease-in-out;
 }
 
 .mas-datos a {
 	color: #fff;
+	text-decoration:none;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -1064,6 +1106,7 @@ footer .datos-empresa p.naranja {
 
 .mas-datos .naranja a {
 	color: #ef7d2d;
+	text-decoration:none;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -1149,7 +1192,8 @@ footer .datos-empresa p.naranja {
     padding: 0;
     border-radius: 0;
     margin-bottom: 30px;
-	transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;   
+	overflow: hidden;
 }
 
 .card:hover {
@@ -1172,6 +1216,7 @@ footer .datos-empresa p.naranja {
     justify-content: space-between;
 	align-items: flex-start;
 	padding-left: 16px;
+	padding-right: 0;
 }
 
 #productos .info-producto .familia-prod img {
@@ -1180,7 +1225,7 @@ footer .datos-empresa p.naranja {
 
 #productos .info-producto .familia-prod {
     font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 30px;
     letter-spacing: 1.5px;
     line-height: 50px;
@@ -1194,7 +1239,7 @@ footer .datos-empresa p.naranja {
 
 .card .img-producto img {
 	transition: 0.3s all ease-in-out;
-	 max-height: 240px;
+	 max-height: 230px;
 }
 
 .card:hover .img-producto img {
@@ -1208,6 +1253,21 @@ footer .datos-empresa p.naranja {
     transform: scale(0.99999);
 }
 
+#productos .card .watermark {
+    font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    position: absolute;
+    font-size: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.04;
+    filter: blur(3px);
+    font-weight: 600;
+    margin: 0 auto;
+    letter-spacing: 20px;
+	z-index: 1;
+}
+
 .familia-prod {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
@@ -1218,7 +1278,7 @@ footer .datos-empresa p.naranja {
 .info-producto h6 {
 	font-style: italic;
 	margin-bottom: 15px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .familia-prod img {
@@ -1252,7 +1312,7 @@ footer .datos-empresa p.naranja {
     transform: translate(-50%, -50%);
     opacity: 0.04;
     filter: blur(5px);
-    font-weight: 600;
+    font-weight: 600 !important;
     margin: 0 auto;
 }
 
@@ -1272,7 +1332,12 @@ footer .datos-empresa p.naranja {
 /*- Headers -*/
 
 .fam {
-    padding: 40px 0;
+    /*-padding: 40px 0;-*/
+	margin-top: 80px;
+}
+
+.fam .titulo-familia  {
+	padding: 40px 0;
 }
 
 .titulo-familia {
@@ -1281,7 +1346,9 @@ footer .datos-empresa p.naranja {
 }
 
 .titulo-familia h1{
-	margin-bottom: 40px;
+	margin: 10px 0 50px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .titulo-familia .row {
@@ -1295,7 +1362,7 @@ footer .datos-empresa p.naranja {
 }
 
 .titulo-seccion h2, .titulo-seccion h3 {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .img-familia img {
@@ -1312,9 +1379,13 @@ footer .datos-empresa p.naranja {
     margin: 0 20px 10px 0;
 }
 
+.fam .certificaciones .row{
+	justify-content: center;
+}
+
 .fam .certificaciones img {
-    width: 60px;
-    height: 60px;
+    width: 60px !important;
+    height: 60px !important;
 	margin-right: 20px;
 	-webkit-filter: drop-shadow( 3px 3px 6px rgba(0,0,0,.5));
 	filter: drop-shadow( 3px 3px 6px rgba(0,0,0,.5));
@@ -1322,14 +1393,14 @@ footer .datos-empresa p.naranja {
 
 .fam .titulo-familia h2 {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-weight: bold;
+	font-weight: 400;
 	margin: 0;
 	letter-spacing: 3px;
 }
 
 .fam .titulo-familia h4 {
-	font-weight: normal;
-	margin-bottom: 20px;
+	font-weight: 300;
+    margin: 40px 0 20px;
 }
 
 .series7 .fam .titulo-familia h4 {
@@ -1472,20 +1543,30 @@ footer .datos-empresa p.naranja {
   
 #familia-producto h2 {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-weight: bold;
+	font-weight: 400;
 	margin-bottom: 0;
 	letter-spacing: 4px;
 }
 
   
 #familia-producto h4 {
-	font-weight: normal;
+	font-weight: 500;
 	font-style: italic;
 	margin-bottom: 40px;
 }
 
 .una-caract {
+	min-height: 64px;
 	margin: 10px 0;
+	display: flex;    
+	align-items: center;
+}
+
+.una-caract .media {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: center;
 }
 
 .dot-icon {
@@ -1524,7 +1605,7 @@ footer .datos-empresa p.naranja {
 }
 
 .cont-serie, .serie {
-	height: calc(100vh - 58px);
+	height: calc(100vh - 135px);
 }
 
 .serie .titulo-seccion {
@@ -1563,7 +1644,7 @@ footer .datos-empresa p.naranja {
     justify-content: center;
 }
 .series7 .serie .info-serie p, .serie .info-serie p {
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .serie .img-series {
@@ -1573,7 +1654,8 @@ footer .datos-empresa p.naranja {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    align-content: center;   
+	padding: 0;
 }
 
 .series7 .serie .img-series {
@@ -1585,19 +1667,27 @@ footer .datos-empresa p.naranja {
     align-items: flex-start;
 }
 
-.series7 .serie .img-series .img-s7 {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
+
+
+.serie .cont-img-cert {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
+.serie .cont-img-cert.s7{
+	align-items: flex-start;
+}
+
+
 .serie .img-series img {
-    width: auto;
+    width: 85%;
     height: auto;
-    max-width: -webkit-fill-available;
-    max-height: 560px;
+}
+
+.serie .img-series img.img-s7 {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -1654,7 +1744,7 @@ footer .datos-empresa p.naranja {
 	margin: 8px auto;
 	line-height: 1.8;
 	border-radius: 50px;
-	font-size: 17px;
+	font-size: 16px;
 	letter-spacing: 0.7px;
 	font-weight: 400;
 }
@@ -1674,7 +1764,7 @@ footer .datos-empresa p.naranja {
     padding: 5px 25px;
     background: rgba(0,0,0,0.5);
     color: #fff;
-    width: 95%;
+    width: 100%;
     border: 0;
     border-radius: 50px;
     letter-spacing: 1.5px;
@@ -1771,6 +1861,7 @@ footer .datos-empresa p.naranja {
 	font-weight: 600;
 	border-bottom: 8px solid #fafafa;
 	margin-bottom: 20px;
+	padding-bottom: 10px;
 
 }
 
@@ -1837,7 +1928,7 @@ footer .datos-empresa p.naranja {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	font-weight: bold;
 	letter-spacing: 2px;
-	font-size: 22px;
+	font-size: 20px;
 }
 
 .dot-table {
@@ -1974,12 +2065,17 @@ footer .datos-empresa p.naranja {
 	height: -moz-fit-content;
 	margin-bottom: 60px;
     z-index: 1;
+	padding: 15px 15px 0 !important;
 }
 
 .series .info-destacada .fam-icon {
-    width: 50px;
+    width: 40px;
     margin: 0 10px 0 0;
     float: left;
+}
+
+.series .info-destacada .col-12 {
+	padding: 0;
 }
 
 .series .info-destacada h3 {
@@ -1987,13 +2083,13 @@ footer .datos-empresa p.naranja {
 	font-weight: 400;
 	letter-spacing: 2px;
 	margin-bottom: 15px;
-	line-height: 50px;
-	font-size: 30px;
+    line-height: 42px;
+    font-size: 26px;
 }
 
 .series .info-destacada p {
 	font-style: italic;
-	font-size: 20px;
+	font-size: 18px;
     line-height: normal;
 }
 
@@ -2002,7 +2098,7 @@ footer .datos-empresa p.naranja {
     position: relative;
     min-height: 200px;
     padding: 0;
-    margin: 0 -25px;
+    margin: 0 -15px;
 }
 
 .series .info-destacada .img-container img {
@@ -2023,13 +2119,105 @@ footer .datos-empresa p.naranja {
 }
 
 .series .info-destacada .precio-container p {
-	margin-top: 15px;
+	margin: 8px 0;
 	font-style: normal;
 	font-weight: 600;
 	width: 100%;
 	padding: 0 20px;
 	font-size: 20px;
 
+}
+
+.modal.docs {
+    backdrop-filter: blur(5px);
+}
+
+.modal.docs .modal-content {
+	width: 60%;
+	background-color: #000;
+	padding: 40px;
+    margin: auto;
+	box-shadow: 0 10px 20px rgb(0 0 0 / 60%), 0 4px 8px rgb(0 0 0 / 30%);
+}
+
+.modal.docs .modal-header {
+    flex-direction: column;
+	padding: 0 0 10px;
+	border-bottom: 8px solid #fff;
+}
+
+.modal.docs .ttl-serie-modal {
+	display: flex;
+}
+
+.modal.docs .ttl-serie-modal img{
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	
+}
+
+.modal.docs .ttl-serie-modal h3{
+	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+	line-height: 35px;
+	font-size: 24px;
+}
+
+.modal.docs .modal-header h6 {
+	margin-bottom: 0;
+}
+
+.modal.docs .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+    margin: 20px;
+	transition: 0.3s all ease-in-out;
+}
+
+.modal.docs .card:hover {
+	transform: none;
+    background-color: transparent;
+	box-shadow: none;
+}
+
+
+.modal.docs .modal-footer {
+    padding: 0;
+}
+
+.modal.docs .btn .span-btn {
+		font-size: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.3s all ease-in-out;
+		letter-spacing: 0;
+		line-height: 0;
+}
+
+.modal.docs .btn, .modal.docs .btn:hover  {
+	padding: 8px 14px !important;
+}
+
+.modal.docs .btn:hover .span-btn {
+	font-size: 18px;
+	opacity: 0;
+	opacity: 1;
+	visibility: visible;
+	transition: 0.3s all ease-in-out;
+	letter-spacing: auto;
+	line-height: 0;
 }
 
 .foot {
@@ -2043,9 +2231,23 @@ footer .datos-empresa p.naranja {
 	padding-bottom: 0;
 }
 
+#comparativa.fam .titulo-familia h4 {
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+.comp table {
+	font-size: 16px;
+}
+
+.comp table thead {
+	font-size: 12px;
+    text-transform: uppercase;
+}
+
 .titulo-seccion.comparativa {
     position: relative;
-    height: 500px;
+    height: 560px;
     display: flex;
     width: 100%;
 }
@@ -2341,7 +2543,7 @@ footer .datos-empresa p.naranja {
 
 #soporte .info-producto h6 {
     font-style: italic;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 	height: 50px;
 }
 
@@ -2818,7 +3020,7 @@ padding:0px;
 #empresa .historia-demeq .datos-empresa .dato-logo {
     float: left;
     max-width: 28px;
-    margin: 0 0 10px 0;
+    margin: 0;
     vertical-align: middle;
     height: auto;
     padding: 0 10px 0 0;
@@ -3128,12 +3330,18 @@ button:focus {
     padding: 0;
     /* align-items: baseline; */
 }
+
 #contacto .cont-dat-empr {
 	margin-bottom: 0px;
+    align-items: center;
 }
 
 #contacto .cont-dat-empr a:hover {
 	color: #ef7d2d;
+}
+
+#contacto .datos-empresa {
+	margin-bottom: 20px;
 }
 
 #contacto .cont.form-iframe {
@@ -3156,7 +3364,7 @@ button:focus {
 
   #contacto .google-maps {
 	width: 100%; 
-	height: 260px;
+	height: 235px;
   }
 
 

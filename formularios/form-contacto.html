@@ -7,7 +7,12 @@
     <title>Formulario DEMEQ</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="form.css" type="text/css">
-    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="../plugins/b-select/dist/css/bootstrap-select.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -16,7 +21,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <form id="form1" class="contact__form" method="post" action="cotizacion.php">
+                    <form id="form1" class="contact__form" method="post" action="contacto.php">
 
                         <!-- form element -->
                         <div class="row">
@@ -33,12 +38,7 @@
                                 <input name="phone" type="text" class="form-control" placeholder="Teléfono" required>
                             </div>
                             <div class="col-6 form-group">
-                                <input name="company" type="text" class="form-control" placeholder="Empresa" required>
-                            </div>
-                            <div class="col-6 form-group">
-                                <select class="custom-select mr-sm-2" name="country" required>
-                                    <option selected disabled value="">País</option>
-                                    <option disabled></option>
+                            <select class="custom-select sel-pais mr-sm-2 selectpicker w-100" name="country" data-live-search="true" data-live-search-style="begins" title="País" required>
                                     <optgroup label="ÁFRICA">
                                       <option value="Angola">Angola</option>
                                       <option value="Argelia">Argelia</option>
@@ -94,7 +94,6 @@
                                       <option value="Yibuti">Yibuti</option>
                                       <option value="Zambia">Zambia</option>
                                       <option value="Zimbabue">Zimbabue</option>
-                                      <option disabled></option>
                                     </optgroup>
                                     <optgroup label="AMÉRICA">
                                         <option value="Antigua y Barbuda">Antigua y Barbuda</option>
@@ -132,7 +131,6 @@
                                         <option value="Trinidad y Tobago">Trinidad y Tobago</option>
                                         <option value="Uruguay">Uruguay</option>
                                         <option value="Venezuela">Venezuela</option>
-                                      <option disabled></option>
                                     </optgroup>
                                     <optgroup label="EUROPA">
                                         <option value="Albania">Albania</option>
@@ -185,7 +183,6 @@
                                         <option value="Suiza">Suiza</option>
                                         <option value="Turquía">Turquía</option>
                                         <option value="Ucrania">Ucrania</option>
-                                      <option disabled></option>
                                     </optgroup>
                                     <optgroup label="ASIA">
                                         <option value="Afganistán">Afganistán</option>
@@ -236,7 +233,6 @@
                                         <option value="Uzbekistán">Uzbekistán</option>
                                         <option value="Vietnam">Vietnam</option>
                                         <option value="Yemen">Yemen</option>
-                                      <option disabled></option>
                                     </optgroup>
                                     <optgroup label="OCEANÍA">
                                         <option value="Australia">Australia</option>
@@ -253,9 +249,11 @@
                                         <option value="Tonga">Tonga</option>
                                         <option value="Tuvalu">Tuvalu</option>
                                         <option value="Vanuatu">Vanuatu</option>
-                                      <option disabled></option>
                                     </optgroup>
-                                  </select>
+                                  </select> 
+                            </div>
+                            <div class="col-6 form-group">
+                                <input name="company" type="text" class="form-control" placeholder="Empresa" required>
                             </div>
                             <div class="col-12 form-group">
                                 <textarea name="message" class="form-control"  cols="25" maxlength="1000" rows="12" placeholder="Mensaje" required></textarea>
@@ -283,14 +281,22 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
+      <script type="text/javascript">
         function submitForm(action) {
           var form = document.getElementById('form1');
           form.action = action;
           form.submit();
         }
       </script>
+      <script type="text/javascript">
+        $(function() {
+            $('select').selectpicker();
+            });
+      </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../plugins/b-select/dist/js/bootstrap-select.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

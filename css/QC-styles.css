@@ -13,6 +13,13 @@
     border: none !important;
 }
 
+.bg-qc-30 {
+	background: rgb(0,113,184);
+	background: linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 30%);
+    border: none !important;
+}
+
+
 .txt-qc {
 	color:#289ee8;
 }
@@ -26,6 +33,15 @@
 .breadcrumb a:hover {
 	color: #289ee8;
 	transition: 0.3s all ease-in-out;
+}
+
+
+.modal-backdrop.show {
+    opacity: 0.85;
+}
+
+.modal.docs .modal-header {
+	border-bottom: 8px solid #289ee8;
 }
 
 
@@ -318,7 +334,7 @@
     border-top: none;
     text-align: left;
     position: relative;
-    width: 70px;
+    min-width: 45px;
 }
 
 .hor-grad-qc img {
@@ -468,8 +484,6 @@ svg.qc-icon-sop {
         line-height: 3.4;
     }
 
-    
-
     .dest-btn-up .st-svg {
         width: 20px;
         height: auto;
@@ -505,16 +519,11 @@ svg.qc-icon-sop {
         text-align: center;
     }
 
-    .foot .info-destacada {
-        vertical-align: middle;
-        margin: auto;
-    }
-
     .foot.dest-qc {
         background: rgb(0,113,184);
-        background: -moz-linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 50%);
-        background: -webkit-linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 50%);
-        background: linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 50%);
+        background: -moz-linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 70%);
+        background: -webkit-linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 70%);
+        background: linear-gradient(0deg, rgba(0,113,184,1) 0%, rgba(18,18,18,1) 70%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0071b8",endColorstr="#000",GradientType=1);
         border-top: none;
     }

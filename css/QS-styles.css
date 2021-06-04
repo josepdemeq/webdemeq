@@ -20,6 +20,15 @@
     border: none !important;
 }
 
+.bg-qs-30 {
+	background: rgb(205,176,41);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 30%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 30%);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 30%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#000000",GradientType=1);
+    border: none !important;
+}
+
 .txt-qs {
 	color:#fae929;
 }
@@ -29,7 +38,13 @@
 	transition: 0.3s all ease-in-out;
 }
 
+.modal-backdrop.show {
+    opacity: 0.85;
+}
 
+.modal.docs .modal-header {
+	border-bottom: 8px solid #fae929;
+}
 
 
 /*--- FAMILIAS PRODUCTOS ---*/
@@ -287,7 +302,7 @@
 /*-- Info destacada --*/
 
 
-.series .info-destacada.dest-qs {
+.series .info-destacada.dest-qs  {
 	background: rgb(205,176,41);
 	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 70%);
 	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 70%);
@@ -333,7 +348,7 @@
     border-top: none;
     text-align: left;
 	position: relative;
-	width: 70px;
+	min-width: 50px;
 }
 
 .hor-grad-qs img {
@@ -507,16 +522,11 @@ svg.qs-icon-sop {
         background-color: rgb(205,176,41) !important;
     }
 
-    .foot .info-destacada {
-        vertical-align: middle;
-        margin: auto;
-    }
-
     .foot.dest-qs {
         background: rgb(205,176,41);
-        background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 50%);
-        background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 50%);
-        background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 50%);
+        background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 70%);
+        background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 70%);
+        background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 70%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#000",GradientType=1);
         border-top: none;
     }
@@ -641,15 +651,6 @@ svg.qs-icon-sop {
     .dest-btn-up.bg-qs {
         top: 0px;
     }
-    
-    .foot.slide-up .info-destacada .img-container {
-        top: 0%;
-        left: -95%;
-    }
-    
-    .foot .info-destacada .img-container img {
-        height: 110%;
-    }
 
     .series .series-nav .nav-link {
         padding: 10px;
@@ -664,11 +665,6 @@ svg.qs-icon-sop {
         padding: 2px 10px !important;
     }
 
-    .foot.slide-up .info-destacada .col-12 {
-        width: 72% !important;
-        left: 25%;
-    }
-
     .foot {
         bottom: -94%;
     }
@@ -679,15 +675,6 @@ svg.qs-icon-sop {
 
     .slide-down {
         bottom: -94% !important;
-    }
-
-    .foot.slide-up .info-destacada .img-container {
-        top: -2%;
-        left: -160%;
-    }
-    
-    .foot .info-destacada .img-container img {
-        height: 110%;
     }
 
     .series .series-nav .nav-link {

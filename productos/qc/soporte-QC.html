@@ -22,6 +22,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <!-- Styles CSS -->
     <link rel="stylesheet" href="../../css/style.css" type="text/css">
     <link rel="stylesheet" href="../../css/responsive.css" type="text/css">
@@ -29,13 +33,13 @@
     <link rel="stylesheet" href="../../fonts/stylesheet.css" type="text/css">
 
     <!-- Favicon -->  
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#181818">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/fav/favicon-16x16.png">
+    <link rel="manifest" href="../../img/fav//site.webmanifest">
+    <link rel="mask-icon" href="../../img/fav//safari-pinned-tab.svg" color="#181818">
     <meta name="msapplication-TileColor" content="#181818">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="../../mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
   </head>
@@ -66,7 +70,7 @@
       <a class="navbar-brand" href="../../index.html"><img src="../../img/logo.svg" alt="dmq"></a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col col-lg-10">
-          <li class="nav-item col col-lg-2 dropdown">
+          <li class="nav-item col dropdown">
             <a href="../../productos.html" class="pc">
               <button class="nav-link dropdown-toggle" id="navbarDropdown" aria-haspopup="true" aria-expanded="true">
               Productos
@@ -108,23 +112,40 @@
               </a>
             </div>
           </li>
-          <li class="nav-item col col-lg-2">
+          <li class="nav-item col">
           <a class="nav-link" href="../../datacenter.html">DataCenter</a>
           </li>
-          <li class="nav-item col col-lg-2">
-          <a class="nav-link active" href="../../soporte.html">Soporte</a>
+          <li class="nav-item col dropdown">
+            <a href="../../soporte.html" class="pc">
+              <button class="nav-link dropdown-toggle" id="navbarDropdown2" aria-haspopup="true" aria-expanded="true">
+              Soporte
+            </button>
+            </a>
+            <button class="nav-link dropdown-toggle cel" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Soporte
+            </button>
+            <div class="dropdown-menu drop-sop animate slideIn" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item mt-2 mb-2 cel" href="../../soporte.html">Soporte de producto</a>
+              <div class="dropdown-divider cel"></div>
+              <a class="dropdown-item" href="../../licencias.html">
+              <p>Licencias</p>
+              </a>
+              <a class="dropdown-item" href="../../registro.html">
+              <p>Registro</p>
+              </a>
+            </div>
           </li>
-          <li class="nav-item col col-lg-2">
+          <li class="nav-item col">
           <a class="nav-link" href="../../comprar.html">Comprar</a>
           </li>
-          <li class="nav-item col col-lg-2">
+          <li class="nav-item col">
           <a class="nav-link" href="../../empresa.html">Empresa</a>
           </li>
-          <li class="nav-item col col-lg-2">
+          <li class="nav-item col">
           <a class="nav-link" href="../../contacto.html">Contacto</a>
           </li>
         </ul>
-        <div class="dropdown btn-lang col col-lg-2 text-right p-0">
+        <div class="dropdown btn-lang col text-right p-0">
             <button class="btn btn-nav dropdown-toggle p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img class="lang-ico" src="../../img/lang.svg" alt="..."> Español
             </button>
@@ -384,147 +405,139 @@
             </div>
       </section>
     </main>
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-12"> 
-              <div class="datos-empresa">
-                <img class="logo" src="../../img/logo-foot.svg" alt="Card image">
-                <p class="naranja">Demeq S.R.L.</p>
-                  <div class="cont-dat-empr">
-                    <div class="dato-logo"><img src="../../img/map-ico.svg" alt="Card image"></div>
-                    <div class="dato-txt"><p>Armenia 3878 (B1605CEJ) Munro Buenos Aires  - Argentina</p></div>
-                  </div>
-                  <div class="cont-dat-empr">
-                    <div class="dato-logo"><img src="../../img/phone-ico.svg" alt="Card image"></div>
-                    <div class="dato-txt"><p>+54 (11) 4765 7678</p></div>
-                  </div>
-                  <div class="cont-dat-empr">
-                    <div class="dato-logo"><img src="../../img/email-ico.svg" alt="Card image"></div>
-                    <div class="dato-txt"><p>infodemeq@demeq.com</p></div>
-                  </div>
-              </div>
-              <div class="redes-empresa">
-                <p class="naranja">Seguinos en:</p>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col-3">
-                      <div class="redes-ico">
-                        <a href="https://www.linkedin.com/company/demeq" target="_blank">
-                        <svg id="social-in" data-name="social-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><g id="post-linkedin"><path class="social" d="M27.18,0H3A3,3,0,0,0,0,3V27.18a3,3,0,0,0,3,3H27.18a3,3,0,0,0,3-3V3A3,3,0,0,0,27.18,0ZM9.06,25.67H4.53V12.08H9.06ZM6.79,9.51A2.72,2.72,0,1,1,9.51,6.8,2.69,2.69,0,0,1,6.79,9.51ZM25.67,25.67H21.14v-8a2.27,2.27,0,1,0-4.53,0v8H12.08V12.08h4.53v1.81a4.88,4.88,0,0,1,3.77-2.11,5.36,5.36,0,0,1,5.29,5.28Z"/></g></svg>
-                      </a>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="redes-ico">
-                        <a href="https://www.facebook.com/demeq.dmq" target="_blank">
-                        <svg id="social-fb" data-name="social-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><path class="social" d="M28.46,0H1.6A1.67,1.67,0,0,0-.07,1.67V28.53A1.67,1.67,0,0,0,1.6,30.2H16.06V18.51H12.13V14h3.93V10.59c0-3.9,2.38-6,5.86-6a33.86,33.86,0,0,1,3.52.18V8.82H23c-1.9,0-2.26.9-2.26,2.22V14h4.51l-.59,4.55H20.77V30.2h7.69a1.67,1.67,0,0,0,1.67-1.67V1.67A1.67,1.67,0,0,0,28.46,0Z"/></svg>
-                      </a>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="redes-ico">
-                        <a href="https://www.instagram.com/dmq_instruments" target="_blank">
-                          <svg id="social-ig" data-name="social-ig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><path class="social" d="M30.05,8.88a11,11,0,0,0-.7-3.66,7.27,7.27,0,0,0-1.74-2.68A7.3,7.3,0,0,0,24.93.8,11.06,11.06,0,0,0,21.27.09C19.65,0,19.14,0,15,0S10.42,0,8.81.09a11.09,11.09,0,0,0-3.66.7A7.33,7.33,0,0,0,2.47,2.54,7.4,7.4,0,0,0,.73,5.21,11.09,11.09,0,0,0,0,8.87C0,10.49-.07,11-.07,15.1s0,4.62.09,6.23A10.76,10.76,0,0,0,.73,25a7.27,7.27,0,0,0,1.74,2.68,7.48,7.48,0,0,0,2.67,1.74,11.15,11.15,0,0,0,3.67.7c1.61.07,2.12.09,6.22.09s4.62,0,6.23-.09a11,11,0,0,0,3.66-.7A7.7,7.7,0,0,0,29.34,25a11.09,11.09,0,0,0,.7-3.66c.07-1.61.09-2.13.09-6.23S30.12,10.49,30.05,8.88ZM27.33,21.21a8.33,8.33,0,0,1-.51,2.8A5,5,0,0,1,24,26.88a8.38,8.38,0,0,1-2.8.52c-1.6.07-2.08.09-6.11.09s-4.51,0-6.1-.09a8.32,8.32,0,0,1-2.8-.52,4.52,4.52,0,0,1-1.73-1.13A4.72,4.72,0,0,1,3.28,24a8.32,8.32,0,0,1-.52-2.8c-.07-1.6-.09-2.07-.09-6.1s0-4.52.09-6.1a8.33,8.33,0,0,1,.52-2.81A4.64,4.64,0,0,1,4.41,4.48,4.68,4.68,0,0,1,6.15,3.35,8.32,8.32,0,0,1,9,2.83c1.59-.07,2.07-.09,6.1-.09s4.51,0,6.1.09a8.26,8.26,0,0,1,2.8.52,4.68,4.68,0,0,1,1.74,1.13,4.85,4.85,0,0,1,1.13,1.73A8.46,8.46,0,0,1,27.33,9c.08,1.59.09,2.07.09,6.1S27.41,19.62,27.33,21.21Z"/><path class="social" d="M15,7.35A7.76,7.76,0,1,0,22.8,15.1,7.76,7.76,0,0,0,15,7.35Zm0,12.79a5,5,0,1,1,5-5A5,5,0,0,1,15,20.14Z"/><path class="social" d="M24.92,7A1.82,1.82,0,1,1,23.1,5.23,1.82,1.82,0,0,1,24.92,7Z"/></svg>
-                      </a>
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="redes-ico">
-                        <a href="https://www.youtube.com/channel/UC_aDutY84Dx2TnJ9w_vwyAQ" target="_blank">
-                        <svg id="social-yt" data-name="social-yt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><path class="social" d="M29.51,7.84a3.76,3.76,0,0,0-2.66-2.66C24.48,4.53,15,4.53,15,4.53s-9.45,0-11.81.62A3.84,3.84,0,0,0,.56,7.84,39.32,39.32,0,0,0-.07,15.1a39.14,39.14,0,0,0,.63,7.26A3.76,3.76,0,0,0,3.22,25c2.39.64,11.81.64,11.81.64s9.45,0,11.82-.62a3.8,3.8,0,0,0,2.66-2.66,39.93,39.93,0,0,0,.62-7.26A37.53,37.53,0,0,0,29.51,7.84ZM12,19.63V10.57l7.86,4.53Z"/></svg>
-                      </a>
-                      </div>
-                    </div>
-                  </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12"> 
+            <div class="datos-empresa">
+              <img class="logo" src="../../img/logo-foot.svg" alt="Card image">
+              <p class="naranja">Demeq S.R.L.</p>
+                <div class="cont-dat-empr">
+                  <div class="dato-logo"><img src="../../img/map-ico.svg" alt="Card image"></div>
+                  <div class="dato-txt"><a href="https://g.page/demeq-srl?share" target="_blank"><p>Armenia 3878 (B1605CEJ) Munro Buenos Aires  - Argentina</p></a></div>
                 </div>
-              </div>
+                <div class="cont-dat-empr">
+                  <div class="dato-logo"><img src="../../img/phone-ico.svg" alt="Card image"></div>
+                  <div class="dato-txt"><a href="phone:+541147657678" target="_blank"><p>+54 (11) 4765 7678</p></a></div>
+                </div>
+                <div class="cont-dat-empr">
+                  <div class="dato-logo"><img src="../../img/email-ico.svg" alt="Card image"></div>
+                  <div class="dato-txt"><a href="mailto:infodemeq@demeq.com" target="_blank"><p>infodemeq@demeq.com</p></a></div>
+                </div>
             </div>
-            <div class="datos-productos col-lg-7 col-sm-12 foot-border">
-              <p class="naranja">Productos</p>
-              <div class="container">
+            <div class="redes-empresa">
+              <p class="naranja">Seguinos en:</p>
+              <div class="col-10">
                 <div class="row">
-                  <div class="col-lg-6 col-sm-12">
-                    <a href="../qh/familia-QH.html">
-                    <div class="cont-dat-prod">
-                      <div class="prod-logo"><img src="../../img/fam-icons/QH-ico.svg" alt="Card image"></div>
-                      <div class="prod-txt">
-                        <h6>Familia QH</h6>
-                        <p>Durómetros Leeb y UCI</p>
-                      </div>
+                    <div class="redes-ico">
+                      <a href="https://www.linkedin.com/company/demeq" target="_blank">
+                      <svg id="social-in" data-name="social-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><g id="post-linkedin"><path class="social" d="M27.18,0H3A3,3,0,0,0,0,3V27.18a3,3,0,0,0,3,3H27.18a3,3,0,0,0,3-3V3A3,3,0,0,0,27.18,0ZM9.06,25.67H4.53V12.08H9.06ZM6.79,9.51A2.72,2.72,0,1,1,9.51,6.8,2.69,2.69,0,0,1,6.79,9.51ZM25.67,25.67H21.14v-8a2.27,2.27,0,1,0-4.53,0v8H12.08V12.08h4.53v1.81a4.88,4.88,0,0,1,3.77-2.11,5.36,5.36,0,0,1,5.29,5.28Z"/></g></svg>
+                    </a>
                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <a href="../qs/familia-QS.html">
-                    <div class="cont-dat-prod">
-                      <div class="prod-logo"><img src="../../img/fam-icons/QS-ico.svg" alt="Card image"></div>
-                      <div class="prod-txt">
-                        <h6>Familia QS</h6>
-                        <p>Medidores de espesores</p>
-                      </div>
+                    <div class="redes-ico">
+                      <a href="https://www.facebook.com/demeq.dmq" target="_blank">
+                      <svg id="social-fb" data-name="social-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><path class="social" d="M28.46,0H1.6A1.67,1.67,0,0,0-.07,1.67V28.53A1.67,1.67,0,0,0,1.6,30.2H16.06V18.51H12.13V14h3.93V10.59c0-3.9,2.38-6,5.86-6a33.86,33.86,0,0,1,3.52.18V8.82H23c-1.9,0-2.26.9-2.26,2.22V14h4.51l-.59,4.55H20.77V30.2h7.69a1.67,1.67,0,0,0,1.67-1.67V1.67A1.67,1.67,0,0,0,28.46,0Z"/></svg>
+                    </a>
                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <a href="../qc/familia-QC.html">
-                    <div class="cont-dat-prod">
-                      <div class="prod-logo"><img src="../../img/fam-icons/QC-ico.svg" alt="Card image"></div>
-                      <div class="prod-txt">
-                        <h6>Familia QC</h6>
-                        <p>Medidores de Capas</p>
-                      </div>
+                    <div class="redes-ico">
+                      <a href="https://www.instagram.com/dmq_instruments" target="_blank">
+                        <svg id="social-ig" data-name="social-ig" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><path class="social" d="M30.05,8.88a11,11,0,0,0-.7-3.66,7.27,7.27,0,0,0-1.74-2.68A7.3,7.3,0,0,0,24.93.8,11.06,11.06,0,0,0,21.27.09C19.65,0,19.14,0,15,0S10.42,0,8.81.09a11.09,11.09,0,0,0-3.66.7A7.33,7.33,0,0,0,2.47,2.54,7.4,7.4,0,0,0,.73,5.21,11.09,11.09,0,0,0,0,8.87C0,10.49-.07,11-.07,15.1s0,4.62.09,6.23A10.76,10.76,0,0,0,.73,25a7.27,7.27,0,0,0,1.74,2.68,7.48,7.48,0,0,0,2.67,1.74,11.15,11.15,0,0,0,3.67.7c1.61.07,2.12.09,6.22.09s4.62,0,6.23-.09a11,11,0,0,0,3.66-.7A7.7,7.7,0,0,0,29.34,25a11.09,11.09,0,0,0,.7-3.66c.07-1.61.09-2.13.09-6.23S30.12,10.49,30.05,8.88ZM27.33,21.21a8.33,8.33,0,0,1-.51,2.8A5,5,0,0,1,24,26.88a8.38,8.38,0,0,1-2.8.52c-1.6.07-2.08.09-6.11.09s-4.51,0-6.1-.09a8.32,8.32,0,0,1-2.8-.52,4.52,4.52,0,0,1-1.73-1.13A4.72,4.72,0,0,1,3.28,24a8.32,8.32,0,0,1-.52-2.8c-.07-1.6-.09-2.07-.09-6.1s0-4.52.09-6.1a8.33,8.33,0,0,1,.52-2.81A4.64,4.64,0,0,1,4.41,4.48,4.68,4.68,0,0,1,6.15,3.35,8.32,8.32,0,0,1,9,2.83c1.59-.07,2.07-.09,6.1-.09s4.51,0,6.1.09a8.26,8.26,0,0,1,2.8.52,4.68,4.68,0,0,1,1.74,1.13,4.85,4.85,0,0,1,1.13,1.73A8.46,8.46,0,0,1,27.33,9c.08,1.59.09,2.07.09,6.1S27.41,19.62,27.33,21.21Z"/><path class="social" d="M15,7.35A7.76,7.76,0,1,0,22.8,15.1,7.76,7.76,0,0,0,15,7.35Zm0,12.79a5,5,0,1,1,5-5A5,5,0,0,1,15,20.14Z"/><path class="social" d="M24.92,7A1.82,1.82,0,1,1,23.1,5.23,1.82,1.82,0,0,1,24.92,7Z"/></svg>
+                    </a>
                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <a href="../qb/familia-QB.html">
-                    <div class="cont-dat-prod">
-                      <div class="prod-logo"><img src="../../img/fam-icons/QB-ico.svg" alt="Card image"></div>
-                      <div class="prod-txt">
-                        <h6>Familia QB</h6>
-                        <p>Medidores de espesores Hall</p>
-                      </div>
+                    <div class="redes-ico">
+                      <a href="https://www.youtube.com/channel/UC_aDutY84Dx2TnJ9w_vwyAQ" target="_blank">
+                      <svg id="social-yt" data-name="social-yt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.07 30.2"><path class="social" d="M29.51,7.84a3.76,3.76,0,0,0-2.66-2.66C24.48,4.53,15,4.53,15,4.53s-9.45,0-11.81.62A3.84,3.84,0,0,0,.56,7.84,39.32,39.32,0,0,0-.07,15.1a39.14,39.14,0,0,0,.63,7.26A3.76,3.76,0,0,0,3.22,25c2.39.64,11.81.64,11.81.64s9.45,0,11.82-.62a3.8,3.8,0,0,0,2.66-2.66,39.93,39.93,0,0,0,.62-7.26A37.53,37.53,0,0,0,29.51,7.84ZM12,19.63V10.57l7.86,4.53Z"/></svg>
+                    </a>
                     </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <a href="../qst/QST.html">
-                    <div class="cont-dat-prod">
-                      <div class="prod-logo"><img src="../../img/fam-icons/QST-ico.svg" alt="Card image"></div>
-                      <div class="prod-txt">
-                        <h6>QST</h6>
-                        <p>Medidor de Espesores para Caños en Producción</p>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
-                  <div class="col-lg-6 col-sm-12">
-                    <a href="../qsv/QSV.html">
-                    <div class="cont-dat-prod">
-                      <div class="prod-logo"><img src="../../img/fam-icons/QSV-ico.svg" alt="Card image"></div>
-                      <div class="prod-txt">
-                        <h6>QSV</h6>
-                        <p>Medidor de Velocidad por Ultrasonido</p>
-                      </div>
-                    </div>
-                  </a>
-                  </div>
                 </div>
               </div>
-            </div>
-            <div class="mas-datos col-lg-2 col-sm-12">
-              <p class="naranja">Soporte</p>
-              <a href="#"><p>Registro de Producto</p></a>
-              <a href="#"><p>Adquirir de Licencia</p></a>
-              <a href="#"><p>Videos de ayuda técnica</p></a>
-              <a href="../../soporte.html"><p>Notas técnicas</p></a>
-              <br>
-              <a href="#"><p class="naranja">Trabaja con nosotros.</p></a>
             </div>
           </div>
+          <div class="datos-productos col-lg-6 col-sm-12 foot-border">
+            <p class="naranja">Productos</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <a href="../../productos/qs/familia-QS.html">
+                  <div class="cont-dat-prod">
+                    <div class="prod-logo"><img src="../../img/fam-icons/QS-ico.svg" alt="Card image"></div>
+                    <div class="prod-txt">
+                      <h6>Familia QS</h6>
+                      <p>Medidores de espesores de Pared por Ultrasonido</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-12">
+                  <a href="../../productos/qh/familia-QH.html">
+                  <div class="cont-dat-prod">
+                    <div class="prod-logo"><img src="../../img/fam-icons/QH-ico.svg" alt="Card image"></div>
+                    <div class="prod-txt">
+                      <h6>Familia QH</h6>
+                      <p>Durómetros Leeb y UCI</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="../../productos/qc/familia-QC.html">
+                  <div class="cont-dat-prod">
+                    <div class="prod-logo"><img src="../../img/fam-icons/QC-ico.svg" alt="Card image"></div>
+                    <div class="prod-txt">
+                      <h6>Familia QC</h6>
+                      <p>Medidores de espesores de Recubrimientos</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="../../productos/qb/familia-QB.html">
+                  <div class="cont-dat-prod">
+                    <div class="prod-logo"><img src="../../img/fam-icons/QB-ico.svg" alt="Card image"></div>
+                    <div class="prod-txt">
+                      <h6>Familia QB</h6>
+                      <p>Medidores de espesores por Efecto Hall</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="../../productos/qst/QST.html">
+                  <div class="cont-dat-prod">
+                    <div class="prod-logo"><img src="../../img/fam-icons/QST-ico.svg" alt="Card image"></div>
+                    <div class="prod-txt">
+                      <h6>QST</h6>
+                      <p>Medidor de Espesores para Caños en Producción</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-lg-12">
+                  <a href="../../productos/qsv/QSV.html">
+                  <div class="cont-dat-prod">
+                    <div class="prod-logo"><img src="../../img/fam-icons/QSV-ico.svg" alt="Card image"></div>
+                    <div class="prod-txt">
+                      <h6>QSV</h6>
+                      <p>Medidor de Velocidad por Ultrasonido</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mas-datos col-lg-2 col-sm-12">
+            <p class="naranja">Soporte</p>
+            <a href="../../registro.html"><p>Registro de Producto</p></a>
+            <a href="../../licencias.html"><p>Adquirir de Licencia</p></a>
+            <a href="../../soporte.html"><p>Videos de ayuda técnica</p></a>
+            <a href="../../soporte.html"><p>Notas técnicas</p></a>
+            <br>
+            <a href="../../solicitud-distribuidor.html"><p class="naranja">Trabaja con nosotros.</p></a>
+          </div>
         </div>
-      </footer>
+      </div>
+    </footer>
       <div onclick="topFunction()" id="myBtn" class="text-center">
         <button class="myBtn">
           <svg class="st-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.77 28.65"><defs></defs><g><g><path d="M20.65,12.32,31.51,28.65h8.26L21.16.68a1.53,1.53,0,0,0-2.55,0L0,28.65H8.26L19.12,12.32A.92.92,0,0,1,20.65,12.32Z"/></g></g></svg>

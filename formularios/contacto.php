@@ -29,6 +29,14 @@
                     <p style='margin-top:0;margin-bottom:20px;'>A continuaci&oacute;n pod&eacute;s ver su consulta:</p>
                     <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;'>
                         <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
+                            Mensaje
+                        </div>
+                        <div style='background: #ffffff;;width:100%;padding:10px;'>
+                            <div style='width: 95%;display: inline-block;margin: 0;text-align: justify;text-justify: inter-word'> " . $message . " </div>
+                        </div>
+                    </div>
+                    <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
+                        <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
                         Datos personales
                         </div>
                         <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
@@ -48,14 +56,6 @@
                         <div style='background: #ffffff;;width:100%;padding:10px;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'> " . $email . " </div>
                             <div style='width: 49%;display: inline-block;margin: 0;'> " . $phone . " </div>
-                        </div>
-                    </div>
-                    <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
-                        <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
-                            Mensaje
-                        </div>
-                        <div style='background: #ffffff;;width:100%;padding:10px;'>
-                            <div style='width: 95%;display: inline-block;margin: 0;text-align: justify;text-justify: inter-word'> " . $message . " </div>
                         </div>
                     </div>
                     </body>
