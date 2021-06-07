@@ -45,9 +45,6 @@ a:hover, a:visited, a:link, a:active
 {
     text-decoration: none;
 }
-/* .container {
-	max-width: 1280px;
-} */
 
 .bg-dark {
 	background: #121212!important;
@@ -55,6 +52,10 @@ a:hover, a:visited, a:link, a:active
 
 .bg-darker {
 	background: #0f0f0f !important;
+}
+
+.bg-prods {
+	background: #0e0e0e;
 }
 
 .bg-naranja {
@@ -247,13 +248,17 @@ header#home {
 }
 
 .myBtn {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	cursor: pointer;
 	box-shadow: 0px 1px 0px 0px #1c1c1c;
 	background:linear-gradient(to bottom, #333333 5%, #000000 100%);
 	background-color:#61615f;
 	border-radius:42px;
 	border:2px solid #4f4f4f;
-	padding:11px;
 	text-decoration:none;
 	transition: background 00.3s ease-in-out;
 	box-shadow: 0 2px 9px rgba(0, 0, 0, 0.2); 
@@ -270,7 +275,7 @@ header#home {
 
 .st-svg {
 	width: 30px;
-    height: auto;
+	width: 30px;
     fill: #fff !important;
     margin-top: -7px;
 }
@@ -297,7 +302,7 @@ header#home {
 
 .mail svg, .mail-scroll svg{
 	width: 30px;
-	height: auto;
+	width: 30px;
 	fill: #fff !important;
 	margin-top: -3px;
 }
@@ -321,6 +326,11 @@ header#home {
 }
 
 .mail {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	box-shadow: 0px 1px 0px 0px #1c1c1c;
 	background:linear-gradient(to bottom, #333333 5%, #000000 100%);
 	background-color:#61615f;
@@ -329,7 +339,6 @@ header#home {
 	outline: none;
 	color: white;
 	cursor: pointer;
-	border-radius:42px;
 	padding:11px;
 	transition: all 0.3s ease-in-out;
 	text-decoration:none;
@@ -829,6 +838,7 @@ button.nav-link {
     flex-direction: row;
     align-items: center;
 	justify-content: center;
+    margin-top: 80px;
 }
 
 .logo-demeq img{
@@ -1175,7 +1185,6 @@ footer .datos-empresa p.naranja {
 	padding: 60px 0 0;
 }
 
-
 .productos.bg-overlay {
     background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../img/headers-secciones/productos.jpg');
     background-repeat: no-repeat;
@@ -1346,7 +1355,7 @@ footer .datos-empresa p.naranja {
 }
 
 .titulo-familia h1{
-	margin: 10px 0 50px;
+	margin: 40px 0 10px;
     font-size: 40px;
     font-weight: 500;
 }
@@ -1411,7 +1420,7 @@ footer .datos-empresa p.naranja {
 
 /*- NAV familia -*/
 
-.second-nav{
+.second-nav {
     top: 50px;
 }
 
@@ -1419,6 +1428,10 @@ footer .datos-empresa p.naranja {
     top: 50px;
 	backdrop-filter: blur(5px);
 	justify-content: space-around;
+}
+
+#familia-producto .second-nav li, #familia-producto .second-nav-scroll li, #familia-producto .series-nav li {
+	margin-bottom: 0;
 }
 
 .second-nav .container.navbar-nav, .second-nav-scroll .container.navbar-nav {
@@ -1889,6 +1902,10 @@ footer .datos-empresa p.naranja {
     padding: 60px 25px 0 0;
 }
 
+#familia-producto li {
+	margin-bottom: 10px;
+}
+
 #familia-producto.series section.comp {
     padding: 60px 0 0 0;
 }
@@ -2212,7 +2229,6 @@ footer .datos-empresa p.naranja {
 
 .modal.docs .btn:hover .span-btn {
 	font-size: 18px;
-	opacity: 0;
 	opacity: 1;
 	visibility: visible;
 	transition: 0.3s all ease-in-out;
@@ -2408,26 +2424,38 @@ footer .datos-empresa p.naranja {
 }
 
 #datacenter a .spec {
-	background: #111;
-	padding: 20px;
+	background: transparent;
+	padding: 15px;
 	color: #fff;
 	margin-bottom: 20px;
 	transition: 0.3s all ease-in-out;
-	border: 2px solid #fff;
 }
 
 #datacenter a:hover .spec {
-	background: rgb(239,125,45);
-	padding: 20px;
+	padding: 15px;
 	color: #fff;
+	background: #202020;
+	box-shadow: 0 10px 20px rgb(0,0,0,.6), 0 4px 8px rgb(0,0,0,.3);
 	transition: 0.3s all ease-in-out;
-	border: 2px solid rgb(239,125,45);
+}
+
+.active-espec {
+	padding: 15px!important;
+	transition: 0.5s all ease-in-out;
+	background: #202020!important;
+	box-shadow: 0 10px 20px rgb(0,0,0,.6), 0 4px 8px rgb(0,0,0,.3)!important;
 }
 
 #datacenter a .spec h6 {
 	font-size: 18px;
 	font-weight: 600;
 }
+
+#datacenter a .spec.active-espec h6, #datacenter a:hover .spec h6 {
+	color: rgb(239,125,45)!important;
+	transition: 0.3s all ease-in-out!important;
+}
+
 
 #datacenter a .spec p {
 	margin: 0;

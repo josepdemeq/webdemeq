@@ -181,15 +181,47 @@ foreignObject {
 .mapa-distribuidores .modal-footer .close {
   color: #FFF;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   transition: 0.3s all;
   position: absolute;
-  right: 20px;
+  right: 10px;
   border: 2px solid white;
-  padding: 4px 9px 0;
+  padding: 5px 11px;
   border-radius: 50px;
   line-height: unset;
+  text-shadow: none;
+  opacity: 0.5;
+  font-weight: 500;
+	transition: 0.3s all ease-in-out;
 }
+
+.mapa-distribuidores .modal-footer .close .span-btn {
+  font-size: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+  letter-spacing: 0;
+  line-height: 0;
+  color: #ef7d2d;
+}
+
+.mapa-distribuidores .modal-footer .close:hover {
+  color: #ef7d2d;
+  opacity: 1;
+  font-weight: 500;
+	transition: 0.3s all ease-in-out;
+}
+
+
+.mapa-distribuidores .modal-footer .close:hover .span-btn {
+  font-size: 18px;
+	opacity: 1;
+	visibility: visible;
+	transition: 0.3s all ease-in-out;
+	letter-spacing: auto;
+	line-height: 0;
+}
+
 
 .mapa-distribuidores .modal-dialog.mod-cuatro {
   display: flex;

@@ -23,7 +23,6 @@
     display: none !important;
 }
 
-
 @media (max-width: 1920px) {
 
     .myBtn, .myBtn:hover {
@@ -75,8 +74,103 @@
     #soporte .card .img-producto img {
         max-height: 200px;
     }
-}
 
+    #soporte .card .img-producto img.series7, #soporte .card:hover .img-producto img.series7 {
+        margin-left: 83px;
+    }
+
+    #soporte .card .img-producto img.qst, #soporte .card:hover .img-producto img.qst {
+        margin-right: 83px;
+    }
+}
+/*--
+@media (min-width: 1441px) {
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
+
+    /*--- Index ---*/ /*--
+
+    #productos .info-producto .familia-prod {
+        font-size: 40px;
+    }
+
+    .info-producto h6 {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .destacados-inicio .card {
+        min-height: 540px;
+    }
+
+    .destacados-inicio .card-img {
+        margin: 40px auto;
+    }
+    
+    .info-producto p {
+        letter-spacing: 2px;
+    }
+
+    .img-quokka {
+        min-height: 250px;
+    }
+
+    /*--- Productos ---*/ /*--
+
+    .una-caract {
+        margin: 2px 0;
+    }
+    
+    .img-serie img {
+        width: 100%;
+    }
+
+    .serie .img-series img {
+        width: 65%;
+    }
+
+    .series .info-destacada .fam-icon {
+        width: 50px;
+    }
+
+    .series .info-destacada h3 {
+        margin-bottom: 15px;
+        line-height: 50px;
+        font-size: 36px;
+    }
+
+    .series .info-destacada p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    /*--- DataCenter ---*/ /*--
+
+    .svg-dc {
+        width: 60px;
+        height: 60px;
+    }
+
+    /*--- Soporte ---*/ /*--
+
+    #soporte .familia-prod {
+        line-height: 1.4;
+        font-size: 36px;
+    }
+
+    #soporte .info-producto h6 {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    #soporte .card .img-producto img.series7, #soporte .card:hover .img-producto img.series7 {
+        margin-left: 170px;
+    }
+}
+-*/
 
 @media (max-width: 1440px) {
 

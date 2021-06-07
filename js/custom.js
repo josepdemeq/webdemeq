@@ -160,7 +160,7 @@ $("[data-toggle=tooltip").tooltip();
 
 
 
-// ---- Tab Datacenter
+// ---- Datacenter Video: seleccion de características
 
 var myvideo = document.getElementById('myvideo'),
     jumplink1 = document.getElementById('jump1');
@@ -215,4 +215,56 @@ jumplink6.addEventListener("click", function (event) {
     myvideo.currentTime = 5;
     myvideo.play();
 }, false);
+
+
+
+// ---- Datacenter Video: Hover características
+
+document.getElementsByTagName('video')[0].addEventListener('timeupdate', function () {
+
+  if (this.currentTime > 0.1 && this.currentTime < 3) {
+    document.getElementById("spec1").classList.add('active-espec'), 0.3;
+    console.log('Hola');
+    } else {
+      document.getElementById("spec1").classList.remove('active-espec'), 0.3;
+    }
+
+  if (this.currentTime > 3 && this.currentTime < 4) {
+    document.getElementById("spec2").classList.add('active-espec'), 0.3;
+    console.log('Hola');
+    } else {
+      document.getElementById("spec2").classList.remove('active-espec'), 0.3;
+    }
+
+  if (this.currentTime > 11 && this.currentTime < 20) {
+    document.getElementById("spec3").classList.add('active-espec'), 0.3;
+    console.log('Hola');
+    } else {
+      document.getElementById("spec3").classList.remove('active-espec'), 0.3;
+    }
+
+  if (this.currentTime > 4 && this.currentTime < 5) {
+    document.getElementById("spec4").classList.add('active-espec'), 0.3;
+    console.log('Hola');
+    } else {
+      document.getElementById("spec4").classList.remove('active-espec'), 0.3;
+    }
+
+  if (this.currentTime > 20 && this.currentTime < 25) {
+    document.getElementById("spec5").classList.add('active-espec'), 0.3;
+    console.log('Hola');
+    } else {
+      document.getElementById("spec5").classList.remove('active-espec'), 0.3;
+    }
+          
+  if (this.currentTime > 5 && this.currentTime < 11) {
+    document.getElementById("spec6").classList.add('active-espec'), 0.3;
+    console.log('Hola');
+    } else {
+      document.getElementById("spec6").classList.remove('active-espec'), 0.3;
+    }
+
+}, false);
+
+
 
