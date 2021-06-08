@@ -2147,6 +2147,7 @@ footer .datos-empresa p.naranja {
 
 .modal.docs {
     backdrop-filter: blur(5px);
+	z-index: 2050;
 }
 
 .modal.docs .modal-content {

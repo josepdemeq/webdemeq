@@ -641,15 +641,6 @@ svg.qc-icon-sop {
 @media (max-width: 376px) {
 
 
-    
-    .foot.slide-up .info-destacada .img-container {
-        top: -19%;
-        left: -164%;
-    }
-    
-    .foot .info-destacada .img-container img {
-        height: 125%;
-    }
 }
 
 @media (max-width: 320px) {
@@ -686,9 +677,6 @@ svg.qc-icon-sop {
         left: -160%;
     }
     
-    .foot .info-destacada .img-container img {
-        height: 110%;
-    }
 
     .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
         margin: 8px;
