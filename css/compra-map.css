@@ -159,7 +159,9 @@ foreignObject {
   color:#ef7d2d;
 }
 
-
+.mapa-distribuidores .modal-info p {
+  font-size: 14px;
+}
 
 .mapa-distribuidores .modal-info h5 {
   font-weight: 600;

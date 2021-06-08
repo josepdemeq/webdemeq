@@ -2409,10 +2409,27 @@ footer .datos-empresa p.naranja {
 	padding: 60px 0;
 }
 
+.specs-datacenter {
+	min-height: 730px;
+}
+
+.img-dtC- {
+	width: 100%;
+}
+
+.cont-car-dc {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .svg-dc {
-	width: 70px;
-	height: 70px;
-	margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px 0 0;
+}
+.cont-car-dc p {
+	margin: 0;
 }
 
 .titulo-spdc {
@@ -2423,44 +2440,65 @@ footer .datos-empresa p.naranja {
 	width: 100%;
 }
 
-#datacenter a .spec {
-	background: transparent;
-	padding: 15px;
+#datacenter .card.spec {
 	color: #fff;
-	margin-bottom: 20px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 0;
 	transition: 0.3s all ease-in-out;
 }
 
-#datacenter a:hover .spec {
-	padding: 15px;
-	color: #fff;
-	background: #202020;
-	box-shadow: 0 10px 20px rgb(0,0,0,.6), 0 4px 8px rgb(0,0,0,.3);
+#datacenter .card:hover.spec {
+	background: rgba(255,255,255,0.1);
+	box-shadow: none;
+	transform: scale(1);
+	padding-left: 10px;
 	transition: 0.3s all ease-in-out;
+	
 }
 
 .active-espec {
-	padding: 15px!important;
-	transition: 0.5s all ease-in-out;
-	background: #202020!important;
+	color: #fff !important;
+	padding-left: 0px;
+	transition: 0.3s all ease-in-out;
+	background: rgba(255,255,255,0.07)!important;
 	box-shadow: 0 10px 20px rgb(0,0,0,.6), 0 4px 8px rgb(0,0,0,.3)!important;
 }
 
-#datacenter a .spec h6 {
-	font-size: 18px;
-	font-weight: 600;
+#datacenter .card.spec .card-header {
+    padding:4px;
+    margin-bottom: 0 !important;
+    background-color: transparent;
+    border-bottom: none;
+	transition: 0.3s all ease-in-out;
 }
 
-#datacenter a .spec.active-espec h6, #datacenter a:hover .spec h6 {
-	color: rgb(239,125,45)!important;
-	transition: 0.3s all ease-in-out!important;
+#datacenter .card.spec .btn-link {
+	font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+	transition: 0.3s all ease-in-out;
 }
 
-
-#datacenter a .spec p {
-	margin: 0;
+#datacenter .card:hover.spec .btn-link,  #datacenter .card.spec.active-espec .btn-link  {
+    color: rgb(239,125,45);
+    text-decoration: none;
+	transition: 0.3s all ease-in-out;
 }
 
+#datacenter .card.spec .card-body {
+    padding: 0 20px 20px;
+	transition: 0.3s all ease-in-out;
+}
 
 .tabla-datacenter img {
 	height: 100px;

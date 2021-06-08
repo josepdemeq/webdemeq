@@ -176,7 +176,7 @@ var myvideo = document.getElementById('myvideo'),
 
 jumplink2.addEventListener("click", function (event) {
     event.preventDefault();
-    myvideo.currentTime = 3;
+    myvideo.currentTime = 4;
     myvideo.play();
 }, false);
 
@@ -185,7 +185,7 @@ var myvideo = document.getElementById('myvideo'),
 
 jumplink3.addEventListener("click", function (event) {
     event.preventDefault();
-    myvideo.currentTime = 11;
+    myvideo.currentTime = 8;
     myvideo.play();
 }, false);
 
@@ -194,7 +194,7 @@ var myvideo = document.getElementById('myvideo'),
 
 jumplink4.addEventListener("click", function (event) {
     event.preventDefault();
-    myvideo.currentTime = 4;
+    myvideo.currentTime = 12;
     myvideo.play();
 }, false);
 
@@ -203,7 +203,7 @@ var myvideo = document.getElementById('myvideo'),
 
 jumplink5.addEventListener("click", function (event) {
     event.preventDefault();
-    myvideo.currentTime = 20;
+    myvideo.currentTime = 16;
     myvideo.play();
 }, false);
 
@@ -212,7 +212,7 @@ var myvideo = document.getElementById('myvideo'),
 
 jumplink6.addEventListener("click", function (event) {
     event.preventDefault();
-    myvideo.currentTime = 5;
+    myvideo.currentTime = 20;
     myvideo.play();
 }, false);
 
@@ -222,49 +222,54 @@ jumplink6.addEventListener("click", function (event) {
 
 document.getElementsByTagName('video')[0].addEventListener('timeupdate', function () {
 
-  if (this.currentTime > 0.1 && this.currentTime < 3) {
-    document.getElementById("spec1").classList.add('active-espec'), 0.3;
-    console.log('Hola');
+  if (this.currentTime > 0.1 && this.currentTime < 4) {
+    document.getElementById("jump1").classList.add('active-espec'), 0.3,
+    document.getElementById("collapseOne").classList.add('show'), 0.3;
     } else {
-      document.getElementById("spec1").classList.remove('active-espec'), 0.3;
+      document.getElementById("jump1").classList.remove('active-espec'), 0.3,
+      document.getElementById("collapseOne").classList.remove('show'), 0.3;
     }
 
-  if (this.currentTime > 3 && this.currentTime < 4) {
-    document.getElementById("spec2").classList.add('active-espec'), 0.3;
-    console.log('Hola');
+  if (this.currentTime > 4 && this.currentTime < 8) {
+    document.getElementById("jump2").classList.add('active-espec'), 0.3,
+    document.getElementById("collapseTwo").classList.add('show'), 0.3;
     } else {
-      document.getElementById("spec2").classList.remove('active-espec'), 0.3;
+      document.getElementById("jump2").classList.remove('active-espec'), 0.3,
+      document.getElementById("collapseTwo").classList.remove('show'), 0.3;
     }
 
-  if (this.currentTime > 11 && this.currentTime < 20) {
-    document.getElementById("spec3").classList.add('active-espec'), 0.3;
-    console.log('Hola');
+  if (this.currentTime > 8 && this.currentTime < 12) {
+    document.getElementById("jump3").classList.add('active-espec'), 0.3,
+    document.getElementById("collapseThree").classList.add('show'), 0.3;
     } else {
-      document.getElementById("spec3").classList.remove('active-espec'), 0.3;
+      document.getElementById("jump3").classList.remove('active-espec'), 0.3,
+      document.getElementById("collapseThree").classList.remove('show'), 0.3;
     }
 
-  if (this.currentTime > 4 && this.currentTime < 5) {
-    document.getElementById("spec4").classList.add('active-espec'), 0.3;
-    console.log('Hola');
+  if (this.currentTime > 12 && this.currentTime < 16) {
+    document.getElementById("jump4").classList.add('active-espec'), 0.3,
+    document.getElementById("collapseFour").classList.add('show'), 0.3;
     } else {
-      document.getElementById("spec4").classList.remove('active-espec'), 0.3;
+      document.getElementById("jump4").classList.remove('active-espec'), 0.3,
+      document.getElementById("collapseFour").classList.remove('show'), 0.3;
     }
 
-  if (this.currentTime > 20 && this.currentTime < 25) {
-    document.getElementById("spec5").classList.add('active-espec'), 0.3;
-    console.log('Hola');
+  if (this.currentTime > 16 && this.currentTime < 20) {
+    document.getElementById("jump5").classList.add('active-espec'), 0.3,
+    document.getElementById("collapseFive").classList.add('show'), 0.3;
     } else {
-      document.getElementById("spec5").classList.remove('active-espec'), 0.3;
+      document.getElementById("jump5").classList.remove('active-espec'), 0.3,
+      document.getElementById("collapseFive").classList.remove('show'), 0.3;
     }
           
-  if (this.currentTime > 5 && this.currentTime < 11) {
-    document.getElementById("spec6").classList.add('active-espec'), 0.3;
-    console.log('Hola');
+  if (this.currentTime > 20 && this.currentTime < 24) {
+    document.getElementById("jump6").classList.add('active-espec'), 0.3,
+    document.getElementById("collapseSix").classList.add('show'), 0.3;
     } else {
-      document.getElementById("spec6").classList.remove('active-espec'), 0.3;
+      document.getElementById("jump6").classList.remove('active-espec'), 0.3,
+      document.getElementById("collapseSix").classList.remove('show'), 0.3;
     }
 
 }, false);
-
 
 
