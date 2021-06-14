@@ -355,10 +355,6 @@ svg.qb-icon-sop {
 
 @media (max-width: 1440px) {
 
-    .series.f-QB .series-nav .nav-link, .series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active {
-        padding: 9px 15px 5px 15px !important;
-        line-height: 1;
-    }
 }
 
 
@@ -367,12 +363,6 @@ svg.qb-icon-sop {
     #familia-producto.series .info-prod h5 {
         margin-bottom: 20px;
 
-    }
-
-
-    .series.f-QB .series-nav .nav-link, .series.f-QB .series-nav .nav-link:hover, .series.f-QB .series-nav .nav-link:focus, .series.f-QB .series-nav .nav-link:active {
-        padding: 6px 15px 4px 15px !important;
-        line-height: 1;
     }
 
 

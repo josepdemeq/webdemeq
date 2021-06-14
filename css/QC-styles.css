@@ -222,7 +222,6 @@
     color: #fff;
 	transition: all 0.3s ease-in-out;
 	outline: none;
-    padding: 5px 15px;
 }
 
 
@@ -231,7 +230,6 @@
 	transition: all 0.3s ease-in-out;
 	background: rgba(255,255,255,0.3);
     border-radius: 50px;
-    padding: 5px 15px;
 }
 
 .activado .nav-link, .series.f-QC .series-nav .nav-link:focus, .series.f-QC .series-nav .nav-link:active, #familia-producto nav .activado a.link-blanco:hover {
@@ -239,7 +237,6 @@
 	transition: all 0.3s ease-in-out;
 	background: #fff;
     border-radius: 50px;
-    padding: 5px 15px;
 }
 
 .activado .nav-link .dot {
@@ -438,15 +435,6 @@ svg.qc-icon-sop {
         width: 85%;
         height: 85%;
     }
-
-    .navbar-expand-sm .navbar-nav .nav-link.link-blanco, #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover, .activado .nav-link, .series .series-nav .nav-link:hover  {
-        padding: 2px 15px !important;
-    }
-
-    .series.f-QC .series-nav .nav-link, .series.f-QC .series-nav .nav-link:hover, .series.f-QC .series-nav .nav-link:focus, .series.f-QC .series-nav .nav-link:active {
-        padding: 9px 15px 5px 15px !important;
-        line-height: 1;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -465,10 +453,6 @@ svg.qc-icon-sop {
 
     }
 
-    .series.f-QC .series-nav .nav-link, .series.f-QC .series-nav .nav-link:hover, .series.f-QC .series-nav .nav-link:focus, .series.f-QC .series-nav .nav-link:active {
-        padding: 6px 15px 4px 15px !important;
-        line-height: 1;
-    }
 }
 
 

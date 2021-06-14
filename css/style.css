@@ -17,7 +17,7 @@ body {
 	font-size: 18px;
 	letter-spacing: 1.5px;
 	color: white;
-	user-select: none;
+	/*-user-select: none;-*/
 }
 
 #loading{
@@ -1923,6 +1923,11 @@ footer .datos-empresa p.naranja {
 .scrll-sect {
 	margin-bottom: 60px;
 }
+
+#aplicaciones p {
+	margin-bottom: 30px;
+}
+
 /*-- Tabla Modelos --*/
 #familia-producto.series .info-prod .table {
     color: #fff;

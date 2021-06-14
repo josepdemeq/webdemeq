@@ -75,7 +75,6 @@
     background: rgba(255,255,255,0.3);
 	transition: all 0.3s ease-in-out;
 	outline: none;
-    padding: 5px 15px;
     color: #FFF;
     border-radius: 50px;
 }
@@ -97,7 +96,6 @@
     background-color: rgba(255,255,255,0.3);
     border-radius: 50px;
     transition: 0.3s all ease-in-out;
-    padding: 5px 15px;
 
 }
 
@@ -413,11 +411,6 @@ svg.qh-icon-sop {
 
 @media (max-width: 1440px) {
 
-    .series.f-QH .series-nav .nav-link, .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active {
-        padding: 9px 15px 5px 15px !important;
-        line-height: 1;
-    }
-
     .svg-icon.ajuste5 {
         margin-top: 0px;
     }
@@ -433,9 +426,6 @@ svg.qh-icon-sop {
 }
 
 @media (max-width: 1024px) {
-    .series.f-QH .series-nav .nav-link, .series.f-QH .series-nav .nav-link:hover, .series.f-QH .series-nav .nav-link:focus, .series.f-QH .series-nav .nav-link:active {
-        padding: 6px 15px 4px 15px !important;
-    }
 }
 
 
