@@ -98,7 +98,7 @@ h5 {
 
 h6 {
 	font-size: 20px;
-	line-height: 1.3;
+	line-height: 1.5;
 	font-weight: 300;
 }
 
@@ -137,6 +137,15 @@ p {
 
 .txt-negro {
 	color: #000 !important;
+}
+
+.anotacion {
+	font-size: 16px;
+	opacity: 0.8;
+}
+
+.anotacion span {
+	opacity: 0.6;
 }
 
 .btn {
@@ -874,10 +883,6 @@ button.nav-link {
 	padding: 60px 0;
 }
 
-#index #productos h5 {
-	margin-bottom: 40px;
-}
-
 /*--- DESTACADOS INICIO ---*/
 
 .destacados-inicio {
@@ -1355,7 +1360,7 @@ footer .datos-empresa p.naranja {
 }
 
 .titulo-familia h1{
-	margin: 40px 0 10px;
+	margin: 40px 0 20px;
     font-size: 40px;
     font-weight: 500;
 }
@@ -2002,12 +2007,27 @@ footer .datos-empresa p.naranja {
 	padding: 0;
 }
 
+#accesorios .container h6.ttl-acces {
+    margin-top: 40px;
+    line-height: 2;
+    border-bottom: 2px solid #acacac;
+	color: #acacac;
+	font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
 #accesorios .accesorio-uno{
 	border-bottom: 1px solid #333;
 }
 
 #accesorios .accesorio-uno .texto-acc{
 	padding: 20px 0 20px;
+}
+
+#accesorios .accesorio-uno .texto-acc.ajuste{
+	padding: 20px;
 }
 
 #accesorios .accesorio-uno img {
@@ -2045,6 +2065,11 @@ footer .datos-empresa p.naranja {
 
 #certificaciones .cert-uno  h6{
 	font-size: 24px;
+	font-weight: 600;
+}
+
+#certificaciones .cert-uno  h6.h-norma{
+	font-size: 18px;
 	font-weight: 600;
 }
 
