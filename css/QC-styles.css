@@ -604,10 +604,6 @@ svg.qc-icon-sop {
         color: #289ee8;
     }
 
-    .dest-btn-up.bg-qc {
-        top: -20px;
-    }
-
     .navbar-expand-sm .navbar-nav .nav-link.link-blanco {
         padding: 5px;
         margin: 0 4px 4px;
@@ -653,28 +649,6 @@ svg.qc-icon-sop {
 
     .svg-icon.ajuste4 {
         margin: auto;
-    }
-
-    .foot.slide-up .info-destacada .col-12 {
-        width: 72% !important;
-        left: 25%;
-    }
-
-    .foot {
-        bottom: -94%;
-    }
-    
-    .dest-btn-up, .slide-down .dest-btn-up {
-        padding: 10px 0;
-    }
-
-    .slide-down {
-        bottom: -94% !important;
-    }
-
-    .foot.slide-up .info-destacada .img-container {
-        top: -2%;
-        left: -160%;
     }
     
 

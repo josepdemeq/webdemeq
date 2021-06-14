@@ -607,9 +607,6 @@ svg.qs-icon-sop {
 
 @media (max-width: 576px) {
 
-    .dest-btn-up.bg-qs {
-        top: -20px;
-    }
     
     .navbar-expand-sm .navbar-nav .nav-link.link-negro {
         padding: 5px;
@@ -640,17 +637,6 @@ svg.qs-icon-sop {
 
 @media (max-width: 376px) {
 
-    .foot {
-        bottom: -92%;
-    }
-
-    .slide-down {
-        bottom: -92% !important;
-    }
-
-    .dest-btn-up.bg-qs {
-        top: 0px;
-    }
 
     .series .series-nav .nav-link {
         padding: 10px;
@@ -663,18 +649,6 @@ svg.qs-icon-sop {
 
     .navbar-expand-sm .navbar-nav .nav-link.link-blanco, #familia-producto nav a.link-negro:hover, #familia-producto nav a.link-blanco:hover, .activado .nav-link, .series .series-nav .nav-link:hover {
         padding: 2px 10px !important;
-    }
-
-    .foot {
-        bottom: -94%;
-    }
-    
-    .dest-btn-up, .slide-down .dest-btn-up {
-        padding: 10px 0;
-    }
-
-    .slide-down {
-        bottom: -94% !important;
     }
 
     .series .series-nav .nav-link {

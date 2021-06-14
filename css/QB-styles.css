@@ -538,24 +538,12 @@ svg.qb-icon-sop {
 
 @media (max-width: 576px) {
 
-    .dest-btn-up.bg-qb {
-        top: -20px;
-    }
+    
 }
 
 @media (max-width: 376px) {
 
-    .foot {
-        bottom: -92%;
-    }
-
-    .slide-down {
-        bottom: -92% !important;
-    }
-
-    .dest-btn-up.bg-qb {
-        top: 0px;
-    }
+    
     
     .foot.slide-up .info-destacada .img-container {
         top: -18%;
@@ -569,26 +557,6 @@ svg.qb-icon-sop {
 
 @media (max-width: 320px) {
 
-    .foot.slide-up .info-destacada .col-12 {
-        width: 72% !important;
-        left: 25%;
-    }
-
-    .foot {
-        bottom: -94%;
-    }
-    
-    .slide-up .dest-btn-up {
-        padding: 0 20px;
-    }
-    
-    .dest-btn-up, .slide-down .dest-btn-up {
-        padding: 10px 0;
-    }
-
-    .slide-down {
-        bottom: -94% !important;
-    }
 
     .foot.slide-up .info-destacada .img-container {
         top: -2%;

@@ -588,17 +588,6 @@ svg.qh-icon-sop {
 }
 
 
-@media screen and (orientation:landscape) and (max-width: 768px) {
- 
-    .carousel-item, .carousel-item .bg-qh {
-        height: 100%;
-        vertical-align: middle;
-        min-height: 400px;
-    }
-
-}
-
-
 @media (max-width: 576px) {
 
 
@@ -632,24 +621,10 @@ svg.qh-icon-sop {
         border-radius: 0 0 25px 25px;
     }
 
-    .dest-btn-up.bg-qh {
-        top: -20px;
-    }
 }
 
 @media (max-width: 376px) {
 
-    .foot {
-        bottom: -92%;
-    }
-
-    .slide-down {
-        bottom: -92% !important;
-    }
-
-    .dest-btn-up.bg-qh {
-        top: 0px;
-    }
 
     #familia-producto nav .col {
         padding: 0;
@@ -667,18 +642,6 @@ svg.qh-icon-sop {
 
     .link-blanco .serie-txt-dot {
         line-height: 1.3;
-    }
-
-    .foot {
-        bottom: -94%;
-    }
-    
-    .dest-btn-up, .slide-down .dest-btn-up {
-        padding: 10px 0;
-    }
-
-    .slide-down {
-        bottom: -94% !important;
     }
 }
 

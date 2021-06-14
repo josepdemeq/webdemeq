@@ -2812,7 +2812,7 @@
         left: 0;
         margin-right: auto;
         margin-left: 0;
-        bottom: -95%;
+        bottom: calc(-100vh + 58px) !important;
         background: #111;
         transition: all 0.3s ease-in-out;
     }
@@ -2829,7 +2829,7 @@
     }
     
     .slide-down {
-        bottom: -95% !important;
+        bottom: calc(-100vh + 58px) !important;
         transition: all 0.3s ease-in-out;
     }
     
