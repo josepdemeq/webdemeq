@@ -271,5 +271,3 @@ document.getElementsByTagName('video')[0].addEventListener('timeupdate', functio
     }
 
 }, false);
-
-
