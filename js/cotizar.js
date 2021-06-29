@@ -3,39 +3,14 @@
 //-------- Elección modelo
 
 
-$('input[type="radio"]').click(function(){
-    if($(this).attr("value")=="QS5B"){
-        $(".m-qs5b").show('slow');
-    }
-    if($(this).attr("value")!="QS5B"){
-        $(".m-qs5b").hide('slow');
-
-    } 
-    if($(this).attr("value")=="QS5E"){
-        $(".m-qs5e").show('slow');
-    }
-    if($(this).attr("value")!="QS5E"){
-        $(".m-qs5e").hide('slow');
-
-    }    
-    if($(this).attr("value")=="QS5DL"){
-        $(".m-qs5dl").show('slow');
-    }
-    if($(this).attr("value")!="QS5DL"){
-        $(".m-qs5dl").hide('slow');
-
-    } 
-    if($(this).attr("value")=="QS5DLE"){
-        $(".m-qs5dle").show('slow');
-    }
-    if($(this).attr("value")!="QS5DLE"){
-        $(".m-qs5dle").hide('slow');
-
-    }    
+$(document).ready(function(){
+  $('input[type="radio"]').click(function(){
+      var inputValue = $(this).attr("value");
+      var targetBox = $("." + inputValue);
+      $(".box").not(targetBox).hide();
+      $(targetBox).show();
+  });
 });
-$('input[type="radio"]').trigger('click');
-
-
 
 
 //---------- Mostrar Checkbox accesorios seleccionados en resumen
@@ -64,6 +39,301 @@ $(':checkbox').change(function(){
 
 
 //--------- Aumentar o disminuir número
+
+//----- Transductor 2HHz 12mm
+$('#plus-t2m12').click(function add() {
+  var $qtde = $(".cant-t2m12");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-t2m12").attr("disabled", true);
+    };
+      $("#minus-t2m12").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-t2m12").attr("disabled", !$(".cant-t2m12").val());
+
+$('#minus-t2m12').click(function minust() {
+  var $qtde = $(".cant-t2m12");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-t2m12").attr("disabled", true);
+  }
+  $("#plus-t2m12").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-t2m12").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-t2m12").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Transductor 2HHz 2200
+$('#plus-t2m22').click(function add() {
+  var $qtde = $(".cant-t2m22");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-t2m22").attr("disabled", true);
+    };
+      $("#minus-t2m22").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-t2m22").attr("disabled", !$(".cant-t2m22").val());
+
+$('#minus-t2m22').click(function minust() {
+  var $qtde = $(".cant-t2m22");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-t2m22").attr("disabled", true);
+  }
+  $("#plus-t2m22").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-t2m22").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-t2m22").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Transductor 5HHz
+$('#plus-t5m').click(function add() {
+  var $qtde = $(".cant-t5m");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-t5m").attr("disabled", true);
+    };
+      $("#minus-t5m").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-t5m").attr("disabled", !$(".cant-t5m").val());
+
+$('#minus-t5m').click(function minust() {
+  var $qtde = $(".cant-t5m");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-t5m").attr("disabled", true);
+  }
+  $("#plus-t5m").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-t5m").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-t5m").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Transductor 7HHz
+$('#plus-t7m').click(function add() {
+  var $qtde = $(".cant-t7m");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-t7m").attr("disabled", true);
+    };
+      $("#minus-t7m").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-t7m").attr("disabled", !$(".cant-t7m").val());
+
+$('#minus-t7m').click(function minust() {
+  var $qtde = $(".cant-t7m");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-t7m").attr("disabled", true);
+  }
+  $("#plus-t7m").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-t7m").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-t7m").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Transductor Hi-Damp
+$('#plus-thd').click(function add() {
+  var $qtde = $(".cant-thd");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-thd").attr("disabled", true);
+    };
+      $("#minus-thd").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-thd").attr("disabled", !$(".cant-thd").val());
+
+$('#minus-thd').click(function minust() {
+  var $qtde = $(".cant-thd");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-thd").attr("disabled", true);
+  }
+  $("#plus-thd").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-thd").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-thd").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Transductor Alta Temperatura 350º
+$('#plus-a350').click(function add() {
+  var $qtde = $(".cant-a350");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-a350").attr("disabled", true);
+    };
+      $("#minus-a350").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-a350").attr("disabled", !$(".cant-a350").val());
+
+$('#minus-a350').click(function minust() {
+  var $qtde = $(".cant-a350");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-a350").attr("disabled", true);
+  }
+  $("#plus-a350").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-a350").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-a350").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Transductor Alta Temperatura 150º
+$('#plus-a150').click(function add() {
+  var $qtde = $(".cant-a150");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-a150").attr("disabled", true);
+    };
+      $("#minus-a150").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-a150").attr("disabled", !$(".cant-a150").val());
+
+$('#minus-a150').click(function minust() {
+  var $qtde = $(".cant-a150");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-a150").attr("disabled", true);
+  }
+  $("#plus-a150").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-a150").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-a150").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
 
 //----- Patrones escalonados 6
 $('#plus-pa6').click(function add() {
@@ -149,6 +419,91 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
+
+//----- Gel Acoplante 100g
+$('#plus-g100').click(function add() {
+  var $qtde = $(".cant-g100");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-g100").attr("disabled", true);
+    };
+      $("#minus-g100").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-g100").attr("disabled", !$(".cant-g100").val());
+
+$('#minus-g100').click(function minust() {
+  var $qtde = $(".cant-g100");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-g100").attr("disabled", true);
+  }
+  $("#plus-g100").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-g100").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-g100").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Gel Acoplante 50g
+$('#plus-g50').click(function add() {
+  var $qtde = $(".cant-g50");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-g50").attr("disabled", true);
+    };
+      $("#minus-g50").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-g50").attr("disabled", !$(".cant-g50").val());
+
+$('#minus-g50').click(function minust() {
+  var $qtde = $(".cant-g50");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-g50").attr("disabled", true);
+  }
+  $("#plus-g50").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-g50").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-g50").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
 
 //----- Funda gris
 $('#plus-fgr').click(function add() {

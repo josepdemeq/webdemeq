@@ -198,19 +198,19 @@
     <main id="form-cotizacion">
       <section class="container wow slideIn" data-wow-delay="0.2s">
         <h5 class="mt-5 mb-5">Ejila el modelo de QS5</h5>
-        <form>
+        <form id="form1" method="post" action="../../formularios/cotizacion.php">
           <div class="row">
             <div class="col-lg-8">
               <div class="radio-toolbar row">
                 <div class="col-lg-6">
-                  <input type="radio" id="radio1" name="radios" value="QS5B">
+                  <input type="radio" id="radio1" name="model" value="QS5B">
                   <label for="radio1" class="w-100 select-model">
                           <h6>QS5 B</h6>
                           <p>Medidor Base de la serie QS5. Ideal para medir espesores y detectar corrosión cuando no hay necesidad de generar informes o de medir sobre  pintura.</p>
                   </label>
                 </div>
                 <div class="col-lg-6">
-                  <input type="radio" id="radio2" name="radios" value="QS5E">
+                  <input type="radio" id="radio2" name="model" value="QS5E">
                   <label for="radio2" class="w-100 select-model">
                
                           <h6>QS5 E</h6>
@@ -219,14 +219,14 @@
                   </label>
                 </div>
                 <div class="col-lg-6">
-                  <input type="radio" id="radio3" name="radios" value="QS5DL">
+                  <input type="radio" id="radio3" name="model" value="QS5DL">
                   <label for="radio3" class="w-100 select-model">
                           <h6>QS5 DL</h6>
                           <p>Con Data Logger. Ideal para medir espesores y detectar corrosión sobre materiales sin recubrimientos a donde existe la necesidad de generar informes.</p>
                   </label>
                 </div>
                 <div class="col-lg-6">
-                  <input type="radio" id="radio4" name="radios" value="QS5DLE">
+                  <input type="radio" id="radio4" name="model" value="QS5DLE">
                   <label for="radio4" class="w-100 select-model">
                           <h6>QS5 DLE</h6>
                           <p>Con Data Logger. Ideal para aplicaciones que requieren la generación de informes y la flexibilidad de medir sobre pintura sin la necesidad de removerla.</p>
@@ -251,7 +251,7 @@
                             <div class="row accesorio-input">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck" name="example1" data-name="acc-t2m12">
                                   <label class="custom-control-label" for="customCheck"></label>
                                 </div>
                               </div>
@@ -262,16 +262,16 @@
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
-                                  <span class="minus">-</span>
-                                  <input type="text" id="name1" name="name1" disabled="disabled" value="1"/>
-                                  <span class="plus">+</span>
+                                  <input type="button" value="-" id="minus-t2m12" class="minus" />
+                                  <input type="text" class="cant-t2m12" value="1" name="tr_2_12"/>
+                                  <input type="button" value="+" id="plus-t2m12" class="plus" />
                                 </div>
                               </div>
                             </div>
                             <div class="row accesorio-input">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck2" name="example2" data-name="acc-t2m22">
                                   <label class="custom-control-label" for="customCheck2"></label>
                                 </div>
                               </div>
@@ -282,16 +282,16 @@
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
-                                  <span class="minus">-</span>
-                                  <input type="text" id="name2" name="name2" disabled="disabled" value="1"/>
-                                  <span class="plus">+</span>
+                                  <input type="button" value="-" id="minus-t2m22" class="minus" />
+                                  <input type="text" class="cant-t2m22" value="1" name="tr_2_22"/>
+                                  <input type="button" value="+" id="plus-t2m22" class="plus" />
                                 </div>
                               </div>
                             </div>
                             <div class="row accesorio-input">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck3" name="example3" data-name="acc-t5m">
                                   <label class="custom-control-label" for="customCheck3"></label>
                                 </div>
                               </div>
@@ -302,16 +302,16 @@
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
-                                  <span class="minus">-</span>
-                                  <input type="text" id="name3" name="name3" disabled="disabled" value="1"/>
-                                  <span class="plus">+</span>
+                                  <input type="button" value="-" id="minus-t5m" class="minus" />
+                                  <input type="text" class="cant-t5m" value="1" name="tr_5"/>
+                                  <input type="button" value="+" id="plus-t5m" class="plus" />
                                 </div>
                               </div>
                             </div>
                             <div class="row accesorio-input">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck4" data-name="acc-t7m">
                                   <label class="custom-control-label" for="customCheck4"></label>
                                 </div>
                               </div>
@@ -322,9 +322,9 @@
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
-                                  <span class="minus">-</span>
-                                  <input type="text" id="name4" name="name4" disabled="disabled" value="1"/>
-                                  <span class="plus">+</span>
+                                  <input type="button" value="-" id="minus-t7m" class="minus" />
+                                  <input type="text" class="cant-t7m" value="1" name="tr_7"/>
+                                  <input type="button" value="+" id="plus-t7m" class="plus" />
                                 </div>
                               </div>
                             </div>
@@ -342,7 +342,7 @@
                           <div class="row accesorio-input">
                             <div class="col-md-1">
                               <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck5" name="example5">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck5" name="example5" data-name="acc-thd">
                                 <label class="custom-control-label" for="customCheck5"></label>
                               </div>
                             </div>
@@ -354,9 +354,9 @@
                             </div>
                             <div class="col-md-2 text-right">
                               <div class="number">
-                                <span class="minus">-</span>
-                                <input type="text" id="name5" name="name5" disabled="disabled" value="1"/>
-                                <span class="plus">+</span>
+                                <input type="button" value="-" id="minus-thd" class="minus" />
+                                <input type="text" class="cant-thd" value="1" name="tr_5_eco2"/>
+                                <input type="button" value="+" id="plus-thd" class="plus" />
                               </div>
                             </div>
                           </div>
@@ -374,7 +374,7 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck6" name="example6">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck6" name="example6" data-name="acc-a350">
                               <label class="custom-control-label" for="customCheck6"></label>
                             </div>
                           </div>
@@ -386,16 +386,16 @@
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
-                              <span class="minus">-</span>
-                              <input type="text" id="name6" name="name6" disabled="disabled" value="1"/>
-                              <span class="plus">+</span>
+                              <input type="button" value="-" id="minus-a350" class="minus" />
+                              <input type="text" class="cant-a350" value="1" name="tr_at_350"/>
+                              <input type="button" value="+" id="plus-a350" class="plus" />
                             </div>
                           </div>
                         </div>
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="customCheck7" name="example7">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck7" name="example7" data-name="acc-a150">
                               <label class="custom-control-label" for="customCheck7"></label>
                             </div>
                           </div>
@@ -407,9 +407,9 @@
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
-                              <span class="minus">-</span>
-                              <input type="text" id="name7" name="name7" disabled="disabled" value="1"/>
-                              <span class="plus">+</span>
+                              <input type="button" value="-" id="minus-a150" class="minus" />
+                              <input type="text" class="cant-a150" value="1" name="cant-a150"/>
+                              <input type="button" value="+" id="plus-a150" class="plus" />
                             </div>
                           </div>
                         </div>
@@ -438,7 +438,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-pa6" class="minus" />
-                              <input type="text" class="cant-pa6" value="1" name="cant-pa6"/>
+                              <input type="text" class="cant-pa6" value="1" name="pa_6"/>
                               <input type="button" value="+" id="plus-pa6" class="plus" />
                             </div>
                           </div>
@@ -457,7 +457,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-pa4" class="minus" />
-                              <input type="text" class="cant-pa4" value="1" name="cant-pa4"/>
+                              <input type="text" class="cant-pa4" value="1" name="pa_4"/>
                               <input type="button" value="+" id="plus-pa4" class="plus" />
                             </div>
                           </div>
@@ -476,7 +476,7 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck8" data-name="acc-pa6">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck8" data-name="acc-g100">
                               <label class="custom-control-label" for="customCheck8"></label>
                             </div>
                           </div>
@@ -486,9 +486,9 @@
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
-                              <input type="button" value="-" id="minus-pa6" class="minus" />
-                              <input type="text" class="cant-pa6" value="1" name="cant-pa6"/>
-                              <input type="button" value="+" id="plus-pa6" class="plus" />
+                              <input type="button" value="-" id="minus-g100" class="minus" />
+                              <input type="text" class="cant-g100" value="1" name="g_100"/>
+                              <input type="button" value="+" id="plus-g100" class="plus" />
                             </div>
                           </div>
                         </div>
@@ -505,9 +505,9 @@
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
-                              <input type="button" value="-" id="minus-pa4" class="minus" />
-                              <input type="text" class="cant-pa4" value="1" name="cant-pa4"/>
-                              <input type="button" value="+" id="plus-pa4" class="plus" />
+                              <input type="button" value="-" id="minus-g50" class="minus" />
+                              <input type="text" class="cant-g50" value="1" name="g_50"/>
+                              <input type="button" value="+" id="plus-g50" class="plus" />
                             </div>
                           </div>
                         </div>
@@ -536,7 +536,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-fgr" class="minus" />
-                              <input type="text" class="cant-fgr" value="1" name="cant-fgr"/>
+                              <input type="text" class="cant-fgr" value="1" name="f_gr"/>
                               <input type="button" value="+" id="plus-fgr" class="plus" />
                             </div>
                           </div>
@@ -555,7 +555,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-fro" class="minus" />
-                              <input type="text" class="cant-fro" value="1" name="cant-fro"/>
+                              <input type="text" class="cant-fro" value="1" name="f_ro"/>
                               <input type="button" value="+" id="plus-fro" class="plus" />
                             </div>
                           </div>
@@ -574,7 +574,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-fam" class="minus" />
-                              <input type="text" class="cant-fam" value="1" name="cant-fam"/>
+                              <input type="text" class="cant-fam" value="1" name="f_am"/>
                               <input type="button" value="+" id="plus-fam" class="plus" />
                             </div>
                           </div>
@@ -604,7 +604,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-usb" class="minus" />
-                              <input type="text" class="cant-usb" value="1" name="cant-usb"/>
+                              <input type="text" class="cant-usb" value="1" name="c_usb"/>
                               <input type="button" value="+" id="plus-usb" class="plus" />
                             </div>
                           </div>
@@ -623,7 +623,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-rs" class="minus" />
-                              <input type="text" class="cant-rs" value="1" name="cant-rs"/>
+                              <input type="text" class="cant-rs" value="1" name="c_rs232"/>
                               <input type="button" value="+" id="plus-rs" class="plus" />
                             </div>
                           </div>
@@ -653,7 +653,7 @@
                           <div class="col-md-2 text-right">
                             <div class="number">
                               <input type="button" value="-" id="minus-imp" class="minus" />
-                              <input type="text" class="cant-imp" value="1" name="cant-imp"/>
+                              <input type="text" class="cant-imp" value="1" name="impr"/>
                               <input type="button" value="+" id="plus-imp" class="plus"/>
                             </div>
                           </div>
@@ -682,7 +682,7 @@
                     <input name="phone" type="text" class="form-control" placeholder="Teléfono" required>
                 </div>
                 <div class="col-12 form-group">
-                    <textarea name="message" class="form-control"  cols="25" maxlength="1000" rows="12" placeholder="Mensaje" required></textarea>
+                    <textarea name="message" class="form-control"  cols="25" maxlength="1000" rows="12" placeholder="Observaciones"></textarea>
                 </div>
               </div>
           </div>
@@ -691,7 +691,7 @@
           <div id="cotizado" class="col-lg-4 col-md-12 sticky-top wow slideIn">
             <div class="col-12">
               <h5>Su pedido de cotización</h5> 
-              <div class="modelo-cotizado m-qs5b">
+              <div class="modelo-cotizado box QS5B">
                 <h6>1 x <span class="demeq">QS5 B</span></h6>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
@@ -702,7 +702,7 @@
                   <p>1 x Manual de usuario</p>
                 </div>
               </div> 
-              <div class="modelo-cotizado m-qs5e">
+              <div class="modelo-cotizado box QS5E">
                 <h6>1 x <span class="demeq">QS5 E</span></h6>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
@@ -713,7 +713,7 @@
                   <p>1 x Manual de usuario</p>
                 </div>
               </div>
-              <div class="modelo-cotizado m-qs5dl">
+              <div class="modelo-cotizado box QS5DL">
                 <h6>1 x <span class="demeq">QS5 DL</span></h6>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
@@ -726,7 +726,7 @@
                   <p>1 x Cable USB para conexión a PC</p>
                 </div>
               </div>
-              <div class="modelo-cotizado m-qs5dle">
+              <div class="modelo-cotizado box QS5DLE">
                 <h6>1 x <span class="demeq">QS5 DLE</span></h6>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
@@ -738,6 +738,42 @@
                   <p>1 x Pendrive con software dmq DataCenter</p>
                   <p>1 x Cable USB para conexión a PC</p>
                 </div>
+              </div>
+              <div id="acc-t2m12" class="accesorio-cotizado">
+                <input id="total-t2m12" readonly="readonly" value="" />
+                <h6>x Transductor Estándar 2MHz</h6>
+              </div>
+              <div id="acc-t2m22" class="accesorio-cotizado">
+                <input id="total-t2m22" readonly="readonly" value="" />
+                <h6>x Transductor Estándar 2MHz</h6>
+              </div>
+              <div id="acc-t5m" class="accesorio-cotizado">
+                <input id="total-t5m" readonly="readonly" value="" />
+                <h6>x Transductor Estándar 5MHz</h6>
+              </div>
+              <div id="acc-t7m" class="accesorio-cotizado">
+                <input id="total-t7m" readonly="readonly" value="" />
+                <h6>x Transductor Estándar 7MHz</h6>
+              </div>
+              <div id="acc-thd" class="accesorio-cotizado">
+                <input id="total-thd" readonly="readonly" value="" />
+                <h6>x Transductor Hi-Damp</h6>
+              </div>
+              <div id="acc-a350" class="accesorio-cotizado">
+                <input id="total-a350" readonly="readonly" value="" />
+                <h6>x Transductor Alta Temperatura 150º</h6>
+              </div>
+              <div id="acc-a150" class="accesorio-cotizado">
+                <input id="total-a150" readonly="readonly" value="" />
+                <h6>x Transductor Alta Temperatura 350º</h6>
+              </div>
+              <div id="acc-g50" class="accesorio-cotizado">
+                <input id="total-g50" readonly="readonly" value="" />
+                <h6>x Gel acoplante - 50g / 1.76oz</h6>
+              </div>
+              <div id="acc-g100" class="accesorio-cotizado">
+                <input id="total-g100" readonly="readonly" value="" />
+                <h6>x Gel acoplante - 100g / 3.52oz</h6>
               </div>
               <div id="acc-pa6" class="accesorio-cotizado">
                 <input id="total-pa6" readonly="readonly" value="" />
@@ -953,5 +989,6 @@
       <script src="../../js/main.js"></script>
       <script src="../../js/custom.js"></script>
       <script src="../../js/cotizar.js"></script>
+      <script src="../../formularios/main.js"></script>
     </body>
   </html>

@@ -9,13 +9,29 @@
         # Envío de datos
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $phone = trim($_POST["phone"]);
-        $country = trim($_POST["country"]);
-        $surname = trim($_POST["surname"]);
         $company = trim($_POST["company"]);
+        $phone = trim($_POST["phone"]);
         $message = str_replace(array("\r","\n"),array("<br>") , strip_tags(trim($_POST["message"])));
+        $model = trim($_POST["model"]);
+        $tr212 = trim($_POST["tr_2_12"]);
+        $tr222 = trim($_POST["tr_2_22"]);
+        $tr5 = trim($_POST["tr_5"]);
+        $tr7 = trim($_POST["tr_7"]);
+        $tr_5_eco2 = trim($_POST["tr_5_eco2"]);
+        $tr_at_350 = trim($_POST["tr_at_350"]);
+        $tr_at_150 = trim($_POST["tr_at_150"]);
+        $pa_6 = trim($_POST["pa_6"]);
+        $pa_4 = trim($_POST["pa_4"]);
+        $g_100 = trim($_POST["g_100"]);
+        $g_50 = trim($_POST["g_50"]);
+        $f_gr = trim($_POST["f_gr"]);
+        $f_ro = trim($_POST["f_ro"]);
+        $f_am = trim($_POST["f_am"]);
+        $c_usb = trim($_POST["c_usb"]);
+        $c_rs232 = trim($_POST["c_rs232"]);
+        $impr = trim($_POST["impr"]);
         
-        if ( empty($name) OR empty($surname) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($company) OR empty($country) OR empty($message)) {
+        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($company)) {
             # Establecer un código de respuesta y salida.
             http_response_code(400);
             echo "Por favor completa el formulario y vuelve a intentarlo.";
@@ -48,6 +64,19 @@
                         <div style='background: #ffffff;;width:100%;padding:10px;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'> " . $email . " </div>
                             <div style='width: 49%;display: inline-block;margin: 0;'> " . $phone . " </div>
+                        </div>
+                    </div>
+                    <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
+                        <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
+                            Pedido de cotización
+                        </div>
+                        <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'>Modelo</div>
+                        <div style='width: 49%;display: inline-block;margin: 0;'> " . $model . " </div>
+                        </div>
+                        <div style='background: #ffffff;;width:100%;padding:10px;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'>Accesorios</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $tr212 . " </div>
                         </div>
                     </div>
                     <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>

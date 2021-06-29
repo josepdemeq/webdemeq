@@ -3530,6 +3530,7 @@ button:focus {
 	border: 3px solid #fff;
 	transition: 0.3s all ease-in-out;
 	margin-bottom: 30px;
+	min-height: 260px;
 
   }
   
@@ -3577,6 +3578,9 @@ button:focus {
 	position: relative;
   }
 	
+.box {	
+	display: none;
+}
 
   #accesorios .card:hover {
 	  transform: scale(1);
@@ -3665,6 +3669,45 @@ button:focus {
 	cursor:pointer; 
 }
 
+#accesorios .custom-control-label::before {
+    position: absolute;
+    top: -5px;
+    left: -1.5rem;
+    display: block;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    content: "";
+    border: none;
+    border-radius: 50px !important;
+}
+
+.custom-control-label::after {
+    position: absolute;
+    top: -5px;
+    left: -1.5rem;
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background: no-repeat 50%/50% 50%;
+    border-radius: 50px !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow:none !important;
+}
+
+
+#accesorios .custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+
 #accesorios .number  input.minus, #accesorios .number  input.plus {
     width: 15px;
     height: 30px;
@@ -3688,11 +3731,13 @@ button:focus {
 	vertical-align: middle;
   }
 
-  .custom-control-input:checked~.custom-control-label::before {
+  #accesorios .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: #ef7d2d;
     background-color: #ef7d2d;
+	border:none;
 }
+
 
 
 #cotizado {
