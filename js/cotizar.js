@@ -761,4 +761,6 @@ $('#plus-imp').click(function add() {
     $(document).on("click", "input", updatePrice);
   });
 
-  
+
+//--------------- Mostrar texto "ACCESORIOS" si está activo algun checkbox
+

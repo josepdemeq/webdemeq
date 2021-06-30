@@ -3739,7 +3739,6 @@ button:focus {
 }
 
 
-
 #cotizado {
 	background: #202020;
 	padding: 20px;
@@ -3787,6 +3786,10 @@ button:focus {
     font-size: 22px;
     margin: -2px 3px 0px 0;
     align-self: start;
+}
+
+#cotizado .btn-blanco {
+	margin-top: 30px;
 }
 
 	  

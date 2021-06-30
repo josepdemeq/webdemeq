@@ -13,10 +13,10 @@
         $phone = trim($_POST["phone"]);
         $message = str_replace(array("\r","\n"),array("<br>") , strip_tags(trim($_POST["message"])));
         $model = trim($_POST["model"]);
-        $tr212 = trim($_POST["tr_2_12"]);
-        $tr222 = trim($_POST["tr_2_22"]);
-        $tr5 = trim($_POST["tr_5"]);
-        $tr7 = trim($_POST["tr_7"]);
+        $tr_212 = trim($_POST["tr_2_12"]);
+        $tr_222 = trim($_POST["tr_2_22"]);
+        $tr_5 = trim($_POST["tr_5"]);
+        $tr_7 = trim($_POST["tr_7"]);
         $tr_5_eco2 = trim($_POST["tr_5_eco2"]);
         $tr_at_350 = trim($_POST["tr_at_350"]);
         $tr_at_150 = trim($_POST["tr_at_150"]);
@@ -37,7 +37,8 @@
             echo "Por favor completa el formulario y vuelve a intentarlo.";
             exit;
         }
-        
+
+
         # Contenido del correo
         $content = "<html>
                     <body style='font-family:Calibri, Lucida Grande, Arial, sans-serif;max-width:600px;margin:20px auto;'>
@@ -71,17 +72,86 @@
                             Pedido de cotización
                         </div>
                         <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
-                        <div style='width: 49%;display: inline-block;margin: 0;'>Modelo</div>
-                        <div style='width: 49%;display: inline-block;margin: 0;'> " . $model . " </div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'>Modelo</div>
                         </div>
                         <div style='background: #ffffff;;width:100%;padding:10px;'>
-                        <div style='width: 49%;display: inline-block;margin: 0;'>Accesorios</div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $tr212 . " </div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'> " . $model . " </div>
+                        </div>
+                        <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
+                            <div style='width: 100%;display: inline-block;margin: 0;'>Accesorios</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_212 . " </div>
+                            <div style='margin: 0;'>x Transductor 2MHz 12mm</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_222 . " </div>
+                            <div style='margin: 0;'>x Transductor 2MHz 22mm</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5 . " </div>
+                            <div style='margin: 0;'>x Transductor 5MHz</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_7 . " </div>
+                            <div style='margin: 0;'>x Transductor 7MHz</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_eco2 . " </div>
+                            <div style='margin: 0;'>x Transductor 5MHz Hi-Damp</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_350 . " </div>
+                            <div style='margin: 0;'>x Transductor Alta Temperatura</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_150 . " </div>
+                            <div style='margin: 0;'>x Transductor Alta Temperatura</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_6 . " </div>
+                            <div style='margin: 0;'>x Patrones Escalonados - 6 escalones</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_4 . " </div>
+                            <div style='margin: 0;'>x Patrones Escalonados - 4 escalones</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_100 . " </div>
+                            <div style='margin: 0;'>x Gel Acoplante 100g</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_50 . " </div>
+                            <div style='margin: 0;'>x Gel Acoplante 50g</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_gr . " </div>
+                            <div style='margin: 0;'>x Funda Protectora Gris</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_ro . " </div>
+                            <div style='margin: 0;'>x Funda Protectora Roja</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_am . " </div>
+                            <div style='margin: 0;'>x Funda Protectora Amarilla</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $c_usb . " </div>
+                            <div style='margin: 0;'>x Cable USB</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $c_rs232 . " </div>
+                            <div style='margin: 0;'>x Cable RS232</div>
+                        </div>
+                        <div class='dato' style='background: #ffffff;;width:100%;padding:10px;display:flex;'>
+                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $impr . " </div>
+                            <div style='margin: 0;'>x impresora Térmica</div>
                         </div>
                     </div>
-                    <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
+                    <div class='dato' style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;margin-top: 20px;'>
                         <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
-                            Mensaje
+                            Observaciones
                         </div>
                         <div style='background: #ffffff;;width:100%;padding:10px;'>
                             <div style='width: 95%;display: inline-block;margin: 0;text-align: justify;text-justify: inter-word'> " . $message . " </div>
