@@ -189,7 +189,6 @@
             <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
             <li class="breadcrumb-item"><a href="../../productos.html">Productos</a></li>
             <li class="breadcrumb-item"><a href="familia-QS.html">Familia QS</a></li>
-            <li class="breadcrumb-item"><a href="QS5.html">Serie QS5</a></li>
             <li class="breadcrumb-item active" aria-current="page">Cotización</li>
           </ol>
         </nav>
@@ -197,56 +196,250 @@
     </section>
     <main id="form-cotizacion">
       <section class="container wow slideIn" data-wow-delay="0.2s">
-        <h5 class="mt-5 mb-5">Elija el modelo de QS5</h5>
-        <form id="form1" class="contact__form" method="post" action="../../formularios/cotizacion.php">
+        <h5 class="mt-5 mb-5 txt-qs">Seleccione los modelos a cotizar</h5>
+        <form id="form1" class="contact__form" method="post" action="../../formularios/cotizacion-QS.php">
           <div class="row">
             <div class="col-lg-8">
-              <div class="radio-toolbar row">
-                <div class="col-lg-6">
-                  <input type="radio" id="radio1" name="model" value="QS5B">
-                  <label for="radio1" class="w-100 select-model">
-                          <h6>QS5 B</h6>
-                          <p>Medidor Base de la serie QS5. Ideal para medir espesores y detectar corrosión cuando no hay necesidad de generar informes o de medir sobre  pintura.</p>
-                  </label>
+              <div class="accordion" id="models-accordion">
+                <div class="card">
+                    <div class="card-header" id="modelhead1">
+                        <a href="#" class="btn btn-header-link collapsed demeq" data-toggle="collapse" data-target="#model1"
+                        aria-expanded="true" aria-controls="model1">Serie QS5</a>
+                    </div>
+
+                    <div id="model1" class="collapse" aria-labelledby="modelhead1" data-parent="#models-accordion">
+                        <div class="card-body">
+                          <div class="row accesorio-input">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="modelCheck1" name="5B" data-name="model-5B" value="5B">
+                                <label class="custom-control-label" for="modelCheck1"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6 class="demeq">QS5 B</h6>
+                              <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-5b" class="minus" />
+                                <input type="text" class="cant-5b" value="1" name="val_QS5B"/>
+                                <input type="button" value="+" id="plus-5b" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="modelCheck2" name="example2" data-name="model-5E" value="5E">
+                                <label class="custom-control-label" for="modelCheck2"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6 class="demeq">QS5 E</h6>
+                              <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-5e" class="minus" />
+                                <input type="text" class="cant-5e" value="1" name="val_QS5E"/>
+                                <input type="button" value="+" id="plus-5e" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="modelCheck3" name="example3" data-name="model-5DL" value="5DL">
+                                <label class="custom-control-label" for="modelCheck3"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6 class="demeq">QS5 DL</h6>
+                              <p>B-SCAN + Analizador de materiales + DataLogger</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-5dl" class="minus" />
+                                <input type="text" class="cant-5dl" value="1" name="val_QS5DL"/>
+                                <input type="button" value="+" id="plus-5dl" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="modelCheck4" data-name="model-5DLE" value="5DLE">
+                                <label class="custom-control-label" for="modelCheck4"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6 class="demeq">QS5 DLE</h6>
+                              <p>B-SCAN + Analizador de materiales + Multi Eco + DataLogger</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-5dle" class="minus" />
+                                <input type="text" class="cant-5dle" value="1" name="val_QS5DLE"/>
+                                <input type="button" value="+" id="plus-5dle" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                  <input type="radio" id="radio2" name="model" value="QS5E">
-                  <label for="radio2" class="w-100 select-model">
-               
-                          <h6>QS5 E</h6>
-                          <p>Ideal para aplicaciones que no requieran generar informes, pero con la flexibilidad de medir sobre pintura sin la necesidad de removerla.</p>
-  
-                  </label>
+                <div class="card">
+                    <div class="card-header" id="modelhead2">
+                        <a href="#" class="btn btn-header-link collapsed demeq" data-toggle="collapse" data-target="#model2"
+                        aria-expanded="true" aria-controls="model2">Serie QS3</a>
+                    </div>
+
+                    <div id="model2" class="collapse" aria-labelledby="modelhead2" data-parent="#models-accordion">
+                      <div class="card-body">
+                        <div class="row accesorio-input">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="modelCheck5" name="example5" data-name="model-3B" value="3B">
+                              <label class="custom-control-label" for="modelCheck5"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6 class="demeq">QS3 B</h6>
+                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-3b" class="minus" />
+                              <input type="text" class="cant-3b" value="1" name="val_QS3B"/>
+                              <input type="button" value="+" id="plus-3b" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row accesorio-input">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="modelCheck6" name="example5" data-name="model-3DL" value="3DL">
+                              <label class="custom-control-label" for="modelCheck6"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6 class="demeq">QS3 DL</h6>
+                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-3dl" class="minus" />
+                              <input type="text" class="cant-3dl" value="1" name="val_QS3DL"/>
+                              <input type="button" value="+" id="plus-3dl" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                  <input type="radio" id="radio3" name="model" value="QS5DL">
-                  <label for="radio3" class="w-100 select-model">
-                          <h6>QS5 DL</h6>
-                          <p>Con Data Logger. Ideal para medir espesores y detectar corrosión sobre materiales sin recubrimientos a donde existe la necesidad de generar informes.</p>
-                  </label>
-                </div>
-                <div class="col-lg-6">
-                  <input type="radio" id="radio4" name="model" value="QS5DLE">
-                  <label for="radio4" class="w-100 select-model">
-                          <h6>QS5 DLE</h6>
-                          <p>Con Data Logger. Ideal para aplicaciones que requieren la generación de informes y la flexibilidad de medir sobre pintura sin la necesidad de removerla.</p>
-                  </label>
+                <div class="card">
+                  <div class="card-header" id="modelhead3">
+                      <a href="#" class="btn btn-header-link collapsed demeq" data-toggle="collapse" data-target="#model3"
+                      aria-expanded="true" aria-controls="model3">Serie QS2</a>
+                  </div>
+
+                  <div id="model3" class="collapse" aria-labelledby="modelhead3" data-parent="#models-accordion">
+                    <div class="card-body">
+                      <div class="row accesorio-input">
+                        <div class="col-md-1">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input acc-check" id="modelCheck7" name="example6" data-name="model-2S" value="2S">
+                            <label class="custom-control-label" for="modelCheck7"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <h6 class="demeq">QS2 S</h6>
+                          <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                          <div class="number">
+                            <input type="button" value="-" id="minus-2s" class="minus" />
+                            <input type="text" class="cant-2s" value="1" name="val_QS2S"/>
+                            <input type="button" value="+" id="plus-2s" class="plus" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row accesorio-input">
+                        <div class="col-md-1">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input acc-check" id="modelCheck8" name="example7" data-name="model-2V" value="2V">
+                            <label class="custom-control-label" for="modelCheck8"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <h6 class="demeq">QS2 V</h6>
+                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                          <div class="number">
+                            <input type="button" value="-" id="minus-2v" class="minus" />
+                            <input type="text" class="cant-2v" value="1" name="val_QS2V"/>
+                            <input type="button" value="+" id="plus-2v" class="plus" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row accesorio-input">
+                        <div class="col-md-1">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input acc-check" id="modelCheck9" name="example8" data-name="model-2DL" value="2DL">
+                            <label class="custom-control-label" for="modelCheck9"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <h6 class="demeq">QS2 DL</h6>
+                          <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                          <div class="number">
+                            <input type="button" value="-" id="minus-2dl" class="minus" />
+                            <input type="text" class="cant-2dl" value="1" name="val_QS2DL"/>
+                            <input type="button" value="+" id="plus-2dl" class="plus" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row accesorio-input">
+                        <div class="col-md-1">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input acc-check" id="modelCheck10" name="example7" data-name="model-2DLV" value="2DLV">
+                            <label class="custom-control-label" for="modelCheck10"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <h6 class="demeq">QS2 DLV</h6>
+                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                          <div class="number">
+                            <input type="button" value="-" id="minus-2dlv" class="minus" />
+                            <input type="text" class="cant-2dlv" value="1" name="val_QS2DLV"/>
+                            <input type="button" value="+" id="plus-2dlv" class="plus" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-            
               <div id="accesorios" class="pt-5 pb-5">
                 <div class="col-12">
-                  <h5 class="mb-5">Agregue más accesorios</h5>
+                  <h5 class="mb-3 txt-qs">Agregue más accesorios</h5>
+                  <p>Nuestros equipos se entregan listos para usar presentados en un maletín de alto impacto. En el recuadro <strong class="italic">Su pedido de cotización</strong> puede ver todo lo que se incluye con el medelo.</p>
+                  <p class="mb-5">Si lo desea, además de esto, puede agregar más accesorios compatibles con el/los modelo/s que solicite su cotización.</p>
                 </div>
-                <div class="accordion" id="faq">
-                  <div class="card">
-                      <div class="card-header" id="faqhead1">
-                          <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
-                          aria-expanded="true" aria-controls="faq1">Transductores estándar para mediciones Pulso Eco</a>
+                <div class="accordion" id="acces-accordion">
+                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                      <div class="card-header" id="aahead1">
+                          <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa1"
+                          aria-expanded="true" aria-controls="aa1">Transductores estándar para mediciones Pulso Eco</a>
                       </div>
 
-                      <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                      <div id="aa1" class="collapse" aria-labelledby="aahead1" data-parent="#acces-accordion">
                           <div class="card-body">
                             <div class="row accesorio-input">
                               <div class="col-md-1">
@@ -331,13 +524,13 @@
                           </div>
                       </div>
                   </div>
-                  <div class="card">
-                      <div class="card-header" id="faqhead2">
-                          <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
-                          aria-expanded="true" aria-controls="faq2">Transductores Hi-Damp para mediciones Milti-Eco</a>
+                  <div class="card filtro 5E 5DLE">
+                      <div class="card-header" id="aahead2">
+                          <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa2"
+                          aria-expanded="true" aria-controls="aa2">Transductores Hi-Damp para mediciones Milti-Eco</a>
                       </div>
 
-                      <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                      <div id="aa2" class="collapse" aria-labelledby="aahead2" data-parent="#acces-accordion">
                         <div class="card-body">
                           <div class="row accesorio-input">
                             <div class="col-md-1">
@@ -363,13 +556,13 @@
                         </div>
                       </div>
                   </div>
-                  <div class="card">
-                    <div class="card-header" id="faqhead3">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
-                        aria-expanded="true" aria-controls="faq3">Transductores Alta Temperatura para mediciones Pulso Eco</a>
+                  <div class="card filtro 5B 5E 5DL 5DLE">
+                    <div class="card-header" id="aahead3">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa3"
+                        aria-expanded="true" aria-controls="aa3">Transductores Alta Temperatura para mediciones Pulso Eco</a>
                     </div>
 
-                    <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                    <div id="aa3" class="collapse" aria-labelledby="aahead3" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input">
                           <div class="col-md-1">
@@ -416,13 +609,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-header" id="faqhead4">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
-                        aria-expanded="true" aria-controls="faq4">Patrones de referencia</a>
+                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                    <div class="card-header" id="aahead4">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa4"
+                        aria-expanded="true" aria-controls="aa4">Patrones de referencia</a>
                     </div>
 
-                    <div id="faq4" class="collapse" aria-labelledby="faqhead4" data-parent="#faq">
+                    <div id="aa4" class="collapse" aria-labelledby="aahead4" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input">
                           <div class="col-md-1">
@@ -465,13 +658,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-header" id="faqhead5">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
-                        aria-expanded="true" aria-controls="faq5">Gel acoplante</a>
+                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                    <div class="card-header" id="aahead5">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa5"
+                        aria-expanded="true" aria-controls="aa5">Gel acoplante</a>
                     </div>
 
-                    <div id="faq5" class="collapse" aria-labelledby="faqhead5" data-parent="#faq">
+                    <div id="aa5" class="collapse" aria-labelledby="aahead5" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input">
                           <div class="col-md-1">
@@ -514,13 +707,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-header" id="faqhead6">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq6"
-                        aria-expanded="true" aria-controls="faq6">Fundas protectoras</a>
+                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                    <div class="card-header" id="aahead6">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa6"
+                        aria-expanded="true" aria-controls="aa6">Fundas protectoras</a>
                     </div>
 
-                    <div id="faq6" class="collapse" aria-labelledby="faqhead6" data-parent="#faq">
+                    <div id="aa6" class="collapse" aria-labelledby="aahead6" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input">
                           <div class="col-md-1">
@@ -582,13 +775,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-header" id="faqhead7">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq7"
-                        aria-expanded="true" aria-controls="faq7">Cables de conexión</a>
+                  <div class="card filtro 5DL 5DLE 3DL 2DL 2DLV">
+                    <div class="card-header" id="aahead7">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa7"
+                        aria-expanded="true" aria-controls="aa7">Cables de conexión</a>
                     </div>
 
-                    <div id="faq7" class="collapse" aria-labelledby="faqhead6" data-parent="#faq">
+                    <div id="aa7" class="collapse" aria-labelledby="aahead6" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input">
                           <div class="col-md-1">
@@ -631,13 +824,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-header" id="faqhead8">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq8"
-                        aria-expanded="true" aria-controls="faq8">Impresoras</a>
+                  <div class="card filtro 5DL 5DLE 3DL 2DL 2DLV">
+                    <div class="card-header" id="aahead8">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa8"
+                        aria-expanded="true" aria-controls="aa8">Impresoras</a>
                     </div>
 
-                    <div id="faq8" class="collapse" aria-labelledby="faqhead8" data-parent="#faq">
+                    <div id="aa8" class="collapse" aria-labelledby="aahead8" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input">
                           <div class="col-md-1">
@@ -665,7 +858,7 @@
               </div>
               
               <div class="col-12">
-                <h5 class="mb-5">Datos del pedido de cotización</h5>
+                <h5 class="mb-5 txt-qs">Datos de la solicitud de cotización</h5>
               </div>
 
               <div class="row">
@@ -690,9 +883,13 @@
           
           <div id="cotizado" class="col-lg-4 col-md-12 sticky-top wow slideIn">
             <div class="col-12">
-              <h5>Su pedido de cotización</h5> 
-              <div class="modelo-cotizado box QS5B">
-                <h6>1 x <span class="demeq">QS5 B</span></h6>
+              <h5 class="txt-qs">Su solicitud de cotización</h5>
+              <p class="anotacion italic txt-cot">Seleccione algún modelo, y/o accesorio, y rellene los tados de contacto para enviar la solicitud de cotización.</p> 
+              <div id="model-5B" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-5b" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS5 B</h6>
+                </div>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <p>1 x Unidad electrónica QS5</p>
@@ -702,8 +899,11 @@
                   <p>1 x Manual de usuario</p>
                 </div>
               </div> 
-              <div class="modelo-cotizado box QS5E">
-                <h6>1 x <span class="demeq">QS5 E</span></h6>
+              <div id="model-5E" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-5e" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS5 E</h6>
+                </div>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <p>1 x Unidad electrónica QS5</p>
@@ -713,8 +913,11 @@
                   <p>1 x Manual de usuario</p>
                 </div>
               </div>
-              <div class="modelo-cotizado box QS5DL">
-                <h6>1 x <span class="demeq">QS5 DL</span></h6>
+              <div id="model-5DL" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-5dl" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS5 DL</h6>
+                </div>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <p>1 x Unidad electrónica QS5</p>
@@ -726,8 +929,11 @@
                   <p>1 x Cable USB para conexión a PC</p>
                 </div>
               </div>
-              <div class="modelo-cotizado box QS5DLE">
-                <h6>1 x <span class="demeq">QS5 DLE</span></h6>
+              <div id="model-5DLE" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-5dle" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS5 DLE</h6>
+                </div>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <p>1 x Unidad electrónica QS5</p>
@@ -739,7 +945,98 @@
                   <p>1 x Cable USB para conexión a PC</p>
                 </div>
               </div>
-              <p id="tt-acc" class="anotacion italic">Incluye:</p>
+              <div id="model-3B" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-3b" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS3 B</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>1 x Unidad electrónica QS5</p>
+                  <p>1 x Certificado de conformidad</p>
+                  <p>1 x Transductor 5MHz HD estándar</p>
+                  <p>1 x Gel acoplante</p>
+                  <p>1 x Manual de usuario</p>
+                </div>
+              </div>
+              <div id="model-3DL" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-3dl" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS3 DL</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>1 x Unidad electrónica QS5</p>
+                  <p>1 x Certificado de conformidad</p>
+                  <p>1 x Transductor 5MHz HD para medición sobre pintura</p>
+                  <p>1 x Gel acoplante</p>
+                  <p>1 x Manual de usuario</p>
+                  <p>1 x Pendrive con software dmq DataCenter</p>
+                  <p>1 x Cable USB para conexión a PC</p>
+                </div>
+              </div>
+              <div id="model-2S" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-2s" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS2 S</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>1 x Unidad electrónica QS5</p>
+                  <p>1 x Certificado de conformidad</p>
+                  <p>1 x Transductor 5MHz HD estándar</p>
+                  <p>1 x Gel acoplante</p>
+                  <p>1 x Manual de usuario</p>
+                </div>
+              </div> 
+              <div id="model-2V" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-2v" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS2 V</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>1 x Unidad electrónica QS5</p>
+                  <p>1 x Certificado de conformidad</p>
+                  <p>1 x Transductor 5MHz HD para medición sobre pintura</p>
+                  <p>1 x Gel acoplante</p>
+                  <p>1 x Manual de usuario</p>
+                </div>
+              </div>
+              <div id="model-2DL" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-2dl" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS2 DL</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>1 x Unidad electrónica QS5</p>
+                  <p>1 x Certificado de conformidad</p>
+                  <p>1 x Transductor 5MHz HD estándar</p>
+                  <p>1 x Gel acoplante</p>
+                  <p>1 x Manual de usuario</p>
+                  <p>1 x Pendrive con software dmq DataCenter</p>
+                  <p>1 x Cable USB para conexión a PC</p>
+                </div>
+              </div>
+              <div id="model-2DLV" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-2dlv" readonly="readonly" value="" />
+                  <h6 class="demeq">x QS2 DLV</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>1 x Unidad electrónica QS5</p>
+                  <p>1 x Certificado de conformidad</p>
+                  <p>1 x Transductor 5MHz HD para medición sobre pintura</p>
+                  <p>1 x Gel acoplante</p>
+                  <p>1 x Manual de usuario</p>
+                  <p>1 x Pendrive con software dmq DataCenter</p>
+                  <p>1 x Cable USB para conexión a PC</p>
+                </div>
+              </div>
+              
+              <p class="anotacion italic tt-acc">Accesorios</p>
               <div id="acc-t2m12" class="accesorio-cotizado">
                 <input id="total-t2m12" readonly="readonly" value="" />
                 <h6>x Transductor Estándar 2MHz</h6>
@@ -808,12 +1105,21 @@
                 <input id="total-imp" readonly="readonly" value="" />
                 <h6>x Impresora Térmica</h6>
               </div>
-              <input name="submit" type="submit" class="btn btn-blanco w-100" value="Enviar pedido de Cotización">
+              <input name="submit" type="submit" class="btn btn-blanco btn-enviar btn-qs w-100" value="Enviar solicitud de Cotización">
             </div>
           </div>
-          
         </div>
       </form>
+      <br><br>
+      <!-- form message -->
+      <div class="row">
+          <div class="col-12">
+              <div class="alert alert-sucess contact__msg" style="display: none" role="alert">
+                  ¡Gracias! Su mensaje fue enviado exitosamente.
+              </div>
+          </div>
+      </div>
+      <!-- end message -->
     </section>
       <section class="quokka mt-5">
         <div class="container-fluid bg-quokka">
@@ -982,13 +1288,27 @@
         };
       </script>
 
+      <script type="text/javascript">
+        function submitForm(action) {
+          var form = document.getElementById('form1');
+          form.action = action;
+          form.submit();
+        }
+      </script>
+      <script type="text/javascript">
+        $(function() {
+            $('select').selectpicker();
+            });
+      </script>
   
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../plugins/b-select/dist/js/bootstrap-select.js"></script>
       <script src="../../js/main.js"></script>
       <script src="../../js/custom.js"></script>
       <script src="../../js/cotizar.js"></script>
+      <script src="../../formularios/main.js"></script>
     </body>
   </html>

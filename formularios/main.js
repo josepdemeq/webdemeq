@@ -34,6 +34,10 @@
         })
         .done(done_func)
         .fail(fail_func);
+        setTimeout( 
+            function() {
+              window.location.reload(true);
+            }, 6000);
     });
     
 })(jQuery);

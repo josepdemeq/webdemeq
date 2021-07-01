@@ -3,14 +3,435 @@
 //-------- Elección modelo
 
 
-$(document).ready(function(){
-  $('input[type="radio"]').click(function(){
-      var inputValue = $(this).attr("value");
-      var targetBox = $("." + inputValue);
-      $(".box").not(targetBox).hide();
-      $(targetBox).show();
-  });
+//----- QS5 B
+$('#plus-5b').click(function add() {
+  var $qtde = $(".cant-5b");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-5b").attr("disabled", true);
+    };
+      $("#minus-5b").attr("disabled", !a);
+      $qtde.val(a);
 });
+$("#minus-5b").attr("disabled", !$(".cant-5b").val());
+
+$('#minus-5b').click(function minust() {
+  var $qtde = $(".cant-5b");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-5b").attr("disabled", true);
+  }
+  $("#plus-5b").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-5b").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-5b").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- QS5 E
+$('#plus-5e').click(function add() {
+  var $qtde = $(".cant-5e");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-5e").attr("disabled", true);
+    };
+      $("#minus-5e").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-5e").attr("disabled", !$(".cant-5e").val());
+
+$('#minus-5e').click(function minust() {
+  var $qtde = $(".cant-5e");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-5e").attr("disabled", true);
+  }
+  $("#plus-5e").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-5e").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-5e").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS5 DL
+$('#plus-5dl').click(function add() {
+  var $qtde = $(".cant-5dl");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-5dl").attr("disabled", true);
+    };
+      $("#minus-5dl").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-5dl").attr("disabled", !$(".cant-5dl").val());
+
+$('#minus-5dl').click(function minust() {
+  var $qtde = $(".cant-5dl");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-5dl").attr("disabled", true);
+  }
+  $("#plus-5dl").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-5dl").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-5dl").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS5 DLE
+$('#plus-5dle').click(function add() {
+  var $qtde = $(".cant-5dle");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-5dle").attr("disabled", true);
+    };
+      $("#minus-5dle").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-5dle").attr("disabled", !$(".cant-5dle").val());
+
+$('#minus-5dle').click(function minust() {
+  var $qtde = $(".cant-5dle");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-5dle").attr("disabled", true);
+  }
+  $("#plus-5dle").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-5dle").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-5dle").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS3 B
+$('#plus-3b').click(function add() {
+  var $qtde = $(".cant-3b");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-3b").attr("disabled", true);
+    };
+      $("#minus-3b").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-3b").attr("disabled", !$(".cant-3b").val());
+
+$('#minus-3b').click(function minust() {
+  var $qtde = $(".cant-3b");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-3b").attr("disabled", true);
+  }
+  $("#plus-3b").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-3b").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-3b").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS3 DL
+$('#plus-3dl').click(function add() {
+  var $qtde = $(".cant-3dl");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-3dl").attr("disabled", true);
+    };
+      $("#minus-3dl").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-3dl").attr("disabled", !$(".cant-3dl").val());
+
+$('#minus-3dl').click(function minust() {
+  var $qtde = $(".cant-3dl");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-3dl").attr("disabled", true);
+  }
+  $("#plus-3dl").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-3dl").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-3dl").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS2 S
+$('#plus-2s').click(function add() {
+  var $qtde = $(".cant-2s");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-2s").attr("disabled", true);
+    };
+      $("#minus-2s").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-2s").attr("disabled", !$(".cant-2s").val());
+
+$('#minus-2s').click(function minust() {
+  var $qtde = $(".cant-2s");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-2s").attr("disabled", true);
+  }
+  $("#plus-2s").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-2s").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-2s").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS2 V
+$('#plus-2v').click(function add() {
+  var $qtde = $(".cant-2v");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-2v").attr("disabled", true);
+    };
+      $("#minus-2v").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-2v").attr("disabled", !$(".cant-2v").val());
+
+$('#minus-2v').click(function minust() {
+  var $qtde = $(".cant-2v");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-2v").attr("disabled", true);
+  }
+  $("#plus-2v").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-2v").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-2v").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS2 DL
+$('#plus-2dl').click(function add() {
+  var $qtde = $(".cant-2dl");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-2dl").attr("disabled", true);
+    };
+      $("#minus-2dl").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-2dl").attr("disabled", !$(".cant-2dl").val());
+
+$('#minus-2dl').click(function minust() {
+  var $qtde = $(".cant-2dl");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-2dl").attr("disabled", true);
+  }
+  $("#plus-2dl").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-2dl").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-2dl").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QS2 DLV
+$('#plus-2dlv').click(function add() {
+  var $qtde = $(".cant-2dlv");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-2dlv").attr("disabled", true);
+    };
+      $("#minus-2dlv").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-2dlv").attr("disabled", !$(".cant-2dlv").val());
+
+$('#minus-2dlv').click(function minust() {
+  var $qtde = $(".cant-2dlv");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-2dlv").attr("disabled", true);
+  }
+  $("#plus-2dlv").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-2dlv").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-2dlv").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
 
 
 //---------- Mostrar Checkbox accesorios seleccionados en resumen
@@ -762,5 +1183,42 @@ $('#plus-imp').click(function add() {
   });
 
 
-//--------------- Mostrar texto "ACCESORIOS" si está activo algun checkbox
+//--------------- Filtrar accessorios por modelo compatible
+
+var sections = $('.filtro');
+function updateContentVisibility(){
+    var checked = $("#models-accordion :checkbox:checked");
+    if(checked.length){
+        sections.hide();
+        checked.each(function(){
+            $("." + $(this).val()).show();
+        });
+    } else {
+        sections.show();
+    }
+}
+
+$("#models-accordion :checkbox").click(updateContentVisibility);
+updateContentVisibility();
+
+
+//--------------- Mostrar / Ocultar botón cotizar
+
+$(".custom-control-input").click(function() {
+  $('.btn-enviar').toggle( $(".custom-control-input:checked").length > 0 );
+});
+
+
+//--------------- Mostrar / Ocultar texto cotizar
+
+$(".custom-control-input").click(function() {
+  $('.txt-cot').toggle( $(".custom-control-input:checked").length <= 0 );
+});
+
+
+//--------------- Mostrar / Ocultar titulo accesorios cotizar
+
+$("#accesorios .acc-check").click(function() {
+  $('.tt-acc').toggle( $("#accesorios .acc-check:checked").length > 0 );
+});
 

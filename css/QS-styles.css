@@ -315,7 +315,7 @@
     border: 2px solid rgb(205,176,41);
 	margin-bottom: 15px;
 }
-.series .info-destacada .btn-blanco.btn-qs.btn-qs:hover, .series .info-destacada .btn-blanco.btn-qs.btn-qs:active, .btn-qs:focus {
+.series .info-destacada .btn-blanco.btn-qs.btn-qs:hover, .series .info-destacada .btn-blanco.btn-qs.btn-qs:active, .btn-qs:focus  {
 	color: #fff;
 	background-color: rgba(0, 0, 0, 0.3);   
 	transition: all 0.3s ease-in-out;
@@ -430,6 +430,42 @@ svg.qs-icon-sop {
 	transition: all 0.3s ease-in-out;
 }
 
+
+/*--- Cotización ---*/
+
+#cotizado h5 {
+    border-bottom: 4px solid rgb(205,176,41);
+}
+
+#accesorios .custom-control-input:checked~.custom-control-label::before, #models-accordion .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: rgb(205,176,41);
+    background-color: rgb(205,176,41);
+	border:none;
+}
+
+#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
+    color: #fae929;
+}
+
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link:after, 
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link{
+    color: #fae929;
+}
+
+
+.btn-blanco.btn-enviar.btn-qs {
+	color: #000;
+    background-color: rgb(205,176,41);
+    border: 2px solid rgb(205,176,41);
+	margin-bottom: 15px;
+}
+
+.btn-blanco.btn-enviar.btn-qs:hover, .btn-blanco.btn-enviar.btn-qs:active, .btn-qs:focus {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);   
+	transition: all 0.3s ease-in-out;
+}
 
 
 /*--------------------------------------------------------------------------------------------------*/
