@@ -275,11 +275,6 @@
 	padding: 20px 0 0;
 }
 
-.video-producto {
-    -webkit-box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
-    -moz-box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
-    box-shadow: 0px 0px 30px 1px rgba(205,176,41,0.5);
-}
 
 /*--- Accesorios --*/
 #accesorios .accesorio-uno .texto-acc h6 {
@@ -434,7 +429,8 @@ svg.qs-icon-sop {
 /*--- Cotización ---*/
 
 #cotizado h5 {
-    border-bottom: 4px solid rgb(205,176,41);
+    border-bottom: 4px solid #fae929;
+    color: #fae929;
 }
 
 #accesorios .custom-control-input:checked~.custom-control-label::before, #models-accordion .custom-control-input:checked~.custom-control-label::before {

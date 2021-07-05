@@ -12,30 +12,33 @@
         $company = trim($_POST["company"]);
         $phone = trim($_POST["phone"]);
         $message = str_replace(array("\r","\n"),array("<br>") , strip_tags(trim($_POST["message"])));
-        $model_5B = !empty($_POST["val_QS5B"]) ? trim($_POST["val_QS5B"]) : NULL;
-        $model_5E = !empty($_POST["val_QS5E"]) ? trim($_POST["val_QS5E"]) : NULL;
-        $model_5DL = !empty($_POST["val_QS5DL"]) ? trim($_POST["val_QS5DL"]) : NULL;
-        $model_5DLE = !empty($_POST["val_QS5DLE"]) ? trim($_POST["val_QS5DLE"]) : NULL;
-        $model_3B = !empty($_POST["val_QS3B"]) ? trim($_POST["val_QS3B"]) : NULL;
-        $model_3DL = !empty($_POST["val_QS3DL"]) ? trim($_POST["val_QS3DL"]) : NULL;
-        $model_2S = !empty($_POST["val_QS2S"]) ? trim($_POST["val_QS2S"]) : NULL;
-        $model_2V = !empty($_POST["val_QS2V"]) ? trim($_POST["val_QS2V"]) : NULL;
-        $model_2DL = !empty($_POST["val_QS2DL"]) ? trim($_POST["val_QS2DL"]) : NULL;
-        $model_2DLV = !empty($_POST["val_QS2DLV"]) ? trim($_POST["val_QS2DLV"]) : NULL;
-        $tr_212 = !empty($_POST["tr_2_12"]) ? trim($_POST["tr_2_12"]) : NULL;
-        $tr_222 = !empty($_POST["tr_2_22"]) ? trim($_POST["tr_2_22"]) : NULL;
-        $tr_5 = !empty($_POST["tr_5"]) ? trim($_POST["tr_5"]) : NULL;
-        $tr_7 = !empty($_POST["tr_7"]) ? trim($_POST["tr_7"]) : NULL; 
-        $tr_5_eco2 = !empty($_POST["tr_5_eco2"]) ? trim($_POST["tr_5_eco2"]) : NULL;
-        $tr_at_350 = !empty($_POST["tr_at_350"]) ? trim($_POST["tr_at_350"]) : NULL;
-        $tr_at_150 = !empty($_POST["tr_at_150"]) ? trim($_POST["tr_at_150"]) : NULL;
-        $pa_6 = !empty($_POST["pa_6"]) ? trim($_POST["pa_6"]) : NULL;
-        $pa_4 = !empty($_POST["pa_4"]) ? trim($_POST["pa_4"]) : NULL;
-        $g_100 = !empty($_POST["g_100"]) ? trim($_POST["g_100"]) : NULL;
-        $g_50 = !empty($_POST["g_50"]) ? trim($_POST["g_50"]) : NULL;
+        $model_7L = !empty($_POST["val_QH7L"]) ? trim($_POST["val_QH7L"]) : NULL;
+        $model_7U = !empty($_POST["val_QH7U"]) ? trim($_POST["val_QH7U"]) : NULL;
+        $model_7C = !empty($_POST["val_QH7C"]) ? trim($_POST["val_QH7C"]) : NULL;
+        $model_5U = !empty($_POST["val_QH5U"]) ? trim($_POST["val_QH5U"]) : NULL;
+        $model_5D = !empty($_POST["val_QH5D"]) ? trim($_POST["val_QH5D"]) : NULL;
+        $model_5G = !empty($_POST["val_QH5G"]) ? trim($_POST["val_QH5G"]) : NULL;
+        $model_5M = !empty($_POST["val_QH5M"]) ? trim($_POST["val_QH5M"]) : NULL;
+        $model_2S = !empty($_POST["val_QH2S"]) ? trim($_POST["val_QH2S"]) : NULL;
+        $model_2DLS = !empty($_POST["val_QH2DLS"]) ? trim($_POST["val_QH2DLS"]) : NULL;
+        $di_d = !empty($_POST["di_d"]) ? trim($_POST["di_d"]) : NULL;
+        $di_dc = !empty($_POST["di_dc"]) ? trim($_POST["di_dc"]) : NULL;
+        $di_c = !empty($_POST["di_c"]) ? trim($_POST["di_c"]) : NULL;
+        $di_g = !empty($_POST["di_g"]) ? trim($_POST["di_g"]) : NULL; 
+        $di_dl = !empty($_POST["di_dl"]) ? trim($_POST["di_dl"]) : NULL;
+        $di_d15 = !empty($_POST["di_d15"]) ? trim($_POST["di_d15"]) : NULL;
+        $bd_hld = !empty($_POST["bd_hld"]) ? trim($_POST["bd_hld"]) : NULL;
+        $bd_hlg = !empty($_POST["bd_hlg"]) ? trim($_POST["bd_hlg"]) : NULL;
+        $aa_12 = !empty($_POST["aa_12"]) ? trim($_POST["aa_12"]) : NULL;
+        $ci_d = !empty($_POST["ci_d"]) ? trim($_POST["ci_d"]) : NULL;
+        $ci_g = !empty($_POST["ci_g"]) ? trim($_POST["ci_g"]) : NULL;
+        $pa_200 = !empty($_POST["pa_200"]) ? trim($_POST["pa_200"]) : NULL;
+        $pa_50 = !empty($_POST["pa_50"]) ? trim($_POST["pa_50"]) : NULL;
         $f_gr = !empty($_POST["f_gr"]) ? trim($_POST["f_gr"]) : NULL;
         $f_ro = !empty($_POST["f_ro"]) ? trim($_POST["f_ro"]) : NULL;
-        $f_am = !empty($_POST["f_am"]) ? trim($_POST["f_am"]) : NULL; 
+        $f_am = !empty($_POST["f_am"]) ? trim($_POST["f_am"]) : NULL;
+        $m_c = !empty($_POST["m_c"]) ? trim($_POST["m_c"]) : NULL;
+        $m_g = !empty($_POST["m_g"]) ? trim($_POST["m_g"]) : NULL; 
         $c_usb = !empty($_POST["c_usb"]) ? trim($_POST["c_usb"]) : NULL; 
         $c_rs232 = !empty($_POST["c_rs232"]) ? trim($_POST["c_rs232"]) : NULL; 
         $impr = !empty($_POST["impr"]) ? trim($_POST["impr"]) : NULL;
@@ -82,73 +85,66 @@
                             <div style='width: 100%;display: inline-block;margin: 0;'>Modelo/s</div>
                         </div>";
 
-                        if ($model_5B >= 1) {
+                        if ($model_7L >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                               <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5B . " </div>
-                                              <div style='margin: 0;'>x QS5 B</div>
+                                              <div style='margin: 0;'>x QH7 L</div>
                                            </div>";
                         }
 
-                        if ($model_5E >= 1) {
+                        if ($model_7U >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5E . " </div>
-                                            <div style='margin: 0;'>x QS5 E</div>
+                                            <div style='margin: 0;'>x QH7 U</div>
                                             </div>";
                         }
 
-                        if ($model_5DL >= 1) {
+                        if ($model_7C >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DL . " </div>
-                                            <div style='margin: 0;'>x QS5 E</div>
+                                            <div style='margin: 0;'>x QH7 C</div>
                                             </div>";
                         }
 
-                        if ($model_5DLE >= 1) {
+                        if ($model_5U >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DLE . " </div>
-                                            <div style='margin: 0;'>x QS5 DLE</div>
+                                            <div style='margin: 0;'>x QH5 U</div>
                                             </div>";
                         }
 
-                        if ($model_3B >= 1) {
+                        if ($model_5D >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3B . " </div>
-                                            <div style='margin: 0;'>x QS3 B</div>
+                                            <div style='margin: 0;'>x QH5 D</div>
                                             </div>";
                         }
 
-                        if ($model_3DL >= 1) {
+                        if ($model_5G >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3DL . " </div>
-                                            <div style='margin: 0;'>x QS3 B</div>
+                                            <div style='margin: 0;'>x QH5 G</div>
+                                            </div>";
+                        }
+
+                        if ($model_5M >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2V . " </div>
+                                            <div style='margin: 0;'>x QH5 M</div>
                                             </div>";
                         }
 
                         if ($model_2S >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2S . " </div>
-                                            <div style='margin: 0;'>x QS2 S</div>
+                                            <div style='margin: 0;'>x QH2 S</div>
                                             </div>";
                         }
 
-                        if ($model_2V >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2V . " </div>
-                                            <div style='margin: 0;'>x QS2 V</div>
-                                            </div>";
-                        }
-
-                        if ($model_2DL >= 1) {
+                        if ($model_2DLS >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DL . " </div>
-                                            <div style='margin: 0;'>x QS2 DL</div>
-                                            </div>";
-                        }
-
-                        if ($model_2DLV >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DLV . " </div>
-                                            <div style='margin: 0;'>x QS2 DL</div>
+                                            <div style='margin: 0;'>x QH2 DLS</div>
                                             </div>";
                         }
         
@@ -158,79 +154,93 @@
 
                         
 
-                        if ($tr_212 >= 1) {
+                        if ($di_d >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_212 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_d . " </div>
                                             <div style='margin: 0;'>x Transductor 2MHz 12mm</div>
                                             </div>";
                         }
 
-                        if ($tr_222 >= 1) {
+                        if ($di_dc >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_222 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_dc . " </div>
                                             <div style='margin: 0;'>x Transductor 2MHz 22mm</div>
                                             </div>";
                         }
 
-                        if ($tr_5 >= 1) {
+                        if ($di_c >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_c . " </div>
                                             <div style='margin: 0;'>x Transductor 5MHz</div>
                                             </div>";
                         }
 
-                        if ($tr_7 >= 1) {
+                        if ($di_g >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_7 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_g . " </div>
                                             <div style='margin: 0;'>x Transductor 7MHz</div>
                                             </div>";
                         }
 
-                        if ($tr_5_eco2 >= 1) {
+                        if ($di_dl >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_eco2 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_dl . " </div>
                                             <div style='margin: 0;'>x Transductor 5MHz Hi-Damp</div>
                                             </div>";
                         }
 
-                        if ($tr_at_350 >= 1) {
+                        if ($di_d15 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_350 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_d15 . " </div>
                                             <div style='margin: 0;'>x Transductor Alta Temperatura 1</div>
                                             </div>";
                         }
 
-                        if ($tr_at_150 >= 1) {
+                        if ($bd_hld >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_150 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $bd_hld . " </div>
                                             <div style='margin: 0;'>x Transductor Alta Temperatura 2</div>
                                             </div>";
                         }
 
-                        if ($pa_6 >= 1) {
+                        if ($bd_hlg >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_6 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $bd_hlg . " </div>
                                             <div style='margin: 0;'>x Patrones Escalonados - 6 escalones</div>
                                             </div>";
                         }
 
-                        if ($pa_4 >= 1) {
+                        if ($aa_12 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_4 . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $aa_12 . " </div>
                                             <div style='margin: 0;'>x Patrones Escalonados - 4 escalones</div>
                                             </div>";
                         }
 
-                        if ($g_100 >= 1) {
+                        if ($ci_d >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_100  . " </div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $ci_d  . " </div>
                                             <div style='margin: 0;'>x Gel Acoplante 100g</div>
                                             </div>";
                         }
 
-                        if ($g_50 >= 1) {
+                        if ($ci_g >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_50  . " </div>
+                                            <div style='margin: 0;'>x Gel Acoplante 50g</div>
+                                            </div>";
+                        }
+
+                        if ($pa_200 >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_200  . " </div>
+                                            <div style='margin: 0;'>x Gel Acoplante 50g</div>
+                                            </div>";
+                        }
+
+                        if ($pa_50 >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_50  . " </div>
                                             <div style='margin: 0;'>x Gel Acoplante 50g</div>
                                             </div>";
                         }
@@ -253,6 +263,20 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_am  . " </div>
                                             <div style='margin: 0;'>x Funda Protectora Amarilla</div>
+                                            </div>";
+                        }
+
+                        if ($m_c >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $m_c  . " </div>
+                                            <div style='margin: 0;'>x Cable USB</div>
+                                            </div>";
+                        }
+
+                        if ($m_g >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $m_g  . " </div>
+                                            <div style='margin: 0;'>x Cable USB</div>
                                             </div>";
                         }
 

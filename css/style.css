@@ -663,8 +663,8 @@ button.nav-link {
 }
 
 .dropdown-menu.drop-sop p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .dropdown-menu.drop-sop .dropdown-item:hover {
@@ -973,11 +973,15 @@ section.quokka {
 /*--- FOOTER ---*/
 footer {
 	padding: 60px;
-	font-size: 16px;
+	font-size: 14px;
 }
 
-footer p.naranja{
+footer p.naranja {
 	font-weight: 400;
+}
+
+footer p{
+	letter-spacing: 1px;
 }
 
 .datos-empresa {
@@ -1114,7 +1118,8 @@ footer .datos-empresa p.naranja {
 }
 
 .mas-datos a:hover {
-	text-decoration: underline;
+	color: #ef7d2d;
+	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -1127,6 +1132,14 @@ footer .datos-empresa p.naranja {
 .mas-datos a:hover .naranja {
 	text-decoration: underline;
 	transition: all 0.3s ease-in-out;
+}
+
+.copiright {
+	color:#c0c0c0;
+	font-size: 12px;
+	padding: 20px;
+	text-align: center;
+	border-top: 2px solid #222222;
 }
 
 
