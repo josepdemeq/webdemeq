@@ -3571,7 +3571,7 @@ button:focus {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	float: right;
-	font-size: 36px;
+	font-size: 30px;
     line-height: 1;
   }
   
@@ -3588,7 +3588,7 @@ button:focus {
   
   #accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
 	content: "\f106";
-	font-size: 36px;
+	font-size: 30x;
     line-height: 1;
   }
   
@@ -3707,6 +3707,7 @@ button:focus {
 
 #cotizado h6 {
 	font-weight: 500;
+    font-size: 18px;
 }
 
 #cotizado .modelo-cotizado .incluido-modelo p {
@@ -3715,17 +3716,23 @@ button:focus {
 }
 
 #cotizado .modelo-cotizado {
-	margin-bottom: 30px;
+	padding: 10px 0;
+    border-bottom: 1px solid #393939;
 }
 
 #cotizado .modelo-cotizado h6.demeq {
-	font-size: 25px;
+	font-size: 23px;
     margin-top: -4px;
 }
 
 
 #cotizado .accesorio-cotizado, #cotizado .mod-cotiz {
     display: flex;
+}
+
+#cotizado .accesorio-cotizado {
+	padding: 10px 0;
+    border-bottom: 1px solid #393939;
 }
 
 #cotizado .accesorio-cotizado input, #cotizado .mod-cotiz input {
@@ -3736,8 +3743,8 @@ button:focus {
     background: transparent;
     display: flex;
     font-weight: 500;
-    font-size: 22px;
-    margin: -2px 3px 0px 0;
+    font-size: 18px;
+    margin: 0px 3px 0px 0;
     align-self: start;
 }
 
@@ -3748,5 +3755,11 @@ button:focus {
 
 .btn-enviar, .tt-acc {
 	display: none;
+	margin: 30px 0 10px 0;
 } 
 	
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none !important;
+}

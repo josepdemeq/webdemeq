@@ -293,253 +293,282 @@
         
         # Contenido del correo para el cliente
         $content_conf = "<html style='background:#ededed;'>
-                    <body style='font-family:Calibri, Lucida Grande, Arial, sans-serif;max-width:600px;margin:20px auto;background: #fff;padding:30px'>
-                    <div style='width: 100%;max-width: 600px;text-align: left;margin-bottom:40px;'>
-                    <img src='http://www.demeqcom.ipage.com/webdemeq/img/formularios/logo_es.png' alt='Para tener una mejor experiencia habilite mostrar el contenido remoto' height='40px''>
-                </div>
-                <h1 style='color:#000000;font-weight:bold;'>Su solicitud de cotizaci&oacute;n</h1>
-                <p style='margin-top:0;margin-bottom:40px;'>Gracias ...En breve nos pondremos en contacto con usted para brindarle...</p>
-                    <div style='font-size: 24px;font-weight: 600;color:#ef7d2d;margin-bottom: 20px;'>
-                    Datos personales
-                    </div>
-                    <div style='color: #000;font-weight: 600;font-size: 18px;'>
-                        <div style='width: 280px;display: inline-block;margin: 0;'>Nombre y Apellido</div>
-                        <div style='width: 280px;display: inline-block;margin: 0;'>Empresa</div>
-                    </div>
-                    <div style='margin-bottom: 20px;'>
-                        <div style='width: 280px;display: inline-block;margin: 0;'> " . $name . " </div>
-                        <div style='width: 280px;display: inline-block;margin: 0;'> " . $company . " </div>
-                    </div>
-                    <div style='color: #000;font-weight: 600;font-size: 18px;'>
-                        <div style='width: 280px;display: inline-block;margin: 0;'>Email</div>
-                        <div style='width: 280px;display: inline-block;margin: 0;'>Tel&eacute;fono</div>
-                    </div>
-                    <div style='margin-bottom: 40px;padding-bottom: 40px; border-bottom: 1px solid #999;'>
-                        <div style='width: 280px;display: inline-block;margin: 0;'> " . $email . " </div>
-                        <div style='width: 280px;display: inline-block;margin: 0;'> " . $phone . " </div>
-                    </div>
-                    <div style='font-size: 24px;font-weight: 600;color:#ef7d2d;margin-bottom: 20px;'>
-                        Solicitud de cotizaci&oacuten
-                    </div>
-                    
-                    <div style='color: #000;font-weight: 600;font-size: 18px;'>
-                        <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Modelo/s</div>
-                    </div>";
-
-                        if ($model_5B >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_5B . " </div>
-                                                <div style='margin: 0;'>x QS5 B</div>
-                                            </div>";
-                        }
-
-                        if ($model_5E >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_5E . " </div>
-                                                <div style='margin: 0;'>x QS5 E</div>
-                                            </div>";
-                        }
-
-                        if ($model_5DL >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_5DL . " </div>
-                                                <div style='margin: 0;'>x QS5 E</div>
-                                            </div>";
-                        }
-
-                        if ($model_5DLE >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_5DLE . " </div>
-                                                <div style='margin: 0;'>x QS5 DLE</div>
-                                            </div>";
-                        }
-
-                        if ($model_3B >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_3B . " </div>
-                                                <div style='margin: 0;'>x QS3 B</div>
-                                            </div>";
-                        }
-
-                        if ($model_3DL >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_3DL . " </div>
-                                                <div style='margin: 0;'>x QS3 B</div>
-                                            </div>";
-                        }
-
-                        if ($model_2S >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_2S . " </div>
-                                                <div style='margin: 0;'>x QS2 S</div>
-                                            </div>";
-                        }
-
-                        if ($model_2V >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_2V . " </div>
-                                                <div style='margin: 0;'>x QS2 V</div>
-                                            </div>";
-                        }
-
-                        if ($model_2DL >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_2DL . " </div>
-                                                <div style='margin: 0;'>x QS2 DL</div>
-                                            </div>";
-                        }
-
-                        if ($model_2DLV >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $model_2DLV . " </div>
-                                                <div style='margin: 0;'>x QS2 DLV</div>
-                                            </div>";
-                        }
-        
-             $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;'>
-                                <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Accesorios</div>
-                            </div>";
-
-                        
-
-                        if ($tr_212 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $tr_212 . " </div>
-                                                <div style='margin: 0;'>x Transductor 2MHz 12mm</div>
-                                            </div>";
-                        }
-
-                        if ($tr_222 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $tr_222 . " </div>
-                                                <div style='margin: 0;'>x Transductor 2MHz 22mm</div>
-                                            </div>";
-                        }
-
-                        if ($tr_5 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $tr_5 . " </div>
-                                                <div style='margin: 0;'>x Transductor 5MHz</div>
-                                            </div>";
-                        }
-
-                        if ($tr_7 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $tr_7 . " </div>
-                                                <div style='margin: 0;'>x Transductor 7MHz</div>
-                                            </div>";
-                        }
-
-                        if ($tr_5_eco2 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $tr_5_eco2 . " </div>
-                                                <div style='margin: 0;'>x Transductor 5MHz Hi-Damp</div>
-                                            </div>";
-                        }
-
-                        if ($tr_at_350 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $tr_at_350 . " </div>
-                                                <div style='margin: 0;'>x Transductor Alta Temperatura 1</div>
-                                            </div>";
-                        }
-
-                        if ($tr_at_150 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $tr_at_150 . " </div>
-                                                <div style='margin: 0;'>x Transductor Alta Temperatura 2</div>
-                                            </div>";
-                        }
-
-                        if ($pa_6 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $pa_6 . " </div>
-                                                <div style='margin: 0;'>x Patrones Escalonados - 6 escalones</div>
-                                            </div>";
-                        }
-
-                        if ($pa_4 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $pa_4 . " </div>
-                                                <div style='margin: 0;'>x Patrones Escalonados - 4 escalones</div>
-                                            </div>";
-                        }
-
-                        if ($g_100 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $g_100 . " </div>
-                                                <div style='margin: 0;'>x Gel Acoplante 100g</div>
-                                            </div>";
-                        }
-
-                        if ($g_50 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $g_50 . " </div>
-                                                <div style='margin: 0;'>x Gel Acoplante 50g</div>
-                                            </div>";
-                        }
-
-                        if ($f_gr >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $f_gr . " </div>
-                                                <div style='margin: 0;'>x Funda Protectora Gris</div>
-                                            </div>";
-                        }
-
-                        if ($f_ro >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $f_ro . " </div>
-                                                <div style='margin: 0;'>x Funda Protectora Roja</div>
-                                            </div>";
-                        }
-
-                        if ($f_am >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $f_am . " </div>
-                                                <div style='margin: 0;'>x Funda Protectora Amarilla</div>
-                                            </div>";
-                        }
-
-                        if ($c_usb >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $c_usb . " </div>
-                                                <div style='margin: 0;'>x Cable USB</div>
-                                            </div>";
-                        }
-
-                        if ($c_rs232 >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $c_rs232 . " </div>
-                                                <div style='margin: 0;'>x Cable RS232</div>
-                                            </div>";
-                        }
-
-                        if ($impr >= 1) {
-                            $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                                                <div style='margin: 0 3px 0 0;'> " . $impr . " </div>
-                                                <div style='margin: 0;'>x impresora Térmica</div>
-                                            </div>";
-                        }
-
-        $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;margin-bottom: 40px;padding-bottom: 40px; border-bottom: 1px solid #999;'>
-                            <div style='width: 560px;display: inline-block;margin: 10px 0 5px 0;'>Observaciones</div>
-                            <div style='display: inline-block;margin: 0;text-align: justify;text-justify: inter-word;'> " . $message . " </div>
+                        <body style='font-family:Calibri, Lucida Grande, Arial, sans-serif;max-width:600px;margin:20px auto;'>
+                        <div style='width: 100%;max-width: 600px;text-align: center;margin:40px auto;'>
+                        <img src='http://www.demeqcom.ipage.com/webdemeq/img/formularios/logo_es.png' alt='Para tener una mejor experiencia habilite mostrar el contenido remoto' height='40px' style='font-size: 14px;font-style: italic; color: #ef7d2d;'>
                         </div>
-                    </body>
-                    </html>";
+                        <div style='background: #fff;padding:40px'>
+                        <h1 style='color:#000000;font-weight:bold;margin-top: 0;padding-top: 0;'>Su solicitud de cotizaci&oacute;n</h1>
+                        <p style='margin-top:0;margin-bottom:40px;'>Gracias ...En breve nos pondremos en contacto con usted para brindarle...</p>
+                        <div style='font-size: 24px;font-weight: 600;color:#ef7d2d;margin-bottom: 20px;'>
+                        Datos personales
+                        </div>
+                        <div style='color: #000;font-weight: 600;font-size: 18px;'>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                        </div>
+                        <div style='margin-bottom: 20px;'>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $name . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                        </div>
+                        <div style='color: #000;font-weight: 600;font-size: 18px;'>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Email</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>Tel&eacute;fono</div>
+                        </div>
+                        <div style='margin-bottom: 40px;padding-bottom: 40px; border-bottom: 1px solid #999;'>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $email . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $phone . " </div>
+                        </div>
+                        <div style='font-size: 24px;font-weight: 600;color:#ef7d2d;margin-bottom: 20px;'>
+                            Solicitud de cotizaci&oacuten
+                        </div>
+                        
+                        <div style='color: #000;font-weight: 600;font-size: 18px;'>
+                            <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Modelo/s</div>
+                        </div>";
+
+    if ($model_5B >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5B . " </div>
+                            <div style='margin: 0;'>x QS5 B</div>
+                        </div>";
+    }
+
+    if ($model_5E >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5E . " </div>
+                            <div style='margin: 0;'>x QS5 E</div>
+                        </div>";
+    }
+
+    if ($model_5DL >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5DL . " </div>
+                            <div style='margin: 0;'>x QS5 E</div>
+                        </div>";
+    }
+
+    if ($model_5DLE >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5DLE . " </div>
+                            <div style='margin: 0;'>x QS5 DLE</div>
+                        </div>";
+    }
+
+    if ($model_3B >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_3B . " </div>
+                            <div style='margin: 0;'>x QS3 B</div>
+                        </div>";
+    }
+
+    if ($model_3DL >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_3DL . " </div>
+                            <div style='margin: 0;'>x QS3 B</div>
+                        </div>";
+    }
+
+    if ($model_2S >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2S . " </div>
+                            <div style='margin: 0;'>x QS2 S</div>
+                        </div>";
+    }
+
+    if ($model_2V >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2V . " </div>
+                            <div style='margin: 0;'>x QS2 V</div>
+                        </div>";
+    }
+
+    if ($model_2DL >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2DL . " </div>
+                            <div style='margin: 0;'>x QS2 DL</div>
+                        </div>";
+    }
+
+    if ($model_2DLV >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2DLV . " </div>
+                            <div style='margin: 0;'>x QS2 DLV</div>
+                        </div>";
+    }
+            
+        $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;'>
+                            <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Accesorios</div>
+                        </div>";
+
+                            
+
+    if ($tr_212 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_212 . " </div>
+                            <div style='margin: 0;'>x Transductor 2MHz 12mm</div>
+                        </div>";
+    }
+
+    if ($tr_222 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_222 . " </div>
+                            <div style='margin: 0;'>x Transductor 2MHz 22mm</div>
+                        </div>";
+    }
+
+    if ($tr_5 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_5 . " </div>
+                            <div style='margin: 0;'>x Transductor 5MHz</div>
+                        </div>";
+    }
+
+    if ($tr_7 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_7 . " </div>
+                            <div style='margin: 0;'>x Transductor 7MHz</div>
+                        </div>";
+    }
+
+    if ($tr_5_eco2 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_5_eco2 . " </div>
+                            <div style='margin: 0;'>x Transductor 5MHz Hi-Damp</div>
+                        </div>";
+    }
+
+    if ($tr_at_350 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_at_350 . " </div>
+                            <div style='margin: 0;'>x Transductor Alta Temperatura 1</div>
+                        </div>";
+    }
+
+    if ($tr_at_150 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_at_150 . " </div>
+                            <div style='margin: 0;'>x Transductor Alta Temperatura 2</div>
+                        </div>";
+    }
+
+    if ($pa_6 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pa_6 . " </div>
+                            <div style='margin: 0;'>x Patrones Escalonados - 6 escalones</div>
+                        </div>";
+    }
+
+    if ($pa_4 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pa_4 . " </div>
+                            <div style='margin: 0;'>x Patrones Escalonados - 4 escalones</div>
+                        </div>";
+    }
+
+    if ($g_100 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $g_100 . " </div>
+                            <div style='margin: 0;'>x Gel Acoplante 100g</div>
+                        </div>";
+    }
+
+    if ($g_50 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $g_50 . " </div>
+                            <div style='margin: 0;'>x Gel Acoplante 50g</div>
+                        </div>";
+    }
+
+    if ($f_gr >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $f_gr . " </div>
+                            <div style='margin: 0;'>x Funda Protectora Gris</div>
+                        </div>";
+    }
+
+    if ($f_ro >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $f_ro . " </div>
+                            <div style='margin: 0;'>x Funda Protectora Roja</div>
+                        </div>";
+    }
+
+    if ($f_am >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $f_am . " </div>
+                            <div style='margin: 0;'>x Funda Protectora Amarilla</div>
+                        </div>";
+    }
+
+    if ($c_usb >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $c_usb . " </div>
+                            <div style='margin: 0;'>x Cable USB</div>
+                        </div>";
+    }
+
+    if ($c_rs232 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $c_rs232 . " </div>
+                            <div style='margin: 0;'>x Cable RS232</div>
+                        </div>";
+    }
+
+    if ($impr >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $impr . " </div>
+                            <div style='margin: 0;'>x impresora Térmica</div>
+                        </div>";
+    }
+
+        $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;'>
+                            <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Observaciones</div>
+                        </div>
+                        <div style='display: inline-block;margin: 0;text-align: justify;text-justify: inter-word;'> " . $message . " </div>
+
+                        <div style='margin-top: 80px;padding-top: 40px; border-top: 1px solid #999;'>
+                        <p style='color: #000;font-weight: 400;font-size: 18px;margin-bottom:0;font-size:20px;'>En breve le haremos llegar su cotización</p>
+                        <p style='color: #000;font-weight: 600;font-size: 18px;font-size:20px;'>Saludos, dmq</p>
+                        </div>
+                    </div>
+                    <div style='margin: 40px'>
+                        <div style='width: 100%;display: flex;align-items: center;'>
+                            <div style='display:flex;float: left;padding-right: 10px;'>
+                                <img src='http://www.demeqcom.ipage.com/webdemeq/img/formularios/logo_es.png' alt='Para tener una mejor experiencia habilite mostrar el contenido remoto' height='30px' style='font-size: 14px;font-style: italic; color: #ef7d2d;'>
+                            </div>
+                            <div style='display:flex;float: left;border-left: 1px solid #999;padding-left: 10px;font-size: 14px'>
+                                <p>Armenia 3878 (B1605CEJ) Munro Buenos Aires - Argentina
+                                <br>+54 (11) 4765 7678
+                                <br>infodemeq@demeq.com</p>
+                            </div>
+                        </div>
+                        <div style='display: block;font-size: 14px;margin-bottom: 40px;'>
+                            <p>Recibió este correo electrónico informativo para confirmar su solicitud de cotización en la web www.demeq.com...</p>
+                        </div>
+                        <div style='display: flex; justify-content: center;>
+                            <a href='#'>Seguinos en:</a>
+                            <a href='https://www.linkedin.com/company/demeq'><img src='http://demeqcom.ipage.com/emailimg/social-in.png' alt='LinkedIn' style='font-size: 12px; display: flex;padding:0 15px;width: 20px;'></a>
+                            <a href='https://www.facebook.com/demeq.dmq'><img src='http://demeqcom.ipage.com/emailimg/social-fb.png' alt='Facebook' style='font-size: 12px; display: flex;padding:0 15px;width: 20px;'></a>
+                            <a href='https://www.instagram.com/dmq_instruments/'><img src='http://demeqcom.ipage.com/emailimg/social-ig.png' alt='Instagram' style='font-size: 12px; display: flex;padding:0 15px;width: 20px;'></a>
+                            <a href='https://www.youtube.com/channel/UC_aDutY84Dx2TnJ9w_vwyAQ'><img src='http://demeqcom.ipage.com/emailimg/social-yt.png' alt='Youtube' style='font-size: 12px; display: flex;padding:0 15px;width: 20px;'></a>
+                        </div>
+                    </div>
+                </body>
+                </html>";
 
         # Datos para el mail de confirmación.
         $mail_cliente = $email;
         $email_subject_conf = "DMQ - Confirmación de su solicitud de cotización";
-        $headers_conf = "From: Demeq S.R.L";
-        $headers_conf .= "MIME-Version: 1.0\r\n";
-        $headers_conf .= "Content-Type: text/html; charset=\"UTF-8\"\r\n"; 
+        $headers_conf = "From: infodemeq@demeq.com" . "\r\n";
+        $headers_conf .= "MIME-Version: 1.0" . "\r\n";
+        $headers_conf .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
 
 
         # Encabezados de correo electrónico.
-        $headers = "From: $name $surname  <$email>";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html; charset=\"UTF-8\"\r\n";  
+        $headers = "From: $name $surname  <$email>" . "\r\n";
+        $headers .= "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
 
         # Envía el correo interno.
         $success = mail($mail_to, $email_subject, $content, $headers);

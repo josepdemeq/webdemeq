@@ -2234,6 +2234,13 @@
           margin-bottom: 40px;
       }
 
+      /*--- Cotización ---*/
+
+      #cotizado {
+        margin-top: 40px;   
+        z-index: 1;
+    }
+
 }
 
 
@@ -3490,6 +3497,24 @@
 
     #contacto .col-lg-6 {
         padding: 0 !important;
+    }
+
+    /*--- Cotización ---*/
+
+    .accesorio-input .col-md-1 {
+        margin-bottom: 10px;
+    } 
+
+    .accesorio-input .col-md-9 {
+        margin-bottom: 20px;
+    } 
+
+    .accesorio-input .col-md-2 {
+        margin-bottom: 20px;
+    } 
+
+    .datos-cont-cotiz {
+        padding: 0 10px;
     }
 }
 
