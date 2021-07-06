@@ -22,23 +22,25 @@
         $model_2V = !empty($_POST["val_QS2V"]) ? trim($_POST["val_QS2V"]) : NULL;
         $model_2DL = !empty($_POST["val_QS2DL"]) ? trim($_POST["val_QS2DL"]) : NULL;
         $model_2DLV = !empty($_POST["val_QS2DLV"]) ? trim($_POST["val_QS2DLV"]) : NULL;
-        $tr_212 = !empty($_POST["tr_2_12"]) ? trim($_POST["tr_2_12"]) : NULL;
-        $tr_222 = !empty($_POST["tr_2_22"]) ? trim($_POST["tr_2_22"]) : NULL;
-        $tr_5 = !empty($_POST["tr_5"]) ? trim($_POST["tr_5"]) : NULL;
-        $tr_7 = !empty($_POST["tr_7"]) ? trim($_POST["tr_7"]) : NULL; 
-        $tr_5_eco2 = !empty($_POST["tr_5_eco2"]) ? trim($_POST["tr_5_eco2"]) : NULL;
-        $tr_at_350 = !empty($_POST["tr_at_350"]) ? trim($_POST["tr_at_350"]) : NULL;
+        $tr_2_12 = !empty($_POST["tr_2_12"]) ? trim($_POST["tr_2_12"]) : NULL;
+        $tr_2_22 = !empty($_POST["tr_2_22"]) ? trim($_POST["tr_2_22"]) : NULL;
+        $tr_5_90 = !empty($_POST["tr_5_90"]) ? trim($_POST["tr_5_90"]) : NULL;
+        $tr_5m_r = !empty($_POST["tr_5m_r"]) ? trim($_POST["tr_5m_r"]) : NULL;
+        $tr_7_90 = !empty($_POST["tr_7_90"]) ? trim($_POST["tr_7_90"]) : NULL; 
         $tr_at_150 = !empty($_POST["tr_at_150"]) ? trim($_POST["tr_at_150"]) : NULL;
-        $pa_6 = !empty($_POST["pa_6"]) ? trim($_POST["pa_6"]) : NULL;
-        $pa_4 = !empty($_POST["pa_4"]) ? trim($_POST["pa_4"]) : NULL;
-        $g_100 = !empty($_POST["g_100"]) ? trim($_POST["g_100"]) : NULL;
+        $tr_at_350 = !empty($_POST["tr_at_350"]) ? trim($_POST["tr_at_350"]) : NULL;
+        $tr_5_eco2 = !empty($_POST["tr_5_eco2"]) ? trim($_POST["tr_5_eco2"]) : NULL;
+        $tr_5_sk = !empty($_POST["tr_5_sk"]) ? trim($_POST["tr_5_sk"]) : NULL;
+        $tr_5_csk = !empty($_POST["tr_5_csk"]) ? trim($_POST["tr_5_csk"]) : NULL;
         $g_50 = !empty($_POST["g_50"]) ? trim($_POST["g_50"]) : NULL;
-        $f_gr = !empty($_POST["f_gr"]) ? trim($_POST["f_gr"]) : NULL;
-        $f_ro = !empty($_POST["f_ro"]) ? trim($_POST["f_ro"]) : NULL;
+        $g_100 = !empty($_POST["g_100"]) ? trim($_POST["g_100"]) : NULL;
+        $oaa_1 = !empty($_POST["oaa_1"]) ? trim($_POST["oaa_1"]) : NULL;
+        $oaa_2 = !empty($_POST["oaa_2"]) ? trim($_POST["oaa_2"]) : NULL;
+        $pa_5 = !empty($_POST["pa_5"]) ? trim($_POST["pa_5"]) : NULL;
+        $pa_10 = !empty($_POST["pa_10"]) ? trim($_POST["pa_10"]) : NULL;
+        $pa_5_oaa = !empty($_POST["pa_5_oaa"]) ? trim($_POST["pa_5_oaa"]) : NULL;
+        $pa_10_oaa = !empty($_POST["pa_10_oaa"]) ? trim($_POST["pa_10_oaa"]) : NULL;
         $f_am = !empty($_POST["f_am"]) ? trim($_POST["f_am"]) : NULL; 
-        $c_usb = !empty($_POST["c_usb"]) ? trim($_POST["c_usb"]) : NULL; 
-        $c_rs232 = !empty($_POST["c_rs232"]) ? trim($_POST["c_rs232"]) : NULL; 
-        $impr = !empty($_POST["impr"]) ? trim($_POST["impr"]) : NULL;
         
         if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($company)) {
             # Establecer un código de respuesta y salida.
@@ -158,122 +160,136 @@
 
                         
 
-                        if ($tr_212 >= 1) {
+                        if ($tr_2_12 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_212 . " </div>
-                                            <div style='margin: 0;'>x Transductor 2MHz 12mm</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_12 . " </div>
+                                            <div style='margin: 0;'>x QSS201: Transductor de 2MHz Ø12mm. 90°</div>
                                             </div>";
                         }
 
-                        if ($tr_222 >= 1) {
+                        if ($tr_2_22 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_222 . " </div>
-                                            <div style='margin: 0;'>x Transductor 2MHz 22mm</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_22 . " </div>
+                                            <div style='margin: 0;'>x QSS202: Transductor de 2MHz Ø22mm. 90°</div>
                                             </div>";
                         }
 
-                        if ($tr_5 >= 1) {
+                        if ($tr_5_90 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5 . " </div>
-                                            <div style='margin: 0;'>x Transductor 5MHz</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_90 . " </div>
+                                            <div style='margin: 0;'>x QSS501: Transductor de 5MHz Ø10mm. 90°</div>
                                             </div>";
                         }
 
-                        if ($tr_7 >= 1) {
+                        if ($tr_5m_r >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_7 . " </div>
-                                            <div style='margin: 0;'>x Transductor 7MHz</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5m_r . " </div>
+                                            <div style='margin: 0;'>x QSS511: Transductor de 5MHz Ø10mm. Recto</div>
                                             </div>";
                         }
 
-                        if ($tr_5_eco2 >= 1) {
+                        if ($tr_7_90 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_eco2 . " </div>
-                                            <div style='margin: 0;'>x Transductor 5MHz Hi-Damp</div>
-                                            </div>";
-                        }
-
-                        if ($tr_at_350 >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_350 . " </div>
-                                            <div style='margin: 0;'>x Transductor Alta Temperatura 1</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_7_90 . " </div>
+                                            <div style='margin: 0;'>x QSS701: Transductor de 7MHz Ø6mm. 90°</div>
                                             </div>";
                         }
 
                         if ($tr_at_150 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_150 . " </div>
-                                            <div style='margin: 0;'>x Transductor Alta Temperatura 2</div>
+                                            <div style='margin: 0;'>x QSS518: Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
                                             </div>";
                         }
 
-                        if ($pa_6 >= 1) {
+                        if ($tr_at_350 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_6 . " </div>
-                                            <div style='margin: 0;'>x Patrones Escalonados - 6 escalones</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_350 . " </div>
+                                            <div style='margin: 0;'>x QSS519: Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
                                             </div>";
                         }
 
-                        if ($pa_4 >= 1) {
+                        if ($tr_5_eco2 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_4 . " </div>
-                                            <div style='margin: 0;'>x Patrones Escalonados - 4 escalones</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_eco2 . " </div>
+                                            <div style='margin: 0;'>x QSS502: Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
                                             </div>";
                         }
 
-                        if ($g_100 >= 1) {
+                        if ($tr_5_sk >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_100  . " </div>
-                                            <div style='margin: 0;'>x Gel Acoplante 100g</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_sk . " </div>
+                                            <div style='margin: 0;'>x QSS531: Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+                                            </div>";
+                        }
+
+                        if ($tr_5_csk >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_csk . " </div>
+                                            <div style='margin: 0;'>x QSC531: Cable con 2 conectores tipo LEMO en ambas puntas (para transductor QSS531)</div>
                                             </div>";
                         }
 
                         if ($g_50 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_50  . " </div>
-                                            <div style='margin: 0;'>x Gel Acoplante 50g</div>
+                                            <div style='margin: 0;'>x QSG005: Botella plástica con pico vertedor de 50cc</div>
                                             </div>";
                         }
 
-                        if ($f_gr >= 1) {
+                        if ($g_100 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_gr  . " </div>
-                                            <div style='margin: 0;'>x Funda Protectora Gris</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_100  . " </div>
+                                            <div style='margin: 0;'>x QSG010: Botella plástica con pico vertedor de 100cc</div>
                                             </div>";
                         }
 
-                        if ($f_ro >= 1) {
+                        if ($oaa_1 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_ro  . " </div>
-                                            <div style='margin: 0;'>x Funda Protectora Roja</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $oaa_1  . " </div>
+                                            <div style='margin: 0;'>x QSD001: Certificado de calibración QS2, QS3, QS5 B, QS5 DL</div>
+                                            </div>";
+                        }
+
+                        if ($oaa_2 >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $oaa_2  . " </div>
+                                            <div style='margin: 0;'>x QSD002: Certificado de calibración QS5 E, QS5 DLE</div>
+                                            </div>";
+                        }
+
+                        if ($pa_5 >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5 . " </div>
+                                            <div style='margin: 0;'>x QSR005: Patrón escalonado de 5 pasos en acero al carbono</div>
+                                            </div>";
+                        }
+
+                        if ($pa_10 >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10 . " </div>
+                                            <div style='margin: 0;'>x QSR010: Patrón escalonado de 10 pasos en acero al carbono</div>
+                                            </div>";
+                        }
+
+                        if ($pa_5_oaa >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5_oaa . " </div>
+                                            <div style='margin: 0;'>x QSD005: Certificacion OAA para patrón escalonado de 5 pasos</div>
+                                            </div>";
+                        }
+
+                        if ($pa_10_oaa >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10_oaa . " </div>
+                                            <div style='margin: 0;'>x QSD010: Certificacion OAA para patrón escalonado de 10 pasos</div>
                                             </div>";
                         }
 
                         if ($f_am >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_am  . " </div>
-                                            <div style='margin: 0;'>x Funda Protectora Amarilla</div>
-                                            </div>";
-                        }
-
-                        if ($c_usb >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $c_usb  . " </div>
-                                            <div style='margin: 0;'>x Cable USB</div>
-                                            </div>";
-                        }
-
-                        if ($c_rs232 >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $c_rs232  . " </div>
-                                            <div style='margin: 0;'>x Cable RS232</div>
-                                            </div>";
-                        }
-
-                        if ($impr >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $impr  . " </div>
-                                            <div style='margin: 0;'>x impresora Térmica</div>
+                                            <div style='margin: 0;'>x QSP001: Funda Protectora Amarilla</div>
                                             </div>";
                         }
 
@@ -403,94 +419,129 @@
 
                             
 
-    if ($tr_212 >= 1) {
+    if ($tr_2_12 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_212 . " </div>
-                            <div style='margin: 0;'>x Transductor 2MHz 12mm</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_2_12 . " </div>
+                            <div style='margin: 0;'>x Transductor de 2MHz Ø12mm. 90°</div>
                         </div>";
     }
 
-    if ($tr_222 >= 1) {
+    if ($tr_2_22 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_222 . " </div>
-                            <div style='margin: 0;'>x Transductor 2MHz 22mm</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_2_22 . " </div>
+                            <div style='margin: 0;'>x Transductor de 2MHz Ø22mm. 90°</div>
                         </div>";
     }
 
-    if ($tr_5 >= 1) {
+    if ($tr_5_90 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5 . " </div>
-                            <div style='margin: 0;'>x Transductor 5MHz</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_5_90 . " </div>
+                            <div style='margin: 0;'>x Transductor de 5MHz Ø10mm. 90°</div>
                         </div>";
     }
 
-    if ($tr_7 >= 1) {
+    if ($tr_5m_r >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_7 . " </div>
-                            <div style='margin: 0;'>x Transductor 7MHz</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_5m_r . " </div>
+                            <div style='margin: 0;'>x Transductor de 5MHz Ø10mm. Recto</div>
                         </div>";
     }
 
-    if ($tr_5_eco2 >= 1) {
+    if ($tr_7_90 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_eco2 . " </div>
-                            <div style='margin: 0;'>x Transductor 5MHz Hi-Damp</div>
-                        </div>";
-    }
-
-    if ($tr_at_350 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_at_350 . " </div>
-                            <div style='margin: 0;'>x Transductor Alta Temperatura 1</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_7_90 . " </div>
+                            <div style='margin: 0;'>x Transductor de 7MHz Ø6mm. 90°</div>
                         </div>";
     }
 
     if ($tr_at_150 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $tr_at_150 . " </div>
-                            <div style='margin: 0;'>x Transductor Alta Temperatura 2</div>
+                            <div style='margin: 0;'>x Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
                         </div>";
     }
 
-    if ($pa_6 >= 1) {
+    if ($tr_at_350 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_6 . " </div>
-                            <div style='margin: 0;'>x Patrones Escalonados - 6 escalones</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_at_350 . " </div>
+                            <div style='margin: 0;'>x Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
                         </div>";
     }
 
-    if ($pa_4 >= 1) {
+    if ($tr_5_eco2 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_4 . " </div>
-                            <div style='margin: 0;'>x Patrones Escalonados - 4 escalones</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_5_eco2 . " </div>
+                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
                         </div>";
     }
 
-    if ($g_100 >= 1) {
+    if ($tr_5_sk >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $g_100 . " </div>
-                            <div style='margin: 0;'>x Gel Acoplante 100g</div>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_5_sk . " </div>
+                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+                        </div>";
+    }
+
+    if ($tr_5_csk >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $tr_5_csk . " </div>
+                            <div style='margin: 0;'>x Cable con 2 conectores tipo LEMO en ambas puntas (compatible con transductor similar Krautkramer</div>
                         </div>";
     }
 
     if ($g_50 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $g_50 . " </div>
-                            <div style='margin: 0;'>x Gel Acoplante 50g</div>
+                            <div style='margin: 0;'>x Botella plástica con pico vertedor de 50cc</div>
                         </div>";
     }
 
-    if ($f_gr >= 1) {
+    if ($g_100 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $f_gr . " </div>
-                            <div style='margin: 0;'>x Funda Protectora Gris</div>
+                            <div style='margin: 0 3px 0 0;'> " . $g_100 . " </div>
+                            <div style='margin: 0;'>x Gel Botella plástica con pico vertedor de 100cc</div>
                         </div>";
     }
 
-    if ($f_ro >= 1) {
+    if ($oaa_1 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $f_ro . " </div>
-                            <div style='margin: 0;'>x Funda Protectora Roja</div>
+                            <div style='margin: 0 3px 0 0;'> " . $oaa_1 . " </div>
+                            <div style='margin: 0;'>x Certificado de calibración QS2, QS3, QS5 B, QS5 DL</div>
+                        </div>";
+    }
+
+    if ($oaa_2 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $oaa_2 . " </div>
+                            <div style='margin: 0;'>x Certificado de calibración QS5 E, QS5 DLE</div>
+                        </div>";
+    }
+
+    if ($pa_5 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pa_5 . " </div>
+                            <div style='margin: 0;'>x Patrón escalonado de 5 pasos en acero al carbono</div>
+                        </div>";
+    }
+
+    if ($pa_10 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pa_10 . " </div>
+                            <div style='margin: 0;'>x Patrón escalonado de 10 pasos en acero al carbono</div>
+                        </div>";
+    }
+
+    if ($pa_5_oaa >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pa_5_oaa . " </div>
+                            <div style='margin: 0;'>x Certificacion OAA para patrón escalonado de 5 pasos</div>
+                        </div>";
+    }
+
+    if ($pa_10_oaa >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pa_10_oaa . " </div>
+                            <div style='margin: 0;'>x Certificacion OAA para patrón escalonado de 10 pasos</div>
                         </div>";
     }
 
@@ -498,27 +549,6 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $f_am . " </div>
                             <div style='margin: 0;'>x Funda Protectora Amarilla</div>
-                        </div>";
-    }
-
-    if ($c_usb >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $c_usb . " </div>
-                            <div style='margin: 0;'>x Cable USB</div>
-                        </div>";
-    }
-
-    if ($c_rs232 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $c_rs232 . " </div>
-                            <div style='margin: 0;'>x Cable RS232</div>
-                        </div>";
-    }
-
-    if ($impr >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $impr . " </div>
-                            <div style='margin: 0;'>x impresora Térmica</div>
                         </div>";
     }
 

@@ -3575,8 +3575,8 @@ button:focus {
 	font-size: 18px;
   }
  #models-accordion .card .card-header .btn-header-link {
-	
 	font-size: 22px;
+	letter-spacing: 2px;
   }
   
   #accesorios #acces-accordion .card .card-header .btn-header-link:after, #models-accordion .card .card-header .btn-header-link:after  {
@@ -3597,6 +3597,7 @@ button:focus {
   }
 #models-accordion .card .card-header .btn-header-link.collapsed {
 	font-size: 22px;
+	letter-spacing: 2px;
   }
   
   #accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
@@ -3630,6 +3631,7 @@ button:focus {
 .accesorio-input h6 {
 	font-weight: 600;
 	font-size: 18px;
+	margin-bottom: 0;
 }
 
 #accesorios span, #models-accordion span {
@@ -3704,6 +3706,7 @@ button:focus {
 	background: #202020;
 	padding: 20px;
 	position: sticky;
+	margin-top: 215px;
 }
 
 #cotizado.sticky-top {
@@ -3734,8 +3737,8 @@ button:focus {
 }
 
 #cotizado .modelo-cotizado h6.demeq {
-	font-size: 23px;
-    margin-top: -4px;
+	font-size: 22px;
+    margin-top: -2px;
 }
 
 

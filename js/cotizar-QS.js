@@ -461,7 +461,7 @@ $(':checkbox').change(function(){
 
 //--------- Aumentar o disminuir número
 
-//----- Transductor 2HHz 12mm
+//----- Transductor de 2MHz Ø12mm. 90°
 $('#plus-t2m12').click(function add() {
   var $qtde = $(".cant-t2m12");
   var a = $qtde.val();
@@ -503,7 +503,7 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Transductor 2HHz 2200
+//----- Transductor de 2MHz Ø22mm. 90°
 $('#plus-t2m22').click(function add() {
   var $qtde = $(".cant-t2m22");
   var a = $qtde.val();
@@ -545,47 +545,91 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Transductor 5HHz
-$('#plus-t5m').click(function add() {
-  var $qtde = $(".cant-t5m");
+//----- Transductor de 5MHz Ø10mm. 90°
+$('#plus-t5m90').click(function add() {
+  var $qtde = $(".cant-t5m90");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-t5m").attr("disabled", true);
+      $("#plus-t5m90").attr("disabled", true);
     };
-      $("#minus-t5m").attr("disabled", !a);
+      $("#minus-t5m90").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-t5m").attr("disabled", !$(".cant-t5m").val());
+$("#minus-t5m90").attr("disabled", !$(".cant-t5m90").val());
 
-$('#minus-t5m').click(function minust() {
-  var $qtde = $(".cant-t5m");
+$('#minus-t5m90').click(function minust() {
+  var $qtde = $(".cant-t5m90");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-t5m").attr("disabled", true);
+    $("#minus-t5m90").attr("disabled", true);
   }
-  $("#plus-t5m").attr("disabled", !b);
+  $("#plus-t5m90").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-t5m").val());
+    var price = parseFloat($(".cant-t5m90").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-t5m").val(total);
+    $("#total-t5m90").val(total);
   }
 
   
 // On the click of an input, update the price
   $(document).on("click", "input", updatePrice);
 });
+
+
+//----- Transductor de 5MHz Ø10mm. Recto
+$('#plus-t5mr').click(function add() {
+  var $qtde = $(".cant-t5mr");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-t5mr").attr("disabled", true);
+    };
+      $("#minus-t5mr").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-t5mr").attr("disabled", !$(".cant-t5mr").val());
+
+$('#minus-t5mr').click(function minust() {
+  var $qtde = $(".cant-t5mr");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-t5mr").attr("disabled", true);
+  }
+  $("#plus-t5mr").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-t5mr").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-t5mr").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
 
 //----- Transductor 7HHz
 $('#plus-t7m').click(function add() {
@@ -629,7 +673,94 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Transductor Hi-Damp
+
+//----- Transductor de 5MHz alta temp -10 a 150°C. Recto
+$('#plus-a150').click(function add() {
+  var $qtde = $(".cant-a150");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-a150").attr("disabled", true);
+    };
+      $("#minus-a150").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-a150").attr("disabled", !$(".cant-a150").val());
+
+$('#minus-a150').click(function minust() {
+  var $qtde = $(".cant-a150");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-a150").attr("disabled", true);
+  }
+  $("#plus-a150").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-a150").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-a150").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Transductor de 5MHz alta temp -10 a 350°C. Recto
+$('#plus-a350').click(function add() {
+  var $qtde = $(".cant-a350");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-a350").attr("disabled", true);
+    };
+      $("#minus-a350").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-a350").attr("disabled", !$(".cant-a350").val());
+
+$('#minus-a350').click(function minust() {
+  var $qtde = $(".cant-a350");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-a350").attr("disabled", true);
+  }
+  $("#plus-a350").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-a350").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-a350").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°
 $('#plus-thd').click(function add() {
   var $qtde = $(".cant-thd");
   var a = $qtde.val();
@@ -672,167 +803,41 @@ $(document).ready(function() {
 });
 
 
-//----- Transductor Alta Temperatura 350º
-$('#plus-a350').click(function add() {
-  var $qtde = $(".cant-a350");
+//----- Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto
+$('#plus-tsk').click(function add() {
+  var $qtde = $(".cant-tsk");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-a350").attr("disabled", true);
+      $("#plus-tsk").attr("disabled", true);
     };
-      $("#minus-a350").attr("disabled", !a);
+      $("#minus-tsk").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-a350").attr("disabled", !$(".cant-a350").val());
+$("#minus-tsk").attr("disabled", !$(".cant-tsk").val());
 
-$('#minus-a350').click(function minust() {
-  var $qtde = $(".cant-a350");
+$('#minus-tsk').click(function minust() {
+  var $qtde = $(".cant-tsk");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-a350").attr("disabled", true);
+    $("#minus-tsk").attr("disabled", true);
   }
-  $("#plus-a350").attr("disabled", !b);
+  $("#plus-tsk").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-a350").val());
+    var price = parseFloat($(".cant-tsk").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-a350").val(total);
-  }
-
-  
-// On the click of an input, update the price
-  $(document).on("click", "input", updatePrice);
-});
-
-//----- Transductor Alta Temperatura 150º
-$('#plus-a150').click(function add() {
-  var $qtde = $(".cant-a150");
-  var a = $qtde.val();
-  if (a <= 8) {
-      a++;
-      $qtde.val(a);
-    } else {
-      $("#plus-a150").attr("disabled", true);
-    };
-      $("#minus-a150").attr("disabled", !a);
-      $qtde.val(a);
-});
-$("#minus-a150").attr("disabled", !$(".cant-a150").val());
-
-$('#minus-a150').click(function minust() {
-  var $qtde = $(".cant-a150");
-  var b = $qtde.val();
-  if (b >= 2) {
-    b--;
-    $qtde.val(b);
-  } else {
-    $("#minus-a150").attr("disabled", true);
-  }
-  $("#plus-a150").attr("disabled", !b);
-  $qtde.val(b);
-});
-
-/* On change */
-$(document).ready(function() {
-  function updatePrice() {
-    var price = parseFloat($(".cant-a150").val());
-    var total = price;
-    var total = total.toFixed(0);
-    $("#total-a150").val(total);
-  }
-
-  
-// On the click of an input, update the price
-  $(document).on("click", "input", updatePrice);
-});
-
-//----- Patrones escalonados 6
-$('#plus-pa6').click(function add() {
-  var $qtde = $(".cant-pa6");
-  var a = $qtde.val();
-  if (a <= 8) {
-      a++;
-      $qtde.val(a);
-    } else {
-      $("#plus-pa6").attr("disabled", true);
-    };
-      $("#minus-pa6").attr("disabled", !a);
-      $qtde.val(a);
-});
-$("#minus-pa6").attr("disabled", !$(".cant-pa6").val());
-
-$('#minus-pa6').click(function minust() {
-  var $qtde = $(".cant-pa6");
-  var b = $qtde.val();
-  if (b >= 2) {
-    b--;
-    $qtde.val(b);
-  } else {
-    $("#minus-pa6").attr("disabled", true);
-  }
-  $("#plus-pa6").attr("disabled", !b);
-  $qtde.val(b);
-});
-
-/* On change */
-$(document).ready(function() {
-  function updatePrice() {
-    var price = parseFloat($(".cant-pa6").val());
-    var total = price;
-    var total = total.toFixed(0);
-    $("#total-pa6").val(total);
-  }
-
-  
-// On the click of an input, update the price
-  $(document).on("click", "input", updatePrice);
-});
-
-//----- Patrones escalonados 4
-$('#plus-pa4').click(function add() {
-  var $qtde = $(".cant-pa4");
-  var a = $qtde.val();
-  if (a <= 8) {
-      a++;
-      $qtde.val(a);
-    } else {
-      $("#plus-pa4").attr("disabled", true);
-    };
-      $("#minus-pa4").attr("disabled", !a);
-      $qtde.val(a);
-});
-$("#minus-pa4").attr("disabled", !$(".cant-pa4").val());
-
-$('#minus-pa4').click(function minust() {
-  var $qtde = $(".cant-pa4");
-  var b = $qtde.val();
-  if (b >= 2) {
-    b--;
-    $qtde.val(b);
-  } else {
-    $("#minus-pa4").attr("disabled", true);
-  }
-  $("#plus-pa4").attr("disabled", !b);
-  $qtde.val(b);
-});
-
-/* On change */
-$(document).ready(function() {
-  function updatePrice() {
-    var price = parseFloat($(".cant-pa4").val());
-    var total = price;
-    var total = total.toFixed(0);
-    $("#total-pa4").val(total);
+    $("#total-tsk").val(total);
   }
 
   
@@ -841,7 +846,93 @@ $(document).ready(function() {
 });
 
 
-//----- Gel Acoplante 100g
+//----- Cable con 2 conectores tipo LEMO en ambas puntas.
+$('#plus-csk').click(function add() {
+  var $qtde = $(".cant-csk");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-csk").attr("disabled", true);
+    };
+      $("#minus-csk").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-csk").attr("disabled", !$(".cant-csk").val());
+
+$('#minus-csk').click(function minust() {
+  var $qtde = $(".cant-csk");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-csk").attr("disabled", true);
+  }
+  $("#plus-csk").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-csk").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-csk").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Botella plástica con pico vertedor de 50cc
+$('#plus-g50').click(function add() {
+  var $qtde = $(".cant-g50");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-g50").attr("disabled", true);
+    };
+      $("#minus-g50").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-g50").attr("disabled", !$(".cant-g50").val());
+
+$('#minus-g50').click(function minust() {
+  var $qtde = $(".cant-g50");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-g50").attr("disabled", true);
+  }
+  $("#plus-g50").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-g50").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-g50").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Botella plástica con pico vertedor de 100cc
 $('#plus-g100').click(function add() {
   var $qtde = $(".cant-g100");
   var a = $qtde.val();
@@ -884,83 +975,41 @@ $(document).ready(function() {
 });
 
 
-//----- Gel Acoplante 50g
-$('#plus-g50').click(function add() {
-  var $qtde = $(".cant-g50");
+//----- Certificado de calibración QS2, QS3, QS5 B, QS5 DL
+$('#plus-oaa1').click(function add() {
+  var $qtde = $(".cant-oaa1");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-g50").attr("disabled", true);
+      $("#plus-oaa1").attr("disabled", true);
     };
-      $("#minus-g50").attr("disabled", !a);
+      $("#minus-oaa1").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-g50").attr("disabled", !$(".cant-g50").val());
+$("#minus-oaa1").attr("disabled", !$(".cant-oaa1").val());
 
-$('#minus-g50').click(function minust() {
-  var $qtde = $(".cant-g50");
+$('#minus-oaa1').click(function minust() {
+  var $qtde = $(".cant-oaa1");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-g50").attr("disabled", true);
+    $("#minus-oaa1").attr("disabled", true);
   }
-  $("#plus-g50").attr("disabled", !b);
+  $("#plus-oaa1").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-g50").val());
+    var price = parseFloat($(".cant-oaa1").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-g50").val(total);
-  }
-
-  
-// On the click of an input, update the price
-  $(document).on("click", "input", updatePrice);
-});
-
-//----- Funda gris
-$('#plus-fgr').click(function add() {
-  var $qtde = $(".cant-fgr");
-  var a = $qtde.val();
-  if (a <= 8) {
-      a++;
-      $qtde.val(a);
-    } else {
-      $("#plus-fgr").attr("disabled", true);
-    };
-      $("#minus-fgr").attr("disabled", !a);
-      $qtde.val(a);
-});
-$("#minus-fgr").attr("disabled", !$(".cant-fgr").val());
-
-$('#minus-fgr').click(function minust() {
-  var $qtde = $(".cant-fgr");
-  var b = $qtde.val();
-  if (b >= 2) {
-    b--;
-    $qtde.val(b);
-  } else {
-    $("#minus-fgr").attr("disabled", true);
-  }
-  $("#plus-fgr").attr("disabled", !b);
-  $qtde.val(b);
-});
-
-/* On change */
-$(document).ready(function() {
-  function updatePrice() {
-    var price = parseFloat($(".cant-fgr").val());
-    var total = price;
-    var total = total.toFixed(0);
-    $("#total-fgr").val(total);
+    $("#total-oaa1").val(total);
   }
 
   
@@ -969,41 +1018,41 @@ $(document).ready(function() {
 });
 
 
-//----- Funda roja
-$('#plus-fro').click(function add() {
-  var $qtde = $(".cant-fro");
+//----- Certificado de calibración QS5 E, QS5 DLE
+$('#plus-oaa2').click(function add() {
+  var $qtde = $(".cant-oaa2");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-fro").attr("disabled", true);
+      $("#plus-oaa2").attr("disabled", true);
     };
-      $("#minus-fro").attr("disabled", !a);
+      $("#minus-oaa2").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-fro").attr("disabled", !$(".cant-fro").val());
+$("#minus-oaa2").attr("disabled", !$(".cant-oaa2").val());
 
-$('#minus-fro').click(function minust() {
-  var $qtde = $(".cant-fro");
+$('#minus-oaa2').click(function minust() {
+  var $qtde = $(".cant-oaa2");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-fro").attr("disabled", true);
+    $("#minus-oaa2").attr("disabled", true);
   }
-  $("#plus-fro").attr("disabled", !b);
+  $("#plus-oaa2").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-fro").val());
+    var price = parseFloat($(".cant-oaa2").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-fro").val(total);
+    $("#total-oaa2").val(total);
   }
 
   
@@ -1012,7 +1061,177 @@ $(document).ready(function() {
 });
 
 
-//----- Funda amarilla
+//----- Patrón escalonado de 5 pasos en acero al carbono
+$('#plus-pa5').click(function add() {
+  var $qtde = $(".cant-pa5");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pa5").attr("disabled", true);
+    };
+      $("#minus-pa5").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pa5").attr("disabled", !$(".cant-pa5").val());
+
+$('#minus-pa5').click(function minust() {
+  var $qtde = $(".cant-pa5");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pa5").attr("disabled", true);
+  }
+  $("#plus-pa5").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pa5").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pa5").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Patrón escalonado de 10 pasos en acero al carbono
+$('#plus-pa10').click(function add() {
+  var $qtde = $(".cant-pa10");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pa10").attr("disabled", true);
+    };
+      $("#minus-pa10").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pa10").attr("disabled", !$(".cant-pa10").val());
+
+$('#minus-pa10').click(function minust() {
+  var $qtde = $(".cant-pa10");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pa10").attr("disabled", true);
+  }
+  $("#plus-pa10").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pa10").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pa10").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Certificacion OAA para patrón escalonado de 5 pasos
+$('#plus-pa5oaa').click(function add() {
+  var $qtde = $(".cant-pa5oaa");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pa5oaa").attr("disabled", true);
+    };
+      $("#minus-pa5oaa").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pa5oaa").attr("disabled", !$(".cant-pa5oaa").val());
+
+$('#minus-pa5oaa').click(function minust() {
+  var $qtde = $(".cant-pa5oaa");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pa5oaa").attr("disabled", true);
+  }
+  $("#plus-pa5oaa").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pa5oaa").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pa5oaa").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Certificacion OAA para patrón escalonado de 10 pasos
+$('#plus-pa10oaa').click(function add() {
+  var $qtde = $(".cant-pa10oaa");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pa10oaa").attr("disabled", true);
+    };
+      $("#minus-pa10oaa").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pa10oaa").attr("disabled", !$(".cant-pa10oaa").val());
+
+$('#minus-pa10oaa').click(function minust() {
+  var $qtde = $(".cant-pa10oaa");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pa10oaa").attr("disabled", true);
+  }
+  $("#plus-pa10oaa").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pa10").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pa10").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Funda protectora de silicona para QS2, QS3, QS5 amarilla
 $('#plus-fam').click(function add() {
   var $qtde = $(".cant-fam");
   var a = $qtde.val();
@@ -1054,133 +1273,6 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-
-
-//----- USB
-$('#plus-usb').click(function add() {
-    var $qtde = $(".cant-usb");
-    var a = $qtde.val();
-    if (a <= 8) {
-        a++;
-        $qtde.val(a);
-      } else {
-        $("#plus-usb").attr("disabled", true);
-      };
-        $("#minus-usb").attr("disabled", !a);
-        $qtde.val(a);
-  });
-  $("#minus-usb").attr("disabled", !$(".cant-usb").val());
-  
-  $('#minus-usb').click(function minust() {
-    var $qtde = $(".cant-usb");
-    var b = $qtde.val();
-    if (b >= 2) {
-      b--;
-      $qtde.val(b);
-    } else {
-      $("#minus-usb").attr("disabled", true);
-    }
-    $("#plus-usb").attr("disabled", !b);
-    $qtde.val(b);
-  });
-  
-  /* On change */
-  $(document).ready(function() {
-    function updatePrice() {
-      var price = parseFloat($(".cant-usb").val());
-      var total = price;
-      var total = total.toFixed(0);
-      $("#total-usb").val(total);
-    }
-
-    
-// On the click of an input, update the price
-    $(document).on("click", "input", updatePrice);
-  });
-
-//----- RS232
-$('#plus-rs').click(function add() {
-    var $qtde = $(".cant-rs");
-    var a = $qtde.val();
-    if (a <= 8) {
-        a++;
-        $qtde.val(a);
-      } else {
-        $("#plus-rs").attr("disabled", true);
-      };
-        $("#minus-rs").attr("disabled", !a);
-        $qtde.val(a);
-  });
-  $("#minus-rs").attr("disabled", !$(".cant-rs").val());
-  
-  $('#minus-rs').click(function minust() {
-    var $qtde = $(".cant-rs");
-    var b = $qtde.val();
-    if (b >= 2) {
-      b--;
-      $qtde.val(b);
-    } else {
-      $("#minus-rs").attr("disabled", true);
-    }
-    $("#plus-rs").attr("disabled", !b);
-    $qtde.val(b);
-  });
-  
-  /* On change */
-  $(document).ready(function() {
-    function updatePrice() {
-      var price = parseFloat($(".cant-rs").val());
-      var total = price;
-      var total = total.toFixed(0);
-      $("#total-rs").val(total);
-    }
-
-    
-// On the click of an input, update the price
-    $(document).on("click", "input", updatePrice);
-  });
-
-//----- Impresora
-$('#plus-imp').click(function add() {
-    var $qtde = $(".cant-imp");
-    var a = $qtde.val();
-    if (a <= 8) {
-        a++;
-        $qtde.val(a);
-      } else {
-        $("#plus-imp").attr("disabled", true);
-      };
-        $("#minus-imp").attr("disabled", !a);
-        $qtde.val(a);
-  });
-  $("#minus-imp").attr("disabled", !$(".cant-imp").val());
-  
-  $('#minus-imp').click(function minust() {
-    var $qtde = $(".cant-imp");
-    var b = $qtde.val();
-    if (b >= 2) {
-      b--;
-      $qtde.val(b);
-    } else {
-      $("#minus-imp").attr("disabled", true);
-    }
-    $("#plus-imp").attr("disabled", !b);
-    $qtde.val(b);
-  });
-  
-  /* On change */
-  $(document).ready(function() {
-    function updatePrice() {
-      var price = parseFloat($(".cant-imp").val());
-      var total = price;
-      var total = total.toFixed(0);
-      $("#total-imp").val(total);
-    }
-
-    
-// On the click of an input, update the price
-    $(document).on("click", "input", updatePrice);
-  });
 
 
 //--------------- Filtrar accessorios por modelo compatible

@@ -196,10 +196,11 @@
     </section>
     <main id="form-cotizacion">
       <section class="container wow slideIn" data-wow-delay="0.2s">
-        <h5 class="mt-5 mb-5 txt-qh">Seleccione los modelos a cotizar</h5>
         <form id="form1" class="contact__form" method="post" action="../../formularios/cotizacion-QH.php">
           <div class="row">
             <div class="col-lg-8">
+              <h5 class="mt-5 txt-qh">Seleccione los modelos a cotizar</h5>
+              <p class="mb-5">Nuestros equipos se entregan listos para usar presentados en un maletín de alto impacto. En el recuadro <strong class="italic">Su solicitud de cotización</strong> puede ver todo lo que se incluye con el modelo.</p>
               <div class="accordion" id="models-accordion">
                 <div class="card">
                     <div class="card-header" id="modelhead1">
@@ -218,7 +219,7 @@
                             </div>
                             <div class="col-md-9">
                               <h6 class="demeq">QH7 L</h6>
-                              <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                              <p>Heavy Duty + LEEB (Rebote) + Datalogger</p>
                             </div>
                             <div class="col-md-2 text-right">
                               <div class="number">
@@ -237,7 +238,7 @@
                             </div>
                             <div class="col-md-9">
                               <h6 class="demeq">QH7 U</h6>
-                              <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                              <p>Heavy Duty + UCI ("Ultrasonic Contact Impedance") + Datalogger</p>
                             </div>
                             <div class="col-md-2 text-right">
                               <div class="number">
@@ -256,7 +257,7 @@
                             </div>
                             <div class="col-md-9">
                               <h6 class="demeq">QH7 C</h6>
-                              <p>B-SCAN + Analizador de materiales + DataLogger</p>
+                              <p>Heavy Duty + Combinado (LEEB +UCI) + Datalogger</p>
                             </div>
                             <div class="col-md-2 text-right">
                               <div class="number">
@@ -280,32 +281,13 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="modelCheck4" name="example4" data-name="model-5U" value="5U">
-                              <label class="custom-control-label" for="modelCheck4"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6 class="demeq">QH5 U</h6>
-                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-5u" class="minus" />
-                              <input type="text" class="cant-5u" value="1" name="val_QH5U"/>
-                              <input type="button" value="+" id="plus-5u" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
                               <input type="checkbox" class="custom-control-input acc-check" id="modelCheck5" name="example5" data-name="model-5D" value="5D">
                               <label class="custom-control-label" for="modelCheck5"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
                             <h6 class="demeq">QH5 D</h6>
-                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                            <p>Funciones Avanzadas + Admite dispositivos D, DC + Datalogger</p>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
@@ -324,7 +306,7 @@
                           </div>
                           <div class="col-md-9">
                             <h6 class="demeq">QH5 G</h6>
-                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                            <p>Funciones Avanzadas + Admite dispositivos D, DC, C, DL, G, E + Datalogger</p>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
@@ -343,7 +325,7 @@
                           </div>
                           <div class="col-md-9">
                             <h6 class="demeq">QH5 M</h6>
-                            <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                            <p>Funciones Avanzadas + Dispositivo G para fundiciones + Datalogger</p>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
@@ -359,10 +341,40 @@
                 <div class="card">
                   <div class="card-header" id="modelhead3">
                       <a href="#" class="btn btn-header-link collapsed demeq" data-toggle="collapse" data-target="#model3"
-                      aria-expanded="true" aria-controls="model3">Serie QH2</a>
+                      aria-expanded="true" aria-controls="model3">QH5 U</a>
                   </div>
 
                   <div id="model3" class="collapse" aria-labelledby="modelhead3" data-parent="#models-accordion">
+                    <div class="card-body">
+                      <div class="row accesorio-input">
+                        <div class="col-md-1">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input acc-check" id="modelCheck4" name="example4" data-name="model-5U" value="5U">
+                            <label class="custom-control-label" for="modelCheck4"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <h6 class="demeq">QH5 U</h6>
+                          <p>Funciones Avanzadas + Sonda UCI + Datalogger</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                          <div class="number">
+                            <input type="button" value="-" id="minus-5u" class="minus" />
+                            <input type="text" class="cant-5u" value="1" name="val_QH5U"/>
+                            <input type="button" value="+" id="plus-5u" class="plus" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                <div class="card">
+                  <div class="card-header" id="modelhead4">
+                      <a href="#" class="btn btn-header-link collapsed demeq" data-toggle="collapse" data-target="#model4"
+                      aria-expanded="true" aria-controls="model4">Serie QH2</a>
+                  </div>
+
+                  <div id="model4" class="collapse" aria-labelledby="modelhead4" data-parent="#models-accordion">
                     <div class="card-body">
                       <div class="row accesorio-input">
                         <div class="col-md-1">
@@ -373,7 +385,7 @@
                         </div>
                         <div class="col-md-9">
                           <h6 class="demeq">QH2 S</h6>
-                          <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                          <p>Muy sencillo + LEEB + Mide Aceros</p>
                         </div>
                         <div class="col-md-2 text-right">
                           <div class="number">
@@ -392,13 +404,51 @@
                         </div>
                         <div class="col-md-9">
                           <h6 class="demeq">QH2 DLS</h6>
-                          <p>B-SCAN + Analizador de materiales + Multi Eco</p>
+                          <p>Muy sencillo + LEEB + Mide Aceros + Datalogger</p>
                         </div>
                         <div class="col-md-2 text-right">
                           <div class="number">
                             <input type="button" value="-" id="minus-2dls" class="minus" />
                             <input type="text" class="cant-2dls" value="1" name="val_QH2DLS"/>
                             <input type="button" value="+" id="plus-2dls" class="plus" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row accesorio-input">
+                        <div class="col-md-1">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input acc-check" id="modelCheck10" name="example10" data-name="model-2P" value="2P">
+                            <label class="custom-control-label" for="modelCheck10"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <h6 class="demeq">QH2 P</h6>
+                          <p>Muy sencillo + LEEB + Mide Aceros + Patrón de Referencia</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                          <div class="number">
+                            <input type="button" value="-" id="minus-2p" class="minus" />
+                            <input type="text" class="cant-2p" value="1" name="val_QH2P"/>
+                            <input type="button" value="+" id="plus-2p" class="plus" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row accesorio-input">
+                        <div class="col-md-1">
+                          <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input acc-check" id="modelCheck11" name="example11" data-name="model-2DLP" value="2DLP">
+                            <label class="custom-control-label" for="modelCheck11"></label>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <h6 class="demeq">QH2 DLP</h6>
+                          <p>Muy sencillo + LEEB + Mide Aceros + Patrón de Referencia + Datalogger</p>
+                        </div>
+                        <div class="col-md-2 text-right">
+                          <div class="number">
+                            <input type="button" value="-" id="minus-2dlp" class="minus" />
+                            <input type="text" class="cant-2dlp" value="1" name="val_QH2DLP"/>
+                            <input type="button" value="+" id="plus-2dlp" class="plus" />
                           </div>
                         </div>
                       </div>
@@ -409,50 +459,81 @@
 
               <div id="accesorios" class="pt-5 pb-5">
                 <div class="col-12">
-                  <h5 class="mb-3 txt-qh">Agregue más accesorios</h5>
-                  <p>Nuestros equipos se entregan listos para usar presentados en un maletín de alto impacto. En el recuadro <strong class="italic">Su solicitud de cotización</strong> puede ver todo lo que se incluye con el medelo.</p>
+                  <h5 class="mb-3 txt-qh">Accesorios opcionales</h5>
                   <p class="mb-5">Si lo desea, además de esto, puede agregar más accesorios compatibles con el/los modelo/s que solicite su cotización.</p>
                 </div>
                 <div class="accordion" id="acces-accordion">
-                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                  <div class="card filtro 7L 7C 5D 5G 5M 2S 2P 2DLS 2DLP">
                       <div class="card-header" id="aahead1">
                           <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa1"
-                          aria-expanded="true" aria-controls="aa1">Dispositivos de impacto</a>
+                          aria-expanded="true" aria-controls="aa1">Dispositivos de impacto o Percutores</a>
                       </div>
 
                       <div id="aa1" class="collapse" aria-labelledby="aahead1" data-parent="#acces-accordion">
                           <div class="card-body">
-                            <div class="row accesorio-input">
+                            <div class="row accesorio-input pb-3 filtro 2S 2DLS 2P 2DLP">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck" name="example1" data-name="acc-di-d">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck" name="example1" data-name="acc-di-dh2">
                                   <label class="custom-control-label" for="customCheck"></label>
                                 </div>
                               </div>
                               <div class="col-md-9">
-                                <h6>Tipo D</h6>
-                                <p>Energía de impacto: 11Nmm
-                               <br>Largo: 147mm / 5,78"  |  Peso: 75g / 2,64oz</p>
+                                <h6>Dispositivo de impacto tipo D con cable y conector</h6>
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
-                                  <input type="button" value="-" id="minus-di-d" class="minus" />
-                                  <input type="text" class="cant-di-d" value="1" name="di_d"/>
-                                  <input type="button" value="+" id="plus-di-d" class="plus" />
+                                  <input type="button" value="-" id="minus-di-dh2" class="minus" />
+                                  <input type="text" class="cant-di-dh2" value="1" name="di_dh2"/>
+                                  <input type="button" value="+" id="plus-di-dh2" class="plus" />
                                 </div>
                               </div>
                             </div>
-                            <div class="row accesorio-input">
+                            <div class="row accesorio-input pb-3 filtro 5U 5D 5G 5M">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck2" name="example2" data-name="acc-di-dc">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck2" name="example2" data-name="acc-di-dh5">
                                   <label class="custom-control-label" for="customCheck2"></label>
                                 </div>
                               </div>
                               <div class="col-md-9">
-                                <h6>Tipo DC</h6>
-                                <p>Energía de impacto: 11Nmm
-                               <br>Largo: 86mm / 3,38"  |  Peso: 50g / 1,76oz</p>
+                                <h6>Dispositivo de impacto tipo D con Cal-Tag, cable y conector</h6>
+                              </div>
+                              <div class="col-md-2 text-right">
+                                <div class="number">
+                                  <input type="button" value="-" id="minus-di-dh5" class="minus" />
+                                  <input type="text" class="cant-di-dh5" value="1" name="di_dh5"/>
+                                  <input type="button" value="+" id="plus-di-dh5" class="plus" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row accesorio-input pb-3 filtro 7L 7U 7C">
+                              <div class="col-md-1">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck3" name="example3" data-name="acc-di-dh7">
+                                  <label class="custom-control-label" for="customCheck3"></label>
+                                </div>
+                              </div>
+                              <div class="col-md-9">
+                                <h6>Dispositivo de impacto tipo D con Cal-Tag, Gyro-Tag, cable y conector</h6>
+                              </div>
+                              <div class="col-md-2 text-right">
+                                <div class="number">
+                                  <input type="button" value="-" id="minus-di-dh7" class="minus" />
+                                  <input type="text" class="cant-di-dh7" value="1" name="di_dh7"/>
+                                  <input type="button" value="+" id="plus-di-dh7" class="plus" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row accesorio-input pb-3 filtro 7L 7C 5D 5M">
+                              <div class="col-md-1">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck4" name="example4" data-name="acc-di-dc">
+                                  <label class="custom-control-label" for="customCheck4"></label>
+                                </div>
+                              </div>
+                              <div class="col-md-9">
+                                <h6>Dispositivo de impacto tipo DC con cable y conector</h6>
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
@@ -462,47 +543,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="row accesorio-input">
-                              <div class="col-md-1">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck3" name="example3" data-name="acc-di-c">
-                                  <label class="custom-control-label" for="customCheck3"></label>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
-                                <h6>Tipo C</h6>
-                                <p>Energía de impacto: 3Nmm
-                               <br>Largo: 141mm / 5,55"  |  Peso: 75g / 2,64oz</p>
-                              </div>
-                              <div class="col-md-2 text-right">
-                                <div class="number">
-                                  <input type="button" value="-" id="minus-di-c" class="minus" />
-                                  <input type="text" class="cant-di-c" value="1" name="di_c"/>
-                                  <input type="button" value="+" id="plus-di-c" class="plus" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row accesorio-input">
-                              <div class="col-md-1">
-                                <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck4" name="example4" data-name="acc-di-g">
-                                  <label class="custom-control-label" for="customCheck4"></label>
-                                </div>
-                              </div>
-                              <div class="col-md-9">
-                                <h6>Tipo G</h6>
-                                <p>Energía de impacto: 90Nmm
-                               <br>Largo: 254mm / 10"  |  Peso: 250g</p>
-                              </div>
-                              <div class="col-md-2 text-right">
-                                <div class="number">
-                                  <input type="button" value="-" id="minus-di-g" class="minus" />
-                                  <input type="text" class="cant-di-g" value="1" name="di_g"/>
-                                  <input type="button" value="+" id="plus-di-g" class="plus" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row accesorio-input">
+                            <div class="row accesorio-input pb-3 filtro 7L 7C 5M">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
                                   <input type="checkbox" class="custom-control-input acc-check" id="customCheck5" name="example5" data-name="acc-di-dl">
@@ -510,9 +551,7 @@
                                 </div>
                               </div>
                               <div class="col-md-9">
-                                <h6>Tipo DL</h6>
-                                <p>Energía de impacto: 11Nmm
-                               <br>Largo: 202mm / 7,95"  |  Peso: 100g</p>
+                                <h6>Dispositivo de impacto tipo DL con cable y conector</h6>
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
@@ -522,83 +561,131 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="row accesorio-input">
+                            <div class="row accesorio-input pb-3 filtro 7L 7C 5M">
                               <div class="col-md-1">
                                 <div class="custom-control custom-checkbox">
-                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck6" name="example6" data-name="acc-di-d15">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck6" name="example6" data-name="acc-di-c">
                                   <label class="custom-control-label" for="customCheck6"></label>
                                 </div>
                               </div>
                               <div class="col-md-9">
-                                <h6>Tipo D+15</h6>
-                                <p>Energía de impacto: 11Nmm
-                               <br>Largo: 162mm / 6,37"  |  Peso: 110g</p>
+                                <h6>Dispositivo de impacto tipo C con cable y conector</h6>
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
-                                  <input type="button" value="-" id="minus-di-d15" class="minus" />
-                                  <input type="text" class="cant-di-d15" value="1" name="di_d15"/>
-                                  <input type="button" value="+" id="plus-di-d15" class="plus" />
+                                  <input type="button" value="-" id="minus-di-c" class="minus" />
+                                  <input type="text" class="cant-di-c" value="1" name="di_c"/>
+                                  <input type="button" value="+" id="plus-di-c" class="plus" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row accesorio-input filtro 7L 7C 5G 5M">
+                              <div class="col-md-1">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck7" name="example7" data-name="acc-di-g">
+                                  <label class="custom-control-label" for="customCheck7"></label>
+                                </div>
+                              </div>
+                              <div class="col-md-9">
+                                <h6>Dispositivo de impacto tipo G con cable y conector*</h6>
+                                <p class="anotacion italic">*Debe adquirir un patron HLG para dispositivo de impacto G</p>
+                              </div>
+                              <div class="col-md-2 text-right">
+                                <div class="number">
+                                  <input type="button" value="-" id="minus-di-g" class="minus" />
+                                  <input type="text" class="cant-di-g" value="1" name="di_g"/>
+                                  <input type="button" value="+" id="plus-di-g" class="plus" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row accesorio-input pb-3 filtro 7L 7C 5M">
+                              <div class="col-md-1">
+                                <div class="custom-control custom-checkbox">
+                                  <input type="checkbox" class="custom-control-input acc-check" id="customCheck8" name="example8" data-name="acc-di-e">
+                                  <label class="custom-control-label" for="customCheck8"></label>
+                                </div>
+                              </div>
+                              <div class="col-md-9">
+                                <h6>Dispositivo de impacto tipo E con diamante sintetico para durezas altas, cable y
+                                  conector</h6>
+                              </div>
+                              <div class="col-md-2 text-right">
+                                <div class="number">
+                                  <input type="button" value="-" id="minus-di-e" class="minus" />
+                                  <input type="text" class="cant-di-e" value="1" name="di_e"/>
+                                  <input type="button" value="+" id="plus-di-e" class="plus" />
                                 </div>
                               </div>
                             </div>
                           </div>
                       </div>
                   </div>
-                  <div class="card filtro 5E 5DLE">
+                  <div class="card filtro 7U 7C 5U">
                       <div class="card-header" id="aahead2">
                           <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa2"
-                          aria-expanded="true" aria-controls="aa2">Bloques de dureza patrón</a>
+                          aria-expanded="true" aria-controls="aa2">Sondas UCI</a>
                       </div>
 
                       <div id="aa2" class="collapse" aria-labelledby="aahead2" data-parent="#acces-accordion">
                         <div class="card-body">
-                          <div class="row accesorio-input">
+                          <div class="row accesorio-input pb-3">
                             <div class="col-md-1">
                               <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck7" name="example7" data-name="acc-bd-hld">
-                                <label class="custom-control-label" for="customCheck7"></label>
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck9" name="example9" data-name="acc-s10n">
+                                <label class="custom-control-label" for="customCheck9"></label>
                               </div>
                             </div>
                             <div class="col-md-9">
-                              <h6>Bloque Patron HLD
-                                <br>Bloque referencial de dureza del tipo D</h6>
-                              <p class="mb-0">Dureza:  (740 a 790HLD) ±6HLD</p>
-                              <p>Diámetro: 90mm / 3,54”  |  Alto: 56mm / 2,2”  |  Peso: 2,9kg (aprox.)</p>
+                              <h6>Sonda UCI de 10N con cable y conector</h6>
                             </div>
                             <div class="col-md-2 text-right">
                               <div class="number">
-                                <input type="button" value="-" id="minus-bd-hld" class="minus" />
-                                <input type="text" class="cant-bd-hld" value="1" name="bd_hld"/>
-                                <input type="button" value="+" id="plus-bd-hld" class="plus" />
+                                <input type="button" value="-" id="minus-s10n" class="minus" />
+                                <input type="text" class="cant-s10n" value="1" name="s_10n"/>
+                                <input type="button" value="+" id="plus-s10n" class="plus" />
                               </div>
                             </div>
                           </div>
-                          <div class="row accesorio-input">
+                          <div class="row accesorio-input pb-3">
                             <div class="col-md-1">
                               <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck8" name="example8" data-name="acc-bd-hlg">
-                                <label class="custom-control-label" for="customCheck8"></label>
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck10" name="example10" data-name="acc-s50n">
+                                <label class="custom-control-label" for="customCheck10"></label>
                               </div>
                             </div>
                             <div class="col-md-9">
-                              <h6>Bloque Patron HLG
-                                <br>Bloque referencial de dureza del tipo D</h6>
-                              <p class="mb-0">Dureza:  (460 a 550HLG) ±12HLG</p>
-                              <p>Diámetro: 150mm / 5,9"  |  Alto: 56mm / 2,2”  |  Peso: 5,8kg (aprox.)</p>
+                              <h6>Sonda UCI de 50N con cable y conector</h6>
                             </div>
                             <div class="col-md-2 text-right">
                               <div class="number">
-                                <input type="button" value="-" id="minus-bd-hlg" class="minus" />
-                                <input type="text" class="cant-bd-hlg" value="1" name="bd_hlg"/>
-                                <input type="button" value="+" id="plus-bd-hlg" class="plus" />
+                                <input type="button" value="-" id="minus-s50n" class="minus" />
+                                <input type="text" class="cant-s50n" value="1" name="s_50n"/>
+                                <input type="button" value="+" id="plus-s50n" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input pb-3">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck11" name="example11" data-name="acc-s98n">
+                                <label class="custom-control-label" for="customCheck11"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Sonda UCI de 98N con cable y conector</h6>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-s98n" class="minus" />
+                                <input type="text" class="cant-s98n" value="1" name="s_98n"/>
+                                <input type="button" value="+" id="plus-s98n" class="plus" />
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                   </div>
-                  <div class="card filtro 5B 5E 5DL 5DLE">
+                  <div class="card filtro 7L 7C 5D 5M 2S 2P 2DLS 2DLP">
                     <div class="card-header" id="aahead3">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa3"
                         aria-expanded="true" aria-controls="aa3">Anillos de apoyo</a>
@@ -609,13 +696,13 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck9" name="example9" data-name="acc-aa12">
-                              <label class="custom-control-label" for="customCheck9"></label>
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck12" name="example12" data-name="acc-aa12">
+                              <label class="custom-control-label" for="customCheck12"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
-                            <h6>Juego de 12 anillos de apoyo</h6>
-                            <p>Compatibles con los dispositivos de impacto D, DC, D+15, C y E para medir superficies que no sean planas.</p>
+                            <h6>Juego de 12 anillos para medir superficies concavas y convexas</h6>
+                            <p>Compatibles con los dispositivos de impacto D, DC, C.</p>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
@@ -628,82 +715,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+
+                  <div class="card filtro 7L 7U 7C 5U 5D 5G 5M 2S 2P 2DLS 2DLP">
                     <div class="card-header" id="aahead4">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa4"
-                        aria-expanded="true" aria-controls="aa4">Cuerpos de impacto</a>
+                        aria-expanded="true" aria-controls="aa4">Pasta para acople</a>
                     </div>
 
                     <div id="aa4" class="collapse" aria-labelledby="aahead4" data-parent="#acces-accordion">
                       <div class="card-body">
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck10" name="example10" data-name="acc-cid">
-                              <label class="custom-control-label" for="customCheck10"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Cuerpo D</h6>
-                            <p>Cuerpo de impacto para dispositivos de impacto D y DC</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-cid" class="minus" />
-                              <input type="text" class="cant-cid" value="1" name="ci_d"/>
-                              <input type="button" value="+" id="plus-cid" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck11" name="example11" data-name="acc-cig">
-                              <label class="custom-control-label" for="customCheck11"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Cuerpo G</h6>
-                            <p>Cuerpo de impacto para dispositivos de impacto G</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-cig" class="minus" />
-                              <input type="text" class="cant-cig" value="1" name="ci_g"/>
-                              <input type="button" value="+" id="plus-cig" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
-                    <div class="card-header" id="aahead5">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa5"
-                        aria-expanded="true" aria-controls="aa5">Pasta de acoplamiento</a>
-                    </div>
-
-                    <div id="aa5" class="collapse" aria-labelledby="aahead5" data-parent="#acces-accordion">
-                      <div class="card-body">
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck12" name="example12" data-name="acc-pa200">
-                              <label class="custom-control-label" for="customCheck12"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Pasta de acoplamiento estándar para utilización en la mayoría de las superficies:</h6>
-                            <p>200g / 7.05oz</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-pa200" class="minus" />
-                              <input type="text" class="cant-pa200" value="1" name="pa_200"/>
-                              <input type="button" value="+" id="plus-pa200" class="plus" />
-                            </div>
-                          </div>
-                        </div>
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
@@ -712,8 +732,8 @@
                             </div>
                           </div>
                           <div class="col-md-9">
-                            <h6>Pasta de acoplamiento estándar para utilización en la mayoría de las superficies:</h6>
-                            <p>50g / 1.76oz</p>
+                            <h6>Pasta de acople estándar para utilización en piezas chicas</h6>
+                            <p>50cc</p>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
@@ -726,7 +746,261 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                  <div class="card filtro 7L 7U 7C 5U 5D 5G 5M 2S 2P 2DLS 2DLP">
+                      <div class="card-header" id="aahead5">
+                          <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa5"
+                          aria-expanded="true" aria-controls="aa5">Patrones de referencia esándar y Yamamoto</a>
+                      </div>
+
+                      <div id="aa5" class="collapse" aria-labelledby="aahead5" data-parent="#acces-accordion">
+                        <div class="card-body">
+                          <div class="row accesorio-input filtro 7L 7C 5D 5M 2S 2P 2DLS 2DLP">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck14" name="example14" data-name="acc-pr-hld">
+                                <label class="custom-control-label" for="customCheck14"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrón de referencia HLD</h6>
+                              <p>Compatible con dispositivos de impacto D, DC.</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-hld" class="minus" />
+                                <input type="text" class="cant-pr-hld" value="1" name="pr_hld"/>
+                                <input type="button" value="+" id="plus-pr-hld" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input filtro 7L 5M">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck15" name="example15" data-name="acc-pr-hldl">
+                                <label class="custom-control-label" for="customCheck15"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrón de referencia HLDL</h6>
+                              <p>Compatible con dispositivos de impacto DL.</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-hldl" class="minus" />
+                                <input type="text" class="cant-pr-hldl" value="1" name="pr_hldl"/>
+                                <input type="button" value="+" id="plus-pr-hldl" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input filtro 7L 7C 5G 5M">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck16" name="example16" data-name="acc-pr-hlg">
+                                <label class="custom-control-label" for="customCheck16"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrón de referencia HLG</h6>
+                              <p>Compatible con dispositivos de impacto G.</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-hlg" class="minus" />
+                                <input type="text" class="cant-pr-hlg" value="1" name="pr_hlg"/>
+                                <input type="button" value="+" id="plus-pr-hlg" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input filtro 7U 7C 5U">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck17" name="example17" data-name="acc-pr-vcd">
+                                <label class="custom-control-label" for="customCheck17"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Vickers*</h6>
+                              <p class="anotacion italic">*Consulte durezas disponibles</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-vcd" class="minus" />
+                                <input type="text" class="cant-pr-vcd" value="1" name="pr_vcd"/>
+                                <input type="button" value="+" id="plus-pr-vcd" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input pb-3 filtro 7U 7C 5U">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck18" name="example18" data-name="acc-pr-vy10">
+                                <label class="custom-control-label" for="customCheck18"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Vickers HV10 marca YAMAMOTO con certificado.</h6>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-vy10" class="minus" />
+                                <input type="text" class="cant-pr-vy10" value="1" name="pr_vy10"/>
+                                <input type="button" value="+" id="plus-pr-vy10" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck19" name="example19" data-name="acc-pr-rccd">
+                                <label class="custom-control-label" for="customCheck19"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Rockwell C*</h6>
+                              <p class="anotacion italic">*Consulte durezas disponibles</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-rccd" class="minus" />
+                                <input type="text" class="cant-pr-rccd" value="1" name="pr_rccd"/>
+                                <input type="button" value="+" id="plus-pr-rccd" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input pb-3">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck20" name="example20" data-name="acc-pr-rcy">
+                                <label class="custom-control-label" for="customCheck20"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Rockwell C marca YAMAMOTO con certificado.</h6>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-rcy" class="minus" />
+                                <input type="text" class="cant-pr-rcy" value="1" name="pr_rcy"/>
+                                <input type="button" value="+" id="plus-pr-rcy" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck21" name="example21" data-name="acc-pr-rbcd">
+                                <label class="custom-control-label" for="customCheck21"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Rockwell B*</h6>
+                              <p class="anotacion italic">*Consulte durezas disponibles</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-rbcd" class="minus" />
+                                <input type="text" class="cant-pr-rbcd" value="1" name="pr_rbcd"/>
+                                <input type="button" value="+" id="plus-pr-rbcd" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input pb-3">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck22" name="example22" data-name="acc-pr-rby">
+                                <label class="custom-control-label" for="customCheck22"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Rockwell B marca YAMAMOTO con certificado.</h6>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-rby" class="minus" />
+                                <input type="text" class="cant-pr-rby" value="1" name="pr_rby"/>
+                                <input type="button" value="+" id="plus-pr-rby" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck23" name="example23" data-name="acc-pr-brcd">
+                                <label class="custom-control-label" for="customCheck23"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Brinell*</h6>
+                              <p class="anotacion italic">*Consulte durezas disponibles</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-brcd" class="minus" />
+                                <input type="text" class="cant-pr-brcd" value="1" name="pr_brcd"/>
+                                <input type="button" value="+" id="plus-pr-brcd" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input pb-3">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck24" name="example24" data-name="acc-pr-bry">
+                                <label class="custom-control-label" for="customCheck24"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Patrones Brinell marca YAMAMOTO con certificado.</h6>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-bry" class="minus" />
+                                <input type="text" class="cant-pr-bry" value="1" name="pr_bry"/>
+                                <input type="button" value="+" id="plus-pr-bry" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input filtro 7L 7C 5D 5M 2S 2P 2DLS 2DLP">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck25" name="example25" data-name="acc-pr-clhld">
+                                <label class="custom-control-label" for="customCheck25"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Certificación patron Leeb HLD con trazabilidad INTI*</h6>
+                              <p class="anotacion italic">*No incluye patrón</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-clhld" class="minus" />
+                                <input type="text" class="cant-pr-clhld" value="1" name="pr_clhld"/>
+                                <input type="button" value="+" id="plus-pr-clhld" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row accesorio-input filtro 7U 7C 5U">
+                            <div class="col-md-1">
+                              <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck26" name="example26" data-name="acc-pr-chv10">
+                                <label class="custom-control-label" for="customCheck26"></label>
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <h6>Certificacion patron Vickers HV10 con trazabilidad INTI*</h6>
+                              <p class="anotacion italic">**No incluye patrón</p>
+                            </div>
+                            <div class="col-md-2 text-right">
+                              <div class="number">
+                                <input type="button" value="-" id="minus-pr-chv10" class="minus" />
+                                <input type="text" class="cant-pr-chv10" value="1" name="pr_chv10"/>
+                                <input type="button" value="+" id="plus-pr-chv10" class="plus" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="card filtro 5U 5D 5G 5M 2S 2P 2DLS 2DLP">
                     <div class="card-header" id="aahead6">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa6"
                         aria-expanded="true" aria-controls="aa6">Fundas protectoras</a>
@@ -737,27 +1011,8 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck14" name="example14" data-name="acc-fgr">
-                              <label class="custom-control-label" for="customCheck14"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Funda protectora de silicona</h6>
-                            <p>Color: Gris</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-fgr" class="minus" />
-                              <input type="text" class="cant-fgr" value="1" name="f_gr"/>
-                              <input type="button" value="+" id="plus-fgr" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck15" name="example15" data-name="acc-fro">
-                              <label class="custom-control-label" for="customCheck15"></label>
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck27" name="example27" data-name="acc-fro">
+                              <label class="custom-control-label" for="customCheck27"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
@@ -772,83 +1027,78 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck16" name="example16" data-name="acc-fam">
-                              <label class="custom-control-label" for="customCheck16"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Funda protectora de silicona</h6>
-                            <p>Color: Amarillo</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-fam" class="minus" />
-                              <input type="text" class="cant-fam" value="1" name="f_am"/>
-                              <input type="button" value="+" id="plus-fam" class="plus" />
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                  <div class="card filtro 7L 7U 7C 5U 5D 5G 5M 2S 2P 2DLS 2DLP">
                     <div class="card-header" id="aahead7">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa7"
-                        aria-expanded="true" aria-controls="aa7">Maletines de transporte</a>
+                        aria-expanded="true" aria-controls="aa7">Cables de conexión</a>
                     </div>
 
                     <div id="aa7" class="collapse" aria-labelledby="aahead7" data-parent="#acces-accordion">
                       <div class="card-body">
-                        <div class="row accesorio-input">
+                        <div class="row accesorio-input pb-3 filtro 7L 7C 5D 5G 5M 2S 2P 2DLS 2DLP">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck17" name="example17" data-name="acc-mc">
-                              <label class="custom-control-label" for="customCheck17"></label>
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck28" name="example28" data-name="acc-cdi">
+                              <label class="custom-control-label" for="customCheck28"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
-                            <h6>Maletín Compacto de alto impacto</h6>
-                            <p class="mb-0">Interior a medida.</p>
-                            <p>Dimensiones externas: 27,43 x 25,01 x 11,43cm / 10,80 x 9,85 x 4,50”</p>
+                            <h6>Cable con conector para dispositivos de impacto dmq</h6>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
-                              <input type="button" value="-" id="minus-mc" class="minus" />
-                              <input type="text" class="cant-mc" value="1" name="m_c"/>
-                              <input type="button" value="+" id="plus-mc" class="plus" />
+                              <input type="button" value="-" id="minus-cdi" class="minus" />
+                              <input type="text" class="cant-cdi" value="1" name="c_di"/>
+                              <input type="button" value="+" id="plus-cdi" class="plus" />
                             </div>
                           </div>
                         </div>
-                        <div class="row accesorio-input">
+                        <div class="row accesorio-input pb-3 filtro 7U 7C 5U">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck18" name="example18" data-name="acc-mg">
-                              <label class="custom-control-label" for="customCheck18"></label>
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck30" name="example30" data-name="acc-cdiuci">
+                              <label class="custom-control-label" for="customCheck30"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
-                            <h6>Maletín Grande de alto impacto</h6>
-                            <p class="mb-0">Interior a medida.</p>
-                            <p>Dimensiones externas: 37,78 x 30,79 x 17,46cm / 14,875 x 12,125 x 6,875”</p>
+                            <h6>Cable con conector para sondas UCI dmq</h6>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
-                              <input type="button" value="-" id="minus-mg" class="minus" />
-                              <input type="text" class="cant-mg" value="1" name="m_g"/>
-                              <input type="button" value="+" id="plus-mg" class="plus" />
+                              <input type="button" value="-" id="minus-cdiuci" class="minus" />
+                              <input type="text" class="cant-cdiuci" value="1" name="c_diuci"/>
+                              <input type="button" value="+" id="plus-cdiuci" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row accesorio-input pb-3 filtro 5U 5D 5G 5M">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck31" name="example31" data-name="acc-cimp">
+                              <label class="custom-control-label" for="customCheck31"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Cable para conexión de impresora térmica a equipos dmq</h6>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-cimp" class="minus" />
+                              <input type="text" class="cant-cimp" value="1" name="c_imp"/>
+                              <input type="button" value="+" id="plus-cimp" class="plus" />
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card filtro 5DL 5DLE 3DL 2DL 2DLV">
+                  <div class="card filtro 5U 5D 5G 5M">
                     <div class="card-header" id="aahead8">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa8"
-                        aria-expanded="true" aria-controls="aa8">Cables de conexión</a>
+                        aria-expanded="true" aria-controls="aa8">Impresoras</a>
                     </div>
 
                     <div id="aa8" class="collapse" aria-labelledby="aahead8" data-parent="#acces-accordion">
@@ -856,62 +1106,13 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck19" name="example19" data-name="acc-usb">
-                              <label class="custom-control-label" for="customCheck19"></label>
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck32" name="example32" data-name="acc-imp">
+                              <label class="custom-control-label" for="customCheck32"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
-                            <h6>Cable USB</h6>
-                            <p>Para conectar cualquier equipo dmq con conexión a una PC con puerto USB.</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-usb" class="minus" />
-                              <input type="text" class="cant-usb" value="1" name="c_usb"/>
-                              <input type="button" value="+" id="plus-usb" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck20" name="example20" data-name="acc-rs">
-                              <label class="custom-control-label" for="customCheck20"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Cable RS232</h6>
-                            <p>Para conectar cualquier equipo dmq con conexión a una PC o impresora con puertos RS232.</p>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-rs" class="minus" />
-                              <input type="text" class="cant-rs" value="1" name="c_rs232"/>
-                              <input type="button" value="+" id="plus-rs" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card filtro 5DL 5DLE 3DL 2DL 2DLV">
-                    <div class="card-header" id="aahead9">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa9"
-                        aria-expanded="true" aria-controls="aa9">Impresoras</a>
-                    </div>
-
-                    <div id="aa9" class="collapse" aria-labelledby="aahead9" data-parent="#acces-accordion">
-                      <div class="card-body">
-                        <div class="row accesorio-input">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck21" name="example21" data-name="acc-imp">
-                              <label class="custom-control-label" for="customCheck21"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Impresora Térmica</h6>
-                            <p>Imprima directamente en lugar de tener que descargar datos a una PC.</p>
+                            <h6>Impresora térmica para equipos dmq*</h6>
+                            <p class="anotacion italic">*No incluye cable de conexión</p>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
@@ -964,8 +1165,9 @@
                 <div class="incluido-modelo">
                   <p>- Unidad electrónica QH7 L</p>
                   <p>- Dispositivo de impacto D</p>
+                  <p>- Patrón de referencia HLD</p>
                   <p>- Certificado de conformidad</p>
-                  <p>- Pasta para acople de piezas</p>
+                  <p>- Pasta para acople</p>
                   <p>- Cable USB para conexión a PC</p>
                   <p>- Pendrive con software DataCenter</p>
                   <p>- Manual de usuario</p>
@@ -981,8 +1183,9 @@
                 <div class="incluido-modelo">
                   <p>- Unidad electrónica QH7 U</p>
                   <p>- Sensor UCI</p>
+                  <p>- Patrón de referencia HV</p>
                   <p>- Certificado de conformidad</p>
-                  <p>- Pasta para acople de piezas</p>
+                  <p>- Pasta para acople</p>
                   <p>- Cable USB para conexión a PC</p>
                   <p>- Pendrive con software DataCenter</p>
                   <p>- Manual de usuario</p>
@@ -998,9 +1201,11 @@
                 <div class="incluido-modelo">
                   <p>- Unidad electrónica QH7 C</p>
                   <p>- Sensor UCI</p>
+                  <p>- Patrón de referencia HV</p>
                   <p>- Dispositivo de impacto D</p>
+                  <p>- Patrón de referencia HLD</p>
                   <p>- Certificado de conformidad</p>
-                  <p>- Pasta para acople de piezas</p>
+                  <p>- Pasta para acople</p>
                   <p>- Cable USB para conexión a PC</p>
                   <p>- Pendrive con software DataCenter</p>
                   <p>- Manual de usuario</p>
@@ -1016,6 +1221,7 @@
                 <div class="incluido-modelo">
                   <p>- Unidad electronica QH5 U</p>
                   <p>- Sensor UCI</p>
+                  <p>- Patrón de referencia HV</p>
                   <p>- Certificado de conformidad</p>
                   <p>- Pasta para acople de piezas</p>
                   <p>- Cable USB para conexión a PC</p>
@@ -1033,8 +1239,9 @@
                 <div class="incluido-modelo">
                   <p>- Unidad electrónica QH5 D</p>
                   <p>- Dispositivo de impacto D</p>
+                  <p>- Patrón de referencia HLD</p>
                   <p>- Certificado de conformidad</p>
-                  <p>- Pasta para acople de piezas</p>
+                  <p>- Pasta para acople</p>
                   <p>- Cable USB para conexión a PC</p>
                   <p>- Pendrive con software DataCenter</p>
                   <p>- Manual de usuario</p>
@@ -1050,8 +1257,9 @@
                 <div class="incluido-modelo">
                   <p>- Unidad electrónica QH5 G</p>
                   <p>- Dispositivo de impacto G</p>
+                  <p>- Patrón de referencia HLG</p>
                   <p>- Certificado de conformidad</p>
-                  <p>- Pasta para acople de piezas</p>
+                  <p>- Pasta para acople</p>
                   <p>- Cable USB para conexión a PC</p>
                   <p>- Pendrive con software DataCenter</p>
                   <p>- Manual de usuario</p>
@@ -1066,9 +1274,10 @@
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <p>- Unidad electrónica QH5 M</p>
-                  <p>- Dispositivo de impacto requerido por el cliente</p>
+                  <p>- Dispositivo de impacto D</p>
+                  <p>- Patrón de referencia HLD</p>
                   <p>- Certificado de conformidad</p>
-                  <p>- Pasta para acople de piezas</p>
+                  <p>- Pasta para acople</p>
                   <p>- Cable USB para conexión a PC</p>
                   <p>- Pendrive con software DataCenter</p>
                   <p>- Manual de usuario</p>
@@ -1099,95 +1308,170 @@
                   <p>- Unidad electrónica QH2</p>
                   <p>- Dispositivo de impacto D</p>
                   <p>- Certificado de conformidad</p>
+                  <p>- Cable USB para conexión a PC</p>
                   <p>- Guía rípida impresa</p>
                   <p>- Maletín de alto impacto</p>
                 </div>
               </div>
+              <div id="model-2P" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-2p" readonly="readonly" value="" />
+                  <h6 class="demeq">x QH2 P</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>- Unidad electrónica QH2</p>
+                  <p>- Dispositivo de impacto D</p>
+                  <p>- Patrón de referencia HLD</p>
+                  <p>- Pasta para acople</p>
+                  <p>- Certificado de conformidad</p>
+                  <p>- Guía rípida impresa</p>
+                  <p>- Maletín de alto impacto</p>
+                </div>
+              </div>
+              <div id="model-2DLP" class="modelo-cotizado">
+                <div class="mod-cotiz">
+                  <input id="total-2dlp" readonly="readonly" value="" />
+                  <h6 class="demeq">x QH2 DLP</h6>
+                </div>
+                <p class="anotacion italic">Incluye:</p>
+                <div class="incluido-modelo">
+                  <p>- Unidad electrónica QH2</p>
+                  <p>- Dispositivo de impacto D</p>
+                  <p>- Patrón de referencia HLD</p>
+                  <p>- Pasta para acople</p>
+                  <p>- Certificado de conformidad</p>
+                  <p>- Cable USB para conexión a PC</p>
+                  <p>- Guía rípida impresa</p>
+                  <p>- Maletín de alto impacto</p>
+                </div>
+            </div>
               
-              <p class="anotacion italic tt-acc">Accesorios</p>
-              <div id="acc-di-d" class="accesorio-cotizado">
-                <input id="total-di-d" readonly="readonly" value="" />
-                <h6>x Disp. de impacto Tipo D</h6>
+              <p class="anotacion italic tt-acc">ACCESORIOS OPCIONALES</p>
+              <div id="acc-di-dh2" class="accesorio-cotizado">
+                <input id="total-di-dh2" readonly="readonly" value="" />
+                <h6>x Dispositivo de impacto tipo D con cable y conector</h6>
+              </div>
+              <div id="acc-di-dh5" class="accesorio-cotizado">
+                <input id="total-di-dh5" readonly="readonly" value="" />
+                <h6>x Dispositivo de impacto tipo D con Cal-Tag, cable y conector</h6>
+              </div>
+              <div id="acc-di-dh7" class="accesorio-cotizado">
+                <input id="total-di-dh7" readonly="readonly" value="" />
+                <h6>x Dispositivo de impacto tipo D con Cal-Tag, Gyro-Tag, cable y conector</h6>
               </div>
               <div id="acc-di-dc" class="accesorio-cotizado">
                 <input id="total-di-dc" readonly="readonly" value="" />
-                <h6>x Disp. de impacto Tipo DC</h6>
-              </div>
-              <div id="acc-di-c" class="accesorio-cotizado">
-                <input id="total-di-c" readonly="readonly" value="" />
-                <h6>x Disp. de impacto Tipo C</h6>
-              </div>
-              <div id="acc-di-g" class="accesorio-cotizado">
-                <input id="total-di-g" readonly="readonly" value="" />
-                <h6>x Disp. de impacto Tipo G</h6>
+                <h6>x Dispositivo de impacto tipo DC con cable y conector</h6>
               </div>
               <div id="acc-di-dl" class="accesorio-cotizado">
                 <input id="total-di-dl" readonly="readonly" value="" />
-                <h6>x Disp. de impacto Tipo DL</h6>
+                <h6>x Dispositivo de impacto tipo DL con cable y conector</h6>
               </div>
-              <div id="acc-di-d15" class="accesorio-cotizado">
-                <input id="total-di-d15" readonly="readonly" value="" />
-                <h6>x Disp. de impacto Tipo D+15</h6>
+              <div id="acc-di-c" class="accesorio-cotizado">
+                <input id="total-di-c" readonly="readonly" value="" />
+                <h6>x Dispositivo de impacto tipo C con cable y conector</h6>
               </div>
-              <div id="acc-bd-hld" class="accesorio-cotizado">
-                <input id="total-bd-hld" readonly="readonly" value="" />
-                <h6>x Bloque Patron HLD</h6>
+              <div id="acc-di-g" class="accesorio-cotizado">
+                <input id="total-di-g" readonly="readonly" value="" />
+                <h6>x Dispositivo de impacto tipo G con cable y conector</h6>
               </div>
-              <div id="acc-bd-hlg" class="accesorio-cotizado">
-                <input id="total-bd-hlg" readonly="readonly" value="" />
-                <h6>x Bloque Patron HLG</h6>
+              <div id="acc-di-e" class="accesorio-cotizado">
+                <input id="total-di-e" readonly="readonly" value="" />
+                <h6>x Dispositivo de impacto tipo E con diamante sintetico para durezas altas, cable y
+                  conector</h6>
               </div>
-              <div id="acc-pa50" class="accesorio-cotizado">
-                <input id="total-pa50" readonly="readonly" value="" />
-                <h6>x Pasta de acoplamiento - 50g / 1.76oz</h6>
+              <div id="acc-s10n" class="accesorio-cotizado">
+                <input id="total-s10n" readonly="readonly" value="" />
+                <h6>x Sonda UCI de 10N con cable y conector</h6>
               </div>
-              <div id="acc-pa200" class="accesorio-cotizado">
-                <input id="total-pa200" readonly="readonly" value="" />
-                <h6>x Pasta de acoplamiento - 200g / 7,05oz</h6>
+              <div id="acc-s50n" class="accesorio-cotizado">
+                <input id="total-s50n" readonly="readonly" value="" />
+                <h6>x Sonda UCI de 50N con cable y conector</h6>
+              </div>
+              <div id="acc-s98n" class="accesorio-cotizado">
+                <input id="total-s98n" readonly="readonly" value="" />
+                <h6>x Sonda UCI de 98N con cable y conector</h6>
               </div>
               <div id="acc-aa12" class="accesorio-cotizado">
                 <input id="total-aa12" readonly="readonly" value="" />
-                <h6>x Juego de 12 anillos de apoyo</h6>
+                <h6>x Juego de 12 anillos para medir superficies concavas y convexas</h6>
               </div>
-              <div id="acc-cid" class="accesorio-cotizado">
-                <input id="total-cid" readonly="readonly" value="" />
-                <h6>x Cuerpo de impacto D</h6>
+              <div id="acc-pa50" class="accesorio-cotizado">
+                <input id="total-pa50" readonly="readonly" value="" />
+                <h6>x Pasta de acople estándar para utilización en piezas chicas 50cc</h6>
               </div>
-              <div id="acc-cig" class="accesorio-cotizado">
-                <input id="total-cig" readonly="readonly" value="" />
-                <h6>x Cuerpo de impacto G</h6>
+              <div id="acc-pr-hld" class="accesorio-cotizado">
+                <input id="total-pr-hld" readonly="readonly" value="" />
+                <h6>x Patrón de referencia HLD</h6>
               </div>
-              <div id="acc-mc" class="accesorio-cotizado">
-                <input id="total-mc" readonly="readonly" value="" />
-                <h6>x Maletín Compacto de alto impacto</h6>
+              <div id="acc-pr-hldl" class="accesorio-cotizado">
+                <input id="total-pr-hldl" readonly="readonly" value="" />
+                <h6>x Patrón de referencia HLDL</h6>
               </div>
-              <div id="acc-mg" class="accesorio-cotizado">
-                <input id="total-mg" readonly="readonly" value="" />
-                <h6>x Maletín Grande de alto impacto</h6>
+              <div id="acc-pr-hlg" class="accesorio-cotizado">
+                <input id="total-pr-hlg" readonly="readonly" value="" />
+                <h6>x Patrón de referencia HLG</h6>
               </div>
-              <div id="acc-fgr" class="accesorio-cotizado">
-                <input id="total-fgr" readonly="readonly" value="" />
-                <h6>x Funda silicona color Gris</h6>
+              <div id="acc-pr-vcd" class="accesorio-cotizado">
+                <input id="total-pr-vcd" readonly="readonly" value="" />
+                <h6>x Patrones Vickers* <span class="anotacion italic">*Consulte durezas disponibles</span></h6>
+              </div>
+              <div id="acc-pr-vy10" class="accesorio-cotizado">
+                <input id="total-pr-vy10" readonly="readonly" value="" />
+                <h6>x Patrones Vickers HV10 marca YAMAMOTO con certificado</h6>
+              </div>
+              <div id="acc-pr-rccd" class="accesorio-cotizado">
+                <input id="total-pr-rccd" readonly="readonly" value="" />
+                <h6>x Patrones Rockwell C* <span class="anotacion italic">*Consulte durezas disponibles</span></h6>
+              </div>
+              <div id="acc-pr-rcy" class="accesorio-cotizado">
+                <input id="total-pr-rcy" readonly="readonly" value="" />
+                <h6>x Patrones Rockwell C marca YAMAMOTO con certificado</h6>
+              </div>
+              <div id="acc-pr-rbcd" class="accesorio-cotizado">
+                <input id="total-pr-rbcd" readonly="readonly" value="" />
+                <h6>x Patrones Rockwell B* <span class="anotacion italic">*Consulte durezas disponibles</span></h6>
+              </div>
+              <div id="acc-pr-rby" class="accesorio-cotizado">
+                <input id="total-pr-rby" readonly="readonly" value="" />
+                <h6>x Patrones Rockwell B marca YAMAMOTO con certificado</h6>
+              </div>
+              <div id="acc-pr-brcd" class="accesorio-cotizado">
+                <input id="total-pr-brcd" readonly="readonly" value="" />
+                <h6>x Patrones Brinell* <span class="anotacion italic">*Consulte durezas disponibles</span></h6>
+              </div>
+              <div id="acc-pr-bry" class="accesorio-cotizado">
+                <input id="total-pr-bry" readonly="readonly" value="" />
+                <h6>x Patrones Brinell marca YAMAMOTO con certificado</h6>
+              </div>
+              <div id="acc-pr-clhld" class="accesorio-cotizado">
+                <input id="total-pr-clhld" readonly="readonly" value="" />
+                <h6>x Certificación patron Leeb HLD con trazabilidad INTI* <span class="anotacion italic">*No incluye patrón</span></h6>
+              </div>
+              <div id="acc-pr-chv10" class="accesorio-cotizado">
+                <input id="total-pr-chv10" readonly="readonly" value="" />
+                <h6>x Certificacion patron Vickers HV10 con trazabilidad INTI* <span class="anotacion italic">*No incluye patrón</span></h6>
               </div>
               <div id="acc-fro" class="accesorio-cotizado">
                 <input id="total-fro" readonly="readonly" value="" />
-                <h6>x Funda silicona color Rojo</h6>
+                <h6>x Funda protectora de silicona color Rojo</h6>
               </div>
-              <div id="acc-fam" class="accesorio-cotizado">
-                <input id="total-fam" readonly="readonly" value="" />
-                <h6>x Funda silicona color Amarillo</h6>
+              <div id="acc-cdi" class="accesorio-cotizado">
+                <input id="total-cdi" readonly="readonly" value="" />
+                <h6>x Cable con conector para dispositivos de impacto dmq</h6>
               </div>
-              <div id="acc-usb" class="accesorio-cotizado">
-                <input id="total-usb" readonly="readonly" value="" />
-                <h6>x Cable USB</h6>
+              <div id="acc-cdiuci" class="accesorio-cotizado">
+                <input id="total-cdiuci" readonly="readonly" value="" />
+                <h6>x Cable con conector para sondas UCI dmq</h6>
               </div>
-              <div id="acc-rs" class="accesorio-cotizado">
-                <input id="total-rs" readonly="readonly" value="" />
-                <h6>x Cable RS232</h6>
+              <div id="acc-cimp" class="accesorio-cotizado">
+                <input id="total-cimp" readonly="readonly" value="" />
+                <h6>x Cable para conexión de impresora térmica a equipos dmq</h6>
               </div>
               <div id="acc-imp" class="accesorio-cotizado">
                 <input id="total-imp" readonly="readonly" value="" />
-                <h6>x Impresora Térmica</h6>
+                <h6>x Impresora térmica para equipos dmq* <span class="anotacion italic">**No incluye cable de conexión</span></h6>
               </div>
               <input name="submit" type="submit" class="btn btn-blanco btn-enviar btn-qh w-100" value="Enviar solicitud de Cotización">
             </div>

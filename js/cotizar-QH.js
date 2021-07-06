@@ -389,6 +389,92 @@ $(document).ready(function() {
 });
 
 
+//----- QH2 P
+$('#plus-2p').click(function add() {
+  var $qtde = $(".cant-2p");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-2p").attr("disabled", true);
+    };
+      $("#minus-2p").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-2p").attr("disabled", !$(".cant-2p").val());
+
+$('#minus-2p').click(function minust() {
+  var $qtde = $(".cant-2p");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-2p").attr("disabled", true);
+  }
+  $("#plus-2p").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-2p").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-2p").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- QH2 DLP
+$('#plus-2dlp').click(function add() {
+  var $qtde = $(".cant-2dlp");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-2dlp").attr("disabled", true);
+    };
+      $("#minus-2dlp").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-2dlp").attr("disabled", !$(".cant-2dlp").val());
+
+$('#minus-2dlp').click(function minust() {
+  var $qtde = $(".cant-2dlp");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-2dlp").attr("disabled", true);
+  }
+  $("#plus-2dlp").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-2dlp").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-2dlp").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
 //---------- Mostrar Checkbox accesorios seleccionados en resumen
 
 function update(){
@@ -416,41 +502,41 @@ $(':checkbox').change(function(){
 
 //--------- Aumentar o disminuir número
 
-//----- Disp. de impacto Tipo D
-$('#plus-di-d').click(function add() {
-  var $qtde = $(".cant-di-d");
+//----- Dispositivo de impacto tipo D con cable y conector
+$('#plus-di-dh2').click(function add() {
+  var $qtde = $(".cant-di-dh2");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-di-d").attr("disabled", true);
+      $("#plus-di-dh2").attr("disabled", true);
     };
-      $("#minus-di-d").attr("disabled", !a);
+      $("#minus-di-dh2").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-di-d").attr("disabled", !$(".cant-di-d").val());
+$("#minus-di-dh2").attr("disabled", !$(".cant-di-dh2").val());
 
-$('#minus-di-d').click(function minust() {
-  var $qtde = $(".cant-di-d");
+$('#minus-di-dh2').click(function minust() {
+  var $qtde = $(".cant-di-dh2");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-di-d").attr("disabled", true);
+    $("#minus-di-dh2").attr("disabled", true);
   }
-  $("#plus-di-d").attr("disabled", !b);
+  $("#plus-di-dh2").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-di-d").val());
+    var price = parseFloat($(".cant-di-dh2").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-di-d").val(total);
+    $("#total-di-dh2").val(total);
   }
 
   
@@ -458,7 +544,91 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Disp. de impacto Tipo DC
+//----- Dispositivo de impacto tipo D con Cal-Tag, cable y conector
+$('#plus-di-dh5').click(function add() {
+  var $qtde = $(".cant-di-dh5");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-di-dh5").attr("disabled", true);
+    };
+      $("#minus-di-dh5").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-di-dh5").attr("disabled", !$(".cant-di-dh5").val());
+
+$('#minus-di-dh5').click(function minust() {
+  var $qtde = $(".cant-di-dh5");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-di-dh5").attr("disabled", true);
+  }
+  $("#plus-di-dh5").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-di-dh5").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-di-dh5").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Dispositivo de impacto tipo D con Cal-Tag, Gyro-Tag, cable y conector
+$('#plus-di-dh7').click(function add() {
+  var $qtde = $(".cant-di-dh7");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-di-dh7").attr("disabled", true);
+    };
+      $("#minus-di-dh7").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-di-dh7").attr("disabled", !$(".cant-di-dh7").val());
+
+$('#minus-di-dh7').click(function minust() {
+  var $qtde = $(".cant-di-dh7");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-di-dh7").attr("disabled", true);
+  }
+  $("#plus-di-dh7").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-di-dh7").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-di-dh7").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+//----- Dispositivo de impacto tipo DC con cable y conector
 $('#plus-di-dc').click(function add() {
   var $qtde = $(".cant-di-dc");
   var a = $qtde.val();
@@ -500,91 +670,7 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Disp. de impacto Tipo C
-$('#plus-di-c').click(function add() {
-  var $qtde = $(".cant-di-c");
-  var a = $qtde.val();
-  if (a <= 8) {
-      a++;
-      $qtde.val(a);
-    } else {
-      $("#plus-di-c").attr("disabled", true);
-    };
-      $("#minus-di-c").attr("disabled", !a);
-      $qtde.val(a);
-});
-$("#minus-di-c").attr("disabled", !$(".cant-di-c").val());
-
-$('#minus-di-c').click(function minust() {
-  var $qtde = $(".cant-di-c");
-  var b = $qtde.val();
-  if (b >= 2) {
-    b--;
-    $qtde.val(b);
-  } else {
-    $("#minus-di-c").attr("disabled", true);
-  }
-  $("#plus-di-c").attr("disabled", !b);
-  $qtde.val(b);
-});
-
-/* On change */
-$(document).ready(function() {
-  function updatePrice() {
-    var price = parseFloat($(".cant-di-c").val());
-    var total = price;
-    var total = total.toFixed(0);
-    $("#total-di-c").val(total);
-  }
-
-  
-// On the click of an input, update the price
-  $(document).on("click", "input", updatePrice);
-});
-
-//----- Disp. de impacto Tipo G
-$('#plus-di-g').click(function add() {
-  var $qtde = $(".cant-di-g");
-  var a = $qtde.val();
-  if (a <= 8) {
-      a++;
-      $qtde.val(a);
-    } else {
-      $("#plus-di-g").attr("disabled", true);
-    };
-      $("#minus-di-g").attr("disabled", !a);
-      $qtde.val(a);
-});
-$("#minus-di-g").attr("disabled", !$(".cant-di-g").val());
-
-$('#minus-di-g').click(function minust() {
-  var $qtde = $(".cant-di-g");
-  var b = $qtde.val();
-  if (b >= 2) {
-    b--;
-    $qtde.val(b);
-  } else {
-    $("#minus-di-g").attr("disabled", true);
-  }
-  $("#plus-di-g").attr("disabled", !b);
-  $qtde.val(b);
-});
-
-/* On change */
-$(document).ready(function() {
-  function updatePrice() {
-    var price = parseFloat($(".cant-di-g").val());
-    var total = price;
-    var total = total.toFixed(0);
-    $("#total-di-g").val(total);
-  }
-
-  
-// On the click of an input, update the price
-  $(document).on("click", "input", updatePrice);
-});
-
-//----- Disp. de impacto Tipo DL
+//----- Dispositivo de impacto tipo DL con cable y conector
 $('#plus-di-dl').click(function add() {
   var $qtde = $(".cant-di-dl");
   var a = $qtde.val();
@@ -627,41 +713,41 @@ $(document).ready(function() {
 });
 
 
-//----- Disp. de impacto Tipo D+15
-$('#plus-d15').click(function add() {
-  var $qtde = $(".cant-d15");
+//----- Dispositivo de impacto tipo C con cable y conector
+$('#plus-di-c').click(function add() {
+  var $qtde = $(".cant-di-c");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-d15").attr("disabled", true);
+      $("#plus-di-c").attr("disabled", true);
     };
-      $("#minus-d15").attr("disabled", !a);
+      $("#minus-di-c").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-d15").attr("disabled", !$(".cant-d15").val());
+$("#minus-di-c").attr("disabled", !$(".cant-di-c").val());
 
-$('#minus-d15').click(function minust() {
-  var $qtde = $(".cant-a350");
+$('#minus-di-c').click(function minust() {
+  var $qtde = $(".cant-di-c");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-d15").attr("disabled", true);
+    $("#minus-di-c").attr("disabled", true);
   }
-  $("#plus-d15").attr("disabled", !b);
+  $("#plus-di-c").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-d15").val());
+    var price = parseFloat($(".cant-di-c").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-d15").val(total);
+    $("#total-di-c").val(total);
   }
 
   
@@ -669,41 +755,41 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Bloque Patron HLD
-$('#plus-bd-hld').click(function add() {
-  var $qtde = $(".cant-bd-hld");
+//----- Dispositivo de impacto tipo G con cable y conector
+$('#plus-di-g').click(function add() {
+  var $qtde = $(".cant-di-g");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-bd-hld").attr("disabled", true);
+      $("#plus-di-g").attr("disabled", true);
     };
-      $("#minus-bd-hld").attr("disabled", !a);
+      $("#minus-di-g").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-bd-hld").attr("disabled", !$(".cant-bd-hld").val());
+$("#minus-di-g").attr("disabled", !$(".cant-di-g").val());
 
-$('#minus-bd-hld').click(function minust() {
-  var $qtde = $(".cant-bd-hld");
+$('#minus-di-g').click(function minust() {
+  var $qtde = $(".cant-di-g");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-bd-hld").attr("disabled", true);
+    $("#minus-di-g").attr("disabled", true);
   }
-  $("#plus-bd-hld").attr("disabled", !b);
+  $("#plus-di-g").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-bd-hld").val());
+    var price = parseFloat($(".cant-di-g").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-bd-hld").val(total);
+    $("#total-di-g").val(total);
   }
 
   
@@ -711,41 +797,41 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Bloque Patron HLG
-$('#plus-bd-hlg').click(function add() {
-  var $qtde = $(".cant-bd-hlg");
+//----- Dispositivo de impacto tipo E con diamante sintetico para durezas altas, cable y conector
+$('#plus-di-e').click(function add() {
+  var $qtde = $(".cant-di-e");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-bd-hlg").attr("disabled", true);
+      $("#plus-di-e").attr("disabled", true);
     };
-      $("#minus-bd-hlg").attr("disabled", !a);
+      $("#minus-di-e").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-bd-hlg").attr("disabled", !$(".cant-bd-hlg").val());
+$("#minus-di-e").attr("disabled", !$(".cant-di-e").val());
 
-$('#minus-bd-hlg').click(function minust() {
-  var $qtde = $(".cant-pa6");
+$('#minus-di-e').click(function minust() {
+  var $qtde = $(".cant-di-e");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-bd-hlg").attr("disabled", true);
+    $("#minus-di-e").attr("disabled", true);
   }
-  $("#plus-bd-hlg").attr("disabled", !b);
+  $("#plus-di-e").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-bd-hlg").val());
+    var price = parseFloat($(".cant-di-e").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-bd-hlg").val(total);
+    $("#total-di-e").val(total);
   }
 
   
@@ -753,41 +839,41 @@ $(document).ready(function() {
   $(document).on("click", "input", updatePrice);
 });
 
-//----- Pasta de acoplamiento - 50g
-$('#plus-pa50').click(function add() {
-  var $qtde = $(".cant-pa50");
+//----- Sonda UCI de 10N con cable y conector
+$('#plus-s10n').click(function add() {
+  var $qtde = $(".cant-s10n");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-pa50").attr("disabled", true);
+      $("#plus-s10n").attr("disabled", true);
     };
-      $("#minus-pa50").attr("disabled", !a);
+      $("#minus-s10n").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-pa50").attr("disabled", !$(".cant-pa50").val());
+$("#minus-s10n").attr("disabled", !$(".cant-s10n").val());
 
-$('#minus-pa50').click(function minust() {
-  var $qtde = $(".cant-pa50");
+$('#minus-s10n').click(function minust() {
+  var $qtde = $(".cant-s10n");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-pa50").attr("disabled", true);
+    $("#minus-s10n").attr("disabled", true);
   }
-  $("#plus-pa50").attr("disabled", !b);
+  $("#plus-s10n").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-pa50").val());
+    var price = parseFloat($(".cant-s10n").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-pa50").val(total);
+    $("#total-s10n").val(total);
   }
 
   
@@ -796,41 +882,84 @@ $(document).ready(function() {
 });
 
 
-//----- Pasta de acoplamiento - 200g
-$('#plus-pa200').click(function add() {
-  var $qtde = $(".cant-pa200");
+//----- Sonda UCI de 50N con cable y conector
+$('#plus-s50n').click(function add() {
+  var $qtde = $(".cant-s50n");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-pa200").attr("disabled", true);
+      $("#plus-s50n").attr("disabled", true);
     };
-      $("#minus-pa200").attr("disabled", !a);
+      $("#minus-s50n").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-pa200").attr("disabled", !$(".cant-pa200").val());
+$("#minus-s50n").attr("disabled", !$(".cant-s50n").val());
 
-$('#minus-pa200').click(function minust() {
-  var $qtde = $(".cant-pa200");
+$('#minus-s50n').click(function minust() {
+  var $qtde = $(".cant-s50n");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-pa200").attr("disabled", true);
+    $("#minus-s50n").attr("disabled", true);
   }
-  $("#plus-pa200").attr("disabled", !b);
+  $("#plus-s50n").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-pa200").val());
+    var price = parseFloat($(".cant-s50n").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-pa200").val(total);
+    $("#total-s50n").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Sonda UCI de 98N con cable y conector
+$('#plus-s98n').click(function add() {
+  var $qtde = $(".cant-s98n");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-s98n").attr("disabled", true);
+    };
+      $("#minus-s98n").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-s98n").attr("disabled", !$(".cant-s98n").val());
+
+$('#minus-s98n').click(function minust() {
+  var $qtde = $(".cant-s98n");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-s98n").attr("disabled", true);
+  }
+  $("#plus-s98n").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-s98n").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-s98n").val(total);
   }
 
   
@@ -882,41 +1011,41 @@ $(document).ready(function() {
 });
 
 
-//----- Cuerpo de impacto D
-$('#plus-cid').click(function add() {
-  var $qtde = $(".cant-cid");
+//----- Pasta de acople estándar para utilización en piezas chicas 50cc
+$('#plus-pa50').click(function add() {
+  var $qtde = $(".cant-pa50");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-cid").attr("disabled", true);
+      $("#plus-pa50").attr("disabled", true);
     };
-      $("#minus-cid").attr("disabled", !a);
+      $("#minus-pa50").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-cid").attr("disabled", !$(".cant-cid").val());
+$("#minus-pa50").attr("disabled", !$(".cant-pa50").val());
 
-$('#minus-cid').click(function minust() {
-  var $qtde = $(".cant-cid");
+$('#minus-pa50').click(function minust() {
+  var $qtde = $(".cant-pa50");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-cid").attr("disabled", true);
+    $("#minus-pa50").attr("disabled", true);
   }
-  $("#plus-cid").attr("disabled", !b);
+  $("#plus-pa50").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-cid").val());
+    var price = parseFloat($(".cant-pa50").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-cid").val(total);
+    $("#total-pa50").val(total);
   }
 
   
@@ -925,41 +1054,41 @@ $(document).ready(function() {
 });
 
 
-//----- Cuerpo de impacto G
-$('#plus-cig').click(function add() {
-  var $qtde = $(".cant-cig");
+//----- Patrón de referencia HLD
+$('#plus-pr-hld').click(function add() {
+  var $qtde = $(".cant-pr-hld");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-cig").attr("disabled", true);
+      $("#plus-pr-hld").attr("disabled", true);
     };
-      $("#minus-cig").attr("disabled", !a);
+      $("#minus-pr-hld").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-cig").attr("disabled", !$(".cant-cig").val());
+$("#minus-pr-hld").attr("disabled", !$(".cant-pr-hld").val());
 
-$('#minus-cig').click(function minust() {
-  var $qtde = $(".cant-cig");
+$('#minus-pr-hld').click(function minust() {
+  var $qtde = $(".cant-pr-hld");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-cig").attr("disabled", true);
+    $("#minus-pr-hld").attr("disabled", true);
   }
-  $("#plus-cig").attr("disabled", !b);
+  $("#plus-pr-hld").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-cig").val());
+    var price = parseFloat($(".cant-pr-hld").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-cig").val(total);
+    $("#total-pr-hld").val(total);
   }
 
   
@@ -968,41 +1097,41 @@ $(document).ready(function() {
 });
 
 
-//----- Maletín Compacto
-$('#plus-mc').click(function add() {
-  var $qtde = $(".cant-mc");
+//----- Patrón de referencia HLDL
+$('#plus-pr-hldl').click(function add() {
+  var $qtde = $(".cant-pr-hldl");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-mc").attr("disabled", true);
+      $("#plus-pr-hldl").attr("disabled", true);
     };
-      $("#minus-mc").attr("disabled", !a);
+      $("#minus-pr-hldl").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-mc").attr("disabled", !$(".cant-mc").val());
+$("#minus-pr-hldl").attr("disabled", !$(".cant-pr-hldl").val());
 
-$('#minus-mc').click(function minust() {
-  var $qtde = $(".cant-mc");
+$('#minus-pr-hldl').click(function minust() {
+  var $qtde = $(".cant-pr-hldl");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-mc").attr("disabled", true);
+    $("#minus-pr-hldl").attr("disabled", true);
   }
-  $("#plus-mc").attr("disabled", !b);
+  $("#plus-pr-hldl").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-mc").val());
+    var price = parseFloat($(".cant-pr-hldl").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-mc").val(total);
+    $("#total-pr-hldl").val(total);
   }
 
   
@@ -1011,41 +1140,41 @@ $(document).ready(function() {
 });
 
 
-//----- Maletín Grande
-$('#plus-mg').click(function add() {
-  var $qtde = $(".cant-mg");
+//----- Patrón de referencia HLG
+$('#plus-pr-hlg').click(function add() {
+  var $qtde = $(".cant-pr-hlg");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-mg").attr("disabled", true);
+      $("#plus-pr-hlg").attr("disabled", true);
     };
-      $("#minus-mg").attr("disabled", !a);
+      $("#minus-pr-hlg").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-mg").attr("disabled", !$(".cant-mg").val());
+$("#minus-pr-hlg").attr("disabled", !$(".cant-pr-hlg").val());
 
-$('#minus-mg').click(function minust() {
-  var $qtde = $(".cant-mg");
+$('#minus-pr-hlg').click(function minust() {
+  var $qtde = $(".cant-pr-hlg");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-mg").attr("disabled", true);
+    $("#minus-pr-hlg").attr("disabled", true);
   }
-  $("#plus-mg").attr("disabled", !b);
+  $("#plus-pr-hlg").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-mg").val());
+    var price = parseFloat($(".cant-pr-hlg").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-mg").val(total);
+    $("#total-pr-hlg").val(total);
   }
 
   
@@ -1054,41 +1183,41 @@ $(document).ready(function() {
 });
 
 
-//----- Funda gris
-$('#plus-fgr').click(function add() {
-  var $qtde = $(".cant-fgr");
+//----- Patrones Vickers
+$('#plus-pr-vcd').click(function add() {
+  var $qtde = $(".cant-pr-vcd");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-fgr").attr("disabled", true);
+      $("#plus-pr-vcd").attr("disabled", true);
     };
-      $("#minus-fgr").attr("disabled", !a);
+      $("#minus-pr-vcd").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-fgr").attr("disabled", !$(".cant-fgr").val());
+$("#minus-pr-vcd").attr("disabled", !$(".cant-pr-vcd").val());
 
-$('#minus-fgr').click(function minust() {
-  var $qtde = $(".cant-fgr");
+$('#minus-pr-vcd').click(function minust() {
+  var $qtde = $(".cant-pr-vcd");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-fgr").attr("disabled", true);
+    $("#minus-pr-vcd").attr("disabled", true);
   }
-  $("#plus-fgr").attr("disabled", !b);
+  $("#plus-pr-vcd").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-fgr").val());
+    var price = parseFloat($(".cant-pr-vcd").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-fgr").val(total);
+    $("#total-pr-vcd").val(total);
   }
 
   
@@ -1097,7 +1226,395 @@ $(document).ready(function() {
 });
 
 
-//----- Funda roja
+//----- Patrones Vickers HV10 marca YAMAMOTO con certificado
+$('#plus-pr-vy10').click(function add() {
+  var $qtde = $(".cant-pr-vy10");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-vy10").attr("disabled", true);
+    };
+      $("#minus-pr-vy10").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-vy10").attr("disabled", !$(".cant-pr-vy10").val());
+
+$('#minus-pr-vy10').click(function minust() {
+  var $qtde = $(".cant-pr-vy10");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-vy10").attr("disabled", true);
+  }
+  $("#plus-pr-vy10").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-vy10").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-vy10").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Patrones Rockwell C
+$('#plus-pr-rccd').click(function add() {
+  var $qtde = $(".cant-pr-rccd");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-rccd").attr("disabled", true);
+    };
+      $("#minus-pr-rccd").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-rccd").attr("disabled", !$(".cant-pr-rccd").val());
+
+$('#minus-pr-rccd').click(function minust() {
+  var $qtde = $(".cant-pr-rccd");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-rccd").attr("disabled", true);
+  }
+  $("#plus-pr-rccd").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-rccd").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-rccd").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Patrones Rockwell C marca YAMAMOTO con certificado
+$('#plus-pr-rcy').click(function add() {
+  var $qtde = $(".cant-pr-rcy");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-rcy").attr("disabled", true);
+    };
+      $("#minus-pr-rcy").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-rcy").attr("disabled", !$(".cant-pr-rcy").val());
+
+$('#minus-pr-rcy').click(function minust() {
+  var $qtde = $(".cant-pr-rcy");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-rcy").attr("disabled", true);
+  }
+  $("#plus-pr-rcy").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-rcy").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-rcy").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Patrones Rockwell B
+$('#plus-pr-rbcd').click(function add() {
+  var $qtde = $(".cant-pr-rbcd");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-rbcd").attr("disabled", true);
+    };
+      $("#minus-pr-rbcd").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-rbcd").attr("disabled", !$(".cant-pr-rbcd").val());
+
+$('#minus-pr-rbcd').click(function minust() {
+  var $qtde = $(".cant-pr-rbcd");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-rbcd").attr("disabled", true);
+  }
+  $("#plus-pr-rbcd").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-rbcd").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-rbcd").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Patrones Rockwell B marca YAMAMOTO con certificado
+$('#plus-pr-rby').click(function add() {
+  var $qtde = $(".cant-pr-rby");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-rby").attr("disabled", true);
+    };
+      $("#minus-pr-rby").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-rby").attr("disabled", !$(".cant-pr-rby").val());
+
+$('#minus-pr-rby').click(function minust() {
+  var $qtde = $(".cant-pr-rby");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-rby").attr("disabled", true);
+  }
+  $("#plus-pr-rby").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-rby").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-rby").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Patrones Brinell
+$('#plus-pr-brcd').click(function add() {
+  var $qtde = $(".cant-pr-brcd");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-brcd").attr("disabled", true);
+    };
+      $("#minus-pr-brcd").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-brcd").attr("disabled", !$(".cant-pr-brcd").val());
+
+$('#minus-pr-brcd').click(function minust() {
+  var $qtde = $(".cant-pr-brcd");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-brcd").attr("disabled", true);
+  }
+  $("#plus-pr-brcd").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-brcd").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-brcd").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Patrones Brinell marca YAMAMOTO con certificado
+$('#plus-pr-bry').click(function add() {
+  var $qtde = $(".cant-pr-bry");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-bry").attr("disabled", true);
+    };
+      $("#minus-pr-bry").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-bry").attr("disabled", !$(".cant-pr-bry").val());
+
+$('#minus-pr-bry').click(function minust() {
+  var $qtde = $(".cant-pr-bry");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-bry").attr("disabled", true);
+  }
+  $("#plus-pr-bry").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-bry").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-bry").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Certificación patron Leeb HLD con trazabilidad INTI
+$('#plus-pr-clhld').click(function add() {
+  var $qtde = $(".cant-pr-clhld");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-clhld").attr("disabled", true);
+    };
+      $("#minus-pr-clhld").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-clhld").attr("disabled", !$(".cant-pr-clhld").val());
+
+$('#minus-pr-clhld').click(function minust() {
+  var $qtde = $(".cant-pr-clhld");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-clhld").attr("disabled", true);
+  }
+  $("#plus-pr-clhld").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-clhld").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-clhld").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Certificacion patron Vickers HV10 con trazabilidad INTI
+$('#plus-pr-chv10').click(function add() {
+  var $qtde = $(".cant-pr-chv10");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-chv10").attr("disabled", true);
+    };
+      $("#minus-pr-chv10").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-chv10").attr("disabled", !$(".cant-pr-chv10").val());
+
+$('#minus-pr-chv10').click(function minust() {
+  var $qtde = $(".cant-pr-chv10");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-chv10").attr("disabled", true);
+  }
+  $("#plus-pr-chv10").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-chv10").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-chv10").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+
+//----- Funda protectora de silicona color Rojo
 $('#plus-fro').click(function add() {
   var $qtde = $(".cant-fro");
   var a = $qtde.val();
@@ -1140,41 +1657,41 @@ $(document).ready(function() {
 });
 
 
-//----- Funda amarilla
-$('#plus-fam').click(function add() {
-  var $qtde = $(".cant-fam");
+//----- Cable con conector para dispositivos de impacto dmq
+$('#plus-cdi').click(function add() {
+  var $qtde = $(".cant-cdi");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-fam").attr("disabled", true);
+      $("#plus-cdi").attr("disabled", true);
     };
-      $("#minus-fam").attr("disabled", !a);
+      $("#minus-cdi").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-fam").attr("disabled", !$(".cant-fam").val());
+$("#minus-cdi").attr("disabled", !$(".cant-cdi").val());
 
-$('#minus-fam').click(function minust() {
-  var $qtde = $(".cant-fam");
+$('#minus-cdi').click(function minust() {
+  var $qtde = $(".cant-cdi");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-fam").attr("disabled", true);
+    $("#minus-cdi").attr("disabled", true);
   }
-  $("#plus-fam").attr("disabled", !b);
+  $("#plus-cdi").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-fam").val());
+    var price = parseFloat($(".cant-cdi").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-fam").val(total);
+    $("#total-cdi").val(total);
   }
 
   
@@ -1184,41 +1701,41 @@ $(document).ready(function() {
 
 
 
-//----- USB
-$('#plus-usb').click(function add() {
-    var $qtde = $(".cant-usb");
+//----- Cable con conector para sondas UCI dmq
+$('#plus-cdiuci').click(function add() {
+    var $qtde = $(".cant-cdiuci");
     var a = $qtde.val();
     if (a <= 8) {
         a++;
         $qtde.val(a);
       } else {
-        $("#plus-usb").attr("disabled", true);
+        $("#plus-cdiuci").attr("disabled", true);
       };
-        $("#minus-usb").attr("disabled", !a);
+        $("#minus-cdiuci").attr("disabled", !a);
         $qtde.val(a);
   });
-  $("#minus-usb").attr("disabled", !$(".cant-usb").val());
+  $("#minus-cdiuci").attr("disabled", !$(".cant-cdiuci").val());
   
-  $('#minus-usb').click(function minust() {
-    var $qtde = $(".cant-usb");
+  $('#minus-cdiuci').click(function minust() {
+    var $qtde = $(".cant-cdiuci");
     var b = $qtde.val();
     if (b >= 2) {
       b--;
       $qtde.val(b);
     } else {
-      $("#minus-usb").attr("disabled", true);
+      $("#minus-cdiuci").attr("disabled", true);
     }
-    $("#plus-usb").attr("disabled", !b);
+    $("#plus-cdiuci").attr("disabled", !b);
     $qtde.val(b);
   });
   
   /* On change */
   $(document).ready(function() {
     function updatePrice() {
-      var price = parseFloat($(".cant-usb").val());
+      var price = parseFloat($(".cant-cdiuci").val());
       var total = price;
       var total = total.toFixed(0);
-      $("#total-usb").val(total);
+      $("#total-cdiuci").val(total);
     }
 
     
@@ -1226,31 +1743,31 @@ $('#plus-usb').click(function add() {
     $(document).on("click", "input", updatePrice);
   });
 
-//----- RS232
-$('#plus-rs').click(function add() {
-    var $qtde = $(".cant-rs");
+//----- Cable para conexión de impresora térmica a equipos dmq
+$('#plus-cimp').click(function add() {
+    var $qtde = $(".cant-cimp");
     var a = $qtde.val();
     if (a <= 8) {
         a++;
         $qtde.val(a);
       } else {
-        $("#plus-rs").attr("disabled", true);
+        $("#plus-cimp").attr("disabled", true);
       };
-        $("#minus-rs").attr("disabled", !a);
+        $("#minus-cimp").attr("disabled", !a);
         $qtde.val(a);
   });
-  $("#minus-rs").attr("disabled", !$(".cant-rs").val());
+  $("#minus-cimp").attr("disabled", !$(".cant-cimp").val());
   
-  $('#minus-rs').click(function minust() {
-    var $qtde = $(".cant-rs");
+  $('#minus-cimp').click(function minust() {
+    var $qtde = $(".cant-cimp");
     var b = $qtde.val();
     if (b >= 2) {
       b--;
       $qtde.val(b);
     } else {
-      $("#minus-rs").attr("disabled", true);
+      $("#minus-cimp").attr("disabled", true);
     }
-    $("#plus-rs").attr("disabled", !b);
+    $("#plus-cimp").attr("disabled", !b);
     $qtde.val(b);
   });
   
