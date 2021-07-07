@@ -1219,10 +1219,10 @@ $('#minus-pa10oaa').click(function minust() {
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-pa10").val());
+    var price = parseFloat($(".cant-pa10oaa").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-pa10").val(total);
+    $("#total-pa10oaa").val(total);
   }
 
   
@@ -1314,3 +1314,32 @@ $("#accesorios .acc-check").click(function() {
   $('.tt-acc').toggle( $("#accesorios .acc-check:checked").length > 0 );
 });
 
+
+//---------------Guiones entre cuil
+
+function format(input, format, sep) {
+  var output = "";
+  var idx = 0;
+  for (var i = 0; i < format.length && idx < input.length; i++) {
+      output += input.substr(idx, format[i]);
+      if (idx + format[i] < input.length) output += sep;
+      idx += format[i];
+  }
+
+  output += input.substr(idx);
+
+  return output;
+}
+
+$('.cuit').keyup(function() {
+  var foo = $(this).val().replace(/-/g, ""); // remove hyphens
+  // You may want to remove all non-digits here
+  // var foo = $(this).val().replace(/\D/g, "");
+
+  if (foo.length > 0) {
+      foo = format(foo, [2, 8, 1], "-");
+  }
+
+  
+  $(this).val(foo);
+});

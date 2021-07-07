@@ -418,6 +418,49 @@ svg.qc-icon-sop {
 }
 
 
+/*--- Cotización ---*/
+
+#cotizado h5 {
+    border-bottom: 4px solid #289ee8;
+    color: #289ee8;
+}
+
+#accesorios .custom-control-input:checked~.custom-control-label::before, #models-accordion .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: rgb(0,113,184);
+    background-color: rgb(0,113,184);
+	border:none;
+}
+
+#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
+    color: #289ee8;
+}
+
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link:after, 
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link{
+    color: #289ee8;
+}
+
+
+.btn-blanco.btn-enviar.btn-qc {
+	color: #fff;
+    background-color: rgb(0,113,184);
+    border: 2px solid rgb(0,113,184);
+	margin-bottom: 15px;
+}
+
+.btn-blanco.btn-enviar.btn-qc:hover, .btn-blanco.btn-enviar.btn-qc:active, .btn-qc:focus {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);   
+	transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #289ee8 !important;
+    box-shadow: 0 0 0 0.2rem rgba(0,113,184, 0.25) !important;
+}
+
+
 
 
 /*--------------------------------------------------------------------------------------------------*/

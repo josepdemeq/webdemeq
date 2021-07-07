@@ -190,7 +190,7 @@ $('#plus-5d').click(function add() {
 $("#minus-5d").attr("disabled", !$(".cant-5d").val());
 
 $('#minus-5d').click(function minust() {
-  var $qtde = $(".cant-5dl");
+  var $qtde = $(".cant-5d");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
@@ -1140,6 +1140,49 @@ $(document).ready(function() {
 });
 
 
+//----- Patrón de referencia HLC
+$('#plus-pr-hlc').click(function add() {
+  var $qtde = $(".cant-pr-hlc");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-pr-hlc").attr("disabled", true);
+    };
+      $("#minus-pr-hlc").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-pr-hlc").attr("disabled", !$(".cant-pr-hlc").val());
+
+$('#minus-pr-hlc').click(function minust() {
+  var $qtde = $(".cant-pr-hlc");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-pr-hlc").attr("disabled", true);
+  }
+  $("#plus-pr-hlc").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-pr-hlc").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-pr-hlc").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
 //----- Patrón de referencia HLG
 $('#plus-pr-hlg').click(function add() {
   var $qtde = $(".cant-pr-hlg");
@@ -1774,10 +1817,10 @@ $('#plus-cimp').click(function add() {
   /* On change */
   $(document).ready(function() {
     function updatePrice() {
-      var price = parseFloat($(".cant-rs").val());
+      var price = parseFloat($(".cant-cimp").val());
       var total = price;
       var total = total.toFixed(0);
-      $("#total-rs").val(total);
+      $("#total-cimp").val(total);
     }
 
     
@@ -1867,3 +1910,34 @@ $("#accesorios .acc-check").click(function() {
   $('.tt-acc').toggle( $("#accesorios .acc-check:checked").length > 0 );
 });
 
+
+
+
+//---------------Guiones entre cuil
+
+function format(input, format, sep) {
+  var output = "";
+  var idx = 0;
+  for (var i = 0; i < format.length && idx < input.length; i++) {
+      output += input.substr(idx, format[i]);
+      if (idx + format[i] < input.length) output += sep;
+      idx += format[i];
+  }
+
+  output += input.substr(idx);
+
+  return output;
+}
+
+$('.cuit').keyup(function() {
+  var foo = $(this).val().replace(/-/g, ""); // remove hyphens
+  // You may want to remove all non-digits here
+  // var foo = $(this).val().replace(/\D/g, "");
+
+  if (foo.length > 0) {
+      foo = format(foo, [2, 8, 1], "-");
+  }
+
+  
+  $(this).val(foo);
+});

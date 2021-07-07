@@ -3570,7 +3570,7 @@ button:focus {
 	text-align: left;
 	background: #303030;
 	color: #fff;
-	padding: 20px;
+	padding: 14px 20px;
 	border-radius: 0;
 	font-size: 18px;
   }
@@ -3726,9 +3726,38 @@ button:focus {
     font-size: 18px;
 }
 
-#cotizado .modelo-cotizado .incluido-modelo p {
+
+
+#cotizado h6 span {
+	font-weight: 300;
+    font-size: 16px;
+}
+
+#cotizado .modelo-cotizado p {
 	font-size: 16px;
-	margin:0 0 10px 8px;
+	margin-bottom: 10px;
+}
+
+ul.dash {
+    list-style: none;
+    margin-left: 10px;
+    padding-left: 1em;
+}
+ul.dash > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+#cotizado .modelo-cotizado .incluido-modelo ul {
+    padding-inline-start: 10px;
+}
+
+#cotizado .modelo-cotizado .incluido-modelo li {
+	font-size: 16px;
+	margin:0 0 5px 8px;
+	letter-spacing: 1.5px;
 }
 
 #cotizado .modelo-cotizado {

@@ -10,6 +10,7 @@
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $company = trim($_POST["company"]);
+        $cuit = trim($_POST["cuit"]);
         $phone = trim($_POST["phone"]);
         $message = str_replace(array("\r","\n"),array("<br>") , strip_tags(trim($_POST["message"])));
         $model_7L = !empty($_POST["val_QH7L"]) ? trim($_POST["val_QH7L"]) : NULL;
@@ -38,6 +39,7 @@
         $pa_50 = !empty($_POST["pa_50"]) ? trim($_POST["pa_50"]) : NULL;
         $pr_hld = !empty($_POST["pr_hld"]) ? trim($_POST["pr_hld"]) : NULL;
         $pr_hldl = !empty($_POST["pr_hldl"]) ? trim($_POST["pr_hldl"]) : NULL;
+        $pr_hlc = !empty($_POST["pr_hlc"]) ? trim($_POST["pr_hlc"]) : NULL;
         $pr_hlg = !empty($_POST["pr_hlg"]) ? trim($_POST["pr_hlg"]) : NULL;
         $pr_vcd = !empty($_POST["pr_vcd"]) ? trim($_POST["pr_vcd"]) : NULL;
         $pr_vy10 = !empty($_POST["pr_vy10"]) ? trim($_POST["pr_vy10"]) : NULL;
@@ -51,7 +53,7 @@
         $pr_chv10 = !empty($_POST["pr_chv10"]) ? trim($_POST["pr_chv10"]) : NULL;
         $f_ro = !empty($_POST["f_ro"]) ? trim($_POST["f_ro"]) : NULL;
         $c_di = !empty($_POST["c_di"]) ? trim($_POST["c_di"]) : NULL;
-        $c_di = !empty($_POST["c_diuci"]) ? trim($_POST["c_diuci"]) : NULL;
+        $c_diuci = !empty($_POST["c_diuci"]) ? trim($_POST["c_diuci"]) : NULL;
         $c_imp = !empty($_POST["c_imp"]) ? trim($_POST["c_imp"]) : NULL;
         $impr = !empty($_POST["impr"]) ? trim($_POST["impr"]) : NULL;
         
@@ -73,12 +75,18 @@
                         Datos personales
                         </div>
                         <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
                         </div>
                         <div style='background: #ffffff;;width:100%;padding:10px;border-bottom:1px solid #000000;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $name . " </div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'> " . $name . " </div>
+                        </div>
+                        <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>CUIT/CUIL</div>
+                        </div>
+                        <div style='background: #ffffff;;width:100%;padding:10px;border-bottom:1px solid #000000;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $cuit . " </div>
                         </div>
                         <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'>Email</div>
@@ -97,73 +105,80 @@
                             <div style='width: 100%;display: inline-block;margin: 0;'>Modelo/s</div>
                         </div>";
 
-                        if ($model_5B >= 1) {
+                        if ($model_7L >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                              <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5B . " </div>
-                                              <div style='margin: 0;'>x QS5 B</div>
+                                              <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_7L . " </div>
+                                              <div style='margin: 0;font-weight:600;'>x QH7 L</div>
                                            </div>";
                         }
 
-                        if ($model_5E >= 1) {
+                        if ($model_7U >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5E . " </div>
-                                            <div style='margin: 0;'>x QS5 E</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_7U . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH7 U</div>
                                             </div>";
                         }
 
-                        if ($model_5DL >= 1) {
+                        if ($model_7C >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DL . " </div>
-                                            <div style='margin: 0;'>x QS5 E</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_7C . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH7 C</div>
                                             </div>";
                         }
 
-                        if ($model_5DLE >= 1) {
+                        if ($model_5D >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DLE . " </div>
-                                            <div style='margin: 0;'>x QS5 DLE</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5D . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH5 D</div>
                                             </div>";
                         }
 
-                        if ($model_3B >= 1) {
+                        if ($model_5G >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3B . " </div>
-                                            <div style='margin: 0;'>x QS3 B</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5G . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH5 G</div>
                                             </div>";
                         }
 
-                        if ($model_3DL >= 1) {
+                        if ($model_5M >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3DL . " </div>
-                                            <div style='margin: 0;'>x QS3 B</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5M . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH5 M</div>
+                                            </div>";
+                        }
+
+                        if ($model_5U >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5U . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QS5 U</div>
                                             </div>";
                         }
 
                         if ($model_2S >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2S . " </div>
-                                            <div style='margin: 0;'>x QS2 S</div>
+                                            <div style='margin: 0;font-weight:600;'>x QH2 S</div>
                                             </div>";
                         }
 
-                        if ($model_2V >= 1) {
+                        if ($model_2DLS >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2V . " </div>
-                                            <div style='margin: 0;'>x QS2 V</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DLS . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH2 DLS</div>
                                             </div>";
                         }
 
-                        if ($model_2DL >= 1) {
+                        if ($model_2P >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DL . " </div>
-                                            <div style='margin: 0;'>x QS2 DL</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2P . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH2 P</div>
                                             </div>";
                         }
 
-                        if ($model_2DLV >= 1) {
+                        if ($model_2DLP >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DLV . " </div>
-                                            <div style='margin: 0;'>x QS2 DL</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DLP . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QH2 DLP</div>
                                             </div>";
                         }
         
@@ -171,138 +186,259 @@
                             <div style='width: 100%;display: inline-block;margin: 0;'>Accesorios</div>
                         </div>";
 
-                        
-
-                        if ($tr_2_12 >= 1) {
+                        if ($di_dh2 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_12 . " </div>
-                                            <div style='margin: 0;'>x QSS201: Transductor de 2MHz Ø12mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_dh2 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS100:</span> Dispositivo de impacto tipo D con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_2_22 >= 1) {
+                        if ($di_dh5 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_22 . " </div>
-                                            <div style='margin: 0;'>x QSS202: Transductor de 2MHz Ø22mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_dh5 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS101:</span> Dispositivo de impacto tipo D con Cal-Tag, cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_5_90 >= 1) {
+                        if ($di_dh7 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_90 . " </div>
-                                            <div style='margin: 0;'>x QSS501: Transductor de 5MHz Ø10mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_dh7 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS102:</span> Dispositivo de impacto tipo D con Cal-Tag, Gyro-Tag, cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_5m_r >= 1) {
+                        if ($di_dc >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5m_r . " </div>
-                                            <div style='margin: 0;'>x QSS511: Transductor de 5MHz Ø10mm. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_dc . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS201:</span> Dispositivo de impacto tipo DC con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_7_90 >= 1) {
+                        if ($di_dl >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_7_90 . " </div>
-                                            <div style='margin: 0;'>x QSS701: Transductor de 7MHz Ø6mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_dl . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS301:</span> Dispositivo de impacto tipo DL con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_at_150 >= 1) {
+                        if ($di_c >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_150 . " </div>
-                                            <div style='margin: 0;'>x QSS518: Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_c . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS501:</span> Dispositivo de impacto tipo C con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_at_350 >= 1) {
+                        if ($di_g >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_350 . " </div>
-                                            <div style='margin: 0;'>x QSS519: Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_g . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS601:</span> Dispositivo de impacto tipo G con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_5_eco2 >= 1) {
+                        if ($di_e >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_eco2 . " </div>
-                                            <div style='margin: 0;'>x QSS502: Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_e . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS701:</span> Dispositivo de impacto tipo E con diamante sintético para durezas altas, cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_5_sk >= 1) {
+                        if ($s_10n >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_sk . " </div>
-                                            <div style='margin: 0;'>x QSS531: Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_10n . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS110:</span> Sonda UCI de 10N con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($tr_5_csk >= 1) {
+                        if ($s_50n >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_csk . " </div>
-                                            <div style='margin: 0;'>x QSC531: Cable con 2 conectores tipo LEMO en ambas puntas (para transductor QSS531)</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_50n . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS150:</span> Sonda UCI de 50N con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($g_50 >= 1) {
+                        if ($s_98n >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_50  . " </div>
-                                            <div style='margin: 0;'>x QSG005: Botella plástica con pico vertedor de 50cc</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_98n . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHS198:</span> Sonda UCI de 98N con cable y conector</div>
                                             </div>";
                         }
 
-                        if ($g_100 >= 1) {
+                        if ($aa_12 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_100  . " </div>
-                                            <div style='margin: 0;'>x QSG010: Botella plástica con pico vertedor de 100cc</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $aa_12 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHA012:</span> Juego de 12 anillos para medir superficies concavas y convexas</div>
                                             </div>";
                         }
 
-                        if ($oaa_1 >= 1) {
+                        if ($pa_50 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $oaa_1  . " </div>
-                                            <div style='margin: 0;'>x QSD001: Certificado de calibración QS2, QS3, QS5 B, QS5 DL</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_50 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHG005:</span> Pasta de acople estándar 50cc</div>
                                             </div>";
                         }
 
-                        if ($oaa_2 >= 1) {
+                        if ($pr_hld >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $oaa_2  . " </div>
-                                            <div style='margin: 0;'>x QSD002: Certificado de calibración QS5 E, QS5 DLE</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_hld . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR101:</span> Patrón de referencia HLD</div>
                                             </div>";
                         }
 
-                        if ($pa_5 >= 1) {
+                        if ($pr_hldl >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5 . " </div>
-                                            <div style='margin: 0;'>x QSR005: Patrón escalonado de 5 pasos en acero al carbono</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_hldl . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR102:</span> Patrón de referencia HLDL</div>
                                             </div>";
                         }
 
-                        if ($pa_10 >= 1) {
+                        if ($pr_hlc >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10 . " </div>
-                                            <div style='margin: 0;'>x QSR010: Patrón escalonado de 10 pasos en acero al carbono</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_hlc . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR103:</span> Patrón de referencia HLC</div>
                                             </div>";
                         }
 
-                        if ($pa_5_oaa >= 1) {
+                        if ($pr_hlg >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5_oaa . " </div>
-                                            <div style='margin: 0;'>x QSD005: Certificacion OAA para patrón escalonado de 5 pasos</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_hlg . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR107:</span> Patrón de referencia HLG</div>
                                             </div>";
                         }
 
-                        if ($pa_10_oaa >= 1) {
+                        if ($pr_vcd >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10_oaa . " </div>
-                                            <div style='margin: 0;'>x QSD010: Certificacion OAA para patrón escalonado de 10 pasos</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_vcd . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR501:</span> Patrones Vickers (Aclaracón en apartado Observaciones)</div>
                                             </div>";
                         }
 
-                        if ($f_am >= 1) {
+                        if ($pr_vy10 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_am  . " </div>
-                                            <div style='margin: 0;'>x QSP001: Funda Protectora Amarilla</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_vy10 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x YHR501:</span> Patrones Vickers HV10 marca YAMAMOTO con certificado</div>
+                                            </div>";
+                        }
+
+                        if ($pr_rccd >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_rccd . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR201:</span> Patrones Rockwell C (Aclaracón en apartado Observaciones)</div>
+                                            </div>";
+                        }
+
+                        if ($pr_rcy >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_rcy . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x YHR201:</span> Patrones Rockwell C marca YAMAMOTO con certificado</div>
+                                            </div>";
+                        }
+
+                        if ($pr_rbcd >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_rbcd . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR301:</span> Patrones Rockwell B (Aclaracón en apartado Observaciones)</div>
+                                            </div>";
+                        }
+
+                        if ($pr_rby >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_rby . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x YHR301:</span> Patrones Rockwell B marca YAMAMOTO con certificado</div>
+                                            </div>";
+                        }
+
+                        if ($pr_brcd >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_brcd . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHR401:</span> Patrones Brinell (Aclaracón en apartado Observaciones)</div>
+                                            </div>";
+                        }
+
+                        if ($pr_bry >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_bry . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x YHR401:</span> Patrones Brinell marca YAMAMOTO con certificado</div>
+                                            </div>";
+                        }
+
+                        if ($pr_clhld >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_clhld . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHD101:</span> Certificación patron Leeb HLD con trazabilidad INTI</div>
+                                            </div>";
+                        }
+
+                        if ($pr_chv10 >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_chv10 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHD501:</span> Certificacion patron Vickers HV10 con trazabilidad INTI</div>
+                                            </div>";
+                        }
+
+                        if ($f_ro >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_ro . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHP001:</span> Funda protectora de silicona color Rojo</div>
+                                            </div>";
+                        }
+
+                        if ($c_di >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $c_di . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHC101:</span> Cable con conector para dispositivos de impacto dmq</div>
+                                            </div>";
+                        }
+
+                        if ($c_diuci >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $c_diuci . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QHC105:</span> Cable con conector para sondas UCI dmq</div>
+                                            </div>";
+                        }
+
+                        if ($c_imp >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $c_diuci . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QAC001:</span> Cable para conexión de impresora térmica a equipos dmq</div>
+                                            </div>";
+                        }
+
+                        if ($impr >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $impr . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QAI001:</span> Impresora térmica para equipos dmq</div>
                                             </div>";
                         }
 
@@ -333,12 +469,18 @@
                         Datos personales
                         </div>
                         <div style='color: #000;font-weight: 600;font-size: 18px;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
                         </div>
                         <div style='margin-bottom: 20px;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $name . " </div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'> " . $name . " </div>
+                        </div>
+                        <div style='color: #000;font-weight: 600;font-size: 18px;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>CUIT/CUIL</div>
+                        </div>
+                        <div style='margin-bottom: 20px;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $cuit . " </div>
                         </div>
                         <div style='color: #000;font-weight: 600;font-size: 18px;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'>Email</div>
@@ -356,214 +498,482 @@
                             <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Modelo/s</div>
                         </div>";
 
-    if ($model_5B >= 1) {
+    if ($model_7L >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5B . " </div>
-                            <div style='margin: 0;'>x QS5 B</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_7L . " </div>
+                            <div style='margin: 0;'>x QH7 L</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH7 L</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Patrón de referencia HLD</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_5E >= 1) {
+    if ($model_7U >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5E . " </div>
-                            <div style='margin: 0;'>x QS5 E</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_7U . " </div>
+                            <div style='margin: 0;'>x QH7 U</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH7 U</li>
+                                <li>Sensor UCI</li>
+                                <li>Patrón de referencia HV</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_5DL >= 1) {
+    if ($model_7C >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5DL . " </div>
-                            <div style='margin: 0;'>x QS5 E</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_7C . " </div>
+                            <div style='margin: 0;'>x QH7 C</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH7 C</li>
+                                <li>Sensor UCI</li>
+                                <li>Patrón de referencia HV</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Patrón de referencia HLD</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_5DLE >= 1) {
+    if ($model_5D >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5DLE . " </div>
-                            <div style='margin: 0;'>x QS5 DLE</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5D . " </div>
+                            <div style='margin: 0;'>x QH5 D</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH5 D</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Patrón de referencia HLD</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_3B >= 1) {
+    if ($model_5G >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_3B . " </div>
-                            <div style='margin: 0;'>x QS3 B</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5G . " </div>
+                            <div style='margin: 0;'>x QH5 G</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH5 G</li>
+                                <li>Dispositivo de impacto G</li>
+                                <li>Patrón de referencia HLG</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_3DL >= 1) {
+    if ($model_5M >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_3DL . " </div>
-                            <div style='margin: 0;'>x QS3 B</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5M . " </div>
+                            <div style='margin: 0;'>x QH5 M</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH5 M</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Patrón de referencia HLD</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
+                        </div>";
+    }
+
+    if ($model_5U >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5U . " </div>
+                            <div style='margin: 0;'>x QH5 U</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH5 U</li>
+                                <li>Sensor UCI</li>
+                                <li>Patrón de referencia HV</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
     if ($model_2S >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_2S . " </div>
-                            <div style='margin: 0;'>x QS2 S</div>
+                            <div style='margin: 0;'>x QH2 S</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH2 S</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_2V >= 1) {
+    if ($model_2DLS >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_2V . " </div>
-                            <div style='margin: 0;'>x QS2 V</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2DLS . " </div>
+                            <div style='margin: 0;'>x QH2 DLS</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH2 DLS</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_2DL >= 1) {
+    if ($model_2P >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_2DL . " </div>
-                            <div style='margin: 0;'>x QS2 DL</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2P . " </div>
+                            <div style='margin: 0;'>x QH2 P</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH2 P</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Patrón de referencia HLD</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
-    if ($model_2DLV >= 1) {
+    if ($model_2DLP >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_2DLV . " </div>
-                            <div style='margin: 0;'>x QS2 DLV</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2DLP . " </div>
+                            <div style='margin: 0;'>x QH2 DLP</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QH2 DLP</li>
+                                <li>Dispositivo de impacto D</li>
+                                <li>Patrón de referencia HLD</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Pasta para acople</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
             
         $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;'>
-                            <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Accesorios</div>
+                            <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Accesorios Opcionales</div>
                         </div>";
 
                             
 
-    if ($tr_2_12 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_2_12 . " </div>
-                            <div style='margin: 0;'>x Transductor de 2MHz Ø12mm. 90°</div>
+    if ($di_dh2 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_dh2 . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo D con cable y conector. Compatible con Serie QH2</div>
                         </div>";
     }
 
-    if ($tr_2_22 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_2_22 . " </div>
-                            <div style='margin: 0;'>x Transductor de 2MHz Ø22mm. 90°</div>
+    if ($di_dh5 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_dh5 . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo D con Cal-Tag, cable y conector. Compatible con Serie QH5</div>
                         </div>";
     }
 
-    if ($tr_5_90 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_90 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz Ø10mm. 90°</div>
+    if ($di_dh7 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_dh7 . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo D con Cal-Tag, Gyro-Tag, cable y conector. Compatible con Serie QH7</div>
                         </div>";
     }
 
-    if ($tr_5m_r >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5m_r . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz Ø10mm. Recto</div>
+    if ($di_dc >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_dc . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo DC con cable y conector</div>
                         </div>";
     }
 
-    if ($tr_7_90 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_7_90 . " </div>
-                            <div style='margin: 0;'>x Transductor de 7MHz Ø6mm. 90°</div>
+    if ($di_dl >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_dl . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo DL con cable y conector</div>
                         </div>";
     }
 
-    if ($tr_at_150 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_at_150 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
+    if ($di_c >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_c . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo C con cable y conector</div>
                         </div>";
     }
 
-    if ($tr_at_350 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_at_350 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
+    if ($di_g >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_g . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo G con cable y conector*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Debe adquirir un patron HLG para dispositivo de impacto G</div>
                         </div>";
     }
 
-    if ($tr_5_eco2 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_eco2 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
+    if ($di_e >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $di_e . " </div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo E con diamante sintético para durezas altas, cable y conector</div>
                         </div>";
     }
 
-    if ($tr_5_sk >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_sk . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+    if ($s_10n >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_10n . " </div>
+                            <div style='margin: 0;'>x Sonda UCI de 10N con cable y conector</div>
                         </div>";
     }
 
-    if ($tr_5_csk >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_csk . " </div>
-                            <div style='margin: 0;'>x Cable con 2 conectores tipo LEMO en ambas puntas (compatible con transductor similar Krautkramer</div>
+    if ($s_50n >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_50n . " </div>
+                            <div style='margin: 0;'>x Sonda UCI de 50N con cable y conector</div>
                         </div>";
     }
 
-    if ($g_50 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $g_50 . " </div>
-                            <div style='margin: 0;'>x Botella plástica con pico vertedor de 50cc</div>
+    if ($s_98n >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_98n . " </div>
+                            <div style='margin: 0;'>x Sonda UCI de 98N con cable y conector</div>
                         </div>";
     }
 
-    if ($g_100 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $g_100 . " </div>
-                            <div style='margin: 0;'>x Gel Botella plástica con pico vertedor de 100cc</div>
+    if ($aa_12 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $aa_12 . " </div>
+                            <div style='margin: 0;'>x Juego de 12 anillos para medir superficies concavas y convexas. Compatibles con los dispositivos de impacto D, DC, C. </div>
                         </div>";
     }
 
-    if ($oaa_1 >= 1) {
+    if ($pa_50 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $oaa_1 . " </div>
-                            <div style='margin: 0;'>x Certificado de calibración QS2, QS3, QS5 B, QS5 DL</div>
+                            <div style='margin: 0 3px 0 0;'> " . $pa_50 . " </div>
+                            <div style='margin: 0;'>x Pasta de acople estándar para utilización en piezas chicas. 50cc</div>
                         </div>";
     }
 
-    if ($oaa_2 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $oaa_2 . " </div>
-                            <div style='margin: 0;'>x Certificado de calibración QS5 E, QS5 DLE</div>
+    if ($pr_hld >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_hld . " </div>
+                            <div style='margin: 0;'>x Patrón de referencia HLD. Compatible con dispositivos de impacto D, DC.</div>
                         </div>";
     }
 
-    if ($pa_5 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_5 . " </div>
-                            <div style='margin: 0;'>x Patrón escalonado de 5 pasos en acero al carbono</div>
+    if ($pr_hldl >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_hldl . " </div>
+                            <div style='margin: 0;'>x Patrón de referencia HLDL. Compatible con dispositivos de impacto DL.</div>
                         </div>";
     }
 
-    if ($pa_10 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_10 . " </div>
-                            <div style='margin: 0;'>x Patrón escalonado de 10 pasos en acero al carbono</div>
+    if ($pr_hlc >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_hlc . " </div>
+                            <div style='margin: 0;'>x Patrón de referencia HLC. Compatible con dispositivos de impacto C.</div>
                         </div>";
     }
 
-    if ($pa_5_oaa >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_5_oaa . " </div>
-                            <div style='margin: 0;'>x Certificacion OAA para patrón escalonado de 5 pasos</div>
+    if ($pr_hlg >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_hlg . " </div>
+                            <div style='margin: 0;'>x Patrón de referencia HLG. Compatible con dispositivos de impacto G.</div>
                         </div>";
     }
 
-    if ($pa_10_oaa >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_10_oaa . " </div>
-                            <div style='margin: 0;'>x Certificacion OAA para patrón escalonado de 10 pasos</div>
+    if ($pr_vcd >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_vcd . " </div>
+                            <div style='margin: 0;'>x Patrones Vickers*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
                         </div>";
     }
 
-    if ($f_am >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $f_am . " </div>
-                            <div style='margin: 0;'>x Funda Protectora Amarilla</div>
+    if ($pr_vy10 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_vy10 . " </div>
+                            <div style='margin: 0;'>x Patrones Vickers HV10 marca YAMAMOTO con certificado.</div>
                         </div>";
     }
+
+    if ($pr_rccd >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_rccd . " </div>
+                            <div style='margin: 0;'>x Patrones Rockwell C*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
+                        </div>";
+    }
+
+    if ($pr_rcy >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_rcy . " </div>
+                            <div style='margin: 0;'>x Patrones Rockwell C marca YAMAMOTO con certificado.</div>
+                        </div>";
+    }
+
+    if ($pr_rbcd >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_rccd . " </div>
+                            <div style='margin: 0;'>x Patrones Rockwell B*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
+                        </div>";
+    }
+
+    if ($pr_rby >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_rcy . " </div>
+                            <div style='margin: 0;'>x Patrones Rockwell B marca YAMAMOTO con certificado.</div>
+                        </div>";
+    }
+
+    if ($pr_brcd >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_brcd . " </div>
+                            <div style='margin: 0;'>x Patrones Brinell*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
+                        </div>";
+    }
+
+    if ($pr_bry >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_bry . " </div>
+                            <div style='margin: 0;'>x Patrones Brinell marca YAMAMOTO con certificado.</div>
+                        </div>";
+    }
+
+    if ($pr_clhld >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_clhld . " </div>
+                            <div style='margin: 0;'>x Certificación patron Leeb HLD con trazabilidad INTI*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye patrón</div>
+                        </div>";
+    }
+
+    if ($pr_chv10 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $pr_chv10 . " </div>
+                            <div style='margin: 0;'>x Certificación patron Vickers HV10 con trazabilidad INTI*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 222px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye patrón</div>
+                        </div>";
+    }
+
+    if ($f_ro >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $f_ro . " </div>
+                            <div style='margin: 0;'>x Funda protectora de silicona color rojo</div>
+                        </div>";
+    }
+    if ($c_di >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $c_di . " </div>
+                            <div style='margin: 0;'>x Cable con conector para dispositivos de impacto dmq</div>
+                        </div>";
+    }
+
+    if ($c_diuci >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $c_diuci . " </div>
+                            <div style='margin: 0;'>x Cable con conector para sondas UCI dmq</div>
+                        </div>";
+    }
+
+    if ($c_imp >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 22px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $c_imp . " </div>
+                            <div style='margin: 0;'>x Cable para conexión de impresora térmica a equipos dmq</div>
+                        </div>";
+    }
+
+    if ($impr >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $impr . " </div>
+                            <div style='margin: 0;'>Impresora térmica para equipos dmq*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye cable de conexión</div>
+                        </div>";
+    }
+
 
         $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;'>
                             <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Observaciones</div>

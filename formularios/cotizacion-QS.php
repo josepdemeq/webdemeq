@@ -10,6 +10,7 @@
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $company = trim($_POST["company"]);
+        $cuit = trim($_POST["cuit"]);
         $phone = trim($_POST["phone"]);
         $message = str_replace(array("\r","\n"),array("<br>") , strip_tags(trim($_POST["message"])));
         $model_5B = !empty($_POST["val_QS5B"]) ? trim($_POST["val_QS5B"]) : NULL;
@@ -53,19 +54,25 @@
         # Contenido del correo interno
         $content = "<html>
                     <body style='font-family:Calibri, Lucida Grande, Arial, sans-serif;max-width:600px;margin:20px auto;'>
-                    <h1 style='color:#000000;font-weight:bold;'> " . $name . " " . $surname . " de la empresa  " . $company . " nos env&iacute;a una solicitud de cotizaci&oacute;n.</h1>
+                    <h1 style='color:#000000;font-weight:bold;font-size:22px;'> " . $name . " " . $surname . " de la empresa  " . $company . " nos env&iacute;a una solicitud de cotizaci&oacute;n.</h1>
                     <p style='margin-top:0;margin-bottom:20px;'>A continuaci&oacute;n pod&eacute;s ver su pedido:</p>
                     <div style='border: 2px solid #333;overflow: hidden;width: 100%;max-width: 600px;'>
                         <div style='font-size: 18px;font-weight: 600; background: #000;width:100%;padding:10px;color:#fff;'>
                         Datos personales
                         </div>
                         <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
                         </div>
                         <div style='background: #ffffff;;width:100%;padding:10px;border-bottom:1px solid #000000;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $name . " </div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'> " . $name . " </div>
+                        </div>
+                        <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>CUIT/CUIL</div>
+                        </div>
+                        <div style='background: #ffffff;;width:100%;padding:10px;border-bottom:1px solid #000000;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $cuit . " </div>
                         </div>
                         <div style='width:100%;background: rgba(0,0,0,0.1);color: #000;width:100%;padding:10px;border-top:2px solid #000;border-bottom:1px solid #000000;font-weight: 600;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'>Email</div>
@@ -87,70 +94,70 @@
                         if ($model_5B >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                               <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5B . " </div>
-                                              <div style='margin: 0;'>x QS5 B</div>
+                                              <div style='margin: 0;font-weight:600;'>x QS5 B</div>
                                            </div>";
                         }
 
                         if ($model_5E >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5E . " </div>
-                                            <div style='margin: 0;'>x QS5 E</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS5 E</div>
                                             </div>";
                         }
 
                         if ($model_5DL >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DL . " </div>
-                                            <div style='margin: 0;'>x QS5 E</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS5 DL</div>
                                             </div>";
                         }
 
                         if ($model_5DLE >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DLE . " </div>
-                                            <div style='margin: 0;'>x QS5 DLE</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS5 DLE</div>
                                             </div>";
                         }
 
                         if ($model_3B >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3B . " </div>
-                                            <div style='margin: 0;'>x QS3 B</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS3 B</div>
                                             </div>";
                         }
 
                         if ($model_3DL >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3DL . " </div>
-                                            <div style='margin: 0;'>x QS3 B</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS3 DL</div>
                                             </div>";
                         }
 
                         if ($model_2S >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2S . " </div>
-                                            <div style='margin: 0;'>x QS2 S</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS2 S</div>
                                             </div>";
                         }
 
                         if ($model_2V >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2V . " </div>
-                                            <div style='margin: 0;'>x QS2 V</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS2 V</div>
                                             </div>";
                         }
 
                         if ($model_2DL >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DL . " </div>
-                                            <div style='margin: 0;'>x QS2 DL</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS2 DL</div>
                                             </div>";
                         }
 
                         if ($model_2DLV >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DLV . " </div>
-                                            <div style='margin: 0;'>x QS2 DL</div>
+                                            <div style='margin: 0;font-weight:600;'>x QS2 DLV</div>
                                             </div>";
                         }
         
@@ -163,133 +170,133 @@
                         if ($tr_2_12 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_12 . " </div>
-                                            <div style='margin: 0;'>x QSS201: Transductor de 2MHz Ø12mm. 90°</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS201:</span> Transductor de 2MHz Ø12mm. 90°</div>
                                             </div>";
                         }
 
                         if ($tr_2_22 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_22 . " </div>
-                                            <div style='margin: 0;'>x QSS202: Transductor de 2MHz Ø22mm. 90°</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS202:</span> Transductor de 2MHz Ø22mm. 90°</div>
                                             </div>";
                         }
 
                         if ($tr_5_90 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_90 . " </div>
-                                            <div style='margin: 0;'>x QSS501: Transductor de 5MHz Ø10mm. 90°</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS501:</span> Transductor de 5MHz Ø10mm. 90°</div>
                                             </div>";
                         }
 
                         if ($tr_5m_r >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5m_r . " </div>
-                                            <div style='margin: 0;'>x QSS511: Transductor de 5MHz Ø10mm. Recto</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS511:</span> Transductor de 5MHz Ø10mm. Recto</div>
                                             </div>";
                         }
 
                         if ($tr_7_90 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_7_90 . " </div>
-                                            <div style='margin: 0;'>x QSS701: Transductor de 7MHz Ø6mm. 90°</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS701:</span> Transductor de 7MHz Ø6mm. 90°</div>
                                             </div>";
                         }
 
                         if ($tr_at_150 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_150 . " </div>
-                                            <div style='margin: 0;'>x QSS518: Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS518:</span> Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
                                             </div>";
                         }
 
                         if ($tr_at_350 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_350 . " </div>
-                                            <div style='margin: 0;'>x QSS519: Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS519:</span> Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
                                             </div>";
                         }
 
                         if ($tr_5_eco2 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_eco2 . " </div>
-                                            <div style='margin: 0;'>x QSS502: Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS502:</span> Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
                                             </div>";
                         }
 
                         if ($tr_5_sk >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_sk . " </div>
-                                            <div style='margin: 0;'>x QSS531: Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS531:</span> Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
                                             </div>";
                         }
 
                         if ($tr_5_csk >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_csk . " </div>
-                                            <div style='margin: 0;'>x QSC531: Cable con 2 conectores tipo LEMO en ambas puntas (para transductor QSS531)</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSC531:</span> Cable con 2 conectores tipo LEMO en ambas puntas (para transductor QSS531)</div>
                                             </div>";
                         }
 
                         if ($g_50 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_50  . " </div>
-                                            <div style='margin: 0;'>x QSG005: Botella plástica con pico vertedor de 50cc</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSG005:</span> Botella plástica con pico vertedor de 50cc</div>
                                             </div>";
                         }
 
                         if ($g_100 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_100  . " </div>
-                                            <div style='margin: 0;'>x QSG010: Botella plástica con pico vertedor de 100cc</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSG010:</span> Botella plástica con pico vertedor de 100cc</div>
                                             </div>";
                         }
 
                         if ($oaa_1 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $oaa_1  . " </div>
-                                            <div style='margin: 0;'>x QSD001: Certificado de calibración QS2, QS3, QS5 B, QS5 DL</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSD001:</span> Certificado de calibración QS2, QS3, QS5 B, QS5 DL</div>
                                             </div>";
                         }
 
                         if ($oaa_2 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $oaa_2  . " </div>
-                                            <div style='margin: 0;'>x QSD002: Certificado de calibración QS5 E, QS5 DLE</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSD002:</span> Certificado de calibración QS5 E, QS5 DLE</div>
                                             </div>";
                         }
 
                         if ($pa_5 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5 . " </div>
-                                            <div style='margin: 0;'>x QSR005: Patrón escalonado de 5 pasos en acero al carbono</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSR005:</span> Patrón escalonado de 5 pasos en acero al carbono</div>
                                             </div>";
                         }
 
                         if ($pa_10 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10 . " </div>
-                                            <div style='margin: 0;'>x QSR010: Patrón escalonado de 10 pasos en acero al carbono</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSR010:</span> Patrón escalonado de 10 pasos en acero al carbono</div>
                                             </div>";
                         }
 
                         if ($pa_5_oaa >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5_oaa . " </div>
-                                            <div style='margin: 0;'>x QSD005: Certificacion OAA para patrón escalonado de 5 pasos</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSD005:</span> Certificacion OAA para patrón escalonado de 5 pasos</div>
                                             </div>";
                         }
 
                         if ($pa_10_oaa >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10_oaa . " </div>
-                                            <div style='margin: 0;'>x QSD010: Certificacion OAA para patrón escalonado de 10 pasos</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSD010:</span> Certificacion OAA para patrón escalonado de 10 pasos</div>
                                             </div>";
                         }
 
                         if ($f_am >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_am  . " </div>
-                                            <div style='margin: 0;'>x QSP001: Funda Protectora Amarilla</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSP001:</span> Funda Protectora Amarilla</div>
                                             </div>";
                         }
 
@@ -320,12 +327,18 @@
                         Datos personales
                         </div>
                         <div style='color: #000;font-weight: 600;font-size: 18px;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'>Nombre y Apellido</div>
                         </div>
                         <div style='margin-bottom: 20px;'>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $name . " </div>
-                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 100%;display: inline-block;margin: 0;'> " . $name . " </div>
+                        </div>
+                        <div style='color: #000;font-weight: 600;font-size: 18px;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'>Empresa</div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'>CUIT/CUIL</div>
+                        </div>
+                        <div style='margin-bottom: 20px;'>
+                        <div style='width: 49%;display: inline-block;margin: 0;'> " . $company . " </div>
+                            <div style='width: 49%;display: inline-block;margin: 0;'> " . $cuit . " </div>
                         </div>
                         <div style='color: #000;font-weight: 600;font-size: 18px;'>
                             <div style='width: 49%;display: inline-block;margin: 0;'>Email</div>
@@ -347,6 +360,17 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_5B . " </div>
                             <div style='margin: 0;'>x QS5 B</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS5 B</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD estándar</li>
+                                <li>Gel acoplante</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
@@ -354,13 +378,37 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_5E . " </div>
                             <div style='margin: 0;'>x QS5 E</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS5 E</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD para medición sobre pintura</li>
+                                <li>Gel acoplante</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
     if ($model_5DL >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_5DL . " </div>
-                            <div style='margin: 0;'>x QS5 E</div>
+                            <div style='margin: 0;'>x QS5 DL</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS5 DL</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD estándar</li>
+                                <li>Gel acoplante</li>
+                                <li>Manual de usuario</li>
+                                <li>Pendrive con software dmq DataCenter</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
@@ -368,6 +416,19 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_5DLE . " </div>
                             <div style='margin: 0;'>x QS5 DLE</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS5 DLE</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD para medición sobre pintura</li>
+                                <li>Gel acoplante</li>
+                                <li>Manual de usuario</li>
+                                <li>Pendrive con software dmq DataCenter</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
@@ -375,13 +436,37 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_3B . " </div>
                             <div style='margin: 0;'>x QS3 B</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS3 B</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD estándar</li>
+                                <li>Gel acoplante</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
     if ($model_3DL >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_3DL . " </div>
-                            <div style='margin: 0;'>x QS3 B</div>
+                            <div style='margin: 0;'>x QS3 DL</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS3 DL</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD para medición sobre pintura</li>
+                                <li>Gel acoplante</li>
+                                <li>Manual de usuario</li>
+                                <li>Pendrive con software dmq DataCenter</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
@@ -389,6 +474,17 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_2S . " </div>
                             <div style='margin: 0;'>x QS2 S</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS2 S</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD estándar</li>
+                                <li>Gel acoplante</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
@@ -396,6 +492,17 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_2V . " </div>
                             <div style='margin: 0;'>x QS2 V</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS2 V</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD estándar</li>
+                                <li>Gel acoplante</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
@@ -403,6 +510,18 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_2DL . " </div>
                             <div style='margin: 0;'>x QS2 DL</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS2 DL</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD estándar</li>
+                                <li>Gel acoplante</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
 
@@ -410,11 +529,23 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $model_2DLV . " </div>
                             <div style='margin: 0;'>x QS2 DLV</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QS2 DLE</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Transductor 5MHz HD estándar</li>
+                                <li>Gel acoplante</li>
+                                <li>Guía rápida impresa</li>
+                                <li>Cable USB para conexión a PC</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
                         </div>";
     }
             
         $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;'>
-                            <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Accesorios</div>
+                            <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Accesorios Opcionales</div>
                         </div>";
 
                             
@@ -485,7 +616,7 @@
     if ($tr_5_csk >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $tr_5_csk . " </div>
-                            <div style='margin: 0;'>x Cable con 2 conectores tipo LEMO en ambas puntas (compatible con transductor similar Krautkramer</div>
+                            <div style='margin: 0;'>x Cable con 2 conectores tipo LEMO en ambas puntas compatible con transductor similar Krautkramer</div>
                         </div>";
     }
 
@@ -548,7 +679,7 @@
     if ($f_am >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $f_am . " </div>
-                            <div style='margin: 0;'>x Funda Protectora Amarilla</div>
+                            <div style='margin: 0;'>x Funda Protectora de silicona color amarillo</div>
                         </div>";
     }
 
