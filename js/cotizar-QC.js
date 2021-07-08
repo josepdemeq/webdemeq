@@ -1105,6 +1105,93 @@ $(document).ready(function() {
 });
 
 
+//----- Certificación OAA para galgas individuales
+$('#plus-ooagcal').click(function add() {
+  var $qtde = $(".cant-ooagcal");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-ooagcal").attr("disabled", true);
+    };
+      $("#minus-ooagcal").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-ooagcal").attr("disabled", !$(".cant-ooagcal").val());
+
+$('#minus-ooagcal').click(function minust() {
+  var $qtde = $(".cant-ooagcal");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-ooagcal").attr("disabled", true);
+  }
+  $("#plus-ooagcal").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-ooagcal").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-ooagcal").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+//----- Certificado de conformidad de fábrica 
+$('#plus-ccq').click(function add() {
+  var $qtde = $(".cant-ccq");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-ccq").attr("disabled", true);
+    };
+      $("#minus-ccq").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-ccq").attr("disabled", !$(".cant-ccq").val());
+
+$('#minus-ccq').click(function minust() {
+  var $qtde = $(".cant-ccq");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-ccq").attr("disabled", true);
+  }
+  $("#plus-ccq").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-ccq").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-ccq").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+
 //----- Funda protectora de silicona color Gris
 $('#plus-fgr').click(function add() {
   var $qtde = $(".cant-fgr");

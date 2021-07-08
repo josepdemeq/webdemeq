@@ -111,14 +111,14 @@
                 <div class="drop-prod">Medidores de capas</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qh" href="../qh/familia-QH.html">
+              <a class="dropdown-item drop-fam-cont drop-qh" href="familia-QH.html">
               <img src="../../img/fam-icons/QH-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QH</div>
                 <div class="drop-prod">Durómetros Leeb y UCI</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qs" href="familia-QS.html">
+              <a class="dropdown-item drop-fam-cont drop-qs" href="../qs/familia-QS.html">
               <img src="../../img/fam-icons/QS-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QS</div>
@@ -188,7 +188,7 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
             <li class="breadcrumb-item"><a href="../../productos.html">Productos</a></li>
-            <li class="breadcrumb-item"><a href="familia-QS.html">Familia QS</a></li>
+            <li class="breadcrumb-item"><a href="familia-QH.html">Familia QH</a></li>
             <li class="breadcrumb-item active" aria-current="page">Cotización</li>
           </ol>
         </nav>
@@ -589,7 +589,7 @@
                               </div>
                               <div class="col-md-9">
                                 <h6>Dispositivo de impacto tipo G con cable y conector*</h6>
-                                <p class="anotacion italic">*Debe adquirir un patron HLG para dispositivo de impacto G</p>
+                                <p class="anotacion italic">*Se recomienda adquirir un patrón de referencia HLG</p>
                               </div>
                               <div class="col-md-2 text-right">
                                 <div class="number">
@@ -906,44 +906,6 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row accesorio-input filtro 7L 7C 5D 5M 2S 2P 2DLS 2DLP">
-                            <div class="col-md-1">
-                              <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck25" name="example25" data-name="acc-pr-clhld">
-                                <label class="custom-control-label" for="customCheck25"></label>
-                              </div>
-                            </div>
-                            <div class="col-md-9">
-                              <h6>Certificación patron Leeb HLD con trazabilidad INTI*</h6>
-                              <p class="anotacion italic">*No incluye patrón</p>
-                            </div>
-                            <div class="col-md-2 text-right">
-                              <div class="number">
-                                <input type="button" value="-" id="minus-pr-clhld" class="minus" />
-                                <input type="text" class="cant-pr-clhld" value="1" name="pr_clhld"/>
-                                <input type="button" value="+" id="plus-pr-clhld" class="plus" />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row accesorio-input filtro 7U 7C 5U">
-                            <div class="col-md-1">
-                              <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck26" name="example26" data-name="acc-pr-chv10">
-                                <label class="custom-control-label" for="customCheck26"></label>
-                              </div>
-                            </div>
-                            <div class="col-md-9">
-                              <h6>Certificación patron Vickers HV10 con trazabilidad INTI*</h6>
-                              <p class="anotacion italic">*No incluye patrón</p>
-                            </div>
-                            <div class="col-md-2 text-right">
-                              <div class="number">
-                                <input type="button" value="-" id="minus-pr-chv10" class="minus" />
-                                <input type="text" class="cant-pr-chv10" value="1" name="pr_chv10"/>
-                                <input type="button" value="+" id="plus-pr-chv10" class="plus" />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                   </div>
@@ -1060,13 +1022,80 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card filtro 7L 7U 7C 5U 5D 5G 5M 2S 2P 2DLS 2DLP">
+                  <div class="card">
                     <div class="card-header" id="aahead8">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa8"
-                        aria-expanded="true" aria-controls="aa8">Cables de conexión</a>
+                        aria-expanded="true" aria-controls="aa8">Certificaciones</a>
                     </div>
 
                     <div id="aa8" class="collapse" aria-labelledby="aahead8" data-parent="#acces-accordion">
+                      <div class="card-body">
+                        <div class="row accesorio-input">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck25" name="example25" data-name="acc-pr-clhld">
+                              <label class="custom-control-label" for="customCheck25"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Certificación para patrón Leeb HLD con trazabilidad INTI*</h6>
+                            <p class="anotacion italic">*No incluye patrón</p>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-pr-clhld" class="minus" />
+                              <input type="text" class="cant-pr-clhld" value="1" name="pr_clhld"/>
+                              <input type="button" value="+" id="plus-pr-clhld" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row accesorio-input">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck26" name="example26" data-name="acc-pr-chv10">
+                              <label class="custom-control-label" for="customCheck26"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Certificación para patrón Vickers HV10 con trazabilidad INTI*</h6>
+                            <p class="anotacion italic">*No incluye patrón</p>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-pr-chv10" class="minus" />
+                              <input type="text" class="cant-pr-chv10" value="1" name="pr_chv10"/>
+                              <input type="button" value="+" id="plus-pr-chv10" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row accesorio-input pb-3">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck33" name="example33" data-name="acc-ccq">
+                              <label class="custom-control-label" for="customCheck33"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</h6>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-ccq" class="minus" />
+                              <input type="text" class="cant-ccq" value="1" name="ccq"/>
+                              <input type="button" value="+" id="plus-ccq" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card filtro 7L 7U 7C 5U 5D 5G 5M 2S 2P 2DLS 2DLP">
+                    <div class="card-header" id="aahead9">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa9"
+                        aria-expanded="true" aria-controls="aa9">Cables de conexión</a>
+                    </div>
+
+                    <div id="aa9" class="collapse" aria-labelledby="aahead9" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input pb-3 filtro 7L 7C 5D 5G 5M 2S 2P 2DLS 2DLP">
                           <div class="col-md-1">
@@ -1126,12 +1155,12 @@
                     </div>
                   </div>
                   <div class="card filtro 5U 5D 5G 5M">
-                    <div class="card-header" id="aahead9">
-                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa9"
-                        aria-expanded="true" aria-controls="aa9">Impresoras</a>
+                    <div class="card-header" id="aahead10">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa10"
+                        aria-expanded="true" aria-controls="aa10">Impresoras</a>
                     </div>
 
-                    <div id="aa9" class="collapse" aria-labelledby="aahead9" data-parent="#acces-accordion">
+                    <div id="aa10" class="collapse" aria-labelledby="aahead10" data-parent="#acces-accordion">
                       <div class="card-body">
                         <div class="row accesorio-input">
                           <div class="col-md-1">
@@ -1512,13 +1541,17 @@
               </div>
               <div id="acc-pr-clhld" class="accesorio-cotizado">
                 <input id="total-pr-clhld" readonly="readonly" value="" />
-                <h6>x Certificación patron Leeb HLD con trazabilidad INTI* 
+                <h6>x Certificación para patrón Leeb HLD con trazabilidad INTI* 
                   <br><span class="anotacion italic">*No incluye patrón</span></h6>
               </div>
               <div id="acc-pr-chv10" class="accesorio-cotizado">
                 <input id="total-pr-chv10" readonly="readonly" value="" />
-                <h6>x Certificación patron Vickers HV10 con trazabilidad INTI* 
+                <h6>x Certificación para patrón Vickers HV10 con trazabilidad INTI* 
                   <br><span class="anotacion italic">*No incluye patrón</span></h6>
+              </div>
+              <div id="acc-ccq" class="accesorio-cotizado">
+                <input id="total-ccq" readonly="readonly" value="" />
+                <h6>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</h6>
               </div>
               <div id="acc-fro" class="accesorio-cotizado">
                 <input id="total-fro" readonly="readonly" value="" />

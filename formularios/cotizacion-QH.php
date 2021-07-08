@@ -51,6 +51,7 @@
         $pr_bry = !empty($_POST["pr_bry"]) ? trim($_POST["pr_bry"]) : NULL;
         $pr_clhld = !empty($_POST["pr_clhld"]) ? trim($_POST["pr_clhld"]) : NULL;
         $pr_chv10 = !empty($_POST["pr_chv10"]) ? trim($_POST["pr_chv10"]) : NULL;
+        $ccq = !empty($_POST["ccq"]) ? trim($_POST["ccq"]) : NULL;
         $f_ro = !empty($_POST["f_ro"]) ? trim($_POST["f_ro"]) : NULL;
         $c_di = !empty($_POST["c_di"]) ? trim($_POST["c_di"]) : NULL;
         $c_diuci = !empty($_POST["c_diuci"]) ? trim($_POST["c_diuci"]) : NULL;
@@ -399,6 +400,14 @@
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_chv10 . " </div>
                                             <div style='margin: 0;'>
                                             <span style='font-weight:600;'>x QHD501:</span> Certificacion patron Vickers HV10 con trazabilidad INTI</div>
+                                            </div>";
+                        }
+
+                        if ($ccq >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $ccq . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x ------:</span> Certificado de conformidad de fábrica</div>
                                             </div>";
                         }
 
@@ -934,6 +943,13 @@
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 222px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye patrón</div>
+                        </div>";
+    }
+
+    if ($ccq >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $ccq . " </div>
+                            <div style='margin: 0;'>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</div>
                         </div>";
     }
 

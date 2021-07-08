@@ -104,7 +104,7 @@
                 <div class="drop-prod">Medidores de espesores Hall</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qc" href="../qc/familia-QC.html">
+              <a class="dropdown-item drop-fam-cont drop-qc" href="familia-QC.html">
               <img src="../../img/fam-icons/QC-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QC</div>
@@ -118,7 +118,7 @@
                 <div class="drop-prod">Durómetros Leeb y UCI</div>
               </div>
               </a>
-              <a class="dropdown-item drop-fam-cont drop-qs" href="familia-QS.html">
+              <a class="dropdown-item drop-fam-cont drop-qs" href="../qs/familia-QS.html">
               <img src="../../img/fam-icons/QS-ico.svg" alt="" class="drop-fam-ico">
               <div class="txt-drop">
                 <div class="drop-fam">Familia QS</div>
@@ -188,7 +188,7 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
             <li class="breadcrumb-item"><a href="../../productos.html">Productos</a></li>
-            <li class="breadcrumb-item"><a href="familia-QS.html">Familia QS</a></li>
+            <li class="breadcrumb-item"><a href="familia-QC.html">Familia QS</a></li>
             <li class="breadcrumb-item active" aria-current="page">Cotización</li>
           </ol>
         </nav>
@@ -196,7 +196,7 @@
     </section>
     <main id="form-cotizacion">
       <section class="container wow slideIn" data-wow-delay="0.2s">
-        <form id="form1" class="contact__form" method="post" action="../../formularios/cotizacion-QS.php">
+        <form id="form1" class="contact__form" method="post" action="../../formularios/cotizacion-QC.php">
           <div class="row">
             <div class="col-lg-8">
               <h5 class="mt-5 txt-qc">Seleccione los modelos a cotizar</h5>
@@ -574,7 +574,7 @@
                           <div class="col-md-9">
                             <h6>Sonda recta Ferrosa de Rango Extendido</h6>
                             <p class="mb-0">Rango: 0 a 5000μm</p>
-                            <p class="anotacion italic">*Debe adquirir las galgas de calibración para sondas de rango extendido</p>
+                            <p class="anotacion">Incluye juego de 3 Galgas de calibración para sondas de rango extendido</p>
                           </div>
                           <div class="col-md-2 text-right">
                             <div class="number">
@@ -745,32 +745,13 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row accesorio-input">
-                            <div class="col-md-1">
-                              <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input acc-check" id="customCheck14" name="example14" data-name="acc-ooagcal">
-                                <label class="custom-control-label" for="customCheck14"></label>
-                              </div>
-                            </div>
-                            <div class="col-md-9">
-                              <h6>Certificación OAA para galgas individuales*</h6>
-                              <p class="anotacion italic">*No incluye galga</p>
-                            </div>
-                            <div class="col-md-2 text-right">
-                              <div class="number">
-                                <input type="button" value="-" id="minus-ooagcal" class="minus" />
-                                <input type="text" class="cant-ooagcal" value="1" name="ooa_gcal"/>
-                                <input type="button" value="+" id="plus-ooagcal" class="plus" />
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
                   </div>
-                  <div class="card filtro 5F 5N 5C 5DLF 5DLN 5DLC 3F 3N 3DLF 3DLN">
+                  <div class="card">
                     <div class="card-header" id="aahead4">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa4"
-                        aria-expanded="true" aria-controls="aa4">Fundas protectoras</a>
+                        aria-expanded="true" aria-controls="aa4">Certificaciones</a>
                     </div>
 
                     <div id="aa4" class="collapse" aria-labelledby="aahead4" data-parent="#acces-accordion">
@@ -778,8 +759,56 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck15" name="example15" data-name="acc-fgr">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck14" name="example14" data-name="acc-ooagcal">
+                              <label class="custom-control-label" for="customCheck14"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Certificación OAA para galgas individuales*</h6>
+                            <p class="anotacion italic">*No incluye galga</p>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-ooagcal" class="minus" />
+                              <input type="text" class="cant-ooagcal" value="1" name="ooa_gcal"/>
+                              <input type="button" value="+" id="plus-ooagcal" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row accesorio-input pb-3">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck15" name="example15" data-name="acc-ccq">
                               <label class="custom-control-label" for="customCheck15"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</h6>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-ccq" class="minus" />
+                              <input type="text" class="cant-ccq" value="1" name="ccq"/>
+                              <input type="button" value="+" id="plus-ccq" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card filtro 5F 5N 5C 5DLF 5DLN 5DLC 3F 3N 3DLF 3DLN">
+                    <div class="card-header" id="aahead5">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa5"
+                        aria-expanded="true" aria-controls="aa5">Fundas protectoras</a>
+                    </div>
+
+                    <div id="aa5" class="collapse" aria-labelledby="aahead5" data-parent="#acces-accordion">
+                      <div class="card-body">
+                        <div class="row accesorio-input">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck16" name="example16" data-name="acc-fgr">
+                              <label class="custom-control-label" for="customCheck16"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
@@ -1077,7 +1106,8 @@
               <div id="acc-srex" class="accesorio-cotizado">
                 <input id="total-srex" readonly="readonly" value="" />
                 <h6>x Sonda recta Ferrosa de Rango Extendido
-                  <br><span class="anotacion">Rango: 0 a 5000μm</span></h6>
+                  <br><span class="anotacion">Rango: 0 a 5000μm</span>
+                  <br>Incluye 3 Galgas de calibración</h6>
               </div>
               <div id="acc-smr" class="accesorio-cotizado">
                 <input id="total-smr" readonly="readonly" value="" />
@@ -1105,7 +1135,7 @@
               <div id="acc-gcal" class="accesorio-cotizado">
                 <input id="total-gcal" readonly="readonly" value="" />
                 <h6>x Galga para calibración*
-                  <br><span class="anotacion italic">*Consulte durezas disponibles</span></h6>
+                  <br><span class="anotacion italic">*Consulte espesores disponibles</span></h6>
               </div>
               <div id="acc-gcal3" class="accesorio-cotizado">
                 <input id="total-gcal3" readonly="readonly" value="" />
@@ -1116,6 +1146,15 @@
                 <input id="total-gcal3ex" readonly="readonly" value="" />
                 <h6>x Juego de 3 Galgas
                   <br><span class="anotacion">Calibración para Sonda de Rango Extendido que mide de 0 a 5000μm.</span></h6>
+              </div>
+              <div id="acc-ooagcal" class="accesorio-cotizado">
+                <input id="total-ooagcal" readonly="readonly" value="" />
+                <h6>x Certificación OAA para galgas individuales*
+                  <br><span class="anotacion italic">*No incluye galga</span></h6>
+              </div>
+              <div id="acc-ccq" class="accesorio-cotizado">
+                <input id="total-ccq" readonly="readonly" value="" />
+                <h6>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</h6>
               </div>
               <div id="acc-fgr" class="accesorio-cotizado">
                 <input id="total-fgr" readonly="readonly" value="" />
@@ -1324,7 +1363,7 @@
     <script src="../plugins/b-select/dist/js/bootstrap-select.js"></script>
       <script src="../../js/main.js"></script>
       <script src="../../js/custom.js"></script>
-      <script src="../../js/cotizar-QS.js"></script>
+      <script src="../../js/cotizar-QC.js"></script>
       <script src="../../formularios/main.js"></script>
     </body>
   </html>

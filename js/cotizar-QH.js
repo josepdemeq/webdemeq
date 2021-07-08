@@ -1871,6 +1871,50 @@ $('#plus-imp').click(function add() {
   });
 
 
+//----- Certificado de conformidad
+$('#plus-ccq').click(function add() {
+  var $qtde = $(".cant-ccq");
+  var a = $qtde.val();
+  if (a <= 8) {
+      a++;
+      $qtde.val(a);
+    } else {
+      $("#plus-ccq").attr("disabled", true);
+    };
+      $("#minus-ccq").attr("disabled", !a);
+      $qtde.val(a);
+});
+$("#minus-ccq").attr("disabled", !$(".cant-ccq").val());
+
+$('#minus-ccq').click(function minust() {
+  var $qtde = $(".cant-ccq");
+  var b = $qtde.val();
+  if (b >= 2) {
+    b--;
+    $qtde.val(b);
+  } else {
+    $("#minus-ccq").attr("disabled", true);
+  }
+  $("#plus-ccq").attr("disabled", !b);
+  $qtde.val(b);
+});
+
+/* On change */
+$(document).ready(function() {
+  function updatePrice() {
+    var price = parseFloat($(".cant-ccq").val());
+    var total = price;
+    var total = total.toFixed(0);
+    $("#total-ccq").val(total);
+  }
+
+  
+// On the click of an input, update the price
+  $(document).on("click", "input", updatePrice);
+});
+
+
+
 //--------------- Filtrar accessorios por modelo compatible
 
 var sections = $('.filtro');

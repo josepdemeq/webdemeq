@@ -13,35 +13,35 @@
         $cuit = trim($_POST["cuit"]);
         $phone = trim($_POST["phone"]);
         $message = str_replace(array("\r","\n"),array("<br>") , strip_tags(trim($_POST["message"])));
-        $model_5B = !empty($_POST["val_QS5B"]) ? trim($_POST["val_QS5B"]) : NULL;
-        $model_5E = !empty($_POST["val_QS5E"]) ? trim($_POST["val_QS5E"]) : NULL;
-        $model_5DL = !empty($_POST["val_QS5DL"]) ? trim($_POST["val_QS5DL"]) : NULL;
-        $model_5DLE = !empty($_POST["val_QS5DLE"]) ? trim($_POST["val_QS5DLE"]) : NULL;
-        $model_3B = !empty($_POST["val_QS3B"]) ? trim($_POST["val_QS3B"]) : NULL;
-        $model_3DL = !empty($_POST["val_QS3DL"]) ? trim($_POST["val_QS3DL"]) : NULL;
-        $model_2S = !empty($_POST["val_QS2S"]) ? trim($_POST["val_QS2S"]) : NULL;
-        $model_2V = !empty($_POST["val_QS2V"]) ? trim($_POST["val_QS2V"]) : NULL;
-        $model_2DL = !empty($_POST["val_QS2DL"]) ? trim($_POST["val_QS2DL"]) : NULL;
-        $model_2DLV = !empty($_POST["val_QS2DLV"]) ? trim($_POST["val_QS2DLV"]) : NULL;
-        $tr_2_12 = !empty($_POST["tr_2_12"]) ? trim($_POST["tr_2_12"]) : NULL;
-        $tr_2_22 = !empty($_POST["tr_2_22"]) ? trim($_POST["tr_2_22"]) : NULL;
-        $tr_5_90 = !empty($_POST["tr_5_90"]) ? trim($_POST["tr_5_90"]) : NULL;
-        $tr_5m_r = !empty($_POST["tr_5m_r"]) ? trim($_POST["tr_5m_r"]) : NULL;
-        $tr_7_90 = !empty($_POST["tr_7_90"]) ? trim($_POST["tr_7_90"]) : NULL; 
-        $tr_at_150 = !empty($_POST["tr_at_150"]) ? trim($_POST["tr_at_150"]) : NULL;
-        $tr_at_350 = !empty($_POST["tr_at_350"]) ? trim($_POST["tr_at_350"]) : NULL;
-        $tr_5_eco2 = !empty($_POST["tr_5_eco2"]) ? trim($_POST["tr_5_eco2"]) : NULL;
-        $tr_5_sk = !empty($_POST["tr_5_sk"]) ? trim($_POST["tr_5_sk"]) : NULL;
-        $tr_5_csk = !empty($_POST["tr_5_csk"]) ? trim($_POST["tr_5_csk"]) : NULL;
-        $g_50 = !empty($_POST["g_50"]) ? trim($_POST["g_50"]) : NULL;
-        $g_100 = !empty($_POST["g_100"]) ? trim($_POST["g_100"]) : NULL;
-        $oaa_1 = !empty($_POST["oaa_1"]) ? trim($_POST["oaa_1"]) : NULL;
+        $model_5F = !empty($_POST["val_QC5F"]) ? trim($_POST["val_QC5F"]) : NULL;
+        $model_5N = !empty($_POST["val_QC5N"]) ? trim($_POST["val_QC5N"]) : NULL;
+        $model_5C = !empty($_POST["val_QC5C"]) ? trim($_POST["val_QC5C"]) : NULL;
+        $model_5DLF = !empty($_POST["val_QC5DLF"]) ? trim($_POST["val_QC5DLF"]) : NULL;
+        $model_5DLN = !empty($_POST["val_QC5DLN"]) ? trim($_POST["val_QC5DLN"]) : NULL;
+        $model_5DLC = !empty($_POST["val_QC5DLC"]) ? trim($_POST["val_QC5DLC"]) : NULL;
+        $model_3F = !empty($_POST["val_QC3F"]) ? trim($_POST["val_QC3F"]) : NULL;
+        $model_3N = !empty($_POST["val_QC3N"]) ? trim($_POST["val_QC3N"]) : NULL;
+        $model_3DLF = !empty($_POST["val_QC3DLF"]) ? trim($_POST["val_QC3DLF"]) : NULL;
+        $model_3DLN = !empty($_POST["val_QC3DLN"]) ? trim($_POST["val_QC3DLN"]) : NULL;
+        $model_2F = !empty($_POST["val_QC2F"]) ? trim($_POST["val_QC2F"]) : NULL;
+        $model_2DLF = !empty($_POST["val_QC2DLF"]) ? trim($_POST["val_QC2DLF"]) : NULL;
+        $s_rf = !empty($_POST["s_rf"]) ? trim($_POST["s_rf"]) : NULL;
+        $s_rnf = !empty($_POST["s_rnf"]) ? trim($_POST["s_rnf"]) : NULL;
+        $s_rc = !empty($_POST["s_rc"]) ? trim($_POST["s_rc"]) : NULL;
+        $s_rfv = !empty($_POST["s_rfv"]) ? trim($_POST["s_rfv"]) : NULL;
+        $s_rex = !empty($_POST["s_rex"]) ? trim($_POST["s_rex"]) : NULL; 
+        $s_mr = !empty($_POST["s_mr"]) ? trim($_POST["s_mr"]) : NULL;
+        $s_m90 = !empty($_POST["s_m90"]) ? trim($_POST["s_m90"]) : NULL;
+        $s_m45 = !empty($_POST["s_m45"]) ? trim($_POST["s_m45"]) : NULL;
+        $b_fc = !empty($_POST["b_fc"]) ? trim($_POST["b_fc"]) : NULL;
+        $b_nfc = !empty($_POST["b_nfc"]) ? trim($_POST["b_nfc"]) : NULL;
+        $g_cal = !empty($_POST["g_cal"]) ? trim($_POST["g_cal"]) : NULL;
+        $g_cal3 = !empty($_POST["g_cal3"]) ? trim($_POST["g_cal3"]) : NULL;
+        $g_cal3ex = !empty($_POST["g_cal3ex"]) ? trim($_POST["g_cal3ex"]) : NULL;
+        $ooa_gcal = !empty($_POST["ooa_gcal"]) ? trim($_POST["ooa_gcal"]) : NULL;
         $ccq = !empty($_POST["ccq"]) ? trim($_POST["ccq"]) : NULL;
-        $pa_5 = !empty($_POST["pa_5"]) ? trim($_POST["pa_5"]) : NULL;
-        $pa_10 = !empty($_POST["pa_10"]) ? trim($_POST["pa_10"]) : NULL;
-        $pa_5_oaa = !empty($_POST["pa_5_oaa"]) ? trim($_POST["pa_5_oaa"]) : NULL;
-        $pa_10_oaa = !empty($_POST["pa_10_oaa"]) ? trim($_POST["pa_10_oaa"]) : NULL;
-        $f_am = !empty($_POST["f_am"]) ? trim($_POST["f_am"]) : NULL; 
+        $f_gr = !empty($_POST["f_gr"]) ? trim($_POST["f_gr"]) : NULL;
+        
         
         if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($company)) {
             # Establecer un código de respuesta y salida.
@@ -91,73 +91,87 @@
                             <div style='width: 100%;display: inline-block;margin: 0;'>Modelo/s</div>
                         </div>";
 
-                        if ($model_5B >= 1) {
+                        if ($model_5F >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                              <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5B . " </div>
-                                              <div style='margin: 0;font-weight:600;'>x QS5 B</div>
+                                              <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5F . " </div>
+                                              <div style='margin: 0;font-weight:600;'>x QC5 F</div>
                                            </div>";
                         }
 
-                        if ($model_5E >= 1) {
+                        if ($model_5N >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5E . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS5 E</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5N . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC5 N</div>
                                             </div>";
                         }
 
-                        if ($model_5DL >= 1) {
+                        if ($odel_5C >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DL . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS5 DL</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $odel_5C . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC5 C</div>
                                             </div>";
                         }
 
-                        if ($model_5DLE >= 1) {
+                        if ($model_5DLF >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DLE . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS5 DLE</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DLF . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC5 DLF</div>
                                             </div>";
                         }
 
-                        if ($model_3B >= 1) {
+                        if ($model_5DLN >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3B . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS3 B</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DLN . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC5 DLN</div>
                                             </div>";
                         }
 
-                        if ($model_3DL >= 1) {
+                        if ($model_5DLC >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3DL . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS3 DL</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_5DLC . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC5 DLC</div>
                                             </div>";
                         }
 
-                        if ($model_2S >= 1) {
+                        if ($model_3F >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2S . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS2 S</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3F . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC3 F</div>
                                             </div>";
                         }
 
-                        if ($model_2V >= 1) {
+                        if ($model_3N >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2V . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS2 V</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3N . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC3 N</div>
                                             </div>";
                         }
 
-                        if ($model_2DL >= 1) {
+                        if ($model_3DLF >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DL . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS2 DL</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3DLF . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC3 DLF</div>
                                             </div>";
                         }
 
-                        if ($model_2DLV >= 1) {
+                        if ($model_3DLN >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DLV . " </div>
-                                            <div style='margin: 0;font-weight:600;'>x QS2 DLV</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_3DLN . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC3 DLN</div>
+                                            </div>";
+                        }
+
+                        if ($model_2F >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2F . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC2 F</div>
+                                            </div>";
+                        }
+
+                        if ($model_2DLF >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $model_2DLF . " </div>
+                                            <div style='margin: 0;font-weight:600;'>x QC2 DLF</div>
                                             </div>";
                         }
         
@@ -165,138 +179,131 @@
                             <div style='width: 100%;display: inline-block;margin: 0;'>Accesorios</div>
                         </div>";
 
-                        
-
-                        if ($tr_2_12 >= 1) {
+                        if ($s_rf >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_12 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS201:</span> Transductor de 2MHz Ø12mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_rf . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS201:</span> Sonda recta Ferrosa</div>
                                             </div>";
                         }
 
-                        if ($tr_2_22 >= 1) {
+                        if ($s_rnf >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_2_22 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS202:</span> Transductor de 2MHz Ø22mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_rnf . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS301:</span> Sonda recta No-Ferrosa</div>
                                             </div>";
                         }
 
-                        if ($tr_5_90 >= 1) {
+                        if ($s_rc >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_90 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS501:</span> Transductor de 5MHz Ø10mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_rc . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS401:</span> Sonda recta Combinada</div>
                                             </div>";
                         }
 
-                        if ($tr_5m_r >= 1) {
+                        if ($s_rfv >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5m_r . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS511:</span> Transductor de 5MHz Ø10mm. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_rfv . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS231:</span> Sonda recta Ferrosa con corte en V</div>
                                             </div>";
                         }
 
-                        if ($tr_7_90 >= 1) {
+                        if ($s_rex >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_7_90 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS701:</span> Transductor de 7MHz Ø6mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_rex . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS203:</span> Sonda recta Ferrosa de Rango Extendido</div>
                                             </div>";
                         }
 
-                        if ($tr_at_150 >= 1) {
+                        if ($s_mr >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_150 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS518:</span> Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_mr . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS200:</span> Mini-Sonda recta Ferrosa</div>
                                             </div>";
                         }
 
-                        if ($tr_at_350 >= 1) {
+                        if ($s_m90 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_at_350 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS519:</span> Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_m90 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS210:</span> Mini-Sonda Ferrosa a 90°</div>
                                             </div>";
                         }
 
-                        if ($tr_5_eco2 >= 1) {
+                        if ($s_m45 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_eco2 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS502:</span> Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_m45 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCS220:</span> Mini-Sonda Ferrosa a 45°</div>
                                             </div>";
                         }
 
-                        if ($tr_5_sk >= 1) {
+                        if ($b_fc >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_sk . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS531:</span> Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $b_fc . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCR100:</span> Base Ferrosa para calibración</div>
                                             </div>";
                         }
 
-                        if ($tr_5_csk >= 1) {
+                        if ($b_nfc >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_csk . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSC531:</span> Cable con 2 conectores tipo LEMO en ambas puntas (para transductor QSS531)</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $b_nfc . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCR200:</span> Base No-Ferrosa para calibración</div>
                                             </div>";
                         }
 
-                        if ($g_50 >= 1) {
+                        if ($g_cal >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_50  . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSG005:</span> Botella plástica con pico vertedor de 50cc</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_cal . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCR001:</span> Galga para calibración</div>
                                             </div>";
                         }
 
-                        if ($g_100 >= 1) {
+                        if ($g_cal3 >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_100  . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSG010:</span> Botella plástica con pico vertedor de 100cc</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_cal3 . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCR003:</span> Juego de 3 Galgas</div>
                                             </div>";
                         }
 
-                        if ($oaa_1 >= 1) {
+                        if ($g_cal3ex >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $oaa_1  . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSD001:</span> Certificado de calibración - Trazabilidad OAA</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $g_cal3ex . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCR005:</span> Juego de 3 Galgas para Sonda de Rango Extendido</div>
+                                            </div>";
+                        }
+
+                        if ($ooa_gcal >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $ooa_gcal . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCD001:</span> Certificación OAA para galgas individuales</div>
                                             </div>";
                         }
 
                         if ($ccq >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $ccq  . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x -----:</span> Certificado de conformidad de fábrica</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $ccq . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x ------:</span> Certificado de conformidad de fábrica</div>
                                             </div>";
                         }
 
-                        if ($pa_5 >= 1) {
+                        if ($f_gr >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSR005:</span> Patrón escalonado de 5 pasos en acero al carbono</div>
-                                            </div>";
-                        }
-
-                        if ($pa_10 >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10 . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSR010:</span> Patrón escalonado de 10 pasos en acero al carbono</div>
-                                            </div>";
-                        }
-
-                        if ($pa_5_oaa >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_5_oaa . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSD005:</span> Certificacion OAA para patrón escalonado de 5 pasos</div>
-                                            </div>";
-                        }
-
-                        if ($pa_10_oaa >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pa_10_oaa . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSD010:</span> Certificacion OAA para patrón escalonado de 10 pasos</div>
-                                            </div>";
-                        }
-
-                        if ($f_am >= 1) {
-                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
-                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_am  . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSP001:</span> Funda Protectora Amarilla</div>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $f_gr . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCP001:</span> Funda protectora de silicona color Gris</div>
                                             </div>";
                         }
 
@@ -356,189 +363,236 @@
                             <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Modelo/s</div>
                         </div>";
 
-    if ($model_5B >= 1) {
+    if ($model_5F >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5B . " </div>
-                            <div style='margin: 0;'>x QS5 B</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5F . " </div>
+                            <div style='margin: 0;'>x QC5 F</div>
                         </div>
                         <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye:</div>
                             <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS5 B</li>
+                                <li>Unidad electrónica QC5 F</li>
                                 <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD estándar</li>
-                                <li>Gel acoplante</li>
+                                <li>Sonda recta Ferrosa estándar</li>
+                                <li>Base Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
                                 <li>Manual de usuario</li>
                                 <li>Maletín de alto impacto</li>
                             </ul>
                         </div>";
     }
 
-    if ($model_5E >= 1) {
+    if ($model_5N >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5E . " </div>
-                            <div style='margin: 0;'>x QS5 E</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5N . " </div>
+                            <div style='margin: 0;'>x QC5 N</div>
                         </div>
                         <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye:</div>
                             <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS5 E</li>
+                                <li>Unidad electrónica QC5 N</li>
                                 <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD para medición sobre pintura</li>
-                                <li>Gel acoplante</li>
+                                <li>Sonda recta No-Ferrosa estándar</li>
+                                <li>Base No-Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
                                 <li>Manual de usuario</li>
                                 <li>Maletín de alto impacto</li>
                             </ul>
                         </div>";
     }
 
-    if ($model_5DL >= 1) {
+    if ($odel_5C >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5DL . " </div>
-                            <div style='margin: 0;'>x QS5 DL</div>
+                            <div style='margin: 0 3px 0 0;'> " . $odel_5C . " </div>
+                            <div style='margin: 0;'>x QC5 C</div>
                         </div>
                         <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye:</div>
                             <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS5 DL</li>
+                                <li>Unidad electrónica QC5 C</li>
                                 <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD estándar</li>
-                                <li>Gel acoplante</li>
+                                <li>Sonda recta Combinada estándar</li>
+                                <li>Base Ferrosa y No-Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
                                 <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
+                        </div>";
+    }
+
+    if ($model_5DLF >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5DLF . " </div>
+                            <div style='margin: 0;'>x QC5 DLF</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QC5 DLF</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Sonda recta Ferrosa estándar</li>
+                                <li>Base Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
+                                <li>Cable USB para conexión a PC</li>
                                 <li>Pendrive con software dmq DataCenter</li>
-                                <li>Cable USB para conexión a PC</li>
+                                <li>Manual de usuario</li>
                                 <li>Maletín de alto impacto</li>
                             </ul>
                         </div>";
     }
 
-    if ($model_5DLE >= 1) {
+    if ($model_5DLN >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_5DLE . " </div>
-                            <div style='margin: 0;'>x QS5 DLE</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5DLN . " </div>
+                            <div style='margin: 0;'>x QC5 DLN</div>
                         </div>
                         <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye:</div>
                             <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS5 DLE</li>
+                                <li>Unidad electrónica QC5 DLN</li>
                                 <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD para medición sobre pintura</li>
-                                <li>Gel acoplante</li>
-                                <li>Manual de usuario</li>
+                                <li>Sonda recta No-Ferrosa estándar</li>
+                                <li>Base No-Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
+                                <li>Cable USB para conexión a PC</li>
                                 <li>Pendrive con software dmq DataCenter</li>
-                                <li>Cable USB para conexión a PC</li>
+                                <li>Manual de usuario</li>
                                 <li>Maletín de alto impacto</li>
                             </ul>
                         </div>";
     }
 
-    if ($model_3B >= 1) {
+    if ($model_5DLC >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_3B . " </div>
-                            <div style='margin: 0;'>x QS3 B</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_5DLC . " </div>
+                            <div style='margin: 0;'>x QC5 DLC</div>
                         </div>
                         <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye:</div>
                             <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS3 B</li>
+                                <li>Unidad electrónica QC5 DLC</li>
                                 <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD estándar</li>
-                                <li>Gel acoplante</li>
-                                <li>Manual de usuario</li>
-                                <li>Maletín de alto impacto</li>
-                            </ul>
-                        </div>";
-    }
-
-    if ($model_3DL >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_3DL . " </div>
-                            <div style='margin: 0;'>x QS3 DL</div>
-                        </div>
-                        <div style='color: #000;display:block;margin: 5px 0 20px 22px'>
-                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
-                            <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS3 DL</li>
-                                <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD para medición sobre pintura</li>
-                                <li>Gel acoplante</li>
-                                <li>Manual de usuario</li>
+                                <li>Sonda recta Combinada estándar</li>
+                                <li>Base Ferrosa y No-Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
+                                <li>Cable USB para conexión a PC</li>
                                 <li>Pendrive con software dmq DataCenter</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
+                        </div>";
+    }
+
+    if ($model_3F >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_3F . " </div>
+                            <div style='margin: 0;'>x QC3 F</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QC3 F</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Sonda recta Ferrosa estándar</li>
+                                <li>Base Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
+                        </div>";
+    }
+
+    if ($model_3N >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_3N . " </div>
+                            <div style='margin: 0;'>x QC3 N</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QC3 N</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Sonda recta No-Ferrosa estándar</li>
+                                <li>Base No-Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
+                                <li>Manual de usuario</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
+                        </div>";
+    }
+
+    if ($model_3DLF >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_3DLF . " </div>
+                            <div style='margin: 0;'>x QC3 DLF</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QC3 DLF</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Sonda recta Ferrosa estándar</li>
+                                <li>Base Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
                                 <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software dmq DataCenter</li>
+                                <li>Manual de usuario</li>
                                 <li>Maletín de alto impacto</li>
                             </ul>
                         </div>";
     }
 
-    if ($model_2S >= 1) {
+    if ($model_3DLN >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_2S . " </div>
-                            <div style='margin: 0;'>x QS2 S</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_3DLN . " </div>
+                            <div style='margin: 0;'>x QC3 DLN</div>
                         </div>
                         <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye:</div>
                             <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS2 S</li>
+                                <li>Unidad electrónica QC3 DLN</li>
                                 <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD estándar</li>
-                                <li>Gel acoplante</li>
-                                <li>Guía rápida impresa</li>
-                                <li>Maletín de alto impacto</li>
-                            </ul>
-                        </div>";
-    }
-
-    if ($model_2V >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_2V . " </div>
-                            <div style='margin: 0;'>x QS2 V</div>
-                        </div>
-                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
-                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
-                            <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS2 V</li>
-                                <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD estándar</li>
-                                <li>Gel acoplante</li>
-                                <li>Guía rápida impresa</li>
-                                <li>Maletín de alto impacto</li>
-                            </ul>
-                        </div>";
-    }
-
-    if ($model_2DL >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_2DL . " </div>
-                            <div style='margin: 0;'>x QS2 DL</div>
-                        </div>
-                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
-                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
-                            <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS2 DL</li>
-                                <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD estándar</li>
-                                <li>Gel acoplante</li>
-                                <li>Guía rápida impresa</li>
+                                <li>Sonda recta No-Ferrosa estándar</li>
+                                <li>Base No-Ferrosa para calibración</li>
+                                <li>Juego de 3 galgas para calibración</li>
                                 <li>Cable USB para conexión a PC</li>
+                                <li>Pendrive con software dmq DataCenter</li>
+                                <li>Manual de usuario</li>
                                 <li>Maletín de alto impacto</li>
                             </ul>
                         </div>";
     }
 
-    if ($model_2DLV >= 1) {
+    if ($model_2F >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $model_2DLV . " </div>
-                            <div style='margin: 0;'>x QS2 DLV</div>
+                            <div style='margin: 0 3px 0 0;'> " . $model_2F . " </div>
+                            <div style='margin: 0;'>x QC2 F</div>
                         </div>
                         <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye:</div>
                             <ul style='margin: 0 10px 0 0;'>
-                                <li>Unidad electrónica QS2 DLE</li>
+                                <li>Unidad electrónica QC2 F</li>
                                 <li>Certificado de conformidad</li>
-                                <li>Transductor 5MHz HD estándar</li>
-                                <li>Gel acoplante</li>
+                                <li>Juego de 3 galgas para calibración</li>
                                 <li>Guía rápida impresa</li>
+                                <li>Maletín de alto impacto</li>
+                            </ul>
+                        </div>";
+    }
+
+    if ($model_DLF >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $model_DLF . " </div>
+                            <div style='margin: 0;'>x QC2 DLF</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                            <div style='margin: 5px 10px 0 0;'>Incluye:</div>
+                            <ul style='margin: 0 10px 0 0;'>
+                                <li>Unidad electrónica QC2 DLF</li>
+                                <li>Certificado de conformidad</li>
+                                <li>Juego de 3 galgas para calibración</li>
                                 <li>Cable USB para conexión a PC</li>
+                                <li>Guía rápida impresa</li>
                                 <li>Maletín de alto impacto</li>
                             </ul>
                         </div>";
@@ -550,138 +604,124 @@
 
                             
 
-    if ($tr_2_12 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_2_12 . " </div>
-                            <div style='margin: 0;'>x Transductor de 2MHz Ø12mm. 90°</div>
+    if ($s_rf >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_rf . " </div>
+                            <div style='margin: 0;'>x Sonda recta Ferrosa. Rango: 0 a 1500μm</div>
                         </div>";
     }
 
-    if ($tr_2_22 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_2_22 . " </div>
-                            <div style='margin: 0;'>x Transductor de 2MHz Ø22mm. 90°</div>
+    if ($s_rnf >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_rnf . " </div>
+                            <div style='margin: 0;'>x Sonda recta No-Ferrosa. Rango: 0 a 1500μm</div>
                         </div>";
     }
 
-    if ($tr_5_90 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_90 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz Ø10mm. 90°</div>
+    if ($s_rc >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_rc . " </div>
+                            <div style='margin: 0;'>x Sonda recta Combinada (Ferrosa y No-Ferrosa). Rango: 0 a 1500μm</div>
                         </div>";
     }
 
-    if ($tr_5m_r >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5m_r . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz Ø10mm. Recto</div>
+    if ($s_rfv >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_rfv . " </div>
+                            <div style='margin: 0;'>x Sonda recta Ferrosa con corte en V. Rango: 0 a 1500μm</div>
                         </div>";
     }
 
-    if ($tr_7_90 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_7_90 . " </div>
-                            <div style='margin: 0;'>x Transductor de 7MHz Ø6mm. 90°</div>
+    if ($s_rex >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_rex . " </div>
+                            <div style='margin: 0;'>x Sonda recta Ferrosa de Rango Extendido. Rango: 0 a 5000μm</div>
                         </div>";
     }
 
-    if ($tr_at_150 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_at_150 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz alta temp -10 a 150°C. Recto</div>
+    if ($s_mr >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_mr . " </div>
+                            <div style='margin: 0;'>x Mini-Sonda recta Ferrosa. Rango: 0 a 750μm</div>
                         </div>";
     }
 
-    if ($tr_at_350 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_at_350 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz alta temp -10 a 350°C. Recto</div>
+    if ($s_m90 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_m90 . " </div>
+                            <div style='margin: 0;'>x Mini-Sonda Ferrosa a 90°. Rango: 0 a 750μm</div>
                         </div>";
     }
 
-    if ($tr_5_eco2 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_eco2 . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA Ø10mm. 90°</div>
+    if ($s_m45 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_m45 . " </div>
+                            <div style='margin: 0;'>x Mini-Sonda Ferrosa a 45°. Rango: 0 a 750μm</div>
                         </div>";
     }
 
-    if ($tr_5_sk >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_sk . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+    if ($b_fc >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $b_fc . " </div>
+                            <div style='margin: 0;'>x Base Ferrosa para calibración</div>
                         </div>";
     }
 
-    if ($tr_5_csk >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $tr_5_csk . " </div>
-                            <div style='margin: 0;'>x Cable con 2 conectores tipo LEMO en ambas puntas compatible con transductor similar Krautkramer</div>
+    if ($b_nfc >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $b_nfc . " </div>
+                            <div style='margin: 0;'>x Base No-Ferrosa para calibración</div>
                         </div>";
     }
 
-    if ($g_50 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $g_50 . " </div>
-                            <div style='margin: 0;'>x Botella plástica con pico vertedor de 50cc</div>
+    if ($g_cal >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $g_cal . " </div>
+                            <div style='margin: 0;'>x Galga para calibración</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de espesores disponibles en el apartado Observaciones</div>
                         </div>";
     }
 
-    if ($g_100 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $g_100 . " </div>
-                            <div style='margin: 0;'>x Gel Botella plástica con pico vertedor de 100cc</div>
+    if ($g_cal3 >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $g_cal3 . " </div>
+                            <div style='margin: 0;'>x Juego de 3 galgas para calibración de espesores bajo, medio, alto</div>
                         </div>";
     }
 
-    if ($oaa_1 >= 1) {
+    if ($g_cal3ex >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $oaa_1 . " </div>
-                            <div style='margin: 0;'>x Certificado de calibración - Trazabilidad OAA</div>
+                            <div style='margin: 0 3px 0 0;'> " . $g_cal3ex . " </div>
+                            <div style='margin: 0;'>x Juego de 3 galgas para calibrar la sonda de rango extendido que mide de 0 a 5000μm</div>
+                        </div>";
+    }
+
+    if ($ooa_gcal >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0'>
+                            <div style='margin: 0 3px 0 0;'> " . $ooa_gcal . " </div>
+                            <div style='margin: 0;'>x Certificación OAA para galgas individuales*</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye galga</div>
                         </div>";
     }
 
     if ($ccq >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $ccq . " </div>
-                            <div style='margin: 0;'>x Certificado de calibración QS5 E, QS5 DLE</div>
+                            <div style='margin: 0;'>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</div>
                         </div>";
     }
 
-    if ($pa_5 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_5 . " </div>
-                            <div style='margin: 0;'>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos</div>
+    if ($f_gr >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+                            <div style='margin: 0 3px 0 0;'> " . $_gr . " </div>
+                            <div style='margin: 0;'>x Funda protectora de silicona color Gris</div>
                         </div>";
     }
 
-    if ($pa_10 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_10 . " </div>
-                            <div style='margin: 0;'>x Patrón escalonado de 10 pasos en acero al carbono</div>
-                        </div>";
-    }
-
-    if ($pa_5_oaa >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_5_oaa . " </div>
-                            <div style='margin: 0;'>x Certificacion OAA para patrón escalonado de 5 pasos</div>
-                        </div>";
-    }
-
-    if ($pa_10_oaa >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $pa_10_oaa . " </div>
-                            <div style='margin: 0;'>x Certificacion OAA para patrón escalonado de 10 pasos</div>
-                        </div>";
-    }
-
-    if ($f_am >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
-                            <div style='margin: 0 3px 0 0;'> " . $f_am . " </div>
-                            <div style='margin: 0;'>x Funda Protectora de silicona color amarillo</div>
-                        </div>";
-    }
 
         $content_conf.="<div style='color: #000;font-weight: 600;font-size: 18px;margin-top: 40px;padding-top: 40px; border-top: 1px solid #999;'>
                             <div style='width: 560px;display: inline-block;margin: 0 0 5px 0;'>Observaciones</div>

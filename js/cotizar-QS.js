@@ -1018,41 +1018,41 @@ $(document).ready(function() {
 });
 
 
-//----- Certificado de calibración QS5 E, QS5 DLE
-$('#plus-oaa2').click(function add() {
-  var $qtde = $(".cant-oaa2");
+//----- Certificado de conformidad
+$('#plus-ccq').click(function add() {
+  var $qtde = $(".cant-ccq");
   var a = $qtde.val();
   if (a <= 8) {
       a++;
       $qtde.val(a);
     } else {
-      $("#plus-oaa2").attr("disabled", true);
+      $("#plus-ccq").attr("disabled", true);
     };
-      $("#minus-oaa2").attr("disabled", !a);
+      $("#minus-ccq").attr("disabled", !a);
       $qtde.val(a);
 });
-$("#minus-oaa2").attr("disabled", !$(".cant-oaa2").val());
+$("#minus-ccq").attr("disabled", !$(".cant-ccq").val());
 
-$('#minus-oaa2').click(function minust() {
-  var $qtde = $(".cant-oaa2");
+$('#minus-ccq').click(function minust() {
+  var $qtde = $(".cant-ccq");
   var b = $qtde.val();
   if (b >= 2) {
     b--;
     $qtde.val(b);
   } else {
-    $("#minus-oaa2").attr("disabled", true);
+    $("#minus-ccq").attr("disabled", true);
   }
-  $("#plus-oaa2").attr("disabled", !b);
+  $("#plus-ccq").attr("disabled", !b);
   $qtde.val(b);
 });
 
 /* On change */
 $(document).ready(function() {
   function updatePrice() {
-    var price = parseFloat($(".cant-oaa2").val());
+    var price = parseFloat($(".cant-ccq").val());
     var total = price;
     var total = total.toFixed(0);
-    $("#total-oaa2").val(total);
+    $("#total-ccq").val(total);
   }
 
   
