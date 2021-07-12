@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         #Reemplazar este correo por el correo electrónico del destinatario
-        $mail_to = "josep@demeq.com";
+        $mail_to = "josep@demeq.com, david@demeq.com";
         $email_subject = "Cotización - WEB";
         
         # Envío de datos

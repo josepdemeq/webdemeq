@@ -20,6 +20,11 @@ body {
 	/*-user-select: none;-*/
 }
 
+::selection {
+	background: #ef7d2d;
+	color: white;
+}
+
 #loading{
 	position: fixed;
 	width: 100%;
@@ -570,7 +575,7 @@ button.nav-link {
 .dropdown-menu .dropdown-item {
     display: block;
     width: 100%;
-    padding: .25rem 1.5rem;
+    padding: .5rem 1.5rem;
     clear: both;
     font-weight: 300;
     color: #fff;
@@ -789,13 +794,6 @@ button.nav-link {
 }
 
 
-
-  /*--- LEMA  ---*/
-
-.lema {
-	margin-top: 50px;
-}
-
 /*--- VIDEO INDEX ---*/
 
 
@@ -874,7 +872,9 @@ button.nav-link {
 	padding: 60px 0;
 }
 
-
+#index .sup-titulo {
+	letter-spacing: 0;
+}
 
 /*--- Productos Inicio ---*/
 
@@ -1239,7 +1239,6 @@ footer .datos-empresa p.naranja {
 	z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 	align-items: flex-start;
 	padding-left: 16px;
 	padding-right: 0;
@@ -1317,14 +1316,57 @@ footer .datos-empresa p.naranja {
 
 .info-producto p {
     text-transform: uppercase;
-    font-size: 12px;
-	margin-bottom: 0;
-	 letter-spacing: 0.5px;
+    font-size: 13px;
+    margin-bottom: 0;
+    letter-spacing: 0.8px;
+    position: absolute;
+    width: max-content;
+    bottom: 0;
 
 }
 
 .info-producto p.txt-negro {
 	font-weight: 600;
+}
+
+
+.bg-garantia {
+	background: #202020;
+	padding: 40px 0;
+  }
+
+
+.garantia .row {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.garantia .garantia-icon {
+    width: 80px;
+	fill: #ef7d2d;
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.garantia .txt-garant {
+    padding: 0 20px;
+    height: auto;
+    margin: auto 0;
+}
+
+.garantia h5, .garantia h6 {
+    font-size: 20px;
+    font-weight: 500;
+	text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+	margin: 0;
+}
+.garantia h5 {
+    font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+}
+.garantia h6 {
+    color: #fff;
 }
 
 /*--- FAMILIAS PRODUCTOS ---*/
@@ -2188,13 +2230,13 @@ footer .datos-empresa p.naranja {
 }
 
 .modal.docs {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 	z-index: 2050;
 }
 
 .modal.docs .modal-content {
 	width: 60%;
-	background-color: #000;
+	background-color: rgba(255,255,255,0.15);
 	padding: 40px;
     margin: auto;
 	box-shadow: 0 10px 20px rgb(0 0 0 / 60%), 0 4px 8px rgb(0 0 0 / 30%);

@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         #Reemplazar este correo por el correo electrónico del destinatario
-        $mail_to = "josep@demeq.com";
+        $mail_to = "josep@demeq.com, david@demeq.com";
         $email_subject = "Cotización - WEB";
         
         # Envío de datos
@@ -573,14 +573,14 @@
     }
 
     if ($s_sop >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $s_sop . " </div>
                             <div style='margin: 0;'>x Soporte de 2 piezas para sonda efecto hall</div>
                         </div>";
     }
 
     if ($kcal_b >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $kcal_b . " </div>
                             <div style='margin: 0;'>x Kit para QB7 B</div>
                         </div>
@@ -595,7 +595,7 @@
     }
 
     if ($kcal_e >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $kcal_e . " </div>
                             <div style='margin: 0;'>x Kit para QB7 E</div>
                         </div>
@@ -610,7 +610,7 @@
     }
 
     if ($kcal_ms >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $kcal_ms . " </div>
                             <div style='margin: 0;'>x Kit de calibración para cambio a modelo E</div>
                         </div>
@@ -659,147 +659,147 @@
     }
 
     if ($b_a476 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $b_a476 . " </div>
                             <div style='margin: 0;'>x Bolilla de acero de 4.76mm o 3/16&#34; (40 pz)</div>
                         </div>";
     }
 
     if ($b_a635 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $b_a635 . " </div>
                             <div style='margin: 0;'>x Bolilla de acero de 6.35mm o 1/4&#34; (20 pz)</div>
                         </div>";
     }
 
     if ($b_476 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $b_476 . " </div>
                             <div style='margin: 0;'>x Bolilla magnética de 4.76mm o 3/16&#34; (40 pz)</div>
                         </div>";
     }
 
     if ($b_635 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $b_635 . " </div>
                             <div style='margin: 0;'>x Bolilla magnética de 6.35mm o 1/4&#34; (20 pz)</div>
                         </div>";
     }
 
     if ($ca_0159 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_0159 . " </div>
                             <div style='margin: 0;'>x Calibrador &#34;cero&#34; para bolilla de 1.59mm o 1/16&#34;</div>
                         </div>";
     }
 
     if ($ca_0318 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_0318 . " </div>
                             <div style='margin: 0;'>x Calibrador &#34;cero&#34; para bolilla de 3.18mm o 1/8&#34;</div>
                         </div>";
     }
 
     if ($ca_0476 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_0476 . " </div>
                             <div style='margin: 0;'>x Calibrador &#34;cero&#34; para bolilla de 4.76mm o 3/16&#34;</div>
                         </div>";
     }
 
     if ($ca_g25 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_g25 . " </div>
                             <div style='margin: 0;'>x Calibrador con galga patrón de 0.25mm o 0.009&#34;</div>
                         </div>";
     }
 
     if ($ca_g5 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_g5 . " </div>
                             <div style='margin: 0;'>x Calibrador con galga patrón de 0.5mm o 0.019&#34;</div>
                         </div>";
     }
 
     if ($ca_b1 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b1 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 1mm o 0.039&#34;</div>
                         </div>";
     }
 
     if ($ca_b2 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b2 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 2mm o 0.078&#34;</div>
                         </div>";
     }
 
     if ($ca_b4 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b4 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 4mm o 0.157&#34;</div>
                         </div>";
     }
 
     if ($ca_b6 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b6 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 6mm o 0.236&#34;</div>
                         </div>";
     }
 
     if ($ca_b8 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b8 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 8mm o 0.314&#34;</div>
                         </div>";
     }
 
     if ($ca_b10 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b10 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 10mm o 0.393&#34;</div>
                         </div>";
     }
 
     if ($ca_b14 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b14 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 14mm o 0.551&#34;</div>
                         </div>";
     }
 
     if ($ca_b18 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b18 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 18mm o 0.708&#34;</div>
                         </div>";
     }
 
     if ($ca_b22 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ca_b22 . " </div>
                             <div style='margin: 0;'>x Calibrador con bloque patrón cerámico de 22mm o 0.866&#34;</div>
                         </div>";
     }
 
     if ($pd >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $pd . " </div>
                             <div style='margin: 0;'>x Pedal con cable y conector Lemo</div>
                         </div>";
     }
 
     if ($c_pd >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $c_pd . " </div>
                             <div style='margin: 0;'>x Cable para pedal con conector Lemo</div>
                         </div>";
     }
 
     if ($c_pd >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $c_pd . " </div>
                             <div style='margin: 0;'>x Cable para pedal con conector Lemo</div>
                         </div>";
@@ -813,7 +813,7 @@
     }
 
     if ($ccq >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ccq . " </div>
                             <div style='margin: 0;'>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</div>
                         </div>";
