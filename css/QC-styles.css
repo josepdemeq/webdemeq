@@ -54,7 +54,7 @@
 }
 
 
-.qc-icon path, .qc-icon rect, .qc-icon circle, .qc-icon polygon {
+.qc-icon path, .qc-icon rect, .qc-icon circle, .qc-icon polygon, .qc-icon polyline {
 	fill: #fff;
  }
 
@@ -119,6 +119,20 @@
     height: 100%;
     padding: 5px;
     margin-top: 18px;
+}
+
+.svg-icon.qc-icon.ajuste8 {
+    width: 75%;
+    height: 75%;
+    padding: 2px;
+    margin-top: -5px;
+}
+
+.svg-icon.qc-icon.ajuste9 {
+    width: 85%;
+    height: 85%;
+    padding: 2px;
+    margin-top: -5px;
 }
 
 .bg-qc .btn-default {
@@ -432,12 +446,14 @@ svg.qc-icon-sop {
 	border:none;
 }
 
-#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
+#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after, 
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after {
     color: #289ee8;
 }
 
 #accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link:after, 
-#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link{
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link,
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link, #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after {
     color: #289ee8;
 }
 

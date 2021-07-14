@@ -356,12 +356,14 @@ svg.qb-icon-sop {
 	border:none;
 }
 
-#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
+#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after, 
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after {
     color: #39a38f;
 }
 
 #accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link:after, 
-#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link{
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link,
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link, #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after {
     color: #39a38f;
 }
 

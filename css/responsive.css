@@ -2430,8 +2430,16 @@
         max-width: 100%;
     }
 
+    .bg-garantia {
+        text-align: center;
+    }
+
+    .garantia .garantia-icon {
+        margin: 0 auto 20px;
+    }
+
     .destacados-inicio {
-        padding: 100px 0 0 0;
+        padding: 40px 0 0 0;
     }
 
     .destacados-inicio .card-deck .card {
@@ -2587,7 +2595,7 @@
 
     .info-producto h6 {
         max-width: 100% !important;
-        font-size: 26px;
+        font-size: 23px;
         position: absolute;
         margin-top: 65px;
     }
@@ -3516,6 +3524,10 @@
     .datos-cont-cotiz {
         padding: 0 10px;
     }
+
+    .btn-blanco.btn-enviar {
+        padding: 0.5rem 1rem;
+    }
 }
 
 
@@ -3585,6 +3597,12 @@
 
     .foot .info-destacada .img-container img {
         width: 85%;
+    }
+
+
+    .info-producto p {
+        font-size: 13px !important;
+        width: 100%;
     }
 
     .series7 .foot.slide-up .info-destacada .img-container {
@@ -3745,10 +3763,6 @@
 
     .info-producto h6 {
         font-size: 24px;
-    }
-
-    .info-producto p {
-        font-size: 13px !important;
     }
 
     .dmq-quokka {

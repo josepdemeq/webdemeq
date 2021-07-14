@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         #Reemplazar este correo por el correo electrónico del destinatario
-        $mail_to = "josep@demeq.com, david@demeq.com";
+        $mail_to = "josep@demeq.com";
         $email_subject = "Cotización - WEB";
         
         # Envío de datos
@@ -219,11 +219,19 @@
                                             </div>";
                         }
 
+                        if ($s_rex >= 1) {
+                            $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
+                                            <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_rex . " </div>
+                                            <div style='margin: 0;'>
+                                            <span style='font-weight:600;'>x QCR005:</span> Juego de 3 Galgas para Sonda de Rango Extendido</div>
+                                            </div>";
+                        }
+
                         if ($s_mr >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $s_mr . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QCS200:</span> Mini-Sonda recta Ferrosa</div>
+                                            <span style='font-weight:600;'>x QCS200:</span> Mini-Sonda Ferrosa recta</div>
                                             </div>";
                         }
 
@@ -639,10 +647,20 @@
                         </div>";
     }
 
+    if ($s_rex >= 1) {
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+                            <div style='margin: 0 3px 0 0;'> " . $s_rex . " </div>
+                            <div style='margin: 0;'>x Juego de 3 Galgas de calibración para sondas de rango extendido</div>
+                        </div>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
+                        <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Se incluye con la compra de la Sonda recta Ferrosa de Rango Extendido.</div>
+                        </div>";
+    }
+
     if ($s_mr >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $s_mr . " </div>
-                            <div style='margin: 0;'>x Mini-Sonda recta Ferrosa. Rango: 0 a 750μm</div>
+                            <div style='margin: 0;'>x Mini-Sonda Ferrosa recta. Rango: 0 a 750μm</div>
                         </div>";
     }
 
@@ -692,7 +710,7 @@
     }
 
     if ($g_cal3ex >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $g_cal3ex . " </div>
                             <div style='margin: 0;'>x Juego de 3 galgas para calibrar la sonda de rango extendido que mide de 0 a 5000μm</div>
                         </div>";
@@ -701,7 +719,7 @@
     if ($ooa_gcal >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0'>
                             <div style='margin: 0 3px 0 0;'> " . $ooa_gcal . " </div>
-                            <div style='margin: 0;'>x Certificación OAA para galgas individuales*</div>
+                            <div style='margin: 0;'>x Certificación OAA para galgas individuales</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye galga</div>
@@ -709,7 +727,7 @@
     }
 
     if ($ccq >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ccq . " </div>
                             <div style='margin: 0;'>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</div>
                         </div>";
@@ -717,7 +735,7 @@
 
     if ($f_gr >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
-                            <div style='margin: 0 3px 0 0;'> " . $_gr . " </div>
+                            <div style='margin: 0 3px 0 0;'> " . $f_gr . " </div>
                             <div style='margin: 0;'>x Funda protectora de silicona color Gris</div>
                         </div>";
     }

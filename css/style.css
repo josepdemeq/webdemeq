@@ -569,13 +569,12 @@ button.nav-link {
 	right: unset;
 	left: 0;
 	transition: all 0.5s ease-in-out;
-	padding: 0 0 20px 0;
+	padding: 0;
 }
 
 .dropdown-menu .dropdown-item {
     display: block;
     width: 100%;
-    padding: .5rem 1.5rem;
     clear: both;
     font-weight: 300;
     color: #fff;
@@ -589,7 +588,7 @@ button.nav-link {
 .dropdown-menu .dropdown-item.drop-fam-cont {
     display: flex;
     width: 100%;
-    padding: .5rem 1.5rem;
+    padding: .65rem 1.5rem;
     clear: both;
     font-weight: 300;
     color: #fff;
@@ -608,7 +607,7 @@ button.nav-link {
 	align-items: center;
 	opacity: 1;
 	visibility: visible;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .dropdown-menu .dropdown-item.prods-item:hover {
 	color: rgba(239,125,45,1);
@@ -623,7 +622,7 @@ button.nav-link {
 	visibility: hidden;
 	opacity: 0;
 	overflow: hidden;
-	transition: visibility 0s 0.5s, opacity 0.5s, width 0.5s ease-in-out;
+	transition: visibility 0s 0.3s, opacity 0.3s, width 0.3s ease-in-out;
     
 }
 
@@ -642,19 +641,20 @@ button.nav-link {
 
 .dropdown-menu .dropdown-item.drop-fam-cont .drop-fam {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-size: 18px;
+	font-size: 1px;
 	font-weight: 400;
 	letter-spacing: 1.5px;
 	visibility: hidden;
 	opacity: 0;
 	overflow: hidden;
-	transition: visibility 0s 0.5s, opacity 0.5s ease-in-out;
+	transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
 }
 
 .dropdown-menu .dropdown-item.drop-fam-cont:hover .drop-fam, .dropdown-menu .dropdown-item.drop-fam-cont:hover .drop-fam-ico {
 	visibility: visible;
 	opacity: 1;
-	transition: opacity 0.5s ease-in-out;
+	font-size: 18px;
+	transition: opacity 0.3s ease-in-out,  font-size 0.3s ease-in-out;
 }
 
 .dropdown-menu .dropdown-item.drop-fam-cont:hover .drop-fam-ico {
@@ -1265,6 +1265,7 @@ footer .datos-empresa p.naranja {
 .card .img-producto img {
 	transition: 0.3s all ease-in-out;
 	 max-height: 230px;
+	 z-index: 2;
 }
 
 .card:hover .img-producto img {
@@ -1280,17 +1281,27 @@ footer .datos-empresa p.naranja {
 
 #productos .card .watermark {
     font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 260px;
+    text-align: right;
     position: absolute;
-    font-size: 300px;
+    right: 0;
+    left: 0;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.04;
-    filter: blur(3px);
+    transform: translate(-13px, -50%);
+    letter-spacing: -15px;
     font-weight: 600;
-    margin: 0 auto;
-    letter-spacing: 20px;
-	z-index: 1;
+    filter: blur(4px);
+    opacity: 0.07;
+	transition: 0.3s all ease-in-out;
+}
+
+#productos .card:hover .watermark {
+    font-size: 230px;
+    transform: translate(-35px, -50%);
+    filter: blur(8px);
+    opacity: 0.05;
+	transition-delay: 0.05s;
+	transition: 0.3s all ease-in-out;
 }
 
 .familia-prod {
@@ -1326,7 +1337,7 @@ footer .datos-empresa p.naranja {
 }
 
 .info-producto p.txt-negro {
-	font-weight: 600;
+	font-weight: 600 !important;
 }
 
 
@@ -1338,7 +1349,7 @@ footer .datos-empresa p.naranja {
 
 .garantia .row {
     margin: 0 auto;
-    width: fit-content;
+    width: max-content;
 }
 
 .garantia .garantia-icon {
@@ -2065,29 +2076,92 @@ footer .datos-empresa p.naranja {
 #accesorios .container{
 	padding: 0;
 }
+#accesorios #prod-acc-accordion .card {
+	margin-bottom: 10px;
+	border: 0;
+	background-color: transparent;
+	border-radius: 0;
+  }
+  
+  #accesorios #prod-acc-accordion .card .card-header {
+	border: 0;
+	-webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+			box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+	border-radius: 0;
+	padding: 0;
+  }
 
-#accesorios .container h6.ttl-acces {
-    margin-top: 40px;
-    line-height: 2;
-    border-bottom: 2px solid #acacac;
-	color: #acacac;
-	font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+#accesorios #prod-acc-accordion .card .card-body {
+    padding: 0 10px;
 }
+
+#prod-acc-accordion .card .card-body h6 {
+	font-size: 20px;
+    font-weight: 700;
+}
+  
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link {
+	display: block;
+	text-align: left;
+	background: #393939;
+	color: #fff;
+	padding: 14px 20px;
+	border-radius: 0;
+	font-size: 20px;
+  }
+ #prod-acc-accordion .card .card-header .btn-header-link {
+	font-size: 22px;
+	letter-spacing: 2px;
+  }
+  
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after  {
+	content: "\f107";
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	float: right;
+	font-size: 30px;
+    line-height: 1;
+  }
+  
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed {
+	background: #303030;
+	color: #fff;
+	border-radius: 0;
+	font-weight: 400;
+	font-size: 20px;
+  }
+#prod-acc-accordion .card .card-header .btn-header-link.collapsed {
+	font-size: 22px;
+	letter-spacing: 2px;
+  }
+  
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after {
+	content: "\f106";
+	font-size: 30x;
+    line-height: 1;
+  }
+  
+  #accesorios #prod-acc-accordion .card .collapsing {
+	background: #202020;
+	line-height: 30px;
+  }
+  
+  #accesorios #prod-acc-accordion .card .collapse {
+	border: 0;
+  }
+  
+  #accesorios #prod-acc-accordion .card .collapse.show {
+	background: #202020;
+	line-height: 30px;
+	color: #fff;
+  }
+
 
 #accesorios .accesorio-uno{
-	border-bottom: 1px solid #333;
-}
-
-#accesorios .accesorio-uno .texto-acc{
-	padding: 20px 0 20px;
-}
-
-#accesorios .accesorio-uno .texto-acc.ajuste{
+	border-bottom: 1px solid #555;
 	padding: 20px;
 }
+
 
 #accesorios .accesorio-uno img {
     width: 100%;
@@ -2096,17 +2170,6 @@ footer .datos-empresa p.naranja {
     background: #fff;
     padding: 10px;
 	overflow: hidden;
-}
-
-#accesorios .accesorio-uno .img-acc{
-	padding: 20px;
-}
-
-#accesorios .accesorio-uno .texto-acc h6{
-	font-weight: 900;
-	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	letter-spacing: 1px;
-	font-size: 26px;
 }
 
 
@@ -3754,6 +3817,7 @@ button:focus {
 #cotizado.sticky-top {
 	top: 90px;
 	height: fit-content;
+	height: -moz-fit-content;
 
 }
 

@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         #Reemplazar este correo por el correo electrónico del destinatario
-        $mail_to = "josep@demeq.com, david@demeq.com";
+        $mail_to = "josep@demeq.com";
         $email_subject = "Cotización - WEB";
         
         # Envío de datos
@@ -188,7 +188,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $kcal_b . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QBK101:</span> Kit para QB7 B</div>
+                                            <span style='font-weight:600;'>x QBK101:</span> Kit de calibración para QB7 B</div>
                                             </div>";
                         }
 
@@ -196,7 +196,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $kcal_e . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QBK102:</span> Kit para QB7 E</div>
+                                            <span style='font-weight:600;'>x QBK102:</span> Kit de calibración para QB7 E</div>
                                             </div>";
                         }
 
@@ -204,7 +204,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $kcal_ms . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QBK103:</span> Kit de calibración para cambio a modelo E. Agregar licencia QBL701</div>
+                                            <span style='font-weight:600;'>x QBK103:</span> Kit de calibración para cambio a modelo E. <span style='margin: 0;font-style: italic;color: #989898;'>(Agregar/informar licencia QBL701)</span></div>
                                             </div>";
                         }
 
@@ -523,7 +523,7 @@
     if ($s_eh >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $s_eh . " </div>
-                            <div style='margin: 0;'>x Sonda Efecto Hall con punta de titanio estándar*</div>
+                            <div style='margin: 0;'>x Sonda Efecto Hall con punta de titanio estándar</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye el cable</div>
@@ -547,7 +547,7 @@
     if ($s_ptc >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $s_ptc . " </div>
-                            <div style='margin: 0;'>x Punta de titanio con punta &#34;cortafierro&#34; para sonda efecto</div>
+                            <div style='margin: 0;'>x Punta de titanio con punta &#34;cortafierro&#34; para sonda efecto hall</div>
                         </div>";
     }
 
@@ -573,7 +573,7 @@
     }
 
     if ($s_sop >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $s_sop . " </div>
                             <div style='margin: 0;'>x Soporte de 2 piezas para sonda efecto hall</div>
                         </div>";
@@ -584,7 +584,7 @@
                             <div style='margin: 0 3px 0 0;'> " . $kcal_b . " </div>
                             <div style='margin: 0;'>x Kit para QB7 B</div>
                         </div>
-                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                        <div style='color: #000;display:block;margin: 5px 0 15px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye maletín alto impacto con:</div>
                             <ul style='margin: 0 10px 0 0;'>
                             <li>Bolillas de 1/16&#34; (100 pz),  1/8&#34; (100 pz), 3/16&#34; (40 pz), 1/4&#34; (20 pz)</li>
@@ -599,7 +599,7 @@
                             <div style='margin: 0 3px 0 0;'> " . $kcal_e . " </div>
                             <div style='margin: 0;'>x Kit para QB7 E</div>
                         </div>
-                        <div style='color: #000;display:block;margin: 5px 0 20px 22px;'>
+                        <div style='color: #000;display:block;margin: 5px 0 15px 22px;'>
                             <div style='margin: 5px 10px 0 0;'>Incluye maletín alto impacto con:</div>
                             <ul style='margin: 0 10px 0 0;'>
                             <li>Bolillas de 1/16&#34; (100 pz),  1/8&#34; (100 pz), 3/16&#34; (40 pz), 3/16&#34; magnetica (40 pz), 1/4&#34; (20 pz), 1/4&#34; magnética (20 pz)</li>
@@ -788,13 +788,6 @@
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $pd . " </div>
                             <div style='margin: 0;'>x Pedal con cable y conector Lemo</div>
-                        </div>";
-    }
-
-    if ($c_pd >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
-                            <div style='margin: 0 3px 0 0;'> " . $c_pd . " </div>
-                            <div style='margin: 0;'>x Cable para pedal con conector Lemo</div>
                         </div>";
     }
 

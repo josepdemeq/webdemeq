@@ -440,13 +440,16 @@ svg.qs-icon-sop {
 	border:none;
 }
 
-#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
-    color: #fae929;
+#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, 
+#models-accordion .card .card-header .btn-header-link.collapsed:after, 
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after {
+    color: rgb(205,176,41);
 }
 
 #accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link:after, 
-#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link{
-    color: #fae929;
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link,
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link, #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after {
+    color: rgb(205,176,41);
 }
 
 

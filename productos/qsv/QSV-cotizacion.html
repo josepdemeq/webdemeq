@@ -188,7 +188,7 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
             <li class="breadcrumb-item"><a href="../../productos.html">Productos</a></li>
-            <li class="breadcrumb-item"><a href="QSV.html">Serie QSV</a></li>
+            <li class="breadcrumb-item"><a href="serie-QSV.html">Serie QSV</a></li>
             <li class="breadcrumb-item active" aria-current="page">Cotización</li>
           </ol>
         </nav>
@@ -224,7 +224,7 @@
                             <div class="col-md-2 text-right">
                               <div class="number">
                                 <input type="button" value="-" id="minus-vb" class="minus" />
-                                <input type="text" class="cant-vb" value="1" name="val_QVB"/>
+                                <input type="text" class="cant-vb" value="1" name="val_VB"/>
                                 <input type="button" value="+" id="plus-vb" class="plus" />
                               </div>
                             </div>
@@ -243,7 +243,7 @@
                             <div class="col-md-2 text-right">
                               <div class="number">
                                 <input type="button" value="-" id="minus-vdl" class="minus" />
-                                <input type="text" class="cant-vdl" value="1" name="val_QSVDL"/>
+                                <input type="text" class="cant-vdl" value="1" name="val_VDL"/>
                                 <input type="button" value="+" id="plus-vdl" class="plus" />
                               </div>
                             </div>
@@ -262,7 +262,7 @@
                             <div class="col-md-2 text-right">
                               <div class="number">
                                 <input type="button" value="-" id="minus-vdci" class="minus" />
-                                <input type="text" class="cant-vdci" value="1" name="val_QSVDCI"/>
+                                <input type="text" class="cant-vdci" value="1" name="val_VDCI"/>
                                 <input type="button" value="+" id="plus-vdci" class="plus" />
                               </div>
                             </div>
@@ -281,7 +281,7 @@
                             <div class="col-md-2 text-right">
                               <div class="number">
                                 <input type="button" value="-" id="minus-vdcm" class="minus" />
-                                <input type="text" class="cant-vdcm" value="1" name="val_QSVDCM"/>
+                                <input type="text" class="cant-vdcm" value="1" name="val_VDCM"/>
                                 <input type="button" value="+" id="plus-vdcm" class="plus" />
                               </div>
                             </div>
@@ -371,7 +371,7 @@
 
                       <div id="aa2" class="collapse" aria-labelledby="aahead2" data-parent="#acces-accordion">
                         <div class="card-body">
-                          <div class="row accesorio-input">
+                          <div class="row accesorio-input pb-3 filtro VDCI">
                             <div class="col-md-1">
                               <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input acc-check" id="customCheck4" name="example4" data-name="acc-cali">
@@ -389,7 +389,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="row accesorio-input">
+                          <div class="row accesorio-input pb-3 filtro VDCM">
                             <div class="col-md-1">
                               <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input acc-check" id="customCheck5" name="example5" data-name="acc-calm">
@@ -487,6 +487,42 @@
                         <div class="row accesorio-input pb-3">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck12" data-name="acc-pa5-oaa">
+                              <label class="custom-control-label" for="customCheck12"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Certificación OAA para patrón escalonado de 5 pasos</h6>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-pa5oaa" class="minus" />
+                              <input type="text" class="cant-pa5oaa" value="1" name="pa_5_oaa"/>
+                              <input type="button" value="+" id="plus-pa5oaa" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row accesorio-input pb-3">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck13" name="example18" data-name="acc-pa10-oaa">
+                              <label class="custom-control-label" for="customCheck13"></label>
+                            </div>
+                          </div>
+                          <div class="col-md-9">
+                            <h6>Certificación OAA para patrón escalonado de 10 pasos</h6>
+                          </div>
+                          <div class="col-md-2 text-right">
+                            <div class="number">
+                              <input type="button" value="-" id="minus-pa10oaa" class="minus" />
+                              <input type="text" class="cant-pa10oaa" value="1" name="pa_10_oaa"/>
+                              <input type="button" value="+" id="plus-pa10oaa" class="plus" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row accesorio-input pb-3">
+                          <div class="col-md-1">
+                            <div class="custom-control custom-checkbox">
                               <input type="checkbox" class="custom-control-input acc-check" id="customCheck9" name="example9" data-name="acc-ccq">
                               <label class="custom-control-label" for="customCheck9"></label>
                             </div>
@@ -505,7 +541,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card filtro 5B 5E 5DL 5DLE 3B 3DL 2S 2V 2DL 2DLV">
+                  <div class="card">
                     <div class="card-header" id="aahead5">
                         <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#aa5"
                         aria-expanded="true" aria-controls="aa5">Patrones de acero</a>
@@ -546,42 +582,6 @@
                               <input type="button" value="-" id="minus-pa10" class="minus" />
                               <input type="text" class="cant-pa10" value="1" name="pa_10"/>
                               <input type="button" value="+" id="plus-pa10" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row accesorio-input pb-3">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck12" data-name="acc-pa5-oaa">
-                              <label class="custom-control-label" for="customCheck12"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Certificación OAA para patrón escalonado de 5 pasos</h6>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-pa5oaa" class="minus" />
-                              <input type="text" class="cant-pa5oaa" value="1" name="pa_5_oaa"/>
-                              <input type="button" value="+" id="plus-pa5oaa" class="plus" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row accesorio-input pb-3">
-                          <div class="col-md-1">
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck13" name="example18" data-name="acc-pa10-oaa">
-                              <label class="custom-control-label" for="customCheck13"></label>
-                            </div>
-                          </div>
-                          <div class="col-md-9">
-                            <h6>Certificación OAA para patrón escalonado de 10 pasos</h6>
-                          </div>
-                          <div class="col-md-2 text-right">
-                            <div class="number">
-                              <input type="button" value="-" id="minus-pa10oaa" class="minus" />
-                              <input type="text" class="cant-pa10oaa" value="1" name="pa_10_oaa"/>
-                              <input type="button" value="+" id="plus-pa10oaa" class="plus" />
                             </div>
                           </div>
                         </div>
@@ -629,8 +629,8 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck14" name="example14" data-name="acc-cis">
-                              <label class="custom-control-label" for="customCheck14"></label>
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck15" name="example15" data-name="acc-cis">
+                              <label class="custom-control-label" for="customCheck15"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
@@ -648,8 +648,8 @@
                         <div class="row accesorio-input">
                           <div class="col-md-1">
                             <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck15" name="example15" data-name="acc-cim">
-                              <label class="custom-control-label" for="customCheck15"></label>
+                              <input type="checkbox" class="custom-control-input acc-check" id="customCheck16" name="example16" data-name="acc-cim">
+                              <label class="custom-control-label" for="customCheck16"></label>
                             </div>
                           </div>
                           <div class="col-md-9">
@@ -707,7 +707,7 @@
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <ul class="dash">
-                    <li>Unidad electrónica QS5 B</li>
+                    <li>Unidad electrónica QSV B</li>
                     <li>Transductor 5MHz HD estándar</li>
                     <li>Certificado de conformidad</li>
                     <li>Gel acoplante</li>
@@ -724,7 +724,7 @@
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <ul class="dash">
-                    <li>Unidad electrónica QS5 E</li>
+                    <li>Unidad electrónica QSV DL</li>
                     <li>Transductor 5MHz HD para medición sobre pintura</li>
                     <li>Certificado de conformidad</li>
                     <li>Gel acoplante</li>
@@ -733,15 +733,15 @@
                   </ul>
                 </div>
               </div>
-              <div id="model-5DL" class="modelo-cotizado">
+              <div id="model-VDCI" class="modelo-cotizado">
                 <div class="mod-cotiz">
-                  <input id="total-5dl" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS5 DL</h6>
+                  <input id="total-vdci" readonly="readonly" value="" />
+                  <h6 class="demeq">x QSV DCI</h6>
                 </div>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <ul class="dash">
-                    <li>Unidad electrónica QS5 DL</li>
+                    <li>Unidad electrónicaQSV DCI</li>
                     <li>Transductor 5MHz HD estándar</li>
                     <li>Certificado de conformidad</li>
                     <li>Gel acoplante</li>
@@ -752,127 +752,21 @@
                   </ul>
                 </div>
               </div>
-              <div id="model-5DLE" class="modelo-cotizado">
+              <div id="model-VDCM" class="modelo-cotizado">
                 <div class="mod-cotiz">
-                  <input id="total-5dle" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS5 DLE</h6>
+                  <input id="total-vdcm" readonly="readonly" value="" />
+                  <h6 class="demeq">x QSV DCM</h6>
                 </div>
                 <p class="anotacion italic">Incluye:</p>
                 <div class="incluido-modelo">
                   <ul class="dash">
-                    <li>Unidad electrónica QS5 DLE</li>
+                    <li>Unidad electrónica QSV DCM</li>
                     <li>Transductor 5MHz HD para medición sobre pintura</li>
                     <li>Certificado de conformidad</li>
                     <li>Gel acoplante</li>
                     <li>Cable USB para conexión a PC</li>
                     <li>Pendrive con software DataCenter</li>
                     <li>Manual de usuario</li>
-                    <li>Maletín de alto impacto</li>
-                  </ul>
-                </div>
-              </div>
-              <div id="model-3B" class="modelo-cotizado">
-                <div class="mod-cotiz">
-                  <input id="total-3b" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS3 B</h6>
-                </div>
-                <p class="anotacion italic">Incluye:</p>
-                <div class="incluido-modelo">
-                  <ul class="dash">
-                    <li>Unidad electrónica QS3 B</li>
-                    <li>Transductor 5MHz HD estándar</li>
-                    <li>Certificado de conformidad</li>
-                    <li>Gel acoplante</li>
-                    <li>Manual de usuario</li>
-                    <li>Maletín de alto impacto</li>
-                  </ul>
-                </div>
-              </div>
-              <div id="model-3DL" class="modelo-cotizado">
-                <div class="mod-cotiz">
-                  <input id="total-3dl" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS3 DL</h6>
-                </div>
-                <p class="anotacion italic">Incluye:</p>
-                <div class="incluido-modelo">
-                  <ul class="dash">
-                    <li>Unidad electrónica QS3 DL</li>
-                    <li>Transductor 5MHz HD estándar</li>
-                    <li>Certificado de conformidad</li>
-                    <li>Gel acoplante</li>
-                    <li>Cable USB para conexión a PC</li>
-                    <li>Pendrive con software DataCenter</li>
-                    <li>Manual de usuario</li>
-                    <li>Maletín de alto impacto</li>
-                  </ul>
-                </div>
-              </div>
-              <div id="model-2S" class="modelo-cotizado">
-                <div class="mod-cotiz">
-                  <input id="total-2s" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS2 S</h6>
-                </div>
-                <p class="anotacion italic">Incluye:</p>
-                <div class="incluido-modelo">
-                  <ul class="dash">
-                    <li>Unidad electrónica QS2 S</li>
-                    <li>Transductor 5MHz HD estándar</li>
-                    <li>Certificado de conformidad</li>
-                    <li>Gel acoplante</li>
-                    <li>Guía rápida impresa</li>
-                    <li>Maletín de alto impacto</li>
-                  </ul>
-                </div>
-              </div> 
-              <div id="model-2V" class="modelo-cotizado">
-                <div class="mod-cotiz">
-                  <input id="total-2v" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS2 V</h6>
-                </div>
-                <p class="anotacion italic">Incluye:</p>
-                <div class="incluido-modelo">
-                  <ul class="dash">
-                    <li>Unidad electrónica QS2 V</li>
-                    <li>Transductor 5MHz HD estándar</li>
-                    <li>Certificado de conformidad</li>
-                    <li>Gel acoplante</li>
-                    <li>Guía rápida impresa</li>
-                    <li>Maletín de alto impacto</li>
-                  </ul>
-                </div>
-              </div>
-              <div id="model-2DL" class="modelo-cotizado">
-                <div class="mod-cotiz">
-                  <input id="total-2dl" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS2 DL</h6>
-                </div>
-                <p class="anotacion italic">Incluye:</p>
-                <div class="incluido-modelo">
-                  <ul class="dash">
-                    <li>Unidad electrónica QS2 DL</li>
-                    <li>Transductor 5MHz HD estándar</li>
-                    <li>Certificado de conformidad</li>
-                    <li>Gel acoplante</li>
-                    <li>Cable USB para conexión a PC</li>
-                    <li>Guía rápida impresa</li>
-                    <li>Maletín de alto impacto</li>
-                  </ul>
-                </div>
-              </div>
-              <div id="model-2DLV" class="modelo-cotizado">
-                <div class="mod-cotiz">
-                  <input id="total-2dlv" readonly="readonly" value="" />
-                  <h6 class="demeq">x QS2 DLV</h6>
-                </div>
-                <p class="anotacion italic">Incluye:</p>
-                <div class="incluido-modelo">
-                  <ul class="dash">
-                    <li>Unidad electrónica QS2 DLV</li>
-                    <li>Transductor 5MHz HD estándar</li>
-                    <li>Certificado de conformidad</li>
-                    <li>Gel acoplante</li>
-                    <li>Cable USB para conexión a PC</li>
-                    <li>Guía rápida impresa</li>
                     <li>Maletín de alto impacto</li>
                   </ul>
                 </div>
@@ -891,49 +785,29 @@
                 <input id="total-t5m90" readonly="readonly" value="" />
                 <h6>x Transductor de 5MHz Ø10mm. 90°</h6>
               </div>
-              <div id="acc-t5mr" class="accesorio-cotizado">
-                <input id="total-t5mr" readonly="readonly" value="" />
-                <h6>x Transductor de 5MHz Ø10mm. Recto</h6>
+              <div id="acc-cali" class="accesorio-cotizado">
+                <input id="total-cali" readonly="readonly" value="" />
+                <h6>x Calibre Insize</h6>
               </div>
-              <div id="acc-t7m" class="accesorio-cotizado">
-                <input id="total-t7m" readonly="readonly" value="" />
-                <h6>x Transductor de 7MHz Ø6mm. 90°</h6>
-              </div>
-              <div id="acc-a150" class="accesorio-cotizado">
-                <input id="total-a150" readonly="readonly" value="" />
-                <h6>x Transductor de 5MHz alta temp -10 a 150°C. Recto</h6>
-              </div>
-              <div id="acc-a350" class="accesorio-cotizado">
-                <input id="total-a350" readonly="readonly" value="" />
-                <h6>x Transductor de 5MHz alta temp -10 a 350°C. Recto</h6>
-              </div>
-              <div id="acc-thd" class="accesorio-cotizado">
-                <input id="total-thd" readonly="readonly" value="" />
-                <h6>x Transductor de 5MHz hi-damp Ø10mm. 90°</h6>
-              </div>
-              <div id="acc-tsk" class="accesorio-cotizado">
-                <input id="total-tsk" readonly="readonly" value="" />
-                <h6>x Transductor de 5MHz hi-damp similar Krautkramer. Ø10mm. Recto</h6>
-              </div>
-              <div id="acc-csk" class="accesorio-cotizado">
-                <input id="total-csk" readonly="readonly" value="" />
-                <h6>x Cable con 2 conectores tipo LEMO en ambas puntas.</h6>
+              <div id="acc-calm" class="accesorio-cotizado">
+                <input id="total-calm" readonly="readonly" value="" />
+                <h6>x Calibre Mitutoyo</h6>
               </div>
               <div id="acc-g50" class="accesorio-cotizado">
                 <input id="total-g50" readonly="readonly" value="" />
-                <h6>x Botella plástica con pico vertedor de 50cc</h6>
+                <h6>x Gel acoplante en botella plástica con pico vertedor de 50cc</h6>
               </div>
               <div id="acc-g100" class="accesorio-cotizado">
                 <input id="total-g100" readonly="readonly" value="" />
-                <h6>x Botella plástica con pico vertedor de 100cc</h6>
+                <h6>x Gel acoplante en botella plástica con pico vertedor de 100cc</h6>
               </div>
               <div id="acc-oaa1" class="accesorio-cotizado">
                 <input id="total-oaa1" readonly="readonly" value="" />
-                <h6>x Certificado de calibración QS2, QS3, QS5 B, QS5 DL</h6>
+                <h6>x Certificado de calibración - Trazabilidad "OAA"</h6>
               </div>
-              <div id="acc-oaa2" class="accesorio-cotizado">
-                <input id="total-oaa2" readonly="readonly" value="" />
-                <h6>x Certificado de calibración QS5 E, QS5 DLE</h6>
+              <div id="acc-ccq" class="accesorio-cotizado">
+                <input id="total-ccq" readonly="readonly" value="" />
+                <h6>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</h6>
               </div>
               <div id="acc-pa5" class="accesorio-cotizado">
                 <input id="total-pa5" readonly="readonly" value="" />
@@ -954,6 +828,14 @@
               <div id="acc-fam" class="accesorio-cotizado">
                 <input id="total-fam" readonly="readonly" value="" />
                 <h6>x Funda silicona color Amarillo</h6>
+              </div>
+              <div id="acc-cis" class="accesorio-cotizado">
+                <input id="total-cis" readonly="readonly" value="" />
+                <h6>x Cable de interfaz para QSV-DLI a calibre digital Insize. Longitud: 1m</h6>
+              </div>
+              <div id="acc-cim" class="accesorio-cotizado">
+                <input id="total-cim" readonly="readonly" value="" />
+                <h6>x Cable de interfaz para QSV-DLI a calibre digital Mitutoyo. Longitud: 1m</h6>
               </div>
               <input name="submit" type="submit" class="btn btn-blanco btn-enviar btn-qsv w-100" value="Enviar solicitud de Cotización">
             </div>
@@ -1158,7 +1040,7 @@
     <script src="../plugins/b-select/dist/js/bootstrap-select.js"></script>
       <script src="../../js/main.js"></script>
       <script src="../../js/custom.js"></script>
-      <script src="../../js/cotizar-QS.js"></script>
+      <script src="../../js/cotizar-QSV.js"></script>
       <script src="../../formularios/main.js"></script>
     </body>
   </html>

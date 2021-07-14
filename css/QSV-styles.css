@@ -3,18 +3,38 @@
 
 
 .bg-qsv {
-	background: rgb(252,209,42);
-	background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 40%);
+	background: rgb(190, 150, 30);
+	background: linear-gradient(0deg, rgb(190, 150, 30) 0%, rgba(18,18,18,1) 40%);
+    border: none !important;
+}
+
+
+.bg-qsv1 {
+	background: rgb(190, 150, 30);
+	background: linear-gradient(0deg, rgba(190, 150, 30,0.5) 0%, rgba(18,18,18,1) 70%);
+    border: none !important;
+}
+
+
+.bg-qs {
+	background: rgb(205,176,41);
+	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 50%);
+    border: none !important;
+}
+
+.bg-qst {
+	background: rgb(238,254,94);
+	background: linear-gradient(0deg, rgba(238,254,94,1) 0%, rgba(18,18,18,1) 40%);
     border: none !important;
 }
 
 
 .txt-qsv {
-	color:#fcd12a;
+	color:#f2b703;
 }
 
 .breadcrumb a:hover {
-	color: #fcd12a;
+	color: #f2b703;
 	transition: 0.3s all ease-in-out;
 }
 
@@ -23,7 +43,7 @@
 }
 
 .modal.docs .modal-header {
-	border-bottom: 8px solid #fcd12a;
+	border-bottom: 8px solid #f2b703;
 }
 
 
@@ -39,7 +59,7 @@
 
 
 .bg-qsv-c {
-	background: rgb(252,209,42);
+	background: rgb(190, 150, 30);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -49,10 +69,10 @@
  }
 
 .bg-qsv-icon {
-	background: rgb(219,162,52);
-	background: -moz-linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,209,42,1) 100%);
-	background: -webkit-linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,209,42,1) 100%);
-	background: linear-gradient(45deg, rgba(219,162,52,1) 0%, rgba(252,230,33,1) 100%);
+	background: rgb(190, 150, 30);
+	background: -moz-linear-gradient(45deg, rgba(190, 150, 30,1) 0%, rgba(254,203,55,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(190, 150, 30,1) 0%, rgba(254,203,55,1) 100%);
+	background: linear-gradient(45deg, rgba(190, 150, 30,1) 0%, rgba(254,203,55,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dba234",endColorstr="#fce621",GradientType=1);
 	-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 	box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -92,7 +112,7 @@
 }
 
 .ttl-rel {
-	border-bottom: 8px solid rgb(252,209,42);
+	border-bottom: 8px solid rgb(190, 150, 30);
 	margin-bottom: 40px;
 }
 
@@ -128,7 +148,7 @@
     top: 50px;
     border-top: 0;
     border-bottom: 0;
-    background: rgba(252,209,42, 0.95);
+    background: rgba(190, 150, 30, 0.95);
 }
 
 .series .series-nav .nav-link {
@@ -190,7 +210,7 @@
 
 
 .second-nav-scroll.bg-qsv-c {
-	background: rgba(252,209,42, 0.95);
+	background: rgba(190, 150, 30, 0.95);
     padding: 0;
 }
 
@@ -224,7 +244,7 @@
 
 #familia-producto.series.f-QSV .info-prod h5, #soporte-producto.series.f-QSV .info-prod h5 {
 	font-weight: 600;
-	border-bottom: 8px solid rgb(252,209,42);
+	border-bottom: 8px solid rgb(190, 150, 30);
 
 }
 
@@ -241,14 +261,14 @@
 
 /*--- Accesorios --*/
 #accesorios .accesorio-uno .texto-acc h6 {
-    color:rgb(252,209,42);
+    color:rgb(190, 150, 30);
 }
 
 /*-- Certificaciones --*/
 
 #familia-producto.series.f-QSV .info-prod .mas-cert {
     font-weight: 600;
-    color:rgb(252,209,42);
+    color:rgb(190, 150, 30);
     margin: 60px 0 10px;
 	border: 0;
 }
@@ -259,18 +279,18 @@
 
 
 .series .info-destacada.dest-qsv  {
-	background: rgb(252,209,42);
-	background: -moz-linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 70%);
-	background: -webkit-linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 70%);
-	background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 70%);
+	background: rgb(190, 150, 30);
+	background: -moz-linear-gradient(0deg, rgba(190, 150, 30,1) 0%, rgba(18,18,18,1) 70%);
+	background: -webkit-linear-gradient(0deg, rgba(190, 150, 30,1) 0%, rgba(18,18,18,1) 70%);
+	background: linear-gradient(0deg, rgba(190, 150, 30,1) 0%, rgba(18,18,18,1) 70%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#111111",GradientType=1);
     border-top: none;
 }
 
 .series .info-destacada .btn-blanco.btn-qsv {
 	color: #000;
-    background-color: rgb(252,209,42);
-    border: 2px solid rgb(252,209,42);
+    background-color: rgb(190, 150, 30);
+    border: 2px solid rgb(190, 150, 30);
 	margin-bottom: 15px;
 }
 .series .info-destacada .btn-blanco.btn-qsv.btn-qsv:hover, .series .info-destacada .btn-blanco.btn-qsv.btn-qsv:active, .btn-qsv:focus  {
@@ -284,18 +304,18 @@
 
 
 .fam-QSV .titulo-seccion.comparativa h3 {
-	color: rgb(252,209,42);
+	color: rgb(190, 150, 30);
 }
 
 .tr-border-qsv {
-    border-top: 4px solid rgb(252,209,42);
+    border-top: 4px solid rgb(190, 150, 30);
 }
 
 .hor-grad-qsv {
-    background: rgb(252,209,42);
-    background: -moz-linear-gradient(90deg, rgba(252,209,42,0.6) 0%, rgba(18,18,18,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(252,209,42,0.6) 0%, rgba(18,18,18,1) 100%);
-    background: linear-gradient(90deg, rgba(252,209,42,0.6) 0%, rgba(18,18,18,1) 100%);
+    background: rgb(190, 150, 30);
+    background: -moz-linear-gradient(90deg, rgba(190, 150, 30,0.6) 0%, rgba(18,18,18,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(190, 150, 30,0.6) 0%, rgba(18,18,18,1) 100%);
+    background: linear-gradient(90deg, rgba(190, 150, 30,0.6) 0%, rgba(18,18,18,1) 100%);
 }
 
 #familia-producto.series .info-prod .table td.hor-grad-qsv {
@@ -326,11 +346,11 @@
 	background-color: transparent;
 	padding: 0;
 	border-radius: 0;
-	color: rgb(252,209,42);
+	color: rgb(190, 150, 30);
 }
 
 .tooltip .tooltip-inner {
-    background: rgb(252,209,42);
+    background: rgb(190, 150, 30);
     color: #000;
   }
 
@@ -345,8 +365,8 @@
   }
 
   .table-hover tbody tr:hover {
-    color: rgb(252,209,42);
-    background-color: rgba(252,209,42,0.1)!important;
+    color: rgb(190, 150, 30);
+    background-color: rgba(190, 150, 30,0.1)!important;
     transition: 0.2s all ease-in-out;
 }
 
@@ -361,30 +381,30 @@ svg.qsv-icon-sop {
 }
 
 .qsv-icon-sop path, .qsv-icon-sop rect, .qsv-icon-sop circle, .qsv-icon-sop polygon {
-	fill: rgb(252,209,42);
+	fill: rgb(190, 150, 30);
  }
 
  .soporte-f table a:hover svg {
-     fill: rgb(252,209,42);
+     fill: rgb(190, 150, 30);
      transition: 0.2s all ease-in-out;
  }
 
  .txt-video-sop p {
-    color: rgb(252,209,42);
+    color: rgb(190, 150, 30);
 }
 
 .videos-soporte .btn-borde:hover, .videos-soporte .btn-borde:active, .videos-soporte .btn-borde:focus {
 	color: #000;
-	background-color: rgb(252,209,42);
-	border: 2px solid rgb(252,209,42);
+	background-color: rgb(190, 150, 30);
+	border: 2px solid rgb(190, 150, 30);
 	transition: all 0.3s ease-in-out;
 }
 
 
 .videos-soporte .btn-borde.active {
 	color: #000;
-	background-color: rgb(252,209,42);
-	border: 2px solid rgb(252,209,42);
+	background-color: rgb(190, 150, 30);
+	border: 2px solid rgb(190, 150, 30);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -392,8 +412,8 @@ svg.qsv-icon-sop {
 /*--- Cotización ---*/
 
 #cotizado h5 {
-    border-bottom: 4px solid #fcd12a;
-    color: #fcd12a;
+    border-bottom: 4px solid #f2b703;
+    color: #f2b703;
 }
 
 #accesorios .custom-control-input:checked~.custom-control-label::before, #models-accordion .custom-control-input:checked~.custom-control-label::before {
@@ -403,20 +423,22 @@ svg.qsv-icon-sop {
 	border:none;
 }
 
-#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after {
-    color: #fcd12a;
+#accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after, 
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after {
+    color: #f2b703;
 }
 
 #accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link:after, 
-#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link{
-    color: #fcd12a;
+#accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link,
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link, #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after {
+    color: #f2b703;
 }
 
 
 .btn-blanco.btn-enviar.btn-qsv {
 	color: #000;
-    background-color: rgb(252,209,42);
-    border: 2px solid rgb(252,209,42);
+    background-color: rgb(190, 150, 30);
+    border: 2px solid rgb(190, 150, 30);
 	margin-bottom: 15px;
 }
 
@@ -427,7 +449,7 @@ svg.qsv-icon-sop {
 }
 
 .form-control:focus {
-    border-color: #fcd12a !important;
+    border-color: #f2b703 !important;
     box-shadow: 0 0 0 0.2rem rgba(205, 176, 41, 0.25) !important;
 }
 
@@ -503,29 +525,29 @@ svg.qsv-icon-sop {
     }
 
     .barra-qsv {
-        border-bottom: 8px solid rgb(252,209,42);
+        border-bottom: 8px solid rgb(190, 150, 30);
     }
 
     .icon-bar.bg-qsv-c {
-        background-color: rgb(252,209,42) !important;
+        background-color: rgb(190, 150, 30) !important;
     }
 
     .foot.dest-qsv {
-        background: rgb(252,209,42);
-        background: -moz-linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 70%);
-        background: -webkit-linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 70%);
-        background: linear-gradient(0deg, rgba(252,209,42,1) 0%, rgba(18,18,18,1) 70%);
+        background: rgb(190, 150, 30);
+        background: -moz-linear-gradient(0deg, rgba(190, 150, 30,1) 0%, rgba(18,18,18,1) 70%);
+        background: -webkit-linear-gradient(0deg, rgba(190, 150, 30,1) 0%, rgba(18,18,18,1) 70%);
+        background: linear-gradient(0deg, rgba(190, 150, 30,1) 0%, rgba(18,18,18,1) 70%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#000",GradientType=1);
         border-top: none;
     }
 
     .dest-btn-up.bg-qsv {
-        background: rgb(252,209,42) !important;
+        background: rgb(190, 150, 30) !important;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         color: #000;
         font-weight: 600;
-        border-top: 2px solid rgb(252,209,42) !important;
+        border-top: 2px solid rgb(190, 150, 30) !important;
         position: absolute;
         top: -1px;
         width: 100%;
@@ -555,8 +577,8 @@ svg.qsv-icon-sop {
 
     .foot .info-destacada .btn-blanco.btn-qsv {
         color: #000;
-        background-color: rgb(252,209,42);
-        border: 2px solid rgb(252,209,42);
+        background-color: rgb(190, 150, 30);
+        border: 2px solid rgb(190, 150, 30);
         margin-bottom: 10px;
         padding: 0.5rem;
     }
@@ -589,7 +611,7 @@ svg.qsv-icon-sop {
 
     .series-nav .navbar-collapse.show {
         margin-top: 56px;
-        background-color: rgba(252,209,42, 0.95);
+        background-color: rgba(190, 150, 30, 0.95);
     }
 }
 

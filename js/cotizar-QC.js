@@ -753,6 +753,7 @@ $(document).ready(function() {
     var total = price;
     var total = total.toFixed(0);
     $("#total-srex").val(total);
+    $("#total-srex_").val(total);
   }
 
   
@@ -1235,6 +1236,9 @@ $(document).ready(function() {
 });
 
 
+
+
+//--------------- Copiar el valor de la sonda para agregar galgas
 
 //--------------- Filtrar accessorios por modelo compatible
 

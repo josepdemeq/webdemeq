@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="../../css/responsive.css" type="text/css">
     <link rel="stylesheet" href="../../css/QS-styles.css" type="text/css">
     <link rel="stylesheet" href="../../fonts/stylesheet.css" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
     <!-- Favicon -->  
     <link rel="apple-touch-icon" sizes="180x180" href="../../img/fav/apple-touch-icon.png">
@@ -532,94 +533,179 @@
               <section id="accesorios" class="scrll-sect bg-gris wow slideIn">
                 <h5>Accesorios y Consumibles</h5>
                 <div class="container">
-                  <h6 class="ttl-acces">Transductores estándar para medición Pulso Eco</h6>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qs/Transductor-2Mhz.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QSS2-12</h6>
-                      <p>Transductor dual de 2 Mhz y diámetro 12 mm, ideal para medir materiales de gran atenuación (ej. Goma) y/o grandes espesores.</p>
-                      <p>Rango: 4 a 500 mm</p>
-                    </div>
-                  </div>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qs/Transductor-5Mhz.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QSS5-10</h6>
-                      <p>Transductor dual de 5 Mhz y diámetro 10 mm, recomendado para uso general por su buen rango de medición y sensibilidad.</p>
-                      <p>Rango: 4 a 500 mm</p>
-                    </div>
-                  </div>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QSS7-06</h6>
-                      <p>Transductor dual de 7 Mhz y diámetro 6 mm, ideal para medir espesores de paredes delgadas, superficies curvas y piezas pequeñas.</p>
-                      <p>Rango: 0,8 a 100 mm</p>
-                    </div>
-                  </div>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QSS5-HT</h6>
-                      <p>Transductor dual de 5 Mhz y diámetro 12 mm de alta temperatura, recomendado para medir piezas en caliente hasta 200º C</p>
-                      <p>Rango: 1 a 250 mm</p>
-                    </div>
-                  </div>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <h6>QSS5-HT</h6>
-                      <p>Transductor dual de 5 Mhz y diámetro 10 mm, diseñado especialmente para medir piezas con recubrimiento (pintadas).</p>
-                      <p>Rangos: Sin capas 1 a 100 mm / Con capas 2,5 a 25mm</p>
-                    </div>
-                  </div>
-                  <h6 class="ttl-acces">Patrones de Referencia</h6>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qs/Patrones-QS.jpg" alt="">
-                    </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <p>Patrones de acero escalonado de referencia</p>
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <h6>QSR-6</h6>
-                          <p>6 Escalones de 1 - 2,5 - 5 - 10 - 15 y 20 mm</p>
+                  <div class="accordion" id="prod-acc-accordion">
+                    <div class="card">
+                        <div class="card-header" id="prod-acchead1">
+                            <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#prod-acc1"
+                            aria-expanded="true" aria-controls="prod-acc1">Transductores con cable integrado</a>
                         </div>
-                        <div class="col-lg-6 col-sm-12">
-                          <h6>QSR-4</h6>
-                          <p>4 Escalones de 0,1 - 0,2 - 0,4 - 0,6 pulgadas</p>
+    
+                        <div id="prod-acc1" class="collapse" aria-labelledby="prod-acchead1" data-parent="#prod-acc-accordion">
+                            <div class="card-body">
+                              <div class="row accesorio-uno align-self-center">
+                                <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                                  <img src="../../img/accesorios/qs/Transductor-2Mhz.jpg" alt="">
+                                </div>
+                                <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                                  <h6>Transductor de 2MHz Ø12mm. 90°</h6>
+                                  <p>Ideal para medir materiales de gran atenuación (ej. Goma) y/o grandes espesores.</p>
+                                  <p>Rango: 4mm a 500mm | Temp. -10 a 40°C</p>
+                                </div>
+                              </div>
+                              <div class="row accesorio-uno align-self-center">
+                                <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                                  <img src="../../img/accesorios/qs/Transductor-2Mhz.jpg" alt="">
+                                </div>
+                                <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                                  <h6>Transductor de 2MHz Ø22mm. 90°</h6>
+                                  <p>Ideal para medir materiales de gran atenuación (ej. Goma) y/o grandes espesores.</p>
+                                  <p>Rango: 8mm a 500mm | Temp. -10 a 40°C</p>
+                                </div>
+                              </div>
+                              <div class="row accesorio-uno align-self-center">
+                                <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                                  <img src="../../img/accesorios/qs/Transductor-5Mhz.jpg" alt="">
+                                </div>
+                                <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                                  <h6>Transductor de 5MHz Ø10mm. 90°</h6>
+                                  <p>Recomendado para uso general por su buen rango de medición y sensibilidad.</p>
+                                  <p>Rango: 1mm a 250mm | Temp. -10 a 40°C</p>
+                                </div>
+                              </div>
+                              <div class="row accesorio-uno align-self-center">
+                                <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                                  <img src="../../img/accesorios/qs/Transductor-5Mhz.jpg" alt="">
+                                </div>
+                                <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                                  <h6>Transductor de 5MHz Ø10mm. Recto</h6>
+                                  <p>Recomendado para uso general por su buen rango de medición y sensibilidad.</p>
+                                  <p>Rango: 1mm a 250mm | Temp. -10 a 40°C</p>
+                                </div>
+                              </div>
+                              <div class="row accesorio-uno align-self-center">
+                                <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                                  <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                                </div>
+                                <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                                  <h6>Transductor de 7MHz Ø6mm. 90°</h6>
+                                  <p>Ideal para medir espesores de paredes delgadas, superficies curvas y piezas pequeñas.</p>
+                                  <p>Rango: 0,8 a 100mm | Temp. -10 a 40°C</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="prod-acchead2">
+                          <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#prod-acc2"
+                          aria-expanded="true" aria-controls="prod-acc2">Transductores Alta Temperatura con cable integrado</a>
+                      </div>
+  
+                      <div id="prod-acc2" class="collapse" aria-labelledby="prod-acchead2" data-parent="#prod-acc-accordion">
+                        <div class="card-body">
+                          <div class="row accesorio-uno align-self-center">
+                            <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                              <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                            </div>
+                            <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                              <h6>Transductor de 5MHz alta temp -10 a 150°C. Recto</h6>
+                              <p>Recomendado para medir piezas en caliente hasta 150º C</p>
+                              <p>Ø10mm | Rango: 1 a 250mm</p>
+                            </div>
+                          </div>
+                          <div class="row accesorio-uno align-self-center">
+                            <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                              <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                            </div>
+                            <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                              <h6>Transductor de 5MHz alta temp -10 a 350°C. Recto</h6>
+                              <p>Recomendado para medir piezas en caliente hasta 350º C</p>
+                              <p>Ø10mm | Rango: 1 a 250mm</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="card">
+                    <div class="card-header" id="prod-acchead5">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#prod-acc5"
+                        aria-expanded="true" aria-controls="prod-acc5">Gel acoplante</a>
+                    </div>
+                      
+                    <div id="prod-acc5" class="collapse" aria-labelledby="prod-acchead5" data-parent="#prod-acc-accordion">
+                      <div class="card-body">
+                        <div class="row accesorio-uno align-self-center">
+                          <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                            <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                          </div>
+                          <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                            <h6>Gel acoplante 50cc / 1,76oz</h6>
+                            <p>xx-----descripción----xx.</p>
+                            <p>Botella plástica con pico vertedor</p>
+                          </div>
+                        </div>
+                        <div class="row accesorio-uno align-self-center">
+                          <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                            <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                          </div>
+                          <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                            <h6>Gel acoplante 100cc / 3,52oz</h6>
+                            <p>xx-----descripción----xx.</p>
+                            <p>Botella plástica con pico vertedor</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <h6 class="ttl-acces">Gel Acoplante</h6>
-                  <div class="row accesorio-uno align-self-center">
-                    <div class="col-lg-3 col-sm-12 my-auto img-acc">
-                      <img src="../../img/accesorios/qs/Pote-acoplante.gif" alt="">
+                  <div class="card">
+                    <div class="card-header" id="prod-acchead6">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#prod-acc6"
+                        aria-expanded="true" aria-controls="prod-acc6">Patrones de acero</a>
                     </div>
-                    <div class="col-lg-9 col-sm-12 my-auto texto-acc">
-                      <p>Gel acoplante recomendado para medir en la mayoría de las superficies</p>
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                          <h6>QHP-50</h6>
-                          <p>Pote 50g / 1,76oz</p>
+                      
+                    <div id="prod-acc6" class="collapse" aria-labelledby="prod-acchead6" data-parent="#prod-acc-accordion">
+                      <div class="card-body">
+                        <div class="row accesorio-uno align-self-center">
+                          <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                            <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                          </div>
+                          <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                            <h6>Patrón escalonado de 5 pasos en acero al carbono</h6>
+                            <p>xx-----descripción----xx</p>
+                            <p>xx-----características destacadas----xx</p>
+                          </div>
                         </div>
-                        <div class="col-lg-6 col-sm-12">
-                          <h6>QHP-200</h6>
-                          <p>Pote 100g / 3,52oz</p>
+                        <div class="row accesorio-uno align-self-center">
+                          <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                            <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                          </div>
+                          <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                            <h6>Patrón escalonado de 10 pasos en acero al carbono</h6>
+                            <p>xx-----descripción----xx.</p>
+                            <p>xx-----características destacadas----xx</p>
+                          </div>
                         </div>
                       </div>
-                      <p class="anotacion italic">Consultar por presentaciones de mayor cantidad</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="prod-acchead7">
+                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#prod-acc7"
+                        aria-expanded="true" aria-controls="prod-acc7">Fundas protectoras</a>
+                    </div>
+                      
+                    <div id="prod-acc7" class="collapse" aria-labelledby="prod-acchead7" data-parent="#prod-acc-accordion">
+                      <div class="card-body">
+                        <div class="row accesorio-uno align-self-center">
+                          <div class="col-lg-3 col-sm-12 my-auto img-acc">
+                            <img src="../../img/accesorios/qs/Transductor-7Mhz.jpg" alt="">
+                          </div>
+                          <div class="col-lg-9 col-sm-12 my-auto texto-acc">
+                            <h6>Funda protectora de silicona</h6>
+                            <p>Color: Amarillo</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -705,7 +791,7 @@
         <!-- Modal -->
         <div class="modal fade docs" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content bg-qs-30">
+            <div class="modal-content">
               <div class="modal-header">
                 <div class="ttl-serie-modal">
                   <img class="fam-icon" src="../../img/fam-icons/QS-ico.svg" alt="">
@@ -730,7 +816,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-borde-negro" data-dismiss="modal"><span class="span-btn">Cerrar </span>&#10006;</button>
+                <button type="button" class="btn btn-borde" data-dismiss="modal"><span class="span-btn">Cerrar </span>&#10006;</button>
               </div>
             </div>
           </div>

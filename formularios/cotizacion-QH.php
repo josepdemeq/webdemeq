@@ -3,7 +3,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         #Reemplazar este correo por el correo electrónico del destinatario
-        $mail_to = "josep@demeq.com, david@demeq.com";
+        $mail_to = "josep@demeq.com";
         $email_subject = "Cotización - WEB";
         
         # Envío de datos
@@ -247,7 +247,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $di_e . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QHS701:</span> Dispositivo de impacto tipo E con diamante sintético para durezas altas, cable y conector</div>
+                                            <span style='font-weight:600;'>x QHS701:</span> Dispositivo de impacto tipo E con cable y conector</div>
                                             </div>";
                         }
 
@@ -327,7 +327,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_vcd . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QHR501:</span> Patrones Vickers (Aclaracón en apartado Observaciones)</div>
+                                            <span style='font-weight:600;'>x QHR501:</span> Patrones Vickers <span style='margin: 0;font-style: italic;color: #989898;'>(Aclaración en apartado Observaciones)</span></div>
                                             </div>";
                         }
 
@@ -343,7 +343,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_rccd . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QHR201:</span> Patrones Rockwell C (Aclaracón en apartado Observaciones)</div>
+                                            <span style='font-weight:600;'>x QHR201:</span> Patrones Rockwell C <span style='margin: 0;font-style: italic;color: #989898;'>(Aclaración en apartado Observaciones)</span></div>
                                             </div>";
                         }
 
@@ -359,7 +359,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_rbcd . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QHR301:</span> Patrones Rockwell B (Aclaracón en apartado Observaciones)</div>
+                                            <span style='font-weight:600;'>x QHR301:</span> Patrones Rockwell B <span style='margin: 0;font-style: italic;color: #989898;'>(Aclaración en apartado Observaciones)</span></div>
                                             </div>";
                         }
 
@@ -375,7 +375,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_brcd . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QHR401:</span> Patrones Brinell (Aclaracón en apartado Observaciones)</div>
+                                            <span style='font-weight:600;'>x QHR401:</span> Patrones Brinell <span style='margin: 0;font-style: italic;color: #989898;'>(Aclaración en apartado Observaciones)</span></div>
                                             </div>";
                         }
 
@@ -399,7 +399,7 @@
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $pr_chv10 . " </div>
                                             <div style='margin: 0;'>
-                                            <span style='font-weight:600;'>x QHD501:</span> Certificacion patron Vickers HV10 con trazabilidad INTI</div>
+                                            <span style='font-weight:600;'>x QHD501:</span> Certificación patron Vickers HV10 con trazabilidad INTI</div>
                                             </div>";
                         }
 
@@ -781,10 +781,10 @@
     if ($di_g >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $di_g . " </div>
-                            <div style='margin: 0;'>x Dispositivo de impacto tipo G con cable y conector*</div>
+                            <div style='margin: 0;'>x Dispositivo de impacto tipo G con cable y conector</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
-                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Debe adquirir un patron HLG para dispositivo de impacto G</div>
+                            <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Debe adquirir un patrón HLG para dispositivo de impacto G</div>
                         </div>";
     }
 
@@ -819,12 +819,12 @@
     if ($aa_12 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $aa_12 . " </div>
-                            <div style='margin: 0;'>x Juego de 12 anillos para medir superficies concavas y convexas. Compatibles con los dispositivos de impacto D, DC, C. </div>
+                            <div style='margin: 0;'>x Juego de 12 anillos para medir superficies cóncavas y convexas. Compatibles con los dispositivos de impacto D, DC, C. </div>
                         </div>";
     }
 
     if ($pa_50 >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $pa_50 . " </div>
                             <div style='margin: 0;'>x Pasta de acople estándar para utilización en piezas chicas. 50cc</div>
                         </div>";
@@ -861,7 +861,7 @@
     if ($pr_vcd >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $pr_vcd . " </div>
-                            <div style='margin: 0;'>x Patrones Vickers*</div>
+                            <div style='margin: 0;'>x Patrones Vickers</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
@@ -878,7 +878,7 @@
     if ($pr_rccd >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $pr_rccd . " </div>
-                            <div style='margin: 0;'>x Patrones Rockwell C*</div>
+                            <div style='margin: 0;'>x Patrones Rockwell C</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
@@ -895,7 +895,7 @@
     if ($pr_rbcd >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $pr_rccd . " </div>
-                            <div style='margin: 0;'>x Patrones Rockwell B*</div>
+                            <div style='margin: 0;'>x Patrones Rockwell B</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
@@ -912,7 +912,7 @@
     if ($pr_brcd >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $pr_brcd . " </div>
-                            <div style='margin: 0;'>x Patrones Brinell*</div>
+                            <div style='margin: 0;'>x Patrones Brinell</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*Consulta de durezas disponibles en el apartado Observaciones</div>
@@ -929,7 +929,7 @@
     if ($pr_clhld >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $pr_clhld . " </div>
-                            <div style='margin: 0;'>x Certificación patron Leeb HLD con trazabilidad INTI*</div>
+                            <div style='margin: 0;'>x Certificación patrón Leeb HLD con trazabilidad INTI</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye patrón</div>
@@ -939,15 +939,15 @@
     if ($pr_chv10 >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $pr_chv10 . " </div>
-                            <div style='margin: 0;'>x Certificación patron Vickers HV10 con trazabilidad INTI*</div>
+                            <div style='margin: 0;'>x Certificación patrón Vickers HV10 con trazabilidad INTI</div>
                         </div>
-                        <div style='color: #000;display:block;margin: 0 0 15px 222px;'>
+                        <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye patrón</div>
                         </div>";
     }
 
     if ($ccq >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $ccq . " </div>
                             <div style='margin: 0;'>x Certificado de conformidad de fábrica confeccionado a partir de patrones internos.</div>
                         </div>";
@@ -974,7 +974,7 @@
     }
 
     if ($c_imp >= 1) {
-        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 22px;'>
+        $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $c_imp . " </div>
                             <div style='margin: 0;'>x Cable para conexión de impresora térmica a equipos dmq</div>
                         </div>";
@@ -983,7 +983,7 @@
     if ($impr >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 0 0;'>
                             <div style='margin: 0 3px 0 0;'> " . $impr . " </div>
-                            <div style='margin: 0;'>Impresora térmica para equipos dmq*</div>
+                            <div style='margin: 0;'>x Impresora térmica para equipos dmq</div>
                         </div>
                         <div style='color: #000;display:block;margin: 0 0 15px 22px;'>
                             <div style='margin: 0;font-style: italic;color: #989898;font-size: 14px;'>*No incluye cable de conexión</div>
