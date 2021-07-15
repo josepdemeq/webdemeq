@@ -2795,7 +2795,7 @@
 
     #accesorios .accesorio-uno .texto-acc {
         max-width: 100%;
-        padding: 20px !important;
+        padding: 20px 0 0 0 !important;
     }
 
     /*-- Serie destacado --*/

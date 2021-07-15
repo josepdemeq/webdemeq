@@ -256,6 +256,10 @@
 	padding: 20px 0 0;
 }
 
+#listo #carousel-thumbs .selected img {
+    border-color: rgb(57,163,143);
+}
+
 
 /*-- Certificaciones --*/
 

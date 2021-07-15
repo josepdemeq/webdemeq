@@ -18,7 +18,10 @@
 
 .bg-qs {
 	background: rgb(205,176,41);
+	background: -moz-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 50%);
+	background: -webkit-linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 50%);
 	background: linear-gradient(0deg, rgba(205,176,41,1) 0%, rgba(18,18,18,1) 50%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdb029",endColorstr="#000000",GradientType=1);
     border: none !important;
 }
 
@@ -251,6 +254,10 @@
 #familia-producto.series .info-prod .table thead th, #soporte-producto.series .info-prod .table thead th {
     vertical-align: top;
     border-bottom: 2px solid rgb(143, 122, 30);
+}
+
+#listo #carousel-thumbs .selected img {
+    border-color: rgb(190, 150, 30);
 }
 
 

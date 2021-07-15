@@ -226,7 +226,7 @@
                         if ($tr_5_sk >= 1) {
                             $content.="<div class='dato'style='background:#ffffff;;width:100%;padding:10px;display:flex;'>
                                             <div style='margin: 0 3px 0 0;font-weight:600;'> " . $tr_5_sk . " </div>
-                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS531:</span> Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+                                            <div style='margin: 0;'><span style='font-weight:600;'>x QSS531:</span> Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkrämer. Ø10mm. Recto</div>
                                             </div>";
                         }
 
@@ -609,14 +609,14 @@
     if ($tr_5_sk >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $tr_5_sk . " </div>
-                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkramer. Ø10mm. Recto</div>
+                            <div style='margin: 0;'>x Transductor de 5MHz hi-damp para medir SOBRE PINTURA similar Krautkrämer. Ø10mm. Recto</div>
                         </div>";
     }
 
     if ($tr_5_csk >= 1) {
         $content_conf.="<div style='color: #000;display:flex;margin: 5px 0 15px;'>
                             <div style='margin: 0 3px 0 0;'> " . $tr_5_csk . " </div>
-                            <div style='margin: 0;'>x Cable con 2 conectores tipo LEMO en ambas puntas compatible con transductor similar Krautkramer</div>
+                            <div style='margin: 0;'>x Cable con 2 conectores tipo LEMO en ambas puntas compatible con transductor similar Krautkrämer</div>
                         </div>";
     }
 

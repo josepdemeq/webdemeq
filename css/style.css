@@ -622,7 +622,7 @@ button.nav-link {
 	visibility: hidden;
 	opacity: 0;
 	overflow: hidden;
-	transition: visibility 0s 0.3s, opacity 0.3s, width 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
     
 }
 
@@ -641,26 +641,26 @@ button.nav-link {
 
 .dropdown-menu .dropdown-item.drop-fam-cont .drop-fam {
 	font-family: 'demeQ', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-	font-size: 1px;
+	font-size: 0px;
 	font-weight: 400;
 	letter-spacing: 1.5px;
 	visibility: hidden;
 	opacity: 0;
 	overflow: hidden;
-	transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu .dropdown-item.drop-fam-cont:hover .drop-fam, .dropdown-menu .dropdown-item.drop-fam-cont:hover .drop-fam-ico {
 	visibility: visible;
 	opacity: 1;
 	font-size: 18px;
-	transition: opacity 0.3s ease-in-out,  font-size 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu .dropdown-item.drop-fam-cont:hover .drop-fam-ico {
 	width: 40px;
 	height: 40px;
-	transition: width 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu.drop-sop {
@@ -808,19 +808,11 @@ button.nav-link {
   }
   
   .video-background-holder video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: 0;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-  }
+    min-width: 100%;
+    z-index: 0;
+    object-fit: cover;
+    margin: auto;
+}
   
   .video-background-content {
 	position: relative;
@@ -1595,6 +1587,11 @@ footer .datos-empresa p.naranja {
     align-items: center;
   }
 
+  .img-serie a {
+    display: flex;
+    justify-content: center;
+}
+
   .img-serie img {
 	width: 120%;
     height: auto;
@@ -1764,7 +1761,7 @@ footer .datos-empresa p.naranja {
 
 
 .serie .img-series img {
-    width: 85%;
+    width: 100%;
     height: auto;
 }
 
@@ -2071,6 +2068,31 @@ footer .datos-empresa p.naranja {
 	margin-top: 40px;
 }
 
+
+#listo.carousel {
+	position: relative;
+  }
+  .carousel-item img {
+	object-fit: cover;
+  }
+  #carousel-thumbs {
+	bottom: 0;
+	left: 0;
+	padding: 0 50px;
+	right: 0;
+  }
+  #listo  #carousel-thumbs img {
+	border: 5px solid transparent;
+	cursor: pointer;
+  }
+  #listo #carousel-thumbs .selected img {
+	border-color: #fff;
+  }
+  #listo .carousel-control-prev,
+  #listo .carousel-control-next {
+	width: 50px !important;
+  }
+
 /*-- accesorios --*/
 
 #accesorios .container{
@@ -2163,13 +2185,24 @@ footer .datos-empresa p.naranja {
 }
 
 
+#accesorios .accesorio-uno .img-acc {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 180px;
+    padding: 0;
+}
+
 #accesorios .accesorio-uno img {
     width: 100%;
     height: auto;
-    border-radius: 3px;
-    background: #fff;
-    padding: 10px;
 	overflow: hidden;
+}
+
+#accesorios .accesorio-uno .texto-acc {
+    padding: 20px 0 0 20px !important;
 }
 
 

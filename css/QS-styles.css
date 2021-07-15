@@ -276,6 +276,11 @@
 }
 
 
+#listo #carousel-thumbs .selected img {
+    border-color: rgb(205,176,41);
+}
+
+
 /*--- Accesorios --*/
 #accesorios .accesorio-uno .texto-acc h6 {
     color:rgb(205,176,41);
