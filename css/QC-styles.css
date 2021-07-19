@@ -139,6 +139,20 @@
     margin-top: -5px;
 }
 
+.svg-icon.qc-icon.ajuste10 {
+    width: 85%;
+    height: 85%;
+    padding: 3px;
+    margin-top: 4px;
+}
+
+.svg-icon.qc-icon.ajuste11 {
+    width: 85%;
+    height: 85%;
+    padding: 0px;
+    margin-top: 13px;
+}
+
 .bg-qc .btn-default {
 	color: #fff;
 }
@@ -355,7 +369,7 @@
 }
 
 .hor-grad-qc img {
-    height: 150px;
+    height: 120px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -488,13 +502,15 @@ svg.qc-icon-sop {
 }
 
 #accesorios #acces-accordion .card .card-header .btn-header-link.collapsed:after, #models-accordion .card .card-header .btn-header-link.collapsed:after, 
-#accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after {
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after, 
+#sond-esp-accordion .card .card-header .btn-header-link.collapsed:after {
     color: #289ee8;
 }
 
 #accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link:after, 
 #accesorios #acces-accordion .card .card-header .btn-header-link, #models-accordion .card .card-header .btn-header-link,
-#accesorios #prod-acc-accordion .card .card-header .btn-header-link, #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after {
+#accesorios #prod-acc-accordion .card .card-header .btn-header-link, #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after,
+#sond-esp-accordion .card .card-header .btn-header-link, #sond-esp-accordion .card .card-header .btn-header-link:after {
     color: #289ee8;
 }
 

@@ -1991,6 +1991,21 @@ footer .datos-empresa p.naranja {
 	margin-bottom: 30px;
 }
 
+
+#sondas-esp.card:hover {
+	transform: none !important;
+    background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+#sond-esp-accordion > .card:hover {
+	transform: none;
+    background-color: transparent;
+	box-shadow: none;
+}
+
+
+
 /*-- Tabla Modelos --*/
 #familia-producto.series .info-prod .table {
     color: #fff;
@@ -2099,14 +2114,14 @@ footer .datos-empresa p.naranja {
 #accesorios .container{
 	padding: 0;
 }
-#accesorios #prod-acc-accordion .card {
+#accesorios #prod-acc-accordion .card, #sond-esp-accordion .card {
 	margin-bottom: 10px;
 	border: 0;
 	background-color: transparent;
 	border-radius: 0;
   }
   
-  #accesorios #prod-acc-accordion .card .card-header {
+  #accesorios #prod-acc-accordion .card .card-header, #sond-esp-accordion .card .card-header {
 	border: 0;
 	-webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
 			box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
@@ -2114,16 +2129,16 @@ footer .datos-empresa p.naranja {
 	padding: 0;
   }
 
-#accesorios #prod-acc-accordion .card .card-body {
+#accesorios #prod-acc-accordion .card .card-body, #sond-esp-accordion .card .card-body {
     padding: 0 10px;
 }
 
-#prod-acc-accordion .card .card-body h6 {
+#prod-acc-accordion .card .card-body h6, #sond-esp-accordion .card .card-body h6 {
 	font-size: 20px;
     font-weight: 700;
 }
   
-  #accesorios #prod-acc-accordion .card .card-header .btn-header-link {
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link, #sond-esp-accordion .card .card-header .btn-header-link {
 	display: block;
 	text-align: left;
 	background: #393939;
@@ -2132,12 +2147,12 @@ footer .datos-empresa p.naranja {
 	border-radius: 0;
 	font-size: 20px;
   }
- #prod-acc-accordion .card .card-header .btn-header-link {
+ #prod-acc-accordion .card .card-header .btn-header-link, #sond-esp-accordion .card .card-header .btn-header-link {
 	font-size: 22px;
 	letter-spacing: 2px;
   }
   
-  #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after  {
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link:after, #sond-esp-accordion .card .card-header .btn-header-link:after   {
 	content: "\f107";
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
@@ -2146,47 +2161,53 @@ footer .datos-empresa p.naranja {
     line-height: 1;
   }
   
-  #accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed {
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed, #sond-esp-accordion .card .card-header .btn-header-link.collapsed {
 	background: #303030;
 	color: #fff;
 	border-radius: 0;
 	font-weight: 400;
 	font-size: 20px;
   }
-#prod-acc-accordion .card .card-header .btn-header-link.collapsed {
+
+#prod-acc-accordion .card .card-header .btn-header-link.collapsed, #sond-esp-accordion .card .card-header .btn-header-link.collapsed {
 	font-size: 22px;
 	letter-spacing: 2px;
   }
   
-  #accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after {
+#sond-esp-accordion .card .card-header .btn-header-link.collapsed, #sond-esp-accordion .card .card-header .btn-header-link {
+	font-size: 20px;
+	letter-spacing: 2px;
+  }
+  
+  #accesorios #prod-acc-accordion .card .card-header .btn-header-link.collapsed:after, #sond-esp-accordion .card .card-header .btn-header-link.collapsed:after {
 	content: "\f106";
 	font-size: 30x;
     line-height: 1;
   }
   
-  #accesorios #prod-acc-accordion .card .collapsing {
+  #accesorios #prod-acc-accordion .card .collapsing, #sond-esp-accordion .card .collapsing  {
 	background: #202020;
 	line-height: 30px;
   }
   
-  #accesorios #prod-acc-accordion .card .collapse {
+  #accesorios #prod-acc-accordion .card .collapse, #sond-esp-accordion .card .collapse {
 	border: 0;
   }
   
-  #accesorios #prod-acc-accordion .card .collapse.show {
+  #accesorios #prod-acc-accordion .card .collapse.show, #sond-esp-accordion .card .collapse.show {
 	background: #202020;
 	line-height: 30px;
 	color: #fff;
   }
 
 
-#accesorios .accesorio-uno{
+#accesorios .accesorio-uno, #sond-esp-accordion .accesorio-uno {
 	border-bottom: 1px solid #555;
 	padding: 20px;
 }
 
 
-#accesorios .accesorio-uno .img-acc {
+#accesorios .accesorio-uno .img-acc, #sond-esp-accordion .accesorio-uno .img-acc {
     background: #fff;
     display: flex;
     justify-content: center;
@@ -2196,14 +2217,20 @@ footer .datos-empresa p.naranja {
     padding: 0;
 }
 
-#accesorios .accesorio-uno img {
+#accesorios .accesorio-uno img, #sond-esp-accordion .accesorio-uno img  {
     width: 100%;
     height: auto;
 	overflow: hidden;
 }
 
 #accesorios .accesorio-uno .texto-acc {
-    padding: 20px 0 0 20px !important;
+    padding: 20px 0 0 20px;
+	padding-left: 20px !important;
+}
+
+#sond-esp-accordion .accesorio-uno .texto-acc {
+    padding: 0 0 0 20px;
+	padding-left: 20px !important;
 }
 
 
