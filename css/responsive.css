@@ -2794,6 +2794,15 @@
         padding: 30px 15px !important;
     }
 
+    #sondas-esp {
+        height: 570px;
+    }
+
+    #sondas-esp .card-img {
+        position: absolute;
+        bottom: 0;
+    }
+
     #accesorios .accesorio-uno .img-acc {
         max-width: 100%;
         margin: 0 auto !important;

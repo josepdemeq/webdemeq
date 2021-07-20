@@ -213,7 +213,7 @@ p {
     transition: all 0.3s ease-in-out;
 	backdrop-filter: blur(5px);
 }
-.btn-borde:hover, .btn-borde:active, .btn-borde:focus, .btn-borde-negro:hover, .btn-borde-negro:active, .btn-borde-negro:focus  {
+.btn-borde:hover, .btn-borde:active, .btn-borde:focus, .btn-borde-negro:hover, .btn-borde-negro:active, .btn-borde-negro:focus, .btn-borde.active:hover   {
 	color: #000;
 	background-color: #fff;
 	border: 2px solid #fff;
@@ -805,7 +805,6 @@ button.nav-link {
 	min-height: 25rem;
 	width: 100%;
 	overflow: hidden;
-	background-image: url(../img/datacenter/backgrund.png);
   }
   
   .video-background-holder video {
@@ -1991,6 +1990,12 @@ footer .datos-empresa p.naranja {
 	margin-bottom: 30px;
 }
 
+.s-esp {
+	justify-content:space-around;
+    border-bottom: 1px solid #555;
+    padding-bottom: 8px;
+} 
+
 
 #sondas-esp.card:hover {
 	transform: none !important;
@@ -2004,7 +2009,10 @@ footer .datos-empresa p.naranja {
 	box-shadow: none;
 }
 
-
+.una-caract sup, .espec sup {
+	font-style: italic;
+	opacity: 0.7;
+}
 
 /*-- Tabla Modelos --*/
 #familia-producto.series .info-prod .table {
@@ -2211,7 +2219,12 @@ footer .datos-empresa p.naranja {
 }
 
 
-#accesorios .accesorio-uno .img-acc, #sond-esp-accordion .accesorio-uno .img-acc {
+tab-content .accesorio-uno {
+	border-bottom: none;
+	padding: 20px;
+}
+
+#accesorios .accesorio-uno .img-acc, #sond-esp-accordion .accesorio-uno .img-acc, .tab-content .accesorio-uno .img-acc {
     background: #fff;
     display: flex;
     justify-content: center;
@@ -2221,7 +2234,7 @@ footer .datos-empresa p.naranja {
     padding: 0;
 }
 
-#accesorios .accesorio-uno img, #sond-esp-accordion .accesorio-uno img  {
+#accesorios .accesorio-uno img, #sond-esp-accordion .accesorio-uno img, .tab-content .accesorio-uno img  {
     width: 100%;
     height: auto;
 	overflow: hidden;
@@ -2232,18 +2245,24 @@ footer .datos-empresa p.naranja {
 	padding-left: 20px !important;
 }
 
-#sond-esp-accordion .accesorio-uno .texto-acc {
+#sond-esp-accordion .accesorio-uno .texto-acc, .tab-content .accesorio-uno .texto-acc {
     padding: 0 0 0 20px;
 	padding-left: 20px !important;
     padding-right: 0 !important;
 }
 
+.tab-content .accesorio-uno .texto-acc h6{
+    font-weight: 700;
+}
+
 
 /*-- Certificaciones --*/
 
-#certificaciones .cert-uno {
-	border-bottom: 1px solid #555;
+#certificaciones .cert-uno, #certificaciones .cert-uno.bord-bttm {
 	padding: 20px 0;
+}
+#certificaciones .cert-uno.bord-bttm {
+	border-bottom: 1px solid #555;
 }
 
 #certificaciones .cert-uno  img{
@@ -2269,14 +2288,9 @@ footer .datos-empresa p.naranja {
 	margin: 20px 0 10px;
 }
 
-#familia-producto.series.f-QS .info-prod .mas-cert {
-    font-weight: 600;
-    color:rgb(205,176,41);
-    margin: 60px 0 10px;
-	border: 0;
+#normas {
+	scroll-margin: 150px;
 }
-
-
 
 /*-- Info destacada --*/
 
@@ -2593,6 +2607,16 @@ footer .datos-empresa p.naranja {
   .comentario-nodisp p {
 	  display: none;
   }
+
+.tab-gral-black {
+	background:#121212;
+	border-left:2px solid #202020;
+}
+
+.tab-gral-grey {
+	background:#202020;
+	border-left:2px solid #121212;
+}
 
   /*--- DATACENTER ---*/
 
