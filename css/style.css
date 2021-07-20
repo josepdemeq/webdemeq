@@ -2051,7 +2051,6 @@ footer .datos-empresa p.naranja {
 	width: 24px;
   }
 
-
 /*-- Especificaciones --*/
 
 .espec {
@@ -2189,6 +2188,11 @@ footer .datos-empresa p.naranja {
 	background: #202020;
 	line-height: 30px;
   }
+
+  
+ #sond-esp-accordion .card .collapsing, #sond-esp-accordion .card .collapse.show  {
+	background: #121212 !important;
+  }
   
   #accesorios #prod-acc-accordion .card .collapse, #sond-esp-accordion .card .collapse {
 	border: 0;
@@ -2231,6 +2235,7 @@ footer .datos-empresa p.naranja {
 #sond-esp-accordion .accesorio-uno .texto-acc {
     padding: 0 0 0 20px;
 	padding-left: 20px !important;
+    padding-right: 0 !important;
 }
 
 

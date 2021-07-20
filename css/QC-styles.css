@@ -297,18 +297,28 @@
     border-color: rgb(0,113,184);
 }
 
+/*--- Modelos --*/
 
+#modelos .mod-sect h6 {
+    color: #289ee8;
+    font-weight: 600;
+}
 /*--- Accesorios --*/
 
 #accesorios .accesorio-uno .texto-acc h6 {
     color: #289ee8;
 }
 
+.btnBorde-blue {
+    color: #289ee8;
+    border-color: #289ee8;
+}
+
 /*-- Certificaciones --*/
 
 #familia-producto.series.f-QC .info-prod .mas-cert {
     font-weight: 600;
-    color:rgb(0,113,184);
+    color:#289ee8;
     margin: 60px 0 10px;
 	border: 0;
 }
