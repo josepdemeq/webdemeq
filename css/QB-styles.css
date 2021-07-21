@@ -261,6 +261,13 @@
 }
 
 
+/*--- Modelos --*/
+
+#modelos .mod-sect h6 {
+    color:rgb(57,163,143);
+    font-weight: 600;
+}
+
 /*-- Certificaciones --*/
 
 #familia-producto.series.f-QB .info-prod .mas-cert {

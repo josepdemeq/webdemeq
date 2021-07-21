@@ -1372,6 +1372,24 @@ footer .datos-empresa p.naranja {
     color: #fff;
 }
 
+a.link-naranja {
+	color: #999;
+	font-style: italic;
+	font-size: 16px;
+	margin-top: 10px;
+	text-decoration: underline;
+	transition: 0.3s all ease-in-out;
+}
+
+a.link-naranja:hover {
+	color: #ef7d2d;
+	font-style: italic;
+	font-size: 16px;
+	margin-top: 10px;
+	text-decoration: underline;
+	transition: 0.3s all ease-in-out;
+}
+
 /*--- FAMILIAS PRODUCTOS ---*/
 
 .watermark {
